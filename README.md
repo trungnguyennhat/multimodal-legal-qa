@@ -7,7 +7,7 @@
 | Stage | Nội dung | Trạng thái |
 | --- | --- | --- |
 | 0 | Khởi tạo và quản trị | `COMPLETED` |
-| 1 | Dữ liệu | `AWAITING_USER_TEST` |
+| 1 | Dữ liệu | `COMPLETED` |
 | 2 | Evaluator và baseline | `NOT_STARTED` |
 | 3 | Visual retrieval | `NOT_STARTED` |
 | 4 | Hybrid retrieval | `NOT_STARTED` |
@@ -88,12 +88,12 @@ Danh sách nguồn ban đầu nằm tại [multimodal_legal_qa_vlsp2025_sources.
 - Validator kiểm tra JSON schema, ID trùng, loại câu hỏi/đáp án, citation, ảnh thiếu, ZIP lỗi và header ảnh JPG/PNG.
 - Lệnh `prepare` giải nén ảnh vào các thư mục ổn định dưới `data/processed/images` và bỏ metadata `__MACOSX`.
 - Chia 530 mẫu gốc thành 418 train và 112 dev với seed `2025`. Việc chia nhóm theo `image_id` bảo đảm không có cùng ảnh ở cả hai tập.
-- Giữ nguyên 100 mẫu public test làm holdout; không dùng để chọn model, prompt hoặc tham số.
-- Thêm hai unit test cho JSON loader và điều kiện không rò rỉ ảnh giữa train/dev.
+- Giữ nguyên 100 mẫu public test có nhãn làm holdout. Private test có 146 mẫu nhưng repository không cung cấp gold labels.
+- Lệnh `split` tự in `sample_overlap` và `image_overlap` để kiểm tra trực tiếp việc chia dữ liệu.
 
 Không tự sửa các bất thường trong nhãn gốc. Validator báo chúng thành warning để Stage 2 xử lý bằng quy tắc chuẩn hóa có kiểm thử.
 
-### Data agreement
+### Ghi chú sử dụng dữ liệu
 
 Biểu mẫu nằm tại:
 
@@ -101,7 +101,21 @@ Biểu mẫu nằm tại:
 data/raw/VLSP2025-MLQA-TSR/VLSP 2025 data agreement.docx
 ```
 
-Điền tên đội, người đại diện, đơn vị, email; cuối biểu mẫu điền tên đội, chữ ký, họ tên đại diện, chức danh, bộ phận và địa chỉ liên hệ. Xuất thành PDF và gửi `sonlt@uit.edu.vn`, hoặc địa chỉ thay thế `son.lt1103@gmail.com`. Dữ liệu chỉ dùng cho nghiên cứu liên quan, không bán, cho mượn, công bố hoặc phân phối lại; khi sử dụng phải trích dẫn challenge paper.
+Theo xác nhận của chủ dự án, data agreement không phải điều kiện chặn việc triển khai. Biểu mẫu vẫn được giữ nguyên theo official repository để tham khảo. Không bán, cho mượn, công bố hoặc phân phối lại dữ liệu; khi sử dụng trong luận văn phải trích dẫn challenge paper.
+
+`sample_submission/submission.zip` chứa prediction mẫu cho 146 mẫu private test, không phải gold labels:
+
+- `submission_task1.json`: prediction retrieval mẫu.
+- `submission_task2.json`: prediction QA mẫu; 24 output bị cắt như `C. Xe ô` hoặc `Sai. Biển`, phù hợp với baseline dùng `max_new_tokens=5`.
+
+Hai file `submission_task1_no_labels.json` và `submission_task2_no_labels.json` là input không nhãn. Không được dùng sample submission làm ground truth hoặc báo cáo Accuracy/F2 như kết quả private test.
+
+Ban tổ chức đã xác nhận qua email rằng nhãn private test không được cung cấp. Kết quả private chính thức chỉ được lấy bằng cách gửi file dự đoán tại [Codabench VLSP 2025 MLQA-TSR](https://www.codabench.org/competitions/9525/), mục **Post Submission**, theo từng subtask. Vì vậy quy trình đánh giá được cố định như sau:
+
+- Train split: huấn luyện hoặc xây index.
+- Dev split: chọn model, prompt, top-k, threshold và fusion weight.
+- Public test có nhãn: báo cáo đánh giá local sau khi đã khóa cấu hình.
+- Private test không nhãn: sinh submission và gửi Codabench; điểm trả về được lưu cùng file dự đoán và cấu hình đã dùng.
 
 ### Thiết lập trên máy mới
 
@@ -127,7 +141,6 @@ Từ thư mục gốc project, chạy lần lượt:
 ```powershell
 $env:PYTHONPATH="src"
 $env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
 .\.venv\Scripts\python.exe -m multimodal_legal_rag.data validate
 .\.venv\Scripts\python.exe -m multimodal_legal_rag.data prepare
 .\.venv\Scripts\python.exe -m multimodal_legal_rag.data split
@@ -136,14 +149,13 @@ $env:PYTHONUTF8="1"
 
 Kết quả mong đợi:
 
-- Unit test: `Ran 2 tests` và `OK`.
-- Validate: `ERRORS: 0`, kèm 5 warning vốn có trong dữ liệu chính thức: 2 file mang đuôi JPG nhưng nội dung là WebP/PNG, 1 nhóm article ID trùng và 2 nhóm citation chưa khớp.
-- Prepare: `train: 304`, `public_test: 90`, `law: 1576`.
+- Validate: `ERRORS: 0`; warning phản ánh bất thường vốn có trong dữ liệu chính thức và được in rõ theo từng nhóm.
+- Prepare: `train: 304`, `public_test: 90`, `private_test: 104`, `law: 1576`.
 - Split: 418 train, 112 dev, 243 ảnh train, 61 ảnh dev, `sample_overlap: 0`, `image_overlap: 0`.
-- Stats: 530 mẫu train, 100 mẫu public test, 402 article records thuộc 2 văn bản luật và 761 tham chiếu ảnh trong corpus.
+- Stats: 530 mẫu train, 100 mẫu public test có nhãn, 146 mẫu private test không có gold, 402 article records thuộc 2 văn bản luật và 761 tham chiếu ảnh trong corpus.
 - Các split được lưu tại `data/processed/splits`; ảnh đã giải nén nằm tại `data/processed/images`. Cả hai đều không được Git theo dõi.
 
-Sau khi các lệnh thành công, hãy báo `Stage 1 test thành công`. Agent sẽ đánh dấu Stage 1 là `COMPLETED` và vẫn chờ lệnh riêng trước khi bắt đầu Stage 2.
+Người dùng đã chạy trực tiếp các lệnh và xác nhận kết quả thành công ngày 12/09/2026. Stage 1 đã `COMPLETED`; Stage 2 chỉ bắt đầu khi có lệnh riêng.
 
 ### Lỗi thường gặp
 
@@ -151,4 +163,108 @@ Sau khi các lệnh thành công, hãy báo `Stage 1 test thành công`. Agent s
 - Chữ tiếng Việt bị lỗi khi in: chạy lại `$env:PYTHONUTF8="1"`.
 - `destination path ... already exists` khi clone: dữ liệu đã được tải; bỏ qua lệnh clone và chạy validator.
 - Validator báo thiếu file: kiểm tra clone đã hoàn tất và không đổi cấu trúc thư mục official repository.
-- Năm warning về định dạng ảnh, citation và ID trùng là bất thường đã ghi nhận của dữ liệu gốc, không phải lỗi command. Không được tự sửa trực tiếp dữ liệu nguồn.
+- Warning về định dạng ảnh, citation và ID trùng là bất thường đã ghi nhận của dữ liệu gốc, không phải lỗi command. Không được tự sửa trực tiếp dữ liệu nguồn.
+
+## Nộp kết quả private test lên Codabench
+
+Ban tổ chức không phát hành nhãn private test. Điểm chính thức chỉ được lấy bằng cách nộp prediction tại [Codabench VLSP 2025 MLQA-TSR](https://www.codabench.org/competitions/9525/), phase **Post Submission**.
+
+### File của Subtask 1 — Retrieval
+
+Tạo `submission_task1.json` gồm đúng 146 mẫu theo thứ tự/input từ `submission_task1_no_labels.json`. Giữ nguyên `id`, `image_id`, `question` và thêm prediction vào `relevant_articles`:
+
+```json
+[
+  {
+    "id": "private_test_private_test_1",
+    "image_id": "private_test_1_1",
+    "question": "...",
+    "relevant_articles": [
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "B.7"
+      }
+    ]
+  }
+]
+```
+
+### File của Subtask 2 — QA
+
+Tạo `submission_task2.json` gồm đúng 146 mẫu. Giữ nguyên các field của `submission_task2_no_labels.json` và thêm `answer`:
+
+```json
+[
+  {
+    "id": "private_test_private_test_1",
+    "image_id": "private_test_1_1",
+    "question": "...",
+    "question_type": "Multiple choice",
+    "relevant_articles": [
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "22"
+      }
+    ],
+    "answer": "A"
+  }
+]
+```
+
+Giữ nguyên `relevant_articles` đã có trong input Subtask 2. `answer` chỉ được là `A`, `B`, `C`, `D` đối với multiple choice hoặc `Đúng`, `Sai` đối với Yes/No; không kèm giải thích.
+
+### Đóng gói
+
+Đặt hai JSON trong `artifacts/submission`, sau đó chạy:
+
+```powershell
+Compress-Archive `
+  -Path "artifacts\submission\submission_task1.json","artifacts\submission\submission_task2.json" `
+  -DestinationPath "artifacts\submission\submission.zip" `
+  -Force
+tar -tf artifacts\submission\submission.zip
+```
+
+Kết quả `tar -tf` phải chỉ ra hai file ở ngay root ZIP, không nằm trong thư mục con:
+
+```text
+submission_task1.json
+submission_task2.json
+```
+
+Command sinh và kiểm tra submission tự động sẽ được bổ sung tại các stage triển khai retrieval và QA. Không chỉnh JSON thủ công khi đã có command này.
+
+### Thao tác trên Codabench
+
+1. Đăng nhập và đăng ký/accept terms của competition nếu được yêu cầu.
+2. Mở **Participate** và chọn phase **Post Submission**.
+3. Chọn subtask tương ứng nếu giao diện tách riêng hai subtask.
+4. Nhấn biểu tượng đính kèm, chọn `artifacts/submission/submission.zip` và thêm mô tả cấu hình, ví dụ `hybrid-rag-v1-seed-2025`.
+5. Chờ trạng thái `Finished`, sau đó ghi lại F2 của Subtask 1 và Accuracy của Subtask 2.
+6. Nếu scorer yêu cầu nộp riêng từng subtask, tạo ZIP chỉ chứa đúng JSON của subtask được chọn; không đổi tên JSON.
+
+### Lưu kết quả cho luận văn
+
+Mỗi lần nộp phải lưu cùng prediction và cấu hình:
+
+```text
+artifacts/experiments/<experiment-name>/
+├── config.json
+├── submission_task1.json
+├── submission_task2.json
+├── submission.zip
+└── codabench_result.json
+```
+
+Nội dung tối thiểu của `codabench_result.json`:
+
+```json
+{
+  "submitted_at": "YYYY-MM-DD HH:mm",
+  "description": "hybrid-rag-v1-seed-2025",
+  "task1_f2": null,
+  "task2_accuracy": null
+}
+```
+
+Chỉ nộp sau khi đã khóa cấu hình bằng dev/public test. Không dùng điểm private để tiếp tục chọn model, prompt, top-k, threshold hoặc fusion weight.

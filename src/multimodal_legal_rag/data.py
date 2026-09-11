@@ -28,8 +28,11 @@ DATA_FILES = {
 IMAGE_ARCHIVES = {
     "train": Path("dataset/train data/train_images.zip"),
     "public_test": Path("dataset/public_test data/public_test_images.zip"),
+    "private_test": Path("dataset/private_test data (post submission)/private_test_images.zip"),
     "law": Path("dataset/law_db/images.zip"),
 }
+
+PRIVATE_SUBMISSION_ARCHIVE = Path("dataset/private_test data (post submission)/sample_submission/submission.zip")
 
 IMAGE_PATTERN = re.compile(r"<<IMAGE:\s*(.*?)\s*/IMAGE>>")
 
@@ -51,6 +54,19 @@ def load_dataset(source: Path = DEFAULT_SOURCE) -> dict[str, list[dict[str, Any]
     if missing:
         raise ValueError("Thiếu file dữ liệu:\n- " + "\n- ".join(missing))
     return {name: read_json_list(source / relative) for name, relative in DATA_FILES.items()}
+
+
+def load_private_submission(source: Path = DEFAULT_SOURCE) -> dict[str, list[dict[str, Any]]]:
+    """Load example private-test predictions; these files are not gold labels."""
+    path = source / PRIVATE_SUBMISSION_ARCHIVE
+    try:
+        with zipfile.ZipFile(path) as archive:
+            return {
+                "retrieval": json.loads(archive.read("submission_task1.json")),
+                "qa": json.loads(archive.read("submission_task2.json")),
+            }
+    except (OSError, KeyError, json.JSONDecodeError, zipfile.BadZipFile) as exc:
+        raise ValueError(f"Không đọc được private sample submission {path}: {exc}") from exc
 
 
 def archive_filenames(path: Path, warnings: list[str] | None = None) -> set[str]:
@@ -196,6 +212,51 @@ def validate(source: Path = DEFAULT_SOURCE) -> tuple[list[str], list[str], dict[
             "answers": dict(answers),
             "unknown_citations": sum(unknown_refs.values()),
         }
+
+    try:
+        private = load_private_submission(source)
+        retrieval_ids = [str(row.get("id")) for row in private["retrieval"]]
+        qa_ids = [str(row.get("id")) for row in private["qa"]]
+        if len(retrieval_ids) != len(set(retrieval_ids)) or len(qa_ids) != len(set(qa_ids)):
+            errors.append("Private test có sample id trùng")
+        if set(retrieval_ids) != set(qa_ids):
+            errors.append("Task 1 và Task 2 private test không có cùng tập sample id")
+        private_images = {str(row.get("image_id")) for row in private["qa"]}
+        private_archive = source / IMAGE_ARCHIVES["private_test"]
+        image_names = archive_filenames(private_archive, warnings)
+        missing_images = sorted(f"{image_id}.jpg" for image_id in private_images if f"{image_id}.jpg" not in image_names)
+        if missing_images:
+            errors.append(f"private_test thiếu {len(missing_images)} ảnh: {missing_images[:10]}")
+        unknown_private_refs: Counter[tuple[str, str]] = Counter()
+        noncanonical_answers: list[str] = []
+        for task_name, rows in private.items():
+            for row in rows:
+                for ref in row.get("relevant_articles", []):
+                    key = (str(ref.get("law_id")), str(ref.get("article_id")))
+                    if key not in law_keys:
+                        unknown_private_refs[key] += 1
+                if task_name == "qa" and _normalized_answer(row.get("answer")) not in {"A", "B", "C", "D", "Đúng", "Sai"}:
+                    noncanonical_answers.append(str(row.get("answer")))
+        if unknown_private_refs:
+            warnings.append(
+                f"private_test có {sum(unknown_private_refs.values())} citation chưa khớp corpus "
+                f"({len(unknown_private_refs)} cặp): {dict(unknown_private_refs.most_common(10))}"
+            )
+        if noncanonical_answers:
+            warnings.append(
+                f"sample submission có {len(noncanonical_answers)} output QA không chuẩn, xác nhận đây là prediction mẫu, không phải gold"
+            )
+        dataset_stats["private_test"] = {
+            "samples": len(private["qa"]),
+            "unique_images": len(private_images),
+            "retrieval_sample_predictions": len(private["retrieval"]),
+            "qa_sample_predictions": len(private["qa"]),
+            "qa_noncanonical_outputs": len(noncanonical_answers),
+            "question_types": dict(Counter(str(row.get("question_type")) for row in private["qa"])),
+            "unknown_citations": sum(unknown_private_refs.values()),
+        }
+    except ValueError as exc:
+        errors.append(str(exc))
 
     law_archive = source / IMAGE_ARCHIVES["law"]
     if law_archive.is_file():
