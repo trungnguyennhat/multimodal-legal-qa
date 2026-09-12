@@ -16,10 +16,13 @@ Xây dựng Multimodal Legal RAG cho bộ dữ liệu VLSP 2025 MLQA-TSR theo t�
    - ghi kết quả mong đợi và cách xử lý lỗi đã biết;
    - dừng và chờ người dùng phản hồi.
 5. Nếu người dùng báo command hoặc code lỗi:
-   - tái hiện và sửa nguyên nhân trong chính stage đó;
+   - phân tích output người dùng cung cấp và sửa nguyên nhân trong chính stage đó;
    - cập nhật command trong `README.md` nếu command thay đổi;
    - giữ trạng thái `AWAITING_USER_TEST` và yêu cầu người dùng chạy lại.
 6. Chỉ chuyển stage hiện tại thành `COMPLETED` khi người dùng xác nhận đã kiểm tra thành công. Chỉ bắt đầu stage tiếp theo khi người dùng ra lệnh tiếp tục.
+7. Sau khi viết hoặc sửa code, agent không tự chạy code, test, pipeline hay CLI của project, trừ khi người dùng yêu cầu rõ ràng trong tin nhắn hiện tại. Agent phải cung cấp lệnh PowerShell chính xác để người dùng tự chạy và kiểm soát output.
+8. Agent không tự tạo, ghi đè, đổi tên hoặc xóa prediction, metric, experiment, index, cache hay artifact sinh ra khi chạy project. Các file output này chỉ được tạo bởi lệnh người dùng trực tiếp chạy, trừ khi người dùng yêu cầu agent thao tác rõ ràng.
+9. Việc được yêu cầu triển khai code cho phép agent tạo/sửa source code và tài liệu trong đúng phạm vi stage; không đồng nghĩa với quyền tự chạy pipeline hoặc sinh output.
 
 ## Trạng thái stage
 
@@ -32,6 +35,7 @@ Xây dựng Multimodal Legal RAG cho bộ dữ liệu VLSP 2025 MLQA-TSR theo t�
 ## Nguyên tắc kỹ thuật
 
 - Ưu tiên giải pháp nhỏ nhất có thể đo lường và tái lập; không thêm abstraction hoặc dependency để dùng trong tương lai.
+- Đặt tên file, module và thư mục theo chức năng hoặc trách nhiệm nghiệp vụ, đủ cụ thể để không nhầm với thành phần ở stage sau (ví dụ `data.py`, `bm25_evaluation.py`, `bm25-retrieval-dev`); không dùng tên quá chung chung như `evaluation.py`, không đặt theo số stage hay chi tiết cấu hình như `stage2.py`, `stage2-bm25`, `k5`.
 - CLI và đường dẫn ghi trong `README.md` phải khớp code hiện tại và chạy từ thư mục gốc project.
 - Cài và chạy mọi package của project trong `.venv`; không cài dependency vào Python hệ thống. README ưu tiên command `.\.venv\Scripts\python.exe` để không phụ thuộc trạng thái kích hoạt shell.
 - Mỗi thí nghiệm phải lưu cấu hình, prediction, metric và thông tin tài nguyên đủ để tái lập.

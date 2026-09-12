@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | 0 | Khởi tạo và quản trị | `COMPLETED` |
 | 1 | Dữ liệu | `COMPLETED` |
-| 2 | Evaluator và baseline | `NOT_STARTED` |
+| 2 | Evaluator và baseline | `COMPLETED` |
 | 3 | Visual retrieval | `NOT_STARTED` |
 | 4 | Hybrid retrieval | `NOT_STARTED` |
 | 5 | Grounded legal QA | `NOT_STARTED` |
@@ -164,6 +164,68 @@ Người dùng đã chạy trực tiếp các lệnh và xác nhận kết quả
 - `destination path ... already exists` khi clone: dữ liệu đã được tải; bỏ qua lệnh clone và chạy validator.
 - Validator báo thiếu file: kiểm tra clone đã hoàn tất và không đổi cấu trúc thư mục official repository.
 - Warning về định dạng ảnh, citation và ID trùng là bất thường đã ghi nhận của dữ liệu gốc, không phải lỗi command. Không được tự sửa trực tiếp dữ liệu nguồn.
+
+## Stage 2 — Bàn giao evaluator và baseline retrieval
+
+### Đã hoàn thành
+
+- Thêm evaluator khớp công thức chính thức: macro F2 (beta 2) cho retrieval và exact-match Accuracy cho QA.
+- Chuẩn hóa Unicode NFC và khoảng trắng ở đáp án QA để `Đúng` và `Đúng` được so sánh nhất quán; không thay đổi nhãn nguồn.
+- Thêm baseline BM25 text-only thuần Python standard library. Baseline chỉ dùng câu hỏi, lựa chọn và văn bản luật; ảnh được dành cho Stage 3.
+- Gộp các article có cùng `(law_id, article_id)` thành một citation duy nhất, nên 402 article records tạo thành 398 citation có thể truy hồi.
+- Mỗi lần chạy baseline lưu `config.json`, `predictions.json`, `metrics.json` và `resources.json` dưới `artifacts/experiments/<tên-thí-nghiệm>`.
+- Cấu hình baseline mặc định là `top_k=5`, `k1=1.5`, `b=0.75`.
+
+File chính: `src/multimodal_legal_rag/bm25_evaluation.py`. Không có dependency mới.
+
+### Điều kiện tiên quyết
+
+- Stage 1 đã tạo `data/processed/splits/dev.json`.
+- Official corpus tồn tại tại `data/raw/VLSP2025-MLQA-TSR`.
+- Chạy từ thư mục gốc project và đặt biến môi trường trong cửa sổ PowerShell hiện tại:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+```
+
+### Cách tự kiểm tra
+
+Chạy lần lượt:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation baseline
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task retrieval `
+  --gold data\processed\splits\dev.json `
+  --predictions artifacts\experiments\bm25-retrieval-dev\predictions.json
+Get-ChildItem artifacts\experiments\bm25-retrieval-dev
+```
+
+Kết quả mong đợi:
+
+- Baseline và evaluator in cùng một F2, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
+- Thư mục experiment có đúng bốn file `config.json`, `predictions.json`, `metrics.json`, `resources.json`.
+- `artifacts/` vẫn bị Git bỏ qua và không được commit.
+
+Để tự kiểm tra Accuracy bằng một file prediction QA, dùng:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task qa `
+  --gold <đường-dẫn-gold.json> `
+  --predictions <đường-dẫn-predictions.json>
+```
+
+### Lỗi thường gặp
+
+- `No module named multimodal_legal_rag`: chạy lại `$env:PYTHONPATH="src"` trong cùng cửa sổ PowerShell.
+- Thiếu `dev.json`: chạy lại lệnh `split` của Stage 1 trước khi chạy baseline.
+- Thiếu corpus luật: kiểm tra official repository ở đúng đường dẫn Stage 1.
+- `top-k phải trong khoảng ...`: dùng số nguyên dương không lớn hơn số citation trong corpus; mặc định là 5.
+- Prediction thiếu sample được chấm 0 cho sample đó và được đếm tại `missing_predictions`; prediction thừa không góp vào điểm và được đếm tại `extra_predictions`.
+
+Người dùng đã chạy trực tiếp các lệnh và xác nhận hoàn tất ngày 13/09/2026. Stage 2 đã `COMPLETED`; Stage 3 chỉ bắt đầu khi có lệnh riêng.
 
 ## Nộp kết quả private test lên Codabench
 
