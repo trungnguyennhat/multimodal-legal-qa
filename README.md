@@ -9,7 +9,7 @@
 | 0 | Khởi tạo và quản trị | `COMPLETED` |
 | 1 | Dữ liệu | `COMPLETED` |
 | 2 | Evaluator và baseline | `COMPLETED` |
-| 3 | Visual retrieval | `NOT_STARTED` |
+| 3 | Visual retrieval | `AWAITING_USER_TEST` |
 | 4 | Hybrid retrieval | `NOT_STARTED` |
 | 5 | Grounded legal QA | `NOT_STARTED` |
 | 6 | Thực nghiệm luận văn | `NOT_STARTED` |
@@ -226,6 +226,92 @@ Kết quả mong đợi:
 - Prediction thiếu sample được chấm 0 cho sample đó và được đếm tại `missing_predictions`; prediction thừa không góp vào điểm và được đếm tại `extra_predictions`.
 
 Người dùng đã chạy trực tiếp các lệnh và xác nhận hoàn tất ngày 13/09/2026. Stage 2 đã `COMPLETED`; Stage 3 chỉ bắt đầu khi có lệnh riêng.
+
+## Stage 3 — Bàn giao visual retrieval
+
+### Đã hoàn thành
+
+- Thêm visual retrieval tại `src/multimodal_legal_rag/visual_retrieval.py`, bám theo `BAAI/bge-visualized` với text encoder đa ngôn ngữ `BAAI/bge-m3`.
+- Mỗi article được chia thành các text chunk tối đa 1.024 token, overlap 128 token. Mọi ảnh được tham chiếu tạo thêm một candidate ảnh + tiêu đề; text chunk và ảnh đều quy về citation gốc.
+- Nội dung bảng HTML trong luật được giữ lại dưới dạng plain text trước khi chunk, không còn bị loại bỏ khỏi embedding.
+- Query kết hợp ảnh, câu hỏi và các lựa chọn. Khi một article có nhiều ảnh, hệ thống lấy điểm candidate cao nhất rồi mới chọn `top_k`, nên citation trả về không bị trùng.
+- Không còn cắt bỏ phần cuối article. Retrieval lấy điểm cao nhất trong toàn bộ text chunk và image candidate của cùng citation, nên căn cứ ở cuối văn bản vẫn có thể được truy hồi.
+- Fine-tune một linear metric adapter 1024×1024 bằng multi-positive contrastive loss trên 418 mẫu `train.json`. Visualized-BGE gốc được đóng băng để vừa GPU 16 GB; khoảng 1,05 triệu tham số adapter được cập nhật.
+- Command `train` đánh giá mỗi epoch trên 112 mẫu dev, lưu checkpoint có F2 dev cao nhất cùng `config.json`, `predictions.json`, `metrics.json`, `resources.json` và `history.json` dưới `artifacts/experiments/visual-bge-finetune`.
+- Trong lúc chạy, CLI báo tiến trình cho encode corpus, train query, dev query và từng nhóm epoch, kèm phần trăm, thời gian đã chạy và ETA.
+- Command `retrieve` bắt buộc nạp `adapter.pt`. Stage 4 dùng adapter này cho nhánh visual; Stage 5 dùng các citation do Stage 4 trả về, không dùng Visualized-BGE làm model sinh câu trả lời.
+
+Stage này chưa tạo cache embedding riêng. Chunking làm tăng số candidate và thời gian encode; chỉ thêm cache sau khi lần chạy thực tế xác nhận đây là nút thắt.
+
+Kết quả zero-shot dev ngày 14/09/2026 được giữ làm mốc trước fine-tune: Visualized-BGE đạt F2 `0.1393` so với BM25 `0.2069`, mất khoảng 400 giây và dùng peak VRAM khoảng 12.36 GB. Visual có 12 hit riêng mà BM25 bỏ lỡ. Kết quả fine-tune phải được đo lại bằng command bên dưới; không giả định trước rằng fine-tune chắc chắn cải thiện dev.
+
+### Điều kiện tiên quyết
+
+Stage 1 phải có `data/processed/splits/dev.json`, ảnh đã giải nén dưới `data/processed/images`, và máy có đủ dung lượng cho model. Từ thư mục gốc project, cài dependency trong `.venv`:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu128
+.\.venv\Scripts\python.exe -m pip install transformers==4.44.2 sentencepiece==0.2.0 timm==1.0.9 einops==0.8.0 ftfy==6.2.3
+New-Item -ItemType Directory -Force models | Out-Null
+git clone --branch v1.4.2 --depth 1 https://github.com/FlagOpen/FlagEmbedding.git models/FlagEmbedding
+curl.exe -L "https://huggingface.co/BAAI/bge-visualized/resolve/main/Visualized_m3.pth?download=true" -o models\Visualized_m3.pth
+```
+
+Không chạy `pip install -e` cho `research/visual_bge`: bản upstream `v1.4.2` tạo metadata nhưng không expose được module `visual_bge`. CLI của project nạp trực tiếp source cố định đã clone và đặt Hugging Face cache trong `models/huggingface`.
+
+`models/` bị Git bỏ qua. File `Visualized_m3.pth` khoảng 1.75 GB; xác minh file tải đúng bằng:
+
+```powershell
+(Get-FileHash models\Visualized_m3.pth -Algorithm SHA256).Hash.ToLower()
+```
+
+Kết quả mong đợi:
+
+```text
+d14e7e8f2618b80d3f4a3283c08f79a16f09ce37d4447dac24117b44df6bd069
+```
+
+Sau đó đặt biến môi trường cho cửa sổ PowerShell hiện tại:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+```
+
+### Cách tự kiểm tra
+
+Fine-tune trên train, chọn checkpoint có F2 cao nhất trên dev, rồi dùng evaluator độc lập để đối chiếu:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task retrieval `
+  --gold data\processed\splits\dev.json `
+  --predictions artifacts\experiments\visual-bge-finetune\predictions.json
+Get-ChildItem artifacts\experiments\visual-bge-finetune
+```
+
+Kết quả mong đợi:
+
+- Trong quá trình chạy xuất hiện log dạng `[corpus] ...`, `[train-queries] ...`, `[dev-queries] ...` và `[training] 5/50 ...`.
+- Training loss phải là số hữu hạn; log có loss và dev F2 theo epoch. Retrieval và evaluator in cùng F2 của `best_epoch`, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
+- Experiment có sáu file `adapter.pt`, `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `history.json`.
+- `resources.json` báo `device: "cuda"`, tên GPU và peak VRAM; `artifacts/` vẫn không được Git theo dõi.
+
+Hãy gửi output của các lệnh trên. Stage 3 giữ trạng thái `AWAITING_USER_TEST` và chỉ chuyển thành `COMPLETED` sau khi bạn xác nhận chạy thành công.
+
+### Lỗi thường gặp
+
+- `Thiếu dependency Stage 3`: chạy lại hai lệnh `pip install` ở phần điều kiện tiên quyết trong đúng `.venv`.
+- `No module named 'visual_bge'` dù `pip show visual_bge` có kết quả: đây là lỗi editable install của upstream. Cập nhật code hiện tại và chạy lại; không cần cài editable.
+- `destination path ... already exists` khi clone: bỏ qua clone nếu `models/FlagEmbedding/research/visual_bge` đã tồn tại và tiếp tục với bước tải weight.
+- `Token indices sequence length ... 8730 > 8192` kèm `device-side assert`: phiên bản cũ encode toàn article. Code hiện tại chia article thành chunk 1.024 token; đóng terminal đã gặp CUDA assert, mở PowerShell mới rồi chạy lại.
+- `Thiếu model weight` hoặc hash không khớp: xóa file tải dở và chạy lại lệnh `curl.exe`; không dùng file sai hash.
+- Lỗi tải `BAAI/bge-m3`: lần chạy đầu cần Internet để tải config/tokenizer vào `models/huggingface`; kiểm tra kết nối và quyền ghi thư mục `models` rồi chạy lại.
+- `CUDA out of memory`: đóng process đang dùng GPU rồi chạy lại. Baseline hiện encode tuần tự; không tăng batch size.
+- `Thiếu fine-tuned adapter`: chạy `...visual_retrieval train` thành công trước khi dùng command `retrieve`.
+- `device: "cpu"`: kiểm tra `nvidia-smi`, rồi xác nhận đã cài wheel PyTorch từ index `cu128`, không phải wheel CPU.
+- `No module named multimodal_legal_rag`: chạy lại `$env:PYTHONPATH="src"` trong cùng cửa sổ PowerShell.
 
 ## Nộp kết quả private test lên Codabench
 
