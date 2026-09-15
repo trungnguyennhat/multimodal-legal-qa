@@ -10,7 +10,7 @@
 | 1 | Dữ liệu | `COMPLETED` |
 | 2 | Evaluator và baseline | `COMPLETED` |
 | 3 | Visual retrieval | `COMPLETED` |
-| 4 | Hybrid retrieval | `NOT_STARTED` |
+| 4 | Hybrid retrieval | `AWAITING_USER_TEST` |
 | 5 | Grounded legal QA | `NOT_STARTED` |
 | 6 | Thực nghiệm luận văn | `NOT_STARTED` |
 | 7 | Demo và đóng gói | `NOT_STARTED` |
@@ -405,6 +405,61 @@ Kết quả đã đo: local context 256 đạt F2 `0.4936458544`, precision `0.2
 - `Thiếu fine-tuned adapter`: chạy `...visual_retrieval train` thành công trước khi dùng command `retrieve`.
 - `device: "cpu"`: kiểm tra `nvidia-smi`, rồi xác nhận đã cài wheel PyTorch từ index `cu128`, không phải wheel CPU.
 - `No module named multimodal_legal_rag`: chạy lại `$env:PYTHONPATH="src"` trong cùng cửa sổ PowerShell.
+
+## Stage 4 — Bàn giao hybrid retrieval
+
+### Đã hoàn thành
+
+- Thêm `src/multimodal_legal_rag/hybrid_retrieval.py`, kết hợp BM25 với visual retriever bằng weighted reciprocal-rank fusion (RRF).
+- Nhánh visual bắt buộc nạp adapter citation-level tốt nhất của Stage 3 tại `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`; không dùng zero-shot.
+- Giữ cấu hình visual đã khóa: query `image-question-choices`, không thêm local image context. Hai nhánh lấy top 20 để tạo candidate pool.
+- Tìm `visual_weight` trong `0, 0.25, 0.5, 0.75, 1` và `top_k` trong `3, 5, 7` trên dev, chọn cấu hình có F2 cao nhất.
+- Lưu cấu hình, prediction, metric, resource, bảng tìm kiếm và prediction trung gian của hai nhánh để tái lập.
+
+Không thêm dependency hoặc cache embedding. RRF dùng thứ hạng thay vì trộn raw score của hai model có thang điểm khác nhau.
+
+### Điều kiện tiên quyết
+
+- Stage 1 đã tạo `data/processed/splits/dev.json` và ảnh dưới `data/processed/images`.
+- Dependency, model weight và source Visualized-BGE của Stage 3 vẫn tồn tại.
+- Adapter được chọn của Stage 3 tồn tại tại đường dẫn mặc định nêu trên.
+- Từ thư mục gốc project, đặt biến môi trường trong cửa sổ PowerShell hiện tại:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+```
+
+### Cách tự kiểm tra
+
+Chạy pipeline hybrid trên dev, sau đó đối chiếu bằng evaluator độc lập:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.hybrid_retrieval
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task retrieval `
+  --gold data\processed\splits\dev.json `
+  --predictions artifacts\experiments\hybrid-retrieval-dev\predictions.json
+Get-ChildItem artifacts\experiments\hybrid-retrieval-dev
+```
+
+Kết quả mong đợi:
+
+- Quá trình chạy có log `[model]`, `[corpus]` và `[queries]` khoảng mỗi 30 giây; đây là indexing/inference, không phải training.
+- CLI hybrid và evaluator in cùng F2, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
+- Thư mục experiment có `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `search.json` và thư mục `branches` chứa artifact BM25/visual.
+- `config.json` ghi adapter citation-level của Stage 3, `visual_query_mode: "image-question-choices"`, `visual_image_context_tokens_per_side: 0` và cấu hình fusion được chọn.
+- `resources.json` của nhánh visual báo `device: "cuda"`; `artifacts/` vẫn không được Git theo dõi.
+
+Sau khi chạy thành công, hãy gửi output hoặc báo `Stage 4 test thành công`. Khi đó Stage 4 mới được đổi thành `COMPLETED`; Stage 5 chỉ bắt đầu khi có lệnh riêng.
+
+### Lỗi thường gặp
+
+- `Thiếu fine-tuned adapter`: kiểm tra đúng artifact citation-level đã được chọn ở Stage 3; không thay bằng adapter zero-shot hoặc candidate-level.
+- `Thiếu dependency Stage 3`, model weight hay source Visualized-BGE: làm lại phần điều kiện tiên quyết của Stage 3 trong đúng `.venv`.
+- `Thiếu ảnh`: chạy lại `data prepare` của Stage 1 và giữ `--query-images` mặc định là `data/processed/images/train` cho dev.
+- `CUDA out of memory`: đóng process đang dùng GPU rồi mở PowerShell mới và chạy lại; pipeline encode tuần tự, không tăng batch size.
+- Output đã tồn tại sẽ được ghi lại trong đúng experiment dev. Nếu cần giữ một lần chạy cũ, truyền `--output` sang một thư mục experiment mới.
 
 ## Nộp kết quả private test lên Codabench
 
