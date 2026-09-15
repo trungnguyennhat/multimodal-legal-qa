@@ -9,7 +9,7 @@
 | 0 | Khởi tạo và quản trị | `COMPLETED` |
 | 1 | Dữ liệu | `COMPLETED` |
 | 2 | Evaluator và baseline | `COMPLETED` |
-| 3 | Visual retrieval | `AWAITING_USER_TEST` |
+| 3 | Visual retrieval | `COMPLETED` |
 | 4 | Hybrid retrieval | `NOT_STARTED` |
 | 5 | Grounded legal QA | `NOT_STARTED` |
 | 6 | Thực nghiệm luận văn | `NOT_STARTED` |
@@ -241,6 +241,7 @@ Người dùng đã chạy trực tiếp các lệnh và xác nhận hoàn tất
 - Trong lúc chạy, CLI báo tiến trình cho encode corpus, train query, dev query và từng nhóm epoch, kèm phần trăm, thời gian đã chạy và ETA.
 - Command `retrieve` bắt buộc nạp `adapter.pt`. Stage 4 dùng adapter này cho nhánh visual; Stage 5 dùng các citation do Stage 4 trả về, không dùng Visualized-BGE làm model sinh câu trả lời.
 - Thêm query representation ablation qua `--query-mode`: `image-question-choices` (mặc định hiện tại), `image-question`, và `question-only`. Mode `question-only` không nạp ảnh query; mỗi mode phải huấn luyện adapter riêng và ghi vào experiment riêng.
+- Đồng bộ training objective với evaluator bằng citation-level contrastive loss. Cấu hình Stage 3 được chọn là `image-question-choices`, citation-level loss, không thêm local image context và `top_k=5`; adapter nằm tại `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`.
 
 Stage này chưa tạo cache embedding riêng. Chunking làm tăng số candidate và thời gian encode; chỉ thêm cache sau khi lần chạy thực tế xác nhận đây là nút thắt.
 
@@ -313,7 +314,7 @@ Kết quả mong đợi:
 - Experiment có sáu file `adapter.pt`, `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `history.json`.
 - `resources.json` báo `device: "cuda"`, tên GPU và peak VRAM; `artifacts/` vẫn không được Git theo dõi.
 
-Hãy gửi output của các lệnh trên. Stage 3 giữ trạng thái `AWAITING_USER_TEST` và chỉ chuyển thành `COMPLETED` sau khi bạn xác nhận chạy thành công.
+Người dùng đã chạy trực tiếp baseline và các ablation, xác nhận Stage 3 hoàn tất ngày 15/09/2026. Stage 3 đã `COMPLETED`; Stage 4 chỉ bắt đầu khi có lệnh riêng.
 
 ### Query representation ablation
 
@@ -389,6 +390,8 @@ Image candidate mặc định chỉ dùng title để giữ hành vi cũ. `--ima
 ```
 
 Kết quả mong đợi: experiment có đủ sáu artifact; `config.json` ghi `loss_level: "citation"`, `query_mode: "image-question-choices"`, `image_context_tokens_per_side: 256` và `top_k: 5`; evaluator báo đủ 112 mẫu. So sánh F2 với citation-level baseline `0.4970959524`. Chỉ chọn local context nếu F2 dev cao hơn; không thử thêm kích thước cửa sổ trước khi có kết quả này.
+
+Kết quả đã đo: local context 256 đạt F2 `0.4936458544`, precision `0.2767857143`, recall `0.6579081633`; thấp hơn citation-level baseline F2 `0.4970959524`. Vì vậy Stage 3 khóa `image_context_tokens=0`; experiment được giữ làm ablation âm.
 
 ### Lỗi thường gặp
 
