@@ -240,6 +240,7 @@ Người dùng đã chạy trực tiếp các lệnh và xác nhận hoàn tất
 - Command `train` đánh giá mỗi epoch trên 112 mẫu dev, lưu checkpoint có F2 dev cao nhất cùng `config.json`, `predictions.json`, `metrics.json`, `resources.json` và `history.json` dưới `artifacts/experiments/visual-bge-finetune`.
 - Trong lúc chạy, CLI báo tiến trình cho encode corpus, train query, dev query và từng nhóm epoch, kèm phần trăm, thời gian đã chạy và ETA.
 - Command `retrieve` bắt buộc nạp `adapter.pt`. Stage 4 dùng adapter này cho nhánh visual; Stage 5 dùng các citation do Stage 4 trả về, không dùng Visualized-BGE làm model sinh câu trả lời.
+- Thêm query representation ablation qua `--query-mode`: `image-question-choices` (mặc định hiện tại), `image-question`, và `question-only`. Mode `question-only` không nạp ảnh query; mỗi mode phải huấn luyện adapter riêng và ghi vào experiment riêng.
 
 Stage này chưa tạo cache embedding riêng. Chunking làm tăng số candidate và thời gian encode; chỉ thêm cache sau khi lần chạy thực tế xác nhận đây là nút thắt.
 
@@ -313,6 +314,81 @@ Kết quả mong đợi:
 - `resources.json` báo `device: "cuda"`, tên GPU và peak VRAM; `artifacts/` vẫn không được Git theo dõi.
 
 Hãy gửi output của các lệnh trên. Stage 3 giữ trạng thái `AWAITING_USER_TEST` và chỉ chuyển thành `COMPLETED` sau khi bạn xác nhận chạy thành công.
+
+### Query representation ablation
+
+Giữ `top_k=5` đã được chọn trên dev. Kết quả hiện tại tại `artifacts/experiments/visual-bge-finetune` là baseline `image-question-choices`; không ghi đè thư mục này. Huấn luyện hai representation còn lại với cùng hyperparameter và output riêng:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train `
+  --query-mode image-question `
+  --top-k 5 `
+  --output artifacts\experiments\improvements\query-representation\visual-bge-query-image-question
+
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train `
+  --query-mode question-only `
+  --top-k 5 `
+  --output artifacts\experiments\improvements\query-representation\visual-bge-query-question-only
+```
+
+Sau mỗi lệnh, dùng evaluator độc lập:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task retrieval `
+  --gold data\processed\splits\dev.json `
+  --predictions artifacts\experiments\improvements\query-representation\visual-bge-query-image-question\predictions.json
+
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task retrieval `
+  --gold data\processed\splits\dev.json `
+  --predictions artifacts\experiments\improvements\query-representation\visual-bge-query-question-only\predictions.json
+```
+
+Kết quả mong đợi: mỗi experiment có `adapter.pt`, `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `history.json`; `config.json` ghi đúng `query_mode`; evaluator báo `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`. So sánh F2 với baseline `image-question-choices` là `0.4649128757684249`, rồi chọn duy nhất representation có F2 dev cao nhất. Không thay đổi hyperparameter khác trong ablation này.
+
+Kết quả đã đo: `image-question` đạt F2 `0.4230114246`, `question-only` đạt `0.4108874375`, đều thấp hơn baseline. Vì vậy các artifact được giữ làm ablation tại `artifacts/experiments/improvements/query-representation`, còn cấu hình được chọn vẫn là `image-question-choices`.
+
+### Citation-level loss improvement
+
+Loss mặc định `candidate` được giữ để tái lập baseline. Thí nghiệm tiếp theo gộp score các chunk/ảnh bằng max theo citation trước khi tính contrastive loss, đồng bộ training objective với inference. Giữ query representation thắng là `image-question-choices` và `top_k=5`:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train `
+  --loss-level citation `
+  --query-mode image-question-choices `
+  --top-k 5 `
+  --output artifacts\experiments\improvements\citation-level-loss\visual-bge-citation-loss
+
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task retrieval `
+  --gold data\processed\splits\dev.json `
+  --predictions artifacts\experiments\improvements\citation-level-loss\visual-bge-citation-loss\predictions.json
+```
+
+Kết quả mong đợi: experiment có đủ sáu artifact, `config.json` ghi `loss_level: "citation"` và `query_mode: "image-question-choices"`, evaluator báo đủ 112 mẫu. So sánh F2 với candidate-level baseline `0.4649128758`; chỉ chọn citation-level loss nếu F2 dev cao hơn. Nếu không, giữ adapter baseline và lưu experiment này làm ablation âm.
+
+Kết quả đã đo: citation-level loss đạt F2 `0.4970959524`, cao hơn candidate-level baseline `0.4649128758`; precision tăng từ `0.2625` lên `0.2768` và recall tăng từ `0.6148` lên `0.6661`. Khi kiểm tra lại top-k với adapter mới, k3 đạt `0.4811664585`, k5 đạt `0.4970959524`, k7 đạt `0.4566970293`; vì vậy tiếp tục khóa `top_k=5`.
+
+### Image local context improvement
+
+Image candidate mặc định chỉ dùng title để giữ hành vi cũ. `--image-context-tokens 256` bổ sung tối đa 256 token ngay trước và 256 token ngay sau marker ảnh sau khi chuyển bảng HTML thành plain text. Thí nghiệm giữ nguyên query representation, citation-level loss và top-k đã chọn:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train `
+  --loss-level citation `
+  --query-mode image-question-choices `
+  --image-context-tokens 256 `
+  --top-k 5 `
+  --output artifacts\experiments\improvements\image-local-context\visual-bge-local-context-256
+
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task retrieval `
+  --gold data\processed\splits\dev.json `
+  --predictions artifacts\experiments\improvements\image-local-context\visual-bge-local-context-256\predictions.json
+```
+
+Kết quả mong đợi: experiment có đủ sáu artifact; `config.json` ghi `loss_level: "citation"`, `query_mode: "image-question-choices"`, `image_context_tokens_per_side: 256` và `top_k: 5`; evaluator báo đủ 112 mẫu. So sánh F2 với citation-level baseline `0.4970959524`. Chỉ chọn local context nếu F2 dev cao hơn; không thử thêm kích thước cửa sổ trước khi có kết quả này.
 
 ### Lỗi thường gặp
 

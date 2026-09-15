@@ -28,6 +28,8 @@ DEFAULT_ADAPTER = DEFAULT_FINETUNE_OUTPUT / "adapter.pt"
 DEFAULT_ZERO_SHOT_OUTPUT = DEFAULT_ARTIFACTS / "visual-bge-zero-shot-dev"
 DEFAULT_VISUAL_BGE_SOURCE = PROJECT_ROOT / "models" / "FlagEmbedding" / "research" / "visual_bge"
 DEFAULT_MODEL = "BAAI/bge-m3"
+QUERY_MODES = ("image-question-choices", "image-question", "question-only")
+LOSS_LEVELS = ("candidate", "citation")
 TABLE_RE = re.compile(r"<<TABLE:\s*(.*?)\s*/TABLE>>", re.DOTALL)
 HTML_TAG_RE = re.compile(r"<[^>]+>")
 TEXT_MAX_TOKENS = 8192
@@ -51,8 +53,25 @@ def _text_chunks(tokenizer: Any, text: str) -> list[str]:
     return chunks
 
 
-def _article_candidates(source: Path, image_dir: Path, tokenizer: Any) -> list[dict[str, Any]]:
+def _local_image_text(tokenizer: Any, text: str, match: Any, context_tokens: int) -> str:
+    if context_tokens == 0:
+        return ""
+    before = IMAGE_PATTERN.sub(" ", text[:match.start()])
+    after = IMAGE_PATTERN.sub(" ", text[match.end():])
+    before_ids = tokenizer(before, add_special_tokens=False, verbose=False)["input_ids"][-context_tokens:]
+    after_ids = tokenizer(after, add_special_tokens=False, verbose=False)["input_ids"][:context_tokens]
+    return tokenizer.decode(before_ids + after_ids, skip_special_tokens=True)
+
+
+def _article_candidates(
+    source: Path,
+    image_dir: Path,
+    tokenizer: Any,
+    image_context_tokens: int = 0,
+) -> list[dict[str, Any]]:
     """Make overlapping text chunks and separate image candidates per citation."""
+    if image_context_tokens < 0:
+        raise ValueError("image-context-tokens không được âm")
     candidates: list[dict[str, Any]] = []
     for law in read_json_list(source / DATA_FILES["law"]):
         for article in law["articles"]:
@@ -60,8 +79,8 @@ def _article_candidates(source: Path, image_dir: Path, tokenizer: Any) -> list[d
                 lambda match: html.unescape(HTML_TAG_RE.sub(" ", match.group(1))),
                 str(article.get("text", "")),
             )
-            images = IMAGE_PATTERN.findall(text)
-            text = IMAGE_PATTERN.sub(" ", text)
+            image_matches = list(IMAGE_PATTERN.finditer(text))
+            text_without_images = IMAGE_PATTERN.sub(" ", text)
             base = {
                 "law_id": str(law["id"]),
                 "article_id": str(article["id"]),
@@ -69,21 +88,26 @@ def _article_candidates(source: Path, image_dir: Path, tokenizer: Any) -> list[d
             title = str(article.get("title", ""))
             candidates.extend(
                 {**base, "text": chunk, "image": None}
-                for chunk in _text_chunks(tokenizer, f"{title} {text}".strip())
+                for chunk in _text_chunks(tokenizer, f"{title} {text_without_images}".strip())
             )
-            for filename in images:
+            for match in image_matches:
+                filename = match.group(1)
                 path = image_dir / filename
                 if not path.is_file():
                     raise ValueError(f"Thiếu ảnh luật: {path}")
-                candidates.append({**base, "text": title, "image": path})
+                local_text = _local_image_text(tokenizer, text, match, image_context_tokens)
+                candidates.append({**base, "text": f"{title} {local_text}".strip(), "image": path})
     if not candidates:
         raise ValueError("corpus không có candidate")
     return candidates
 
 
-def _query_text(row: dict[str, Any]) -> str:
+def _query_text(row: dict[str, Any], query_mode: str) -> str:
+    question = str(row.get("question", ""))
+    if query_mode in {"image-question", "question-only"}:
+        return question
     choices = row.get("choices", {})
-    return str(row.get("question", "")) + " " + " ".join(str(value) for value in choices.values())
+    return question + " " + " ".join(str(value) for value in choices.values())
 
 
 def _rank_citations(scores: list[float], candidates: list[dict[str, Any]], top_k: int) -> list[dict[str, str]]:
@@ -142,17 +166,26 @@ def _load_model(model_name: str, weight: Path) -> tuple[Any, Any]:
     return torch, model
 
 
-def _embed_items(model: Any, torch: Any, items: list[dict[str, Any]], image_dir: Path | None, label: str) -> Any:
+def _embed_items(
+    model: Any,
+    torch: Any,
+    items: list[dict[str, Any]],
+    image_dir: Path | None,
+    label: str,
+    query_mode: str = "image-question-choices",
+) -> Any:
     encoded = []
     started = last_log = time.perf_counter()
     print(f"[{label}] encoding {len(items)} items", flush=True)
     model.eval()
     with torch.inference_mode():
         for done, item in enumerate(items, 1):
-            image = item["image"] if image_dir is None else image_dir / f"{item['image_id']}.jpg"
+            image = item["image"] if image_dir is None else (
+                None if query_mode == "question-only" else image_dir / f"{item['image_id']}.jpg"
+            )
             if image is not None and not image.is_file():
                 raise ValueError(f"Thiếu ảnh: {image}")
-            text = item["text"] if image_dir is None else _query_text(item)
+            text = item["text"] if image_dir is None else _query_text(item, query_mode)
             encoded.append(_encode(model, text, image).detach().cpu())
             now = time.perf_counter()
             if done == len(items) or now - last_log >= 30:
@@ -166,6 +199,15 @@ def _adapter(torch: Any, dimension: int) -> Any:
     with torch.no_grad():
         layer.weight.copy_(torch.eye(dimension))
     return layer
+
+
+def _citation_scores(torch: Any, scores: Any, keys: list[tuple[str, str]]) -> tuple[Any, list[tuple[str, str]]]:
+    citations = list(dict.fromkeys(keys))
+    groups = [
+        torch.tensor([index for index, key in enumerate(keys) if key == citation], device=scores.device)
+        for citation in citations
+    ]
+    return torch.stack([scores.index_select(1, group).max(dim=1).values for group in groups], dim=1), citations
 
 
 def _predictions(
@@ -225,6 +267,9 @@ def train(
     temperature: float,
     top_k: int,
     seed: int,
+    query_mode: str,
+    loss_level: str,
+    image_context_tokens: int,
 ) -> dict[str, Any]:
     if epochs < 1 or learning_rate <= 0 or temperature <= 0:
         raise ValueError("epochs, learning-rate và temperature phải dương")
@@ -234,18 +279,25 @@ def train(
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.reset_peak_memory_stats()
-    candidates = _article_candidates(source, image_root / "law", model.tokenizer)
+    candidates = _article_candidates(source, image_root / "law", model.tokenizer, image_context_tokens)
     train_rows = read_json_list(train_path)
     dev_rows = read_json_list(dev_path)
     candidate_embeddings = _embed_items(model, torch, candidates, None, "corpus")
-    train_embeddings = _embed_items(model, torch, train_rows, image_root / "train", "train-queries")
-    dev_embeddings = _embed_items(model, torch, dev_rows, image_root / "train", "dev-queries")
+    train_embeddings = _embed_items(
+        model, torch, train_rows, image_root / "train", "train-queries", query_mode
+    )
+    dev_embeddings = _embed_items(
+        model, torch, dev_rows, image_root / "train", "dev-queries", query_mode
+    )
     del model
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
 
     keys = [(row["law_id"], row["article_id"]) for row in candidates]
-    masks = [[key in _refs(row) for key in keys] for row in train_rows]
+    loss_keys = keys
+    if loss_level == "citation":
+        loss_keys = list(dict.fromkeys(keys))
+    masks = [[key in _refs(row) for key in loss_keys] for row in train_rows]
     keep = [index for index, mask in enumerate(masks) if any(mask)]
     if not keep:
         raise ValueError("train.json không có citation nào tồn tại trong corpus")
@@ -266,6 +318,8 @@ def train(
         queries = torch.nn.functional.normalize(adapter(train_embeddings), dim=1)
         corpus = torch.nn.functional.normalize(adapter(candidate_embeddings_device), dim=1)
         scores = queries @ corpus.T / temperature
+        if loss_level == "citation":
+            scores, _ = _citation_scores(torch, scores, keys)
         loss = (torch.logsumexp(scores, dim=1) - torch.logsumexp(scores.masked_fill(~positive_mask, float("-inf")), dim=1)).mean()
         optimizer.zero_grad()
         loss.backward()
@@ -311,6 +365,9 @@ def train(
         "learning_rate": learning_rate,
         "temperature": temperature,
         "top_k": top_k,
+        "query_mode": query_mode,
+        "loss_level": loss_level,
+        "image_context_tokens_per_side": image_context_tokens,
         "seed": seed,
         "train_samples": len(keep),
         "skipped_train_samples": len(train_rows) - len(keep),
@@ -341,6 +398,8 @@ def retrieve(
     model_name: str,
     weight: Path,
     top_k: int,
+    query_mode: str,
+    image_context_tokens: int,
 ) -> dict[str, Any]:
     if adapter_path is not None and not adapter_path.is_file():
         raise ValueError(f"Thiếu fine-tuned adapter: {adapter_path}; chạy command train trước")
@@ -350,9 +409,9 @@ def retrieve(
     if torch.cuda.is_available():
         torch.cuda.reset_peak_memory_stats()
     rows = read_json_list(input_path)
-    candidates = _article_candidates(source, image_root / "law", model.tokenizer)
+    candidates = _article_candidates(source, image_root / "law", model.tokenizer, image_context_tokens)
     candidate_embeddings = _embed_items(model, torch, candidates, None, "corpus")
-    query_embeddings = _embed_items(model, torch, rows, query_images, "queries")
+    query_embeddings = _embed_items(model, torch, rows, query_images, "queries", query_mode)
     adapter = _adapter(torch, candidate_embeddings.shape[1])
     if adapter_path is not None:
         checkpoint = torch.load(adapter_path, map_location="cpu", weights_only=True)
@@ -369,6 +428,8 @@ def retrieve(
         "weight": str(weight),
         "adapter": str(adapter_path) if adapter_path else None,
         "top_k": top_k,
+        "query_mode": query_mode,
+        "image_context_tokens_per_side": image_context_tokens,
         "chunk_tokens": CHUNK_TOKENS,
         "chunk_overlap": CHUNK_OVERLAP,
     }
@@ -399,6 +460,9 @@ def main(argv: list[str] | None = None) -> int:
     train_parser.add_argument("--temperature", type=float, default=0.05)
     train_parser.add_argument("--top-k", type=int, default=5)
     train_parser.add_argument("--seed", type=int, default=2025)
+    train_parser.add_argument("--query-mode", choices=QUERY_MODES, default="image-question-choices")
+    train_parser.add_argument("--loss-level", choices=LOSS_LEVELS, default="candidate")
+    train_parser.add_argument("--image-context-tokens", type=int, default=0)
     retrieve_parser = subparsers.add_parser("retrieve", help="Truy hồi bằng fine-tuned adapter")
     retrieve_parser.add_argument("--input", type=Path, default=DEFAULT_SPLITS / "dev.json")
     retrieve_parser.add_argument("--output", type=Path, default=DEFAULT_ARTIFACTS / "visual-bge-finetuned-retrieval-dev")
@@ -409,6 +473,8 @@ def main(argv: list[str] | None = None) -> int:
     retrieve_parser.add_argument("--model", default=DEFAULT_MODEL)
     retrieve_parser.add_argument("--weight", type=Path, default=DEFAULT_WEIGHT)
     retrieve_parser.add_argument("--top-k", type=int, default=5)
+    retrieve_parser.add_argument("--query-mode", choices=QUERY_MODES, default="image-question-choices")
+    retrieve_parser.add_argument("--image-context-tokens", type=int, default=0)
     zero_shot_parser = subparsers.add_parser("zero-shot", help="Chạy baseline trước fine-tune")
     zero_shot_parser.add_argument("--input", type=Path, default=DEFAULT_SPLITS / "dev.json")
     zero_shot_parser.add_argument("--output", type=Path, default=DEFAULT_ZERO_SHOT_OUTPUT)
@@ -418,15 +484,18 @@ def main(argv: list[str] | None = None) -> int:
     zero_shot_parser.add_argument("--model", default=DEFAULT_MODEL)
     zero_shot_parser.add_argument("--weight", type=Path, default=DEFAULT_WEIGHT)
     zero_shot_parser.add_argument("--top-k", type=int, default=5)
+    zero_shot_parser.add_argument("--query-mode", choices=QUERY_MODES, default="image-question-choices")
+    zero_shot_parser.add_argument("--image-context-tokens", type=int, default=0)
     args = parser.parse_args(argv)
     try:
         result = train(
             args.train, args.dev, args.output, args.source, args.image_root, args.model, args.weight,
             args.epochs, args.learning_rate, args.temperature, args.top_k, args.seed,
+            args.query_mode, args.loss_level, args.image_context_tokens,
         ) if args.command == "train" else retrieve(
             args.input, args.output, args.adapter if args.command == "retrieve" else None,
             args.source, args.image_root, args.query_images,
-            args.model, args.weight, args.top_k,
+            args.model, args.weight, args.top_k, args.query_mode, args.image_context_tokens,
         )
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0
