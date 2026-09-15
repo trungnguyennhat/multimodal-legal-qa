@@ -410,13 +410,14 @@ Kết quả đã đo: local context 256 đạt F2 `0.4936458544`, precision `0.2
 
 ### Đã hoàn thành
 
-- Thêm `src/multimodal_legal_rag/hybrid_retrieval.py`, kết hợp BM25 với visual retriever bằng weighted reciprocal-rank fusion (RRF).
+- Thêm `src/multimodal_legal_rag/hybrid_retrieval.py`, kết hợp nhánh example-based multimodal với nhánh corpus visual của Stage 3.
 - Nhánh visual bắt buộc nạp adapter citation-level tốt nhất của Stage 3 tại `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`; không dùng zero-shot.
-- Giữ cấu hình visual đã khóa: query `image-question-choices`, không thêm local image context. Hai nhánh lấy top 20 để tạo candidate pool.
-- Tìm `visual_weight` trong `0, 0.25, 0.5, 0.75, 1` và `top_k` trong `3, 5, 7` trên dev, chọn cấu hình có F2 cao nhất.
-- Lưu cấu hình, prediction, metric, resource, bảng tìm kiếm và prediction trung gian của hai nhánh để tái lập.
+- Nhánh example tìm query train gần nhất trong chính không gian embedding đã fine-tune, rồi truyền citation gold của các láng giềng sang query dev. Split theo `image_id` của Stage 1 ngăn ảnh train/dev trùng nhau.
+- Giữ cấu hình visual đã khóa: query `image-question-choices`, không thêm local image context. Nhánh corpus lấy top 20 để tạo candidate pool.
+- Chuẩn hóa min-max riêng từng nhánh và tìm `example_k` trong `1, 3, 5`, `example_weight` trong `0, 0.25, 0.5, 0.75`, `top_k` trong `3, 5, 7` trên dev.
+- Lưu cấu hình, prediction, metric, resource, toàn bộ bảng tìm kiếm và metric độc lập của hai nhánh để tái lập.
 
-Không thêm dependency hoặc cache embedding. RRF dùng thứ hạng thay vì trộn raw score của hai model có thang điểm khác nhau.
+Không thêm model, dependency, FAISS hoặc cache embedding. BM25-RRF trước đó đạt tốt nhất khi `visual_weight=1.0`, tức không tạo cải thiện, nên được giữ tại artifact cũ làm ablation âm và không còn là pipeline Stage 4 chính.
 
 ### Điều kiện tiên quyết
 
@@ -439,17 +440,18 @@ Chạy pipeline hybrid trên dev, sau đó đối chiếu bằng evaluator độ
 .\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
   --task retrieval `
   --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\hybrid-retrieval-dev\predictions.json
-Get-ChildItem artifacts\experiments\hybrid-retrieval-dev
+  --predictions artifacts\experiments\hybrid-example-retrieval-dev\predictions.json
+Get-ChildItem artifacts\experiments\hybrid-example-retrieval-dev
 ```
 
 Kết quả mong đợi:
 
-- Quá trình chạy có log `[model]`, `[corpus]` và `[queries]` khoảng mỗi 30 giây; đây là indexing/inference, không phải training.
+- Quá trình chạy có log `[model]`, `[corpus]`, `[train-examples]` và `[dev-queries]` khoảng mỗi 30 giây; đây là indexing/inference, không phải training.
 - CLI hybrid và evaluator in cùng F2, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
-- Thư mục experiment có `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `search.json` và thư mục `branches` chứa artifact BM25/visual.
-- `config.json` ghi adapter citation-level của Stage 3, `visual_query_mode: "image-question-choices"`, `visual_image_context_tokens_per_side: 0` và cấu hình fusion được chọn.
-- `resources.json` của nhánh visual báo `device: "cuda"`; `artifacts/` vẫn không được Git theo dõi.
+- Thư mục experiment có sáu file `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `search.json`, `branch_metrics.json`.
+- `config.json` ghi adapter citation-level của Stage 3, `query_mode: "image-question-choices"`, `image_context_tokens_per_side: 0` và cấu hình fusion được chọn.
+- `branch_metrics.json` cho phép so sánh corpus-only, example-only và hybrid ở cùng `top_k`; cấu hình chỉ được chấp nhận nếu hybrid vượt corpus-only F2 `0.4970959524` trên dev.
+- `resources.json` báo `device: "cuda"`; `artifacts/` vẫn không được Git theo dõi.
 
 Sau khi chạy thành công, hãy gửi output hoặc báo `Stage 4 test thành công`. Khi đó Stage 4 mới được đổi thành `COMPLETED`; Stage 5 chỉ bắt đầu khi có lệnh riêng.
 
@@ -460,6 +462,7 @@ Sau khi chạy thành công, hãy gửi output hoặc báo `Stage 4 test thành 
 - `Thiếu ảnh`: chạy lại `data prepare` của Stage 1 và giữ `--query-images` mặc định là `data/processed/images/train` cho dev.
 - `CUDA out of memory`: đóng process đang dùng GPU rồi mở PowerShell mới và chạy lại; pipeline encode tuần tự, không tăng batch size.
 - Output đã tồn tại sẽ được ghi lại trong đúng experiment dev. Nếu cần giữ một lần chạy cũ, truyền `--output` sang một thư mục experiment mới.
+- Hybrid không vượt F2 `0.4970959524`: giữ visual corpus-only làm cấu hình chính và ghi nhận example fusion là ablation âm; không tiếp tục chọn model bằng public/private test.
 
 ## Nộp kết quả private test lên Codabench
 
