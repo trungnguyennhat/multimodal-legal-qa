@@ -278,6 +278,20 @@ $env:PYTHONPATH="src"
 $env:PYTHONUTF8="1"
 ```
 
+### Chạy baseline trước fine-tune
+
+Command `zero-shot` dùng trực tiếp Visualized-BGE, không đọc hoặc tạo `adapter.pt`. Đây chỉ là mốc so sánh/ablation; Stage 4 trở đi vẫn dùng adapter đã fine-tune.
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval zero-shot
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task retrieval `
+  --gold data\processed\splits\dev.json `
+  --predictions artifacts\experiments\visual-bge-zero-shot-dev\predictions.json
+```
+
+Kết quả nằm trong `artifacts/experiments/visual-bge-zero-shot-dev`. Vì code hiện tại đã chuyển sang chunk 1.024 token và giữ nội dung bảng, kết quả này có thể khác mốc zero-shot cũ F2 `0.1393`.
+
 ### Cách tự kiểm tra
 
 Fine-tune trên train, chọn checkpoint có F2 cao nhất trên dev, rồi dùng evaluator độc lập để đối chiếu:

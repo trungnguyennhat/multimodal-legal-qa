@@ -25,6 +25,7 @@ DEFAULT_ARTIFACTS = PROJECT_ROOT / "artifacts" / "experiments"
 DEFAULT_WEIGHT = PROJECT_ROOT / "models" / "Visualized_m3.pth"
 DEFAULT_FINETUNE_OUTPUT = DEFAULT_ARTIFACTS / "visual-bge-finetune"
 DEFAULT_ADAPTER = DEFAULT_FINETUNE_OUTPUT / "adapter.pt"
+DEFAULT_ZERO_SHOT_OUTPUT = DEFAULT_ARTIFACTS / "visual-bge-zero-shot-dev"
 DEFAULT_VISUAL_BGE_SOURCE = PROJECT_ROOT / "models" / "FlagEmbedding" / "research" / "visual_bge"
 DEFAULT_MODEL = "BAAI/bge-m3"
 TABLE_RE = re.compile(r"<<TABLE:\s*(.*?)\s*/TABLE>>", re.DOTALL)
@@ -333,7 +334,7 @@ def train(
 def retrieve(
     input_path: Path,
     output: Path,
-    adapter_path: Path,
+    adapter_path: Path | None,
     source: Path,
     image_root: Path,
     query_images: Path,
@@ -341,7 +342,7 @@ def retrieve(
     weight: Path,
     top_k: int,
 ) -> dict[str, Any]:
-    if not adapter_path.is_file():
+    if adapter_path is not None and not adapter_path.is_file():
         raise ValueError(f"Thiếu fine-tuned adapter: {adapter_path}; chạy command train trước")
     output.mkdir(parents=True, exist_ok=True)
     started = time.perf_counter()
@@ -352,19 +353,21 @@ def retrieve(
     candidates = _article_candidates(source, image_root / "law", model.tokenizer)
     candidate_embeddings = _embed_items(model, torch, candidates, None, "corpus")
     query_embeddings = _embed_items(model, torch, rows, query_images, "queries")
-    checkpoint = torch.load(adapter_path, map_location="cpu", weights_only=True)
-    adapter = _adapter(torch, int(checkpoint["dimension"]))
-    adapter.load_state_dict(checkpoint["state_dict"])
+    adapter = _adapter(torch, candidate_embeddings.shape[1])
+    if adapter_path is not None:
+        checkpoint = torch.load(adapter_path, map_location="cpu", weights_only=True)
+        adapter = _adapter(torch, int(checkpoint["dimension"]))
+        adapter.load_state_dict(checkpoint["state_dict"])
     predictions = _predictions(torch, rows, candidates, query_embeddings, candidate_embeddings, adapter, top_k)
     metrics = retrieval_metrics(predictions, rows) if all("relevant_articles" in row for row in rows) else None
     config = {
-        "method": "visualized-bge-finetuned-adapter",
+        "method": "visualized-bge-finetuned-adapter" if adapter_path else "visualized-bge-zero-shot",
         "input": str(input_path),
         "source": str(source),
         "query_images": str(query_images),
         "model": model_name,
         "weight": str(weight),
-        "adapter": str(adapter_path),
+        "adapter": str(adapter_path) if adapter_path else None,
         "top_k": top_k,
         "chunk_tokens": CHUNK_TOKENS,
         "chunk_overlap": CHUNK_OVERLAP,
@@ -406,13 +409,23 @@ def main(argv: list[str] | None = None) -> int:
     retrieve_parser.add_argument("--model", default=DEFAULT_MODEL)
     retrieve_parser.add_argument("--weight", type=Path, default=DEFAULT_WEIGHT)
     retrieve_parser.add_argument("--top-k", type=int, default=5)
+    zero_shot_parser = subparsers.add_parser("zero-shot", help="Chạy baseline trước fine-tune")
+    zero_shot_parser.add_argument("--input", type=Path, default=DEFAULT_SPLITS / "dev.json")
+    zero_shot_parser.add_argument("--output", type=Path, default=DEFAULT_ZERO_SHOT_OUTPUT)
+    zero_shot_parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
+    zero_shot_parser.add_argument("--image-root", type=Path, default=DEFAULT_IMAGES)
+    zero_shot_parser.add_argument("--query-images", type=Path, default=DEFAULT_IMAGES / "train")
+    zero_shot_parser.add_argument("--model", default=DEFAULT_MODEL)
+    zero_shot_parser.add_argument("--weight", type=Path, default=DEFAULT_WEIGHT)
+    zero_shot_parser.add_argument("--top-k", type=int, default=5)
     args = parser.parse_args(argv)
     try:
         result = train(
             args.train, args.dev, args.output, args.source, args.image_root, args.model, args.weight,
             args.epochs, args.learning_rate, args.temperature, args.top_k, args.seed,
         ) if args.command == "train" else retrieve(
-            args.input, args.output, args.adapter, args.source, args.image_root, args.query_images,
+            args.input, args.output, args.adapter if args.command == "retrieve" else None,
+            args.source, args.image_root, args.query_images,
             args.model, args.weight, args.top_k,
         )
         print(json.dumps(result, ensure_ascii=False, indent=2))
