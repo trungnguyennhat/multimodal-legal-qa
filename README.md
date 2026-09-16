@@ -10,7 +10,7 @@
 | 1 | Dữ liệu | `COMPLETED` |
 | 2 | Evaluator và baseline | `COMPLETED` |
 | 3 | Visual retrieval | `COMPLETED` |
-| 4 | Hybrid retrieval | `AWAITING_USER_TEST` |
+| 4 | Hybrid retrieval | `COMPLETED` |
 | 5 | Grounded legal QA | `NOT_STARTED` |
 | 6 | Thực nghiệm luận văn | `NOT_STARTED` |
 | 7 | Demo và đóng gói | `NOT_STARTED` |
@@ -412,10 +412,11 @@ Kết quả đã đo: local context 256 đạt F2 `0.4936458544`, precision `0.2
 
 - Thêm `src/multimodal_legal_rag/hybrid_retrieval.py`, kết hợp nhánh example-based multimodal với nhánh corpus visual của Stage 3.
 - Nhánh visual bắt buộc nạp adapter citation-level tốt nhất của Stage 3 tại `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`; không dùng zero-shot.
-- Nhánh example tìm query train gần nhất trong chính không gian embedding đã fine-tune, rồi truyền citation gold của các láng giềng sang query dev. Split theo `image_id` của Stage 1 ngăn ảnh train/dev trùng nhau.
+- Nhánh example tìm query train gần nhất trong chính không gian embedding đã fine-tune, rồi cộng similarity của các láng giềng cùng trích dẫn trước khi truyền citation sang query dev. Split theo `image_id` của Stage 1 ngăn ảnh train/dev trùng nhau.
 - Giữ cấu hình visual đã khóa: query `image-question-choices`, không thêm local image context. Nhánh corpus lấy top 20 để tạo candidate pool.
 - Chuẩn hóa min-max riêng từng nhánh và tìm `example_k` trong `1, 3, 5`, `example_weight` trong `0, 0.25, 0.5, 0.75`, `top_k` trong `3, 5, 7` trên dev.
 - Lưu cấu hình, prediction, metric, resource, toàn bộ bảng tìm kiếm và metric độc lập của hai nhánh để tái lập.
+- Phép cộng consensus đã được thử trên dev: cấu hình `example_k=3`, `example_weight=0.5`, `top_k=5` đạt F2 `0.5445245573`, precision `0.3089285714`, recall `0.7216836735`; cao hơn phép lấy maximum trước đó có F2 `0.5330363192`.
 
 Không thêm model, dependency, FAISS hoặc cache embedding. BM25-RRF trước đó đạt tốt nhất khi `visual_weight=1.0`, tức không tạo cải thiện, nên được giữ tại artifact cũ làm ablation âm và không còn là pipeline Stage 4 chính.
 
@@ -450,10 +451,11 @@ Kết quả mong đợi:
 - CLI hybrid và evaluator in cùng F2, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
 - Thư mục experiment có sáu file `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `search.json`, `branch_metrics.json`.
 - `config.json` ghi adapter citation-level của Stage 3, `query_mode: "image-question-choices"`, `image_context_tokens_per_side: 0` và cấu hình fusion được chọn.
+- Với cùng dữ liệu và adapter đã nêu, cấu hình được chọn dự kiến là `example_k=3`, `example_weight=0.5`, `top_k=5`, F2 khoảng `0.5445245573`.
 - `branch_metrics.json` cho phép so sánh corpus-only, example-only và hybrid ở cùng `top_k`; cấu hình chỉ được chấp nhận nếu hybrid vượt corpus-only F2 `0.4970959524` trên dev.
 - `resources.json` báo `device: "cuda"`; `artifacts/` vẫn không được Git theo dõi.
 
-Sau khi chạy thành công, hãy gửi output hoặc báo `Stage 4 test thành công`. Khi đó Stage 4 mới được đổi thành `COMPLETED`; Stage 5 chỉ bắt đầu khi có lệnh riêng.
+Người dùng đã duyệt sum-consensus và xác nhận kết thúc Stage 4 ngày 16/09/2026. Confidence gating và dynamic top-k chỉ được thử trong bộ nhớ, không cải thiện đủ để chọn nên không được thêm vào pipeline. Stage 4 đã `COMPLETED`; Stage 5 chỉ bắt đầu khi có lệnh riêng.
 
 ### Lỗi thường gặp
 

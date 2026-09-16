@@ -70,7 +70,7 @@ def _example_scores(
         for index in neighbors:
             score = float(query_scores[index])
             for citation in _refs(train_rows[index]) & corpus_keys:
-                citations[citation] = max(score, citations.get(citation, float("-inf")))
+                citations[citation] = citations.get(citation, 0.0) + score
         result.append(citations)
     return result
 
@@ -190,7 +190,7 @@ def tune(
         "query_mode": "image-question-choices", "image_context_tokens_per_side": 0,
         "branch_depth": branch_depth,
         "normalization": "per-query min-max per branch",
-        "example_score_aggregation": "maximum similarity among selected train neighbors",
+        "example_score_aggregation": "sum similarity among selected train neighbors",
         "searched_example_ks": list(example_ks),
         "searched_example_weights": list(example_weights),
         "searched_top_ks": list(top_ks),
