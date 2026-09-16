@@ -11,7 +11,7 @@
 | 2 | Evaluator và baseline | `COMPLETED` |
 | 3 | Visual retrieval | `COMPLETED` |
 | 4 | Hybrid retrieval | `COMPLETED` |
-| 5 | Grounded legal QA | `NOT_STARTED` |
+| 5 | Grounded legal QA | `AWAITING_USER_TEST` |
 | 6 | Thực nghiệm luận văn | `NOT_STARTED` |
 | 7 | Demo và đóng gói | `NOT_STARTED` |
 
@@ -465,6 +465,100 @@ Người dùng đã duyệt sum-consensus và xác nhận kết thúc Stage 4 ng
 - `CUDA out of memory`: đóng process đang dùng GPU rồi mở PowerShell mới và chạy lại; pipeline encode tuần tự, không tăng batch size.
 - Output đã tồn tại sẽ được ghi lại trong đúng experiment dev. Nếu cần giữ một lần chạy cũ, truyền `--output` sang một thư mục experiment mới.
 - Hybrid không vượt F2 `0.4970959524`: giữ visual corpus-only làm cấu hình chính và ghi nhận example fusion là ablation âm; không tiếp tục chọn model bằng public/private test.
+
+## Stage 5 — Bàn giao grounded legal QA
+
+### Đã hoàn thành
+
+- Thêm `src/multimodal_legal_rag/grounded_qa.py`, dùng `Qwen/Qwen2.5-VL-3B-Instruct` ở BF16 để trả lời từ ảnh câu hỏi, lựa chọn và evidence thuộc citation Stage 4.
+- Citation chính được đọc từ `artifacts/experiments/hybrid-example-retrieval-dev/predictions.json`; Stage 5 không chạy lại hoặc thay đổi retriever.
+- Evidence không được chọn bằng keyword. Pipeline dùng lại Visualized-BGE và adapter citation-level đã fine-tune ở Stage 3 để so khớp semantic giữa ảnh + câu hỏi + choices với các text chunk hoặc ảnh luật nằm trong từng citation.
+- Các citation bất thường vốn có trong gold được resolve mà không sửa dữ liệu nguồn: hậu tố số `.0` ánh xạ về article số tương ứng, nhãn ghép như `22 B.15` xét cả hai article, và hai alias đã kiểm kê được ánh xạ tường minh `G1.1 → G.1`, `I.414 → E.14`. Artifact giữ cả nhãn nguồn và article corpus đã chọn; code không dùng fuzzy matching có thể nhầm article chỉ nhắc lại cùng ký hiệu.
+- Mỗi citation giữ candidate có cosine similarity cao nhất. Text corpus vẫn dùng chunk 1.024 token, overlap 128 token; image candidate được truyền trực tiếp cho Qwen khi được chọn.
+- Visualized-BGE được giải phóng trước khi nạp Qwen để hai model không cùng chiếm VRAM.
+- So sánh đúng hai prompt `direct-answer` và `evidence-first` trên dev. Chọn Accuracy cao nhất; nếu hòa, giữ `direct-answer` vì đơn giản hơn.
+- Kết quả chính dùng citation Stage 4. Một lượt riêng dùng gold citation được lưu làm oracle upper bound, không tham gia chọn prompt và không thay thế score chính.
+- Generation là greedy, `max_new_tokens=8`; output chỉ chấp nhận `A/B/C/D` hoặc `Đúng/Sai`. Output không hợp lệ được ghi lại và tính sai, không tự thay bằng nhãn đoán.
+- Các bước lâu in log khoảng mỗi 30 giây với số mẫu, phần trăm, elapsed và ETA. Đây là indexing/inference, không phải training.
+
+Experiment mặc định nằm tại `artifacts/experiments/grounded-qa-dev` và gồm tám file:
+
+```text
+config.json
+evidence.json
+prompt_search.json
+predictions.json
+metrics.json
+oracle_predictions.json
+oracle_metrics.json
+resources.json
+```
+
+`evidence.json` chỉ lưu citation, candidate index, modality và similarity để tái lập lựa chọn; không sao chép toàn bộ corpus luật.
+
+### Điều kiện tiên quyết
+
+- Stage 1 đã tạo `data/processed/splits/dev.json` và ảnh dưới `data/processed/images`.
+- Dependency, source Visualized-BGE, weight và adapter citation-level của Stage 3 vẫn tồn tại.
+- Stage 4 đã tạo `artifacts/experiments/hybrid-example-retrieval-dev/predictions.json` với top-5 citation cho đủ 112 mẫu dev.
+- Windows native là môi trường chính. Ubuntu/WSL chỉ cần dùng nếu máy gặp lỗi CUDA/operator không xử lý được trên Windows.
+- Cài dependency Stage 5 vào đúng `.venv`:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install --upgrade `
+  transformers==4.49.0 `
+  accelerate==1.4.0 `
+  qwen-vl-utils==0.0.8
+```
+
+Không cài `bitsandbytes`, FlashAttention hoặc package vào Python hệ thống. Lần chạy đầu cần Internet để tải `Qwen/Qwen2.5-VL-3B-Instruct`; model được cache dưới `models/huggingface` và không được Git theo dõi.
+
+Từ thư mục gốc project, đặt biến môi trường trong cửa sổ PowerShell hiện tại:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+```
+
+### Cách tự kiểm tra
+
+Chạy pipeline QA thực tế, sau đó đối chiếu prediction chính bằng evaluator Stage 2:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task qa `
+  --gold data\processed\splits\dev.json `
+  --predictions artifacts\experiments\grounded-qa-dev\predictions.json
+Get-ChildItem artifacts\experiments\grounded-qa-dev
+```
+
+Kết quả mong đợi:
+
+- Có log `[evidence-indexing]`, `[evidence-selection]`, `[prompt-evaluation:direct-answer]`, `[prompt-evaluation:evidence-first]` và `[oracle-inference]`; không có bước nào được gọi là training.
+- Pipeline và evaluator in cùng Accuracy chính, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
+- Mọi `answer` trong `predictions.json` là `A/B/C/D` cho Multiple choice hoặc `Đúng/Sai` cho Yes/No. `prompt_search.json` không có invalid output ở prompt được chọn.
+- Mỗi evidence trong `evidence.json` thuộc đúng citation tương ứng; `modality` là `text` hoặc `image`, có `candidate_index`, `similarity`, citation nguồn và `corpus_law_id`/`corpus_article_id` đã resolve.
+- `config.json` ghi adapter citation-level Stage 3, `selected_prompt`, `evidence_per_citation: 1`, BF16, SDPA và greedy decoding.
+- `oracle_metrics.json` chỉ là upper bound. Accuracy chính để báo cáo pipeline nằm trong `metrics.json`.
+- `resources.json` báo `device: "cuda"`, tên GPU, peak VRAM, thời gian và đúng phiên bản dependency.
+- Thư mục experiment có đủ tám file nêu trên; `artifacts/` và model cache vẫn không được Git theo dõi.
+
+Sau khi các lệnh chạy thành công, hãy báo `Stage 5 test thành công`. Khi đó Stage 5 mới được chuyển từ `AWAITING_USER_TEST` sang `COMPLETED`; Stage 6 chỉ bắt đầu khi có lệnh riêng.
+
+### Lỗi thường gặp
+
+- `Thiếu dependency Stage 5` hoặc `KeyError: 'qwen2_5_vl'`: chạy lại đúng lệnh cài ba package ở trên trong `.venv`; không dùng Transformers 4.44.2 cũ.
+- Lỗi tải `Qwen/Qwen2.5-VL-3B-Instruct`: kiểm tra Internet và quyền ghi `models/huggingface`, rồi chạy lại. Không commit model cache.
+- `Thiếu fine-tuned adapter Stage 3`: kiểm tra `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`; không thay bằng zero-shot hoặc candidate-level adapter.
+- Thiếu prediction Stage 4: chạy lại command hybrid retrieval ở phần Stage 4 trước khi chạy QA.
+- Citation không tồn tại, prediction thiếu/trùng ID hoặc thiếu ảnh: sửa đầu vào tương ứng; pipeline dừng trước khi nạp Qwen thay vì âm thầm bỏ qua.
+- Gold báo `G1.1`, `I.414`, `9.0`, `22.0` hoặc `22 B.15`: đây là các nhãn không trùng trực tiếp ID article cấp cao trong corpus chính thức. Code hiện tại tự resolve có kiểm tra và ghi mapping vào `evidence.json`; không sửa JSON nguồn bằng tay.
+- `Stage 5 yêu cầu CUDA`: kiểm tra `nvidia-smi` và wheel PyTorch CUDA 12.8 trong `.venv`. Pipeline BF16 này không có CPU fallback.
+- `CUDA out of memory`: đóng process đang dùng GPU, mở PowerShell mới và chạy lại. Pipeline đã giải phóng retriever trước khi nạp Qwen; không cài quantization hoặc đổi kiến trúc trong Stage 5.
+- `[Errno 22] Invalid argument: '/C:/...'`: phiên bản cũ truyền ảnh bằng `file://` URI nên `%20` trong đường dẫn Windows không được giải mã. Code hiện tại truyền native Windows path và đặt giới hạn pixel trên từng ảnh; cập nhật code rồi chạy lại.
+- Cảnh báo Hugging Face về symlink Windows hoặc thiếu `hf_xet`: cache vẫn hoạt động và không làm sai kết quả; không cần chạy PowerShell bằng Administrator hoặc cài thêm package. Model đã tải xong sẽ được dùng lại từ cache.
+- Có invalid output trong `prompt_search.json`: gửi lại raw output và log để sửa parser/prompt trong Stage 5; không chỉnh prediction thủ công.
 
 ## Nộp kết quả private test lên Codabench
 
