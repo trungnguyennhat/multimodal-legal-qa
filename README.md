@@ -544,7 +544,7 @@ Kết quả mong đợi:
 - `resources.json` báo `device: "cuda"`, tên GPU, peak VRAM, thời gian và đúng phiên bản dependency.
 - Thư mục experiment có đủ tám file nêu trên; `artifacts/` và model cache vẫn không được Git theo dõi.
 
-Sau khi các lệnh chạy thành công, hãy báo `Stage 5 test thành công`. Khi đó Stage 5 mới được chuyển từ `AWAITING_USER_TEST` sang `COMPLETED`; Stage 6 chỉ bắt đầu khi có lệnh riêng.
+Người dùng đã chạy và chấp nhận kết quả dev ngày 17/09/2026: `64/112`, Accuracy `0.5714285714`; oracle dùng gold citation đạt `75/112`, Accuracy `0.6696428571`. `direct-answer` được khóa làm prompt chính. Stage 5 đang `AWAITING_USER_TEST` cho lần đánh giá public test cuối cùng; Stage 6 chỉ bắt đầu khi có lệnh riêng.
 
 ### Lỗi thường gặp
 
@@ -559,6 +559,62 @@ Sau khi các lệnh chạy thành công, hãy báo `Stage 5 test thành công`. 
 - `[Errno 22] Invalid argument: '/C:/...'`: phiên bản cũ truyền ảnh bằng `file://` URI nên `%20` trong đường dẫn Windows không được giải mã. Code hiện tại truyền native Windows path và đặt giới hạn pixel trên từng ảnh; cập nhật code rồi chạy lại.
 - Cảnh báo Hugging Face về symlink Windows hoặc thiếu `hf_xet`: cache vẫn hoạt động và không làm sai kết quả; không cần chạy PowerShell bằng Administrator hoặc cài thêm package. Model đã tải xong sẽ được dùng lại từ cache.
 - Có invalid output trong `prompt_search.json`: gửi lại raw output và log để sửa parser/prompt trong Stage 5; không chỉnh prediction thủ công.
+
+### Đánh giá public test với cấu hình đã khóa
+
+Output được tách riêng dưới `artifacts/public-test`, ngang cấp với `artifacts/experiments`. Không tìm lại tham số trên public test: retrieval giữ đúng `example_k=3`, weight `0.5`, top-5 đã chọn trên dev; QA chỉ chạy `direct-answer` và bỏ oracle.
+
+Chạy lần lượt từng bước trong PowerShell từ thư mục gốc project:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+New-Item -ItemType Directory -Force artifacts\public-test
+```
+
+1. Chạy retrieval với cấu hình dev đã khóa:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.hybrid_retrieval `
+  --dev "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
+  --query-images data\processed\images\public_test `
+  --example-ks 3 `
+  --example-weights 0.5 `
+  --top-ks 5 `
+  --output artifacts\public-test\retrieval
+```
+
+2. Đánh giá retrieval:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task retrieval `
+  --gold "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
+  --predictions artifacts\public-test\retrieval\predictions.json
+```
+
+3. Chạy đúng một lượt QA, không prompt search và không oracle:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa `
+  --input "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
+  --query-images data\processed\images\public_test `
+  --retrieval-predictions artifacts\public-test\retrieval\predictions.json `
+  --prompt direct-answer `
+  --skip-oracle `
+  --output artifacts\public-test\qa
+```
+
+4. Đánh giá QA:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
+  --task qa `
+  --gold "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
+  --predictions artifacts\public-test\qa\predictions.json
+```
+
+Mong đợi cả hai evaluator báo `samples: 100`, không thiếu/thừa prediction. Thư mục `qa` không có artifact oracle; public test chỉ dùng để báo cáo, không dùng kết quả này để đổi model, prompt hoặc tham số.
 
 ## Nộp kết quả private test lên Codabench
 

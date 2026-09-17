@@ -109,6 +109,7 @@ def tune(
     example_ks: tuple[int, ...],
     example_weights: tuple[float, ...],
     top_ks: tuple[int, ...],
+    query_images: Path | None = None,
 ) -> dict[str, Any]:
     if not adapter_path.is_file():
         raise ValueError(f"Thiếu fine-tuned adapter Stage 3: {adapter_path}")
@@ -127,7 +128,7 @@ def tune(
     candidates = _article_candidates(source, image_root / "law", model.tokenizer, 0)
     candidate_embeddings = _embed_items(model, torch, candidates, None, "corpus")
     train_embeddings = _embed_items(model, torch, train_rows, image_root / "train", "train-examples")
-    dev_embeddings = _embed_items(model, torch, dev_rows, image_root / "train", "dev-queries")
+    dev_embeddings = _embed_items(model, torch, dev_rows, query_images or image_root / "train", "dev-queries")
     del model
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
@@ -243,11 +244,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--example-ks", type=_int_list, default=DEFAULT_EXAMPLE_KS)
     parser.add_argument("--example-weights", type=_float_list, default=DEFAULT_WEIGHTS)
     parser.add_argument("--top-ks", type=_int_list, default=DEFAULT_TOP_KS)
+    parser.add_argument("--query-images", type=Path)
     args = parser.parse_args(argv)
     try:
         result = tune(
             args.train, args.dev, args.output, args.source, args.image_root, args.adapter,
             args.model, args.weight, args.branch_depth, args.example_ks, args.example_weights, args.top_ks,
+            args.query_images,
         )
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0

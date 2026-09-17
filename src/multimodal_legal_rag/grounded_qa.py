@@ -58,7 +58,8 @@ def _ordered_refs(row: dict[str, Any], label: str) -> list[tuple[str, str]]:
 
 
 def _validate_inputs(
-    rows: list[dict[str, Any]], retrieval: list[dict[str, Any]], candidates: list[dict[str, Any]], image_root: Path,
+    rows: list[dict[str, Any]], retrieval: list[dict[str, Any]], candidates: list[dict[str, Any]],
+    query_images: Path, include_oracle: bool,
 ) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, list[dict[str, Any]]]]]:
     gold = _by_id(rows, "gold")
     predicted = _by_id(retrieval, "retrieval prediction")
@@ -81,10 +82,13 @@ def _validate_inputs(
             not isinstance(row.get("choices"), dict) or set(row["choices"]) != {"A", "B", "C", "D"}
         ):
             raise ValueError(f"gold {sample_id} phải có choices A/B/C/D")
-        image = image_root / "train" / f"{row['image_id']}.jpg"
+        image = query_images / f"{row['image_id']}.jpg"
         if not image.is_file():
             raise ValueError(f"Thiếu ảnh query: {image}")
-        for label, source in (("gold", row), ("retrieval", predicted[sample_id])):
+        sources = [("retrieval", predicted[sample_id])]
+        if include_oracle:
+            sources.insert(0, ("gold", row))
+        for label, source in sources:
             refs = _ordered_refs(source, label)
             if label == "retrieval" and len(refs) != 5:
                 raise ValueError(f"retrieval {sample_id} phải có đúng top-5 citation, nhận {len(refs)}")
@@ -131,6 +135,8 @@ def _select_evidence(
     adapter_path: Path,
     retrieval_model: str,
     retrieval_weight: Path,
+    query_images: Path,
+    include_oracle: bool,
 ) -> tuple[dict[str, dict[str, list[dict[str, Any]]]], dict[int, dict[str, Any]], dict[str, Any]]:
     if not adapter_path.is_file():
         raise ValueError(f"Thiếu fine-tuned adapter Stage 3: {adapter_path}")
@@ -140,11 +146,14 @@ def _select_evidence(
         torch.cuda.reset_peak_memory_stats()
 
     all_candidates = _article_candidates(source, image_root / "law", model.tokenizer, 0)
-    retrieval_by_id, resolved = _validate_inputs(rows, list(retrieval_by_id.values()), all_candidates, image_root)
+    retrieval_by_id, resolved = _validate_inputs(
+        rows, list(retrieval_by_id.values()), all_candidates, query_images, include_oracle,
+    )
+    modes = ("retrieved", "oracle") if include_oracle else ("retrieved",)
     required = {
         tuple(key)
         for row in rows
-        for mode in ("retrieved", "oracle")
+        for mode in modes
         for citation in resolved[str(row["id"])][mode]
         for key in citation["corpus_keys"]
     }
@@ -155,7 +164,7 @@ def _select_evidence(
     ]
     print(f"[evidence-indexing] {len(candidates)}/{len(all_candidates)} candidates thuộc citation cần dùng", flush=True)
     candidate_embeddings = _embed_items(model, torch, candidates, None, "evidence-indexing")
-    query_embeddings = _embed_items(model, torch, rows, image_root / "train", "evidence-selection")
+    query_embeddings = _embed_items(model, torch, rows, query_images, "evidence-selection")
     del model
     if torch.cuda.is_available():
         evidence_peak = torch.cuda.max_memory_allocated()
@@ -181,7 +190,7 @@ def _select_evidence(
     for row_index, row in enumerate(rows):
         sample_id = str(row["id"])
         selected[sample_id] = {}
-        for mode in ("retrieved", "oracle"):
+        for mode in modes:
             evidence = []
             for citation in resolved[sample_id][mode]:
                 choices = [position for key in citation["corpus_keys"] for position in positions[tuple(key)]]
@@ -236,12 +245,12 @@ def _prompt_text(row: dict[str, Any], prompt_name: str, evidence: list[dict[str,
 
 def _messages(
     row: dict[str, Any], prompt_name: str, evidence: list[dict[str, Any]], candidates: dict[int, dict[str, Any]],
-    image_root: Path,
+    query_images: Path,
 ) -> list[dict[str, Any]]:
     content: list[dict[str, Any]] = [
         {
             "type": "image",
-            "image": str((image_root / "train" / f"{row['image_id']}.jpg").resolve()),
+            "image": str((query_images / f"{row['image_id']}.jpg").resolve()),
             "min_pixels": MIN_PIXELS,
             "max_pixels": MAX_PIXELS,
         },
@@ -291,7 +300,7 @@ def _infer(
     rows: list[dict[str, Any]],
     evidence_by_id: dict[str, dict[str, list[dict[str, Any]]]],
     candidates: dict[int, dict[str, Any]],
-    image_root: Path,
+    query_images: Path,
     prompt_name: str,
     mode: str,
 ) -> tuple[list[dict[str, Any]], list[dict[str, str]]]:
@@ -304,7 +313,7 @@ def _infer(
         for done, row in enumerate(rows, 1):
             sample_id = str(row["id"])
             evidence = evidence_by_id[sample_id][mode]
-            messages = _messages(row, prompt_name, evidence, candidates, image_root)
+            messages = _messages(row, prompt_name, evidence, candidates, query_images)
             text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
             image_inputs, video_inputs = process_vision_info(messages)
             inputs = processor(
@@ -344,6 +353,9 @@ def run(
     retrieval_model: str,
     retrieval_weight: Path,
     qa_model: str,
+    query_images: Path | None = None,
+    prompts: tuple[str, ...] = PROMPTS,
+    include_oracle: bool = True,
 ) -> dict[str, Any]:
     started = time.perf_counter()
     rows = read_json_list(input_path)
@@ -351,8 +363,10 @@ def run(
         raise ValueError("input QA không được rỗng")
     retrieval = read_json_list(retrieval_path)
     retrieval_by_id = _by_id(retrieval, "retrieval prediction")
+    query_images = query_images or image_root / "train"
     evidence, candidates, evidence_resources = _select_evidence(
         rows, retrieval_by_id, source, image_root, adapter_path, retrieval_model, retrieval_weight,
+        query_images, include_oracle,
     )
 
     os.environ.setdefault("HF_HOME", str(PROJECT_ROOT / "models" / "huggingface"))
@@ -387,10 +401,10 @@ def run(
 
     prompt_search = []
     best: tuple[str, list[dict[str, Any]], dict[str, Any]] | None = None
-    for prompt_name in PROMPTS:
+    for prompt_name in prompts:
         predictions, invalid = _infer(
             model, processor, process_vision_info, torch, rows, evidence, candidates,
-            image_root, prompt_name, "retrieved",
+            query_images, prompt_name, "retrieved",
         )
         metrics = accuracy_metrics(predictions, rows)
         prompt_search.append({
@@ -400,11 +414,15 @@ def run(
             best = (prompt_name, predictions, metrics)
     assert best is not None
     selected_prompt, predictions, metrics = best
-    oracle_predictions, oracle_invalid = _infer(
-        model, processor, process_vision_info, torch, rows, evidence, candidates,
-        image_root, selected_prompt, "oracle",
-    )
-    oracle_metrics = accuracy_metrics(oracle_predictions, rows)
+    oracle_predictions = None
+    oracle_metrics = None
+    oracle_invalid: list[dict[str, str]] = []
+    if include_oracle:
+        oracle_predictions, oracle_invalid = _infer(
+            model, processor, process_vision_info, torch, rows, evidence, candidates,
+            query_images, selected_prompt, "oracle",
+        )
+        oracle_metrics = accuracy_metrics(oracle_predictions, rows)
     qa_peak = torch.cuda.max_memory_allocated()
 
     config = {
@@ -413,6 +431,7 @@ def run(
         "retrieval_predictions": str(retrieval_path),
         "source": str(source),
         "image_root": str(image_root),
+        "query_images": str(query_images),
         "retrieval_model": retrieval_model,
         "retrieval_weight": str(retrieval_weight),
         "adapter": str(adapter_path),
@@ -420,7 +439,7 @@ def run(
         "qa_model_revision": qa_model_revision,
         "qa_dtype": "bfloat16",
         "attention": "sdpa",
-        "prompts": list(PROMPTS),
+        "prompts": list(prompts),
         "selected_prompt": selected_prompt,
         "prompt_selection": "highest dev Accuracy; ties keep direct-answer",
         "evidence_per_citation": 1,
@@ -431,7 +450,7 @@ def run(
         "max_pixels": MAX_PIXELS,
         "do_sample": False,
         "max_new_tokens": MAX_NEW_TOKENS,
-        "oracle_role": "upper bound only; not the primary pipeline score",
+        "oracle_role": "upper bound only; not the primary pipeline score" if include_oracle else "skipped",
     }
     resources = {
         "elapsed_seconds": time.perf_counter() - started,
@@ -450,21 +469,22 @@ def run(
             for name in ("torch", "torchvision", "transformers", "accelerate", "qwen-vl-utils")
         },
     }
-    evidence_artifact = [
-        {"id": row["id"], "retrieved": evidence[str(row["id"])]["retrieved"], "oracle": evidence[str(row["id"])]["oracle"]}
-        for row in rows
-    ]
+    evidence_artifact = [{"id": row["id"], **evidence[str(row["id"])]} for row in rows]
     output.mkdir(parents=True, exist_ok=True)
-    for filename, value in (
+    artifacts: list[tuple[str, Any]] = [
         ("config.json", config),
         ("evidence.json", evidence_artifact),
         ("prompt_search.json", prompt_search),
         ("predictions.json", predictions),
         ("metrics.json", metrics),
-        ("oracle_predictions.json", oracle_predictions),
-        ("oracle_metrics.json", {**oracle_metrics, "invalid_outputs": oracle_invalid}),
         ("resources.json", resources),
-    ):
+    ]
+    if include_oracle:
+        artifacts.extend((
+            ("oracle_predictions.json", oracle_predictions),
+            ("oracle_metrics.json", {**oracle_metrics, "invalid_outputs": oracle_invalid}),
+        ))
+    for filename, value in artifacts:
         (output / filename).write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return {"output": str(output), "selected_prompt": selected_prompt, "metrics": metrics, "oracle_metrics": oracle_metrics}
 
@@ -480,11 +500,15 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--retrieval-model", default=DEFAULT_MODEL)
     parser.add_argument("--retrieval-weight", type=Path, default=DEFAULT_WEIGHT)
     parser.add_argument("--qa-model", default=DEFAULT_QA_MODEL)
+    parser.add_argument("--query-images", type=Path)
+    parser.add_argument("--prompt", choices=PROMPTS)
+    parser.add_argument("--skip-oracle", action="store_true")
     args = parser.parse_args(argv)
     try:
         result = run(
             args.input, args.retrieval_predictions, args.output, args.source, args.image_root,
             args.adapter, args.retrieval_model, args.retrieval_weight, args.qa_model,
+            args.query_images, (args.prompt,) if args.prompt else PROMPTS, not args.skip_oracle,
         )
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0
