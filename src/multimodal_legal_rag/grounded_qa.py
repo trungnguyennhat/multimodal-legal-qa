@@ -1,4 +1,4 @@
-"""Grounded multimodal legal QA over citations produced by Stage 4."""
+"""Grounded multimodal legal QA over citations supplied by the QA dataset."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
-from .bm25_evaluation import DEFAULT_ARTIFACTS, DEFAULT_SPLITS, _by_id, accuracy_metrics
+from .bm25_evaluation import DEFAULT_ARTIFACTS, DEFAULT_SPLITS, accuracy_metrics
 from .data import DEFAULT_SOURCE, read_json_list
 from .hybrid_retrieval import DEFAULT_ADAPTER
 from .visual_retrieval import (
@@ -29,7 +29,6 @@ from .visual_retrieval import (
 )
 
 
-DEFAULT_RETRIEVAL = DEFAULT_ARTIFACTS / "hybrid-example-retrieval-dev" / "predictions.json"
 DEFAULT_OUTPUT = DEFAULT_ARTIFACTS / "grounded-qa-dev"
 DEFAULT_QA_MODEL = "Qwen/Qwen2.5-VL-3B-Instruct"
 PROMPTS = ("direct-answer", "evidence-first")
@@ -39,6 +38,8 @@ MAX_NEW_TOKENS = 8
 CITATION_ALIASES = {
     ("QCVN 41:2024/BGTVT", "G1.1"): (("QCVN 41:2024/BGTVT", "G.1"),),
     ("QCVN 41:2024/BGTVT", "I.414"): (("QCVN 41:2024/BGTVT", "E.14"),),
+    ("QCVN 41:2024/BGTVT", "D.11"): (("QCVN 41:2024/BGTVT", "D.10"),),
+    ("QCVN 41:2024/BGTVT", "F5"): (("QCVN 41:2024/BGTVT", "F.5"),),
 }
 
 
@@ -52,55 +53,43 @@ def _ordered_refs(row: dict[str, Any], label: str) -> list[tuple[str, str]]:
             raise ValueError(f"{label} {row.get('id', '<unknown>')} có citation sai schema")
         key = (str(ref["law_id"]), str(ref["article_id"]))
         if key in result:
-            raise ValueError(f"{label} {row.get('id', '<unknown>')} có citation trùng: {key}")
+            continue
         result.append(key)
     return result
 
 
 def _validate_inputs(
-    rows: list[dict[str, Any]], retrieval: list[dict[str, Any]], candidates: list[dict[str, Any]],
-    query_images: Path, include_oracle: bool,
-) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, list[dict[str, Any]]]]]:
-    gold = _by_id(rows, "gold")
-    predicted = _by_id(retrieval, "retrieval prediction")
-    missing = sorted(set(gold) - set(predicted))
-    extra = sorted(set(predicted) - set(gold))
-    if missing or extra:
-        raise ValueError(f"retrieval prediction lệch dev: missing={len(missing)}, extra={len(extra)}")
-
+    rows: list[dict[str, Any]], candidates: list[dict[str, Any]], query_images: Path,
+) -> dict[str, list[dict[str, Any]]]:
     candidates_by_key: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for candidate in candidates:
         key = (str(candidate["law_id"]), str(candidate["article_id"]))
         candidates_by_key.setdefault(key, []).append(candidate)
-    resolved: dict[str, dict[str, list[dict[str, Any]]]] = {}
+    resolved: dict[str, list[dict[str, Any]]] = {}
+    seen_ids: set[str] = set()
     for row in rows:
         sample_id = str(row["id"])
-        resolved[sample_id] = {}
+        if sample_id in seen_ids:
+            raise ValueError(f"input có ID trùng: {sample_id}")
+        seen_ids.add(sample_id)
         if row.get("question_type") not in {"Multiple choice", "Yes/No"}:
-            raise ValueError(f"gold {sample_id} có question_type không hợp lệ")
+            raise ValueError(f"input {sample_id} có question_type không hợp lệ")
         if row["question_type"] == "Multiple choice" and (
             not isinstance(row.get("choices"), dict) or set(row["choices"]) != {"A", "B", "C", "D"}
         ):
-            raise ValueError(f"gold {sample_id} phải có choices A/B/C/D")
+            raise ValueError(f"input {sample_id} phải có choices A/B/C/D")
         image = query_images / f"{row['image_id']}.jpg"
         if not image.is_file():
             raise ValueError(f"Thiếu ảnh query: {image}")
-        sources = [("retrieval", predicted[sample_id])]
-        if include_oracle:
-            sources.insert(0, ("gold", row))
-        for label, source in sources:
-            refs = _ordered_refs(source, label)
-            if label == "retrieval" and len(refs) != 5:
-                raise ValueError(f"retrieval {sample_id} phải có đúng top-5 citation, nhận {len(refs)}")
-            resolved[sample_id]["oracle" if label == "gold" else "retrieved"] = [
-                {
-                    "law_id": key[0],
-                    "article_id": key[1],
-                    "corpus_keys": _resolve_citation(key, candidates_by_key),
-                }
-                for key in refs
-            ]
-    return predicted, resolved
+        resolved[sample_id] = [
+            {
+                "law_id": key[0],
+                "article_id": key[1],
+                "corpus_keys": _resolve_citation(key, candidates_by_key),
+            }
+            for key in _ordered_refs(row, "input")
+        ]
+    return resolved
 
 
 def _resolve_citation(
@@ -129,15 +118,13 @@ def _resolve_citation(
 
 def _select_evidence(
     rows: list[dict[str, Any]],
-    retrieval_by_id: dict[str, dict[str, Any]],
     source: Path,
     image_root: Path,
     adapter_path: Path,
     retrieval_model: str,
     retrieval_weight: Path,
     query_images: Path,
-    include_oracle: bool,
-) -> tuple[dict[str, dict[str, list[dict[str, Any]]]], dict[int, dict[str, Any]], dict[str, Any]]:
+) -> tuple[dict[str, list[dict[str, Any]]], dict[int, dict[str, Any]], dict[str, Any]]:
     if not adapter_path.is_file():
         raise ValueError(f"Thiếu fine-tuned adapter Stage 3: {adapter_path}")
     started = time.perf_counter()
@@ -146,15 +133,11 @@ def _select_evidence(
         torch.cuda.reset_peak_memory_stats()
 
     all_candidates = _article_candidates(source, image_root / "law", model.tokenizer, 0)
-    retrieval_by_id, resolved = _validate_inputs(
-        rows, list(retrieval_by_id.values()), all_candidates, query_images, include_oracle,
-    )
-    modes = ("retrieved", "oracle") if include_oracle else ("retrieved",)
+    resolved = _validate_inputs(rows, all_candidates, query_images)
     required = {
         tuple(key)
         for row in rows
-        for mode in modes
-        for citation in resolved[str(row["id"])][mode]
+        for citation in resolved[str(row["id"])]
         for key in citation["corpus_keys"]
     }
     candidates = [
@@ -185,27 +168,25 @@ def _select_evidence(
     for position, candidate in enumerate(candidates):
         positions.setdefault((str(candidate["law_id"]), str(candidate["article_id"])), []).append(position)
 
-    selected: dict[str, dict[str, list[dict[str, Any]]]] = {}
+    selected: dict[str, list[dict[str, Any]]] = {}
     runtime_candidates = {int(candidate["candidate_index"]): candidate for candidate in candidates}
     for row_index, row in enumerate(rows):
         sample_id = str(row["id"])
-        selected[sample_id] = {}
-        for mode in modes:
-            evidence = []
-            for citation in resolved[sample_id][mode]:
-                choices = [position for key in citation["corpus_keys"] for position in positions[tuple(key)]]
-                best = max(choices, key=lambda index: (float(similarities[row_index, index]), -index))
-                candidate = candidates[best]
-                evidence.append({
-                    "law_id": citation["law_id"],
-                    "article_id": citation["article_id"],
-                    "corpus_law_id": str(candidate["law_id"]),
-                    "corpus_article_id": str(candidate["article_id"]),
-                    "candidate_index": int(candidate["candidate_index"]),
-                    "modality": "image" if candidate["image"] is not None else "text",
-                    "similarity": float(similarities[row_index, best]),
-                })
-            selected[sample_id][mode] = evidence
+        evidence = []
+        for citation in resolved[sample_id]:
+            choices = [position for key in citation["corpus_keys"] for position in positions[tuple(key)]]
+            best = max(choices, key=lambda index: (float(similarities[row_index, index]), -index))
+            candidate = candidates[best]
+            evidence.append({
+                "law_id": citation["law_id"],
+                "article_id": citation["article_id"],
+                "corpus_law_id": str(candidate["law_id"]),
+                "corpus_article_id": str(candidate["article_id"]),
+                "candidate_index": int(candidate["candidate_index"]),
+                "modality": "image" if candidate["image"] is not None else "text",
+                "similarity": float(similarities[row_index, best]),
+            })
+        selected[sample_id] = evidence
 
     resources = {
         "elapsed_seconds": time.perf_counter() - started,
@@ -220,7 +201,9 @@ def _select_evidence(
     return selected, runtime_candidates, resources
 
 
-def _prompt_text(row: dict[str, Any], prompt_name: str, evidence: list[dict[str, Any]]) -> str:
+def _prompt_text(
+    row: dict[str, Any], prompt_name: str, evidence: list[dict[str, Any]], answer_method: str,
+) -> str:
     choices = row.get("choices", {})
     choice_text = "\n".join(f"{key}: {value}" for key, value in choices.items())
     question = f"Câu hỏi:\n{row['question']}"
@@ -237,15 +220,20 @@ def _prompt_text(row: dict[str, Any], prompt_name: str, evidence: list[dict[str,
         )
     else:
         raise ValueError(f"Prompt không hợp lệ: {prompt_name}")
+    output_instruction = (
+        f"Chỉ xuất đúng một nhãn trong tập: {labels}. Không giải thích và không thêm ký tự khác."
+        if answer_method == "generate"
+        else "Chỉ trả lời bằng toàn bộ nội dung của một lựa chọn, không thêm nhãn hoặc giải thích."
+    )
     return (
         f"{instruction}\n\n{question}\n\nCác citation được phép sử dụng: {citations}.\n"
-        f"Chỉ xuất đúng một nhãn trong tập: {labels}. Không giải thích và không thêm ký tự khác."
+        f"{output_instruction}"
     )
 
 
 def _messages(
     row: dict[str, Any], prompt_name: str, evidence: list[dict[str, Any]], candidates: dict[int, dict[str, Any]],
-    query_images: Path,
+    query_images: Path, answer_method: str,
 ) -> list[dict[str, Any]]:
     content: list[dict[str, Any]] = [
         {
@@ -273,7 +261,7 @@ def _messages(
                 },
                 {"type": "text", "text": f"Ảnh căn cứ {number} thuộc {citation}. {candidate['text']}"},
             ))
-    content.append({"type": "text", "text": _prompt_text(row, prompt_name, evidence)})
+    content.append({"type": "text", "text": _prompt_text(row, prompt_name, evidence, answer_method)})
     return [{"role": "user", "content": content}]
 
 
@@ -292,44 +280,96 @@ def _progress(label: str, done: int, total: int, started: float) -> None:
     print(f"[{label}] {done}/{total} ({done / total:.0%}) | elapsed {elapsed:.0f}s | ETA {eta:.0f}s", flush=True)
 
 
+def _score_candidates(
+    model: Any, processor: Any, torch: Any, text: str, image_inputs: Any, video_inputs: Any,
+    row: dict[str, Any],
+) -> tuple[str, list[dict[str, Any]]]:
+    options = (
+        [(str(label), str(value).strip()) for label, value in row["choices"].items()]
+        if row["question_type"] == "Multiple choice"
+        else [("Đúng", "Đúng"), ("Sai", "Sai")]
+    )
+    base = processor(
+        text=[text], images=image_inputs, videos=video_inputs, padding=True, return_tensors="pt"
+    )
+    prefix_ids = base.input_ids[0]
+    scores = []
+    for label, candidate_text in options:
+        inputs = processor(
+            text=[text + candidate_text], images=image_inputs, videos=video_inputs,
+            padding=True, return_tensors="pt",
+        ).to(model.device)
+        if inputs.input_ids.shape[1] <= prefix_ids.shape[0] or not torch.equal(
+            inputs.input_ids[0, :prefix_ids.shape[0]].cpu(), prefix_ids,
+        ):
+            raise ValueError("Tokenizer không giữ nguyên prefix khi chấm candidate")
+        with torch.inference_mode():
+            logits = model(**inputs, use_cache=False).logits
+            target = inputs.input_ids[:, prefix_ids.shape[0]:]
+            token_logits = logits[:, prefix_ids.shape[0] - 1:-1]
+            log_probs = torch.log_softmax(token_logits.float(), dim=-1)
+            token_scores = log_probs.gather(-1, target.unsqueeze(-1)).squeeze(-1)
+            score = float(token_scores.mean())
+        scores.append({"label": label, "text": candidate_text, "mean_log_probability": score})
+        del inputs, logits, target, token_logits, log_probs, token_scores
+    best = max(scores, key=lambda item: item["mean_log_probability"])
+    return str(best["label"]), scores
+
+
 def _infer(
     model: Any,
     processor: Any,
     process_vision_info: Any,
     torch: Any,
     rows: list[dict[str, Any]],
-    evidence_by_id: dict[str, dict[str, list[dict[str, Any]]]],
+    evidence_by_id: dict[str, list[dict[str, Any]]],
     candidates: dict[int, dict[str, Any]],
     query_images: Path,
     prompt_name: str,
-    mode: str,
-) -> tuple[list[dict[str, Any]], list[dict[str, str]]]:
+    answer_method: str,
+) -> tuple[list[dict[str, Any]], list[dict[str, str]], list[dict[str, Any]]]:
     predictions = []
     invalid = []
-    label = "oracle-inference" if mode == "oracle" else f"prompt-evaluation:{prompt_name}"
+    candidate_scores = []
+    label = f"qa-inference:{prompt_name}"
     started = last_log = time.perf_counter()
-    print(f"[{label}] generating {len(rows)} answers", flush=True)
+    action = "generating MC and scoring Yes/No" if answer_method == "hybrid" else (
+        "scoring candidates" if answer_method == "score" else "generating"
+    )
+    print(f"[{label}] {action} for {len(rows)} answers", flush=True)
     with torch.inference_mode():
         for done, row in enumerate(rows, 1):
             sample_id = str(row["id"])
-            evidence = evidence_by_id[sample_id][mode]
-            messages = _messages(row, prompt_name, evidence, candidates, query_images)
+            evidence = evidence_by_id[sample_id]
+            row_method = (
+                "score" if answer_method == "score" or (
+                    answer_method == "hybrid" and row["question_type"] == "Yes/No"
+                ) else "generate"
+            )
+            messages = _messages(row, prompt_name, evidence, candidates, query_images, row_method)
             text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
             image_inputs, video_inputs = process_vision_info(messages)
-            inputs = processor(
-                text=[text], images=image_inputs, videos=video_inputs, padding=True, return_tensors="pt"
-            ).to(model.device)
-            generated = model.generate(**inputs, do_sample=False, max_new_tokens=MAX_NEW_TOKENS)
-            trimmed = generated[:, inputs.input_ids.shape[1]:]
-            raw = processor.batch_decode(trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
-            answer = _answer(raw, str(row["question_type"]))
-            refs = [
-                {"law_id": item["corpus_law_id"], "article_id": item["corpus_article_id"]}
-                for item in evidence
-            ]
+            if row_method == "score":
+                answer, scores = _score_candidates(
+                    model, processor, torch, text, image_inputs, video_inputs, row,
+                )
+                raw = answer
+                candidate_scores.append({"id": row["id"], "scores": scores, "selected": answer})
+            else:
+                inputs = processor(
+                    text=[text], images=image_inputs, videos=video_inputs, padding=True, return_tensors="pt"
+                ).to(model.device)
+                generated = model.generate(**inputs, do_sample=False, max_new_tokens=MAX_NEW_TOKENS)
+                trimmed = generated[:, inputs.input_ids.shape[1]:]
+                raw = processor.batch_decode(
+                    trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False,
+                )[0]
+                answer = _answer(raw, str(row["question_type"]))
             prediction = {
                 "id": row["id"], "image_id": row["image_id"], "question": row["question"],
-                "question_type": row["question_type"], "relevant_articles": refs, "answer": answer,
+                "question_type": row["question_type"],
+                "relevant_articles": [dict(ref) for ref in row["relevant_articles"]],
+                "answer": answer,
             }
             if "choices" in row:
                 prediction["choices"] = row["choices"]
@@ -340,12 +380,11 @@ def _infer(
             if done == len(rows) or now - last_log >= 30:
                 _progress(label, done, len(rows), started)
                 last_log = now
-    return predictions, invalid
+    return predictions, invalid, candidate_scores
 
 
 def run(
     input_path: Path,
-    retrieval_path: Path,
     output: Path,
     source: Path,
     image_root: Path,
@@ -354,19 +393,22 @@ def run(
     retrieval_weight: Path,
     qa_model: str,
     query_images: Path | None = None,
-    prompts: tuple[str, ...] = PROMPTS,
-    include_oracle: bool = True,
+    prompt_name: str = "direct-answer",
+    answer_method: str = "hybrid",
 ) -> dict[str, Any]:
     started = time.perf_counter()
+    if answer_method not in {"generate", "score", "hybrid"}:
+        raise ValueError(f"answer-method không hợp lệ: {answer_method}")
     rows = read_json_list(input_path)
     if not rows:
         raise ValueError("input QA không được rỗng")
-    retrieval = read_json_list(retrieval_path)
-    retrieval_by_id = _by_id(retrieval, "retrieval prediction")
+    has_answers = ["answer" in row for row in rows]
+    if any(has_answers) and not all(has_answers):
+        raise ValueError("input QA không được trộn mẫu có nhãn và không nhãn")
+    has_gold = all(has_answers)
     query_images = query_images or image_root / "train"
     evidence, candidates, evidence_resources = _select_evidence(
-        rows, retrieval_by_id, source, image_root, adapter_path, retrieval_model, retrieval_weight,
-        query_images, include_oracle,
+        rows, source, image_root, adapter_path, retrieval_model, retrieval_weight, query_images,
     )
 
     os.environ.setdefault("HF_HOME", str(PROJECT_ROOT / "models" / "huggingface"))
@@ -399,36 +441,25 @@ def run(
     model_load_seconds = time.perf_counter() - model_started
     print(f"[qa-model] ready in {model_load_seconds:.0f}s", flush=True)
 
-    prompt_search = []
-    best: tuple[str, list[dict[str, Any]], dict[str, Any]] | None = None
-    for prompt_name in prompts:
-        predictions, invalid = _infer(
-            model, processor, process_vision_info, torch, rows, evidence, candidates,
-            query_images, prompt_name, "retrieved",
-        )
-        metrics = accuracy_metrics(predictions, rows)
-        prompt_search.append({
-            "prompt": prompt_name, "metrics": metrics, "invalid_outputs": invalid, "predictions": predictions,
-        })
-        if best is None or metrics["accuracy"] > best[2]["accuracy"]:
-            best = (prompt_name, predictions, metrics)
-    assert best is not None
-    selected_prompt, predictions, metrics = best
-    oracle_predictions = None
-    oracle_metrics = None
-    oracle_invalid: list[dict[str, str]] = []
-    if include_oracle:
-        oracle_predictions, oracle_invalid = _infer(
-            model, processor, process_vision_info, torch, rows, evidence, candidates,
-            query_images, selected_prompt, "oracle",
-        )
-        oracle_metrics = accuracy_metrics(oracle_predictions, rows)
+    predictions, invalid, candidate_scores = _infer(
+        model, processor, process_vision_info, torch, rows, evidence, candidates,
+        query_images, prompt_name, answer_method,
+    )
+    metrics = accuracy_metrics(predictions, rows) if has_gold else {
+        "accuracy": None,
+        "correct": None,
+        "samples": len(rows),
+        "missing_predictions": 0,
+        "extra_predictions": 0,
+    }
     qa_peak = torch.cuda.max_memory_allocated()
 
     config = {
         "method": "grounded-multimodal-qa",
         "input": str(input_path),
-        "retrieval_predictions": str(retrieval_path),
+        "citation_source": "relevant_articles supplied in the QA input",
+        "uses_retrieval_predictions": False,
+        "gold_answers_available": has_gold,
         "source": str(source),
         "image_root": str(image_root),
         "query_images": str(query_images),
@@ -439,9 +470,7 @@ def run(
         "qa_model_revision": qa_model_revision,
         "qa_dtype": "bfloat16",
         "attention": "sdpa",
-        "prompts": list(prompts),
-        "selected_prompt": selected_prompt,
-        "prompt_selection": "highest dev Accuracy; ties keep direct-answer",
+        "prompt": prompt_name,
         "evidence_per_citation": 1,
         "evidence_selection": "highest adapter cosine similarity within each supplied citation",
         "chunk_tokens": 1024,
@@ -450,7 +479,14 @@ def run(
         "max_pixels": MAX_PIXELS,
         "do_sample": False,
         "max_new_tokens": MAX_NEW_TOKENS,
-        "oracle_role": "upper bound only; not the primary pipeline score" if include_oracle else "skipped",
+        "answer_method": answer_method,
+        "candidate_score": (
+            "mean token log-probability of full choice text"
+            if answer_method in {"score", "hybrid"} else None
+        ),
+        "answer_routing": (
+            "generate Multiple choice; candidate-score Yes/No" if answer_method == "hybrid" else answer_method
+        ),
     }
     resources = {
         "elapsed_seconds": time.perf_counter() - started,
@@ -463,36 +499,32 @@ def run(
         "qa_gpu_peak_memory_bytes": qa_peak,
         "qa_model_load_seconds": model_load_seconds,
         "queries": len(rows),
+        "output_predictions": len(rows),
         "evidence": evidence_resources,
         "packages": {
             name: importlib.metadata.version(name)
             for name in ("torch", "torchvision", "transformers", "accelerate", "qwen-vl-utils")
         },
     }
-    evidence_artifact = [{"id": row["id"], **evidence[str(row["id"])]} for row in rows]
+    evidence_artifact = [{"id": row["id"], "evidence": evidence[str(row["id"])]} for row in rows]
     output.mkdir(parents=True, exist_ok=True)
     artifacts: list[tuple[str, Any]] = [
         ("config.json", config),
         ("evidence.json", evidence_artifact),
-        ("prompt_search.json", prompt_search),
         ("predictions.json", predictions),
-        ("metrics.json", metrics),
+        ("metrics.json", {**metrics, "invalid_outputs": invalid}),
         ("resources.json", resources),
     ]
-    if include_oracle:
-        artifacts.extend((
-            ("oracle_predictions.json", oracle_predictions),
-            ("oracle_metrics.json", {**oracle_metrics, "invalid_outputs": oracle_invalid}),
-        ))
+    if answer_method in {"score", "hybrid"}:
+        artifacts.append(("candidate_scores.json", candidate_scores))
     for filename, value in artifacts:
         (output / filename).write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return {"output": str(output), "selected_prompt": selected_prompt, "metrics": metrics, "oracle_metrics": oracle_metrics}
+    return {"output": str(output), "prompt": prompt_name, "metrics": metrics, "invalid_outputs": len(invalid)}
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_SPLITS / "dev.json")
-    parser.add_argument("--retrieval-predictions", type=Path, default=DEFAULT_RETRIEVAL)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
     parser.add_argument("--image-root", type=Path, default=DEFAULT_IMAGES)
@@ -501,14 +533,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--retrieval-weight", type=Path, default=DEFAULT_WEIGHT)
     parser.add_argument("--qa-model", default=DEFAULT_QA_MODEL)
     parser.add_argument("--query-images", type=Path)
-    parser.add_argument("--prompt", choices=PROMPTS)
-    parser.add_argument("--skip-oracle", action="store_true")
+    parser.add_argument("--prompt", choices=PROMPTS, default="direct-answer")
+    parser.add_argument("--answer-method", choices=("generate", "score", "hybrid"), default="hybrid")
     args = parser.parse_args(argv)
     try:
         result = run(
-            args.input, args.retrieval_predictions, args.output, args.source, args.image_root,
+            args.input, args.output, args.source, args.image_root,
             args.adapter, args.retrieval_model, args.retrieval_weight, args.qa_model,
-            args.query_images, (args.prompt,) if args.prompt else PROMPTS, not args.skip_oracle,
+            args.query_images, args.prompt, args.answer_method,
         )
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0

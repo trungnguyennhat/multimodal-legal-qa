@@ -25,7 +25,7 @@ Xây dựng Multimodal Legal RAG cho bộ dữ liệu VLSP 2025 MLQA-TSR theo t�
 9. Việc được yêu cầu triển khai code cho phép agent tạo/sửa source code và tài liệu trong đúng phạm vi stage; không đồng nghĩa với quyền tự chạy pipeline hoặc sinh output.
 10. Không tạo command `self-check`, demo kiểm tra riêng hoặc test chỉ để kiểm tra nội bộ. Hướng dẫn người dùng kiểm tra bằng chính command chạy pipeline/CLI thực tế và evaluator của stage; chỉ thêm test riêng khi người dùng yêu cầu rõ ràng.
 11. Mọi tác vụ có thể chạy lâu phải in log tiến trình ngắn gọn khoảng mỗi 30 giây, gồm bước hiện tại, số lượng đã xử lý/tổng số, phần trăm, thời gian đã chạy và ETA. Phân biệt rõ training với indexing/inference; không gọi một tác vụ là train nếu model không được cập nhật trọng số.
-12. Từ Stage 4 trở đi, mọi nhánh visual retrieval phải dùng adapter đã fine-tune ở Stage 3; chỉ dùng Visualized-BGE zero-shot khi chạy ablation có ghi rõ. Stage 5 nhận citation từ retriever này qua Stage 4, không dùng retriever làm model sinh câu trả lời.
+12. Từ Stage 4 trở đi, mọi nhánh visual retrieval phải dùng adapter đã fine-tune ở Stage 3; chỉ dùng Visualized-BGE zero-shot khi chạy ablation có ghi rõ. Stage 5 thực hiện Subtask 2 độc lập: citation lấy từ `relevant_articles` trong input QA do ban tổ chức cung cấp, không lấy từ prediction Stage 4; adapter Stage 3 chỉ chọn evidence bên trong citation được cung cấp.
 
 ## Trạng thái stage
 
@@ -59,6 +59,6 @@ Xây dựng Multimodal Legal RAG cho bộ dữ liệu VLSP 2025 MLQA-TSR theo t�
 - Stage 2: evaluator F2/Accuracy và baseline retrieval.
 - Stage 3: visual retrieval.
 - Stage 4: hybrid retrieval và fusion giữa BM25 với visual retriever đã fine-tune.
-- Stage 5: grounded legal QA trên citation do hybrid retriever đã fine-tune cung cấp.
+- Stage 5: grounded legal QA độc lập trên citation có sẵn trong input Subtask 2; Stage 3 adapter chỉ chọn evidence bên trong citation.
 - Stage 6: ablation, đo tài nguyên và phân tích lỗi.
 - Stage 7: Streamlit, hoàn thiện CLI và tài liệu tái lập.

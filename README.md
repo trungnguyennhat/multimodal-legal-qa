@@ -11,11 +11,68 @@
 | 2 | Evaluator và baseline | `COMPLETED` |
 | 3 | Visual retrieval | `COMPLETED` |
 | 4 | Hybrid retrieval | `COMPLETED` |
-| 5 | Grounded legal QA | `AWAITING_USER_TEST` |
+| 5 | Grounded legal QA | `COMPLETED` |
 | 6 | Thực nghiệm luận văn | `NOT_STARTED` |
 | 7 | Demo và đóng gói | `NOT_STARTED` |
 
 Stage chỉ được đánh dấu `COMPLETED` sau khi người dùng chạy hướng dẫn kiểm tra và xác nhận thành công. Quy tắc đầy đủ nằm trong [AGENTS.md](AGENTS.md).
+
+## Điểm bàn giao — tạm dừng ngày 18/09/2026
+
+Project đang dừng sau khi hoàn thành Stage 5. Khi mở một phiên mới, đọc `AGENTS.md` và mục này trước; không chạy lại Stage 0–5 nếu artifact bên dưới vẫn còn. Chỉ bắt đầu Stage 6 khi người dùng yêu cầu rõ ràng.
+
+### Trạng thái và kết quả đã khóa
+
+| Thành phần | Cấu hình/kết quả chính |
+| --- | --- |
+| Dữ liệu | 418 train, 112 dev, 100 public có nhãn, 146 private không nhãn |
+| Stage 3 visual retrieval | Visualized-BGE, query `image-question-choices`, citation-level loss, `top_k=5`, dev F2 `0.4970959524` |
+| Stage 4 hybrid retrieval | sum-consensus, `example_k=3`, `example_weight=0.5`, `top_k=5`, dev F2 `0.5445245573` |
+| Public retrieval | F2 `0.4950557781`, precision `0.2740`, recall `0.6461904762` |
+| Stage 5 QA dev | `80/112`, Accuracy `0.7142857143` |
+| Stage 5 QA public | `71/100`, Accuracy `0.71` |
+
+Stage 5 thực hiện đúng Subtask 2 độc lập: citation lấy từ `relevant_articles` trong input QA, không lấy từ Stage 4. Cấu hình đã khóa là `Qwen/Qwen2.5-VL-3B-Instruct` BF16 + SDPA, prompt `direct-answer`, một evidence semantic tốt nhất trong mỗi citation, chunk 1.024 token/overlap 128, generation greedy cho Multiple choice và candidate scoring cho Yes/No. Dev/public đều không có output không hợp lệ.
+
+### Artifact cần giữ
+
+```text
+artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt
+artifacts/experiments/hybrid-example-retrieval-dev/
+artifacts/experiments/grounded-qa-dev/
+artifacts/public-test/retrieval/
+artifacts/public-test/qa/
+models/Visualized_m3.pth
+models/huggingface/
+data/processed/
+```
+
+Các thư mục `data/`, `models/` và `artifacts/` không được Git theo dõi; không xóa chúng nếu muốn tiếp tục trên máy hiện tại. Nếu chuyển máy, phải sao lưu riêng theo data agreement và giấy phép model.
+
+### File nguồn đang dùng
+
+- `src/multimodal_legal_rag/data.py`: chuẩn bị, validate và split dữ liệu.
+- `src/multimodal_legal_rag/bm25_evaluation.py`: evaluator F2/Accuracy và BM25 baseline.
+- `src/multimodal_legal_rag/visual_retrieval.py`: Visualized-BGE và adapter Stage 3.
+- `src/multimodal_legal_rag/hybrid_retrieval.py`: fusion retrieval Stage 4.
+- `src/multimodal_legal_rag/grounded_qa.py`: QA Stage 5 từ citation được cung cấp.
+
+Working tree tại thời điểm tạm dừng có thay đổi chưa commit trong `AGENTS.md`, `README.md` và `src/multimodal_legal_rag/grounded_qa.py`. Không discard các thay đổi này khi quay lại.
+
+### Việc chưa làm
+
+- Chưa bắt đầu Stage 6: ablation có hệ thống, tổng hợp tài nguyên và phân tích lỗi cho luận văn.
+- Chưa bắt đầu Stage 7: Streamlit, hoàn thiện CLI và tài liệu tái lập.
+- Chưa sinh/nộp private-test submission lên Codabench; private không có gold local và không được dùng để tuning.
+- Không tiếp tục tuning theo public test. Mọi lựa chọn mới phải thực hiện trên dev.
+
+Để xác nhận nhanh trạng thái khi quay lại mà không chạy model:
+
+```powershell
+git status --short
+Get-Content artifacts\experiments\grounded-qa-dev\metrics.json
+Get-Content artifacts\public-test\qa\metrics.json
+```
 
 ## Stage 0 — Bàn giao
 
@@ -239,7 +296,7 @@ Người dùng đã chạy trực tiếp các lệnh và xác nhận hoàn tất
 - Fine-tune một linear metric adapter 1024×1024 bằng multi-positive contrastive loss trên 418 mẫu `train.json`. Visualized-BGE gốc được đóng băng để vừa GPU 16 GB; khoảng 1,05 triệu tham số adapter được cập nhật.
 - Command `train` đánh giá mỗi epoch trên 112 mẫu dev, lưu checkpoint có F2 dev cao nhất cùng `config.json`, `predictions.json`, `metrics.json`, `resources.json` và `history.json` dưới `artifacts/experiments/visual-bge-finetune`.
 - Trong lúc chạy, CLI báo tiến trình cho encode corpus, train query, dev query và từng nhóm epoch, kèm phần trăm, thời gian đã chạy và ETA.
-- Command `retrieve` bắt buộc nạp `adapter.pt`. Stage 4 dùng adapter này cho nhánh visual; Stage 5 dùng các citation do Stage 4 trả về, không dùng Visualized-BGE làm model sinh câu trả lời.
+- Command `retrieve` bắt buộc nạp `adapter.pt`. Stage 4 dùng adapter này cho Subtask 1; Stage 5 độc lập dùng `relevant_articles` được cung cấp trong input Subtask 2 và chỉ tái sử dụng adapter để chọn evidence bên trong từng citation.
 - Thêm query representation ablation qua `--query-mode`: `image-question-choices` (mặc định hiện tại), `image-question`, và `question-only`. Mode `question-only` không nạp ảnh query; mỗi mode phải huấn luyện adapter riêng và ghi vào experiment riêng.
 - Đồng bộ training objective với evaluator bằng citation-level contrastive loss. Cấu hình Stage 3 được chọn là `image-question-choices`, citation-level loss, không thêm local image context và `top_k=5`; adapter nằm tại `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`.
 
@@ -470,28 +527,25 @@ Người dùng đã duyệt sum-consensus và xác nhận kết thúc Stage 4 ng
 
 ### Đã hoàn thành
 
-- Thêm `src/multimodal_legal_rag/grounded_qa.py`, dùng `Qwen/Qwen2.5-VL-3B-Instruct` ở BF16 để trả lời từ ảnh câu hỏi, lựa chọn và evidence thuộc citation Stage 4.
-- Citation chính được đọc từ `artifacts/experiments/hybrid-example-retrieval-dev/predictions.json`; Stage 5 không chạy lại hoặc thay đổi retriever.
+- Thêm `src/multimodal_legal_rag/grounded_qa.py`, dùng `Qwen/Qwen2.5-VL-3B-Instruct` ở BF16 để thực hiện độc lập Subtask 2.
+- Citation luôn lấy từ `relevant_articles` trong chính input QA do ban tổ chức cung cấp. Stage 5 không đọc prediction Stage 4; Subtask 1 và Subtask 2 được đánh giá độc lập.
 - Evidence không được chọn bằng keyword. Pipeline dùng lại Visualized-BGE và adapter citation-level đã fine-tune ở Stage 3 để so khớp semantic giữa ảnh + câu hỏi + choices với các text chunk hoặc ảnh luật nằm trong từng citation.
-- Các citation bất thường vốn có trong gold được resolve mà không sửa dữ liệu nguồn: hậu tố số `.0` ánh xạ về article số tương ứng, nhãn ghép như `22 B.15` xét cả hai article, và hai alias đã kiểm kê được ánh xạ tường minh `G1.1 → G.1`, `I.414 → E.14`. Artifact giữ cả nhãn nguồn và article corpus đã chọn; code không dùng fuzzy matching có thể nhầm article chỉ nhắc lại cùng ký hiệu.
+- Các citation bất thường vốn có trong gold được resolve mà không sửa dữ liệu nguồn: hậu tố số `.0` ánh xạ về article số tương ứng, nhãn ghép như `22 B.15` xét cả hai article, và các alias đã kiểm kê được ánh xạ tường minh (`G1.1 → G.1`, `I.414 → E.14`, `D.11 → D.10`, `F5 → F.5`). `D.11` phải trỏ vào record `D.10` vì corpus JSON đã gộp tiêu đề và toàn bộ nội dung mục D.11 vào cuối record đó. Artifact giữ cả nhãn nguồn và article corpus đã chọn; code không dùng fuzzy matching có thể nhầm article chỉ nhắc lại cùng ký hiệu.
 - Mỗi citation giữ candidate có cosine similarity cao nhất. Text corpus vẫn dùng chunk 1.024 token, overlap 128 token; image candidate được truyền trực tiếp cho Qwen khi được chọn.
 - Visualized-BGE được giải phóng trước khi nạp Qwen để hai model không cùng chiếm VRAM.
-- So sánh đúng hai prompt `direct-answer` và `evidence-first` trên dev. Chọn Accuracy cao nhất; nếu hòa, giữ `direct-answer` vì đơn giản hơn.
-- Kết quả chính dùng citation Stage 4. Một lượt riêng dùng gold citation được lưu làm oracle upper bound, không tham gia chọn prompt và không thay thế score chính.
-- Generation là greedy, `max_new_tokens=8`; output chỉ chấp nhận `A/B/C/D` hoặc `Đúng/Sai`. Output không hợp lệ được ghi lại và tính sai, không tự thay bằng nhãn đoán.
+- Cấu hình mặc định giữ kết quả tốt nhất đã kiểm tra: prompt `direct-answer`; Multiple choice dùng greedy generation; Yes/No dùng candidate scoring theo mean token log-probability.
+- Generation dùng `max_new_tokens=8`; output chỉ chấp nhận `A/B/C/D` hoặc `Đúng/Sai`. Output không hợp lệ được ghi lại và tính sai, không tự thay bằng nhãn đoán.
 - Các bước lâu in log khoảng mỗi 30 giây với số mẫu, phần trăm, elapsed và ETA. Đây là indexing/inference, không phải training.
 
-Experiment mặc định nằm tại `artifacts/experiments/grounded-qa-dev` và gồm tám file:
+Experiment mặc định nằm tại `artifacts/experiments/grounded-qa-dev` và gồm sáu file:
 
 ```text
 config.json
 evidence.json
-prompt_search.json
 predictions.json
 metrics.json
-oracle_predictions.json
-oracle_metrics.json
 resources.json
+candidate_scores.json
 ```
 
 `evidence.json` chỉ lưu citation, candidate index, modality và similarity để tái lập lựa chọn; không sao chép toàn bộ corpus luật.
@@ -500,7 +554,6 @@ resources.json
 
 - Stage 1 đã tạo `data/processed/splits/dev.json` và ảnh dưới `data/processed/images`.
 - Dependency, source Visualized-BGE, weight và adapter citation-level của Stage 3 vẫn tồn tại.
-- Stage 4 đã tạo `artifacts/experiments/hybrid-example-retrieval-dev/predictions.json` với top-5 citation cho đủ 112 mẫu dev.
 - Windows native là môi trường chính. Ubuntu/WSL chỉ cần dùng nếu máy gặp lỗi CUDA/operator không xử lý được trên Windows.
 - Cài dependency Stage 5 vào đúng `.venv`:
 
@@ -535,36 +588,35 @@ Get-ChildItem artifacts\experiments\grounded-qa-dev
 
 Kết quả mong đợi:
 
-- Có log `[evidence-indexing]`, `[evidence-selection]`, `[prompt-evaluation:direct-answer]`, `[prompt-evaluation:evidence-first]` và `[oracle-inference]`; không có bước nào được gọi là training.
+- Có log `[evidence-indexing]`, `[evidence-selection]` và `[qa-inference:direct-answer]`; không có bước nào được gọi là training.
 - Pipeline và evaluator in cùng Accuracy chính, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
-- Mọi `answer` trong `predictions.json` là `A/B/C/D` cho Multiple choice hoặc `Đúng/Sai` cho Yes/No. `prompt_search.json` không có invalid output ở prompt được chọn.
+- Mọi `answer` trong `predictions.json` là `A/B/C/D` cho Multiple choice hoặc `Đúng/Sai` cho Yes/No; `relevant_articles` được giữ nguyên từ input.
 - Mỗi evidence trong `evidence.json` thuộc đúng citation tương ứng; `modality` là `text` hoặc `image`, có `candidate_index`, `similarity`, citation nguồn và `corpus_law_id`/`corpus_article_id` đã resolve.
-- `config.json` ghi adapter citation-level Stage 3, `selected_prompt`, `evidence_per_citation: 1`, BF16, SDPA và greedy decoding.
-- `oracle_metrics.json` chỉ là upper bound. Accuracy chính để báo cáo pipeline nằm trong `metrics.json`.
+- `config.json` ghi `citation_source` từ input, `uses_retrieval_predictions: false`, adapter citation-level Stage 3, hybrid answer routing, BF16 và SDPA.
+- `candidate_scores.json` chỉ chứa các câu Yes/No; Multiple choice được generate một lần.
 - `resources.json` báo `device: "cuda"`, tên GPU, peak VRAM, thời gian và đúng phiên bản dependency.
-- Thư mục experiment có đủ tám file nêu trên; `artifacts/` và model cache vẫn không được Git theo dõi.
+- Thư mục experiment có đủ sáu file nêu trên; `artifacts/` và model cache vẫn không được Git theo dõi.
 
-Người dùng đã chạy và chấp nhận kết quả dev ngày 17/09/2026: `64/112`, Accuracy `0.5714285714`; oracle dùng gold citation đạt `75/112`, Accuracy `0.6696428571`. `direct-answer` được khóa làm prompt chính. Stage 5 đang `AWAITING_USER_TEST` cho lần đánh giá public test cuối cùng; Stage 6 chỉ bắt đầu khi có lệnh riêng.
+Các kết quả Stage 5 cũ dùng citation Stage 4 đã bị xóa vì không khớp thể lệ Subtask 2. Người dùng đã chạy lại và xác nhận hoàn tất ngày 18/09/2026: dev đạt `80/112`, Accuracy `0.7142857143`; public đạt `71/100`, Accuracy `0.71`. Cả hai không thiếu/thừa prediction và không có output không hợp lệ. Stage 5 đã `COMPLETED`.
 
 ### Lỗi thường gặp
 
 - `Thiếu dependency Stage 5` hoặc `KeyError: 'qwen2_5_vl'`: chạy lại đúng lệnh cài ba package ở trên trong `.venv`; không dùng Transformers 4.44.2 cũ.
 - Lỗi tải `Qwen/Qwen2.5-VL-3B-Instruct`: kiểm tra Internet và quyền ghi `models/huggingface`, rồi chạy lại. Không commit model cache.
 - `Thiếu fine-tuned adapter Stage 3`: kiểm tra `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`; không thay bằng zero-shot hoặc candidate-level adapter.
-- Thiếu prediction Stage 4: chạy lại command hybrid retrieval ở phần Stage 4 trước khi chạy QA.
-- Citation không tồn tại, prediction thiếu/trùng ID hoặc thiếu ảnh: sửa đầu vào tương ứng; pipeline dừng trước khi nạp Qwen thay vì âm thầm bỏ qua.
+- Citation không tồn tại, input trùng ID hoặc thiếu ảnh: sửa đầu vào tương ứng; pipeline dừng trước khi nạp Qwen thay vì âm thầm bỏ qua. Citation bị lặp trong cùng một mẫu nguồn (ví dụ `public_test_5` lặp Điều `32`) được deduplicate theo thứ tự khi chọn evidence; `predictions.json` vẫn giữ nguyên danh sách `relevant_articles` chính thức.
 - Gold báo `G1.1`, `I.414`, `9.0`, `22.0` hoặc `22 B.15`: đây là các nhãn không trùng trực tiếp ID article cấp cao trong corpus chính thức. Code hiện tại tự resolve có kiểm tra và ghi mapping vào `evidence.json`; không sửa JSON nguồn bằng tay.
 - `Stage 5 yêu cầu CUDA`: kiểm tra `nvidia-smi` và wheel PyTorch CUDA 12.8 trong `.venv`. Pipeline BF16 này không có CPU fallback.
 - `CUDA out of memory`: đóng process đang dùng GPU, mở PowerShell mới và chạy lại. Pipeline đã giải phóng retriever trước khi nạp Qwen; không cài quantization hoặc đổi kiến trúc trong Stage 5.
 - `[Errno 22] Invalid argument: '/C:/...'`: phiên bản cũ truyền ảnh bằng `file://` URI nên `%20` trong đường dẫn Windows không được giải mã. Code hiện tại truyền native Windows path và đặt giới hạn pixel trên từng ảnh; cập nhật code rồi chạy lại.
 - Cảnh báo Hugging Face về symlink Windows hoặc thiếu `hf_xet`: cache vẫn hoạt động và không làm sai kết quả; không cần chạy PowerShell bằng Administrator hoặc cài thêm package. Model đã tải xong sẽ được dùng lại từ cache.
-- Có invalid output trong `prompt_search.json`: gửi lại raw output và log để sửa parser/prompt trong Stage 5; không chỉnh prediction thủ công.
+- Có invalid output trong `metrics.json`: gửi lại raw output và log để sửa parser/prompt trong Stage 5; không chỉnh prediction thủ công.
 
 ### Đánh giá public test với cấu hình đã khóa
 
-Output được tách riêng dưới `artifacts/public-test`, ngang cấp với `artifacts/experiments`. Không tìm lại tham số trên public test: retrieval giữ đúng `example_k=3`, weight `0.5`, top-5 đã chọn trên dev; QA chỉ chạy `direct-answer` và bỏ oracle.
+Output được tách riêng dưới `artifacts/public-test`, ngang cấp với `artifacts/experiments`. QA đọc trực tiếp `relevant_articles` trong public input, không đọc `artifacts/public-test/retrieval`.
 
-Chạy lần lượt từng bước trong PowerShell từ thư mục gốc project:
+Sau khi dev được người dùng xác nhận, chạy từ thư mục gốc project:
 
 ```powershell
 $env:PYTHONPATH="src"
@@ -572,40 +624,16 @@ $env:PYTHONUTF8="1"
 New-Item -ItemType Directory -Force artifacts\public-test
 ```
 
-1. Chạy retrieval với cấu hình dev đã khóa:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.hybrid_retrieval `
-  --dev "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
-  --query-images data\processed\images\public_test `
-  --example-ks 3 `
-  --example-weights 0.5 `
-  --top-ks 5 `
-  --output artifacts\public-test\retrieval
-```
-
-2. Đánh giá retrieval:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task retrieval `
-  --gold "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
-  --predictions artifacts\public-test\retrieval\predictions.json
-```
-
-3. Chạy đúng một lượt QA, không prompt search và không oracle:
-
 ```powershell
 .\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa `
   --input "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
   --query-images data\processed\images\public_test `
-  --retrieval-predictions artifacts\public-test\retrieval\predictions.json `
   --prompt direct-answer `
-  --skip-oracle `
+  --answer-method hybrid `
   --output artifacts\public-test\qa
 ```
 
-4. Đánh giá QA:
+Đánh giá QA:
 
 ```powershell
 .\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
@@ -614,7 +642,7 @@ New-Item -ItemType Directory -Force artifacts\public-test
   --predictions artifacts\public-test\qa\predictions.json
 ```
 
-Mong đợi cả hai evaluator báo `samples: 100`, không thiếu/thừa prediction. Thư mục `qa` không có artifact oracle; public test chỉ dùng để báo cáo, không dùng kết quả này để đổi model, prompt hoặc tham số.
+Mong đợi evaluator báo `samples: 100`, không thiếu/thừa prediction. `config.json` phải có `uses_retrieval_predictions: false`; public test chỉ dùng để báo cáo, không dùng kết quả này để đổi model, prompt hoặc tham số.
 
 ## Nộp kết quả private test lên Codabench
 
@@ -663,6 +691,26 @@ Tạo `submission_task2.json` gồm đúng 146 mẫu. Giữ nguyên các field c
 ```
 
 Giữ nguyên `relevant_articles` đã có trong input Subtask 2. `answer` chỉ được là `A`, `B`, `C`, `D` đối với multiple choice hoặc `Đúng`, `Sai` đối với Yes/No; không kèm giải thích.
+
+Sau khi cấu hình được khóa bằng dev và public test, sinh prediction private Task 2 trực tiếp từ citation được cung cấp:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa `
+  --input "data\raw\VLSP2025-MLQA-TSR\dataset\private_test data (post submission)\submission_task2_no_labels.json" `
+  --query-images data\processed\images\private_test `
+  --prompt direct-answer `
+  --answer-method hybrid `
+  --output artifacts\submission\qa-private
+
+Copy-Item `
+  artifacts\submission\qa-private\predictions.json `
+  artifacts\submission\submission_task2.json `
+  -Force
+```
+
+Private input không có `answer`, vì vậy `metrics.json` ghi `accuracy: null`; điểm chỉ có sau khi nộp Codabench. `config.json` phải ghi `uses_retrieval_predictions: false`.
 
 ### Đóng gói
 
