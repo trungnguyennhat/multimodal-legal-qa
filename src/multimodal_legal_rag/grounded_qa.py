@@ -31,7 +31,6 @@ from .visual_retrieval import (
 
 DEFAULT_OUTPUT = DEFAULT_ARTIFACTS / "grounded-qa-dev"
 DEFAULT_QA_MODEL = "Qwen/Qwen2.5-VL-3B-Instruct"
-PROMPTS = ("direct-answer", "evidence-first")
 MIN_PIXELS = 256 * 28 * 28
 MAX_PIXELS = 512 * 28 * 28
 MAX_NEW_TOKENS = 8
@@ -202,7 +201,7 @@ def _select_evidence(
 
 
 def _prompt_text(
-    row: dict[str, Any], prompt_name: str, evidence: list[dict[str, Any]], answer_method: str,
+    row: dict[str, Any], evidence: list[dict[str, Any]], answer_method: str,
 ) -> str:
     choices = row.get("choices", {})
     choice_text = "\n".join(f"{key}: {value}" for key, value in choices.items())
@@ -211,28 +210,19 @@ def _prompt_text(
         question += f"\n\nCác lựa chọn:\n{choice_text}"
     labels = "A, B, C hoặc D" if row["question_type"] == "Multiple choice" else "Đúng hoặc Sai"
     citations = ", ".join(f"{item['law_id']} — {item['article_id']}" for item in evidence)
-    if prompt_name == "direct-answer":
-        instruction = "Dựa duy nhất vào ảnh, câu hỏi và các căn cứ luật được cung cấp để chọn đáp án."
-    elif prompt_name == "evidence-first":
-        instruction = (
-            "Trước khi chọn đáp án, hãy âm thầm đối chiếu nội dung ảnh và từng lựa chọn với các căn cứ luật; "
-            "không trình bày quá trình suy luận."
-        )
-    else:
-        raise ValueError(f"Prompt không hợp lệ: {prompt_name}")
     output_instruction = (
         f"Chỉ xuất đúng một nhãn trong tập: {labels}. Không giải thích và không thêm ký tự khác."
         if answer_method == "generate"
         else "Chỉ trả lời bằng toàn bộ nội dung của một lựa chọn, không thêm nhãn hoặc giải thích."
     )
     return (
-        f"{instruction}\n\n{question}\n\nCác citation được phép sử dụng: {citations}.\n"
-        f"{output_instruction}"
+        "Dựa duy nhất vào ảnh, câu hỏi và các căn cứ luật được cung cấp để chọn đáp án.\n\n"
+        f"{question}\n\nCác citation được phép sử dụng: {citations}.\n{output_instruction}"
     )
 
 
 def _messages(
-    row: dict[str, Any], prompt_name: str, evidence: list[dict[str, Any]], candidates: dict[int, dict[str, Any]],
+    row: dict[str, Any], evidence: list[dict[str, Any]], candidates: dict[int, dict[str, Any]],
     query_images: Path, answer_method: str,
 ) -> list[dict[str, Any]]:
     content: list[dict[str, Any]] = [
@@ -261,7 +251,7 @@ def _messages(
                 },
                 {"type": "text", "text": f"Ảnh căn cứ {number} thuộc {citation}. {candidate['text']}"},
             ))
-    content.append({"type": "text", "text": _prompt_text(row, prompt_name, evidence, answer_method)})
+    content.append({"type": "text", "text": _prompt_text(row, evidence, answer_method)})
     return [{"role": "user", "content": content}]
 
 
@@ -325,13 +315,12 @@ def _infer(
     evidence_by_id: dict[str, list[dict[str, Any]]],
     candidates: dict[int, dict[str, Any]],
     query_images: Path,
-    prompt_name: str,
     answer_method: str,
 ) -> tuple[list[dict[str, Any]], list[dict[str, str]], list[dict[str, Any]]]:
     predictions = []
     invalid = []
     candidate_scores = []
-    label = f"qa-inference:{prompt_name}"
+    label = "qa-inference"
     started = last_log = time.perf_counter()
     action = "generating MC and scoring Yes/No" if answer_method == "hybrid" else (
         "scoring candidates" if answer_method == "score" else "generating"
@@ -346,7 +335,7 @@ def _infer(
                     answer_method == "hybrid" and row["question_type"] == "Yes/No"
                 ) else "generate"
             )
-            messages = _messages(row, prompt_name, evidence, candidates, query_images, row_method)
+            messages = _messages(row, evidence, candidates, query_images, row_method)
             text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
             image_inputs, video_inputs = process_vision_info(messages)
             if row_method == "score":
@@ -371,8 +360,6 @@ def _infer(
                 "relevant_articles": [dict(ref) for ref in row["relevant_articles"]],
                 "answer": answer,
             }
-            if "choices" in row:
-                prediction["choices"] = row["choices"]
             predictions.append(prediction)
             if not answer:
                 invalid.append({"id": sample_id, "raw_output": raw})
@@ -393,7 +380,6 @@ def run(
     retrieval_weight: Path,
     qa_model: str,
     query_images: Path | None = None,
-    prompt_name: str = "direct-answer",
     answer_method: str = "hybrid",
 ) -> dict[str, Any]:
     started = time.perf_counter()
@@ -443,7 +429,7 @@ def run(
 
     predictions, invalid, candidate_scores = _infer(
         model, processor, process_vision_info, torch, rows, evidence, candidates,
-        query_images, prompt_name, answer_method,
+        query_images, answer_method,
     )
     metrics = accuracy_metrics(predictions, rows) if has_gold else {
         "accuracy": None,
@@ -470,7 +456,7 @@ def run(
         "qa_model_revision": qa_model_revision,
         "qa_dtype": "bfloat16",
         "attention": "sdpa",
-        "prompt": prompt_name,
+        "prompt": "direct-answer",
         "evidence_per_citation": 1,
         "evidence_selection": "highest adapter cosine similarity within each supplied citation",
         "chunk_tokens": 1024,
@@ -519,7 +505,7 @@ def run(
         artifacts.append(("candidate_scores.json", candidate_scores))
     for filename, value in artifacts:
         (output / filename).write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return {"output": str(output), "prompt": prompt_name, "metrics": metrics, "invalid_outputs": len(invalid)}
+    return {"output": str(output), "prompt": "direct-answer", "metrics": metrics, "invalid_outputs": len(invalid)}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -533,14 +519,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--retrieval-weight", type=Path, default=DEFAULT_WEIGHT)
     parser.add_argument("--qa-model", default=DEFAULT_QA_MODEL)
     parser.add_argument("--query-images", type=Path)
-    parser.add_argument("--prompt", choices=PROMPTS, default="direct-answer")
     parser.add_argument("--answer-method", choices=("generate", "score", "hybrid"), default="hybrid")
     args = parser.parse_args(argv)
     try:
         result = run(
             args.input, args.output, args.source, args.image_root,
             args.adapter, args.retrieval_model, args.retrieval_weight, args.qa_model,
-            args.query_images, args.prompt, args.answer_method,
+            args.query_images, args.answer_method,
         )
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0

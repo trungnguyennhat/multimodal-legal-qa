@@ -110,6 +110,7 @@ def tune(
     example_weights: tuple[float, ...],
     top_ks: tuple[int, ...],
     query_images: Path | None = None,
+    predict_only: bool = False,
 ) -> dict[str, Any]:
     if not adapter_path.is_file():
         raise ValueError(f"Thiếu fine-tuned adapter Stage 3: {adapter_path}")
@@ -117,8 +118,13 @@ def tune(
         raise ValueError("branch-depth và các danh sách tìm kiếm phải khác rỗng, chứa số dương")
     train_rows = read_json_list(train_path)
     dev_rows = read_json_list(dev_path)
-    if not train_rows or not dev_rows or not all("relevant_articles" in row for row in train_rows + dev_rows):
-        raise ValueError("train và dev phải có gold relevant_articles")
+    if not train_rows or not dev_rows or not all("relevant_articles" in row for row in train_rows):
+        raise ValueError("train phải có gold relevant_articles và tập query không được rỗng")
+    if predict_only:
+        if len(example_ks) != 1 or len(example_weights) != 1 or len(top_ks) != 1:
+            raise ValueError("predict-only yêu cầu đúng một example-k, example-weight và top-k đã khóa")
+    elif not all("relevant_articles" in row for row in dev_rows):
+        raise ValueError("dev phải có gold relevant_articles khi tuning")
 
     output.mkdir(parents=True, exist_ok=True)
     started = time.perf_counter()
@@ -155,35 +161,54 @@ def tune(
         for example_k in example_ks
     }
 
-    branch_metrics = {
-        "corpus": {
-            str(top_k): retrieval_metrics(_predictions(dev_rows, corpus_scores, top_k), dev_rows)
-            for top_k in top_ks
-        },
-        "example": {
-            str(example_k): {
-                str(top_k): retrieval_metrics(_predictions(dev_rows, scores, top_k), dev_rows)
+    if predict_only:
+        selected = {
+            "example_k": example_ks[0],
+            "example_weight": example_weights[0],
+            "top_k": top_ks[0],
+        }
+        fused_scores = _fuse(
+            corpus_scores, examples_by_k[selected["example_k"]], selected["example_weight"],
+        )
+        predictions = _predictions(dev_rows, fused_scores, selected["top_k"])
+        metrics = {
+            "f2": None, "precision": None, "recall": None, "samples": len(dev_rows),
+            "missing_predictions": 0, "extra_predictions": 0,
+        }
+        search = branch_metrics = None
+    else:
+        branch_metrics = {
+            "corpus": {
+                str(top_k): retrieval_metrics(_predictions(dev_rows, corpus_scores, top_k), dev_rows)
                 for top_k in top_ks
-            }
-            for example_k, scores in examples_by_k.items()
-        },
-    }
-    search = []
-    best: tuple[dict[str, Any], list[dict[str, Any]]] | None = None
-    for example_k in example_ks:
-        for example_weight in example_weights:
-            fused_scores = _fuse(corpus_scores, examples_by_k[example_k], example_weight)
-            for top_k in top_ks:
-                predictions = _predictions(dev_rows, fused_scores, top_k)
-                metrics = retrieval_metrics(predictions, dev_rows)
-                record = {"example_k": example_k, "example_weight": example_weight, "top_k": top_k, **metrics}
-                search.append(record)
-                if best is None or metrics["f2"] > best[0]["f2"]:
-                    best = (record, predictions)
-    assert best is not None
-    selected, predictions = best
-    metric_names = ("f2", "precision", "recall", "samples", "missing_predictions", "extra_predictions")
-    metrics = {key: selected[key] for key in metric_names}
+            },
+            "example": {
+                str(example_k): {
+                    str(top_k): retrieval_metrics(_predictions(dev_rows, scores, top_k), dev_rows)
+                    for top_k in top_ks
+                }
+                for example_k, scores in examples_by_k.items()
+            },
+        }
+        search = []
+        best: tuple[dict[str, Any], list[dict[str, Any]]] | None = None
+        for example_k in example_ks:
+            for example_weight in example_weights:
+                fused_scores = _fuse(corpus_scores, examples_by_k[example_k], example_weight)
+                for top_k in top_ks:
+                    predictions = _predictions(dev_rows, fused_scores, top_k)
+                    result_metrics = retrieval_metrics(predictions, dev_rows)
+                    record = {
+                        "example_k": example_k, "example_weight": example_weight,
+                        "top_k": top_k, **result_metrics,
+                    }
+                    search.append(record)
+                    if best is None or result_metrics["f2"] > best[0]["f2"]:
+                        best = (record, predictions)
+        assert best is not None
+        selected, predictions = best
+        metric_names = ("f2", "precision", "recall", "samples", "missing_predictions", "extra_predictions")
+        metrics = {key: selected[key] for key in metric_names}
     config = {
         "method": "example-and-corpus-score-fusion",
         "train": str(train_path), "dev": str(dev_path), "source": str(source),
@@ -198,14 +223,21 @@ def tune(
         "selected_example_k": selected["example_k"],
         "selected_example_weight": selected["example_weight"],
         "selected_top_k": selected["top_k"],
-        "selection": "highest dev F2; ties keep the first simpler configuration",
+        "prediction_only": predict_only,
+        "selection": (
+            "fixed from dev; no private labels or tuning"
+            if predict_only else "highest dev F2; ties keep the first simpler configuration"
+        ),
     }
     resources = _resources(torch, started, candidates, len(train_rows) + len(dev_rows))
     resources.update({"train_examples": len(train_rows), "dev_queries": len(dev_rows)})
-    for filename, value in (
+    artifacts = [
         ("config.json", config), ("predictions.json", predictions), ("metrics.json", metrics),
-        ("resources.json", resources), ("search.json", search), ("branch_metrics.json", branch_metrics),
-    ):
+        ("resources.json", resources),
+    ]
+    if not predict_only:
+        artifacts.extend((("search.json", search), ("branch_metrics.json", branch_metrics)))
+    for filename, value in artifacts:
         (output / filename).write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return {"output": str(output), "config": config, "metrics": metrics, "resources": resources}
 
@@ -245,12 +277,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--example-weights", type=_float_list, default=DEFAULT_WEIGHTS)
     parser.add_argument("--top-ks", type=_int_list, default=DEFAULT_TOP_KS)
     parser.add_argument("--query-images", type=Path)
+    parser.add_argument("--predict-only", action="store_true")
     args = parser.parse_args(argv)
     try:
         result = tune(
             args.train, args.dev, args.output, args.source, args.image_root, args.adapter,
             args.model, args.weight, args.branch_depth, args.example_ks, args.example_weights, args.top_ks,
-            args.query_images,
+            args.query_images, args.predict_only,
         )
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0

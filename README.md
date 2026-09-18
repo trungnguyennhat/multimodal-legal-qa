@@ -32,7 +32,7 @@ Project đang dừng sau khi hoàn thành Stage 5. Khi mở một phiên mới, 
 | Stage 5 QA dev | `80/112`, Accuracy `0.7142857143` |
 | Stage 5 QA public | `71/100`, Accuracy `0.71` |
 
-Stage 5 thực hiện đúng Subtask 2 độc lập: citation lấy từ `relevant_articles` trong input QA, không lấy từ Stage 4. Cấu hình đã khóa là `Qwen/Qwen2.5-VL-3B-Instruct` BF16 + SDPA, prompt `direct-answer`, một evidence semantic tốt nhất trong mỗi citation, chunk 1.024 token/overlap 128, generation greedy cho Multiple choice và candidate scoring cho Yes/No. Dev/public đều không có output không hợp lệ.
+Stage 5 thực hiện đúng Subtask 2 độc lập: citation lấy từ `relevant_articles` trong input QA, không lấy từ Stage 4. Cấu hình đã khóa là `Qwen/Qwen2.5-VL-3B-Instruct` BF16 + SDPA, prompt mặc định duy nhất `direct-answer`, một evidence semantic tốt nhất trong mỗi citation, chunk 1.024 token/overlap 128, generation greedy cho Multiple choice và candidate scoring cho Yes/No.
 
 ### Artifact cần giữ
 
@@ -533,7 +533,7 @@ Người dùng đã duyệt sum-consensus và xác nhận kết thúc Stage 4 ng
 - Các citation bất thường vốn có trong gold được resolve mà không sửa dữ liệu nguồn: hậu tố số `.0` ánh xạ về article số tương ứng, nhãn ghép như `22 B.15` xét cả hai article, và các alias đã kiểm kê được ánh xạ tường minh (`G1.1 → G.1`, `I.414 → E.14`, `D.11 → D.10`, `F5 → F.5`). `D.11` phải trỏ vào record `D.10` vì corpus JSON đã gộp tiêu đề và toàn bộ nội dung mục D.11 vào cuối record đó. Artifact giữ cả nhãn nguồn và article corpus đã chọn; code không dùng fuzzy matching có thể nhầm article chỉ nhắc lại cùng ký hiệu.
 - Mỗi citation giữ candidate có cosine similarity cao nhất. Text corpus vẫn dùng chunk 1.024 token, overlap 128 token; image candidate được truyền trực tiếp cho Qwen khi được chọn.
 - Visualized-BGE được giải phóng trước khi nạp Qwen để hai model không cùng chiếm VRAM.
-- Cấu hình mặc định giữ kết quả tốt nhất đã kiểm tra: prompt `direct-answer`; Multiple choice dùng greedy generation; Yes/No dùng candidate scoring theo mean token log-probability.
+- Stage 5 chỉ có prompt mặc định `direct-answer`; Multiple choice dùng greedy generation; Yes/No dùng candidate scoring theo mean token log-probability. CLI không có option chọn prompt.
 - Generation dùng `max_new_tokens=8`; output chỉ chấp nhận `A/B/C/D` hoặc `Đúng/Sai`. Output không hợp lệ được ghi lại và tính sai, không tự thay bằng nhãn đoán.
 - Các bước lâu in log khoảng mỗi 30 giây với số mẫu, phần trăm, elapsed và ETA. Đây là indexing/inference, không phải training.
 
@@ -588,7 +588,7 @@ Get-ChildItem artifacts\experiments\grounded-qa-dev
 
 Kết quả mong đợi:
 
-- Có log `[evidence-indexing]`, `[evidence-selection]` và `[qa-inference:direct-answer]`; không có bước nào được gọi là training.
+- Có log `[evidence-indexing]`, `[evidence-selection]` và `[qa-inference]`; không có bước nào được gọi là training.
 - Pipeline và evaluator in cùng Accuracy chính, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
 - Mọi `answer` trong `predictions.json` là `A/B/C/D` cho Multiple choice hoặc `Đúng/Sai` cho Yes/No; `relevant_articles` được giữ nguyên từ input.
 - Mỗi evidence trong `evidence.json` thuộc đúng citation tương ứng; `modality` là `text` hoặc `image`, có `candidate_index`, `similarity`, citation nguồn và `corpus_law_id`/`corpus_article_id` đã resolve.
@@ -597,7 +597,7 @@ Kết quả mong đợi:
 - `resources.json` báo `device: "cuda"`, tên GPU, peak VRAM, thời gian và đúng phiên bản dependency.
 - Thư mục experiment có đủ sáu file nêu trên; `artifacts/` và model cache vẫn không được Git theo dõi.
 
-Các kết quả Stage 5 cũ dùng citation Stage 4 đã bị xóa vì không khớp thể lệ Subtask 2. Người dùng đã chạy lại và xác nhận hoàn tất ngày 18/09/2026: dev đạt `80/112`, Accuracy `0.7142857143`; public đạt `71/100`, Accuracy `0.71`. Cả hai không thiếu/thừa prediction và không có output không hợp lệ. Stage 5 đã `COMPLETED`.
+Các kết quả Stage 5 cũ dùng citation Stage 4 đã bị xóa vì không khớp thể lệ Subtask 2. Prompt mặc định `direct-answer` đã được người dùng chạy và xác nhận: dev đạt `80/112`, Accuracy `0.7142857143`; public đạt `71/100`, Accuracy `0.71`. Thử nghiệm prompt theo bài báo đạt `71/112`, Accuracy `0.6339285714`, có 9 output thừa nội dung sau nhãn nên đã bị loại bỏ và không được giữ làm cấu hình chính.
 
 ### Lỗi thường gặp
 
@@ -628,7 +628,6 @@ New-Item -ItemType Directory -Force artifacts\public-test
 .\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa `
   --input "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
   --query-images data\processed\images\public_test `
-  --prompt direct-answer `
   --answer-method hybrid `
   --output artifacts\public-test\qa
 ```
@@ -647,6 +646,51 @@ Mong đợi evaluator báo `samples: 100`, không thiếu/thừa prediction. `co
 ## Nộp kết quả private test lên Codabench
 
 Ban tổ chức không phát hành nhãn private test. Điểm chính thức chỉ được lấy bằng cách nộp prediction tại [Codabench VLSP 2025 MLQA-TSR](https://www.codabench.org/competitions/9525/), phase **Post Submission**.
+
+### Sinh prediction private với cấu hình đã khóa
+
+Tạo thư mục output, sau đó chạy riêng hai subtask. Không evaluator local vì private không có gold.
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+New-Item -ItemType Directory -Force artifacts\private_test
+```
+
+Subtask 1 dùng prediction-only với đúng cấu hình Stage 4 đã chọn trên dev; lệnh không tìm tham số và không yêu cầu private có `relevant_articles`:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.hybrid_retrieval `
+  --dev "data\raw\VLSP2025-MLQA-TSR\dataset\private_test data (post submission)\submission_task1_no_labels.json" `
+  --query-images data\processed\images\private_test `
+  --example-ks 3 `
+  --example-weights 0.5 `
+  --top-ks 5 `
+  --predict-only `
+  --output artifacts\private_test\retrieval
+
+Copy-Item `
+  artifacts\private_test\retrieval\predictions.json `
+  artifacts\private_test\submission_task1.json `
+  -Force
+```
+
+Subtask 2 dùng citation có sẵn trong input QA và cấu hình Stage 5 đã khóa:
+
+```powershell
+.\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa `
+  --input "data\raw\VLSP2025-MLQA-TSR\dataset\private_test data (post submission)\submission_task2_no_labels.json" `
+  --query-images data\processed\images\private_test `
+  --answer-method hybrid `
+  --output artifacts\private_test\qa
+
+Copy-Item `
+  artifacts\private_test\qa\predictions.json `
+  artifacts\private_test\submission_task2.json `
+  -Force
+```
+
+Kết quả cuối để người dùng tự đóng ZIP nằm tại `artifacts\private_test\submission_task1.json` và `artifacts\private_test\submission_task2.json`. Hai thư mục con giữ config, metrics rỗng điểm và resources để tái lập. `metrics.json` ghi `f2: null` hoặc `accuracy: null`; điểm thật chỉ có trên Codabench.
 
 ### File của Subtask 1 — Retrieval
 
@@ -670,7 +714,7 @@ Tạo `submission_task1.json` gồm đúng 146 mẫu theo thứ tự/input từ 
 
 ### File của Subtask 2 — QA
 
-Tạo `submission_task2.json` gồm đúng 146 mẫu. Giữ nguyên các field của `submission_task2_no_labels.json` và thêm `answer`:
+Tạo `submission_task2.json` gồm đúng 146 mẫu. Output khớp schema mẫu của ban tổ chức: không sao chép `choices` từ input, chỉ gồm `id`, `image_id`, `question`, `question_type`, `relevant_articles` và `answer`:
 
 ```json
 [
@@ -690,27 +734,7 @@ Tạo `submission_task2.json` gồm đúng 146 mẫu. Giữ nguyên các field c
 ]
 ```
 
-Giữ nguyên `relevant_articles` đã có trong input Subtask 2. `answer` chỉ được là `A`, `B`, `C`, `D` đối với multiple choice hoặc `Đúng`, `Sai` đối với Yes/No; không kèm giải thích.
-
-Sau khi cấu hình được khóa bằng dev và public test, sinh prediction private Task 2 trực tiếp từ citation được cung cấp:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa `
-  --input "data\raw\VLSP2025-MLQA-TSR\dataset\private_test data (post submission)\submission_task2_no_labels.json" `
-  --query-images data\processed\images\private_test `
-  --prompt direct-answer `
-  --answer-method hybrid `
-  --output artifacts\submission\qa-private
-
-Copy-Item `
-  artifacts\submission\qa-private\predictions.json `
-  artifacts\submission\submission_task2.json `
-  -Force
-```
-
-Private input không có `answer`, vì vậy `metrics.json` ghi `accuracy: null`; điểm chỉ có sau khi nộp Codabench. `config.json` phải ghi `uses_retrieval_predictions: false`.
+Giữ nguyên `relevant_articles` đã có trong input Subtask 2. `answer` chỉ được là `A`, `B`, `C`, `D` đối với multiple choice hoặc `Đúng`, `Sai` đối với Yes/No; không kèm giải thích. `config.json` phải ghi `uses_retrieval_predictions: false`.
 
 ### Đóng gói
 

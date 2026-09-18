@@ -1,0 +1,217 @@
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+% Vietnamese / English support
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[english,vietnamese]{babel}
+
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Nguyễn Nhật Trung} \\ \vspace{1pt}
+    \small 0368439669 $|$ \href{mailto:trung14102005@gmail.com}{\underline{trung14102005@gmail.com}} $|$ 
+    \href{https://github.com/trungnguyennhat}{\underline{github.com/trungnguyennhat}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hanoi University of Science and Technology}{Sep. 2023 -- 2027 (expected)}
+      {Bachelor's Degree in Computer Science}{GPA: 3.50/4.00}
+    \resumeSubheading
+      {High School for Gifted Students (HSGS)}{Sep. 2020 -- May. 2023}
+      {Major: Physics}{GPA: 9.5/10.0}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {eUp Technology Joint Stock Company (eUp Group)}{Jun. 2026 -- Present}
+  {AI Engineer Intern}{Hanoi, Vietnam}
+  \resumeItemListStart
+    \resumeItem{Developed and improved LLM-powered chatbot features for educational applications, focusing on response quality, reliability, and user interaction.}
+    \resumeItem{Built and optimized \textbf{Retrieval-Augmented Generation (RAG)} pipelines for retrieving relevant knowledge and grounding LLM responses.}
+    \resumeItem{Designed and iterated on prompts for multiple chatbot use cases, applying \textbf{prompt/context engineering} techniques to improve instruction following and reduce irrelevant responses.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Multimodal Legal RAG for Vietnamese Traffic Regulations} $|$ \emph{Python, PyTorch, Transformers, Qwen2.5-VL}}{}
+          \resumeItemListStart
+            \resumeItem{Built a multimodal legal retrieval and question-answering system for the VLSP 2025 MLQA-TSR benchmark, combining traffic-sign images, Vietnamese questions, and legal documents.}
+            \resumeItem{Fine-tuned a Visualized-BGE adapter with citation-level contrastive learning and developed BM25--visual hybrid retrieval, achieving \textbf{0.4807 F2} on the private test set.}
+            \resumeItem{Implemented semantic evidence selection and grounded QA with Qwen2.5-VL-3B, achieving \textbf{50.00\% accuracy} on the private test set.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Multi-label Emotion Classification} $|$ \emph{Python, PyTorch, Transformers, scikit-learn}}{}
+          \resumeItemListStart
+            \resumeItem{Built an end-to-end pipeline for 28-label emotion classification on GoEmotions, including data auditing, cross-split deduplication, and leakage-safe evaluation.}
+            \resumeItem{Implemented and benchmarked five approaches, ranging from TF-IDF and BiLSTM-Attention to custom Transformer and pretrained BERT.}
+            \resumeItem{Optimized validation-based decision thresholds, improving TF-IDF Macro-F1 from 0.2315 to 0.4301.}
+            \resumeItem{Achieved 0.4679 Macro-F1 with a custom Transformer and 0.4976 Macro-F1 / 0.5826 Micro-F1 with BERT.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{AI Customer Support Agent with Custom RAG} $|$ \emph{Python, FastAPI, FAISS, Qdrant}}{}
+          \resumeItemListStart
+            \resumeItem{Built a framework-free agent with validated multi-step tool calling, conversation persistence, error handling, and a FastAPI interface.}
+            \resumeItem{Developed an end-to-end RAG system from scratch with chunking, embeddings, FAISS Flat/HNSW, BM25–vector hybrid retrieval using RRF, LLM reranking, and Qdrant persistence.}
+            \resumeItem{Evaluated retrieval with Recall@K and MRR and improved agent tool-routing accuracy from 85\% to 100\% across 20 scenarios while maintaining 100\% argument validity.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Credit Card Fraud Detection with XGBoost} $|$ \emph{Python, XGBoost, scikit-learn, imbalanced-learn, SDV}}{}
+          \resumeItemListStart
+            \resumeItem{Built an end-to-end fraud detection pipeline for 284,807 transactions with a highly imbalanced \textbf{0.173\%} fraud rate, using stratified train-test splitting and leakage-safe preprocessing.}
+
+            
+            \resumeItem{Benchmarked Logistic Regression and XGBoost across Random Undersampling, Borderline-SMOTE, CTGAN, and TVAE resampling strategies.}
+
+            \resumeItem{Evaluated model performance using precision, recall, F1-score, confusion matrices, and stratified 5-fold learning curves.}
+            
+            \resumeItem{Achieved \textbf{93.02\% precision}, \textbf{81.63\% recall}, and \textbf{86.96\% F1-score} with XGBoost, while analyzing the operational trade-off between missed fraud and false alerts.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Programming Languages}: Python, C/C++, SQL \\
+\textbf{Machine Learning \& AI}: PyTorch, Transformers, scikit-learn, XGBoost, NLP, Deep Learning, LLMs, RAG, Prompt Engineering \\
+\textbf{LLM \& Retrieval Systems}: FAISS, Qdrant, BM25, Hybrid Search, Reranking, Embeddings \\
+\textbf{Backend \& Development Tools}: FastAPI, Git, GitHub, Jupyter Notebook
+}}
+\end{itemize}
+
+%-----------CERTIFICATIONS-------------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{IELTS Academic}: 7.5 \\
+        \textbf{SAT}: 1500/1600
+    }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
