@@ -1,6 +1,6 @@
 # Multimodal Legal RAG
 
-Đồ án tốt nghiệp về truy hồi và hỏi đáp đa phương thức cho luật giao thông Việt Nam, dựa trên VLSP 2025 MLQA-TSR. Đây là hệ thống nghiên cứu, không phải công cụ tư vấn pháp lý.
+Hệ thống nghiên cứu cho VLSP 2025 MLQA-TSR, không phải công cụ tư vấn pháp lý production.
 
 ## Tiến độ
 
@@ -8,71 +8,155 @@
 | --- | --- | --- |
 | 0 | Khởi tạo và quản trị | `COMPLETED` |
 | 1 | Dữ liệu | `COMPLETED` |
-| 2 | Evaluator và baseline | `COMPLETED` |
-| 3 | Visual retrieval | `COMPLETED` |
-| 4 | Hybrid retrieval | `COMPLETED` |
-| 5 | Grounded legal QA | `COMPLETED` |
+| 2 | Evaluator còn giữ; baseline retrieval đã xóa | `AWAITING_USER_TEST` |
+| 3 | Visual retrieval và adapter đã xóa | `AWAITING_USER_TEST` |
+| 4 | Hybrid retrieval đã xóa | `AWAITING_USER_TEST` |
+| 5 | QA và kết quả đã xóa | `AWAITING_USER_TEST` |
 | 6 | Thực nghiệm luận văn | `NOT_STARTED` |
 | 7 | Demo và đóng gói | `NOT_STARTED` |
+| Corpus text_based_rag | Chuẩn hóa văn bản, hình và bảng; chưa chunk/index | `AWAITING_USER_TEST` |
+| Caption corpus text_based_rag | Mô tả ảnh luật bằng Qwen3-VL NF4, không crop | `AWAITING_USER_TEST` |
 
-Stage chỉ được đánh dấu `COMPLETED` sau khi người dùng chạy hướng dẫn kiểm tra và xác nhận thành công. Quy tắc đầy đủ nằm trong [AGENTS.md](AGENTS.md).
+## Chuẩn hóa corpus text_based_rag — `AWAITING_USER_TEST`
 
-## Điểm bàn giao — tạm dừng ngày 18/09/2026
+Đã triển khai `src/text_based_rag/corpus_normalization.py`, dùng Python standard library và loader JSON đã có. Không cài dependency, không dùng GPU. Theo xác nhận của người dùng, hướng retrieval mới dùng Qwen3-VL-8B NF4 với prompt trong file hiện tại, không crop; bước này chỉ chuẩn hóa corpus, chưa chạy VLM, tạo caption, chia chunk hoặc embedding.
 
-Project đang dừng sau khi hoàn thành Stage 5. Khi mở một phiên mới, đọc `AGENTS.md` và mục này trước; không chạy lại Stage 0–5 nếu artifact bên dưới vẫn còn. Chỉ bắt đầu Stage 6 khi người dùng yêu cầu rõ ràng.
+Schema phiên bản 2: mỗi record dẫn xuất giữ `id`, `title`, ID/tiêu đề văn bản, `article_key` theo vị trí nguồn và `blocks` theo thứ tự; không lưu lại `text` gốc hoặc thuộc tính HTML/CSS (`attributes`). Nội dung chuẩn hóa nằm trong các block văn bản và ô bảng. Block có ID duy nhất và `source_span` là khoảng ký tự `[start, end)` của vùng nguồn chứa block trong `text` ở law_db (vùng HTML có thể chứa nhiều block, không phải offset chính xác của từng từ). Đường dẫn/hash nguồn nằm trong manifest để đối chiếu mà không nhân bản nội dung gốc. HTML được đọc bằng HTMLParser; bỏ markup trang trí, giải mã entity, giữ ngắt đoạn, biểu diễn sub/sup bằng `_(...)`/`^(...)`. Văn bản ngoài HTML giữ ranh giới xuống dòng. File gốc không được ghi lại.
 
-### Trạng thái và kết quả đã khóa
+Hình lấy từ marker và thẻ img, kể cả trong ô bảng; giải mã URL, đối chiếu basename với thư mục ảnh local, không tải ảnh từ mạng. Manifest ảnh lưu SHA256 và mọi vị trí xuất hiện; file có cùng hash dùng cùng image_id. `description_vlm` hiện là null. Bảng giữ từng ô, tọa độ bắt đầu, rowspan/colspan, nội dung block trong ô và grid tham chiếu cell_id; null trong grid là ô thiếu, không phải số 0. `th` được đánh dấu header; không tự đoán header từ ô `td`. Bảng/chú thích/đơn vị không bị chuyển thành đoạn số liệu phẳng. `caption_original`/`unit_original` là chữ chú thích/đơn vị đã chuẩn hóa lấy từ nguồn, không chứa bản HTML gốc.
 
-| Thành phần | Cấu hình/kết quả chính |
-| --- | --- |
-| Dữ liệu | 418 train, 112 dev, 100 public có nhãn, 146 private không nhãn |
-| Stage 3 visual retrieval | Visualized-BGE, query `image-question-choices`, citation-level loss, `top_k=5`, dev F2 `0.4970959524` |
-| Stage 4 hybrid retrieval | sum-consensus, `example_k=3`, `example_weight=0.5`, `top_k=5`, dev F2 `0.5445245573` |
-| Public retrieval | F2 `0.4950557781`, precision `0.2740`, recall `0.6461904762` |
-| Stage 5 QA dev | `80/112`, Accuracy `0.7142857143` |
-| Stage 5 QA public | `71/100`, Accuracy `0.71` |
+Nhãn hình được gắn khi đoạn ngay sau bắt đầu bằng “Hình ...”; tên bảng/đơn vị được tìm trong tối đa ba đoạn liên tiếp trước bảng. Đoạn chú thích vẫn được giữ trong blocks. Tham chiếu đơn giản “Hình/Bảng + số hoặc A.1” được giải quyết trong mục hiện tại trước, sau đó trong cùng văn bản nếu chỉ có một đích. Không chọn tùy tiện nếu có nhiều đích. Nhãn không tìm được, tham chiếu mơ hồ/không tìm được, HTML cần sửa cấu trúc và bảng bất thường được ghi vào issues. Chưa suy diễn tham chiếu khoảng, nhóm hình con, hoặc các cách viết phức tạp; kiểm tra bản preview cùng text gốc khi gặp các trường hợp này. Bộ kiểm tra tính toàn vẹn ID và đích liên kết chạy ngay trong command chuẩn hóa.
 
-Stage 5 thực hiện đúng Subtask 2 độc lập: citation lấy từ `relevant_articles` trong input QA, không lấy từ Stage 4. Cấu hình đã khóa là `Qwen/Qwen2.5-VL-3B-Instruct` BF16 + SDPA, prompt mặc định duy nhất `direct-answer`, một evidence semantic tốt nhất trong mỗi citation, chunk 1.024 token/overlap 128, generation greedy cho Multiple choice và candidate scoring cho Yes/No.
+Điều kiện: file luật và ảnh đã được giải nén ở đường dẫn Stage 1, `.venv` có sẵn. Chạy từ root project:
 
-### Artifact cần giữ
-
-```text
-artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt
-artifacts/experiments/hybrid-example-retrieval-dev/
-artifacts/experiments/grounded-qa-dev/
-artifacts/public-test/retrieval/
-artifacts/public-test/qa/
-models/Visualized_m3.pth
-models/huggingface/
-data/processed/
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+.\.venv\Scripts\python.exe -m text_based_rag.corpus_normalization
 ```
 
-Các thư mục `data/`, `models/` và `artifacts/` không được Git theo dõi; không xóa chúng nếu muốn tiếp tục trên máy hiện tại. Nếu chuyển máy, phải sao lưu riêng theo data agreement và giấy phép model.
+Output cố định tại `artifacts/results/text_based_rag/data_preprocessing/`. Thư mục normalization hiện có đã được đổi tên theo yêu cầu; không cần chạy lại. Command chuẩn hóa từ chối chạy nếu thư mục đích đã tồn tại để tránh ghi đè:
 
-### File nguồn đang dùng
+- `structured_corpus.jsonl`: một record dẫn xuất cho mỗi mục gốc, chỉ có nội dung chuẩn hóa trong blocks cùng ID và thông tin truy vết; không có text HTML gốc hoặc attributes trang trí.
+- `image_manifest.jsonl`: danh sách ảnh local được tham chiếu, hash và vị trí sử dụng.
+- `corpus_inventory.json`: số văn bản/mục, các loại block, số lần sử dụng ảnh và thống kê issue.
+- `corpus_preview.md`: nội dung đọc được, ảnh, bảng theo từng ô và liên kết để đối chiếu.
+- `issues.jsonl`: các trường hợp cần người dùng kiểm tra; không tự sửa nội dung luật.
+- `manifest.json`: hash nguồn, đường dẫn, phiên bản schema, số lượng, thời gian và trạng thái chạy.
 
-- `src/multimodal_legal_rag/data.py`: chuẩn bị, validate và split dữ liệu.
-- `src/multimodal_legal_rag/bm25_evaluation.py`: evaluator F2/Accuracy và BM25 baseline.
-- `src/multimodal_legal_rag/visual_retrieval.py`: Visualized-BGE và adapter Stage 3.
-- `src/multimodal_legal_rag/hybrid_retrieval.py`: fusion retrieval Stage 4.
-- `src/multimodal_legal_rag/grounded_qa.py`: QA Stage 5 từ citation được cung cấp.
+Mong đợi trên dữ liệu hiện tại: 2 văn bản, 402 record trong structured_corpus; ảnh lấy cả từ 761 marker và các thẻ img nên không cố định số ảnh manifest bằng 761. Bảng có thể lồng nhau nên số block table không nhất thiết bằng số marker TABLE. Terminal in tiến trình khoảng mỗi 30 giây và đường dẫn output cuối cùng. `manifest.status=COMPLETED` nghĩa là command hoàn tất, không có nghĩa các issue đã được duyệt; trạng thái bàn giao vẫn AWAITING_USER_TEST.
 
-Working tree tại thời điểm tạm dừng có thay đổi chưa commit trong `AGENTS.md`, `README.md` và `src/multimodal_legal_rag/grounded_qa.py`. Không discard các thay đổi này khi quay lại.
+Mở `corpus_preview.md` để đối chiếu mục 12, B.24 và một bảng có ảnh; kiểm tra thứ tự, chữ/số/đơn vị, ảnh thuộc đúng ô, cell_id ở grid và references. Xem thống kê issue trong corpus_inventory rồi các chi tiết trong issues.jsonl. Nếu thiếu ảnh, kiểm tra thư mục `data/processed/images/law`; có thể truyền `--source` và `--image-dir` khi dữ liệu nằm ở vị trí khác. Lỗi import: đặt PYTHONPATH=src và dùng đúng Python .venv. Nếu chạy bị lỗi, thư mục giữ manifest FAILED; không dùng làm corpus hoàn chỉnh, sửa nguyên nhân, tự đổi tên thư mục data_preprocessing đang lỗi để lưu lại rồi chạy lại. HTMLParser chỉ sửa một số thẻ đóng tùy chọn; trường hợp HTML bất thường phải xem lại text gốc, không coi bản chuẩn hóa là tự động chính xác tuyệt đối.
 
-### Việc chưa làm
+Agent không chạy lại pipeline chuẩn hóa; chỉ đổi tên thư mục output hiện có theo yêu cầu. Bước caption đã được triển khai theo lệnh tiếp tục của người dùng.
 
-- Chưa bắt đầu Stage 6: ablation có hệ thống, tổng hợp tài nguyên và phân tích lỗi cho luận văn.
-- Chưa bắt đầu Stage 7: Streamlit, hoàn thiện CLI và tài liệu tái lập.
-- Chưa sinh/nộp private-test submission lên Codabench; private không có gold local và không được dùng để tuning.
-- Không tiếp tục tuning theo public test. Mọi lựa chọn mới phải thực hiện trên dev.
+Corpus trong data_preprocessing hiện có schema 2. Nếu cần chuẩn hóa lại, tự đổi tên thư mục đích hiện có để lưu bản cũ trước khi chạy cùng command; code không tự ghi đè hoặc xóa result. Mong đợi record không còn trường text cấp mục, block/table/cell không còn attributes; text trong block paragraph vẫn là nội dung luật đã chuẩn hóa. Trạng thái giữ AWAITING_USER_TEST.
 
-Để xác nhận nhanh trạng thái khi quay lại mà không chạy model:
+## Caption ảnh corpus — `AWAITING_USER_TEST`
+
+Code: `src/text_based_rag/image_captioning.py`. Đọc corpus schema 2 và image_manifest từ `artifacts/results/text_based_rag/data_preprocessing/`; kiểm tra hash ảnh, mô tả mỗi hash đúng một lần, rồi gắn `description_vlm` vào mọi block hình tương ứng, kể cả hình trong bảng lồng nhau. Nội dung luật và caption gốc được giữ riêng với mô tả do model sinh. Chưa chia chunk hoặc embedding.
+
+Điều kiện: `.venv` và checkpoint Qwen3-VL NF4 local đã có từ thử nghiệm; GPU CUDA hỗ trợ BF16, ít nhất 11 GiB VRAM trống. Dùng `LAW_PROMPT` hiện tại trong module image_captioning.py do người dùng chỉnh. Sửa prompt pipeline tại module mới; sửa temp không tự thay prompt pipeline. Không crop, max_pixels=786432, max_new_tokens=1024, greedy, SDPA. Giới hạn allocator tối đa 12 GiB và chừa tối thiểu 2 GiB theo VRAM trống lúc bắt đầu; đây không phải bảo đảm chống OOM khi ứng dụng khác dùng GPU.
+
+Chạy từ root project, chỉ một phiên caption cùng lúc:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+.\.venv\Scripts\python.exe -m text_based_rag.image_captioning
+```
+
+Output nằm trực tiếp trong `artifacts/results/text_based_rag/image_captioning/`, không có thư mục fingerprint. Chạy lại cùng lệnh sẽ tiếp tục các ảnh chưa hoàn tất. Bạn có thể sửa prompt hoặc giới hạn token rồi chạy tiếp: caption COMPLETED được giữ nguyên; ảnh chưa xong dùng prompt và giới hạn token hiện tại. Terminal báo số ảnh giữ lại và số còn cần xử lý. Chỉ dừng nếu corpus hoặc danh sách ảnh thay đổi. Không sửa file trong data_preprocessing.
+
+- `captions/<tên_ảnh>_description.json`: checkpoint từng ảnh, ví dụ `image008_description.json`; chứa mô tả, trạng thái, token, thời gian và VRAM. Nếu hai ảnh khác đuôi có cùng tên, giữ thêm đuôi để phân biệt (ví dụ `image008.png_description.json`). Hash chỉ dùng bên trong để kiểm tra dữ liệu và cấu hình. Ghi qua file tạm rồi thay thế để tránh checkpoint bị ghi dở. Tại thời điểm cập nhật, thư mục image_captioning không còn tồn tại nên không có checkpoint cũ để đổi tên.
+- `image_captions.jsonl`: tổng hợp caption sau khi toàn bộ ảnh hoàn tất.
+- `structured_corpus.jsonl`: corpus mới có description_vlm tại các block hình; giữ nguyên cấu trúc và liên kết.
+- `corpus_preview.md`: bản đọc có cả chú thích nguồn và mô tả VLM để đối chiếu ảnh.
+- `manifest.json`: cấu hình/prompt đầy đủ, tài nguyên và trạng thái chạy. Chỉ dùng corpus khi status là COMPLETED.
+
+Mong đợi với corpus hiện tại: 787 caption theo hash và 402 record corpus. Terminal in mô tả từng ảnh, tiến độ/ETA mỗi ảnh và khoảng mỗi 30 giây. Lần sau nếu caption đủ thì không cần nạp model để xuất lại corpus. Kiểm tra preview cùng ảnh gốc để đánh giá độ đúng; COMPLETED chỉ xác nhận xử lý đủ, không xác nhận mô tả chính xác.
+
+Thiếu ảnh hoặc hash thay đổi: sửa dữ liệu và chuẩn hóa lại, không bỏ qua hình. Thiếu model local: kiểm tra cache checkpoint ghi bên dưới. Thiếu VRAM/OOM: đóng ứng dụng GPU rồi chạy lại cùng command; caption thành công đã lưu sẽ được bỏ qua. Caption rỗng/chạm giới hạn token: chương trình lưu checkpoint INCOMPLETE, báo cảnh báo rồi tiếp tục ảnh tiếp theo, không dừng terminal vì trường hợp này. Cuối lượt, nếu còn ảnh chưa xong, manifest có status INCOMPLETE và incomplete_images liệt kê tên ảnh; chưa xuất corpus hoàn chỉnh. Chạy lại cùng command sẽ thử lại các ảnh này, bỏ qua caption COMPLETED. Nếu vẫn chạm giới hạn, chỉnh prompt hoặc MAX_NEW_TOKENS trước khi chạy lại. Lỗi CUDA/OOM hoặc lỗi đọc/ghi file vẫn dừng và báo lỗi. Nếu đổi prompt hoặc MAX_NEW_TOKENS, chạy lại cùng command để tiếp tục, không cần chuyển thư mục. Ảnh INCOMPLETE được thử lại; caption COMPLETED không tự được mô tả lại. Các ảnh có thể dùng prompt khác nhau; manifest lưu lịch sử trong caption_settings và mỗi checkpoint giữ mã đối chiếu với lịch sử đó. Muốn làm lại một ảnh đã xong, tự xóa checkpoint tương ứng trước khi chạy. Lỗi import: dùng đúng Python .venv và PYTHONPATH=src.
+
+Agent chưa chạy inference hoặc sinh output caption. Chờ người dùng tự chạy và xác nhận; trạng thái bàn giao AWAITING_USER_TEST.
+
+## Thử mô tả ảnh bằng Qwen3-VL — `AWAITING_USER_TEST`
+
+Theo yêu cầu ngày 10/10/2026, đã xóa hai cache Qwen2.5-VL-3B-Instruct và Qwen2.5-VL-7B-Instruct (gồm weight tải dở và lock tương ứng). Giữ model embedding/Visualized-BGE, dữ liệu và các output mô tả ảnh cũ. Script hiện chỉ dùng `unsloth/Qwen3-VL-8B-Instruct-bnb-4bit`, bản lượng tử hóa sẵn từ Qwen3-VL-8B-Instruct; không cần cài package Unsloth hoặc chạy remote code.
+
+Agent đã tải hoàn tất checkpoint vào `models/huggingface/models--unsloth--Qwen3-VL-8B-Instruct-bnb-4bit/snapshots/10d842936325905934ea24e64325d774693f166e`, cả hai safetensors khớp kích thước và SHA256 LFS. Chưa chạy inference hoặc sinh caption Qwen3-VL; người dùng có thể chạy trực tiếp lệnh inference bên dưới, không cần tải lại.
+
+### Chọn cấu hình và VRAM
+
+RTX 5060 Ti có 16311 MiB VRAM (15,93 GiB); lúc kiểm kê còn 14416 MiB (14,08 GiB) trống. Index checkpoint ghi 8.767.123.696 tham số: tính BF16 2 byte/tham số là khoảng 17,53 GB (16,33 GiB) chỉ cho trọng số, chưa tính activations xử lý ảnh, KV cache và CUDA; không phù hợp yêu cầu chừa headroom khi chạy toàn model trên GPU này. Chọn NF4 4-bit double quant cho phần ngôn ngữ, giữ vision/embedding/lm_head BF16 theo config checkpoint. Đây là bản đóng gói bởi Unsloth, không phải checkpoint lượng tử hóa do Qwen phát hành.
+
+Ước lượng lập kế hoạch cho inference một ảnh ngắn: khoảng 8–11 GiB, chưa đo trên máy này. Mức dùng thực tế phụ thuộc kích thước ảnh, số token và phiên bản thư viện. Script xử lý tuần tự một ảnh, SDPA, greedy, giới hạn ảnh tối đa 768 × 32 × 32 pixel, input tối đa 2048 token và output 384 token. Qwen3-VL dùng patch/merge theo bội 32; không giữ cấu hình bội 28 của Qwen2.5-VL. Hai prompt người dùng đã chỉnh và tọa độ crop được giữ nguyên. Thay preprocessing/model làm các số đo cũ không phải phép so sánh chỉ thay model.
+
+Script lấy VRAM trống lúc bắt đầu, đặt ngân sách allocator PyTorch bằng `min(12 GiB, VRAM trống - 2 GiB)` và dừng nếu ngân sách dưới 9 GiB. Giới hạn này có thể làm PyTorch báo OOM trước khi GPU đầy; không tự offload sang CPU, không tự giảm ảnh hoặc đổi model. Đây không phải giới hạn toàn bộ VRAM: CUDA và ứng dụng khác có thể dùng thêm bộ nhớ. Cần theo dõi `nvidia-smi` khi chạy lần đầu. JSON lưu peak allocated, peak reserved và VRAM trống sau inference để đánh giá headroom thực tế; không bảo đảm hết OOM cho cấu hình ảnh/prompt tùy ý.
+
+Nguồn: [model gốc Qwen](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct), [config NF4 của checkpoint được chọn](https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-bnb-4bit/blob/main/config.json), [Qwen3-VL trong Transformers 4.57.1](https://huggingface.co/docs/transformers/v4.57.1/model_doc/qwen3_vl).
+
+### File và điều kiện
+
+- `temp/describe_images.py`: inference local với Qwen3VLForConditionalGeneration, crop tùy chọn, output JSON/PNG theo timestamp; không tải model trong lúc inference.
+- `temp/download_vlm.py`: chỉ tải checkpoint vào `models/huggingface`, không nạp model/GPU hoặc sinh caption; chạy lại để tiếp tục tải dở. Cố định revision `10d842936325905934ea24e64325d774693f166e` trong cả hai script. Metadata tải qua Hugging Face Hub; hai safetensors tải trực tiếp từ resolve URL của revision, tổng 7.226.399.236 byte (6,73 GiB), kiểm tra kích thước và SHA256 LFS trước đổi tên file `.incomplete`. Cách này tránh đường tải weight qua HEAD redirect bị đứng trên máy. Log mỗi 30 giây có số file, byte, %, elapsed và ETA ước lượng.
+- `.venv`: Transformers 4.57.1, tokenizers 0.22.2, bitsandbytes 0.49.0, Accelerate 1.4.0, PyTorch 2.7.1+cu128 hiện có. Chỉ nâng Transformers/tokenizers để hỗ trợ Qwen3-VL; không nâng PyTorch. hf_xet 1.7.0 đã có từ lần thử trước, mặc định lệnh dưới dùng HTTP.
+- Ảnh đã giải nén trong `data/processed/images/train` và `data/processed/images/law`; cần ít nhất 11 GiB VRAM trống. Không đọc câu hỏi, đáp án hoặc citation; chưa xây retrieval/OCR/detector.
+
+### Lệnh PowerShell từ root project
+
+Nếu cần thiết lập trên máy mới hoặc tiếp tục tải checkpoint:
+
+```powershell
+$env:PYTHONUTF8="1"
+$env:HF_HUB_DISABLE_XET="1"
+.\.venv\Scripts\python.exe -m pip install transformers==4.57.1 bitsandbytes==0.49.0
+.\.venv\Scripts\python.exe -u temp\download_vlm.py
+```
+
+Người dùng tự chạy inference sau khi tải hoàn tất:
+
+```powershell
+$env:PYTHONUTF8="1"
+.\.venv\Scripts\python.exe -u temp\describe_images.py --train-image train_1_3.jpg --crop-train
+```
+
+Lệnh trên chạy ba đầu vào: train toàn cảnh, crop cả biển chính/phụ `(655, 0, 1168, 682)` và `law/image001.png`. Thay `--train-image` bằng `train_1_1.jpg` hoặc `train_1_2.jpg` để thử các ảnh trước; mặc định là ảnh thứ nhất. Ảnh thứ nhất có hai crop nên tổng bốn đầu vào. Không còn option `--model` trỏ tới model cũ đã xóa.
+
+Mong đợi: log model NF4, phiên bản thư viện, VRAM trống/ngân sách, log tiến trình khoảng mỗi 30 giây; output `temp/qwen_descriptions_<timestamp>.json` có `completed: true` khi đủ đầu vào, kèm prompt, model revision, quantization config, token, thời gian và tài nguyên. PNG crop nằm cạnh JSON. Không ghi đè kết quả trước; không tự sửa caption sai. Mở ảnh và đối chiếu chữ/số, hình dạng, nét gạch chéo, chi tiết bị thiếu hoặc bịa thêm. Agent không chạy inference hoặc test theo yêu cầu người dùng; trạng thái giữ `AWAITING_USER_TEST` đến khi người dùng phản hồi.
+
+Lỗi thường gặp: thiếu model local thì chạy downloader đến `100% completed`; mạng ngắt thì chạy lại downloader để tiếp tục file `.incomplete`. Nếu lỗi SHA256/kích thước, kiểm tra đúng file được báo; không dùng checkpoint lỗi, chỉ xóa file đó nếu cần tải lại. Import không có Qwen3VL thì cài đúng Transformers trong `.venv`. Thiếu VRAM/OOM thì đóng ứng dụng dùng GPU rồi chạy lại; giữ nguyên giới hạn allocator. Lỗi encoding thì đặt `PYTHONUTF8=1`. Crop lỗi kích thước thì kiểm tra đúng ảnh gốc (680×454, 800×522, 1200×900). Output chạm 384 token có cảnh báo có thể bị cắt.
+
+Các kết quả Qwen2.5-VL-3B trước đây được giữ để tham khảo: `temp/qwen_descriptions_20261009T214816588067Z.json` (train_1_1), `temp/qwen_descriptions_20261009T215035817639Z.json` (train_1_2), `temp/qwen_descriptions_20261010T112649092456Z.json` (train_1_3). Bản 3B từng đọc đúng hai khung giờ trên ảnh thứ ba nhưng bỏ dấu `>` trước `29 CHỖ` và mô tả sai nét gạch đỏ; crop chưa sửa hết lỗi. Chưa có kết quả Qwen3-VL để kết luận cải thiện.
+
+## Reset retrieval và QA — 09/10/2026
+
+Theo yêu cầu người dùng, đã xóa code BM25 baseline, visual/hybrid retrieval, adapter fine-tune, code QA (gồm chọn evidence và inference), toàn bộ experiment/kết quả retrieval và QA dev/public/private, cùng prediction submission và ZIP private đã sinh. Không triển khai pipeline thay thế.
+
+Giữ nguyên `models/` (weight, source model, Hugging Face cache), `.venv` và cấu hình môi trường, `data/`, loader/validator/split, evaluator F2/Accuracy, Git và tài liệu nền tảng. `bm25_evaluation.py` chỉ còn evaluator, không còn command `baseline`. `artifacts/experiments/note.md` chỉ là ghi chú công thức metric, không phải kết quả thí nghiệm.
+
+Stage 2–5 ở trạng thái `AWAITING_USER_TEST` để xác nhận việc dọn dẹp, không phải đã triển khai lại. Retrieval và QA hiện chưa có pipeline. Kiến trúc mới sẽ được duyệt khi người dùng yêu cầu xây lại; không tự tiếp tục Stage 6.
+
+### Kiểm tra dọn dẹp
+
+Điều kiện: mở PowerShell tại root project.
 
 ```powershell
 git status --short
-Get-Content artifacts\experiments\grounded-qa-dev\metrics.json
-Get-Content artifacts\public-test\qa\metrics.json
+Get-ChildItem src\multimodal_legal_rag
+Get-ChildItem artifacts -Recurse
+Test-Path src\multimodal_legal_rag\grounded_qa.py
+Test-Path src\multimodal_legal_rag\visual_retrieval.py
+Test-Path src\multimodal_legal_rag\hybrid_retrieval.py
+Test-Path .venv\Scripts\python.exe
+Test-Path models\Visualized_m3.pth
+Test-Path models\huggingface
+Test-Path data\processed
 ```
+
+Mong đợi: ba lệnh kiểm tra source trả về `False`, bốn lệnh cuối trả về `True`. Không còn prediction, metric, adapter, evidence hay submission trong `artifacts/`; có thể còn thư mục rỗng và `note.md`. Nếu file bị khóa khi dọn, đóng process giữ file rồi báo lại đường dẫn; không xóa model hay environment. Agent chỉ kiểm kê filesystem, không chạy code/test/pipeline.
+
+File nguồn còn dùng: `data.py` (dữ liệu), `bm25_evaluation.py` (evaluator) và `__init__.py` (package).
 
 ## Stage 0 — Bàn giao
 
@@ -222,572 +306,3 @@ Người dùng đã chạy trực tiếp các lệnh và xác nhận kết quả
 - Validator báo thiếu file: kiểm tra clone đã hoàn tất và không đổi cấu trúc thư mục official repository.
 - Warning về định dạng ảnh, citation và ID trùng là bất thường đã ghi nhận của dữ liệu gốc, không phải lỗi command. Không được tự sửa trực tiếp dữ liệu nguồn.
 
-## Stage 2 — Bàn giao evaluator và baseline retrieval
-
-### Đã hoàn thành
-
-- Thêm evaluator khớp công thức chính thức: macro F2 (beta 2) cho retrieval và exact-match Accuracy cho QA.
-- Chuẩn hóa Unicode NFC và khoảng trắng ở đáp án QA để `Đúng` và `Đúng` được so sánh nhất quán; không thay đổi nhãn nguồn.
-- Thêm baseline BM25 text-only thuần Python standard library. Baseline chỉ dùng câu hỏi, lựa chọn và văn bản luật; ảnh được dành cho Stage 3.
-- Gộp các article có cùng `(law_id, article_id)` thành một citation duy nhất, nên 402 article records tạo thành 398 citation có thể truy hồi.
-- Mỗi lần chạy baseline lưu `config.json`, `predictions.json`, `metrics.json` và `resources.json` dưới `artifacts/experiments/<tên-thí-nghiệm>`.
-- Cấu hình baseline mặc định là `top_k=5`, `k1=1.5`, `b=0.75`.
-
-File chính: `src/multimodal_legal_rag/bm25_evaluation.py`. Không có dependency mới.
-
-### Điều kiện tiên quyết
-
-- Stage 1 đã tạo `data/processed/splits/dev.json`.
-- Official corpus tồn tại tại `data/raw/VLSP2025-MLQA-TSR`.
-- Chạy từ thư mục gốc project và đặt biến môi trường trong cửa sổ PowerShell hiện tại:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-```
-
-### Cách tự kiểm tra
-
-Chạy lần lượt:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation baseline
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task retrieval `
-  --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\bm25-retrieval-dev\predictions.json
-Get-ChildItem artifacts\experiments\bm25-retrieval-dev
-```
-
-Kết quả mong đợi:
-
-- Baseline và evaluator in cùng một F2, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
-- Thư mục experiment có đúng bốn file `config.json`, `predictions.json`, `metrics.json`, `resources.json`.
-- `artifacts/` vẫn bị Git bỏ qua và không được commit.
-
-Để tự kiểm tra Accuracy bằng một file prediction QA, dùng:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task qa `
-  --gold <đường-dẫn-gold.json> `
-  --predictions <đường-dẫn-predictions.json>
-```
-
-### Lỗi thường gặp
-
-- `No module named multimodal_legal_rag`: chạy lại `$env:PYTHONPATH="src"` trong cùng cửa sổ PowerShell.
-- Thiếu `dev.json`: chạy lại lệnh `split` của Stage 1 trước khi chạy baseline.
-- Thiếu corpus luật: kiểm tra official repository ở đúng đường dẫn Stage 1.
-- `top-k phải trong khoảng ...`: dùng số nguyên dương không lớn hơn số citation trong corpus; mặc định là 5.
-- Prediction thiếu sample được chấm 0 cho sample đó và được đếm tại `missing_predictions`; prediction thừa không góp vào điểm và được đếm tại `extra_predictions`.
-
-Người dùng đã chạy trực tiếp các lệnh và xác nhận hoàn tất ngày 13/09/2026. Stage 2 đã `COMPLETED`; Stage 3 chỉ bắt đầu khi có lệnh riêng.
-
-## Stage 3 — Bàn giao visual retrieval
-
-### Đã hoàn thành
-
-- Thêm visual retrieval tại `src/multimodal_legal_rag/visual_retrieval.py`, bám theo `BAAI/bge-visualized` với text encoder đa ngôn ngữ `BAAI/bge-m3`.
-- Mỗi article được chia thành các text chunk tối đa 1.024 token, overlap 128 token. Mọi ảnh được tham chiếu tạo thêm một candidate ảnh + tiêu đề; text chunk và ảnh đều quy về citation gốc.
-- Nội dung bảng HTML trong luật được giữ lại dưới dạng plain text trước khi chunk, không còn bị loại bỏ khỏi embedding.
-- Query kết hợp ảnh, câu hỏi và các lựa chọn. Khi một article có nhiều ảnh, hệ thống lấy điểm candidate cao nhất rồi mới chọn `top_k`, nên citation trả về không bị trùng.
-- Không còn cắt bỏ phần cuối article. Retrieval lấy điểm cao nhất trong toàn bộ text chunk và image candidate của cùng citation, nên căn cứ ở cuối văn bản vẫn có thể được truy hồi.
-- Fine-tune một linear metric adapter 1024×1024 bằng multi-positive contrastive loss trên 418 mẫu `train.json`. Visualized-BGE gốc được đóng băng để vừa GPU 16 GB; khoảng 1,05 triệu tham số adapter được cập nhật.
-- Command `train` đánh giá mỗi epoch trên 112 mẫu dev, lưu checkpoint có F2 dev cao nhất cùng `config.json`, `predictions.json`, `metrics.json`, `resources.json` và `history.json` dưới `artifacts/experiments/visual-bge-finetune`.
-- Trong lúc chạy, CLI báo tiến trình cho encode corpus, train query, dev query và từng nhóm epoch, kèm phần trăm, thời gian đã chạy và ETA.
-- Command `retrieve` bắt buộc nạp `adapter.pt`. Stage 4 dùng adapter này cho Subtask 1; Stage 5 độc lập dùng `relevant_articles` được cung cấp trong input Subtask 2 và chỉ tái sử dụng adapter để chọn evidence bên trong từng citation.
-- Thêm query representation ablation qua `--query-mode`: `image-question-choices` (mặc định hiện tại), `image-question`, và `question-only`. Mode `question-only` không nạp ảnh query; mỗi mode phải huấn luyện adapter riêng và ghi vào experiment riêng.
-- Đồng bộ training objective với evaluator bằng citation-level contrastive loss. Cấu hình Stage 3 được chọn là `image-question-choices`, citation-level loss, không thêm local image context và `top_k=5`; adapter nằm tại `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`.
-
-Stage này chưa tạo cache embedding riêng. Chunking làm tăng số candidate và thời gian encode; chỉ thêm cache sau khi lần chạy thực tế xác nhận đây là nút thắt.
-
-Kết quả zero-shot dev ngày 14/09/2026 được giữ làm mốc trước fine-tune: Visualized-BGE đạt F2 `0.1393` so với BM25 `0.2069`, mất khoảng 400 giây và dùng peak VRAM khoảng 12.36 GB. Visual có 12 hit riêng mà BM25 bỏ lỡ. Kết quả fine-tune phải được đo lại bằng command bên dưới; không giả định trước rằng fine-tune chắc chắn cải thiện dev.
-
-### Điều kiện tiên quyết
-
-Stage 1 phải có `data/processed/splits/dev.json`, ảnh đã giải nén dưới `data/processed/images`, và máy có đủ dung lượng cho model. Từ thư mục gốc project, cài dependency trong `.venv`:
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu128
-.\.venv\Scripts\python.exe -m pip install transformers==4.44.2 sentencepiece==0.2.0 timm==1.0.9 einops==0.8.0 ftfy==6.2.3
-New-Item -ItemType Directory -Force models | Out-Null
-git clone --branch v1.4.2 --depth 1 https://github.com/FlagOpen/FlagEmbedding.git models/FlagEmbedding
-curl.exe -L "https://huggingface.co/BAAI/bge-visualized/resolve/main/Visualized_m3.pth?download=true" -o models\Visualized_m3.pth
-```
-
-Không chạy `pip install -e` cho `research/visual_bge`: bản upstream `v1.4.2` tạo metadata nhưng không expose được module `visual_bge`. CLI của project nạp trực tiếp source cố định đã clone và đặt Hugging Face cache trong `models/huggingface`.
-
-`models/` bị Git bỏ qua. File `Visualized_m3.pth` khoảng 1.75 GB; xác minh file tải đúng bằng:
-
-```powershell
-(Get-FileHash models\Visualized_m3.pth -Algorithm SHA256).Hash.ToLower()
-```
-
-Kết quả mong đợi:
-
-```text
-d14e7e8f2618b80d3f4a3283c08f79a16f09ce37d4447dac24117b44df6bd069
-```
-
-Sau đó đặt biến môi trường cho cửa sổ PowerShell hiện tại:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-```
-
-### Chạy baseline trước fine-tune
-
-Command `zero-shot` dùng trực tiếp Visualized-BGE, không đọc hoặc tạo `adapter.pt`. Đây chỉ là mốc so sánh/ablation; Stage 4 trở đi vẫn dùng adapter đã fine-tune.
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval zero-shot
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task retrieval `
-  --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\visual-bge-zero-shot-dev\predictions.json
-```
-
-Kết quả nằm trong `artifacts/experiments/visual-bge-zero-shot-dev`. Vì code hiện tại đã chuyển sang chunk 1.024 token và giữ nội dung bảng, kết quả này có thể khác mốc zero-shot cũ F2 `0.1393`.
-
-### Cách tự kiểm tra
-
-Fine-tune trên train, chọn checkpoint có F2 cao nhất trên dev, rồi dùng evaluator độc lập để đối chiếu:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task retrieval `
-  --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\visual-bge-finetune\predictions.json
-Get-ChildItem artifacts\experiments\visual-bge-finetune
-```
-
-Kết quả mong đợi:
-
-- Trong quá trình chạy xuất hiện log dạng `[corpus] ...`, `[train-queries] ...`, `[dev-queries] ...` và `[training] 5/50 ...`.
-- Training loss phải là số hữu hạn; log có loss và dev F2 theo epoch. Retrieval và evaluator in cùng F2 của `best_epoch`, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
-- Experiment có sáu file `adapter.pt`, `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `history.json`.
-- `resources.json` báo `device: "cuda"`, tên GPU và peak VRAM; `artifacts/` vẫn không được Git theo dõi.
-
-Người dùng đã chạy trực tiếp baseline và các ablation, xác nhận Stage 3 hoàn tất ngày 15/09/2026. Stage 3 đã `COMPLETED`; Stage 4 chỉ bắt đầu khi có lệnh riêng.
-
-### Query representation ablation
-
-Giữ `top_k=5` đã được chọn trên dev. Kết quả hiện tại tại `artifacts/experiments/visual-bge-finetune` là baseline `image-question-choices`; không ghi đè thư mục này. Huấn luyện hai representation còn lại với cùng hyperparameter và output riêng:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train `
-  --query-mode image-question `
-  --top-k 5 `
-  --output artifacts\experiments\improvements\query-representation\visual-bge-query-image-question
-
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train `
-  --query-mode question-only `
-  --top-k 5 `
-  --output artifacts\experiments\improvements\query-representation\visual-bge-query-question-only
-```
-
-Sau mỗi lệnh, dùng evaluator độc lập:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task retrieval `
-  --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\improvements\query-representation\visual-bge-query-image-question\predictions.json
-
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task retrieval `
-  --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\improvements\query-representation\visual-bge-query-question-only\predictions.json
-```
-
-Kết quả mong đợi: mỗi experiment có `adapter.pt`, `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `history.json`; `config.json` ghi đúng `query_mode`; evaluator báo `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`. So sánh F2 với baseline `image-question-choices` là `0.4649128757684249`, rồi chọn duy nhất representation có F2 dev cao nhất. Không thay đổi hyperparameter khác trong ablation này.
-
-Kết quả đã đo: `image-question` đạt F2 `0.4230114246`, `question-only` đạt `0.4108874375`, đều thấp hơn baseline. Vì vậy các artifact được giữ làm ablation tại `artifacts/experiments/improvements/query-representation`, còn cấu hình được chọn vẫn là `image-question-choices`.
-
-### Citation-level loss improvement
-
-Loss mặc định `candidate` được giữ để tái lập baseline. Thí nghiệm tiếp theo gộp score các chunk/ảnh bằng max theo citation trước khi tính contrastive loss, đồng bộ training objective với inference. Giữ query representation thắng là `image-question-choices` và `top_k=5`:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train `
-  --loss-level citation `
-  --query-mode image-question-choices `
-  --top-k 5 `
-  --output artifacts\experiments\improvements\citation-level-loss\visual-bge-citation-loss
-
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task retrieval `
-  --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\improvements\citation-level-loss\visual-bge-citation-loss\predictions.json
-```
-
-Kết quả mong đợi: experiment có đủ sáu artifact, `config.json` ghi `loss_level: "citation"` và `query_mode: "image-question-choices"`, evaluator báo đủ 112 mẫu. So sánh F2 với candidate-level baseline `0.4649128758`; chỉ chọn citation-level loss nếu F2 dev cao hơn. Nếu không, giữ adapter baseline và lưu experiment này làm ablation âm.
-
-Kết quả đã đo: citation-level loss đạt F2 `0.4970959524`, cao hơn candidate-level baseline `0.4649128758`; precision tăng từ `0.2625` lên `0.2768` và recall tăng từ `0.6148` lên `0.6661`. Khi kiểm tra lại top-k với adapter mới, k3 đạt `0.4811664585`, k5 đạt `0.4970959524`, k7 đạt `0.4566970293`; vì vậy tiếp tục khóa `top_k=5`.
-
-### Image local context improvement
-
-Image candidate mặc định chỉ dùng title để giữ hành vi cũ. `--image-context-tokens 256` bổ sung tối đa 256 token ngay trước và 256 token ngay sau marker ảnh sau khi chuyển bảng HTML thành plain text. Thí nghiệm giữ nguyên query representation, citation-level loss và top-k đã chọn:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.visual_retrieval train `
-  --loss-level citation `
-  --query-mode image-question-choices `
-  --image-context-tokens 256 `
-  --top-k 5 `
-  --output artifacts\experiments\improvements\image-local-context\visual-bge-local-context-256
-
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task retrieval `
-  --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\improvements\image-local-context\visual-bge-local-context-256\predictions.json
-```
-
-Kết quả mong đợi: experiment có đủ sáu artifact; `config.json` ghi `loss_level: "citation"`, `query_mode: "image-question-choices"`, `image_context_tokens_per_side: 256` và `top_k: 5`; evaluator báo đủ 112 mẫu. So sánh F2 với citation-level baseline `0.4970959524`. Chỉ chọn local context nếu F2 dev cao hơn; không thử thêm kích thước cửa sổ trước khi có kết quả này.
-
-Kết quả đã đo: local context 256 đạt F2 `0.4936458544`, precision `0.2767857143`, recall `0.6579081633`; thấp hơn citation-level baseline F2 `0.4970959524`. Vì vậy Stage 3 khóa `image_context_tokens=0`; experiment được giữ làm ablation âm.
-
-### Lỗi thường gặp
-
-- `Thiếu dependency Stage 3`: chạy lại hai lệnh `pip install` ở phần điều kiện tiên quyết trong đúng `.venv`.
-- `No module named 'visual_bge'` dù `pip show visual_bge` có kết quả: đây là lỗi editable install của upstream. Cập nhật code hiện tại và chạy lại; không cần cài editable.
-- `destination path ... already exists` khi clone: bỏ qua clone nếu `models/FlagEmbedding/research/visual_bge` đã tồn tại và tiếp tục với bước tải weight.
-- `Token indices sequence length ... 8730 > 8192` kèm `device-side assert`: phiên bản cũ encode toàn article. Code hiện tại chia article thành chunk 1.024 token; đóng terminal đã gặp CUDA assert, mở PowerShell mới rồi chạy lại.
-- `Thiếu model weight` hoặc hash không khớp: xóa file tải dở và chạy lại lệnh `curl.exe`; không dùng file sai hash.
-- Lỗi tải `BAAI/bge-m3`: lần chạy đầu cần Internet để tải config/tokenizer vào `models/huggingface`; kiểm tra kết nối và quyền ghi thư mục `models` rồi chạy lại.
-- `CUDA out of memory`: đóng process đang dùng GPU rồi chạy lại. Baseline hiện encode tuần tự; không tăng batch size.
-- `Thiếu fine-tuned adapter`: chạy `...visual_retrieval train` thành công trước khi dùng command `retrieve`.
-- `device: "cpu"`: kiểm tra `nvidia-smi`, rồi xác nhận đã cài wheel PyTorch từ index `cu128`, không phải wheel CPU.
-- `No module named multimodal_legal_rag`: chạy lại `$env:PYTHONPATH="src"` trong cùng cửa sổ PowerShell.
-
-## Stage 4 — Bàn giao hybrid retrieval
-
-### Đã hoàn thành
-
-- Thêm `src/multimodal_legal_rag/hybrid_retrieval.py`, kết hợp nhánh example-based multimodal với nhánh corpus visual của Stage 3.
-- Nhánh visual bắt buộc nạp adapter citation-level tốt nhất của Stage 3 tại `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`; không dùng zero-shot.
-- Nhánh example tìm query train gần nhất trong chính không gian embedding đã fine-tune, rồi cộng similarity của các láng giềng cùng trích dẫn trước khi truyền citation sang query dev. Split theo `image_id` của Stage 1 ngăn ảnh train/dev trùng nhau.
-- Giữ cấu hình visual đã khóa: query `image-question-choices`, không thêm local image context. Nhánh corpus lấy top 20 để tạo candidate pool.
-- Chuẩn hóa min-max riêng từng nhánh và tìm `example_k` trong `1, 3, 5`, `example_weight` trong `0, 0.25, 0.5, 0.75`, `top_k` trong `3, 5, 7` trên dev.
-- Lưu cấu hình, prediction, metric, resource, toàn bộ bảng tìm kiếm và metric độc lập của hai nhánh để tái lập.
-- Phép cộng consensus đã được thử trên dev: cấu hình `example_k=3`, `example_weight=0.5`, `top_k=5` đạt F2 `0.5445245573`, precision `0.3089285714`, recall `0.7216836735`; cao hơn phép lấy maximum trước đó có F2 `0.5330363192`.
-
-Không thêm model, dependency, FAISS hoặc cache embedding. BM25-RRF trước đó đạt tốt nhất khi `visual_weight=1.0`, tức không tạo cải thiện, nên được giữ tại artifact cũ làm ablation âm và không còn là pipeline Stage 4 chính.
-
-### Điều kiện tiên quyết
-
-- Stage 1 đã tạo `data/processed/splits/dev.json` và ảnh dưới `data/processed/images`.
-- Dependency, model weight và source Visualized-BGE của Stage 3 vẫn tồn tại.
-- Adapter được chọn của Stage 3 tồn tại tại đường dẫn mặc định nêu trên.
-- Từ thư mục gốc project, đặt biến môi trường trong cửa sổ PowerShell hiện tại:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-```
-
-### Cách tự kiểm tra
-
-Chạy pipeline hybrid trên dev, sau đó đối chiếu bằng evaluator độc lập:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.hybrid_retrieval
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task retrieval `
-  --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\hybrid-example-retrieval-dev\predictions.json
-Get-ChildItem artifacts\experiments\hybrid-example-retrieval-dev
-```
-
-Kết quả mong đợi:
-
-- Quá trình chạy có log `[model]`, `[corpus]`, `[train-examples]` và `[dev-queries]` khoảng mỗi 30 giây; đây là indexing/inference, không phải training.
-- CLI hybrid và evaluator in cùng F2, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
-- Thư mục experiment có sáu file `config.json`, `predictions.json`, `metrics.json`, `resources.json`, `search.json`, `branch_metrics.json`.
-- `config.json` ghi adapter citation-level của Stage 3, `query_mode: "image-question-choices"`, `image_context_tokens_per_side: 0` và cấu hình fusion được chọn.
-- Với cùng dữ liệu và adapter đã nêu, cấu hình được chọn dự kiến là `example_k=3`, `example_weight=0.5`, `top_k=5`, F2 khoảng `0.5445245573`.
-- `branch_metrics.json` cho phép so sánh corpus-only, example-only và hybrid ở cùng `top_k`; cấu hình chỉ được chấp nhận nếu hybrid vượt corpus-only F2 `0.4970959524` trên dev.
-- `resources.json` báo `device: "cuda"`; `artifacts/` vẫn không được Git theo dõi.
-
-Người dùng đã duyệt sum-consensus và xác nhận kết thúc Stage 4 ngày 16/09/2026. Confidence gating và dynamic top-k chỉ được thử trong bộ nhớ, không cải thiện đủ để chọn nên không được thêm vào pipeline. Stage 4 đã `COMPLETED`; Stage 5 chỉ bắt đầu khi có lệnh riêng.
-
-### Lỗi thường gặp
-
-- `Thiếu fine-tuned adapter`: kiểm tra đúng artifact citation-level đã được chọn ở Stage 3; không thay bằng adapter zero-shot hoặc candidate-level.
-- `Thiếu dependency Stage 3`, model weight hay source Visualized-BGE: làm lại phần điều kiện tiên quyết của Stage 3 trong đúng `.venv`.
-- `Thiếu ảnh`: chạy lại `data prepare` của Stage 1 và giữ `--query-images` mặc định là `data/processed/images/train` cho dev.
-- `CUDA out of memory`: đóng process đang dùng GPU rồi mở PowerShell mới và chạy lại; pipeline encode tuần tự, không tăng batch size.
-- Output đã tồn tại sẽ được ghi lại trong đúng experiment dev. Nếu cần giữ một lần chạy cũ, truyền `--output` sang một thư mục experiment mới.
-- Hybrid không vượt F2 `0.4970959524`: giữ visual corpus-only làm cấu hình chính và ghi nhận example fusion là ablation âm; không tiếp tục chọn model bằng public/private test.
-
-## Stage 5 — Bàn giao grounded legal QA
-
-### Đã hoàn thành
-
-- Thêm `src/multimodal_legal_rag/grounded_qa.py`, dùng `Qwen/Qwen2.5-VL-3B-Instruct` ở BF16 để thực hiện độc lập Subtask 2.
-- Citation luôn lấy từ `relevant_articles` trong chính input QA do ban tổ chức cung cấp. Stage 5 không đọc prediction Stage 4; Subtask 1 và Subtask 2 được đánh giá độc lập.
-- Evidence không được chọn bằng keyword. Pipeline dùng lại Visualized-BGE và adapter citation-level đã fine-tune ở Stage 3 để so khớp semantic giữa ảnh + câu hỏi + choices với các text chunk hoặc ảnh luật nằm trong từng citation.
-- Các citation bất thường vốn có trong gold được resolve mà không sửa dữ liệu nguồn: hậu tố số `.0` ánh xạ về article số tương ứng, nhãn ghép như `22 B.15` xét cả hai article, và các alias đã kiểm kê được ánh xạ tường minh (`G1.1 → G.1`, `I.414 → E.14`, `D.11 → D.10`, `F5 → F.5`). `D.11` phải trỏ vào record `D.10` vì corpus JSON đã gộp tiêu đề và toàn bộ nội dung mục D.11 vào cuối record đó. Artifact giữ cả nhãn nguồn và article corpus đã chọn; code không dùng fuzzy matching có thể nhầm article chỉ nhắc lại cùng ký hiệu.
-- Mỗi citation giữ candidate có cosine similarity cao nhất. Text corpus vẫn dùng chunk 1.024 token, overlap 128 token; image candidate được truyền trực tiếp cho Qwen khi được chọn.
-- Visualized-BGE được giải phóng trước khi nạp Qwen để hai model không cùng chiếm VRAM.
-- Stage 5 chỉ có prompt mặc định `direct-answer`; Multiple choice dùng greedy generation; Yes/No dùng candidate scoring theo mean token log-probability. CLI không có option chọn prompt.
-- Generation dùng `max_new_tokens=8`; output chỉ chấp nhận `A/B/C/D` hoặc `Đúng/Sai`. Output không hợp lệ được ghi lại và tính sai, không tự thay bằng nhãn đoán.
-- Các bước lâu in log khoảng mỗi 30 giây với số mẫu, phần trăm, elapsed và ETA. Đây là indexing/inference, không phải training.
-
-Experiment mặc định nằm tại `artifacts/experiments/grounded-qa-dev` và gồm sáu file:
-
-```text
-config.json
-evidence.json
-predictions.json
-metrics.json
-resources.json
-candidate_scores.json
-```
-
-`evidence.json` chỉ lưu citation, candidate index, modality và similarity để tái lập lựa chọn; không sao chép toàn bộ corpus luật.
-
-### Điều kiện tiên quyết
-
-- Stage 1 đã tạo `data/processed/splits/dev.json` và ảnh dưới `data/processed/images`.
-- Dependency, source Visualized-BGE, weight và adapter citation-level của Stage 3 vẫn tồn tại.
-- Windows native là môi trường chính. Ubuntu/WSL chỉ cần dùng nếu máy gặp lỗi CUDA/operator không xử lý được trên Windows.
-- Cài dependency Stage 5 vào đúng `.venv`:
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install --upgrade `
-  transformers==4.49.0 `
-  accelerate==1.4.0 `
-  qwen-vl-utils==0.0.8
-```
-
-Không cài `bitsandbytes`, FlashAttention hoặc package vào Python hệ thống. Lần chạy đầu cần Internet để tải `Qwen/Qwen2.5-VL-3B-Instruct`; model được cache dưới `models/huggingface` và không được Git theo dõi.
-
-Từ thư mục gốc project, đặt biến môi trường trong cửa sổ PowerShell hiện tại:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-```
-
-### Cách tự kiểm tra
-
-Chạy pipeline QA thực tế, sau đó đối chiếu prediction chính bằng evaluator Stage 2:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task qa `
-  --gold data\processed\splits\dev.json `
-  --predictions artifacts\experiments\grounded-qa-dev\predictions.json
-Get-ChildItem artifacts\experiments\grounded-qa-dev
-```
-
-Kết quả mong đợi:
-
-- Có log `[evidence-indexing]`, `[evidence-selection]` và `[qa-inference]`; không có bước nào được gọi là training.
-- Pipeline và evaluator in cùng Accuracy chính, `samples: 112`, `missing_predictions: 0`, `extra_predictions: 0`.
-- Mọi `answer` trong `predictions.json` là `A/B/C/D` cho Multiple choice hoặc `Đúng/Sai` cho Yes/No; `relevant_articles` được giữ nguyên từ input.
-- Mỗi evidence trong `evidence.json` thuộc đúng citation tương ứng; `modality` là `text` hoặc `image`, có `candidate_index`, `similarity`, citation nguồn và `corpus_law_id`/`corpus_article_id` đã resolve.
-- `config.json` ghi `citation_source` từ input, `uses_retrieval_predictions: false`, adapter citation-level Stage 3, hybrid answer routing, BF16 và SDPA.
-- `candidate_scores.json` chỉ chứa các câu Yes/No; Multiple choice được generate một lần.
-- `resources.json` báo `device: "cuda"`, tên GPU, peak VRAM, thời gian và đúng phiên bản dependency.
-- Thư mục experiment có đủ sáu file nêu trên; `artifacts/` và model cache vẫn không được Git theo dõi.
-
-Các kết quả Stage 5 cũ dùng citation Stage 4 đã bị xóa vì không khớp thể lệ Subtask 2. Prompt mặc định `direct-answer` đã được người dùng chạy và xác nhận: dev đạt `80/112`, Accuracy `0.7142857143`; public đạt `71/100`, Accuracy `0.71`. Thử nghiệm prompt theo bài báo đạt `71/112`, Accuracy `0.6339285714`, có 9 output thừa nội dung sau nhãn nên đã bị loại bỏ và không được giữ làm cấu hình chính.
-
-### Lỗi thường gặp
-
-- `Thiếu dependency Stage 5` hoặc `KeyError: 'qwen2_5_vl'`: chạy lại đúng lệnh cài ba package ở trên trong `.venv`; không dùng Transformers 4.44.2 cũ.
-- Lỗi tải `Qwen/Qwen2.5-VL-3B-Instruct`: kiểm tra Internet và quyền ghi `models/huggingface`, rồi chạy lại. Không commit model cache.
-- `Thiếu fine-tuned adapter Stage 3`: kiểm tra `artifacts/experiments/improvements/citation-level-loss/visual-bge-citation-loss/adapter.pt`; không thay bằng zero-shot hoặc candidate-level adapter.
-- Citation không tồn tại, input trùng ID hoặc thiếu ảnh: sửa đầu vào tương ứng; pipeline dừng trước khi nạp Qwen thay vì âm thầm bỏ qua. Citation bị lặp trong cùng một mẫu nguồn (ví dụ `public_test_5` lặp Điều `32`) được deduplicate theo thứ tự khi chọn evidence; `predictions.json` vẫn giữ nguyên danh sách `relevant_articles` chính thức.
-- Gold báo `G1.1`, `I.414`, `9.0`, `22.0` hoặc `22 B.15`: đây là các nhãn không trùng trực tiếp ID article cấp cao trong corpus chính thức. Code hiện tại tự resolve có kiểm tra và ghi mapping vào `evidence.json`; không sửa JSON nguồn bằng tay.
-- `Stage 5 yêu cầu CUDA`: kiểm tra `nvidia-smi` và wheel PyTorch CUDA 12.8 trong `.venv`. Pipeline BF16 này không có CPU fallback.
-- `CUDA out of memory`: đóng process đang dùng GPU, mở PowerShell mới và chạy lại. Pipeline đã giải phóng retriever trước khi nạp Qwen; không cài quantization hoặc đổi kiến trúc trong Stage 5.
-- `[Errno 22] Invalid argument: '/C:/...'`: phiên bản cũ truyền ảnh bằng `file://` URI nên `%20` trong đường dẫn Windows không được giải mã. Code hiện tại truyền native Windows path và đặt giới hạn pixel trên từng ảnh; cập nhật code rồi chạy lại.
-- Cảnh báo Hugging Face về symlink Windows hoặc thiếu `hf_xet`: cache vẫn hoạt động và không làm sai kết quả; không cần chạy PowerShell bằng Administrator hoặc cài thêm package. Model đã tải xong sẽ được dùng lại từ cache.
-- Có invalid output trong `metrics.json`: gửi lại raw output và log để sửa parser/prompt trong Stage 5; không chỉnh prediction thủ công.
-
-### Đánh giá public test với cấu hình đã khóa
-
-Output được tách riêng dưới `artifacts/public-test`, ngang cấp với `artifacts/experiments`. QA đọc trực tiếp `relevant_articles` trong public input, không đọc `artifacts/public-test/retrieval`.
-
-Sau khi dev được người dùng xác nhận, chạy từ thư mục gốc project:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-New-Item -ItemType Directory -Force artifacts\public-test
-```
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa `
-  --input "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
-  --query-images data\processed\images\public_test `
-  --answer-method hybrid `
-  --output artifacts\public-test\qa
-```
-
-Đánh giá QA:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.bm25_evaluation evaluate `
-  --task qa `
-  --gold "data\raw\VLSP2025-MLQA-TSR\dataset\public_test data\vlsp_2025_public_test.json" `
-  --predictions artifacts\public-test\qa\predictions.json
-```
-
-Mong đợi evaluator báo `samples: 100`, không thiếu/thừa prediction. `config.json` phải có `uses_retrieval_predictions: false`; public test chỉ dùng để báo cáo, không dùng kết quả này để đổi model, prompt hoặc tham số.
-
-## Nộp kết quả private test lên Codabench
-
-Ban tổ chức không phát hành nhãn private test. Điểm chính thức chỉ được lấy bằng cách nộp prediction tại [Codabench VLSP 2025 MLQA-TSR](https://www.codabench.org/competitions/9525/), phase **Post Submission**.
-
-### Sinh prediction private với cấu hình đã khóa
-
-Tạo thư mục output, sau đó chạy riêng hai subtask. Không evaluator local vì private không có gold.
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-New-Item -ItemType Directory -Force artifacts\private_test
-```
-
-Subtask 1 dùng prediction-only với đúng cấu hình Stage 4 đã chọn trên dev; lệnh không tìm tham số và không yêu cầu private có `relevant_articles`:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.hybrid_retrieval `
-  --dev "data\raw\VLSP2025-MLQA-TSR\dataset\private_test data (post submission)\submission_task1_no_labels.json" `
-  --query-images data\processed\images\private_test `
-  --example-ks 3 `
-  --example-weights 0.5 `
-  --top-ks 5 `
-  --predict-only `
-  --output artifacts\private_test\retrieval
-
-Copy-Item `
-  artifacts\private_test\retrieval\predictions.json `
-  artifacts\private_test\submission_task1.json `
-  -Force
-```
-
-Subtask 2 dùng citation có sẵn trong input QA và cấu hình Stage 5 đã khóa:
-
-```powershell
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.grounded_qa `
-  --input "data\raw\VLSP2025-MLQA-TSR\dataset\private_test data (post submission)\submission_task2_no_labels.json" `
-  --query-images data\processed\images\private_test `
-  --answer-method hybrid `
-  --output artifacts\private_test\qa
-
-Copy-Item `
-  artifacts\private_test\qa\predictions.json `
-  artifacts\private_test\submission_task2.json `
-  -Force
-```
-
-Kết quả cuối để người dùng tự đóng ZIP nằm tại `artifacts\private_test\submission_task1.json` và `artifacts\private_test\submission_task2.json`. Hai thư mục con giữ config, metrics rỗng điểm và resources để tái lập. `metrics.json` ghi `f2: null` hoặc `accuracy: null`; điểm thật chỉ có trên Codabench.
-
-### File của Subtask 1 — Retrieval
-
-Tạo `submission_task1.json` gồm đúng 146 mẫu theo thứ tự/input từ `submission_task1_no_labels.json`. Giữ nguyên `id`, `image_id`, `question` và thêm prediction vào `relevant_articles`:
-
-```json
-[
-  {
-    "id": "private_test_private_test_1",
-    "image_id": "private_test_1_1",
-    "question": "...",
-    "relevant_articles": [
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.7"
-      }
-    ]
-  }
-]
-```
-
-### File của Subtask 2 — QA
-
-Tạo `submission_task2.json` gồm đúng 146 mẫu. Output khớp schema mẫu của ban tổ chức: không sao chép `choices` từ input, chỉ gồm `id`, `image_id`, `question`, `question_type`, `relevant_articles` và `answer`:
-
-```json
-[
-  {
-    "id": "private_test_private_test_1",
-    "image_id": "private_test_1_1",
-    "question": "...",
-    "question_type": "Multiple choice",
-    "relevant_articles": [
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
-      }
-    ],
-    "answer": "A"
-  }
-]
-```
-
-Giữ nguyên `relevant_articles` đã có trong input Subtask 2. `answer` chỉ được là `A`, `B`, `C`, `D` đối với multiple choice hoặc `Đúng`, `Sai` đối với Yes/No; không kèm giải thích. `config.json` phải ghi `uses_retrieval_predictions: false`.
-
-### Đóng gói
-
-Đặt hai JSON trong `artifacts/submission`, sau đó chạy:
-
-```powershell
-Compress-Archive `
-  -Path "artifacts\submission\submission_task1.json","artifacts\submission\submission_task2.json" `
-  -DestinationPath "artifacts\submission\submission.zip" `
-  -Force
-tar -tf artifacts\submission\submission.zip
-```
-
-Kết quả `tar -tf` phải chỉ ra hai file ở ngay root ZIP, không nằm trong thư mục con:
-
-```text
-submission_task1.json
-submission_task2.json
-```
-
-Command sinh và kiểm tra submission tự động sẽ được bổ sung tại các stage triển khai retrieval và QA. Không chỉnh JSON thủ công khi đã có command này.
-
-### Thao tác trên Codabench
-
-1. Đăng nhập và đăng ký/accept terms của competition nếu được yêu cầu.
-2. Mở **Participate** và chọn phase **Post Submission**.
-3. Chọn subtask tương ứng nếu giao diện tách riêng hai subtask.
-4. Nhấn biểu tượng đính kèm, chọn `artifacts/submission/submission.zip` và thêm mô tả cấu hình, ví dụ `hybrid-rag-v1-seed-2025`.
-5. Chờ trạng thái `Finished`, sau đó ghi lại F2 của Subtask 1 và Accuracy của Subtask 2.
-6. Nếu scorer yêu cầu nộp riêng từng subtask, tạo ZIP chỉ chứa đúng JSON của subtask được chọn; không đổi tên JSON.
-
-### Lưu kết quả cho luận văn
-
-Mỗi lần nộp phải lưu cùng prediction và cấu hình:
-
-```text
-artifacts/experiments/<experiment-name>/
-├── config.json
-├── submission_task1.json
-├── submission_task2.json
-├── submission.zip
-└── codabench_result.json
-```
-
-Nội dung tối thiểu của `codabench_result.json`:
-
-```json
-{
-  "submitted_at": "YYYY-MM-DD HH:mm",
-  "description": "hybrid-rag-v1-seed-2025",
-  "task1_f2": null,
-  "task2_accuracy": null
-}
-```
-
-Chỉ nộp sau khi đã khóa cấu hình bằng dev/public test. Không dùng điểm private để tiếp tục chọn model, prompt, top-k, threshold hoặc fusion weight.
