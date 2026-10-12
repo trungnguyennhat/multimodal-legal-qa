@@ -48,37 +48,39 @@ Output: `data/raw/VLSP2025-MLQA-TSR/results/baseline_train_<timestamp>/` gồm l
 | Embedding corpus text_based_rag | BGE-M3 dense và index cosine local | `AWAITING_USER_TEST` |
 | Caption query train text_based_rag | 239 caption; người dùng chấp nhận 21 caption INCOMPLETE | `COMPLETED` |
 | Embedding query train text_based_rag | Người dùng đã chạy xong embedding query | `COMPLETED` |
-| Retrieval query train text_based_rag | Cosine, top-5 điều khoản và metric | `AWAITING_USER_TEST` |
+| Retrieval query train text_based_rag | Chuyển citation từ mẫu train tương tự, loại nhóm ảnh | `AWAITING_USER_TEST` |
 
 ## Retrieval query train — `AWAITING_USER_TEST`
 
-Code: `src/text_based_rag/query_retrieval.py`. Tính cosine bằng tích vô hướng của vector L2 query/corpus, gộp mọi chunk cùng cặp `(document_id, id)` thành citation `(law_id, article_id)` bằng điểm cao nhất, trả về đúng 5 citation duy nhất. Các article_key khác nhau nhưng cùng citation cũng được gộp để tránh kết quả trùng. Giữ chunk khớp nhất và nội dung của nó; không dùng reranker hoặc threshold. Điểm bằng nhau được xếp theo citation, chunk bằng điểm chọn hàng đầu tiên.
+Ngày 13/10/2026: đã triển khai `src/text_based_rag/example_citation_retrieval.py` và agent chạy theo yêu cầu người dùng, ghi đè kết quả cũ tại `artifacts/results/text_based_rag/query_retrieval/`. Đoạn rollback phía trên mô tả lượt chạy trước. Giữ source baseline corpus `query_retrieval.py`; không dùng dev, không chạy model hoặc thay đổi trọng số/index/caption/vector.
 
-Chỉ chạy trên train, đọc relevant_articles sau khi xếp hạng để đánh giá; không dùng đáp án QA. Không chạy Qwen/BGE, không tải model, không thay đổi index. Dùng CPU/NumPy trong `.venv` hiện có. Điều kiện: hai manifest query_embedding và corpus_embedding COMPLETED; vector, mapping và train phải khớp hash đã lưu. Kiểm tra cùng encoder, shape, giá trị hữu hạn, chuẩn L2 và ánh xạ hàng trước khi tính điểm.
+Đọc vector câu hỏi + caption train hiện có. Với mỗi query, loại chính nó, mọi mẫu cùng source image ID hoặc cùng kích thước/pixel RGB sau giải mã và áp dụng EXIF orientation. Lấy 5 hàng xóm bằng cosine, chuyển relevant_articles từ hàng xóm, gom citation bằng cosine hỗ trợ cao nhất, trả tối đa 5 citation duy nhất. Hòa điểm theo query_id rồi citation. Không padding khi thiếu citation. Nhãn query đang xét chỉ dùng đánh giá sau dự đoán. Hash pixel không phát hiện gần trùng do resize/crop/nén lại.
 
-Chạy từ root project:
+Điều kiện: `.venv` có NumPy/Pillow; manifest query_embedding và corpus_embedding COMPLETED; train/vector/mapping/ảnh phải khớp hash. Chỉ đọc mapping citation corpus. Nhãn rỗng làm dừng; citation không có trong index được cảnh báo và loại khỏi nguồn prediction nhưng vẫn giữ trong gold để tính recall. Lượt này có 15 citation duy nhất như vậy, danh sách trong metrics.json; không tự sửa nhãn.
+
+Lệnh PowerShell từ root (ghi đè output retrieval; không cần chạy lại chỉ để xem kết quả):
 
 ```powershell
 $env:PYTHONPATH="src"
 $env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m text_based_rag.query_retrieval
+.\.venv\Scripts\python.exe -u -m text_based_rag.example_citation_retrieval --neighbors 5 --overwrite
 ```
 
-Output tại `artifacts/results/text_based_rag/query_retrieval/`:
+Bỏ `--overwrite` để từ chối output đã tồn tại; `--neighbors` mặc định 5, phải >= 1. Không chọn tham số bằng test/private. Git chỉ rollback được file đã theo dõi; không thêm dataset/artifact vào Git.
 
-- `retrieval_results.jsonl`: mỗi query có top-5 citation, rank, cosine, title, article_key và chunk có điểm cao nhất kèm text.
-- `retrieval_preview.txt`: câu hỏi/caption, top-5 và text chunk; có nhãn đúng và metric từng query để xem lỗi.
-- `metrics.json`: precision, recall, F1, F2 ở top-5 theo macro và micro; Hit rate@5 và các citation nhãn không có trong index.
-- `per_query_metrics.jsonl`: TP, số citation dự đoán/đúng, precision/recall/F1/F2, hit và gold citations của từng query.
-- `manifest.json`: trạng thái, top-k, quy tắc gộp/xếp hạng, hash nguồn/output, phiên bản NumPy, thời gian và kích thước ma trận điểm trên CPU.
+Output trong `query_retrieval/`:
 
-Metric nằm trong [0,1]. Với mỗi query: precision=TP/5, recall=TP/số citation đúng, F1=2TP/(5+số citation đúng), F2=5TP/(5+4×số citation đúng). Macro là trung bình metric từng query; micro cộng TP và mẫu số trên toàn bộ query rồi tính metric. Hit rate là tỷ lệ query có ít nhất một citation đúng trong top-5. Citation nhãn trùng được tính một lần; citation nhãn vắng trong index vẫn nằm trong mẫu số recall, được báo riêng. Đây là metric local trên train, chưa xác nhận tương đương evaluator chính thức và chưa phản ánh khả năng tổng quát trên dev/test.
+- `retrieval_results.jsonl`: query, số mẫu bị loại/còn lại, hàng xóm train, cosine, hash pixel, citation nguồn và citation cuối.
+- `retrieval_preview.txt`: câu hỏi/caption, citation, query nguồn, gold và F2 từng câu.
+- `per_query_metrics.jsonl`: precision/recall/F1/F2, hit, candidate recall, mức phủ nhãn kho còn lại.
+- `metrics.json`: macro/micro, hit rate, candidate recall, mức phủ nhãn, số citation trung bình, gold thiếu trong index.
+- `manifest.json`: trạng thái, cấu hình, quy tắc loại/xếp hạng, hash input/code/ảnh, encoder, thư viện, thời gian và bộ nhớ vector/ma trận cosine CPU. Không dùng GPU ở bước retrieval.
 
-Mong đợi: 418 dòng kết quả và metric từng query, mỗi query 5 citation duy nhất có trong index, manifest COMPLETED. Terminal in metric macro@5, tiến độ theo bước và heartbeat mỗi khoảng 30 giây; pipeline kiểm tra số lượng và tính duy nhất của top-5 ngay khi chạy.
+Kết quả agent chạy: 418 query, manifest COMPLETED; macro precision=0.2820972887, recall=0.5613835726, F2=0.4519640065; hit rate=0.7966507177; candidate recall=0.6480861244; mức phủ nhãn kho còn lại=0.9133971292; trung bình 4.8397 citation/query. Baseline corpus trước đó trên cùng train có F2=0.1271638941 nhưng luôn trả 5 citation, còn phương pháp mới trả tối đa 5 và dùng nhãn các mẫu train khác.
 
-Output đã tồn tại: tự chuyển thư mục query_retrieval cũ sang nơi khác trước khi chạy lại; không ghi đè hoặc resume. Hash không khớp: kiểm tra đúng file được báo và nguồn embedding; không bỏ kiểm tra để dùng vector sai mapping. Thiếu file/manifest chưa hoàn tất: hoàn thành bước embedding tương ứng trước. Nhãn thiếu hoặc ID không khớp thì dừng, không tự bỏ query. Cảnh báo citation gold không có trong index không làm dừng lượt đánh giá.
+Đã đối chiếu bằng chính hàm eval_retrieval trong retrieval.py của ban tổ chức, chỉ nạp hàm evaluator tránh chạy inference: F2=0.4519640062376162, khớp metric local trong sai số epsilon của evaluator. Đã kiểm tra loại self/cùng ID ảnh/cùng hash pixel trên toàn bộ 418 query. Đây là đánh giá train loại nhóm ảnh, chưa chứng minh hiệu quả trên dev; tối ưu trên train vẫn có nguy cơ quá khớp.
 
-Agent chưa chạy code/test/pipeline và chưa tạo output retrieval. Chờ người dùng chạy command thực tế và phản hồi.
+Mong đợi khi chạy lại: 418 dòng kết quả và metric; 0–5 citation duy nhất/query có trong index; manifest COMPLETED. Tác vụ dài có log khoảng mỗi 30 giây: phase, processed/total, %, elapsed, ETA. Hash không khớp: kiểm tra đúng file được báo, không bỏ validation. Thiếu ảnh/lỗi giải mã: kiểm tra ảnh train gốc. Thiếu thư viện: chỉ cài trong `.venv`. Không còn mẫu hợp lệ làm dừng trước ghi đè. Chờ người dùng kiểm tra và xác nhận trước khi chuyển trạng thái COMPLETED.
 
 ## Embedding query train — `COMPLETED`
 
