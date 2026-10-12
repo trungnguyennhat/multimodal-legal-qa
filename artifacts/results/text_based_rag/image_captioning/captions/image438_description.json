@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:0cb0264beb84b5107a963a8c4465ed867adce47a42872131421aed8a8e87182e",
+  "filename": "image438.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba biển chỉ dẫn hình chữ nhật có viền màu xanh dương, mỗi biển có hình minh họa bên trái và chữ viết bên phải, tất cả đều có mũi tên chỉ hướng sang trái.\n\n- Biển a): Hình minh họa là một ngôi chùa (hình tháp), bên phải có chữ “CHÙA HƯƠNG” và dòng chữ nhỏ hơn “Huong Pagoda”. Dưới biển ghi “a) Biển số L 444g”.\n\n- Biển b): Hình minh họa là một bồn xăng, bên phải có chữ “TRẠM XĂNG DẦU” và dòng chữ nhỏ hơn “Gasoline”. Dưới biển ghi “b) Biển số L 444h”.\n\n- Biển c): Hình minh họa là một chiếc xe hơi đang được rửa, bên phải có chữ “RỬA XE” và dòng chữ nhỏ hơn “Car Wash”. Dưới biển ghi “c) Biển số L 444i”.",
+  "generated_tokens": 225,
+  "size": [
+    348,
+    49
+  ],
+  "elapsed_seconds": 15.748644200000854,
+  "peak_vram_bytes": 7394885632,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

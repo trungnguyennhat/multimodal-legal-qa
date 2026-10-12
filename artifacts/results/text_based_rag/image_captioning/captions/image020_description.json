@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:0915b812cd3d0bf3bb13b2372b06752a2ecb36891a1d78fa5a7a77031feb873a",
+  "filename": "image020.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm một biển báo hiệu hình chữ nhật màu xanh lá cây, gắn trên một cột thẳng đứng. Biển báo hiệu được đặt ở độ cao ≥5,2m so với mặt đất. Dưới biển báo hiệu là một lề đường, được biểu thị bằng một dải màu tối nằm ngang, cách biển báo hiệu một khoảng ≥0,5m theo chiều ngang. Có các chú thích bằng chữ Việt: “Biển báo hiệu” chỉ vào biển, “Lề đường” chỉ vào dải màu tối dưới biển, và các số đo chiều cao và khoảng cách được ghi rõ bằng chữ số và ký hiệu “≥”.",
+  "generated_tokens": 142,
+  "size": [
+    188,
+    178
+  ],
+  "elapsed_seconds": 10.744062199999462,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

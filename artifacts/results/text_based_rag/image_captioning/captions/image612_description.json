@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:02c7701bab094ed1d1050ff15c92716904c646e28a4dce8d4653ea84c7a6a3d0",
+  "filename": "image612.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một bản vẽ mặt bằng giao lộ hình chữ thập với các làn đường và vạch kẻ.\n\n- Trung tâm là một hình vuông có viền đứt nét, bên trong có một hình tròn nhỏ ở giữa.\n- Xung quanh hình vuông trung tâm là bốn nhánh đường hình chữ nhật, mỗi nhánh có hai làn đường song song, được phân cách bởi vạch kẻ đứt và vạch kẻ liền.\n- Các nhánh đường có vạch kẻ màu vàng dọc theo trung tâm mỗi làn.\n- Ở góc trên bên phải có một hình chữ nhật nhỏ với kích thước được ghi là 20 cm.\n- Dưới hình chữ nhật nhỏ đó có một hình chữ nhật đứng với kích thước được ghi là 100 cm.\n- Dưới cùng bên phải có dòng chữ: “Đơn vị: cm”.\n- Tất cả các đường kẻ và hình khối đều được vẽ bằng màu xám và vàng.",
+  "generated_tokens": 212,
+  "size": [
+    297,
+    250
+  ],
+  "elapsed_seconds": 15.0904515000002,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

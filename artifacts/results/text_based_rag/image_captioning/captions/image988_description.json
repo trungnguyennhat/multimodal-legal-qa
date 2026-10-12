@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:93b7cadd8662d424791ed42b90294f3a82ecff8c5a3f06751b7b14d127fccfb1",
+  "filename": "image988.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\nPhần bên trái:\n- Một hình tròn màu xanh dương, có đường kính được ghi là \"10.2\".\n- Bên trong hình tròn có một mũi tên trắng chỉ sang phải.\n- Dưới hình tròn có hai đoạn thẳng ngang, ghi là \"4.2\" và \"4.2\" (đối xứng nhau).\n- Có các đường kẻ ngang và dọc qua tâm hình tròn.\n\nPhần bên phải:\n- Một hình chữ nhật nằm ngang, nối với một mũi tên chỉ sang phải, nằm trên lưới ô vuông.\n- Dưới hình chữ nhật có ghi \"4.2\", \"2.8x\", \"1.6x\", \"1.6x\".\n- Phía trên hình chữ nhật có ghi \"1.2\", \"0.8x\".\n- Phía dưới hình chữ nhật có ghi \"1.2\", \"2.2\".\n- Phía trên và dưới hình chữ nhật có các hình vẽ nhỏ dạng mũi tên chỉ sang phải, kèm chữ \"1.2\" và \"2.2\".",
+  "generated_tokens": 239,
+  "size": [
+    429,
+    176
+  ],
+  "elapsed_seconds": 16.56035639999982,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

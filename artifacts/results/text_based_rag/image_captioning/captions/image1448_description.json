@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:37988a8bb915f4313501a574cbd797cad111a74895ddc37d260fa0a248e1f67c",
+  "filename": "image1448.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có kích thước 150x120, viền đen, nền vàng. Trong hình có chữ \"LỐI RA\" ở hàng trên và chữ \"EXIT\" ở hàng dưới, đều in hoa, màu đen. Ở góc trên bên phải có ghi \"R3\", và bên cạnh có ghi \"H1\" và \"H2\" với giá trị \"14\" nằm giữa chúng.",
+  "generated_tokens": 94,
+  "size": [
+    163,
+    109
+  ],
+  "elapsed_seconds": 7.219035499999336,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

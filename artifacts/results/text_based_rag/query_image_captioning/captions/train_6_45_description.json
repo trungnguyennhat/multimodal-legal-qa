@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:3bb0416a5aa5ccd1c75d8c7893bdb6b240ffc32b5bee4d60586c3d27a46c732a",
+  "filename": "train_6_45.jpg",
+  "description": "- Biển hình chữ nhật nền xanh, có hình mũi tên chỉ hướng và chữ viết.\n- Biển hình tròn nền trắng, có số \"40\" màu đen ở giữa.\n- Biển hình tròn nền đỏ, có hình xe máy và xe máy bị gạch chéo.\n- Biển hình tròn nền đỏ, có hình xe tải và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe máy bị gạch chéo.\n- Biển hình chữ nhật nền xanh, có hình xe máy, xe máy bị gạch chéo, xe tải, xe tải bị gạch chéo, và hình mũi tên chỉ hướng.\n- Biển hình chữ nhật nền đỏ, có hình xe máy, xe máy bị gạch chéo, xe tải, xe tải bị gạch chéo, và hình mũi tên chỉ hướng.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 189,
+  "size": [
+    720,
+    450
+  ],
+  "elapsed_seconds": 14.228995800003759,
+  "peak_vram_bytes": 7440211456,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:2c59512b6d4c7ae40e92b5299eb0b541d9e2fc69f22018703f7db638cd3491f7",
+  "filename": "image1332.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm ba hình minh họa dạng bản vẽ kỹ thuật:\n\n1. **Hình trên cùng**: Một hình chữ nhật có chiều dài 5m và chiều rộng 5m, bên trong có hai mũi tên đối diện nhau (một mũi tên chỉ sang trái, một mũi tên chỉ sang phải). Có các kích thước được ghi chú xung quanh hình chữ nhật.\n\n2. **Hình giữa**: Một hình chữ nhật có chiều dài 10m, bên trong có một mũi tên chỉ sang phải. Có các kích thước được ghi chú xung quanh hình chữ nhật.\n\n3. **Hình dưới cùng**: Một hình chữ nhật chứa một mũi tên chỉ xuống dưới. Có các kích thước được ghi chú xung quanh hình chữ nhật.\n\nMỗi hình đều có các kích thước được ghi chú bằng số và đơn vị (m, cm, v.v.) xung quanh hình.",
+  "generated_tokens": 196,
+  "size": [
+    433,
+    579
+  ],
+  "elapsed_seconds": 14.381271000000197,
+  "peak_vram_bytes": 7427017216,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872,
+  "status": "COMPLETED"
+}

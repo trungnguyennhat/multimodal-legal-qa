@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4cdfb2492c3bbc03b369607e16d51c57a41361648f79038636820a4ca87daf3c",
+  "filename": "image894.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng, chứa một hình chữ nhật đen ở giữa với một dấu chấm đen ở trên cùng. Các kích thước được ghi chú: chiều cao tam giác là 0,71x, chiều rộng đáy là 90x, chiều cao từ đỉnh đến cạnh dưới của hình chữ nhật là 2x, chiều rộng hình chữ nhật là 2x, và góc ở đỉnh tam giác là 60°.\n\nHình 2: Một hình chữ nhật nằm ngang, bên trong có một hình chữ nhật nhỏ hơn màu đen với một dấu chấm đen ở trên cùng. Xung quanh có các kích thước được ghi chú: chiều rộng tổng là 4x, chiều cao tổng là 1,2x, chiều cao từ đỉnh đến cạnh trên của hình chữ nhật nhỏ là 1,5x, chiều cao từ cạnh trên đến cạnh dưới của hình chữ nhật nhỏ là 1,2x, và có các đường cong với bán kính R1,68x và R1,7x.",
+  "generated_tokens": 235,
+  "size": [
+    421,
+    163
+  ],
+  "elapsed_seconds": 17.55230789999996,
+  "peak_vram_bytes": 7397206016,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:082772fccfc89a742ec7b5d20633099ddeb1153eeb57e0bb62fe6e4deeb98bba",
+  "filename": "image1482.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một hình chữ nhật có góc bo, bên trong có hình một chiếc thìa và một chiếc đũa giao nhau. Có các ký hiệu chữ cái chỉ định các phần của hình: A, B, C, D, E.",
+  "generated_tokens": 55,
+  "size": [
+    173,
+    170
+  ],
+  "elapsed_seconds": 3.985899199999949,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

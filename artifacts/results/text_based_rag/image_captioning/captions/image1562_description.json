@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1e631e0c8785584330c07f0c321954105f6f37ce2afef5ed97a609d1495789db",
+  "filename": "image1562.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền đen, nền vàng. Trong hình có dòng chữ “GIỮ KHOẢNG CÁCH AN TOÀN” và dòng chữ nhỏ hơn bên dưới là “Keep Safe Distance”. Xung quanh hình có các ký hiệu kích thước: L (chiều dài), W (chiều rộng), k1 (khoảng cách từ cạnh hình đến các góc), H1 và H1’ (chiều cao các phần tử trên hình).",
+  "generated_tokens": 102,
+  "size": [
+    421,
+    155
+  ],
+  "elapsed_seconds": 7.8167830999991565,
+  "peak_vram_bytes": 7391884800,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:6399f7e5ed155c11b45fc0f81b201903f83b8c805da608f7ffb6b95452278c6d",
+  "filename": "image1294.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Một hình chữ nhật có chiều dài 30.5z và chiều rộng 12.5z, chia thành hai phần ngang: bên trái là hình ảnh biểu tượng sóng nước màu xanh dương trên nền trắng, bên phải là chữ “NỀN ĐƯỜNG YẾU” màu trắng trên nền xanh dương. Các kích thước chi tiết được ghi rõ: chiều cao tổng cộng 12.5z, chiều rộng phần chữ là 11.8z, chiều cao phần chữ là 12.5z, và chiều cao phần biểu tượng là 24.2z.\n\n2. Một hình chữ nhật nhỏ hơn, có chiều dài 10.3z và chiều rộng 6.2z, chứa biểu tượng sóng nước màu xanh dương trên nền lưới ô vuông, được dùng để minh họa chi tiết biểu tượng.",
+  "generated_tokens": 199,
+  "size": [
+    433,
+    127
+  ],
+  "elapsed_seconds": 14.36921110000003,
+  "peak_vram_bytes": 7396256768,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

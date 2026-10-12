@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:594bcc0452b64701481e69f967f3d0ebf2185133fb9e4ef637c48e420e31efff",
+  "filename": "image158.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông:\n\n- Biển số DP.127a:  \n  - Phía trên có ba hình tròn, mỗi hình chứa số: 60, 50, 50, với một đường gạch chéo qua số 60 và số 50 ở vị trí thứ hai và thứ ba.  \n  - Phía dưới có ba hình minh họa phương tiện: xe ô tô, xe máy, xe đạp.  \n  - Dưới cùng ghi chữ: \"Biển số DP.127a\".\n\n- Biển số DP.127b:  \n  - Phía trên có ba mũi tên thẳng đứng hướng lên.  \n  - Phía dưới mỗi mũi tên có một hình tròn chứa số: 80, 60, 50, với một đường gạch chéo qua số 80, 60 và 50.  \n  - Dưới cùng ghi chữ: \"Biển số DP.127b\".",
+  "generated_tokens": 223,
+  "size": [
+    364,
+    169
+  ],
+  "elapsed_seconds": 16.52742610000132,
+  "peak_vram_bytes": 7389888000,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

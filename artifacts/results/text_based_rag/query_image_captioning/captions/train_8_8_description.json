@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:7d002c238a44a8d1ff8d6f4395343e5f343330bd25badb53649ab00826f2044c",
+  "filename": "train_8_8.jpg",
+  "description": "Biển báo hình chữ nhật, nền màu xanh dương, có viền trắng. Trên biển có hình ảnh biểu tượng một con đường cao tốc với hai làn xe và một cột mốc ở giữa, nằm trong khung hình chữ nhật màu trắng. Biển có hai phần: phần trên và phần dưới, đều có chữ viết màu trắng.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 75,
+  "size": [
+    820,
+    547
+  ],
+  "elapsed_seconds": 5.7632736999948975,
+  "peak_vram_bytes": 7477954048,
+  "peak_reserved_bytes": 7608467456,
+  "gpu_free_bytes": 8260681728
+}

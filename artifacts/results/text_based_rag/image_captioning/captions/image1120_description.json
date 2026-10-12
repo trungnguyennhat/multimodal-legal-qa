@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:9fdc8873edf07e7d9c4d526cd612f94b9fc99759e0b87c6606a855e389a8ac01",
+  "filename": "image1120.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình chữ nhật đứng có kích thước được ghi là 14,58x và 10x. Trong hình chữ nhật có một hình tròn đỏ, bên trong là hình tròn xanh, có một đường chéo màu đỏ cắt ngang qua hình tròn xanh. Trên hình chữ nhật có chữ \"ZONE\" ở phía trên. Có các đường kẻ chéo màu đen cắt ngang qua hình tròn đỏ. Các kích thước phụ xung quanh hình chữ nhật được ghi là 0,68x, 1,87x, 1,88x, và 4,15x.\n\nHình 2: Một hình tròn đỏ, bên trong là hình tròn xanh, có một đường chéo màu đỏ cắt ngang qua hình tròn xanh. Hình tròn được đặt trên một lưới ô vuông. Có các kích thước ghi là 7,5x và 0,64x ở phía dưới và bên phải.",
+  "generated_tokens": 218,
+  "size": [
+    429,
+    190
+  ],
+  "elapsed_seconds": 15.835955600000489,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

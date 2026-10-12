@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5475c0ae8c6bc0c7a1f522c6e0c29c033e72b49fb6b9b8938fc0caf872036476",
+  "filename": "image798.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Hình tròn có viền đỏ, bên trong là hình tròn nhỏ hơn có nền xanh, chứa hai thanh dọc trắng và một đường chéo đỏ cắt ngang qua. Có các chú thích kích thước xung quanh hình: 0.7a (góc trên bên trái), 1.8x1.8a (ở trên cùng), 1.48a (ở dưới cùng), và 0.8a (ở hai bên).\n\n2. Hình chữ nhật chia thành lưới ô vuông, bên trong có hai hình chữ nhật đứng song song, cách nhau một khoảng. Có các chú thích kích thước: 1.4142a (ở dưới cùng), 1.2a (ở trên cùng), 1.2a (ở bên phải), và 0.8a (ở bên trái).",
+  "generated_tokens": 190,
+  "size": [
+    273,
+    124
+  ],
+  "elapsed_seconds": 13.339350599999989,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

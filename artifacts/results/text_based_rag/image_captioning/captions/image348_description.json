@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5ffdd7b070d16c318d5359e17ba6f5343a7e757c2750e2070e8d88417107fe82",
+  "filename": "image348.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một hình vuông được xoay 45 độ (hình thoi), có viền đen. Bên trong hình thoi là một hình chữ nhật màu đen nằm ngang, cắt ngang qua một hình chữ nhật màu vàng nằm ngang, tạo thành một hình dạng giống chữ \"E\" hoặc \"H\" ngược. Tất cả các hình đều có viền đen. Không có chữ nào xuất hiện trong hình.",
+  "generated_tokens": 92,
+  "size": [
+    101,
+    101
+  ],
+  "elapsed_seconds": 6.953877699997975,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

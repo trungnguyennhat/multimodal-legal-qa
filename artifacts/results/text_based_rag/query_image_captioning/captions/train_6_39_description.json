@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:b3d5201ab8be4f94fa5a5bf338309c0c7c459b8133c481d5a79e064d6cab9859",
+  "filename": "train_6_39.jpg",
+  "description": "- Biển hình tròn, nền đỏ, có đường viền trắng, bên trong có hình một chiếc xe tải và dòng chữ \"≥5t\", kèm dấu gạch chéo ngang qua.\n- Biển hình chữ nhật, nền trắng, có viền đen, ghi dòng chữ \"6:00 - 22:00\".\n- Biển hình tam giác, nền vàng, viền đen, bên trong có hình một mũi tên cong hướng sang phải.\n- Biển hình chữ nhật đứng, nền trắng, có viền đen, bên trong có hình chữ số \"150\" và một số ký tự nhỏ hơn bên dưới.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 138,
+  "size": [
+    776,
+    510
+  ],
+  "elapsed_seconds": 10.525271700003941,
+  "peak_vram_bytes": 7461962752,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872
+}

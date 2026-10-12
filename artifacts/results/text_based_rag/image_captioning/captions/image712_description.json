@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a92125559df326c927e409f23b85d1df4ac6aa5989f615218bb1cedabf23288b",
+  "filename": "image712.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Hình bên trái: Một hình tròn màu đỏ có đường gạch ngang màu đỏ đi qua một hình ảnh xe buýt đen. Xung quanh hình tròn có các ký hiệu đo kích thước: 8.7z ở trên, 1.4z ở dưới bên trái, 3.36z ở dưới bên phải, và 10z ở dưới cùng. Ngoài ra, có các ký hiệu đo chiều cao 1.4z và 1.4z ở hai bên.\n\n2. Hình bên phải: Một hình ảnh xe buýt đen nằm ngang trên nền lưới ô vuông. Có các ký hiệu đo kích thước: 6.71z ở dưới cùng, 1.4z ở trên bên trái, 1.4z ở trên bên phải, và 4z ở bên trái.",
+  "generated_tokens": 186,
+  "size": [
+    241,
+    97
+  ],
+  "elapsed_seconds": 13.14758530000006,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:f0819deba710d62b55891da10c97d1271b5f0376748166de3e08b9e84d714aae",
+  "filename": "image1024.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai hình minh họa:\n\n1. Hình bên trái:\n- Một hình chữ nhật đứng màu cam, nằm trong khung hình chữ nhật lớn hơn.\n- Dưới hình chữ nhật cam là một hình tròn màu xanh dương, bên trong có một mũi tên uốn cong chỉ sang trái.\n- Có các kích thước được ghi chú: chiều cao tổng cộng 16.5, chiều rộng 10.5, và các phần tử khác như 2.5x, 0.5x, 0.5x, 1.5x.\n\n2. Hình bên phải:\n- Một hình chữ nhật đứng, có các cạnh được ghi chú kích thước như 4.68x, 0.3x, 0.62x, 0.21x, 0.75x, 0.12x, 0.5x, 1.2x, 1.5x, 0.6x, 0.4x, 0.2x.\n- Bên trong hình chữ nhật có một hình chữ nhật nhỏ hơn, có các góc bo tròn, và một hình chữ nhật nhỏ hơn nữa ở dưới cùng.\n- Một mũi tên uốn cong chỉ sang trái nằm ở phía dưới bên phải của hình chữ nhật lớn.\n- Có các ký hiệu như R0.6x, R0.4x, và các kích thước khác được ghi chú xung quanh hình.",
+  "generated_tokens": 314,
+  "size": [
+    398,
+    214
+  ],
+  "elapsed_seconds": 21.633002900000065,
+  "peak_vram_bytes": 7399021056,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

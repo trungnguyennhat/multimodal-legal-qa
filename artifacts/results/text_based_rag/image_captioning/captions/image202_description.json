@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4f0ea5aa9502bb87816cad41116b0f09f63faf70545f9c6f6cb6bd30a63f4297",
+  "filename": "image202.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh hiển thị năm biển báo giao thông dạng tam giác có viền đỏ, nền vàng, và biểu tượng đen ở giữa. Mỗi biển có ký hiệu khác nhau và được ghi chú mã số:\n\n- a) Biển số W.207a: Biểu tượng là một hình chữ nhật đứng với một đường ngang cắt qua giữa.\n- b) Biển số W.207b: Biểu tượng là một hình chữ nhật đứng với một đường ngang cắt qua gần đáy.\n- c) Biển số W.207c: Biểu tượng là một hình chữ nhật đứng với một đường ngang cắt qua gần đỉnh.\n- d) Biển số W.207d: Biểu tượng là một hình chữ nhật đứng với một đường ngang cắt qua giữa, nhưng có thêm một đường chéo từ trên xuống dưới cắt qua hình chữ nhật.\n- e) Biển số W.207e: Biểu tượng là một hình chữ nhật đứng với một đường ngang cắt qua giữa, và một đường chéo từ dưới lên trên cắt qua hình chữ nhật.\n\nMỗi biển đều có dòng chữ “Biển số” kèm theo mã số tương ứng.",
+  "generated_tokens": 256,
+  "size": [
+    328,
+    172
+  ],
+  "elapsed_seconds": 19.02803149999818,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

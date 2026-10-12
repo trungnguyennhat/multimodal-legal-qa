@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:2f02166e7789ded092acdeccb3d8d84c47733da8840f0f722e74573ae6409f08",
+  "filename": "image968.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình chữ nhật có chiều rộng 9x và chiều cao 11x. Bên trong hình chữ nhật có ba dải chéo màu đỏ, cách đều nhau, chạy từ góc trên bên trái đến góc dưới bên phải, với các khoảng trắng giữa các dải.\n\nHình 2: Một hình chữ nhật có chiều rộng 6.2x và chiều cao được chia thành các đoạn: từ trên xuống dưới là 2.4x, 1.4x, 2.4x, 2.4x. Bên trong hình chữ nhật có ba dải chéo màu đỏ, cách đều nhau, chạy từ góc trên bên trái đến góc dưới bên phải, với các khoảng trắng giữa các dải.",
+  "generated_tokens": 162,
+  "size": [
+    396,
+    170
+  ],
+  "elapsed_seconds": 11.573803800000405,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

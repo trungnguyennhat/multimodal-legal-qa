@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:cd6a1bf3261abe2c7fe4bebaecdb0da3c6cf062faf3e3b9dad55a9388d18729b",
+  "filename": "image422.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình chữ nhật đứng, có viền xanh dương. Phần trên là hình chữ nhật trắng, có chữ \"CSGT\" màu đen, in hoa, chữ đậm. Phần dưới là hình chữ nhật nền xanh dương, có chữ \"POLICE\" màu trắng, in hoa, chữ đậm.",
+  "generated_tokens": 65,
+  "size": [
+    86,
+    128
+  ],
+  "elapsed_seconds": 4.896403899998404,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

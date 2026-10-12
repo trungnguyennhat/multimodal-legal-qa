@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:fb4dbb24bc2dc6af9735e59d987e98096594556babcecae67688b26b2f1ec682",
+  "filename": "image626.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh gồm hai phần:\n\n- Phần trên: Một hình dạng giống như một dải băng hoặc tấm chắn có họa tiết sọc chéo màu đen và vàng, kéo dài theo chiều ngang. Phần đầu dải băng có dạng tam giác nhọn hướng lên trên, và phần cuối dải băng có dạng tam giác nhọn hướng xuống dưới.\n\n- Phần dưới: Một hình dạng giống như một lối đi hoặc lối vào với các sọc chéo màu đen và vàng tạo hiệu ứng thị giác kéo dài vào trong, với các sọc dần thu hẹp về phía trước, tạo cảm giác chiều sâu.",
+  "generated_tokens": 131,
+  "size": [
+    255,
+    125
+  ],
+  "elapsed_seconds": 9.458084999998391,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7503609856,
+  "gpu_free_bytes": 8365539328,
+  "status": "COMPLETED"
+}

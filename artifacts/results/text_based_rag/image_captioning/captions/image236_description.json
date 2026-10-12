@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d8a226499e2a773849e6302e031362e48982555f6ab7241e9d8e48abd10bf355",
+  "filename": "image236.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông dạng tam giác có viền đỏ, nền vàng.\n\n- Biển a) có ký hiệu hình một chiếc mũ bảo hiểm bị lật nghiêng, nằm trong tam giác.\n- Biển b) có ký hiệu hình một chiếc mũ bảo hiểm nằm ngang, bị lật nghiêng, nằm trong tam giác.\n\nDưới mỗi biển báo có ghi chữ:\n\n- a) Biển số W.222a\n- b) Biển số W.222b",
+  "generated_tokens": 113,
+  "size": [
+    220,
+    75
+  ],
+  "elapsed_seconds": 8.57010839999566,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:40491e398c34f15f4a304657eb657339ede893132f752018258f9640ff1cd186",
+  "filename": "image1108.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một hình chữ nhật lớn có kích thước được ghi là 24z x 20z. Bên trong hình chữ nhật này là một hình ảnh dạng silhoutte thành phố với các tòa nhà cao tầng và thấp hơn, được vẽ bằng màu trắng trên nền xanh. Xung quanh hình chữ nhật có các đường kẻ lưới nhỏ. Có các chú thích kích thước xung quanh hình: trên cùng có 0.2z và 0.1z; bên phải có 0.1z, 0.2z, 2.7z và 12z; bên dưới có 1z, 22z, 24z và 1z; bên trái có 20z. Ngoài ra, có một chú thích “5z” ở phía dưới bên phải của hình chữ nhật.",
+  "generated_tokens": 182,
+  "size": [
+    290,
+    230
+  ],
+  "elapsed_seconds": 12.847076000000015,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

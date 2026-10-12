@@ -1,0 +1,36 @@
+{
+    "image_id":  "sha256:62789cb5e40b97bd76777a82776d3945e2ae3475e334193e7ed8884fb8dbc463",
+    "filename":  "train_4_19.jpg",
+    "description":  "- Biển hình tròn, có gạch ngang, nền đỏ, viền trắng.\n- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy.\n- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe máy.\n- Biển hình chữ nhật, nền trắng, viền đen, có hình xe máy và dòng chữ \"6h00 - 9h00\" và \"16h30 - 19h30\".\n- Biển hình tam giác, nền vàng, viền đen, có hình xe máy.\n- Biển hình chữ nhật, nền xanh, viền trắng, có hình xe máy.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy và gạch ngang.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy và gạch ngang.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy và gạch ngang.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy và gạch ngang.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy và gạch ngang.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy và gạch ngang.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy và gạch ngang.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy và gạch ngang.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy và gạch ngang.\n-",
+    "settings":  {
+                     "model":  "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+                     "revision":  "10d842936325905934ea24e64325d774693f166e",
+                     "prompt":  "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+                     "min_pixels":  131072,
+                     "max_pixels":  786432,
+                     "max_new_tokens":  384,
+                     "crop":  false,
+                     "do_sample":  false,
+                     "dtype":  "bfloat16",
+                     "attention":  "sdpa",
+                     "libraries":  {
+                                       "torch":  "2.7.1+cu128",
+                                       "transformers":  "4.57.1",
+                                       "bitsandbytes":  "0.49.0",
+                                       "Pillow":  "12.3.0"
+                                   }
+                 },
+    "status":  "COMPLETED",
+    "token_limit_reached":  true,
+    "generated_tokens":  384,
+    "size":  [
+                 600,
+                 400
+             ],
+    "elapsed_seconds":  30.453869699995266,
+    "peak_vram_bytes":  7415565824,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

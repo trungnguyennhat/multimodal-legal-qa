@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a3400a068db5e73e27f52e0ca5bd2d3d564d3bb218dfc80ff001ae66e9c9c10b",
+  "filename": "image1290.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Bảng có 2 dòng và 4 cột.  \nDòng đầu tiên là tiêu đề các cột: \"Loại đường\", \"Đường đôi ngang đô thị\", \"Đường thông thường\", \"Đường đô thị\".  \nDòng thứ hai: \"z(mm)\" và các giá trị tương ứng là \"80\", \"80\", \"40\".  \nChữ trong bảng có vẻ bị mờ hoặc viết tay.",
+  "generated_tokens": 95,
+  "size": [
+    433,
+    52
+  ],
+  "elapsed_seconds": 6.875775900000008,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

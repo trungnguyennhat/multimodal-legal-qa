@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1bab895a3ab6ceb9b1ad9cb4dddd62b60a669463cec69faf7b8e61d6881feb9c",
+  "filename": "image076.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo hình chữ nhật có viền trắng, nền màu xanh lá cây. Trên biển có hai dòng chữ màu trắng:\n\n- Dòng trên: \"TRẠM THU PHÍ\"\n- Dòng dưới: \"TOLL PLAZA\"",
+  "generated_tokens": 58,
+  "size": [
+    277,
+    125
+  ],
+  "elapsed_seconds": 4.256340699997963,
+  "peak_vram_bytes": 7389888000,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

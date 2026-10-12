@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:08804e2892998b1ded4e5cfb369e16c145c6afbead0e936ade4b109ca714ba65",
+  "filename": "image074.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông hình chữ nhật, có viền trắng, nền xanh lá cây. Biển được chia thành hai phần:\n\n- Phần trên: Chữ trắng, in hoa, gồm hai dòng: dòng trên là “TRẠM THU PHÍ”, dòng dưới là “TOLL PLAZA”.\n- Phần dưới: Chữ trắng, in hoa, ghi “750 m”.\n\nTất cả chữ đều được viết bằng phông chữ sans-serif, rõ ràng và căn giữa trong từng phần.",
+  "generated_tokens": 117,
+  "size": [
+    277,
+    186
+  ],
+  "elapsed_seconds": 8.322266600000148,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4034ce2fbcbd7436fcd582466960a3e080f6f17c5cfbae621d0c1c7a6d836948",
+  "filename": "image592.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một vật thể dạng tấm phẳng có bề mặt lưới ô vuông, viền dưới màu vàng, cong nhẹ về phía trước. Dưới vật thể có bóng đổ màu xám. Không có chữ viết nào trong hình.",
+  "generated_tokens": 52,
+  "size": [
+    307,
+    133
+  ],
+  "elapsed_seconds": 3.859435599995777,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:6d053a7fbff23f66de0295a733bd09e53f563e4cf07896ca29074eab3728d121",
+  "filename": "image1340.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai hình minh họa biển báo:\n\n1. Biển số B.508a: Hình chữ nhật, nền xanh, chữ trắng, nội dung “CHIỀU CAO AN TOÀN 5 m”.\n\n2. Biển số B.508b: Hình chữ nhật, nền xanh, chữ trắng, nội dung “CẤM ĐỖ XE”.\n\nCả hai hình đều có kích thước và bố cục được đánh dấu kích thước bằng lưới ô vuông và các số đo.",
+  "generated_tokens": 114,
+  "size": [
+    432,
+    590
+  ],
+  "elapsed_seconds": 8.378848100000141,
+  "peak_vram_bytes": 7427017216,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

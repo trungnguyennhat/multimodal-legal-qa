@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a794465fe9e635434ee27d91e2afe8e1969149f2a9a1cd6ae40050d5e36f8662",
+  "filename": "image1068.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần minh họa:\n\n1. Hình bên trái: Một hình chữ nhật đứng, được chia thành hai phần bằng đường chéo. Phần trên là hình chữ nhật màu xanh, chứa một biểu tượng xe hơi màu trắng ở dưới và một mũi tên trắng chỉ lên trên. Xung quanh hình chữ nhật có các kích thước được ghi bằng chữ cái \"x\" và số: chiều cao tổng là 16x, chiều rộng là 12x, và các kích thước nhỏ hơn như 8x, 0.2x, 0.1x, 0.2x.\n\n2. Hình bên phải: Một hình chữ nhật có lưới ô vuông, bên trong có hình vẽ một chiếc xe hơi màu đen ở dưới và một mũi tên màu đen chỉ lên trên. Xung quanh hình có các kích thước được ghi bằng chữ cái \"x\" và số: chiều cao tổng là 10x, chiều rộng là 10x, và các kích thước nhỏ hơn như 5x, 0.8x, 0.42x, 0.5x, 1x, 2x.",
+  "generated_tokens": 250,
+  "size": [
+    425,
+    201
+  ],
+  "elapsed_seconds": 17.357294999999795,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

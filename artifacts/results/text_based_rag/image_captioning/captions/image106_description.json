@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b085b7f9aac5b352e323d3f0d37e0732c683afbfb51546f14825d75922f1a595",
+  "filename": "image106.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm một vòng tròn đỏ có viền trắng, bên trong là hình ảnh một chiếc xe hơi màu đen nhìn từ phía trước, trên nóc xe có chữ \"TAXI\" màu đen trên nền vàng. Một đường gạch chéo màu đỏ đi qua từ góc trên bên trái đến góc dưới bên phải của hình tròn.",
+  "generated_tokens": 73,
+  "size": [
+    84,
+    82
+  ],
+  "elapsed_seconds": 5.6996183000010205,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

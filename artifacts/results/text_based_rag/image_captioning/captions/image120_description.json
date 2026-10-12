@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:74efa20b9ed1b532645ac114155cf908f4bd7728b1baf0cbeecf4735ca2ef42c",
+  "filename": "image120.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một biểu tượng hình tròn có viền đỏ, bên trong là hình người đi bộ màu đen, bị một đường gạch chéo màu đỏ đi ngang qua từ góc trên bên trái đến góc dưới bên phải.",
+  "generated_tokens": 50,
+  "size": [
+    104,
+    88
+  ],
+  "elapsed_seconds": 3.9808133999977144,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

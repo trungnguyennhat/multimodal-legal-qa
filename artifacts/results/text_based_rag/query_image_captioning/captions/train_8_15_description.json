@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:c674bc83ee0a63f0de77ab4e8337a7a176f08545b652b0a44224b0038ee4629f",
+  "filename": "train_8_15.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh, chữ và hình trắng. Trên biển có hai mũi tên trắng hướng sang hai bên, phía dưới mỗi mũi tên có khung chữ nhật chứa ký hiệu \"QL 1\" và \"QL 217\". Phía trên biển ghi hai địa danh \"THANH HÓA\" và \"CẨM THỦY\" kèm khoảng cách tương ứng \"25 km\" và \"60 km\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 97,
+  "size": [
+    800,
+    800
+  ],
+  "elapsed_seconds": 7.656585999997333,
+  "peak_vram_bytes": 7587836416,
+  "peak_reserved_bytes": 7688159232,
+  "gpu_free_bytes": 8180989952
+}

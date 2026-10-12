@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:081c5a930d424e83e82b6a2d07a43210d823d48c849639784e8c692736fee6fb",
+  "filename": "train_6_37.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh, chữ trắng, có mũi tên chỉ hướng và ghi khoảng cách 30M. Trên biển có thêm một biển phụ nhỏ hình chữ nhật, nền trắng, chữ đen, ghi thông tin liên hệ. Biển được gắn trên cột sơn đỏ trắng.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 67,
+  "size": [
+    665,
+    374
+  ],
+  "elapsed_seconds": 5.140060600002471,
+  "peak_vram_bytes": 7422689280,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:e81bf27dde40df6de7815ff705bfc5d19ea7ed7ecd191ef26c0eece2c6e277b5",
+  "filename": "image840.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng và một hình chữ T màu đen ở giữa. Có các kích thước được ghi chú bằng chữ số và ký hiệu \"x\" như: 0,71x, 1,84x, 1,68x, 0,64x, 1,2x, 2,2x, 10x, 60°.\n\nHình 2: Một hình chữ T màu đen nằm trong một hình chữ nhật có lưới ô vuông. Có các kích thước được ghi chú bằng chữ số và ký hiệu \"x\" như: 1,1x, 2x, 0,78x, 2,28x, 3x.",
+  "generated_tokens": 167,
+  "size": [
+    418,
+    172
+  ],
+  "elapsed_seconds": 12.128207700000075,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

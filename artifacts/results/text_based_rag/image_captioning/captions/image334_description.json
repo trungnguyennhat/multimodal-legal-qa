@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:3a8091c945f3a411d83c25d73e059960fcd94cfb9dec7c96bb09205199c15b33",
+  "filename": "image334.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm một bảng biểu thị bằng các hình minh họa trên nền xanh, được chia thành ba cột dọc bởi các đường kẻ trắng.\n\n- Cột bên trái: Hình một chiếc ô tô nhìn từ phía trước.\n- Cột giữa: Hình một chiếc ô tô nhìn từ phía trước, phía dưới có hình một chiếc xe máy (có người lái).\n- Cột bên phải: Phía trên là hình một chiếc xe máy (có người lái), phía dưới là hình một chiếc xe đạp.\n\nMột đường chéo màu đỏ cắt ngang từ góc trên bên trái sang góc dưới bên phải, đi qua toàn bộ bảng biểu. Không có chữ nào xuất hiện trong hình.",
+  "generated_tokens": 149,
+  "size": [
+    148,
+    84
+  ],
+  "elapsed_seconds": 11.181850100001611,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

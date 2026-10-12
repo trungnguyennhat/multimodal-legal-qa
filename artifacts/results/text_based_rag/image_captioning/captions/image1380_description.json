@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:ef04e8b79e1ea73de3e43bc00797b9846fe1ce02d4a343303d70d0abd9b1657c",
+  "filename": "image1380.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền đen, nền màu vàng, bên trong có chữ \"CT.14\" màu đen, được viết hoa và in đậm.",
+  "generated_tokens": 35,
+  "size": [
+    76,
+    38
+  ],
+  "elapsed_seconds": 2.8669866999998703,
+  "peak_vram_bytes": 7389844992,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

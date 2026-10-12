@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:96e1f93bb55e20ad948db1aa34fc30e1bdefed267f6690e508a36f24bf404c6b",
+  "filename": "image1022.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n- Phần bên trái: Một hình tròn màu xanh, có đường kính được ghi là 2x. Bên trong hình tròn là hình ảnh một chiếc kèn trumpet màu trắng. Có các chú thích kích thước: chiều cao từ trên xuống dưới là 1.5x, chiều rộng từ trái sang phải là 3x.\n\n- Phần bên phải: Một hình chữ nhật có lưới ô vuông, bên trong là hình ảnh một chiếc kèn tuba màu trắng. Các kích thước được ghi chú: chiều cao là 1.5x, chiều rộng là 3x. Ngoài ra, có các chú thích kích thước khác: chiều cao tổng thể là 3.4x, chiều rộng tổng thể là 6x.",
+  "generated_tokens": 166,
+  "size": [
+    431,
+    183
+  ],
+  "elapsed_seconds": 11.536450100000366,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

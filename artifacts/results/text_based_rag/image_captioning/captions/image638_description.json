@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4c4251604677871e0f128c0c71c30001440d02c5b01610724fc2d2e57cee5dab",
+  "filename": "image638.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình minh họa gồm một hình chữ nhật dài, có đầu bên trái được bo tròn và có một đường kẻ ngang màu đỏ chạy dọc theo chiều dài của hình chữ nhật. Bên trái hình có ghi chữ số \"0.10\" với một dấu chấm ngang và dấu chấm dọc tạo thành dấu hiệu kích thước. Phía dưới hình có ghi chữ \"Đơn vị: m\".",
+  "generated_tokens": 92,
+  "size": [
+    191,
+    59
+  ],
+  "elapsed_seconds": 6.616391000003205,
+  "peak_vram_bytes": 7396256768,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848,
+  "status": "COMPLETED"
+}

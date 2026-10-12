@@ -17,7 +17,6 @@ datasets/
 models/
 checkpoints/
 indexes/
-artifacts/
 outputs/
 temp/qwen_descriptions_*.json
 temp/qwen_descriptions_*.png

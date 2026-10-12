@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:0c64681c4c0bc61ce26bffc95b8eb6db424acd281c48380f33fc537b2bfaaa2c",
+  "filename": "train_1_8.jpg",
+  "description": "Có ba biển báo hình chữ nhật đứng, nền xanh lá cây, chữ trắng.\n\n- Biển trên cùng: hình chữ nhật, chia thành hai phần ngang. Phần trên bên trái có hình chữ nhật nhỏ màu vàng với chữ đen “LỐI RA” và “EXIT”. Phần trên bên phải có chữ “QL.10” và “2 km”. Phần dưới bên phải có chữ “QUỐC LỘ 5” và “THÁI BÌNH” kèm mũi tên trắng chỉ lên trên bên phải.\n\n- Biển giữa: hình chữ nhật, có dòng chữ “TP. HẢI PHÒNG 24 km” và “CẢNG ĐÌNH VŨ 34 km”.\n\n- Biển dưới cùng: hình chữ nhật, có dòng chữ “ĐT.353”, “CẢNG ĐÌNH VŨ”, “QL.5”, “THÁI BÌNH”, kèm hai mũi tên trắng chỉ lên trên: một mũi tên chỉ lên trên bên trái, một mũi tên chỉ lên trên bên phải.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 224,
+  "size": [
+    600,
+    376
+  ],
+  "elapsed_seconds": 17.797398499998963,
+  "peak_vram_bytes": 7415565824,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024
+}

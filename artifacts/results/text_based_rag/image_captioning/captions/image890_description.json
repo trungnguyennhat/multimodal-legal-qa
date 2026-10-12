@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:0b2e5dbd122aa5deec3aa18162e68c75328e3dc957889ede0b247a204732a484",
+  "filename": "image890.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cảnh báo màu đỏ, bên trong có nền vàng và hình ảnh một chiếc xe đẩy hàng đang đổ vật liệu. Có các kích thước được ghi chú xung quanh hình: chiều cao R=0.62, chiều rộng đáy 0.62, các cạnh bên 0.712, và góc 60°.\n\nHình 2: Một hình chữ nhật có lưới ô vuông, bên trong có hình ảnh một chiếc xe đẩy hàng đang đổ vật liệu, được đặt trên một nền đen. Có các kích thước được ghi chú: chiều cao 4.2, chiều rộng 6.62, và chiều cao từ đỉnh đến đáy của hình ảnh là 1.2.",
+  "generated_tokens": 163,
+  "size": [
+    406,
+    166
+  ],
+  "elapsed_seconds": 12.645001400000183,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

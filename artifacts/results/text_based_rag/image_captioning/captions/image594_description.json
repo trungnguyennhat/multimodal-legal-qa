@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:50dfbb36ab32f6e660946ba5c204290a091fef2b77142cb375141399e3dab8a4",
+  "filename": "image594.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh là sơ đồ giao lộ đường bộ với các yếu tố sau:\n\n- Một giao lộ hình chữ thập với bốn hướng đi (đường thẳng và đường ngang).\n- Các làn đường được phân chia bằng vạch kẻ.\n- Vạch kẻ màu vàng dọc theo trung tâm mỗi hướng đường.\n- Một hình chữ nhật ở trung tâm giao lộ, có thể là đảo an toàn hoặc vạch phân cách.\n- Các mũi tên chỉ hướng đi trên các làn đường.\n- Các chú thích bằng chữ Việt Nam ở góc dưới bên phải, bao gồm:\n  - “Bên tín hiệu”\n  - “Vạch dừng xe”\n  - “Mũi tên chỉ hướng”\n  - “Vạch phân làn xe”\n  - “Vạch phân cách giữa”\n\nCác yếu tố này được vẽ bằng màu xám, vàng và trắng.",
+  "generated_tokens": 188,
+  "size": [
+    269,
+    294
+  ],
+  "elapsed_seconds": 13.121028800000204,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

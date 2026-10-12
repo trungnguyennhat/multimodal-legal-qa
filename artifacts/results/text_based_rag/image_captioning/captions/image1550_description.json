@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:2a8c6a8f3eaae11ed5113ed8a4d399d78a86fc1a35d6a8ff0e309b3c6f3330d7",
+  "filename": "image1550.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có kích thước 200x200. Bên trong có:\n\n- Một dải đường kẻ ngang màu trắng, dài 80, nằm giữa hình.\n- Hai mũi tên trắng hướng lên trên, nằm ở phần dưới của hình, cách nhau bởi một đường kẻ ngang.\n- Một hình tam giác màu xanh lá cây ở góc trên bên phải, có góc 135° và góc 45° được ghi chú.\n- Một mũi tên vàng hướng lên và sang phải, nằm trong vùng tam giác xanh lá cây.\n- Các kích thước được ghi chú: 200 (chiều cao và chiều rộng tổng thể), 80 (chiều dài dải kẻ ngang), 15 (khoảng cách từ cạnh đến dải kẻ ngang), 45 (chiều cao phần xanh lá cây), 6 và 3 (khoảng cách từ dưới lên đến các đường kẻ ngang), 48 (khoảng cách giữa hai mũi tên trắng).",
+  "generated_tokens": 224,
+  "size": [
+    152,
+    150
+  ],
+  "elapsed_seconds": 15.872364500000003,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

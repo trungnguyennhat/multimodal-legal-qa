@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:707725f403ee27b1f9fbefe8874197e1f6ccfa52762e9f2f9a0e64319c416db1",
+  "filename": "image668.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh gồm hai bản vẽ kỹ thuật của biển báo giao thông đứng.\n\nBiển bên trái:\n- Hình dạng: Hình chữ nhật đứng, có phần trên là nửa hình tròn màu đỏ.\n- Nội dung chữ: \"C.CHUI\" và \"11 km\" được in ở phần chữ nhật trắng bên dưới nửa hình tròn.\n- Có các kích thước và đường kẻ kỹ thuật xung quanh.\n\nBiển bên phải:\n- Hình dạng: Hình chữ nhật đứng, có phần trên là một dải màu đỏ ngang.\n- Nội dung chữ: \"QL 5\" được in ở phần chữ nhật trắng bên dưới dải đỏ.\n- Có các kích thước và đường kẻ kỹ thuật xung quanh.\n\nCả hai biển đều có chân đỡ và các chi tiết lắp đặt kỹ thuật.",
+  "generated_tokens": 169,
+  "size": [
+    209,
+    242
+  ],
+  "elapsed_seconds": 11.7153840999963,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

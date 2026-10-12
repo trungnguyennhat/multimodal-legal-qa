@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:77cade17801ab6e784fedc68b8991a4106ffbbb91bbde14b38adac49bca54b7d",
+  "filename": "image1458.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh là một biển báo giao thông dạng chữ nhật đứng, được chia thành hai phần chính:\n\n- Phần trên: Một hình chữ nhật màu xanh dương, bên trong có dòng chữ “TRẠM DỪNG NGHỈ” ở dòng trên và “REST AREA” ở dòng dưới, đều viết hoa.\n\n- Phần dưới: Nền màu xanh lá cây, có ba hình vuông nhỏ nằm ngang, mỗi hình chứa một biểu tượng đen:\n  - Hình 1: Một biểu tượng bơm xăng.\n  - Hình 2: Một biểu tượng đũa và dĩa.\n  - Hình 3: Một biểu tượng người đứng (hình người đơn giản).\n\nBiển báo có các kích thước được ghi chú: chiều rộng tổng cộng là L, chiều cao tổng cộng là W, và các kích thước chi tiết cho từng phần như 20, 250, 100, 75, 140, 115, cùng các ký hiệu a, b, c, k1, H1.",
+  "generated_tokens": 231,
+  "size": [
+    370,
+    227
+  ],
+  "elapsed_seconds": 16.815711700000065,
+  "peak_vram_bytes": 7392270848,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

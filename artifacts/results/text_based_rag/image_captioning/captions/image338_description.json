@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:ad9a4bdc892298879a818823587324db611f82a42ce7c6092f8cd73fe2536c0e",
+  "filename": "image338.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một hình chữ nhật có viền trắng, nền màu xanh dương. Trong hình chữ nhật, có hình ảnh một dãy các tòa nhà dạng silhoutte màu trắng, gồm các hình dạng khác nhau như hình vuông, hình chữ nhật và hình chóp. Một đường chéo màu đỏ cắt ngang từ góc dưới bên trái đến góc trên bên phải, đi qua toàn bộ hình chữ nhật và các hình tòa nhà bên trong.",
+  "generated_tokens": 99,
+  "size": [
+    125,
+    100
+  ],
+  "elapsed_seconds": 7.63348589999805,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

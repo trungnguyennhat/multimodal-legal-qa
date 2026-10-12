@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:578bc62fd8f1aaec781ee49817b1c8ea26bd2df479d1128208c023fa93ffc608",
+  "filename": "image684.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị một bảng chữ cái gồm 4 hàng, mỗi hàng chứa các chữ cái in thường. Các chữ cái được trình bày trên nền lưới ô vuông nhỏ. Một số chữ cái có dấu mũ hoặc dấu khác, như: ă, â, ã, ê, ô, ơ, và một số chữ có hình dạng đặc biệt như chữ \"g\" và \"q\". Các chữ cái được sắp xếp theo hàng ngang, từ trái sang phải, trong đó có thể thấy các chữ cái từ \"a\" đến \"z\" với một số biến thể.",
+  "generated_tokens": 123,
+  "size": [
+    197,
+    200
+  ],
+  "elapsed_seconds": 9.006781799999999,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7503609856,
+  "gpu_free_bytes": 8365539328,
+  "status": "COMPLETED"
+}

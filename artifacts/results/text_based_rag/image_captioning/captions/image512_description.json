@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:324571552b4e2433b1ccb7c1dbee7f625f76740a0726b9e332465d4aa95a7c09",
+  "filename": "image512.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh minh họa một đoạn đường cong với các yếu tố sau:\n\n- Một đoạn đường cong hình cung, có vạch kẻ đường màu vàng và vạch kẻ màu đen.\n- Có các dòng chữ ghi chú bằng tiếng Việt:\n  - “Vạch 1.4”\n  - “Chiều dài tầm nhìn vượt xe tối thiểu”\n  - “Vạch 1.1”\n  - “Tia nhìn”\n  - “Vùng cấm vượt”\n- Một hình vẽ xe hơi ở vị trí trung tâm, gần “tia nhìn”.\n- Một số hình vẽ biểu tượng nhỏ (có thể là người đi bộ hoặc xe) ở phía dưới bên trái.\n- Một đường kẻ đứt nét màu đen chạy dọc theo đường cong, có ghi chú “Vùng cấm vượt”.\n- Một đường kẻ đứt nét màu đen khác chạy dọc theo phần bên phải của đường cong, có ghi chú “Chiều dài tầm nhìn vượt xe tối thiểu”.\n\nCác yếu tố được bố trí theo hình cung cong, với các ghi chú chỉ định vị trí và chiều dài các vùng trên đường.",
+  "generated_tokens": 243,
+  "size": [
+    324,
+    148
+  ],
+  "elapsed_seconds": 17.93921149999369,
+  "peak_vram_bytes": 7389888000,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:423dd7d31819bdffb0fa971cbf187b46ec118dd967295a4ea9ffcc7e9029138c",
+    "filename":  "image976.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n1. Hình bên trái: Một tam giác cân màu đỏ, bên trong có nền vàng và một biểu tượng đen hình chữ U ngược với hai mũi tên chỉ lên trên. Các kích thước được ghi chú bằng đơn vị \"z\" như: chiều cao tam giác là 2.24z, chiều rộng đáy là 1.6z, góc ở đỉnh là 60°, và các kích thước khác như 0.71z, 0.8z, 0.4z, 1.01z, 1.21z, 0.62z, 0.26z, 0.28z, 0.32z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62z, 0.62",
+    "generated_tokens":  512,
+    "size":  [
+                 425,
+                 188
+             ],
+    "elapsed_seconds":  36.499753000000055,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

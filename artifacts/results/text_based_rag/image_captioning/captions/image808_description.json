@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:ec2f1866cd9e8c727edda1de6a9867c6b323f7fc2c28e219d613528de483d721",
+  "filename": "image808.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình tròn màu đỏ, bên trong có một mũi tên màu đen chỉ thẳng lên trên, và có một đường chéo màu đỏ đi ngang qua mũi tên từ góc trên bên trái đến góc dưới bên phải. Xung quanh hình có các kích thước được ghi chú.\n\nHình 2: Một hình vuông có lưới ô vuông nhỏ, bên trong có một mũi tên màu đen chỉ thẳng lên trên. Xung quanh hình có các kích thước được ghi chú.",
+  "generated_tokens": 108,
+  "size": [
+    226,
+    91
+  ],
+  "elapsed_seconds": 7.606183500000043,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

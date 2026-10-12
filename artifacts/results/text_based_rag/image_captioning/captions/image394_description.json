@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d03ccc11eba8220ed6d2cd1818574f469cd841dba51447878c5304a917450d87",
+  "filename": "image394.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm một hình chữ nhật đứng có viền xanh, bên trong là một hình chữ nhật nhỏ hơn màu trắng, ở giữa có một hình chữ thập đỏ.",
+  "generated_tokens": 37,
+  "size": [
+    84,
+    107
+  ],
+  "elapsed_seconds": 2.9230648999946425,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

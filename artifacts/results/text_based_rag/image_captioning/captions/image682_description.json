@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:0bfb9517227a226c4f1dc68b16bcfd87fa3ec32f2cb20a38a7e95768d960621f",
+  "filename": "image682.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị một bảng chữ cái và các ký hiệu số, được sắp xếp thành các hàng dọc. Mỗi ký hiệu (chữ cái từ A đến Z, các số từ 0 đến 9, và một vài ký hiệu đặc biệt) được thể hiện dưới dạng hình ảnh nhỏ, có vẻ như là các mẫu mã hoặc biểu tượng được cắt ra từ một vật liệu có độ phân giải thấp hoặc bị mờ. Các ký hiệu được trình bày theo thứ tự từ A đến Z, sau đó là các số từ 0 đến 9, và cuối cùng là một vài ký hiệu đặc biệt ở hàng dưới cùng. Dưới cùng của hình ảnh có dòng chữ “Ghi chú: đơn vị mm”.",
+  "generated_tokens": 150,
+  "size": [
+    220,
+    364
+  ],
+  "elapsed_seconds": 11.0241082,
+  "peak_vram_bytes": 7392270848,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

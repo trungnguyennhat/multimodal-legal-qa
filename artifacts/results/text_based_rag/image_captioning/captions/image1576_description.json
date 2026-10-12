@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:93613452b37bf980a6a43e048a4dcfcad0ae06416f7db16ee3721c2bf45f34ef",
+  "filename": "image1576.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị một biển báo giao thông hình chữ nhật đứng, được chia thành hai phần ngang:\n\n- Phần trên: nền xanh lá cây, có dòng chữ \"LỐI RA\" ở hàng trên và \"EXIT\" ở hàng dưới, đều màu trắng.\n- Phần dưới: nền xanh lá cây, có một mũi tên trắng chỉ lên trên.\n\nBiển báo có các kích thước được ghi chú: chiều cao tổng cộng 180, chiều cao phần dưới 100, chiều rộng tổng cộng 180, và chiều rộng phần dưới 100. Các kích thước phụ như k1, k2, H1, H2, a, v.v. cũng được ghi chú xung quanh.",
+  "generated_tokens": 162,
+  "size": [
+    328,
+    276
+  ],
+  "elapsed_seconds": 11.735954400000992,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8a3634e89ce59957d3ee1c386be081ba27cf4904f1828beb72f30461e699e948",
+  "filename": "image134.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình tròn có viền đỏ, bên trong là hình ảnh một chiếc xe tải màu đen, phía dưới có dòng chữ “-9 m-”.",
+  "generated_tokens": 33,
+  "size": [
+    85,
+    83
+  ],
+  "elapsed_seconds": 2.8021987000029185,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

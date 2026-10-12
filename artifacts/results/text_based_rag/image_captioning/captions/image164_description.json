@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:ceec0d285dd1dedc52f979db0108bc3846e083d6ab5ab62b02267dc19eee4514",
+  "filename": "image164.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm một vòng tròn đỏ, bên trong có một đường ngang đen nằm ngang, và dưới đường ngang có dòng chữ \"KIỂM TRA\" viết hoa, in đậm, màu đen.",
+  "generated_tokens": 48,
+  "size": [
+    84,
+    82
+  ],
+  "elapsed_seconds": 3.8153515000012703,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

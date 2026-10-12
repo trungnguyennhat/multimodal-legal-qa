@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:93d56ec4a8457af68f77673f0a5229ccde522b90f244e837ef295e8f81f7d656",
+  "filename": "image140.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biểu tượng giao thông được đặt cạnh nhau:\n\n- Biểu tượng a) có hình một vòng tròn đỏ, bên trong là một mũi tên uốn cong sang trái, bị một đường gạch chéo đỏ cắt ngang từ trên xuống dưới.\n- Biểu tượng b) có hình một vòng tròn đỏ, bên trong là một mũi tên uốn cong sang phải, bị một đường gạch chéo đỏ cắt ngang từ trên xuống dưới.\n\nDưới mỗi biểu tượng có ghi chữ:\n\n- a) Biển số P.123a\n- b) Biển số P.123b",
+  "generated_tokens": 136,
+  "size": [
+    302,
+    103
+  ],
+  "elapsed_seconds": 9.953265399999509,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

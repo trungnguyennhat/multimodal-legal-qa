@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:9d1952b6dc84351c18fe4c1bb323a5db0e693fe8efffbbe4404b41e7a0a6bb2b",
+  "filename": "image652.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh chứa hai hình vẽ kỹ thuật giống nhau, đặt cạnh nhau, có kích thước và các chi tiết tương tự.\n\nMỗi hình vẽ là một hình chữ nhật đứng, có chiều cao được ghi là 60 (đơn vị cm). Bên trong hình chữ nhật có một đường cong cong lên từ đáy, tạo thành một hình dạng giống như một phần của cung tròn hoặc đường cong mềm mại. Trên đỉnh hình chữ nhật, có một hình tam giác nhỏ được nối với đỉnh của đường cong, với các kích thước được ghi là 20 và 30 (đơn vị cm). Dọc theo cạnh dưới của hình chữ nhật, có hai đoạn thẳng được ghi là 30 và 120 (đơn vị cm), tổng cộng là 150 cm.\n\nỞ dưới cùng của hình ảnh, có dòng chữ: \"Đơn vị: cm\".",
+  "generated_tokens": 193,
+  "size": [
+    187,
+    163
+  ],
+  "elapsed_seconds": 13.77263099999982,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

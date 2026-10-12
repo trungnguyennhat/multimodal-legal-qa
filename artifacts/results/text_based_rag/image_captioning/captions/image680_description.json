@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:487c0774257724ea841f7f69aec226a518109f3d4d7094eff22acdb71332aaac",
+  "filename": "image680.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị chữ cái \"E\" màu đen, được chia thành ba phần theo chiều ngang: \"Lề trái\", \"Giữa\", và \"Lề phải\". Có các giá trị số được ghi bên cạnh từng phần: \"10.02\" cho \"Lề trái\", \"64.52\" cho \"Giữa\", và \"3.57\" cho \"Lề phải\". Các giá trị này được nối với chữ \"E\" bằng các đường kẻ ngang.",
+  "generated_tokens": 110,
+  "size": [
+    143,
+    164
+  ],
+  "elapsed_seconds": 8.318654299999992,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

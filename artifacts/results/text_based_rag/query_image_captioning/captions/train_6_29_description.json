@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:dd3a023b100fb0cf2c82f18ac186acef2b6ce63f44a3117497a50b9a9494c97e",
+  "filename": "train_6_29.jpg",
+  "description": "- Biển hình chữ nhật đứng, nền xanh, chữ trắng, có mũi tên chỉ sang phải.\n- Biển hình chữ nhật đứng, nền xanh, chữ trắng, có dòng chữ dọc.\n- Biển hình tam giác ngược, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe đạp bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ bên trong.\n- Biển hình chữ nhật đứng, nền xanh, có hình xe hơi bên trong.\n- Biển hình tam giác, nền đỏ, viền trắng, có hình xe hơi bên trong.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 171,
+  "size": [
+    960,
+    640
+  ],
+  "elapsed_seconds": 13.157133799999428,
+  "peak_vram_bytes": 7568945152,
+  "peak_reserved_bytes": 7669284864,
+  "gpu_free_bytes": 8199864320
+}

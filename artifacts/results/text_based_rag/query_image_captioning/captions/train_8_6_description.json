@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:68bd58109d4208372045c332631ac9e36eab4ba2f866631042d6adb9614e441f",
+  "filename": "train_8_6.jpg",
+  "description": "Biển báo hình chữ nhật đứng, nền màu xanh dương, chữ màu trắng. Trên biển có dòng chữ “ĐỊA PHẬN” ở hàng trên, tiếp theo là “T. BẠC LIÊU” ở hàng giữa, và “KM 2169+000” ở hàng dưới. Biển được gắn trên hai cột trụ sơn sọc đỏ trắng.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 87,
+  "size": [
+    800,
+    600
+  ],
+  "elapsed_seconds": 6.769757099995331,
+  "peak_vram_bytes": 7487858176,
+  "peak_reserved_bytes": 7528775680,
+  "gpu_free_bytes": 8340373504
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:42fb226fabd219a10c5c9c54eebf1c8524fa783e2a69eb43afdd3e72fed79e96",
+  "filename": "image1386.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có góc bo, nền màu vàng, có viền đen. Trong hình có chữ \"CT.17\" màu đen, được viết in hoa, nằm ở giữa hình.",
+  "generated_tokens": 43,
+  "size": [
+    75,
+    40
+  ],
+  "elapsed_seconds": 3.344846299999517,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

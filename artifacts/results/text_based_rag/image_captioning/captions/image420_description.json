@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:9dfc801216e302d5b633b0d1a0b1a69b1615e7dce4ff3078270b02397c1155dd",
+  "filename": "image420.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm một hình chữ nhật có viền xanh, bên trong có một hình vẽ đen của một chiếc xe điện (tram) với mái chèo nối với dây điện trên đầu. Dưới hình vẽ là dòng chữ “BẾN XE ĐIỆN” viết hoa, in đậm, màu đen, nằm trên nền xanh. Dưới dòng chữ tiếng Việt là dòng chữ “TRAMWAY STATION” cũng viết hoa, in đậm, màu đen, nằm trên nền xanh.",
+  "generated_tokens": 109,
+  "size": [
+    86,
+    126
+  ],
+  "elapsed_seconds": 8.067998699996679,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

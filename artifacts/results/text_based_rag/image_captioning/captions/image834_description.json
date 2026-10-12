@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:8cf47644869fa09133488e010354bc5356f293a2b001233dde63adb52d5c4439",
+    "filename":  "image834.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n1. Hình tam giác cảnh báo: có nền đỏ, viền đen, bên trong là hình chữ nhật vàng với hai vạch đen dọc, song song, nằm trong hình tam giác. Có các kích thước được ghi chú xung quanh như: 1.50x, 0.94x, 0.71x, 0.37x, 0.25x, 0.20x, 0.12x, 0.08x, 0.04x, 0.02x, 0.01x, 0.005x, 0.002x, 0.001x, 0.0005x, 0.0002x, 0.0001x, 0.00005x, 0.00002x, 0.00001x, 0.000005x, 0.000002x, 0.000001x, 0.0000005x, 0.0000002x, 0.0000001x, 0.00000005x, 0.00000002x, 0.00000001x, 0.000000005x, 0.000000002x, 0.000000001x, 0.0000000005x, 0.0000000002x, 0.0000000001x, 0.00000000005x, 0.00000000002x, 0.00000000001x, 0.000000000005x, 0.000000000002x, 0.000000000001x",
+    "generated_tokens":  512,
+    "size":  [
+                 312,
+                 118
+             ],
+    "elapsed_seconds":  36.184750800000074,
+    "peak_vram_bytes":  7399027200,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

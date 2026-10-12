@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:fc11079f7df85e7fbc606ca7ccacecf54b74008391937e2561d7cd686685b3ee",
+  "filename": "image650.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh chứa hai mũi tên cong hướng lên trên, nằm trong một hình chữ nhật màu xám. Không có chữ viết nào trong hình.",
+  "generated_tokens": 31,
+  "size": [
+    124,
+    116
+  ],
+  "elapsed_seconds": 2.3909511000019847,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7474249728,
+  "gpu_free_bytes": 8394899456,
+  "status": "COMPLETED"
+}

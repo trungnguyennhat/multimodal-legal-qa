@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:95efd69b6ee410bcc8a8f49a80f073710a42411752830e87f4513f3439cb547e",
+  "filename": "image538.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh là một bản vẽ mặt cắt ngang của một đoạn đường có vạch kẻ đường và giải phân cách giữa.\n\n- Có một dải đường màu xám kéo dài ngang, được chia thành hai phần bằng một \"Giải phân cách giữa\" ở giữa.\n- Trên mỗi phần đường, có các vạch kẻ ngang màu trắng, được ghi là \"Vạch 3.3\" ở phía dưới bên trái và \"Vạch 3.2\" ở phía dưới bên phải.\n- Phía dưới cùng của hình, có các chú thích số đo: \"100\" và \"100\" ở hai bên, và một chú thích \"50-60\" ở giữa, kèm theo chú thích \"Đơn vị: cm\".\n- Tất cả các chữ đều được viết bằng tiếng Việt.",
+  "generated_tokens": 175,
+  "size": [
+    369,
+    80
+  ],
+  "elapsed_seconds": 12.401260999999067,
+  "peak_vram_bytes": 7396826112,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

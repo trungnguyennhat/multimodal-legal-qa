@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:7a16ed6c32e53b1e1e228c9f1e31740504320dc5bdd260c5fdf3edda8c313903",
+    "filename":  "image1222.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n1. **Phần bên trái**: Một hình chữ nhật đứng, có viền và kích thước được ghi rõ. Bên trong hình chữ nhật có một biểu tượng đen hình khung giường đơn, nằm trên nền trắng. Dưới biểu tượng là dòng chữ “KHÁCH SẠN” viết hoa, in đậm, màu trắng, nằm trên nền xanh dương. Các kích thước được ghi bằng đơn vị “a” (ví dụ: 14a, 6a, 8a, 16a, 10a, 12a, 14a, 16a, 18a, 20a, 22a, 24a, 26a, 28a, 30a, 32a, 34a, 36a, 38a, 40a, 42a, 44a, 46a, 48a, 50a, 52a, 54a, 56a, 58a, 60a, 62a, 64a, 66a, 68a, 70a, 72a, 74a, 76a, 78a, 80a, 82a, 84a, 86a, 88a, 90a, 92a, 94a, 96a, 98a, 100a, 102a, 104a, 106a, 108a, 110a, 112a, 114a, 116a, 118a, 120a, 122a, 124a, 126a, 128a, 130a, 132a, 134a, 136a, 138a, 140a, 142a, 144a, 146a, 148a, 150a, 152a, 154a,",
+    "generated_tokens":  512,
+    "size":  [
+                 380,
+                 209
+             ],
+    "elapsed_seconds":  35.06605870000021,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

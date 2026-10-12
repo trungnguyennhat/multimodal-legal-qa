@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:091eb6c180bc283207a7373b053a7b0926ee8e4a347fe753e5ade0938920e6d3",
+    "filename":  "image978.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình 1: Một tam giác cảnh báo màu đỏ, bên trong có nền vàng và hình vẽ một đường cong uốn lượn màu đen, biểu thị chuyển hướng hoặc đường cong. Có các kích thước được ghi chú như: 4,25z, 2,54z, 1,91z, 0,6z, 0,5z, 0,5z, 10z, và góc 60°.\n\nHình 2: Một biểu đồ lưới vuông với một hình vẽ gồm hai mũi tên đen hướng lên và xuống, nằm trong một hình chữ nhật nhỏ. Có các kích thước được ghi chú như: 1,00z, 0,5z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25z, 0,25",
+    "generated_tokens":  512,
+    "size":  [
+                 432,
+                 167
+             ],
+    "elapsed_seconds":  36.29770540000027,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

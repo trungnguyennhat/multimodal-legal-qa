@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:3a0b39505d0be130d5df5fec0b60cd8ed796d937ebbf1f43a251ca9b21b89599",
+  "filename": "image520.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh hiển thị một hình chữ nhật lớn được chia thành hai phần bằng một đường thẳng ngang. Bên trái hình chữ nhật có một chú thích số \"15\" với một đường kẻ vuông góc từ cạnh trái, chỉ vào chiều cao của hình. Góc dưới bên phải có dòng chữ \"Đơn vị: cm\".",
+  "generated_tokens": 72,
+  "size": [
+    280,
+    146
+  ],
+  "elapsed_seconds": 5.326176899994607,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

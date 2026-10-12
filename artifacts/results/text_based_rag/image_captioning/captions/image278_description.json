@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:3ba7d41ad1b769c9881cabdf5facda6a07272d18f725e4185a2cc29b7c4d5023",
+  "filename": "image278.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông dạng tam giác có viền đỏ, nền vàng. Trong tam giác có hình hai chiếc xe hơi màu đen, xếp thành hàng ngang, xe phía trước ở vị trí thấp hơn so với xe phía sau. Không có chữ viết nào trong hình.",
+  "generated_tokens": 63,
+  "size": [
+    113,
+    85
+  ],
+  "elapsed_seconds": 4.658657899999525,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

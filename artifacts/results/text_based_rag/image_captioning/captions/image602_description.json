@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:48702a27931b3b5b8f9d4bfe2b7bee35ba107e87ea2b9f65e2a35615fdf6cf82",
+  "filename": "image602.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình chữ nhật có chiều cao 70 cm, chiều rộng 50 cm và một phần 30 cm ở bên phải. Trong hình chữ nhật có năm hình tam giác đều, hướng đỉnh xuống dưới, được xếp ngang hàng, nằm trong phần giữa của hình chữ nhật. Góc dưới bên phải có dòng chữ “Đơn vị: cm”.",
+  "generated_tokens": 78,
+  "size": [
+    160,
+    95
+  ],
+  "elapsed_seconds": 5.55271179999545,
+  "peak_vram_bytes": 7392270848,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

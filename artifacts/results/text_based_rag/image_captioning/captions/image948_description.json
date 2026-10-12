@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:82a0ed8ebcea3ccc861baa62cad86bd10f412104a4f9000bb827ed248a3b87e9",
+    "filename":  "image948.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng và hình ảnh một chiếc xe đang lật ngửa màu đen ở giữa. Có các kích thước được ghi chú xung quanh hình: chiều cao 0,30x, chiều rộng đáy 0,5x, chiều cao từ đỉnh đến đáy 1,5x, chiều cao từ đỉnh đến cạnh 0,71x, và góc ở đỉnh 60°.\n\nHình 2: Một hình chữ nhật có lưới ô vuông, bên trong có hình dạng giống như một chiếc xe đang lật ngửa màu đen ở giữa. Có các kích thước được ghi chú xung quanh hình: chiều cao 0,30x, chiều rộng 0,5x, chiều cao từ đỉnh đến đáy 1,5x, chiều cao từ đỉnh đến cạnh 0,71x, và góc ở đỉnh 60°. Ngoài ra còn có các kích thước khác như R1,28x, R0,76x, 0,48x, 0,3x, 1,78x, 0,30x, 0,5x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0,3x, 0",
+    "generated_tokens":  512,
+    "size":  [
+                 428,
+                 191
+             ],
+    "elapsed_seconds":  34.97504959999969,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:85718dd43ab8f1c1878de962d8936cfa669e946924be52331778009dc486eb86",
+  "filename": "image754.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình tròn màu đỏ có đường viền đen, bên trong có một mũi tên uốn cong sang trái (uốn góc 90 độ) và một đường chéo màu đỏ cắt ngang qua mũi tên đó. Dưới hình có một đoạn thẳng ngang với kích thước ghi là \"10a\". Phía trên hình tròn có một đoạn cong với kích thước ghi là \"8/2a\".\n\nHình 2: Một hình vẽ trên lưới ô vuông, gồm một đường nét đen uốn cong sang trái (uốn góc 90 độ). Có các kích thước ghi trên hình: chiều cao tổng cộng là \"3a\", chiều rộng tổng cộng là \"6a\", chiều cao phần cong là \"2a\", chiều rộng phần cong là \"2a\", và chiều cao phần thẳng là \"1a\". Phía trên hình có một đoạn thẳng với kích thước ghi là \"1a\" và \"1a\".",
+  "generated_tokens": 209,
+  "size": [
+    314,
+    106
+  ],
+  "elapsed_seconds": 14.418257499999982,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5945fba41d46588dcc0a2a467d58ce19408709a552322ce57183ff76e18ebe15",
+  "filename": "image322.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba hình chữ nhật đứng cạnh nhau, nền màu xanh dương. Trong mỗi hình chữ nhật có một biểu tượng mũi tên màu trắng:\n\n- Hình bên trái: một mũi tên chỉ sang trái, đầu mũi tên hướng sang trái, thân mũi tên hướng lên trên.\n- Hình giữa: một mũi tên chỉ thẳng đứng lên trên.\n- Hình bên phải: một mũi tên chỉ sang phải và hơi cong về phía sau, tạo hình chữ L ngược, đầu mũi tên hướng sang phải.\n\nGiữa các hình chữ nhật có đường kẻ chấm phá màu trắng.",
+  "generated_tokens": 120,
+  "size": [
+    148,
+    74
+  ],
+  "elapsed_seconds": 9.095214100001613,
+  "peak_vram_bytes": 7386164224,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

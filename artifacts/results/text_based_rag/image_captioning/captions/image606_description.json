@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c565087aee02030322c4b783490c085ddf3339616aeb1201f60aaefecf07228c",
+  "filename": "image606.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một dải kẻ ngang dạng tam giác, có các vạch kẻ ngang màu trắng trên nền xám. Trên hình có các ký hiệu số và chữ:\n\n- Phía trên cùng có ký hiệu “≥300” với hai dấu ngoặc vuông chỉ vào hai đầu của dải kẻ.\n- Phía dưới bên trái có ký hiệu “8” với một dấu ngoặc vuông chỉ vào đầu của dải kẻ.\n- Phía dưới bên phải có ký hiệu “40(45)” với một dấu ngoặc vuông chỉ vào đầu của dải kẻ.",
+  "generated_tokens": 128,
+  "size": [
+    217,
+    103
+  ],
+  "elapsed_seconds": 9.29290570000012,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:2a299b4d1f4c7bf269f704bfd71dc2c6aa24ce75ee31456ba425ba1985960294",
+    "filename":  "image1026.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần minh họa:\n\n1. Phần bên trái: Một hình chữ nhật đứng chứa hai hình dạng chồng lên nhau. Trên cùng là hình chữ nhật màu cam, dưới là hình tròn màu xanh dương có mũi tên trắng hướng lên. Dưới cùng có dòng chữ \"2Ax 2Ax\" và \"40x\".\n\n2. Phần bên phải: Một hình chữ nhật đứng có lưới ô vuông, bên trong có hình chữ nhật nhỏ hơn với các đường kẻ và mũi tên hướng lên. Xung quanh có nhiều ký hiệu kích thước như \"1.5x\", \"0.3x\", \"2x\", \"4.5x\", \"0.8x\", \"0.21x\", \"0.46x\", \"0.12x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x\", \"0.08x",
+    "generated_tokens":  512,
+    "size":  [
+                 394,
+                 234
+             ],
+    "elapsed_seconds":  34.99568750000026,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:fa087aab2394c2a2b340fd1a0770db0f03c336bc93c2c2c1a7f998e49b030c0e",
+    "filename":  "image998.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm ba phần:\n\n1. Một hình tròn màu xanh dương, bên trong có hai mũi tên trắng: một mũi tên chỉ sang trái và một mũi tên chỉ lên trên, giao nhau ở giữa. Có các kích thước được ghi chú: chiều rộng ngang là 4x, chiều cao là 3.6x, và chiều cao tổng cộng là 10x.\n\n2. Một hình chữ nhật nhỏ bên cạnh, có các kích thước ghi chú: chiều cao là 3.6x, chiều cao tổng cộng là 10x, và chiều cao phần dưới là 4x.\n\n3. Một hình vẽ trên lưới ô vuông, gồm hai mũi tên: một mũi tên chỉ sang trái và một mũi tên chỉ lên trên, giao nhau ở giữa. Có các kích thước ghi chú: chiều rộng ngang là 1.8x, chiều cao là 1.2x, chiều cao tổng cộng là 1.8x, chiều cao phần dưới là 0.8x, và chiều cao phần trên là 1.0x. Ngoài ra, có các ghi chú kích thước khác như R=0.6x, 1.6x, 2.8x, 2x, 1.2x, 0.8x, 0.5x, 1.8x, 1.6x, 1.4x, 1.2x, 1.0x, 0.8x, 0.6x, 0.4x, 0.2x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.0x, 0.",
+    "generated_tokens":  512,
+    "size":  [
+                 429,
+                 175
+             ],
+    "elapsed_seconds":  35.3165441000001,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

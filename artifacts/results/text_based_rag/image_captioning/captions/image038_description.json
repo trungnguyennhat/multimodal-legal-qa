@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4dc881f0f0d845def92769bce6a08711f8cf6ced5b08074849fa8c7addcfed98",
+  "filename": "image038.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông dạng chữ nhật đứng, có nền xanh lá cây và viền trắng, được chia thành hai phần:\n\n**Biển bên trái:**\n- Phần trên: Hộp chữ nhật màu xanh dương, có dòng chữ “TRẠM DỪNG NGHỈ” và “REST AREA” ở trên cùng, tiếp theo là dòng chữ “THÂN CỬU NGHĨA”.\n- Phần dưới: Ba biểu tượng hình chữ nhật nhỏ nằm ngang, từ trái sang phải là: biểu tượng bơm xăng, biểu tượng đũa và dĩa, biểu tượng thông tin (bộ chữ “i” trong hình tròn).\n- Dưới cùng: Dòng chữ “750 m”.\n\n**Biển bên phải:**\n- Phần trên: Hộp chữ nhật màu xanh dương, có dòng chữ “TRẠM DỪNG NGHỈ” và “REST AREA” ở trên cùng, tiếp theo là dòng chữ “THÂN CỬU NGHĨA”.\n- Phần dưới: Bốn biểu tượng hình chữ nhật nhỏ nằm ngang, từ trái sang phải là: biểu tượng bơm xăng, biểu tượng đũa và dĩa, biểu tượng thông tin (bộ chữ “i” trong hình tròn), biểu tượng dụng cụ sửa chữa (cái tua vít hoặc máy vặn vít).\n- Dưới cùng: Dòng chữ “750 m”.\n\nDưới mỗi biển báo có dòng chữ mô tả:\n- Dưới biển bên trái: “Biển có ba dịch vụ”.\n- Dưới biển bên phải: “Biển có bốn dịch vụ”.",
+  "generated_tokens": 358,
+  "size": [
+    392,
+    174
+  ],
+  "elapsed_seconds": 25.420808199996827,
+  "peak_vram_bytes": 7393955840,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872,
+  "status": "COMPLETED"
+}

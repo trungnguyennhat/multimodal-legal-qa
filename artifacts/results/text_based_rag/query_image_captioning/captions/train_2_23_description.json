@@ -1,0 +1,36 @@
+{
+    "image_id":  "sha256:e28ed85e3f48bdaec4f84e3040787bd0d197422d89a3bcd383ea8d6fa1b32245",
+    "filename":  "train_2_23.jpg",
+    "description":  "- Biển hình chữ nhật, nền xanh lá, chữ trắng, có mũi tên chỉ hướng sang phải.\n- Biển hình tròn, nền đỏ, viền trắng, có số \"50\" màu trắng ở giữa.\n- Biển hình chữ nhật đứng, nền xanh lá, có hình mũi tên uốn cong chỉ hướng sang phải.\n- Biển hình vuông, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình vuông, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ hướng sang phải.\n- Biển hình chữ nhật, nền xanh lá, có hình mũi tên chỉ",
+    "settings":  {
+                     "model":  "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+                     "revision":  "10d842936325905934ea24e64325d774693f166e",
+                     "prompt":  "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+                     "min_pixels":  131072,
+                     "max_pixels":  786432,
+                     "max_new_tokens":  384,
+                     "crop":  false,
+                     "do_sample":  false,
+                     "dtype":  "bfloat16",
+                     "attention":  "sdpa",
+                     "libraries":  {
+                                       "torch":  "2.7.1+cu128",
+                                       "transformers":  "4.57.1",
+                                       "bitsandbytes":  "0.49.0",
+                                       "Pillow":  "12.3.0"
+                                   }
+                 },
+    "status":  "COMPLETED",
+    "token_limit_reached":  true,
+    "generated_tokens":  384,
+    "size":  [
+                 820,
+                 486
+             ],
+    "elapsed_seconds":  30.629797800000233,
+    "peak_vram_bytes":  7463750144,
+    "peak_reserved_bytes":  7524581376,
+    "gpu_free_bytes":  8344567808,
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

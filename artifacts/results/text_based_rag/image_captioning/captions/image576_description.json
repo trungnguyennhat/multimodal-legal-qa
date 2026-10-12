@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c26442927c41ad9407dea60bab186f1288d95c9fca6af84445d176242da109dc",
+  "filename": "image576.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh chứa một hình dạng giống như một hình thoi hoặc hình vuông bị xoay, bên trong có ba đường thẳng song song chạy dọc theo chiều chéo, tạo thành một hình dạng giống như chữ \"H\" bị xoay. Xung quanh hình này có các mũi tên chỉ vào hoặc chỉ ra từ các góc, và có các chữ số hoặc dãy số như \"300-400\", \"100-100\", \"50-50\" được đặt gần các mũi tên hoặc các điểm trên hình. Các yếu tố này được hiển thị trên nền màu xám.",
+  "generated_tokens": 134,
+  "size": [
+    195,
+    196
+  ],
+  "elapsed_seconds": 9.745028600002115,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

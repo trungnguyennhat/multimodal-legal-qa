@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c4f08cdea369d358ab0347e4d663d797b4e959f8dd7ddb16fc237e7847df1b33",
+  "filename": "image1210.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Phần bên trái: Một hình chữ nhật có viền xanh, bên trong chứa hình ảnh một vật thể giống như quả bom hoặc thiết bị nổ, được đặt ở trung tâm. Xung quanh có các kích thước được ghi bằng chữ số và ký hiệu “z”, ví dụ: 16.2, 12.2, 10.2, 2.2, 6.2, 10.2, 2.2, 0.2z, 1.2, 0.1z, 12z, 10z, 1z, 2z, 4z, 6z, 8z. Có các đường kẻ chia và dấu trung tâm.\n\n2. Phần bên phải: Một hình ảnh tương tự vật thể bên trong hình chữ nhật bên trái, nhưng được đặt trên lưới ô vuông. Có các kích thước ghi là 4z, 6z, 8z, và 0.2z ở góc dưới bên phải.\n\nCác ký hiệu “z” xuất hiện nhiều lần trong cả hai phần. Không có văn bản khác ngoài các số và ký hiệu kích thước.",
+  "generated_tokens": 261,
+  "size": [
+    368,
+    165
+  ],
+  "elapsed_seconds": 18.224170200000117,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

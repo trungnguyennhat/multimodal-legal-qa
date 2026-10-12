@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:274332de70eef4f1be879b7771862d5519fd34728ec072b25506ecae90069f83",
+  "filename": "image1520.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền đen, bên trong có hình con cá đen đang bơi hướng sang phải. Phía trên bên phải có một móc câu đơn giản. Các ký hiệu chữ cái A, B, C, D, E được ghi chú xung quanh hình chữ nhật: A ở hai cạnh dọc, B ở cạnh trên, C ở hai cạnh ngang dưới và phải, D ở cạnh dọc phải, E ở góc trên phải.",
+  "generated_tokens": 97,
+  "size": [
+    188,
+    178
+  ],
+  "elapsed_seconds": 7.653966200000468,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

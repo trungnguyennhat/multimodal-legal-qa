@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:704a05354c02e9da4e4684e660efe61807fdfb21a5ec752b638968e15e40cdaa",
+  "filename": "image1012.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai hình minh họa:\n\n1. Hình bên trái: Một hình tròn màu xanh, bên trong có hình người đi bộ màu trắng. Có các đường kẻ ngang dọc qua tâm hình tròn. Xung quanh hình tròn có các chú thích kích thước bằng chữ số và chữ cái: \"10.2\", \"3.62\", \"2.222\", \"2x\", \"3.62x\", \"10.2x\".\n\n2. Hình bên phải: Một hình chữ nhật lưới ô vuông, bên trong có hình người đi bộ màu trắng. Có các đường kẻ ngang dọc qua tâm hình. Xung quanh hình có các chú thích kích thước bằng chữ số và chữ cái: \"4.82x\", \"7.2\", \"9.6\", \"1.2\".",
+  "generated_tokens": 184,
+  "size": [
+    424,
+    182
+  ],
+  "elapsed_seconds": 12.702489600000263,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

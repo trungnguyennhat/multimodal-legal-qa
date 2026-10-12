@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c8eb2a552e69a9081f24e0b691c94dedee2efab92069f7552900b6ff7bfca447",
+  "filename": "image624.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh gồm hai hình chữ nhật đứng cạnh nhau, mỗi hình có chiều cao ghi là \"H\" và chiều rộng ghi là \"b\".\n\n- Hình bên trái: Chữ nhật có các sọc chéo màu đen và vàng, sọc chéo tạo góc 45 độ với cạnh dưới. Góc dưới bên phải có ký hiệu góc 45 độ và một đoạn thẳng nhỏ ghi ký hiệu \"a\".\n\n- Hình bên phải: Chữ nhật có các sọc chéo màu đỏ và trắng, sọc chéo tạo góc 45 độ với cạnh dưới. Góc dưới bên phải có ký hiệu góc 45 độ và một đoạn thẳng nhỏ ghi ký hiệu \"a\".",
+  "generated_tokens": 151,
+  "size": [
+    238,
+    154
+  ],
+  "elapsed_seconds": 10.798913099999481,
+  "peak_vram_bytes": 7396826112,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

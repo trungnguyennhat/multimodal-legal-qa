@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:896e5dec3f33b867ee6f61ed22d3426efe317f25c2ec7fe752d9b521b407e233",
+  "filename": "image1516.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một hình chữ nhật có góc bo, bên trong có biểu tượng một bức tường chắn sóng (được thể hiện bằng hình tam giác đen đứng) ngăn cách hai vùng nước: vùng nước bên trái có nhiều gợn sóng, vùng nước bên phải có ít gợn sóng. Xung quanh hình chữ nhật có các ký hiệu đo kích thước: chiều cao được đánh dấu bằng A, chiều rộng được đánh dấu bằng A, chiều cao từ trên cùng đến đỉnh của biểu tượng được đánh dấu bằng B, chiều cao từ đỉnh biểu tượng đến đáy được đánh dấu bằng C, chiều cao từ đỉnh biểu tượng đến đáy được đánh dấu bằng D, và chiều cao từ đỉnh biểu tượng đến đáy được đánh dấu bằng E.",
+  "generated_tokens": 161,
+  "size": [
+    187,
+    176
+  ],
+  "elapsed_seconds": 12.515785599999617,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

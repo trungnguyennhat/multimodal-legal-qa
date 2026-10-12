@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d71af68df550ace802ab21e308813c5963b5633b4b16b2fd931095f8555e036c",
+  "filename": "image1546.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có nền xanh lá cây, trong đó có hình minh họa một đoạn đường với vạch kẻ đường đứt đoạn, hai mũi tên trắng chỉ lên trên và một mũi tên vàng chỉ sang phải. Dưới hình minh họa có dòng chữ “NHẬP LÀN” và dòng chữ “MERGE LANE”. Xung quanh hình chữ nhật có các ký hiệu kích thước như L, W, 200, k1, a, H1, H2, H3, k2, k3, k4.",
+  "generated_tokens": 121,
+  "size": [
+    227,
+    261
+  ],
+  "elapsed_seconds": 9.941310400000475,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

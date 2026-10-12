@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:68f9fcf7219fdcb6d1c0adc56606c169e983386e88da6b2cb6213150864308f5",
+  "filename": "image006.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một sơ đồ kỹ thuật thể hiện phạm vi lắp đặt biển báo. Có một khung hình chữ nhật lớn, bên trong có một hình chữ nhật nhỏ hơn ở trên cùng, được ghi chú “PHẠM VI LẮP ĐẶT BIỂN BÁO”. Dọc theo hai bên khung có các chú thích: “Cột trụ dùng”, “Dải phân cách”, “Vạch sơn”, “Lề đường”, “Vỉa đường”. Có các khoảng cách được ghi chú: “≥ 50cm” ở hai bên, “≥ 500cm (320cm)” ở giữa. Dưới cùng có ghi “Một đường” và “A”. Các yếu tố được bố trí theo chiều dọc và ngang trong khung hình.",
+  "generated_tokens": 175,
+  "size": [
+    360,
+    234
+  ],
+  "elapsed_seconds": 13.2449037999977,
+  "peak_vram_bytes": 7392823808,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

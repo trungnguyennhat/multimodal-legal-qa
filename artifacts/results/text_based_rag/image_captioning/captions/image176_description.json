@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b52e4f4d3ae2b0ab112864ce388340083dbdb6e6d52de9fca594d5834ceea03b",
+  "filename": "image176.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một vòng tròn màu xanh dương, bên trong có một dải hình chữ nhật màu xám kéo dài theo chiều chéo từ góc trên bên phải sang góc dưới bên trái. Không có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 54,
+  "size": [
+    83,
+    83
+  ],
+  "elapsed_seconds": 4.206561999999394,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:844d52de288631e00c912d2e07bc9a727aab41164f91d2a9b3455badc53501f4",
+  "filename": "image496.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một biểu tượng hình xe điện (hoặc xe điện ngầm) với mái che và các cửa sổ, phía trên có một hình tam giác nhỏ ở đỉnh. Dưới biểu tượng là dòng chữ “NGOẠI LỆ” viết hoa, in đậm, và ngay dưới là dòng chữ “Except” viết thường, in đậm. Tất cả nằm trong một khung hình chữ nhật có viền đen.",
+  "generated_tokens": 90,
+  "size": [
+    130,
+    71
+  ],
+  "elapsed_seconds": 6.3960740999973495,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

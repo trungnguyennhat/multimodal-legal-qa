@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1553c4f8166d9b2b25f0365ebc369f36487ebbce7e704d6c1166bf8bd5729efd",
+  "filename": "image008.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm bốn cây gậy đứng thẳng, mỗi cây gậy có một hoặc hai hoặc ba hình tròn chứa chữ số được gắn trên đầu gậy.\n\n- Cây gậy đầu tiên: có ba hình tròn xếp ngang, từ trái sang phải lần lượt chứa số 1, 2, 3.\n- Cây gậy thứ hai: có ba hình tròn xếp dọc, từ trên xuống dưới lần lượt chứa số 1, 2, 3.\n- Cây gậy thứ ba: có ba hình tròn xếp theo hình tam giác, số 1 ở trên cùng, số 2 và số 3 ở dưới, nằm ngang cạnh nhau.\n- Cây gậy thứ tư: có ba hình tròn xếp theo hình tam giác, số 1 và số 2 ở trên cùng, nằm ngang cạnh nhau, số 3 ở dưới.",
+  "generated_tokens": 192,
+  "size": [
+    288,
+    130
+  ],
+  "elapsed_seconds": 15.35723919999873,
+  "peak_vram_bytes": 7389888000,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

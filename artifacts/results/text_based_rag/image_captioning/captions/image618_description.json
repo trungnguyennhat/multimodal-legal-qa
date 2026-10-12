@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:eff9b68e80f6d4d6702f7c5b73d096bcbf7f11cbb062a6ea745436fbee6a6dc3",
+  "filename": "image618.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một đoạn đường với nhiều làn xe. Trên mặt đường có các vạch kẻ ngang màu trắng và một dải kẻ màu xanh lá cây chạy ngang qua các làn xe. Dưới đường có các ký hiệu mũi tên chỉ hướng đi, được sắp xếp thành từng nhóm. Dưới các mũi tên có các đoạn thẳng với các số đo: 5m, 58m, 5m, 58m. Phía dưới cùng có ghi “Đơn vị: m”.",
+  "generated_tokens": 112,
+  "size": [
+    433,
+    193
+  ],
+  "elapsed_seconds": 8.061009700002614,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

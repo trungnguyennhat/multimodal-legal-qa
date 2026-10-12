@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:68bba2d4e0a0e29395f15cc04c0e479b6bcf1b2b4966c8db47234566fb98cadb",
+  "filename": "image324.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm 8 hình chữ nhật màu xanh dương, mỗi hình có một biểu tượng trắng bên trong và một dòng chữ tiếng Việt dưới cùng.\n\nHình 1 (a): Biểu tượng xe buýt, dưới ghi “Biển số R.412a”.\n\nHình 2 (b): Biểu tượng xe ô tô, dưới ghi “Biển số R.412b”.\n\nHình 3 (c): Biểu tượng xe tải, dưới ghi “Biển số R.412c”.\n\nHình 4 (d): Biểu tượng xe máy, dưới ghi “Biển số R.412d”.\n\nHình 5 (e): Biểu tượng xe buýt với mũi tên chỉ lên, dưới ghi “Biển số R.412e”.\n\nHình 6 (f): Biểu tượng xe ô tô với mũi tên chỉ lên, dưới ghi “Biển số R.412f”.\n\nHình 7 (g): Biểu tượng xe máy và xe đạp, dưới ghi “Biển số R.412g”.\n\nHình 8 (h): Biểu tượng xe đạp, dưới ghi “Biển số R.412h”.",
+  "generated_tokens": 268,
+  "size": [
+    276,
+    176
+  ],
+  "elapsed_seconds": 19.946972699995968,
+  "peak_vram_bytes": 7392823808,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

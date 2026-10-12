@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a19bc72cb3a480b96c847511de0add377b885f17bfc7d4468d2ae303284bbe37",
+  "filename": "image1042.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai hình minh họa:\n\n1. Hình bên trái: Một hình chữ nhật màu xanh, bên trong có hình vẽ một chiếc xe tải nhỏ màu trắng. Xung quanh hình chữ nhật có các kích thước được ghi bằng chữ số và ký hiệu \"z\": chiều cao tổng cộng là 12z, chiều rộng là 12z, chiều cao từ đỉnh đến đường chia là 2.2z, chiều cao từ đường chia đến đáy là 2.2z, chiều cao từ đáy đến phần dưới cùng là 0.2z, và các khoảng cách ngang là 0.1z, 5z, 5z.\n\n2. Hình bên phải: Một hình chữ nhật có lưới ô vuông, bên trong có hình vẽ một chiếc xe tải nhỏ màu đen. Xung quanh hình có các kích thước được ghi bằng chữ số và ký hiệu \"z\": chiều cao là 2.2z, chiều rộng là 10z, và chiều cao từ đỉnh đến phần trên cùng là 1.2z, từ phần trên cùng đến đáy là 4z.",
+  "generated_tokens": 249,
+  "size": [
+    413,
+    190
+  ],
+  "elapsed_seconds": 17.214643100000103,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:fe164fdab72490ec031be066acf344487b0828f63aa6d6e892cb24612b5f16e9",
+  "filename": "image572.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh là một bản vẽ đường phố giao nhau, có hình dạng chữ thập. Có các đường kẻ ngang và dọc, với các mũi tên chỉ hướng di chuyển. Một số đoạn đường có vạch kẻ chéo dạng lưới. Có một phần đường cong ở góc dưới bên phải. Không có chữ viết nào trong hình.",
+  "generated_tokens": 72,
+  "size": [
+    302,
+    145
+  ],
+  "elapsed_seconds": 5.318660500000988,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

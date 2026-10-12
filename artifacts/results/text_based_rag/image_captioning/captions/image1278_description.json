@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:0d20df96d33efccc23a6ad3155fb02f0b0bac84f6241ffa8ba48b9a33027f00c",
+  "filename": "image1278.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Một hình chữ nhật dài với đầu bên trái được cắt thành hình tam giác. Bên trong hình chữ nhật có một hình chữ nhật nhỏ màu trắng chứa hình minh họa một chiếc xe hơi đang đi trên mặt nước. Bên phải hình chữ nhật trắng là nền màu xanh dương, trên đó có chữ “BẾN PHÀ” và dưới là chữ “Ferry”.\n\n2. Một hình ảnh nhỏ bên phải là bản vẽ lưới ô vuông, trong đó có hình minh họa một chiếc xe hơi màu xanh dương đang đi trên mặt nước, được vẽ trên lưới ô vuông.",
+  "generated_tokens": 133,
+  "size": [
+    433,
+    140
+  ],
+  "elapsed_seconds": 9.334839900000588,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

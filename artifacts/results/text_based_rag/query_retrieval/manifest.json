@@ -1,0 +1,37 @@
+{
+  "status": "COMPLETED",
+  "created_at": "2026-10-12T20:43:12.020118+00:00",
+  "split": "train",
+  "queries": 418,
+  "chunks": 1024,
+  "articles": 398,
+  "top_k": 5,
+  "similarity": "cosine",
+  "article_aggregation": "max_chunk_score",
+  "citation_key": [
+    "law_id",
+    "article_id"
+  ],
+  "tie_break": "citation_lexicographic_then_chunk_row",
+  "input_sha256": {
+    "query_embedding/vectors.npy": "bd3a1d36666b8ac1b8cdd323d819d20bcaa4a5284aacc50421de06f857be1c7b",
+    "query_embedding/queries.jsonl": "82237267c7a5699aaac080b4a3014683b1bcef2be363721c7c0d30a765fe3be9",
+    "query_embedding/manifest.json": "31cc3bd1d70dd931d5b0d75e275ea260ec3e420c392ec3dfe8d4c3782d3ca985",
+    "corpus_embedding/vectors.npy": "2cb78f9bf96745fec928cc2eec4d1a815b035d192252d49c8dc372f140e92a01",
+    "corpus_embedding/chunks.jsonl": "7b6b24781cb7a26ad51a7ea9c52395b486a4bdaa86ad8cdba2228ddc941df9a1",
+    "corpus_embedding/manifest.json": "92ddb015e649fdc1e02744ffc9966e1bacd87fa30f9066e97e648045db90a1e6",
+    "train.json": "74d2107e1198b542cf50a0efb0b76748701bf5d381c447e6abe1526bfec11635"
+  },
+  "numpy_version": "2.5.2",
+  "resources": {
+    "device": "cpu",
+    "similarity_matrix_bytes": 1712128
+  },
+  "elapsed_seconds": 0.5748762000002898,
+  "output_sha256": {
+    "retrieval_results.jsonl": "2e14bba202e02ca674894f6f152d62fc086506c9ea52c877f0afbead2b4682d9",
+    "per_query_metrics.jsonl": "3e0b2f0fbd190732c3061af1d7d98dc07f8806aacac4662b785207e570afb6c6",
+    "metrics.json": "1b3ebd81d26770484fc9cfdce771f41d99d892529a309356173f547041f3bc08",
+    "retrieval_preview.txt": "a285057e0bbe7dbd6121c791bf422d898e5b3e0875333c0e532b8f56385d1889"
+  }
+}

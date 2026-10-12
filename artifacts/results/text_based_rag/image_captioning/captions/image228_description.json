@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:801d065a870d5927df23639883463e8e12a39f2823b8e24a3a0cc7bf5ff9a8a1",
+  "filename": "image228.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông dạng tam giác cân, có viền đỏ, bên trong là viền vàng, và phần nền đen với hình vẽ một cây cột hoặc cột điện màu vàng ở giữa.",
+  "generated_tokens": 48,
+  "size": [
+    92,
+    82
+  ],
+  "elapsed_seconds": 3.709310300000652,
+  "peak_vram_bytes": 7388019712,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

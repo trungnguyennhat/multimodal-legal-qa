@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d97820f5a1a1d7288e92f85078a3a623b1a781e6d5a5e4330583a9dd5944fde1",
+  "filename": "image1534.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai biển báo giao thông hình chữ nhật đứng, màu xanh lá cây, có kích thước chiều rộng 150 đơn vị và chiều cao 230 đơn vị.\n\nBiển trên:\n- Phía trên có khung chữ nhật màu vàng chứa chữ \"CT.01\".\n- Phía dưới khung vàng là dòng chữ \"TP. HCM\" màu trắng.\n- Phía dưới dòng chữ \"TP. HCM\" là một mũi tên trắng chỉ xuống.\n\nBiển dưới:\n- Phía trên có khung chữ nhật màu vàng chứa chữ \"CT.01\".\n- Phía dưới khung vàng là dòng chữ \"LONG THÀNH\" màu trắng.\n- Phía dưới dòng chữ \"LONG THÀNH\" là một mũi tên trắng chỉ xuống.\n\nCả hai biển đều có chú thích \"Giữa làn\" ở dưới cùng và các kích thước chi tiết được ghi chú xung quanh.",
+  "generated_tokens": 200,
+  "size": [
+    424,
+    648
+  ],
+  "elapsed_seconds": 14.894612099999904,
+  "peak_vram_bytes": 7428299264,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872,
+  "status": "COMPLETED"
+}

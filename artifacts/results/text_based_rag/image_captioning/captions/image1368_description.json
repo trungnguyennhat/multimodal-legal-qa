@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:83269c024d1e5a7b0c2bbd5d007c6b6c0c08b8511d1ab30a5cb06b158b19ed3b",
+  "filename": "image1368.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có góc bo, nền màu vàng, có viền đen. Trong hình có chữ \"CT.08\" màu đen, được viết in hoa, nằm ở giữa hình.",
+  "generated_tokens": 43,
+  "size": [
+    76,
+    37
+  ],
+  "elapsed_seconds": 3.5588641000003918,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7474249728,
+  "gpu_free_bytes": 8394899456,
+  "status": "COMPLETED"
+}

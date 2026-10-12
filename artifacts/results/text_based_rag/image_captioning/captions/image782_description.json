@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8807a3c2a23a78d58d629d0ef0bba81ef6252f194abd833344ccb1432413ec0e",
+  "filename": "image782.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần minh họa:\n\n- Phần bên trái: Một bảng hình chữ nhật chia thành 4 ô vuông, mỗi ô chứa một biểu tượng giao thông. Từ trên xuống dưới, từ trái sang phải: ô trên cùng bên trái có biểu tượng xe máy với dòng chữ \"50\" bên trong; ô trên cùng bên phải có biểu tượng xe máy với dòng chữ \"50\" bên trong; ô dưới cùng bên trái có biểu tượng xe ô tô; ô dưới cùng bên phải có biểu tượng xe máy. Bảng có các kích thước được ghi chú xung quanh.\n\n- Phần bên phải: Một bảng hình chữ nhật chia thành 3 cột, mỗi cột chứa một biểu tượng giao thông. Cột 1: biểu tượng xe máy; cột 2: biểu tượng xe ô tô; cột 3: biểu tượng xe máy. Dưới mỗi biểu tượng là các kích thước được ghi chú. Phía trên bảng có các kích thước được ghi chú, và bên phải có một bảng kích thước nhỏ hơn với các kích thước được ghi chú.",
+  "generated_tokens": 235,
+  "size": [
+    301,
+    143
+  ],
+  "elapsed_seconds": 17.022418800000196,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

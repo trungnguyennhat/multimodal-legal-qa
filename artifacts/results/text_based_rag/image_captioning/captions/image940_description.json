@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4a999adeaa7059f248270546f5488ab1a4809fe13763538174e3694f4e57e2b8",
+  "filename": "image940.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cân màu đỏ, bên trong có một hình tam giác nhỏ màu vàng, và ở giữa có một dấu chấm đen hình tròn, phía trên là một dấu chấm đen hình tam giác nhỏ. Có các số liệu kích thước được ghi xung quanh hình.\n\nHình 2: Một hình tam giác cân màu đỏ, bên trong có một hình tam giác nhỏ màu vàng, và ở giữa có một dấu chấm đen hình tròn, phía trên là một dấu chấm đen hình tam giác nhỏ. Có các số liệu kích thước được ghi xung quanh hình. Bên cạnh hình tam giác có một lưới ô vuông với các số liệu kích thước được ghi xung quanh.",
+  "generated_tokens": 155,
+  "size": [
+    429,
+    164
+  ],
+  "elapsed_seconds": 10.830076799999915,
+  "peak_vram_bytes": 7391884800,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

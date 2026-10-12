@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c36bd183eb5393afe6e57a5cee37d048adcec8e8470a789969c30fa619b68b20",
+  "filename": "image406.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm một khung hình chữ nhật có viền xanh, bên trong có bốn biểu tượng đen được sắp xếp thành hai hàng hai cột:\n\n- Hàng trên: một chiếc thìa và một chiếc đũa giao nhau ở giữa.\n- Hàng dưới: bên trái là hình một chiếc máy sấy tóc (hoặc thiết bị điện tử dạng tay cầm), bên phải là hình một chiếc bơm xăng.\n\nDưới các biểu tượng là dòng chữ viết hoa: \"TRẠM DỪNG NGHỈ\".",
+  "generated_tokens": 117,
+  "size": [
+    87,
+    130
+  ],
+  "elapsed_seconds": 8.392620299993723,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

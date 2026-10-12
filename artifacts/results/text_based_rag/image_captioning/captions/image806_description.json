@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:529ca959af56bab3a56c15168a51d456afed3ec228672415c727bf7031151268",
+  "filename": "image806.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một hình tròn màu xanh dương, bên trong có một đường chéo màu đen từ góc trên bên trái sang góc dưới bên phải. Xung quanh hình tròn có các đường kẻ lưới vuông. Có các chú thích kích thước bằng chữ số và ký hiệu, bao gồm: 6.5x, 1.5x, 0.14x, 0.875x, 1.0x, và 0.58x. Các chú thích này được đặt ở các vị trí khác nhau quanh hình tròn và các cạnh của hình ảnh.",
+  "generated_tokens": 132,
+  "size": [
+    120,
+    121
+  ],
+  "elapsed_seconds": 9.30062410000005,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

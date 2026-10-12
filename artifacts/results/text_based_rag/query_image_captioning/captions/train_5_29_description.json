@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:025ff609103ed63ff68e9e9f2141c0170a3c2db58c6c7e220e407e52a74cfe46",
+  "filename": "train_5_29.jpg",
+  "description": "Có các biển báo hình tam giác màu vàng viền đỏ, trong đó:\n\n- Một biển có hình người đang dùng xẻng đào đất.\n- Hai biển có hình hai vạch dọc đứng cạnh nhau.\n- Một biển có chữ “ĐI CHẬM” viết trong tam giác.\n\nDưới các biển tam giác là các tấm biển hình chữ nhật màu đỏ viền trắng, có hình mũi tên chỉ hướng.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 90,
+  "size": [
+    750,
+    562
+  ],
+  "elapsed_seconds": 6.866282899994985,
+  "peak_vram_bytes": 7469179904,
+  "peak_reserved_bytes": 7610564608,
+  "gpu_free_bytes": 8258584576
+}

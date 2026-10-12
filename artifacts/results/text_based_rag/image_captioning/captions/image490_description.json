@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a0cfa899101bbd04af8f089ac70469dff68124b776df8716382330ba6205959e",
+  "filename": "image490.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biểu tượng dạng mũi tên chỉ sang phải, nền màu xanh dương. Trong hình có chữ \"P + METRO\" màu trắng, được viết hoa, chữ \"P\" lớn, sau đó là dấu \"+\" và chữ \"METRO\" nằm liền kề.",
+  "generated_tokens": 62,
+  "size": [
+    169,
+    56
+  ],
+  "elapsed_seconds": 4.741907999996329,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

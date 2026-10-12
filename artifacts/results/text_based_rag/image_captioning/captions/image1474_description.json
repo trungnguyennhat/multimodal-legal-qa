@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:6d403970c77dfc3a1b8f0bd39dabb14ac049759b7b5282d4cd06e0bd32240c9e",
+  "filename": "image1474.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh là một biển chỉ dẫn hình chữ nhật có góc bo, chứa hai biểu tượng người: một biểu tượng người phụ nữ ở bên trái và một biểu tượng người đàn ông ở bên phải, được đặt trong hai khung hình tam giác ngược. Biển có các ký hiệu chữ cái A, B, C, D, E được đánh dấu ở các vị trí khác nhau trên viền biển.",
+  "generated_tokens": 85,
+  "size": [
+    188,
+    171
+  ],
+  "elapsed_seconds": 6.671777200000179,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

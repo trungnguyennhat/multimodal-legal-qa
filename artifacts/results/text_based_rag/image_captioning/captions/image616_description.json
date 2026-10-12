@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:1ead5c2d39b6167ba53e39b32dd9a2044cf4b573ac32d24bff16dd6ee9c8aa25",
+    "filename":  "image616.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh chứa một hình chữ nhật đứng, được chia thành các phần bằng các đường kẻ ngang và dọc. Trong hình có các số đo được ghi rõ bằng đơn vị cm, bao gồm: 240, 300, 1500, 60, 40, 200, 1500, 450, 800, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60, 40, 60,",
+    "generated_tokens":  512,
+    "size":  [
+                 109,
+                 223
+             ],
+    "elapsed_seconds":  36.327408400000024,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

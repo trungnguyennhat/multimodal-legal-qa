@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:6e460a4a33fc287a9725728ca5792039eec0e37ee1c81d929ad757782700ce0f",
+  "filename": "train_5_15.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh lá cây, có viền trắng. Trên biển có hình tròn màu đỏ viền trắng chứa số \"120\", hình tròn màu xanh dương viền trắng chứa số \"60\", và hình hai trụ cầu vượt. Bên cạnh có dòng chữ \"HẢI PHÒNG MỒNG CÁI EXPRESSWAY\". Biển bên phải cũng hình chữ nhật, nền xanh lá cây, có viền trắng, chứa các dòng chữ và số: \"VÂN ĐỒN 17 km\", \"HẠ LONG 87 km\", \"HẢI PHÒNG 112 km\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 141,
+  "size": [
+    1022,
+    505
+  ],
+  "elapsed_seconds": 11.187685199998668,
+  "peak_vram_bytes": 7508448768,
+  "peak_reserved_bytes": 7570718720,
+  "gpu_free_bytes": 8298430464
+}

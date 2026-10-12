@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:7ca653ae58c2876561365a7731df203d8d2c94ce4620d885bb5e2143e73300cc",
+  "filename": "train_7_7.jpg",
+  "description": "Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có hai hình: một hình ô tô màu đỏ và một hình ô tô màu xanh. Dưới biển tròn là biển chữ nhật nền đỏ, chữ trắng, có hình chữ nhật nhỏ bên dưới.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 60,
+  "size": [
+    1000,
+    1046
+  ],
+  "elapsed_seconds": 5.678384500002721,
+  "peak_vram_bytes": 7684251648,
+  "peak_reserved_bytes": 7786725376,
+  "gpu_free_bytes": 8082423808
+}

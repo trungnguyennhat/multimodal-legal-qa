@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:c4c9c387bf3dd3ea4ed208385602cd00ea3229b23925610f7f7e680f19310325",
+    "filename":  "image1346.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh là bản vẽ kỹ thuật của một biển chỉ dẫn. Biển có hình dạng mũi tên chỉ về bên phải, trong đó có chữ số \"500 m\" và hai biểu tượng: một người đi bộ và một ngôi nhà. Biển được chia thành lưới ô vuông để định vị kích thước. Các kích thước được ghi rõ bằng số và đơn vị \"m\" hoặc \"x\" (có thể là đơn vị chiều dài). Biển có các kích thước chiều dài và chiều cao được đánh dấu bằng các số đo như 30x, 12x, 10x, 12x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x, 1.2x, 0.8x, 0.6x",
+    "generated_tokens":  512,
+    "size":  [
+                 364,
+                 192
+             ],
+    "elapsed_seconds":  41.205098200000066,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:f64fcc82dca2f74b75cc8cbb7350ad83c75e0aa61b2b1362f48951a453bf0579",
+  "filename": "train_5_21.jpg",
+  "description": "- Biển hình tròn, viền đỏ, bên trong có chữ số \"4,75m\" và hai tam giác đen hướng ngược nhau.\n- Biển hình tròn, viền đỏ, bên trong có hình xe đạp bị gạch chéo.\n- Biển hình tam giác, nền vàng, viền đen, bên trong có hình người đi bộ đang bước qua một cái hầm.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 87,
+  "size": [
+    840,
+    560
+  ],
+  "elapsed_seconds": 7.130984000003082,
+  "peak_vram_bytes": 7487008768,
+  "peak_reserved_bytes": 7528775680,
+  "gpu_free_bytes": 8340373504
+}

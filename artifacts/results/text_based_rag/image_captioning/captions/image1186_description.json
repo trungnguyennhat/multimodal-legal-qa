@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1cffab98420ad6a2b30e58427a28c01b63e15fdefa133d5461403d443824cb48",
+  "filename": "image1186.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền trắng, bên trong nền xanh, có chữ trắng viết hoa: “ĐỊA PHÂN HÀ NAM ZONE Km 215+700”. Xung quanh hình chữ nhật có các kích thước được ghi bằng số và ký hiệu, bao gồm: 3.4, 4.2, 2.2, 8.5, 7.2, 7.2, 9.2, 9.2, 3.4, và một chú thích ở trên cùng là “3.4 (Thay đổi tùy theo số lượng chữ)”.",
+  "generated_tokens": 138,
+  "size": [
+    264,
+    219
+  ],
+  "elapsed_seconds": 9.733250299999781,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

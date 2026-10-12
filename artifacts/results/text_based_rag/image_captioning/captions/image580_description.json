@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:27a3d1b105d9dde1ca8f4fff21bdab882695f5668368e0abe634658b21d87d3a",
+  "filename": "image580.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh gồm ba hình chữ T màu trắng, xếp cạnh nhau theo chiều ngang. Mỗi hình chữ T có một khung hình chữ nhật nhỏ màu vàng được vẽ ở phần trên của hình, gần giữa. Trong khung hình chữ nhật nhỏ đó, có các ký tự hoặc chữ viết màu vàng, nhưng do độ mờ nên không thể đọc rõ nội dung. Không có văn bản nào khác trong ảnh.",
+  "generated_tokens": 89,
+  "size": [
+    356,
+    79
+  ],
+  "elapsed_seconds": 6.535489599998982,
+  "peak_vram_bytes": 7396826112,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

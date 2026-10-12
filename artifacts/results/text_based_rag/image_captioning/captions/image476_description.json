@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:3da9d739e7653e9fc5bb5880d27719faa6d368c060604df977959cb8768daf73",
+  "filename": "image476.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một bảng thông tin ghi các loại trục xe và tải trọng cho từng loại:\n\n- Có ba dòng chữ đứng dọc, mỗi dòng ghi một loại trục xe:\n  - Dòng trên: \"TRỤC ĐƠN\" và dưới là \"SINGLE AXLE\"\n  - Dòng giữa: \"TRỤC KÉP\" và dưới là \"TANDEM AXLE\"\n  - Dòng dưới: \"TRỤC BA\" và dưới là \"TRI-AXLE\"\n\n- Bên phải mỗi dòng chữ là các số:\n  - Dòng trên: số \"10\" kèm ký hiệu \"t\" (tấn)\n  - Dòng giữa: số \"00\" kèm ký hiệu \"t\"\n  - Dòng dưới: số \"00\" kèm ký hiệu \"t\"\n\n- Tất cả nội dung được trình bày trong một khung hình chữ nhật, nền trắng, chữ đen.",
+  "generated_tokens": 198,
+  "size": [
+    100,
+    77
+  ],
+  "elapsed_seconds": 14.120001900002535,
+  "peak_vram_bytes": 7387639808,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

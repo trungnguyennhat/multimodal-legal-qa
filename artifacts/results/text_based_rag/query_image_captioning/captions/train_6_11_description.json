@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:89cd2b98f2070fdddedcc14d0f5cb0e387efe42bb8a33537d7e83e7e9440d5b5",
+  "filename": "train_6_11.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh, chữ và mũi tên màu trắng. Có ba mũi tên: một mũi tên chỉ thẳng lên trên, một mũi tên chỉ sang trái, và một mũi tên chỉ sang phải. Trên biển có ba dòng chữ: dòng trên cùng là \"PHÁP VÂN\", dòng giữa bên trái là \"NGÃ TƯ SỞ\", dòng giữa bên phải là \"CẦU BIỂU\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 91,
+  "size": [
+    480,
+    354
+  ],
+  "elapsed_seconds": 6.761831699994218,
+  "peak_vram_bytes": 7397071872,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000
+}

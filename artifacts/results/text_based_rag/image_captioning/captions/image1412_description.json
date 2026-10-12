@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1013d29d082859d86fcc4564f978ed4ab84ff32642e9235026ecc782d772047f",
+  "filename": "image1412.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có kích thước 120 x 55. Trong hình có chữ \"ĐT.909\" được in đậm, nằm ở giữa. Góc trên bên phải có ghi \"R2.4\". Hai bên dưới hình có ghi \"a\" và hai dấu gạch ngang nhỏ ở giữa, cách nhau 1 đơn vị. Phía dưới bên phải có ghi số \"33\".",
+  "generated_tokens": 94,
+  "size": [
+    280,
+    138
+  ],
+  "elapsed_seconds": 7.555928400000084,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

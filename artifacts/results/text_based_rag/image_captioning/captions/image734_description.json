@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:cb6229ed438f32df170ab118eb4f5b140959447e2dfd2779e54ba401b1c87d35",
+  "filename": "image734.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai hình minh họa:\n\n1. Hình bên trái: Một biểu tượng cấm người đi bộ, gồm hình người đi bộ màu đen bên trong vòng tròn đỏ có đường gạch chéo ngang. Xung quanh có các kích thước được ghi bằng chữ số và ký hiệu \"x\".\n\n2. Hình bên phải: Một hình người đi bộ màu đen trên nền lưới vuông, với các kích thước được ghi bằng chữ số và ký hiệu \"x\" xung quanh.",
+  "generated_tokens": 109,
+  "size": [
+    286,
+    111
+  ],
+  "elapsed_seconds": 7.761203899999941,
+  "peak_vram_bytes": 7397206016,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848,
+  "status": "COMPLETED"
+}

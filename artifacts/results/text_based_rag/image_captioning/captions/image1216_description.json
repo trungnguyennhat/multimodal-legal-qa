@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:bab563ee00c237f950362968ad37700cb56b13730371fdd457f3de95a7527882",
+  "filename": "image1216.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Một hình chữ nhật đứng có viền đen, bên trong là hình chữ nhật màu xanh dương. Trong hình chữ nhật xanh dương có hình minh họa một chiếc xe hơi đang được rửa dưới vòi nước. Dưới hình minh họa có dòng chữ “TRẠM RỬA XE” viết hoa, in đậm, màu đen.\n\n2. Một hình chữ nhật đứng có lưới ô vuông nhỏ, bên trong có hình minh họa tương tự: một chiếc xe hơi đang được rửa dưới vòi nước, nhưng được chia thành các ô lưới để thể hiện kích thước và tỷ lệ. Không có chữ nào trong hình này.\n\nHình ảnh còn có các kích thước được ghi chú bằng chữ số và ký hiệu “x” (ví dụ: 16x, 8x, 6x, 4x, 2x, 1x) để chỉ kích thước của các phần trong hình.",
+  "generated_tokens": 211,
+  "size": [
+    379,
+    211
+  ],
+  "elapsed_seconds": 15.157506300000023,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

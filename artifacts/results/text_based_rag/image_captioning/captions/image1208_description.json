@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:d9122b5f2cd64c1b55db504a4a2085f3754536a018d468cebcd1a3193a87ac01",
+    "filename":  "image1208.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh chứa một bản vẽ kỹ thuật với chú thích “Biển số L428 : Trạm cấp cứu”.\n\nTrong hình có một hình chữ nhật lớn, được chia thành lưới ô vuông nhỏ. Bên trong hình chữ nhật này có một hình chữ thập đỏ (hình chữ thập màu đỏ) nằm ở trung tâm, được đặt trên nền màu xanh dương. Các cạnh của hình chữ nhật lớn có các kích thước được ghi chú bằng chữ số và ký hiệu “x” (ví dụ: 10x, 8x, 9x, 7x, 5x, 3x, 2x, 12x, 1x, 2x, 3x, 4x, 6x, 7x, 8x, 9x, 10x, 12x, 14x, 16x, 18x, 20x, 22x, 24x, 26x, 28x, 30x, 32x, 34x, 36x, 38x, 40x, 42x, 44x, 46x, 48x, 50x, 52x, 54x, 56x, 58x, 60x, 62x, 64x, 66x, 68x, 70x, 72x, 74x, 76x, 78x, 80x, 82x, 84x, 86x, 88x, 90x, 92x, 94x, 96x, 98x, 100x, 102x, 104x, 106x, 108x, 110x, 112x, 114x, 116x, 118x, 120x, 122x, 124x, 126x, 128x, 130x, 132x, 134x, 136",
+    "generated_tokens":  512,
+    "size":  [
+                 290,
+                 203
+             ],
+    "elapsed_seconds":  36.451058900000135,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

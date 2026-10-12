@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:36ecd7dc9823632944725fb8d28a9f14593be11d5e56f1dda924b4586a24cdc0",
+  "filename": "image162.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một biểu tượng hình tròn có viền đỏ, bên trong là hình một chiếc còi xe (hình ống phễu nối với ống uốn cong) màu đen, được phủ một đường gạch chéo màu đỏ từ góc trên bên trái sang góc dưới bên phải.",
+  "generated_tokens": 66,
+  "size": [
+    84,
+    82
+  ],
+  "elapsed_seconds": 5.126491900002293,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

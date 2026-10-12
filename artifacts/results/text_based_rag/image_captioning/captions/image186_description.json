@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:2996a3506e815331be368072d2febd061496992aa645d44099731b4f3aa0daf5",
+  "filename": "image186.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một biểu tượng giao thông: một hình tròn màu đỏ có viền đen, bên trong là hình ảnh một chiếc xe tải hoặc xe quân sự màu đen, bị một đường gạch chéo màu đỏ đi ngang qua từ góc trên bên trái đến góc dưới bên phải. Không có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 73,
+  "size": [
+    84,
+    83
+  ],
+  "elapsed_seconds": 5.619644599995809,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

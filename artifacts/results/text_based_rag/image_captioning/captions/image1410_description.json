@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:e2c9714f85eab8006e653c63574d764273ce97663cec774959f05bfd2bb7de2c",
+  "filename": "image1410.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền đen, bên trong nền trắng, có dòng chữ đen: \"ĐT.909\". Ở góc trên bên phải có ký hiệu \"R3.0\". Có các kích thước được ghi chú: chiều dài 150, chiều rộng 70, và các chi tiết nhỏ ở cạnh dưới và cạnh phải.",
+  "generated_tokens": 76,
+  "size": [
+    239,
+    121
+  ],
+  "elapsed_seconds": 5.9813475999999355,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

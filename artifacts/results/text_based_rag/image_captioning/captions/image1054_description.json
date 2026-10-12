@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:06185d53594802aad5c940a86e1097f13d102790485f394e9b61174cba40edc2",
+  "filename": "image1054.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Hình bên trái: Một hình chữ nhật đứng, có nền màu xanh, chứa hình ảnh một chiếc xe hơi màu trắng ở giữa. Một đường chéo màu đỏ cắt ngang từ góc trên bên phải xuống góc dưới bên trái. Xung quanh hình chữ nhật có các kích thước được ghi chú bằng chữ số và ký hiệu đơn vị “z”: chiều cao tổng cộng là 16z, chiều rộng là 12z, và các kích thước nhỏ hơn như 2.1z, 0.2z, 0.1z, 1.2z được ghi ở các cạnh và góc.\n\n2. Hình bên phải: Một hình vẽ phác thảo xe hơi dạng nhìn từ bên hông, nằm trên lưới ô vuông. Dưới xe có ghi kích thước chiều dài là 10z, chia thành hai phần 5z mỗi phần. Bên phải hình xe có ghi chiều cao là 4.2z, và trên cùng có ghi chiều cao là 1.2z. Trên đỉnh hình vẽ có ghi “1.2z” và “1.2z” ở hai bên.",
+  "generated_tokens": 254,
+  "size": [
+    412,
+    191
+  ],
+  "elapsed_seconds": 18.144808799999737,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

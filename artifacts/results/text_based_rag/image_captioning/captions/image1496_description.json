@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8d04c8b18ed80fce7405a6a2153aa907927844c0187218c5af26f954a6ca52d7",
+  "filename": "image1496.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có chiều dài 180, chiều cao 100. Bên trong hình chữ nhật có dòng chữ “KHU DU LỊCH” ở trên và “TOURIST AREA” ở dưới, đều viết hoa. Phía trên cùng của hình chữ nhật có một đường kẻ ngang mỏng, phía dưới cùng cũng có một đường kẻ ngang mỏng. Phía trên bên phải có ghi số 3, phía dưới bên phải có ghi số 13. Phía dưới hình chữ nhật có hai đoạn thẳng dọc, được ghi là H₁ và H₁', cách nhau bởi một đoạn thẳng ngang.",
+  "generated_tokens": 143,
+  "size": [
+    233,
+    95
+  ],
+  "elapsed_seconds": 11.511156700000356,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

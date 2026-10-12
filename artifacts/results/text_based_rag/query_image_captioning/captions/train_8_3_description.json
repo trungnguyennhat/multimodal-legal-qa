@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:dbf1856fa74e98d477fa84a1f2a536b627a968b7c8fb78ed911ab9c3897c0237",
+  "filename": "train_8_3.jpg",
+  "description": "- Biển hình tròn, nền đỏ, viền trắng, có hình một chiếc xe taxi màu đen ở giữa.\n- Biển hình tròn, nền đỏ, viền trắng, có hình một chiếc xe ô tô màu đen bị gạch chéo ngang.\n- Biển hình chữ nhật, nền trắng, viền đen, có dòng chữ đen và hình ảnh một chiếc xe ô tô màu đen ở giữa.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 88,
+  "size": [
+    300,
+    223
+  ],
+  "elapsed_seconds": 6.439567100002023,
+  "peak_vram_bytes": 7389912576,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848
+}

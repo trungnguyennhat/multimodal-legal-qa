@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:097991b5514b344d245030e46b3a5b8eafd7e088d9c82f93328ad07e5e34101a",
+  "filename": "image560.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một sơ đồ với các hình chữ nhật đen nằm ngang, được sắp xếp theo hàng dọc. Mỗi hình chữ nhật có đầu bên phải thu hẹp lại thành dạng mũi tên, và có các mũi tên nhỏ chỉ vào bên phải của mỗi hình. Trên hình có các dòng chữ “Hướng xe tới” và “Hướng xe” kèm theo mũi tên chỉ hướng. Ở phía trên cùng, có các số “1200” và “500” được ghi trên một đoạn thẳng ngang, kèm theo đơn vị “cm” ở góc dưới bên phải. Các hình chữ nhật có kích thước khác nhau và được đặt ở các vị trí khác nhau trong sơ đồ.",
+  "generated_tokens": 154,
+  "size": [
+    220,
+    158
+  ],
+  "elapsed_seconds": 10.792035799997393,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

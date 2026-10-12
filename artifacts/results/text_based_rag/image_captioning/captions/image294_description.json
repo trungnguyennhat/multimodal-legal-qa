@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:185786603408bf38c61f288df40a7dfe7df724d0ea33336dc542e8a12567fe02",
+  "filename": "image294.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm bốn biểu tượng hình tròn màu xanh dương, mỗi biểu tượng chứa một mũi tên trắng:\n\n- Biểu tượng a) có mũi tên trắng chỉ thẳng lên trên.\n- Biểu tượng b) có mũi tên trắng chỉ sang phải.\n- Biểu tượng c) có mũi tên trắng chỉ sang trái.\n- Biểu tượng d) có mũi tên trắng chỉ sang phải và hơi cong lên trên, tạo góc.\n\nDưới mỗi biểu tượng có ghi chữ:  \na) Biển số R.301a  \nb) Biển số R.301b  \nc) Biển số R.301c  \nd) Biển số R.301d",
+  "generated_tokens": 149,
+  "size": [
+    369,
+    99
+  ],
+  "elapsed_seconds": 10.768638699999428,
+  "peak_vram_bytes": 7388019712,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848,
+  "status": "COMPLETED"
+}

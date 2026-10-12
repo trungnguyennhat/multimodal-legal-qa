@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4687a1a18723eabaf872aef5aa0699ec3697bae1a1a74cb717176358ae4aa7ee",
+  "filename": "image436.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm 6 biển chỉ dẫn hình chữ nhật có góc bo, nền màu xanh dương, viền trắng, có biểu tượng và chữ viết bằng tiếng Việt và tiếng Anh.\n\n- Biển a) (L.444a): Biểu tượng hình vòng tròn có đường ray tàu, chữ “GA TÀU” và “Railway Station”.\n- Biển b) (L.444b): Biểu tượng máy bay, chữ “SÂN BAY” và “Airport”.\n- Biển c) (L.444c): Biểu tượng chữ “P”, chữ “BÀI ĐỖ XE” và “Parking Lot”.\n- Biển d) (L.444d): Biểu tượng xe buýt, chữ “BẾN XE KHÁCH” và “Bus Station”.\n- Biển e) (L.444e): Biểu tượng dấu thập đỏ trên nền trắng, chữ “TRẠM CẤP CỨU” và “First Aid”.\n- Biển f) (L.444f): Biểu tượng hình móc câu tàu, chữ “BẾN TÀU THỦY” và “Waterway Station”.\n\nDưới mỗi biển có ghi mã biển tương ứng và dòng chữ “Hình E.47 - Biển số L.444 (a,b,c)” ở hàng trên, và “(a), (b), (c)” tương ứng với các biển dưới.",
+  "generated_tokens": 321,
+  "size": [
+    348,
+    112
+  ],
+  "elapsed_seconds": 22.53879240000242,
+  "peak_vram_bytes": 7393955840,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872,
+  "status": "COMPLETED"
+}

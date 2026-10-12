@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d6f9871248bf86a3fdb656cfa1686d69e3db39d9b94cc420089a559a5812b451",
+  "filename": "image1254.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền lưới, bên trong có hình tam giác màu vàng nằm ở giữa, phía dưới có dòng chữ “CHỢ-MARKET” màu trắng. Các cạnh hình chữ nhật được đánh dấu kích thước với các đoạn thẳng và ký hiệu “x”.",
+  "generated_tokens": 57,
+  "size": [
+    184,
+    133
+  ],
+  "elapsed_seconds": 4.469120300000213,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

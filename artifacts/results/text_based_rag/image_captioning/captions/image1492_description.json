@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:203b704fdc423ec4a67de33db9020a90b18131f4507e98521e095e823f2fa9e6",
+  "filename": "image1492.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị một biển báo giao thông dạng chữ nhật, được chia thành hai phần ngang:\n\n- Phần trên: nền xanh lá cây, có một hình chữ nhật nhỏ màu xanh dương bên trái chứa chữ \"KHU DU LỊCH\" và dưới đó là chữ \"TOURIST AREA\". Phía bên phải của phần này có chữ \"BẾN LỨC\".\n\n- Phần dưới: nền xanh lá cây, có chữ số \"750 m\".\n\nBiển báo có các kích thước được ghi chú: chiều dài L = 20 + 180 + 20 = 220, chiều rộng W = 100 + 100 = 200, và chiều cao tổng cộng là 240 (140 + 100). Các kích thước chi tiết của các phần còn có các ký hiệu như a, b, H1, H2, h1, h2.",
+  "generated_tokens": 208,
+  "size": [
+    375,
+    205
+  ],
+  "elapsed_seconds": 15.924578899999688,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

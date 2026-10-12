@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:f091e1483785cf879593fb35b61a6d5551b951699c52579f7be64ebcde73e4cc",
+  "filename": "image752.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\nPhần bên trái: Một hình tròn màu đỏ, có đường kính ghi “8m”. Bên trong hình tròn có hai hình xe hơi đen, nằm ngang, đối xứng qua trung tâm. Dưới hình tròn có ghi “10x” và các đoạn thẳng ngang ghi “3,87x” ở hai bên. Phía trên và dưới hình tròn có các đoạn thẳng dọc ghi “1,4x” và “1,4x”.\n\nPhần bên phải: Một hình chữ nhật được chia lưới ô vuông, bên trong có hai hình xe hơi đen, nằm ngang, đối xứng qua trung tâm. Trên hình có ghi “8m” ở giữa. Các cạnh hình chữ nhật có ghi các giá trị: “7,14x” ở dưới, “1,4x” ở trên, “1,4x” ở trái, “1,4x” ở phải. Các cạnh bên có ghi “1,4x” và “1,4x” ở hai bên. Trên cùng có ghi “3,87x” và “1,4x” ở hai bên. Dưới cùng có ghi “1,4x” và “1,4x” ở hai bên.",
+  "generated_tokens": 282,
+  "size": [
+    277,
+    114
+  ],
+  "elapsed_seconds": 20.074726300000066,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,36 @@
+{
+    "image_id":  "sha256:b2158756fd3bdcce7eba907bef3fe4f5efe21b6dc8427b831ed4f911bcdf7de3",
+    "filename":  "train_5_25.jpg",
+    "description":  "- Biển hình chữ nhật màu xanh, có mũi tên chỉ hướng và dòng chữ.\n- Biển hình chữ nhật màu xanh, có hình ảnh các loại xe (ô tô, xe máy) và mũi tên.\n- Biển hình tròn, có hình xe máy bị gạch chéo.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị gạch chéo và dòng chữ bên dưới.\n- Biển hình tròn, có hình xe máy bị g",
+    "settings":  {
+                     "model":  "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+                     "revision":  "10d842936325905934ea24e64325d774693f166e",
+                     "prompt":  "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+                     "min_pixels":  131072,
+                     "max_pixels":  786432,
+                     "max_new_tokens":  384,
+                     "crop":  false,
+                     "do_sample":  false,
+                     "dtype":  "bfloat16",
+                     "attention":  "sdpa",
+                     "libraries":  {
+                                       "torch":  "2.7.1+cu128",
+                                       "transformers":  "4.57.1",
+                                       "bitsandbytes":  "0.49.0",
+                                       "Pillow":  "12.3.0"
+                                   }
+                 },
+    "status":  "COMPLETED",
+    "token_limit_reached":  true,
+    "generated_tokens":  384,
+    "size":  [
+                 1920,
+                 1282
+             ],
+    "elapsed_seconds":  30.362638799997512,
+    "peak_vram_bytes":  7659827712,
+    "peak_reserved_bytes":  7746879488,
+    "gpu_free_bytes":  8122269696,
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

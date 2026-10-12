@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:ac2391ce66d711cd687128b76a20b0e092968b804ffda1e2b8a4d07201199330",
+  "filename": "image396.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một biểu tượng đen hình chữ T ngược, với phần trên có hai đường ngang song song và phần dưới là một hình trụ dài, hơi cong về phía dưới. Biểu tượng này nằm trong một khung hình chữ nhật có nền trắng, được bao quanh bởi viền xanh dương.",
+  "generated_tokens": 67,
+  "size": [
+    86,
+    114
+  ],
+  "elapsed_seconds": 4.917270899997675,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:9333b2097de0a181e59304cdbffa14d5811da742b805e8af573d4da6842b949a",
+  "filename": "image860.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\nPhần bên trái: Một hình tam giác cân màu đỏ, bên trong có nền vàng và một biểu tượng đen hình người đang bước đi, hướng sang bên trái. Các kích thước được ghi chú xung quanh hình: chiều cao tổng thể 2.41x, chiều rộng đáy 0.8x, chiều cao từ đỉnh đến đáy của biểu tượng là 1.88x, góc ở đáy là 60°, và chiều cao từ đỉnh tam giác đến đỉnh biểu tượng là 0.71x.\n\nPhần bên phải: Một hình chữ nhật có lưới ô vuông, bên trong có một hình tam giác cân màu đen, đỉnh hướng lên trên, bên trong có một biểu tượng đen hình người đang bước đi, hướng sang bên trái. Các kích thước được ghi chú xung quanh hình: chiều cao tổng thể 4x, chiều rộng 1.2x, chiều cao từ đỉnh đến đáy biểu tượng là 1.88x, chiều cao từ đỉnh đến đỉnh biểu tượng là 0.71x, chiều cao từ đáy biểu tượng đến đáy hình là 1.88x, và góc ở đáy là 45°.",
+  "generated_tokens": 271,
+  "size": [
+    394,
+    179
+  ],
+  "elapsed_seconds": 19.559871899999962,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

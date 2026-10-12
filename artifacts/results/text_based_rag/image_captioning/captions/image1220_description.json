@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8421924ed8c5a563272b8480e3b725d6061dc260184952e764192adbdd7c9654",
+  "filename": "image1220.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. **Phần bên trái**: Một biển hiệu hình chữ nhật đứng, có viền và kích thước được ghi chú bằng các đơn vị \"a\". Biển hiệu có nền màu xanh dương, chứa ba biểu tượng đen: một chiếc ghế, một chiếc bồn rửa tay và một chiếc bàn ăn (đũa và dao giao nhau). Dưới các biểu tượng là dòng chữ \"TRẠM DỤNG NGHỈ\" viết hoa, màu trắng, nằm trên nền xanh.\n\n2. **Phần bên phải**: Một lưới ô vuông, trong đó có ba biểu tượng đen tương tự như phần bên trái: ghế, bồn rửa tay và bàn ăn (đũa và dao giao nhau). Các kích thước của lưới và biểu tượng được ghi chú bằng đơn vị \"a\".",
+  "generated_tokens": 183,
+  "size": [
+    382,
+    220
+  ],
+  "elapsed_seconds": 12.803349800000433,
+  "peak_vram_bytes": 7392270848,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

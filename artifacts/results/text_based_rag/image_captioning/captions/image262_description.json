@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8533c16d6e6caa50c04728574756880d8bcc11ccfab249acb1d6de7db9d13216",
+  "filename": "image262.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông dạng tam giác có viền đỏ, nền vàng. Trong tam giác có hai mũi tên đen nằm ngang, một mũi tên hướng sang trái, một mũi tên hướng sang phải, nằm song song với nhau.",
+  "generated_tokens": 56,
+  "size": [
+    93,
+    81
+  ],
+  "elapsed_seconds": 4.422975200002838,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

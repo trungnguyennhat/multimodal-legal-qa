@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5fbfd17ce60f878a83b1d6ad9226c38c907b8677e26728cb22fe2487c77b7fa1",
+  "filename": "image892.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cân màu đỏ, bên trong có hình tam giác nhỏ màu vàng, và ở giữa có hình chữ nhật đen. Có các chú thích kích thước như: 0,71x, 1,08x, 0,6x, 2x, 2x, 0,3x, 10x, và góc 60°.\n\nHình 2: Một hình chữ nhật đen nằm trong một lưới ô vuông. Có các chú thích kích thước như: 1x, 1,2x, 4x, R1,66x, R1,7x.",
+  "generated_tokens": 139,
+  "size": [
+    416,
+    161
+  ],
+  "elapsed_seconds": 10.693435600000157,
+  "peak_vram_bytes": 7397206016,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

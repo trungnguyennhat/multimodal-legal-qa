@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a0035e08dc791e10a920e249712ea73a2147549e55029f6626f47101595d8b6b",
+  "filename": "image540.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh là một bản vẽ kỹ thuật mặt cắt ngang của một đoạn đường, có ghi chú các phần như sau:\n\n- Ở trên cùng: dòng chữ “Giải phân cách giữa”.\n- Dưới đó là một dải đường màu xám, có các vạch kẻ ngang nhỏ, được chia thành hai phần bằng một đường kẻ đậm ở giữa.\n- Phía dưới đường kẻ đậm có ghi chú “Vạch 3.3” và “Vạch 3.2” ở hai bên, và “Vạch 5.1” ở phía dưới bên phải.\n- Phía dưới cùng bên phải có ghi chú “100” và “190” với đơn vị “cm”.\n- Phía dưới cùng bên trái có ghi chú “Đơn vị: cm”.\n- Phía dưới cùng bên phải có ký hiệu “φ 10” và một mũi tên chỉ vào một điểm trên đường kẻ.",
+  "generated_tokens": 203,
+  "size": [
+    293,
+    77
+  ],
+  "elapsed_seconds": 14.417881000001216,
+  "peak_vram_bytes": 7393141760,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

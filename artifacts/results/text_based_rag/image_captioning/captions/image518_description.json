@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:e6052552eed70cd5e9756c74147553446854ac56ae4ef9f0a93d6745cd534734",
+  "filename": "image518.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình chữ nhật có chiều cao ghi là 15. Trên cạnh trên của hình chữ nhật có hai đoạn thẳng được ghi là L1 và L2. Ghi chú “Don vi: cm” ở góc dưới bên phải.",
+  "generated_tokens": 52,
+  "size": [
+    216,
+    132
+  ],
+  "elapsed_seconds": 3.955277399996703,
+  "peak_vram_bytes": 7388592640,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

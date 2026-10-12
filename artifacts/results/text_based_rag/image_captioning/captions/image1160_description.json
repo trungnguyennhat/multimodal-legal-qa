@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:9941faddcae045019cd2488e45109ac8a28a84bfa6470fe8884b8ede49c2313b",
+    "filename":  "image1160.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh là bản vẽ kỹ thuật của một biển báo giao thông. Trong đó có một hình chữ nhật lớn được chia lưới ô vuông, bên trong có hai mũi tên màu trắng: một mũi tên chỉ sang trái ở trên và một mũi tên chỉ sang phải ở dưới. Xung quanh hình chữ nhật có các kích thước được ghi bằng đơn vị \"x\" (ví dụ: 48x, 32x, 16x, 8x, 2x, 4x, 6x, 10x, 12x, 14x, 18x, 20x, 22x, 24x, 26x, 28x, 30x, 34x, 36x, 38x, 40x, 42x, 44x, 46x, 48x, 50x, 52x, 54x, 56x, 58x, 60x, 62x, 64x, 66x, 68x, 70x, 72x, 74x, 76x, 78x, 80x, 82x, 84x, 86x, 88x, 90x, 92x, 94x, 96x, 98x, 100x, 102x, 104x, 106x, 108x, 110x, 112x, 114x, 116x, 118x, 120x, 122x, 124x, 126x, 128x, 130x, 132x, 134x, 136x, 138x, 140x, 142x, 144x, 146x, 148x, 150x, 152x, 154x, 156x, 158x, 1",
+    "generated_tokens":  512,
+    "size":  [
+                 212,
+                 173
+             ],
+    "elapsed_seconds":  36.75966619999963,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

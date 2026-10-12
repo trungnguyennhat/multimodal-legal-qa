@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5becb9b39a1bd2851ec2c3e691da6360ab200464727cd5d062d8e794921ee8e5",
+  "filename": "image794.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một hình tròn lớn màu đỏ, bên trong có một hình tròn nhỏ màu xanh dương, và một đường chéo màu đỏ đi qua hình tròn nhỏ. Hình ảnh được đặt trên nền lưới ô vuông. Có các ký hiệu và chữ số được ghi chú xung quanh hình ảnh, bao gồm: \"1/4\" ở góc trên bên trái, \"1/4\" ở góc trên bên phải, \"1/4\" ở góc dưới bên trái, và \"1/4\" ở góc dưới bên phải. Ngoài ra, có các ký hiệu hình chữ nhật nhỏ ở góc trên bên trái và góc dưới bên phải.",
+  "generated_tokens": 140,
+  "size": [
+    109,
+    108
+  ],
+  "elapsed_seconds": 10.604237799999964,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

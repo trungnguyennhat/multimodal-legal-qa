@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b316f33a5307a97aef02b524dff4b2034fdd435d64f6c34ec5e61a62acab572a",
+  "filename": "image328.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm 8 hình minh họa dạng biển báo giao thông, được sắp xếp thành 2 hàng, mỗi hàng 4 hình.\n\nHàng trên:\na) Biển số R.412i: Hình một chiếc xe buýt trên nền xanh, có đường chéo đỏ cắt ngang.\nb) Biển số R.412j: Hình một chiếc ô tô trên nền xanh, có đường chéo đỏ cắt ngang.\nc) Biển số R.412k: Hình một chiếc xe tải trên nền xanh, có đường chéo đỏ cắt ngang.\nd) Biển số R.412l: Hình một người đi xe máy trên nền xanh, có đường chéo đỏ cắt ngang.\n\nHàng dưới:\ne) Biển số R.412m: Hình một chiếc xe buýt trên nền xanh, có đường chéo đỏ cắt ngang, phía trên có thêm biểu tượng hình thoi (biểu tượng cảnh báo).\nf) Biển số R.412n: Hình một chiếc ô tô trên nền xanh, có đường chéo đỏ cắt ngang.\ng) Biển số R.412o: Hình một người đi xe đạp trên nền xanh, có đường chéo đỏ cắt ngang.\nh) Biển số R.412p: Hình một chiếc xe đạp (không có người) trên nền xanh, có đường chéo đỏ cắt ngang.\n\nMỗi hình đều có nền xanh, biểu tượng phương tiện màu trắng, và đường chéo đỏ cắt ngang. Dưới mỗi hình có ghi mã biển số tương ứng.",
+  "generated_tokens": 355,
+  "size": [
+    305,
+    200
+  ],
+  "elapsed_seconds": 25.975542599997425,
+  "peak_vram_bytes": 7393955840,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872,
+  "status": "COMPLETED"
+}

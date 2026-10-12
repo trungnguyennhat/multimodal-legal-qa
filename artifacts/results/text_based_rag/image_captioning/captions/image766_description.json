@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:ac4060458d518e0c12fd8c2cd2f9c86c903874092250d99850d5efde7e7980d3",
+    "filename":  "image766.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\nPhần bên trái: Một biểu tượng hình tròn có viền đỏ, bên trong là hình một chiếc xe đang rẽ trái, có một đường gạch chéo đỏ đi ngang qua hình xe. Xung quanh biểu tượng có các kích thước được ghi bằng chữ số và ký hiệu \"a\", như 1.4a, 2.8a, 3.9a, 6.0a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a, 0.7a,",
+    "generated_tokens":  512,
+    "size":  [
+                 257,
+                 100
+             ],
+    "elapsed_seconds":  36.52560500000004,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

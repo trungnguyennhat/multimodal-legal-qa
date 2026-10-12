@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:c0acd2182a9c5ea032e74f858d8e79c7a24f2376bf3123396df2b610d55990bd",
+    "filename":  "image1194.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh chứa một biểu tượng hình người đi bộ trong một tam giác màu trắng, nằm trong một hình vuông có nền màu xanh. Biểu tượng này được đặt trên một lưới ô vuông, với các kích thước được ghi chú bằng đơn vị \"x\". Các kích thước được ghi chú bao gồm: chiều cao tổng cộng là 12x, chiều rộng tổng cộng là 12x, chiều cao phần trên của hình vuông là 6x, chiều cao phần dưới là 6x, chiều rộng phần trên là 4x, chiều rộng phần dưới là 4x, và chiều cao của tam giác là 6x. Ngoài ra, có các ghi chú kích thước khác như 2x, 3x, 4x, 6x, 8x, 9x, 10x, 12x, 14x, 16x, 18x, 20x, 22x, 24x, 26x, 28x, 30x, 32x, 34x, 36x, 38x, 40x, 42x, 44x, 46x, 48x, 50x, 52x, 54x, 56x, 58x, 60x, 62x, 64x, 66x, 68x, 70x, 72x, 74x, 76x, 78x, 80x, 82x, 84x, 86x, 88x, 90x, 92x, 94x, 96x, 98x, 100x, 102x, 104x, 106x, 108x, 110x, 112x, 114x, 116x, 118x, 120x, 122x, 124x, 126x, 128x, 130x, 132x, 134x,",
+    "generated_tokens":  512,
+    "size":  [
+                 180,
+                 148
+             ],
+    "elapsed_seconds":  35.64631889999964,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7511998464,
+    "gpu_free_bytes":  8357150720,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

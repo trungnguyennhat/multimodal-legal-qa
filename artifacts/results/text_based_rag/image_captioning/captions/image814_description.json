@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:50e02899a6d24a634cec6dda73e9581b9054c3afb2b37de7bd70a0c91ed627d3",
+  "filename": "image814.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình tròn màu đỏ có đường viền đen, bên trong là biểu tượng một mũi tên chỉ sang phải bị gạch chéo màu đỏ từ trên xuống dưới.\n\nHình 2: Một hình vuông được chia thành lưới ô vuông nhỏ, bên trong có biểu tượng mũi tên chỉ lên và mũi tên chỉ sang phải, cả hai mũi tên đều có chiều dài bằng nhau và được đặt ở vị trí đối xứng nhau trong hình vuông. Các kích thước được ghi chú xung quanh hình vuông.",
+  "generated_tokens": 118,
+  "size": [
+    226,
+    91
+  ],
+  "elapsed_seconds": 8.703342900000052,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848,
+  "status": "COMPLETED"
+}

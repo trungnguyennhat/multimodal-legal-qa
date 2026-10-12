@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:80fb99cef47e7cee13a3a4baa3316545a2029c5cae656cb8f5a1d78affa63353",
+  "filename": "image242.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông hình tam giác có viền đỏ, nền vàng. Trong tam giác có hai hình silhoutte đen của trẻ em đang chạy.",
+  "generated_tokens": 40,
+  "size": [
+    89,
+    73
+  ],
+  "elapsed_seconds": 3.171621800000139,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

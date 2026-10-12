@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:ed24f8eae755ae284b309a9640b43f29811def980a6060aa6f82fb8bfa255305",
+  "filename": "image1444.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị một biển báo giao thông dạng hình chữ nhật, được chia thành hai phần ngang. Phần trên có nền xanh lá cây, bên trái là hình chữ nhật màu vàng với chữ “LỐI RA EXIT” màu đen. Phía bên phải ghi “BẾN LỨC 16 km”. Phần dưới cũng có nền xanh lá cây, bên trái là hình chữ nhật màu vàng với chữ “LỐI RA EXIT” màu đen. Phía bên phải ghi “CHỢ ĐỆM 27 km”. Biển báo có các kích thước được ghi chú bằng số và ký hiệu như W, L, a, H1, H2, H3, k, v.v. trên các cạnh và góc.",
+  "generated_tokens": 163,
+  "size": [
+    345,
+    155
+  ],
+  "elapsed_seconds": 12.872641599999952,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

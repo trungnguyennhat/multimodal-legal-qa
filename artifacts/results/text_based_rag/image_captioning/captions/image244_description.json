@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:08b24c6e5683ddb9c548f3616283983e7a418d6de548a1afe60775795c9f3658",
+  "filename": "image244.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông hình tam giác có viền đỏ, nền vàng. Trong tam giác có hình minh họa một người đang đi xe đạp, được vẽ bằng màu đen. Không có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 56,
+  "size": [
+    91,
+    80
+  ],
+  "elapsed_seconds": 4.454715399995621,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

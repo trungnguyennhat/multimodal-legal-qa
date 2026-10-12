@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:92b4cadba49c3c8740582b7342dcea7f106bc9cbc84732786e2cbe4731e5cc2f",
+  "filename": "image1404.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền, bên trong có dòng chữ \"QL.91B\" màu đen, in hoa, được căn giữa. Có các kích thước được ghi chú xung quanh hình: chiều cao 70, chiều rộng 40, và các kích thước nhỏ hơn ở góc trên bên phải và dưới bên trái.",
+  "generated_tokens": 75,
+  "size": [
+    242,
+    115
+  ],
+  "elapsed_seconds": 6.132141099999899,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

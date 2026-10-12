@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:c3be9548d57b725aa339cb20f0c3fa2cf0313e511338f1cca65b8f47bdbdfaf8",
+    "filename":  "image1352.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm ba biển báo giao thông với các kích thước và chi tiết được đánh dấu bằng số đo.\n\nBiển số 8.6.12a:\n- Hình chữ nhật có nền xanh, chứa ba mũi tên trắng: hai mũi tên thẳng đứng hướng lên và một mũi tên cong hướng sang phải.\n- Có các kích thước được ghi xung quanh: chiều cao 78.0, chiều rộng 78.0, và các kích thước khác như 12.0, 1.4, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.",
+    "generated_tokens":  512,
+    "size":  [
+                 409,
+                 614
+             ],
+    "elapsed_seconds":  50.32016720000047,
+    "peak_vram_bytes":  7425375744,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

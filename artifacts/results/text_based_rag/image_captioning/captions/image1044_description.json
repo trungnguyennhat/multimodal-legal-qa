@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:44f211e6f3f5d83562297c43f2272a4fa172dd39a8580b1c5ecd06d6fdbf4cd0",
+    "filename":  "image1044.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần minh họa:\n\n1. Phần bên trái: Một hình chữ nhật màu xanh dương, có kích thước được ghi chú là 12z (chiều rộng) và 16z (chiều cao). Bên trong hình chữ nhật là hình ảnh trắng của một chiếc xe điện 4 chỗ (xe điện nhỏ, kiểu golf cart) với hai người ngồi trên xe. Có các đường kẻ chéo cắt ngang và dọc qua tâm hình chữ nhật. Xung quanh hình chữ nhật có các ghi chú kích thước: 0.1z, 3.9z, 0.2z, 2.2z, 1.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1.2z, 0.2z, 1.2z, 2.2z, 1",
+    "generated_tokens":  512,
+    "size":  [
+                 409,
+                 196
+             ],
+    "elapsed_seconds":  34.820488499999556,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

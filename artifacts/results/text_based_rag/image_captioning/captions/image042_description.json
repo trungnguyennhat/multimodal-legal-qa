@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:fab3a7509e09fc96b358aaea39f650b13f11616530c6a3cd5b09fbdee5d655b9",
+  "filename": "image042.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba hình chữ nhật ngang, xếp chồng lên nhau, nền màu xanh lá cây. Mỗi hình chữ nhật có một ô hình chữ nhật nhỏ hơn bên trái, nền màu xanh dương, chứa dòng chữ “TRẠM DỪNG NGHỈ” ở trên và “REST AREA” ở dưới, đều viết hoa, in đậm. Phía bên phải của mỗi ô nhỏ là tên địa điểm và khoảng cách:\n\n- Ô trên cùng: tên địa điểm “TÂN AN”, khoảng cách “7 km”.\n- Ô giữa: tên địa điểm “BẾN LÚC”, khoảng cách “18 km”.\n- Ô dưới cùng: tên địa điểm “THÂN CƯU NGHĨA”, khoảng cách “40 km”.\n\nTất cả chữ đều được viết hoa, in đậm, màu trắng.",
+  "generated_tokens": 179,
+  "size": [
+    284,
+    176
+  ],
+  "elapsed_seconds": 12.741338899999391,
+  "peak_vram_bytes": 7388592640,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

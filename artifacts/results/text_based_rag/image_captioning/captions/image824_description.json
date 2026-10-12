@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8f6b68e2b0106c481c92e0f9fe60ee97a95bfde97dfd8e27d080ecff58a01eab",
+  "filename": "image824.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Hình tam giác cân màu đỏ, bên trong có nền vàng và hình vẽ một chiếc xe đang bị lật ngửa (biểu tượng cảnh báo nguy hiểm). Các kích thước được ghi chú bằng đơn vị \"x\" như: chiều cao tổng thể 1,4x, chiều cao từ đỉnh đến đáy 1,0x, chiều rộng đáy 1,68x, và các kích thước khác như 0,3x, 0,27x, 0,14x, 0,06x, 0,04x, 0,08x, 0,12x, 0,28x, 0,34x, 0,84x, 1,34x, 1,4x.\n\n2. Hình chữ nhật có kích thước 3x, bên trong có hình vẽ một chiếc xe bị lật ngửa tương tự như hình trên, được đặt trong một khung lưới ô vuông. Các kích thước được ghi chú như: chiều cao 1,4x, chiều rộng 3x, và các kích thước khác như 0,28x, 0,12x, 0,06x, 0,04x, 0,08x, 0,12x, 0,28x, 0,34x, 0,84x, 1,34x, 1,4x.\n\nCác hình đều có các kích thước được ghi chú bằng ký hiệu \"x\".",
+  "generated_tokens": 349,
+  "size": [
+    433,
+    161
+  ],
+  "elapsed_seconds": 24.03769639999996,
+  "peak_vram_bytes": 7399027200,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872,
+  "status": "COMPLETED"
+}

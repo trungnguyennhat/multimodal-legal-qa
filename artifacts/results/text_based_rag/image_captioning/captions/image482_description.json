@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:223874f51b4a366c8491a07388ca2a938862f612450cfafc86ccb958e6d9bdd1",
+  "filename": "image482.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển số hình chữ nhật có viền đen.\n\n- Biển số a) (S.508a): hình chữ nhật nhỏ, bên trong có dòng chữ “7:30–10:30”.\n\n- Biển số b) (S.508b): hình chữ nhật lớn hơn, bên trong có hai dòng chữ: dòng trên “7:30–10:30” và dòng dưới “16:00–18:30”.",
+  "generated_tokens": 109,
+  "size": [
+    275,
+    89
+  ],
+  "elapsed_seconds": 8.143504899999243,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

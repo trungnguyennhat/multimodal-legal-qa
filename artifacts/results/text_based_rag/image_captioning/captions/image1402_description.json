@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:742dc9626c7f0b3919daeb4ee1f4545078ff4e4404bd2e0e5a25ba6c7af690b5",
+  "filename": "image1402.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật màu vàng, có kích thước 100x50. Trong hình có chữ \"CT.09\" màu đen, in hoa, nằm ở giữa. Ở góc trên bên phải có ký hiệu \"R2\" và các kích thước nhỏ: 0.75, 30, 0.75. Hai góc dưới bên trái và bên phải có ký hiệu \"a\".",
+  "generated_tokens": 90,
+  "size": [
+    307,
+    158
+  ],
+  "elapsed_seconds": 7.160476600000038,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

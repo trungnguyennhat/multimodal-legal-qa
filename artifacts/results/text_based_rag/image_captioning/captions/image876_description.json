@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:1b0843898c60a1e0ab942aaada1e821eeed1355cb0f223d7b7a09241b931b685",
+    "filename":  "image876.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai hình minh họa:\n\n1. Hình tam giác cân màu đỏ, bên trong có nền vàng, chứa hình ảnh một dãy các thanh ngang đen giống như rào chắn hoặc hàng rào. Các cạnh và kích thước được ghi chú bằng các giá trị số kèm đơn vị \"x\" (ví dụ: 0,71x, 1,27x, 1,78x, 0,61x, 0,2x, 1,41x, 0,3x, 0,25x, 0,38x, 0,7x, 1,02x, 1,2x, 0,2x, 1,06x, 1,02x, 0,38x, 0,38x, 0,7x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,38x, 0,3",
+    "generated_tokens":  512,
+    "size":  [
+                 424,
+                 170
+             ],
+    "elapsed_seconds":  35.12139920000027,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

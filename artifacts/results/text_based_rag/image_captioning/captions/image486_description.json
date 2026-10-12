@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:9cfa2bbb4fcc514d5404027247c9dd55f35f42d9c42bf76e78d241b3f35abce7",
+  "filename": "image486.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình a:  \n- Hình chữ nhật đứng, nền đỏ.  \n- Trên cùng: chữ \"CHÚ Ý\" viết hoa, in đậm.  \n- Giữa: biểu tượng tuyết (một hình tuyết bông 6 cánh).  \n- Dưới biểu tượng: dòng chữ \"ĐƯỜNG TRON CÓ BÁNG TUYẾT\".  \n- Dưới hình: ghi chú \"a) Hình F.12 - Biển số S.510a\".\n\nHình b:  \n- Hình chữ nhật nằm ngang, nền đỏ.  \n- Phía trái: dòng chữ \"CHÚ Ý ĐƯỜNG SẮT\" viết hoa, in đậm.  \n- Dưới dòng chữ trên: chữ \"30 m\".  \n- Phía phải: biểu tượng tàu hỏa đen (một đầu tàu đơn giản) và một mũi tên đỏ chỉ sang phải.  \n- Dưới hình: ghi chú \"b) Hình F.12 - Biển số S.510b\".",
+  "generated_tokens": 224,
+  "size": [
+    298,
+    287
+  ],
+  "elapsed_seconds": 15.758941299995058,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

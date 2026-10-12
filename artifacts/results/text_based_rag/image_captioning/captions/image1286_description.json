@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:6b2d044e3f8d87965280b1034cffbea642e0c006d400c56cf40730bf110c1cce",
+  "filename": "image1286.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Một biển báo hình chữ nhật, chia làm hai phần ngang:\n   - Phần bên trái: hình minh họa một người đang chạy, được vẽ bằng nét cong, màu xanh dương.\n   - Phần bên phải: nền xanh dương, có dòng chữ trắng “ĐƯỜNG TRON CHẠY CHẬM”.\n\n2. Một hình minh họa nhỏ hơn bên phải, là bản vẽ lưới ô vuông, trong đó có hình vẽ giống như hình minh họa người chạy ở phần 1, nhưng được phóng to và chia thành lưới ô vuông để đo kích thước.",
+  "generated_tokens": 138,
+  "size": [
+    433,
+    133
+  ],
+  "elapsed_seconds": 9.795590300000185,
+  "peak_vram_bytes": 7396256768,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

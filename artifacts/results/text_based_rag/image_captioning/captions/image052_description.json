@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:483c7b340257e80016cb34290f89d29a81074f44504eebbc8aa0a57251b3d39b",
+  "filename": "image052.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình chữ nhật có viền trắng, nền xanh lá cây. Trong hình có dòng chữ trắng:\n\n- Dòng trên: \"THÔNG TIN GIAO THÔNG\"\n- Dòng giữa: \"TRAFFIC INFO\"\n- Dòng dưới: \"91 MHz\"",
+  "generated_tokens": 63,
+  "size": [
+    240,
+    118
+  ],
+  "elapsed_seconds": 4.8679068999990704,
+  "peak_vram_bytes": 7389888000,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

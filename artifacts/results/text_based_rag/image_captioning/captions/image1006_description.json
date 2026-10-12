@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:653f9e06dae71e57c5c5cdb6cac2c36e25710609ff1d4e8ae0414f1ca5a32b37",
+  "filename": "image1006.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình tròn màu xanh, có đường kính ghi là \"10x\". Trong hình tròn có hai mũi tên trắng chỉ ra ngoài, nằm đối xứng qua trung tâm. Trên đỉnh hình tròn có một cung tròn với góc ghi là \"80°\". Dưới hình tròn có hai đoạn thẳng ngang ghi là \"3x\" và \"3x\".\n\nHình 2: Một lưới ô vuông với các hình vẽ mũi tên và các ký hiệu. Có hai mũi tên chỉ xuống, nằm đối xứng qua trung tâm. Trên cùng có hai ký hiệu hình chữ V ngược, mỗi ký hiệu có ghi \"1.4x\" và \"1x\". Phía dưới có hai ký hiệu hình chữ V ngược, mỗi ký hiệu có ghi \"3x\" và \"1.2x\". Phía dưới cùng có một đoạn thẳng ngang ghi là \"3x\".",
+  "generated_tokens": 203,
+  "size": [
+    429,
+    201
+  ],
+  "elapsed_seconds": 14.222181399999954,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

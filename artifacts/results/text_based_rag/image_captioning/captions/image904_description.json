@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:178fdef28143e7ca8ac3d21fd8c44bc48a3b141bbfa248e1892d93fe181aec61",
+    "filename":  "image904.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình 1: Một tam giác cân màu đỏ, bên trong có hình tam giác nhỏ màu vàng, bên trong hình tam giác vàng có hình ảnh một chiếc xe đang lật ngửa màu đen. Có các kích thước được ghi chú như: 0,71z, 1,48z, 0,6z, 2,8z, 1,2z, 1,25z, 0,25z, 0,26z, 2x0,6z, 2x, 1z, 0,4z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z, 2,8z,",
+    "generated_tokens":  512,
+    "size":  [
+                 417,
+                 190
+             ],
+    "elapsed_seconds":  35.30178439999963,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:923186b84df80f6a649b29da56ed9cc557e436a493a4f9b1edc2563197d385c3",
+  "filename": "image1276.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một biển hiệu hình mũi tên chỉ sang phải, có nền xanh, với biểu tượng xe hơi và vòi nước đang phun nước, kèm chữ “RỬA XE” và “Car Wash” bên dưới. Biển hiệu có các kích thước được ghi chú bằng số đo. Bên phải biển hiệu là một hình vuông chia ô lưới, trong đó có hình vẽ tương tự biển hiệu nhưng nhỏ hơn, cũng có biểu tượng xe hơi và vòi nước. Dưới cùng là một bảng có 4 cột, ghi tên các loại đường và số đo tương ứng.",
+  "generated_tokens": 130,
+  "size": [
+    424,
+    224
+  ],
+  "elapsed_seconds": 9.237028700000337,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

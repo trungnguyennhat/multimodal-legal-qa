@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5689a74c3c32e9d2ae6a3827de1c15e0801199a9858e4db89d211ee6ee18a205",
+  "filename": "image016.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một bảng biểu với tiêu đề \"CSGT POLICE\" ở trên cùng.\n\nDưới tiêu đề có 10 hình minh họa được sắp xếp thành 4 hàng (hàng 1 có 3 hình, hàng 2, 3, 4 mỗi hàng có 3 hình), mỗi hình có chữ cái từ a đến k để đánh số.\n\n- a) Hình chữ nhật chứa chữ \"Trạm cảnh sát giao thông\".\n- b) Hình máy bay.\n- c) Hình xe buýt.\n- d) Hình tàu hỏa đang vào ga.\n- e) Hình cột buồm tàu thủy với hai mũi tên hướng ra ngoài.\n- f) Hình nhà máy công nghiệp với ống khói.\n- g) Hình đập thủy điện với dòng nước.\n- h) Hình điện thoại công cộng.\n- i) Hình trạm sửa chữa (hình máy bơm hoặc máy công cụ).\n- k) Hình trạm xăng dầu (bồn xăng và vòi xăng).\n\nChữ viết trong hình được viết bằng tiếng Việt và tiếng Anh.",
+  "generated_tokens": 233,
+  "size": [
+    368,
+    526
+  ],
+  "elapsed_seconds": 18.515686099999584,
+  "peak_vram_bytes": 7404943872,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

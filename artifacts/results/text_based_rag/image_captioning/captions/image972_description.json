@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:7d2bf81109b334ffae300bdcbbb2dd3bea02f8ef6c4570935fd60abbc7a7ed76",
+    "filename":  "image972.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh chứa một tam giác cân màu đỏ, bên trong có nền vàng và chữ đen. Chữ trong tam giác gồm hai dòng: dòng trên là \"ĐI\" và dòng dưới là \"CHẬM\". Xung quanh tam giác có các kích thước được ghi bằng số và ký hiệu \"z\", như 0,71z, 1,43z, 1,2z, 1,72z, 0,83z, 1,43z, 0,65z, 0,83z, 0,83z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43z, 1,43",
+    "generated_tokens":  512,
+    "size":  [
+                 181,
+                 170
+             ],
+    "elapsed_seconds":  36.05760139999984,
+    "peak_vram_bytes":  7393691648,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

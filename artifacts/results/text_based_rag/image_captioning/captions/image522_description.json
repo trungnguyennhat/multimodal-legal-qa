@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4e969326009c8418b07eba7f454b3371138e733bfe90be74a67589fbfdf4b178",
+  "filename": "image522.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một sơ đồ giao thông đường bộ, thể hiện một nút giao có nhiều làn xe. Có các hình chữ nhật dài biểu thị làn đường, với các vạch kẻ ngang và chấm đứt. Một số đoạn đường có ghi chữ “Vech 2.2” và “Vech 2.3”, cùng với các ký hiệu “Vech 2.2” và “Vech 3.0” ở các vị trí khác nhau. Có các mũi tên chỉ hướng di chuyển của xe. Một số khu vực có hình chữ nhật nhỏ với các ký hiệu bên trong, có thể là biển báo hoặc điểm giao cắt. Tổng thể hình ảnh có bố cục đối xứng, với các làn đường chạy dọc và ngang cắt nhau.",
+  "generated_tokens": 171,
+  "size": [
+    307,
+    176
+  ],
+  "elapsed_seconds": 12.093027599999914,
+  "peak_vram_bytes": 7388592640,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

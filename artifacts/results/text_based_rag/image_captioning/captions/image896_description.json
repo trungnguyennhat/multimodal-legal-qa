@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:cb88f983a0acd8416657896a82ec06d498836a44e7afa6c31719a998e95f1151",
+  "filename": "image896.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Hình tam giác cân màu đỏ, bên trong có nền vàng và hình ảnh một chiếc xe tải đen ở giữa. Có các kích thước được ghi chú: chiều cao từ đỉnh đến đáy là 10x, chiều rộng đáy là 10x, bán kính cong ở đỉnh là R=6.5x, chiều cao từ đỉnh đến cạnh bên là 1.71x, và góc ở đỉnh là 60°.\n\n2. Hình chữ nhật có kích thước 24x x 8.64x, bên trong có hình ảnh một chiếc xe tải đen. Có các kích thước được ghi chú: chiều cao từ trên xuống dưới là 24x, chiều rộng từ trái sang phải là 8.64x, và các kích thước nhỏ hơn ở góc trên bên phải là 2.22x và 1x, ở góc trên bên trái là 12.",
+  "generated_tokens": 205,
+  "size": [
+    404,
+    162
+  ],
+  "elapsed_seconds": 14.787537499999871,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

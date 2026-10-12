@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:93937b05f550f558ef8ce4471565aabe223aa557aac3ee61e9fd835d1d8919de",
+  "filename": "image1344.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có góc phải được cắt nghiêng, bên trong có hình tam giác đen hướng lên trên và chữ số \"500 m\" bên cạnh. Có các đường kẻ lưới và các kích thước được ghi chú xung quanh hình.",
+  "generated_tokens": 55,
+  "size": [
+    360,
+    187
+  ],
+  "elapsed_seconds": 4.385034600000836,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

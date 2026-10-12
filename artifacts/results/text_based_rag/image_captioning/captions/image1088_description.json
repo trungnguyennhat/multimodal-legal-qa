@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:e24506df3f8c314593cfc762a7c2bb4b9d6b855dd7d7da1f311b75e63754a32f",
+    "filename":  "image1088.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần minh họa:\n\n1. **Hình minh họa bên trái**:\n   - Một hình chữ nhật đứng, có kích thước 10z x 12z.\n   - Bên trong hình chữ nhật có nền màu xanh, chứa một hình ảnh xe hơi màu trắng ở phía dưới.\n   - Trên xe hơi có một mũi tên trắng chỉ lên trên.\n   - Một đường chéo màu đỏ cắt ngang từ góc trên bên trái đến góc dưới bên phải của hình chữ nhật.\n   - Có các kích thước và chú thích kích thước xung quanh hình: 10z chiều cao, 12z chiều rộng, và các kích thước nhỏ hơn như 0.2z, 0.1z, 0.02z, 0.02z ở các cạnh.\n\n2. **Hình minh họa bên phải**:\n   - Một hình chữ nhật có lưới ô vuông, bên trong có hình ảnh xe hơi và mũi tên.\n   - Xe hơi được vẽ ở phía dưới, mũi tên chỉ lên trên, nằm ở giữa hình.\n   - Có các kích thước được ghi chú bằng chữ số và ký hiệu “z”:\n     - Chiều cao tổng của hình: 10z.\n     - Chiều rộng: 12z.\n     - Kích thước các phần: 5.42z, 0.8z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z",
+    "generated_tokens":  512,
+    "size":  [
+                 425,
+                 206
+             ],
+    "elapsed_seconds":  36.5827405,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

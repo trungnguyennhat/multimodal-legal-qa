@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b6c620c1aaf2672b20b38a1428b615225383d2b00ec0cce9db4e1d36491adc21",
+  "filename": "image128.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình tròn có viền đỏ, bên trong là nền trắng. Trong hình tròn có chữ số \"7\" và ký hiệu \"t\" ở phía trên bên phải của chữ số \"7\". Dưới chữ số \"7\" có một đường ngang với hai dấu cộng ở hai đầu và một dấu chấm ở giữa.",
+  "generated_tokens": 71,
+  "size": [
+    79,
+    73
+  ],
+  "elapsed_seconds": 5.448088699995424,
+  "peak_vram_bytes": 7388019712,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

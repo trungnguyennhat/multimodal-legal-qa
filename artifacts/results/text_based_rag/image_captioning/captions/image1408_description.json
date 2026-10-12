@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:3c8978a14fa8b0f109e1101c4e98568973984d1b70f91a220223456a55364e71",
+  "filename": "image1408.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có kích thước 100x50, viền mỏng. Trong hình có chữ \"QL.91B\" viết hoa, in đậm, màu đen, nằm ngang ở giữa. Phía trên chữ \"B\" có ghi \"R2\". Phía dưới chữ \"B\" có ghi \"0.75\" và \"30\". Phía dưới cùng của hình có ghi \"a\". Phía trên cùng của hình có ghi \"100\". Phía bên trái của hình có ghi \"50\". Phía bên phải của hình có ghi \"30\".",
+  "generated_tokens": 137,
+  "size": [
+    250,
+    128
+  ],
+  "elapsed_seconds": 11.30437080000047,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1b60f1572446708c1c3ca72933322d1b1f70153f90eeaadb666877c8c84eaa2e",
+  "filename": "image358.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình chữ nhật có nền màu xanh, viền trắng. Trong hình có chữ \"P\" màu trắng ở phía trên, và phía dưới là hình minh họa một chiếc xe hơi nhìn từ phía trước, cũng màu trắng.",
+  "generated_tokens": 51,
+  "size": [
+    101,
+    141
+  ],
+  "elapsed_seconds": 3.9838653999977396,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

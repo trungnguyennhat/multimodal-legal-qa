@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:045e21f7b4f697990b6d8dcfbb18a629d4695dc738ff1d0e5a82a81b5f5fa80d",
+  "filename": "image220.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo hình tam giác có viền đỏ, nền vàng. Trong tam giác có hình minh họa một chiếc cầu giao thông đang hạ xuống, với hai trụ đỡ và một thanh ngang đang ở trạng thái hạ thấp. Dưới thanh ngang có các đường gạch ngang biểu thị mặt nước hoặc khoảng trống. Không có chữ viết nào trong hình.",
+  "generated_tokens": 86,
+  "size": [
+    88,
+    62
+  ],
+  "elapsed_seconds": 6.534772899998643,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

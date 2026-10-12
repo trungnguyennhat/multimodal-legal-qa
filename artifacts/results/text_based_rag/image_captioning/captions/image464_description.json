@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1920bc6a0979a008f13df05bd6be401ec40ba7858d78c36e82ebfc4a87c316e4",
+  "filename": "image464.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba hình chữ nhật có viền đen, mỗi hình chứa một mũi tên đen và có chú thích chữ dưới:\n\n- Hình a): Một hình chữ nhật chứa mũi tên chỉ sang phải. Dưới hình ghi: “a) Biển số S.503a”.\n\n- Hình b): Một hình chữ nhật chứa hai mũi tên đối diện nhau (một mũi tên chỉ sang trái, một mũi tên chỉ sang phải). Dưới hình ghi: “b) Biển số S.503b”.\n\n- Hình c): Một hình chữ nhật chứa mũi tên chỉ sang trái. Dưới hình ghi: “c) Biển số S.503c”.",
+  "generated_tokens": 147,
+  "size": [
+    308,
+    54
+  ],
+  "elapsed_seconds": 10.999530799999775,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

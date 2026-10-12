@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:f121a85a84063e97d86f9b6ffb04fc04678f7ce9920bdae17e3cc4f634eb359f",
+  "filename": "image1110.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh là một bản vẽ kỹ thuật của một biển báo giao thông hình chữ nhật, có kích thước được ghi bằng đơn vị \"z\".\n\n- Biển báo có nền màu xanh dương, trên đó có hình ảnh một dãy các tòa nhà dạng silhoutte màu trắng, tạo thành một cảnh thành phố.\n- Một đường chéo màu đỏ, từ góc dưới bên trái lên góc trên bên phải, cắt ngang qua toàn bộ biển báo.\n- Xung quanh biển báo có các kích thước được ghi bằng đơn vị \"z\", bao gồm:\n  - Chiều cao tổng cộng: 20z\n  - Chiều rộng tổng cộng: 24z\n  - Các kích thước nhỏ hơn ở các cạnh: 1.2z, 1z, 0.2z, 0.1z, 2.7z, 12z, 5z, 22z\n- Biển báo được đặt trên nền lưới ô vuông để hỗ trợ định vị và đo đạc.\n\nKhông có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 235,
+  "size": [
+    319,
+    244
+  ],
+  "elapsed_seconds": 16.61886179999965,
+  "peak_vram_bytes": 7391605248,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

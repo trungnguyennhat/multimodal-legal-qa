@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1b26d12fb54be5c4c3052f064f26d6d29e3c48b8fcf1e65f5cde93027c9940f2",
+  "filename": "image1174.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Phần trên: Một bản đồ hoặc sơ đồ hình chữ nhật màu vàng, có dòng chữ \"HÒA BÌNH\" ở giữa. Có một mũi tên chỉ lên trên, dài 3.5 km. Có các đường nối hình chữ T và hình tròn đỏ ở giữa. Xung quanh có các chú thích số đo và hướng.\n\n2. Phần dưới: Một bản đồ dạng lưới ô vuông, cũng có dòng chữ \"HÒA BÌNH\" ở giữa. Có một mũi tên chỉ lên trên, dài 3.5 km. Có các đường nối hình chữ T và hình tròn đỏ ở giữa. Xung quanh có các chú thích số đo và hướng.",
+  "generated_tokens": 154,
+  "size": [
+    278,
+    508
+  ],
+  "elapsed_seconds": 10.961229000000458,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:e9c21f2e8a53e415f2a71c738bb5188c047f4eae753795af712d494d2b549214",
+  "filename": "image458.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình chữ nhật có viền trắng, nền màu xanh dương, trên đó có dòng chữ \"AH112\" màu trắng, được viết hoa và in đậm.",
+  "generated_tokens": 38,
+  "size": [
+    147,
+    79
+  ],
+  "elapsed_seconds": 2.9585645999977714,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

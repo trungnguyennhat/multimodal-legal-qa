@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:671f8e2a8710696bac31e10bf8f1c9d1259d6b9a37ac30e0ee4788612cb36c51",
+  "filename": "image922.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cảnh báo màu đỏ, bên trong có nền vàng và hình ảnh một người đang làm việc với máy xúc. Có các chú thích số liệu như 0,71x, 2,30x, 1,4x, 0,6x, 2,29x, 3,03x, 5,32x, 4x, 1,2x, và góc 60°.\n\nHình 2: Một hình chữ nhật chia thành lưới ô vuông, bên trong có hình ảnh một người đang làm việc với máy xúc, kèm các chú thích số liệu như 4x, 6,32x, 1,2x.",
+  "generated_tokens": 157,
+  "size": [
+    409,
+    164
+  ],
+  "elapsed_seconds": 11.36096550000002,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

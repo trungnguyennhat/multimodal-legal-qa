@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d2f0f4b334cbbb36516c2f2e20a7353620b99d20c9240457b50cf0fc0effa25d",
+  "filename": "image456.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm 4 biển báo giao thông hình chữ nhật, nền xanh, viền trắng, có chữ và biểu tượng trắng.\n\n- Biển trên cùng bên trái: Ghi “ĐƯỜNG CỨU NAN”, phía dưới ghi “2 km”, có biểu tượng mũi tên trắng quẹo sang phải, bên cạnh là hình chữ nhật có họa tiết ô vuông chéo đỏ trắng, và ghi “QL.1”.\n\n- Biển trên cùng giữa: Ghi “ĐƯỜNG CỨU NAN”, phía dưới ghi “1 km”, có biểu tượng tương tự như biển trên, ghi “QL.1”.\n\n- Biển trên cùng bên phải: Ghi “ĐƯỜNG CỨU NAN”, phía dưới ghi “300 m”, có biểu tượng tương tự, ghi “QL.1”.\n\n- Biển dưới cùng: Ghi “ĐƯỜNG CỨU NAN”, có biểu tượng mũi tên trắng chỉ thẳng lên trên.",
+  "generated_tokens": 212,
+  "size": [
+    295,
+    219
+  ],
+  "elapsed_seconds": 15.123375399998622,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:52317c1a34dff26010a16651c7a5d714cec331b0dc9e1c83fcfabdfd0737d725",
+  "filename": "image1238.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Một hình chữ nhật đứng có kích thước được ghi rõ các chiều dài và rộng. Bên trong hình chữ nhật có một hình vẽ đen của một chiếc xe điện (tram) ở trên, và một dải màu xanh dương ở dưới chứa chữ “ĐIỂN XE BIỆN” và “TRAMWAY STATION”. Các kích thước được ghi rõ xung quanh hình chữ nhật.\n\n2. Một hình chữ nhật nằm ngang được chia thành lưới ô vuông nhỏ. Trong hình có một hình vẽ đen của một chiếc xe điện (tram) được vẽ theo kiểu pixel art, nằm ở giữa hình chữ nhật. Kích thước của hình chữ nhật này cũng được ghi rõ các chiều dài và rộng.",
+  "generated_tokens": 164,
+  "size": [
+    380,
+    223
+  ],
+  "elapsed_seconds": 12.537288099999387,
+  "peak_vram_bytes": 7392270848,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:42f1c71fe483ceb5c0db30b8fb7c5ea2d3bcbeba7170b7e0852951edb0e4d126",
+  "filename": "image012.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình minh họa là một mũi tên chỉ lên, có dạng tam giác ở đầu trên, nối với thân hình chữ nhật. Các kích thước được ghi rõ:\n\n- Chiều rộng đỉnh mũi tên: A\n- Chiều cao tổng thể từ đỉnh đến đáy: B\n- Chiều cao từ đỉnh đến điểm bắt đầu thân: D\n- Chiều rộng thân: C\n- Chiều cao từ đáy đến điểm cuối: E\n- Bán kính cong ở hai bên đỉnh mũi tên: R\n\nCác chữ cái A, B, C, D, E, R được ghi rõ để chỉ các kích thước tương ứng.",
+  "generated_tokens": 140,
+  "size": [
+    168,
+    207
+  ],
+  "elapsed_seconds": 10.165203600001405,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

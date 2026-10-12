@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:de3fbb159119f888052b20a9688400a351804c720e486df8d4f4969f89cde320",
+    "filename":  "image1074.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n1. Phần bên trái: Một hình chữ nhật đứng có chiều cao 16.2z và chiều rộng 12z. Bên trong hình chữ nhật là nền màu xanh, chứa hình ảnh một chiếc xe buýt nhìn từ phía trước, phía trên là một mũi tên chỉ lên và một hình kim cương nằm ngang bên trái.\n\n2. Phần bên phải: Một bản vẽ kỹ thuật với lưới ô vuông. Trong đó có hình vẽ tương tự như phần bên trái, gồm một chiếc xe buýt nhìn từ phía trước, phía trên là mũi tên chỉ lên và hình kim cương. Xung quanh hình vẽ có các kích thước được ghi bằng chữ số và ký hiệu “z”, ví dụ: 1.2z, 2.2z, 3.5z, 7.2z, 6.2z, 1.2z, 0.5z, 0.1z, 0.2z, 0.1z, 0.2z, 1.2z, 2.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z",
+    "generated_tokens":  512,
+    "size":  [
+                 424,
+                 202
+             ],
+    "elapsed_seconds":  34.833440399999745,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

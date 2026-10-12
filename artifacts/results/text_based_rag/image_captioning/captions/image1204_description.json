@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8d7844491ae58a892b4ae1676158b606935b003b939bb7a342fd60a78d9c2190",
+  "filename": "image1204.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một hình chữ nhật lớn được chia thành lưới ô vuông nhỏ. Bên trong hình chữ nhật có một hình dạng giống như một con người đang nhảy hoặc chạy, được tô màu xanh dương. Các cạnh của hình chữ nhật có các đoạn thẳng được ghi chú với các biểu thức đại số: trên cùng là \"12x\", bên trái từ trên xuống là \"4x\", \"1.5x\", \"1.5x\", bên dưới là \"4x\", \"4x\", bên phải từ trên xuống là \"4x\", \"2x\", và tổng chiều cao bên phải ghi là \"12x\".",
+  "generated_tokens": 138,
+  "size": [
+    177,
+    143
+  ],
+  "elapsed_seconds": 10.817552600000454,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

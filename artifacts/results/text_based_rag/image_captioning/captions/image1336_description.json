@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:5ba1ada9aa9d530d25840e319d9813839fd3fda72e65a3742145c5f7e7e38296",
+    "filename":  "image1336.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm ba biểu đồ giao thông với chú thích bằng tiếng Việt.\n\nBiểu số 8.588a: Hướng đường ưu tiên\n- Hình 1: Một hình vuông được chia thành bốn phần bằng nhau bởi hai đường chéo, mỗi phần có kích thước 4,4m x 4,4m, tổng chiều dài cạnh hình vuông là 17,6m.\n- Hình 2: Một hình chữ thập trên lưới ô vuông, có các kích thước được ghi chú: 4,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0,4m, 0",
+    "generated_tokens":  512,
+    "size":  [
+                 433,
+                 526
+             ],
+    "elapsed_seconds":  38.21429420000004,
+    "peak_vram_bytes":  7417882624,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

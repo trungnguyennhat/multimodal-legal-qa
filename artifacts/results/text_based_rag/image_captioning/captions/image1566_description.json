@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d95e34d02af266f1e04ba85fb125b1ae1a0b82155fa811b94abba7b25497a572",
+  "filename": "image1566.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền trắng, nền xanh lá cây, có dòng chữ \"TRẠM THU PHÍ\" và \"TOLL PLAZA\" màu trắng, được căn giữa. Xung quanh hình chữ nhật có các ký hiệu kích thước: L (chiều dài), W (chiều rộng), k1 (khoảng cách từ cạnh hình chữ nhật đến các cạnh ngoài), H1 (chiều cao phần chữ), và các ký hiệu k1, H1 được lặp lại ở các vị trí tương ứng trên cạnh trái và dưới của hình chữ nhật.",
+  "generated_tokens": 125,
+  "size": [
+    347,
+    170
+  ],
+  "elapsed_seconds": 9.133555700000215,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848,
+  "status": "COMPLETED"
+}

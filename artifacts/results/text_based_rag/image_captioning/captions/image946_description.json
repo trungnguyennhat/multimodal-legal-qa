@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:35b471131925606daf4d2501e56f2e3c0c9db0914c1518ad0923d800d1b02d43",
+  "filename": "image946.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng và hai biểu tượng đen: một mũi tên cong hướng xuống và một mũi tên cong hướng lên, nằm đối xứng nhau. Xung quanh tam giác có các kích thước được ghi bằng chữ số và ký hiệu \"z\".\n\nHình 2: Một hình chữ nhật có lưới ô vuông, bên trong có hai biểu tượng đen giống hình 1 (mũi tên cong hướng xuống và hướng lên). Xung quanh hình chữ nhật có các kích thước được ghi bằng chữ số và ký hiệu \"z\".",
+  "generated_tokens": 128,
+  "size": [
+    425,
+    200
+  ],
+  "elapsed_seconds": 8.98309590000008,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848,
+  "status": "COMPLETED"
+}

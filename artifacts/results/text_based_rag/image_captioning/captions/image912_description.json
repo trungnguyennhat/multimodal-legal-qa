@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:52ad02e832c81a5cfa024c963fc416f630c4eb80407be6862e4f67f110f28d4a",
+  "filename": "image912.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Hình bên trái: Một tam giác cân màu đỏ, bên trong có hình tam giác nhỏ màu vàng, và bên trong hình tam giác vàng là một hình đen có dạng núi hoặc đồi. Có các ký hiệu kích thước và chữ số như: 0,712, 3,34x, 1,00x, 0,6x, 3x, 10x, 18°. Có một đường thẳng nối từ đỉnh tam giác xuống đáy, cắt đáy tại trung điểm.\n\n2. Hình bên phải: Một hình chữ nhật lưới ô vuông, bên trong có một hình đen giống như một ngọn núi hoặc đồi, có dạng không đều, không đối xứng. Có các ký hiệu kích thước: 6x, 6x, 1x, 1x. Có một đường thẳng ngang và một đường thẳng dọc cắt qua hình đen, giao nhau ở trung tâm hình chữ nhật.",
+  "generated_tokens": 215,
+  "size": [
+    407,
+    162
+  ],
+  "elapsed_seconds": 14.914907800000037,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

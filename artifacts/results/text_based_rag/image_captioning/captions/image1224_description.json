@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:9e15099fdec996c83fe1aa5baeb2a9d34268e68dabc59fe59df1f8b33ee243bd",
+  "filename": "image1224.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Một hình chữ nhật đứng có viền xanh, bên trong có hình một cây thông đen, phía dưới có dòng chữ “NGHỈ MÁT” màu đen, nằm trên nền trắng.\n\n2. Một hình chữ nhật đứng được chia thành lưới ô vuông, bên trong có hình một cây thông đen và một dấu “TT” đen ở dưới cùng.",
+  "generated_tokens": 86,
+  "size": [
+    380,
+    223
+  ],
+  "elapsed_seconds": 6.188770700000532,
+  "peak_vram_bytes": 7392270848,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

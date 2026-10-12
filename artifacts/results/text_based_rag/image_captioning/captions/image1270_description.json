@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:088e3ea33ab1d7b2bebe9f53b7009e1f0d7063e2f4bdd04e5b0a178dcc67be77",
+  "filename": "image1270.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một biển chỉ dẫn hình mũi tên chỉ sang bên trái, có nền màu xanh dương, với biểu tượng cột buồm và dây neo màu trắng ở bên trái, và chữ “BẾN TÀU THỦY” ở giữa, dưới là dòng chữ “Waterway Station” màu trắng. Bên phải biển chỉ dẫn là bản vẽ kỹ thuật chi tiết kích thước của biển, bao gồm các kích thước theo đơn vị mm. Dưới cùng là bảng thông tin với các cột: “Loại đường”, “Đường đôi ngoài đô thị”, “Đường thông thường”, “Đường đô thị”, và các giá trị tương ứng là 60, 80, 40 mm.",
+  "generated_tokens": 155,
+  "size": [
+    425,
+    235
+  ],
+  "elapsed_seconds": 11.36302220000016,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

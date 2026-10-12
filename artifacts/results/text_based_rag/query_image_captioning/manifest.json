@@ -1,0 +1,66 @@
+{
+    "status":  "COMPLETED",
+    "split":  "train",
+    "input":  "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\data\\processed\\splits\\train.json",
+    "input_sha256":  "74d2107e1198b542cf50a0efb0b76748701bf5d381c447e6abe1526bfec11635",
+    "train_images_signature":  "debe5b10d03b764bafdc0b49a2e5102cb26fe7d6ff836e4a737fc74566ee8aa5",
+    "settings":  {
+                     "model":  "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+                     "revision":  "10d842936325905934ea24e64325d774693f166e",
+                     "prompt":  "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+                     "min_pixels":  131072,
+                     "max_pixels":  786432,
+                     "max_new_tokens":  384,
+                     "crop":  false,
+                     "do_sample":  false,
+                     "dtype":  "bfloat16",
+                     "attention":  "sdpa",
+                     "libraries":  {
+                                       "torch":  "2.7.1+cu128",
+                                       "transformers":  "4.57.1",
+                                       "bitsandbytes":  "0.49.0",
+                                       "Pillow":  "12.3.0"
+                                   }
+                 },
+    "queries":  418,
+    "image_files":  243,
+    "unique_image_hashes":  239,
+    "started_at":  "2026-10-11T21:00:54.630978+00:00",
+    "resumed_images":  0,
+    "resources":  {
+                      "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+                      "total_vram_bytes":  17102864384,
+                      "free_vram_before_load":  15908995072,
+                      "pytorch_budget_bytes":  12884901888
+                  },
+    "captioned_images":  239,
+    "incomplete_images":  [
+
+                          ],
+    "elapsed_seconds":  2002.9531522999969,
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true,
+    "accepted_incomplete_images":  [
+                                       "train_1_24.jpg",
+                                       "train_2_23.jpg",
+                                       "train_2_26.jpg",
+                                       "train_2_48.jpg",
+                                       "train_3_18.jpg",
+                                       "train_4_9.jpg",
+                                       "train_4_11.jpg",
+                                       "train_4_19.jpg",
+                                       "train_4_10.jpg",
+                                       "train_5_27.jpg",
+                                       "train_5_25.jpg",
+                                       "train_6_1.jpg",
+                                       "train_6_5.jpg",
+                                       "train_6_13.jpg",
+                                       "train_7_46.jpg",
+                                       "train_7_14.jpg",
+                                       "train_7_8.jpg",
+                                       "train_7_10.jpg",
+                                       "train_7_5.jpg",
+                                       "train_8_35.jpg",
+                                       "train_8_9.jpg"
+                                   ]
+}

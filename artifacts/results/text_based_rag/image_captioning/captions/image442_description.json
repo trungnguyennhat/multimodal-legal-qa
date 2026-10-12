@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:ceaa242a2d534421d9723da845cb107ce83f7ea76b756208359934104b477c97",
+  "filename": "image442.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển chỉ dẫn hình chữ nhật có đầu mũi tên chỉ sang trái, nền màu xanh dương. Trong đó có một hình minh họa màu trắng bên trái là biểu tượng một chiếc tua vít hoặc dụng cụ cơ khí. Phía bên phải có dòng chữ “TRẠM SỬA CHỮA Ô TÔ” viết hoa, in đậm, màu trắng. Dưới dòng chữ đó là từ “Garage” viết thường, màu trắng, nhỏ hơn.",
+  "generated_tokens": 104,
+  "size": [
+    165,
+    44
+  ],
+  "elapsed_seconds": 7.780353699999978,
+  "peak_vram_bytes": 7388019712,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

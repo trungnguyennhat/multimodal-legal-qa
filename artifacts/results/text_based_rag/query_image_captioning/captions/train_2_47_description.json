@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:7288b6e31bfc2d0d6f6b8f2ef3df0a4ed93b680e50e6d795dda5087c0b1bab50",
+  "filename": "train_2_47.jpg",
+  "description": "Biển bên trái: hình chữ nhật, nền xanh, có hai mũi tên trắng chỉ hướng, kèm chữ viết trắng.  \nBiển bên phải: hình chữ nhật, nền xanh, có hình Y trắng chia thành hai hướng, kèm chữ viết trắng.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 56,
+  "size": [
+    1600,
+    982
+  ],
+  "elapsed_seconds": 4.956753200000094,
+  "peak_vram_bytes": 7667107328,
+  "peak_reserved_bytes": 7755268096,
+  "gpu_free_bytes": 8113881088
+}

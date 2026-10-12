@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:ef482d4445ace05f1cd0816d97d9d66404c63df5b895dc2db3905a75d2a2ded3",
+  "filename": "train_5_33.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh lá cây, có hai phần:\n\n- Phần trên: có hình chữ nhật nhỏ màu vàng với chữ \"CT.01\", bên cạnh là dòng chữ \"MAI SON\" và \"QUỐC LỘ 45 EXPRESSWAY\", kèm biểu tượng hình chữ nhật có hai đường dọc bên trong.\n\n- Phần dưới: có hai hình tròn, hình tròn bên trái nền đỏ viền trắng, bên trong có chữ số \"90\"; hình tròn bên phải nền xanh, bên trong có chữ số \"60\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 122,
+  "size": [
+    1200,
+    801
+  ],
+  "elapsed_seconds": 10.685343900004227,
+  "peak_vram_bytes": 7659827712,
+  "peak_reserved_bytes": 7746879488,
+  "gpu_free_bytes": 8122269696
+}

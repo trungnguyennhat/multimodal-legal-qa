@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:dedbd36bac20aab9d4a067103016d2e2ff1b457cce46fe65439f4261be8431e1",
+    "filename":  "image1262.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh chứa một biểu đồ kỹ thuật với các phần sau:\n\n- Một hình chữ nhật dài, có đầu mũi tên hướng sang trái, bên trong có chữ “P” màu xanh dương lớn, và bên phải chữ “P” có dòng chữ “BÃI ĐỖ XE” và “Parking Lot” màu trắng trên nền xanh dương.\n- Xung quanh hình chữ nhật có các kích thước được ghi bằng số liệu (ví dụ: 6.4x, 1.8x, 14.8x, 8.2x, 4.3x, 6.7x, 8.1x, 8.8x, 14.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x, 8.1x, 8.8x,",
+    "generated_tokens":  512,
+    "size":  [
+                 382,
+                 143
+             ],
+    "elapsed_seconds":  39.31266969999979,
+    "peak_vram_bytes":  7399027200,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:920e02e4d1bc763b7ee9cccd891bfe08919f3f6ce4c4639329d833d957589a5f",
+  "filename": "image1098.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần minh họa:\n\n1. Phần bên trái: Một hình chữ nhật màu xanh dương, có chiều cao 16z và chiều rộng 12z. Trong hình có một mũi tên trắng chỉ lên trên, nằm trên một đường chéo đỏ từ góc dưới bên trái lên góc trên bên phải. Dưới mũi tên có hình ảnh hai chiếc xe máy màu trắng. Có các đường kẻ ngang và dọc chia hình thành lưới ô vuông, với các kích thước được ghi chú như 8z, 0.1z, 0.2z, 0.5z, 0.5z, 1z, 1.3z, 2.1z, 2.0z, 5.5z, 5.5z, 5z, 3.7z, 5z, 12z, 16z.\n\n2. Phần bên phải: Một hình chữ nhật được chia thành lưới ô vuông, có kích thước được ghi chú là 1z, 0.5z, 1.3z, 2.1z, 2.0z, 5.5z, 5.5z, 5z, 3.7z, 5z, 12z, 16z. Trong hình có một mũi tên trắng chỉ lên trên, nằm ở giữa. Dưới mũi tên có hình ảnh hai chiếc xe đạp màu đen. Các kích thước được ghi chú xung quanh hình.",
+  "generated_tokens": 335,
+  "size": [
+    432,
+    197
+  ],
+  "elapsed_seconds": 26.096802499999285,
+  "peak_vram_bytes": 7399021056,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872,
+  "status": "COMPLETED"
+}

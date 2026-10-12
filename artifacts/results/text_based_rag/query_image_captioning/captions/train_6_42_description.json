@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:fd183ab88ec865a7850659d490c461e32dcc13ae03f2b1f863007e3e99d9c26b",
+  "filename": "train_6_42.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh lá cây, có viền trắng. Trên biển có:\n\n- Một hình chữ nhật nhỏ màu vàng ở góc trên bên trái, chứa chữ \"CT.01\".\n- Dòng chữ \"NGHI SƠN\" ở hàng trên.\n- Dòng chữ \"DIỄN CHÂU\" ở hàng dưới, bên cạnh là biểu tượng hình hai trụ cầu.\n- Dòng chữ \"EXPRESSWAY\" ở dưới cùng.\n- Dưới dòng chữ trên là hai hình tròn: hình tròn bên trái có nền trắng, viền đỏ, chứa số \"90\"; hình tròn bên phải có nền xanh, viền trắng, chứa số \"60\".\n- Dưới hai hình tròn là dòng chữ \"HẾT ĐƯỜNG SƠN HẢI BẢO HÀNH 10 NĂM\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 187,
+  "size": [
+    2425,
+    2560
+  ],
+  "elapsed_seconds": 14.373469999998633,
+  "peak_vram_bytes": 7662211072,
+  "peak_reserved_bytes": 7746879488,
+  "gpu_free_bytes": 8122269696
+}

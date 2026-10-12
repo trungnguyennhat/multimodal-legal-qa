@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:ad17766452f8a5a86e7ef11473646cf0c7905aec8223f5c4d222c717bade787f",
+  "filename": "image1504.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh là một biển chỉ dẫn hình mũi tên hướng phải, nền nâu, viền trắng. Trên biển có chữ \"CLB GÔN LONG BÌNH\" màu trắng, in hoa, được chia thành hai dòng. Bên trái có một hình vuông trắng chứa biểu tượng đen của một người đang kéo một vật. Phía bên phải mũi tên có các số đo góc và chiều dài: 120°, 250, 85. Biển có các kích thước được ghi chú bằng ký hiệu: chiều dài tổng thể là I, chiều rộng là W, và các đoạn chiều dài nhỏ là k1, a.",
+  "generated_tokens": 140,
+  "size": [
+    331,
+    163
+  ],
+  "elapsed_seconds": 10.727660399999877,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

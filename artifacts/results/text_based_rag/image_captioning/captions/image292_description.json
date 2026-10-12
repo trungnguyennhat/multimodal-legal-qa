@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:16bcb5291e548d9ce80e7d1cc5a84d5e5a1eaa40fcf49622b34d5f0a04e48e46",
+  "filename": "image292.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông hình bát giác, màu đỏ, có chữ \"STOP\" màu trắng ở giữa.",
+  "generated_tokens": 29,
+  "size": [
+    81,
+    82
+  ],
+  "elapsed_seconds": 2.3114268999997876,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7465861120,
+  "gpu_free_bytes": 8403288064,
+  "status": "COMPLETED"
+}

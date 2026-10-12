@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:747ff54728bc621fa564b634fa522662dc1f592f13d0b21338d5e7d88177c1b5",
+  "filename": "image022.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai nhóm biển báo giao thông, mỗi nhóm có hai biển hình chữ nhật màu xanh dương.\n\n- Nhóm a) Biển số IE.450a:\n  - Biển trên bên trái: Có mũi tên chỉ lên trên và sang trái, kèm chữ “ĐỨC HÒA”, “ĐT.830”, “CT.01”, “TP. HCM TRUNG LƯỢNG”, và “500 m”.\n  - Biển trên bên phải: Có mũi tên chỉ lên trên và sang phải, kèm các thông tin tương tự như trên, nhưng mũi tên hướng ngược lại.\n\n- Nhóm b) Biển số IE.450b:\n  - Biển dưới bên trái: Có mũi tên chỉ lên trên và sang trái, kèm các thông tin như trên, nhưng không có “CT.01” trong khung màu vàng.\n  - Biển dưới bên phải: Có mũi tên chỉ lên trên và sang phải, kèm các thông tin tương tự, cũng không có “CT.01” trong khung màu vàng.\n\nTất cả các biển đều có biểu tượng người đi bộ màu trắng ở giữa.",
+  "generated_tokens": 248,
+  "size": [
+    370,
+    268
+  ],
+  "elapsed_seconds": 19.053097099997103,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

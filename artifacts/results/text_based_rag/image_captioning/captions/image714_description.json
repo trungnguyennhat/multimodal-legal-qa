@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:548bc8c49af4482be5246b780cf80827ee0dd5a660eac95c175dc5c91c5f53af",
+  "filename": "image714.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai bản vẽ kỹ thuật của cùng một biểu tượng:\n\n- Bản vẽ bên trái: Một hình tròn màu đỏ, bên trong có hình một chiếc xe taxi đen, phía trên xe có chữ \"TAXI\" màu vàng. Có các kích thước được ghi chú xung quanh hình.\n\n- Bản vẽ bên phải: Một hình chữ nhật được chia lưới, bên trong có hình một chiếc xe taxi đen, phía trên xe có chữ \"TAXI\" màu vàng. Có các kích thước được ghi chú xung quanh hình.",
+  "generated_tokens": 118,
+  "size": [
+    252,
+    101
+  ],
+  "elapsed_seconds": 8.28201469999999,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848,
+  "status": "COMPLETED"
+}

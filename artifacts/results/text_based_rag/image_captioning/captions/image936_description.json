@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:9d651251ae959fa6d133387fadfbb8f7db11ec2899080171e074193c82f2c17e",
+  "filename": "image936.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng và hình một con hươu đang nhảy. Có các số đo kích thước được ghi xung quanh hình, bao gồm: 10.2 ở đáy, 1.72, 1.82, 0.42, 0.72, 2.84, 1.42, 60° ở góc dưới phải.\n\nHình 2: Một hình chữ nhật có lưới ô vuông, bên trong có hình một con hươu đang nhảy. Có các số đo kích thước được ghi xung quanh hình, bao gồm: 3.44 ở đáy, 1.2 ở trên, 2.83 ở bên phải, 1.2 ở bên trái.",
+  "generated_tokens": 182,
+  "size": [
+    410,
+    170
+  ],
+  "elapsed_seconds": 12.671524700000191,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

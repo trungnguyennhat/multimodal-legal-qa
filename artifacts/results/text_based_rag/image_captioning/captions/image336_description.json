@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:db47ba1a47452707307af4cafdc69a4eba312d202abb8910a75721494188feb2",
+  "filename": "image336.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một hình chữ nhật nền màu xanh dương, trong đó có một dãy hình dạng trắng giống như đường chân trời thành phố, gồm các hình khối đa dạng: có hình vuông, hình chữ nhật, hình tam giác nhọn và hình mái nhà. Không có chữ nào xuất hiện trong hình.",
+  "generated_tokens": 68,
+  "size": [
+    144,
+    103
+  ],
+  "elapsed_seconds": 5.327172500001325,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4ab1af90f811b57166c317e2b87f8eda666dc8c95bcaa9cc6e2ab26efb271680",
+  "filename": "image326.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một hình chữ nhật có viền trắng, nền màu xanh dương. Trong hình có ba biểu tượng màu trắng:\n\n- Ở trên cùng là một mũi tên chỉ thẳng lên trên.\n- Phía dưới mũi tên là hình một chiếc xe buýt.\n- Phía dưới xe buýt là hình một chiếc ô tô.",
+  "generated_tokens": 72,
+  "size": [
+    69,
+    87
+  ],
+  "elapsed_seconds": 5.639732000003278,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

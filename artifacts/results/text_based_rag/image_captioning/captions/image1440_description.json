@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d5fc9b3621e4290b511500474bb11b7f801edc346505c5b2ff9086853ab81b8a",
+  "filename": "image1440.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật đứng, nền màu xanh lá cây. Trong hình có một hình vẽ màu xám của một cây cầu vượt hoặc công trình giao thông cao tầng, với hai trụ đỡ và một dải đường ở trên. Một đường chéo màu đỏ cắt ngang từ góc dưới bên trái lên góc trên bên phải, đi qua hình vẽ cây cầu. Có các kích thước được ghi chú xung quanh hình: chiều cao tổng cộng 2500, chiều cao phần trên 1475, chiều cao phần dưới 290, chiều rộng tổng cộng 1750, và các phân đoạn chiều rộng 250, 500, 250, 500, 250.",
+  "generated_tokens": 165,
+  "size": [
+    175,
+    232
+  ],
+  "elapsed_seconds": 12.623806699999477,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

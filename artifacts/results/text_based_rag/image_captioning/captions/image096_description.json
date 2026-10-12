@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a56ff00b5fd1fe45d9609a0194c70ee4c625e30f8af5d6b25ac65ac3a6d52909",
+  "filename": "image096.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một biểu tượng giao thông: một vòng tròn màu đỏ, bên trong có một hình ảnh đen của một người đi xe máy, và một đường thẳng màu đỏ cắt ngang từ góc trên bên trái đến góc dưới bên phải, đi qua hình ảnh người đi xe máy.",
+  "generated_tokens": 62,
+  "size": [
+    89,
+    87
+  ],
+  "elapsed_seconds": 4.691187099997478,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

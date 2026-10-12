@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c441939e87795fdec1ddb3cbe361ef68f190a054b74c0c82f310fc900d1fc0ef",
+  "filename": "image060.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông hình chữ nhật, nền xanh lá cây, viền trắng.\n\nBiển trên (a):  \n- Gồm hai dòng chữ.  \n- Dòng trên: \"ĐT.830\" và \"8 km\".  \n- Dòng dưới: \"TP. TÂN AN\" và \"23 km\".\n\nBiển dưới (b):  \n- Gồm ba dòng chữ.  \n- Dòng trên: \"ĐT.830\" và \"8 km\".  \n- Dòng giữa: \"TP. TÂN AN\" và \"23 km\".  \n- Dòng dưới: \"TP. MỸ THO\" và \"50 km\".\n\nDưới mỗi biển có ghi chú:  \n- a) Biển chỉ dẫn hai địa điểm.  \n- b) Biển chỉ dẫn ba địa điểm.",
+  "generated_tokens": 182,
+  "size": [
+    268,
+    303
+  ],
+  "elapsed_seconds": 13.529797499999404,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:7ca9f392efd009894718b0305d1af7685954e837fd119431031591f99ebb39b9",
+  "filename": "image146.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một vòng tròn đỏ lớn, bên trong có hai hình minh họa: một hình chữ nhật màu đỏ và một hình xe hơi màu đen, được đặt cạnh nhau. Không có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 52,
+  "size": [
+    85,
+    86
+  ],
+  "elapsed_seconds": 4.112923599997885,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

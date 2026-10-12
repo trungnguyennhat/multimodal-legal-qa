@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c8c6f2a0773ee8c4f852f2c510a222fa8ae5dc5213f694839e6b8636447bd8e1",
+  "filename": "image234.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông dạng tam giác có viền đỏ, nền vàng.\n\n- Biển a) có mã số W.221a, hình ảnh trong biển là một đường cong lồi (đường cong hướng lên).\n\n- Biển b) có mã số W.221b, hình ảnh trong biển là một đường cong lõm (đường cong hướng xuống).\n\nDưới mỗi biển có ghi mã số tương ứng.",
+  "generated_tokens": 99,
+  "size": [
+    261,
+    92
+  ],
+  "elapsed_seconds": 7.484234899995499,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

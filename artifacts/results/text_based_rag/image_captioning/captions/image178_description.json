@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d116888ab2c31e12e61c1ceed59dd885f1d7272999ccf7cacd9ca180062255a4",
+  "filename": "image178.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một biểu tượng giao thông: một vòng tròn màu đỏ, bên trong có một mũi tên màu đen chỉ thẳng lên trên, và một đường thẳng màu đỏ cắt ngang qua mũi tên từ trái sang phải.",
+  "generated_tokens": 49,
+  "size": [
+    110,
+    95
+  ],
+  "elapsed_seconds": 3.8503404000002774,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

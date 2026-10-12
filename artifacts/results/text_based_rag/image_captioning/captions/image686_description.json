@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b9f88d804e6ac2c73d2809992d2b54f6de9da7339f23df78b287485c040096fa",
+  "filename": "image686.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị một bảng chữ cái và các chữ số từ A đến Z, từ 0 đến 9, được trình bày theo dạng lưới 5 hàng và 5 cột (trừ hàng cuối cùng chỉ có 3 ô). Mỗi ký tự được thể hiện dưới dạng hình khối pixel hoặc lưới chấm đen, với các kiểu dáng khác nhau cho từng chữ cái và số. Các ký tự được sắp xếp theo thứ tự từ A đến Z, sau đó là các số từ 0 đến 9. Dưới cùng là một ô nhỏ chứa ba ký tự: hai dấu chấm và một dấu gạch ngang.",
+  "generated_tokens": 135,
+  "size": [
+    250,
+    647
+  ],
+  "elapsed_seconds": 9.908312300000034,
+  "peak_vram_bytes": 7401413120,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

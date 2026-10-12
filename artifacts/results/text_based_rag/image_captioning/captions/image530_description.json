@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b5b18a6e5a5fab73247787f2a802dcf4d96f9ddde63bcccddd4c8c3304bcb0e1",
+  "filename": "image530.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh minh họa một đoạn đường cao tốc với các thành phần sau:\n\n- Một dải phân cách giữa (gọi là \"Đài phân cách giữa\") nằm ở giữa đường, phân chia hai chiều lưu thông.\n- Trên mặt đường có các vạch kẻ đường: vạch kẻ ngang và vạch kẻ chéo ở khu vực gần điểm giao cắt.\n- Một đường tách ra (gọi là \"Đường tách ra\") ở phía dưới bên phải, có dạng đường cong dốc xuống.\n- Một \"Giới hạn làn xe\" được chỉ ra bằng một đường kẻ dọc ở phía bên trái.\n- Các số liệu: \"300\", \"300\", \"45\" được ghi trên mặt đường gần khu vực giao cắt.\n- Một số ký hiệu hình học: hình tròn nhỏ và hình chữ nhật nhỏ nằm gần khu vực giao cắt.",
+  "generated_tokens": 194,
+  "size": [
+    278,
+    108
+  ],
+  "elapsed_seconds": 13.762709100003121,
+  "peak_vram_bytes": 7397206016,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:2f5b2cedc93cc50cac9b877f3ca5021e7b80cea92568efaa7009155ca138c35d",
+    "filename":  "image1206.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh chứa một hình vuông được chia lưới ô vuông nhỏ, bên trong có hình một chiếc máy may màu trắng và một dấu thập đỏ màu đỏ ở trên. Xung quanh hình vuông có các chú thích kích thước bằng chữ số và ký hiệu đo lường, bao gồm các giá trị như 12x, 4.5x, 8x, 30x, 20x, 6.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x, 4.5x,",
+    "generated_tokens":  512,
+    "size":  [
+                 161,
+                 154
+             ],
+    "elapsed_seconds":  36.47229669999979,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

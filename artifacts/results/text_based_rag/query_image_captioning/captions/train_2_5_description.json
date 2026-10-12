@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:156b628c102e520449474c42a8486a369bc8114d2ae1ee5c04a99456cd9f65cd",
+  "filename": "train_2_5.jpg",
+  "description": "Biển báo hình tròn, nền đỏ, có hình chữ X màu xanh dương ở giữa.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 22,
+  "size": [
+    960,
+    680
+  ],
+  "elapsed_seconds": 2.4058389000056195,
+  "peak_vram_bytes": 7589512704,
+  "peak_reserved_bytes": 7688159232,
+  "gpu_free_bytes": 8180989952
+}

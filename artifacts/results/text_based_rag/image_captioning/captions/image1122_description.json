@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:38594d328de22b97c2cc982680c8fda2d30f57d4af16edd11af576a706e1a5f8",
+  "filename": "image1122.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một biển báo hình chữ nhật đứng, có chữ \"ZONE\" ở trên cùng, bên dưới là hình tròn đỏ chứa hình tròn xanh bên trong, có đường chéo màu đen cắt ngang qua hình tròn. Dưới hình tròn có dòng chữ \"6:00 - 18:00\". Biển báo có các kích thước được ghi chú bằng đơn vị \"z\".\n\nHình 2: Một hình tròn đỏ chứa hình tròn xanh bên trong, có đường chéo màu đen cắt ngang qua hình tròn. Hình này nằm trên nền lưới ô vuông, có các kích thước được ghi chú bằng đơn vị \"z\".",
+  "generated_tokens": 148,
+  "size": [
+    428,
+    199
+  ],
+  "elapsed_seconds": 10.544556800000464,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

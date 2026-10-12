@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:c7fb9597262a03d88e4cfeb8b7fca08926164a6bec810be2afe4c39fd716e17a",
+    "filename":  "image920.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình 1: Một biển báo tam giác màu đỏ, bên trong có nền vàng và hình ảnh một người đi xe đạp. Có các kích thước và ký hiệu kỹ thuật được ghi xung quanh như R=0.6z, 2.01z, 1.01z, 0.71z, 1.0z, 1.84z, 2.01z, 10.2z, 10.2z, 1.84z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1.0z, 1",
+    "generated_tokens":  512,
+    "size":  [
+                 413,
+                 167
+             ],
+    "elapsed_seconds":  36.383574399999816,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:fd64cfa40d6d62826c06c03f572d26ac84a608c382cafcd934a1cdd3118efba1",
+  "filename": "image094.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba biển báo giao thông được đặt cạnh nhau, mỗi biển có hình tròn, viền đỏ, và có một đường gạch chéo đỏ đi ngang qua biểu tượng bên trong.\n\n- Biển a) có biểu tượng một chiếc xe hơi nhìn thẳng về phía trước, bên dưới ghi chữ “a) Biển số P.103a”.\n- Biển b) có biểu tượng một chiếc xe hơi đang quay đầu sang phải, bên dưới ghi chữ “b) Biển số P.103b”.\n- Biển c) có biểu tượng một chiếc xe hơi đang quay đầu sang trái, bên dưới ghi chữ “c) Biển số P.103c”.\n\nMỗi biển đều có hình tròn, viền đỏ, và có một đường gạch chéo đỏ đi ngang qua biểu tượng bên trong.",
+  "generated_tokens": 189,
+  "size": [
+    341,
+    94
+  ],
+  "elapsed_seconds": 13.443957399998908,
+  "peak_vram_bytes": 7388019712,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

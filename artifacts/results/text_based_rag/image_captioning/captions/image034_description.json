@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:2c79d17ade02825c32adcdb1851d41ae80a93cd99371235ff693d2061911b6d3",
+  "filename": "image034.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển chỉ dẫn hình mũi tên màu xanh lá cây, có viền trắng. Trong biển có hai dòng chữ màu trắng:\n\n- Dòng trên: \"TP. TÂN AN\"\n- Dòng dưới: \"LONG AN\"",
+  "generated_tokens": 54,
+  "size": [
+    192,
+    103
+  ],
+  "elapsed_seconds": 4.037018100003479,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

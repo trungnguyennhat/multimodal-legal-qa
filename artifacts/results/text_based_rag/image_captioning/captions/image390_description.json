@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:206d32b1e2c6679d8ae9eb5d499faabb3f5ec9ef5573d8ca08af455d7e898702",
+  "filename": "image390.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai hình chữ nhật có nền xanh, mỗi hình chứa một biểu tượng người đi bộ trên bậc thang.\n\n- Hình a) có nhãn “a) Biển số I.424c” dưới cùng, biểu tượng người đi bộ đang lên cầu thang.\n- Hình b) có nhãn “b) Biển số I.424d” dưới cùng, biểu tượng người đi bộ đang xuống cầu thang.\n\nCả hai hình đều có cùng kích thước và bố cục, chỉ khác nhau ở hướng di chuyển của người đi bộ.",
+  "generated_tokens": 120,
+  "size": [
+    247,
+    92
+  ],
+  "elapsed_seconds": 8.920444000003044,
+  "peak_vram_bytes": 7388212736,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

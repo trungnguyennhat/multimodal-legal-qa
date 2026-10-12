@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b52142998dac0dfcefe1b78f7529db3d1c19962e932318c5ea15f8daf1ef9435",
+  "filename": "image508.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh hiển thị một đoạn đường với các làn xe và các dấu hiệu giao thông.\n\n- Có một dải kẻ ngang màu vàng nằm ở giữa đường, chia thành nhiều làn xe.\n- Trên dải kẻ ngang có các mũi tên trắng chỉ hướng: một mũi tên chỉ sang phải, một mũi tên chỉ sang trái, và một mũi tên chỉ thẳng.\n- Phía trên hình có các ký hiệu: \"L1\", \"L2\", và \"15m\".\n- Phía dưới hình có ghi chú: \"15m x 15m\".\n- Phía trên bên phải có dòng chữ: \"On-Off - Acting at step\".\n- Phía dưới bên phải có dòng chữ: \"15m x 15m\".\n\nCác hình minh họa bao gồm: các hình chữ nhật màu vàng, các mũi tên trắng, và các ký hiệu chữ số và chữ cái.",
+  "generated_tokens": 197,
+  "size": [
+    317,
+    94
+  ],
+  "elapsed_seconds": 13.824340799998026,
+  "peak_vram_bytes": 7393501696,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

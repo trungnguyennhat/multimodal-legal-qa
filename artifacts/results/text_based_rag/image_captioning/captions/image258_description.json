@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4278d9dc5f05d15374ea496fbb4a77b63770d9d80a8e770a004197cdda0cee91",
+  "filename": "image258.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông dạng tam giác có viền đỏ, nền vàng. Trong tam giác có hình vẽ một cột cờ với một lá cờ đang bị gió thổi bay sang một bên. Không có chữ viết nào trong hình.",
+  "generated_tokens": 57,
+  "size": [
+    93,
+    82
+  ],
+  "elapsed_seconds": 4.276803500004462,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

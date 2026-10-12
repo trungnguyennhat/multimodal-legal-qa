@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:af5a91a9dd90f96f564d6972c81527343517253cd42bff21aa8fe9cdcd04f1db",
+  "filename": "image628.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Một hình chữ nhật dài, có các sọc chéo màu đen và vàng chạy dọc theo chiều dài, với một đầu hình tam giác nhọn hướng lên trên.\n\n2. Một hình dạng cong giống như một nửa hình cầu hoặc mái vòm, cũng có các sọc chéo màu đen và vàng, nhưng sọc ở đây tạo thành các tam giác hướng lên trên, giống như một mẫu cảnh báo dạng vòm.",
+  "generated_tokens": 101,
+  "size": [
+    250,
+    134
+  ],
+  "elapsed_seconds": 7.115108800004236,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

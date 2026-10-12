@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:610c744db211ac25aa16156e17544bd8b98b6d4672bd617c2e671af1807c3b8f",
+  "filename": "image620.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình minh họa là một hình tam giác cân, có chiều cao 300 cm và góc ở đỉnh bằng 60 độ. Hai cạnh bên của tam giác được ghi chú độ dài là 40 cm. Dưới hình có ghi chú đơn vị: “Đơn vị: cm”.",
+  "generated_tokens": 68,
+  "size": [
+    197,
+    98
+  ],
+  "elapsed_seconds": 5.125067399996624,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

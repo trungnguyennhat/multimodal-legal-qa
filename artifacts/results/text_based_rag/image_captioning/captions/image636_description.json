@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:0196393848ae21926b78208a7ea8d3b90462d148a004eea549511ea55d95bc50",
+  "filename": "image636.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một thanh ngang có dạng hình chữ nhật, được chia thành ba đoạn: đoạn đầu tiên dài 1.00 m, đoạn giữa dài 2.00 m, và đoạn cuối có hình dạng bo tròn. Trên thanh ngang có hai dải màu đỏ, mỗi dải nằm ở đầu và cuối của thanh, còn phần giữa là màu trắng. Dưới hình có dòng chữ “Don vi: m”.",
+  "generated_tokens": 98,
+  "size": [
+    144,
+    60
+  ],
+  "elapsed_seconds": 7.268748099995719,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

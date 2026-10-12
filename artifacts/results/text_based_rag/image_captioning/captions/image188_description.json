@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:77eb36ef836a1d4d40f70fe825643d363130ee0c10c0873a5979c8589fc71c55",
+  "filename": "image188.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông dạng tam giác có viền đỏ, nền vàng, bên trong có hình vẽ đường cong đen.\n\n- Biển a) có hình vẽ đường cong uốn sang trái.\n- Biển b) có hình vẽ đường cong uốn sang phải.\n\nDưới mỗi biển có ghi chữ:\n\n- a) Biển số W.201a\n- b) Biển số W.201b",
+  "generated_tokens": 95,
+  "size": [
+    273,
+    95
+  ],
+  "elapsed_seconds": 7.080009600002086,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

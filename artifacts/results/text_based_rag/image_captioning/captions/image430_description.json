@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d56e5be6c6b669f9282df5d540a925114547d2a1be49521677a0185c47278982",
+  "filename": "image430.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba biển báo hình chữ nhật đứng, nền màu xanh dương, chữ màu trắng. Mỗi biển có nội dung giống nhau về bố cục nhưng khác nhau về khoảng cách.\n\n- Biển a) (I.441a): Ghi “PHÍA TRƯỚC AHEAD 500 m CÔNG TRƯỜNG WORKS”.\n- Biển b) (I.441b): Ghi “PHÍA TRƯỚC AHEAD 100 m CÔNG TRƯỜNG WORKS”.\n- Biển c) (I.441c): Ghi “PHÍA TRƯỚC AHEAD 50 m CÔNG TRƯỜNG WORKS”.\n\nCác biển được sắp xếp ngang hàng, từ trái sang phải theo thứ tự a, b, c.",
+  "generated_tokens": 187,
+  "size": [
+    275,
+    99
+  ],
+  "elapsed_seconds": 13.85280369999964,
+  "peak_vram_bytes": 7388212736,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

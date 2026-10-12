@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:ca77f8442805fc139244a3e2950ea1867bf8e62180755665bbfc74c90f8bc043",
+    "filename":  "image768.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\nPhần bên trái: Một hình tròn đỏ có đường gạch ngang, bên trong là biểu tượng một chiếc xe đang rẽ phải, kèm theo các kích thước được ghi chú bằng chữ số và đơn vị (ví dụ: 1/32, 3.00x, 2.00x, 1.00x, 0.50x, 0.75x, 0.25x, 0.125x, 0.0625x, 0.03125x, 0.015625x, 0.0078125x, 0.00390625x, 0.001953125x, 0.0009765625x, 0.00048828125x, 0.000244140625x, 0.0001220703125x, 0.00006103515625x, 0.000030517578125x, 0.0000152587890625x, 0.00000762939453125x, 0.000003814697265625x, 0.0000019073486328125x, 0.00000095367431640625x, 0.000000476837158203125x, 0.0000002384185791015625x, 0.00000011920928955078125x, 0.000000059604644775390625x,",
+    "generated_tokens":  512,
+    "size":  [
+                 276,
+                 106
+             ],
+    "elapsed_seconds":  36.275441299999784,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

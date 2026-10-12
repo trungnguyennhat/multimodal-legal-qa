@@ -1,0 +1,27 @@
+{
+  "documents": 2,
+  "articles": 402,
+  "block_types": {
+    "paragraph": 6866,
+    "figure": 790,
+    "table": 212
+  },
+  "image_occurrences": 790,
+  "issue_codes": {
+    "unlabelled_resource": 691,
+    "reference_unresolved": 56,
+    "reference_ambiguous": 3
+  },
+  "per_document": [
+    {
+      "id": "QCVN 41:2024/BGTVT",
+      "title": "QUY CHUẨN KỸ THUẬT QUỐC GIA VỀ BÁO HIỆU ĐƯỜNG BỘ",
+      "articles": 313
+    },
+    {
+      "id": "36/2024/QH15",
+      "title": "LUẬT TRẬT TỰ, AN TOÀN GIAO THÔNG ĐƯỜNG BỘ",
+      "articles": 89
+    }
+  ]
+}

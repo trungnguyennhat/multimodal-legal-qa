@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:f2c9073840be7f9745d36ba5ae8a166c37e18faa18bc2d7a2ace563a5d559518",
+  "filename": "image478.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai hình vuông cạnh nhau, mỗi hình có một biểu đồ đường kẻ đen trên nền trắng.\n\n- Hình bên trái (a): Ghi chú \"a) Biển số S.506a\". Trong hình, có một đường kẻ đứng từ trên xuống gần giữa, một đường kẻ ngang từ trái sang gần giữa, và một đường kẻ cong ở góc dưới bên trái, tạo thành hình chữ L ngược.\n\n- Hình bên phải (b): Ghi chú \"b) Biển số S.506b\". Trong hình, có một đường kẻ đứng từ trên xuống gần giữa, một đường kẻ ngang từ trái sang gần giữa, và một đường kẻ cong ở góc trên bên phải, tạo thành hình chữ L.\n\nCả hai hình đều có đường kẻ đen tạo thành các góc và đường cong, với các ghi chú chữ bên dưới.",
+  "generated_tokens": 185,
+  "size": [
+    204,
+    82
+  ],
+  "elapsed_seconds": 13.697607800000696,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

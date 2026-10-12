@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:39e30743177cde5ee0c3c589916e19c54cb37596c0e9ec4b9263ebe18cd58dc3",
+  "filename": "image372.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba biển báo giao thông hình chữ nhật, nền xanh, chữ trắng, được đánh số a, b, c.\n\n- Biển a (L417a): Có dòng chữ “HÀ NỘI” ở trên, dòng chữ nhỏ hơn “Xe trên 10 t” và “Xe kéo moóc” ở dưới. Phía dưới biển có mũi tên chỉ sang phải.\n\n- Biển b (L417b): Có dòng chữ “HÀ NỘI” ở trên, dòng chữ nhỏ hơn “Xe trên 10 t” và “Xe kéo moóc” ở dưới. Phía dưới biển có mũi tên chỉ thẳng lên trên.\n\n- Biển c (L417c): Có dòng chữ “HÀ NỘI” ở trên, dòng chữ nhỏ hơn “Xe đạp và người đi bộ” ở dưới. Phía dưới biển có mũi tên chỉ sang phải.",
+  "generated_tokens": 202,
+  "size": [
+    283,
+    52
+  ],
+  "elapsed_seconds": 15.80677480000304,
+  "peak_vram_bytes": 7388592640,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

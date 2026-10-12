@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d8b5c41c3dda88c04a7532991647fc454c47afeedeb8ea0967a88e576c16559a",
+  "filename": "image1212.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật lớn có viền đen, bên trong có lưới ô vuông nhỏ. Bên trong hình chữ nhật có một hình chữ nhật nhỏ hơn, màu xanh dương, cũng có lưới ô vuông. Trong hình chữ nhật màu xanh dương có dòng chữ “C. TRINH” ở trên và “KSTTX” ở dưới, đều viết hoa, in đậm. Xung quanh hình chữ nhật lớn và hình chữ nhật nhỏ có các kích thước được ghi bằng số và ký hiệu “z”.",
+  "generated_tokens": 111,
+  "size": [
+    161,
+    176
+  ],
+  "elapsed_seconds": 8.09860690000005,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

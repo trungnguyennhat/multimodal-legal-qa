@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:fd3150078a8b698bb0db35e75bc75aa4948a29c6ca7fc1f213fdeebb7fa2390c",
+  "filename": "train_7_50.jpg",
+  "description": "- Biển hình tròn, nền đỏ, có đường viền trắng, bên trong có hình một chiếc xe tải và một đường gạch chéo màu trắng.\n- Biển hình chữ nhật đứng, nền xanh, có chữ \"P\" màu trắng ở góc trên bên trái, bên dưới có dòng chữ \"NƠI ĐỖ XE\" và dòng chữ nhỏ hơn bên dưới.\n- Biển hình chữ nhật nằm ngang, nền trắng, có hai hình: hình xe hơi ở bên trái và hình xe máy ở bên phải, kèm theo dòng chữ \"LỐNG DƯỜNG\" bên dưới hình xe hơi và \"VIA HÈ\" bên dưới hình xe máy.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 145,
+  "size": [
+    700,
+    467
+  ],
+  "elapsed_seconds": 10.68460189999314,
+  "peak_vram_bytes": 7446217728,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872
+}

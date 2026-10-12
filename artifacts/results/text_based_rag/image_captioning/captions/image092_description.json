@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:ec7d5ea66406ab5ca7c47adadfacf1235052a88663e4ee59657174d4388bd529",
+  "filename": "image092.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình tròn màu đỏ, có một thanh ngang màu trắng đi qua giữa hình tròn.",
+  "generated_tokens": 23,
+  "size": [
+    77,
+    77
+  ],
+  "elapsed_seconds": 1.836551699998381,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

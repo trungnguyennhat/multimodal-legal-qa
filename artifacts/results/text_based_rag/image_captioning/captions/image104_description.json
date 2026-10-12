@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b1f8492f5af4b9d2eb8c4e0701711371ccfb13bcc1a7c647789e71d94835ecf9",
+  "filename": "image104.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một biểu tượng giao thông: một hình tròn màu đỏ, có đường viền đen, bên trong có một hình chữ nhật đen dài, giống như một chiếc xe buýt, bị một đường thẳng màu đỏ cắt ngang từ trên xuống dưới. Không có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 67,
+  "size": [
+    83,
+    82
+  ],
+  "elapsed_seconds": 4.987089800000831,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d45f05916e55cf97ab193092bd2324d46c9d240477be1e0db402b82de98faddd",
+  "filename": "image320.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm 6 biển báo giao thông dạng hình chữ nhật đứng, nền xanh, có đường chéo đỏ cắt ngang từ góc trên bên trái sang góc dưới bên phải.\n\n- Biển e) có hình một người đi xe máy, dưới ghi chữ “Biển số R.404e”.\n- Biển f) có hình một người đi xe máy ở trên, một người đi xe đạp ở dưới, dưới ghi chữ “Biển số R.404f”.\n- Biển g) có hình một chiếc xe máy kéo, dưới ghi chữ “Biển số R.404g”.\n- Biển h) có hình một chiếc xe máy kéo với hai người ngồi, dưới ghi chữ “Biển số R.404h”.\n- Biển k) có hình một chiếc xe máy kéo với hai người ngồi, dưới ghi chữ “Biển số R.404k”.\n\nTất cả các biển đều có đường chéo đỏ cắt ngang.",
+  "generated_tokens": 219,
+  "size": [
+    275,
+    210
+  ],
+  "elapsed_seconds": 16.19672680000076,
+  "peak_vram_bytes": 7387639808,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

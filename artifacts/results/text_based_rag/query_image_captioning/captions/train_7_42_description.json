@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:d67d709f918bd707fd2906d3dde799ca742621c409efa909004c334227cd2582",
+  "filename": "train_7_42.jpg",
+  "description": "- Biển hình tròn, viền đỏ, nền trắng, có chữ số \"50\" màu đen ở giữa.\n- Biển hình tròn, viền đỏ, nền trắng, có hình hai ô tô (một ô tô nhỏ và một ô tô lớn) bên trong.\n- Biển hình tròn, viền đỏ, nền trắng, có hình một vòng tròn chéo qua một hình tròn nhỏ bên trong.\n- Biển hình chữ nhật, nền trắng, có dòng chữ \"300m\" và hai mũi tên chỉ lên trên.\n- Biển hình tam giác, nền vàng, viền đen, có hình một chiếc xe tải đang đổ dốc.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 144,
+  "size": [
+    800,
+    496
+  ],
+  "elapsed_seconds": 10.587906499997189,
+  "peak_vram_bytes": 7465717248,
+  "peak_reserved_bytes": 7610564608,
+  "gpu_free_bytes": 8258584576
+}

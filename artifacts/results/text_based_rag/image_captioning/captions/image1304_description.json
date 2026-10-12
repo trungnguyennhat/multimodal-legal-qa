@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d0c25e225457dddd9a131f86a051166ca02f6e5a6dd250921032c5e704f56df7",
+  "filename": "image1304.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Bảng có 2 dòng và 4 cột.  \nDòng đầu tiên:  \n- Cột 1: \"Loại đường\"  \n- Cột 2: \"Đường đôi ngoài đô thị\"  \n- Cột 3: \"Đường thông thường\"  \n- Cột 4: \"Đường đô thị\"  \n\nDòng thứ hai:  \n- Cột 1: \"z(mm)\"  \n- Cột 2: \"80\"  \n- Cột 3: \"80\"  \n- Cột 4: \"40\"",
+  "generated_tokens": 122,
+  "size": [
+    433,
+    51
+  ],
+  "elapsed_seconds": 9.755515700000615,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

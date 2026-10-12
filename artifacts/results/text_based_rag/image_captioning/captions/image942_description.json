@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:75231e4c5a2b542331920b06f000ffbaaf434a17488e692ed90e3a0293d6d3a3",
+  "filename": "image942.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác màu đỏ, bên trong có hình chữ nhật màu vàng, chứa hai mũi tên màu đen hướng ngược chiều nhau (một mũi tên sang trái, một mũi tên sang phải). Có các kích thước được ghi chú như: 0,48x, 1,50x, 0,71x, 2x, 2x, 9,5x, 4x, 0,8x, và góc 60°.\n\nHình 2: Một hình chữ nhật được chia thành lưới ô vuông, bên trong có hai mũi tên màu đen hướng ngược chiều nhau (một mũi tên sang trái, một mũi tên sang phải). Có các kích thước được ghi chú như: 1,5x, 0,6x, 3,8x, 4x, 3,8x, 1,2x, và 0,8x.",
+  "generated_tokens": 204,
+  "size": [
+    425,
+    154
+  ],
+  "elapsed_seconds": 14.173409999999876,
+  "peak_vram_bytes": 7391884800,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

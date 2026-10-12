@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4e937862cafa1c0751f1033ac2cd470f98d7341ce726e3178cbd05a5047b76f5",
+  "filename": "image692.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị một hình tròn màu đỏ, bên trong có một hình chữ nhật màu trắng nằm ngang. Hình tròn được bao quanh bởi lưới ô vuông, và có các chú thích kích thước: đường kính hình tròn là 3.6x, chiều rộng hình chữ nhật là 1.4x, và chiều cao hình chữ nhật là 1.0x. Các kích thước này được ghi chú bằng chữ số và ký hiệu \"x\".",
+  "generated_tokens": 103,
+  "size": [
+    117,
+    121
+  ],
+  "elapsed_seconds": 7.45014470000001,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

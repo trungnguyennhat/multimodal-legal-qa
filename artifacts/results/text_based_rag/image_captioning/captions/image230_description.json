@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1bd845d53e34c68f7d7b64709ec6e4de247a4e31af23739755e7f8cbc65732ae",
+  "filename": "image230.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo tam giác có viền đỏ, bên trong chia thành hai phần: phần trên màu vàng và phần dưới màu đen. Trong phần màu vàng, có chữ số \"10%\" được viết bằng chữ đen.",
+  "generated_tokens": 52,
+  "size": [
+    92,
+    81
+  ],
+  "elapsed_seconds": 4.071789800000261,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

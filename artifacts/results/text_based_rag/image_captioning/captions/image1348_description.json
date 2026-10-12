@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d0e715b9f236cfd95ac5120f2e1bc070c2e7d23bdac283790ed908ae7dcc9bda",
+  "filename": "image1348.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình chữ nhật dài, đầu bên phải nhọn như mũi tên. Trong hình có chữ \"P + METRO\" màu trắng trên nền xanh. Có các kích thước được ghi xung quanh hình.\n\nHình 2: Một hình vuông chứa ba mũi tên đen hướng lên trên, trong đó mũi tên bên phải hơi nghiêng sang phải. Có các kích thước được ghi xung quanh hình.",
+  "generated_tokens": 96,
+  "size": [
+    433,
+    383
+  ],
+  "elapsed_seconds": 7.676838700000189,
+  "peak_vram_bytes": 7401794048,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

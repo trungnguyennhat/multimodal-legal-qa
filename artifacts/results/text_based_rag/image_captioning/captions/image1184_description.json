@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:be34849ebae867b816da85c181fd8e36697bc6e740dd2e9171f60aebe2fb685d",
+  "filename": "image1184.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có nền màu xanh, bên trong có chữ trắng. Chữ được chia thành ba dòng: dòng trên là \"ĐỊA PHÂN\", dòng giữa là \"HÀ NAM\", dòng dưới là \"Km 215+700\". Xung quanh hình chữ nhật có các đường kẻ và kích thước được ghi chú bằng số và ký hiệu kỹ thuật.",
+  "generated_tokens": 86,
+  "size": [
+    216,
+    178
+  ],
+  "elapsed_seconds": 6.2547612999997,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

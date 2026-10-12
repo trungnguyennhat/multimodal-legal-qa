@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:f5f6cf2026450d832b2d3b822ed400bd680313bbc8b6d39e3619431a53e992e7",
+    "filename":  "image648.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh hiển thị một loạt các bản vẽ kỹ thuật dạng 2D, trình bày các hình dạng khác nhau của các chi tiết kim loại hoặc cấu trúc dạng cọc, cột, và khung. Mỗi hình đều có các kích thước được ghi rõ bằng số đo (đơn vị cm) và các chú thích kỹ thuật.\n\nCác hình dạng bao gồm:\n\n- Hình dạng cọc hình tam giác hoặc hình nón, có các kích thước chiều cao và đường kính được ghi rõ.\n- Hình dạng cọc có đầu cong hoặc uốn, với các kích thước chiều dài và độ cong được đánh dấu.\n- Hình dạng cọc có đầu hình chữ Y hoặc hình chữ V, với các nhánh và kích thước chi tiết.\n- Một số hình có phần thân cọc với các đoạn uốn hoặc góc, kèm theo các kích thước chiều cao và chiều rộng.\n- Một số hình có phần đầu được thiết kế với các cạnh sắc, góc nhọn hoặc hình tam giác.\n\nCác số đo được ghi rõ trên mỗi hình, ví dụ: 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 400, 410, 420, 430, 440, 450, 460, 470, 480, 490, 500, 510, 520, 530, 540, 550, 560, 570, 580, 590, 600, 61",
+    "generated_tokens":  512,
+    "size":  [
+                 320,
+                 222
+             ],
+    "elapsed_seconds":  36.03642289999999,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

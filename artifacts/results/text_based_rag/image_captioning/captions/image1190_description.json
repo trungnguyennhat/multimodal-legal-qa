@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:9ffc841a4458e997106f5ebbe0c64a856a2f1f00271a5af09f517f723eddd92d",
+  "filename": "image1190.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có nền màu xanh, bên trong có dòng chữ “VINH HA LONG BAY” viết hoa, màu trắng, được căn giữa. Xung quanh hình chữ nhật có các đường kẻ và kích thước được ghi chú bằng số đo. Dưới hình chữ nhật có dòng chữ nhỏ hơn, không rõ nội dung.",
+  "generated_tokens": 73,
+  "size": [
+    266,
+    219
+  ],
+  "elapsed_seconds": 5.243609399999514,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

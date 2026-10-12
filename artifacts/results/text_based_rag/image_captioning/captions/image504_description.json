@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:333ab938c3ffd858234a271d3ebdc3c656e480adf5e0febb785b38e2f7b4c8c4",
+  "filename": "image504.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một hình chữ nhật lớn màu xám, bên trong có ba hình chữ nhật nhỏ màu vàng nằm ngang, cách đều nhau. Trên cùng của hình chữ nhật lớn có hai đoạn thẳng ngang với các số 100 và 200 được ghi bên trên. Bên trái hình chữ nhật lớn có một hình chữ nhật nhỏ màu xám với các số 10 và 10 được ghi dọc theo hai cạnh. Dưới hình chữ nhật lớn có dòng chữ “Đơn vị: cm”.",
+  "generated_tokens": 115,
+  "size": [
+    204,
+    120
+  ],
+  "elapsed_seconds": 8.633704200001375,
+  "peak_vram_bytes": 7388592640,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

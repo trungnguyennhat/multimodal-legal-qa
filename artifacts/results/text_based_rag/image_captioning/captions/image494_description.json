@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:43b8bcfc5a29897d75f471c4b658ed35d46f2b460250e40ee0ca53c91be641f6",
+  "filename": "image494.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai phần:\n\na) Biển số S.G.12a:  \n- Nền màu xanh dương.  \n- Có ba mũi tên trắng: hai mũi tên thẳng đứng hướng lên, một mũi tên cong hướng sang phải (từ giữa sang phải).  \n\nb) Biển số S.G.12b:  \n- Nền màu trắng.  \n- Có ba hình chữ T đen đứng thẳng, hướng lên.",
+  "generated_tokens": 93,
+  "size": [
+    233,
+    131
+  ],
+  "elapsed_seconds": 6.730894899999839,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

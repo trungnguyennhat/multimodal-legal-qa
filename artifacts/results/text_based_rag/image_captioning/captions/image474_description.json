@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:935070422e87dc97e283f59e7913c9bc343e917f01ac98c723d138f45ce18f17",
+  "filename": "image474.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba hàng dọc, mỗi hàng có một hình khối đen và một chữ số \"00\" kèm ký hiệu \"t\" ở bên phải.\n\n- Hàng trên cùng: hình khối đen có dạng góc cạnh, như một phần của hình chữ nhật bị cắt ở góc trên bên trái, cạnh trên và bên trái không song song.\n- Hàng giữa: hình khối đen là một hình chữ nhật dài, nằm ngang, có một đường kẻ ngang ngắn ở giữa.\n- Hàng dưới cùng: hình khối đen là một hình chữ nhật dài, nằm ngang, được chia thành hai phần bằng một đường kẻ ngang ngắn ở giữa, phần trên ngắn hơn phần dưới.\n\nBên phải mỗi hình khối đều có chữ \"00\" và ký hiệu \"t\" ở trên chữ \"00\".",
+  "generated_tokens": 168,
+  "size": [
+    119,
+    117
+  ],
+  "elapsed_seconds": 12.553383800004667,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

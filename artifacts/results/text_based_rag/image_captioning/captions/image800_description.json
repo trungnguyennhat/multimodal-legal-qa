@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:4a4d23ca884ccec00e638eb955867c2fe8038fecae95af81a05b4b5108fb3937",
+    "filename":  "image800.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n1. Một biểu tượng hình tròn màu đỏ, bên trong có hai mũi tên: một mũi tên màu đen hướng xuống và một mũi tên màu đỏ hướng lên, nằm đối xứng dọc theo trung tâm hình tròn.\n\n2. Một hình chữ nhật lưới ô vuông, bên trong có hai mũi tên: một mũi tên màu đen hướng xuống và một mũi tên màu đỏ hướng lên, nằm đối xứng dọc theo trung tâm hình chữ nhật. Xung quanh hình chữ nhật có các chú thích kích thước: chiều cao là 1.432, chiều rộng là 1.02, và các khoảng cách nhỏ hơn như 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52,",
+    "generated_tokens":  512,
+    "size":  [
+                 253,
+                 100
+             ],
+    "elapsed_seconds":  35.21004660000017,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:834ef88022ef27d64af77fd7e0ac87d908b5dca63150a3cde443d87f15fc48f0",
+  "filename": "image238.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông dạng tam giác có viền đỏ, nền vàng, và hình ảnh đen bên trong.\n\n- Biển a) có ký hiệu: “Biển số W.223a”\n- Biển b) có ký hiệu: “Biển số W.223b”\n\nHình ảnh bên trong cả hai biển đều là một hình vẽ đen thể hiện một đoạn đường dốc xuống hoặc một đoạn đường có độ dốc lớn.",
+  "generated_tokens": 101,
+  "size": [
+    250,
+    74
+  ],
+  "elapsed_seconds": 7.665182800003095,
+  "peak_vram_bytes": 7393501696,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

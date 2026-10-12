@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:46631f4c82ecd3c5b1a3a2198e1011e4cad151e9296ede717c0ae6eee2ea8299",
+  "filename": "image342.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm 4 biển báo giao thông được sắp xếp ngang hàng, mỗi biển đều có nền trắng và có dòng chữ \"ZONE\" ở phía trên. Mỗi biển có một hình dạng và ký hiệu khác nhau, được phủ lên bởi các đường chéo màu đen.\n\n- Biển a: Hình tròn, bên trong có hình tròn nhỏ màu xanh dương, bên trong hình tròn nhỏ đó có dấu gạch chéo màu đỏ. Dưới biển có ghi \"6:00 - 18:00\".\n- Biển b: Hình tròn, bên trong có hình tròn nhỏ màu xanh dương, bên trong hình tròn nhỏ đó có dấu gạch chéo màu đỏ. Dưới biển có ghi \"6:00 - 18:00\".\n- Biển c: Hình chữ nhật, bên trong có hình chữ \"P\" màu xanh dương.\n- Biển d: Hình tròn, bên trong có số \"50\" màu đen trên nền trắng, được bao quanh bởi vòng tròn màu đỏ và có dấu gạch chéo màu đỏ.\n\nDưới mỗi biển có ghi mã biển tương ứng: a) Biển số R.E.10a, b) Biển số R.E.10b, c) Biển số R.E.10c, d) Biển số R.E.10d.",
+  "generated_tokens": 298,
+  "size": [
+    273,
+    101
+  ],
+  "elapsed_seconds": 21.160152000004018,
+  "peak_vram_bytes": 7388212736,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:954bba5e2628fdc4d679121811af6b6f4a85e915c26b0d78db84f350f675ca39",
+  "filename": "train_2_33.jpg",
+  "description": "Biển có hình chữ nhật, nền màu xanh, chia thành ba cột dọc.\n\n- Cột bên trái: hình một chiếc xe ô tô nhìn từ trước.\n- Cột giữa: hình một chiếc xe ô tô nhìn từ trước, phía dưới là hình một người đi xe máy.\n- Cột bên phải: phía trên là hình một người đi xe máy, phía dưới là hình một chiếc xe đạp.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 89,
+  "size": [
+    1500,
+    1000
+  ],
+  "elapsed_seconds": 7.539857799994934,
+  "peak_vram_bytes": 7659827712,
+  "peak_reserved_bytes": 7746879488,
+  "gpu_free_bytes": 8122269696
+}

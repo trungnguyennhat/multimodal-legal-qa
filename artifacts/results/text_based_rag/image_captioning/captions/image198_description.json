@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:f24d5ce415b00542d83c153bacaf04855d75218305d04d304881ae576f042811",
+  "filename": "image198.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh hiển thị năm biển báo giao thông dạng tam giác có viền đỏ, nền vàng, với các ký hiệu đen ở giữa:\n\n- Biển số W.205a: Ký hiệu là dấu cộng (+)\n- Biển số W.205b: Ký hiệu là dấu trừ ngang (–)\n- Biển số W.205c: Ký hiệu là dấu trừ dọc (|)\n- Biển số W.205d: Ký hiệu là chữ T\n- Biển số W.205e: Ký hiệu là chữ Y\n\nDưới mỗi hình có ghi biển số tương ứng.",
+  "generated_tokens": 141,
+  "size": [
+    356,
+    77
+  ],
+  "elapsed_seconds": 10.590155999998387,
+  "peak_vram_bytes": 7392823808,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

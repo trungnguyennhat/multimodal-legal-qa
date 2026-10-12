@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:80d0c6ad089103ea835bba174bbfaca0511c9d9dc86ce738f76c8755e3e46517",
+  "filename": "image468.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba hình chữ nhật nằm ngang, được đánh số a, b, c.\n\n- Hình a: Chữ nhật chứa một mũi tên chỉ sang trái, bên trên mũi tên có chữ “10 m”.\n- Hình b: Chữ nhật chứa một mũi tên chỉ sang trái và một mũi tên chỉ sang phải, hai mũi tên đối xứng nhau, giữa chúng có dấu “|” chia thành hai phần. Trên mỗi phần có chữ “5 m”.\n- Hình c: Chữ nhật chứa một mũi tên chỉ sang phải, bên trên mũi tên có chữ “10 m”.\n\nDưới mỗi hình có ghi chú:\n\n- a) Biển số S.H.3a\n- b) Biển số S.H.3b\n- c) Biển số S.H.3c",
+  "generated_tokens": 173,
+  "size": [
+    253,
+    50
+  ],
+  "elapsed_seconds": 12.332354199999827,
+  "peak_vram_bytes": 7395100672,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

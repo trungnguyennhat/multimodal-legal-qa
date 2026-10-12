@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:571ec0fa3d607bcc35a3b5fc78e4ffe6c5d0854d59477567c860e1c2f0b3ea16",
+  "filename": "image064.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông hình chữ nhật đứng, nền màu xanh lá cây.\n\nBiển a (IE 467a):\n- Hình ảnh: Một đoạn đường với vạch kẻ đường, có hai mũi tên trắng chỉ hướng lên trên và một mũi tên vàng chỉ sang phải.\n- Chữ: Dưới hình vẽ có dòng chữ “NHẬP LÀN” và dòng chữ nhỏ hơn “MERGE LANE”.\n\nBiển b (IE 467b):\n- Hình ảnh: Một đoạn đường với vạch kẻ đường, có hai mũi tên trắng chỉ hướng lên trên và một mũi tên vàng chỉ sang phải.\n- Chữ: Dưới hình vẽ có dòng chữ “NHẬP LÀN” và dòng chữ nhỏ hơn “MERGE LANE”. Dưới cùng có dòng chữ “250 m”.\n\nCả hai biển đều có viền trắng và được đánh số a và b ở dưới cùng.",
+  "generated_tokens": 199,
+  "size": [
+    327,
+    218
+  ],
+  "elapsed_seconds": 14.748187899996992,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

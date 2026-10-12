@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8cb0c62918f5ec2d1c6e07c24c0edda41bc2133c9e23c3309693d8c6b1dea6f8",
+  "filename": "image398.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm một hình chữ nhật đứng, có viền xanh dương, bên trong là một hình chữ nhật trắng. Trong hình chữ nhật trắng, có hai dòng chữ in hoa, màu đen:\n\n- Dòng trên: \"C.TRÌNH\"\n- Dòng dưới: \"KSTTX\"\n\nChữ được căn giữa trong hình chữ nhật trắng.",
+  "generated_tokens": 77,
+  "size": [
+    100,
+    132
+  ],
+  "elapsed_seconds": 5.647613500004809,
+  "peak_vram_bytes": 7387639808,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

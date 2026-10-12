@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8d4abed8095dd846c4fd58d0e7866b836c8b549a924bfeb81f1763f0d10482f4",
+  "filename": "image1394.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền đen, nền màu vàng, bên trong có chữ \"CT.21\" màu đen, được viết in hoa, nằm ở giữa hình.",
+  "generated_tokens": 38,
+  "size": [
+    76,
+    37
+  ],
+  "elapsed_seconds": 3.345531399999345,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7474249728,
+  "gpu_free_bytes": 8394899456,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,36 @@
+{
+    "image_id":  "sha256:5be0a3c00e51100f5432270a84138143bc6e84f4b7c4c71dfe667f28342b7088",
+    "filename":  "train_4_9.jpg",
+    "description":  "Có nhiều biển báo hình chữ nhật, màu xanh dương, với các mũi tên chỉ hướng và chữ viết. Một số biển có hình mũi tên chỉ lên, chỉ sang phải, hoặc chỉ sang trái. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang phải. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang trái. Một biển có hình mũi tên chỉ sang phải và một mũi tên chỉ sang trái. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang phải. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang trái. Một biển có hình mũi tên chỉ sang phải và một mũi tên chỉ sang trái. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang phải. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang trái. Một biển có hình mũi tên chỉ sang phải và một mũi tên chỉ sang trái. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang phải. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang trái. Một biển có hình mũi tên chỉ sang phải và một mũi tên chỉ sang trái. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang phải. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang trái. Một biển có hình mũi tên chỉ sang phải và một mũi tên chỉ sang trái. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang phải. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang trái. Một biển có hình mũi tên chỉ sang phải và một mũi tên chỉ sang trái. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang phải. Một biển có hình hai mũi tên chỉ lên và một mũi tên chỉ sang trái. Một",
+    "settings":  {
+                     "model":  "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+                     "revision":  "10d842936325905934ea24e64325d774693f166e",
+                     "prompt":  "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+                     "min_pixels":  131072,
+                     "max_pixels":  786432,
+                     "max_new_tokens":  384,
+                     "crop":  false,
+                     "do_sample":  false,
+                     "dtype":  "bfloat16",
+                     "attention":  "sdpa",
+                     "libraries":  {
+                                       "torch":  "2.7.1+cu128",
+                                       "transformers":  "4.57.1",
+                                       "bitsandbytes":  "0.49.0",
+                                       "Pillow":  "12.3.0"
+                                   }
+                 },
+    "status":  "COMPLETED",
+    "token_limit_reached":  true,
+    "generated_tokens":  384,
+    "size":  [
+                 2000,
+                 1334
+             ],
+    "elapsed_seconds":  30.254214699998556,
+    "peak_vram_bytes":  7659827712,
+    "peak_reserved_bytes":  7746879488,
+    "gpu_free_bytes":  8122269696,
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

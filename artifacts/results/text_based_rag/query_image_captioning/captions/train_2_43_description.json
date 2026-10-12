@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:ebe5609f1c3006ee93ec173d633ffb29ed1c8258655f8d3e098d341be69c3746",
+  "filename": "train_2_43.jpg",
+  "description": "Hình ảnh gồm hai biển báo giao thông:\n\n- Biển bên trái: Có hai hình tròn đỏ viền trắng, mỗi hình chứa một biểu tượng xe tải và xe khách bị gạch chéo. Dưới hai hình tròn là biển chữ nhật nền xanh, có dòng chữ và thời gian “6:00 - 22:00”.\n\n- Biển bên phải: Là một hình tròn đỏ viền trắng, chứa hai biểu tượng xe tải và xe khách bị gạch chéo. Dưới hình tròn là biển chữ nhật nền trắng, ghi thời gian “6:00 - 22:00”, và dưới đó là biển chữ nhật nền xanh, có dòng chữ dài.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 156,
+  "size": [
+    1200,
+    675
+  ],
+  "elapsed_seconds": 12.143797999997332,
+  "peak_vram_bytes": 7655636992,
+  "peak_reserved_bytes": 7746879488,
+  "gpu_free_bytes": 8122269696
+}

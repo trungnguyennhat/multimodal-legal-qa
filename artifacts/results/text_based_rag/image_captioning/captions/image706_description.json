@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a65cf90603a02400029d8d67e8553dca8d77bad8b9254d3957304ec2126749bc",
+  "filename": "image706.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình tròn đỏ có đường chéo màu đỏ cắt ngang từ góc trên bên trái sang góc dưới bên phải. Bên trong hình tròn là hình ảnh một chiếc xe tải màu đen, trên thùng xe có chữ số \"25t\" màu xanh. Xung quanh hình tròn có các kích thước được ghi chú: chiều cao tổng cộng là 10.4, chiều rộng tổng cộng là 10.4, và chiều cao từ đỉnh đến đường chéo là 3.2, chiều rộng từ cạnh đến đường chéo là 3.2.\n\nHình 2: Một hình chữ nhật được chia thành lưới ô vuông. Trong hình chữ nhật có hình ảnh một chiếc xe tải màu đen, trên thùng xe có chữ số \"25t\" màu xanh. Các kích thước được ghi chú: chiều cao là 4.0, chiều rộng là 6.0, và chiều cao từ đỉnh đến đường chéo là 3.2, chiều rộng từ cạnh đến đường chéo là 3.2.",
+  "generated_tokens": 235,
+  "size": [
+    254,
+    98
+  ],
+  "elapsed_seconds": 17.52101700000003,
+  "peak_vram_bytes": 7397206016,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:0b3e74a3c1522e724ebf01f3d65a774764491b37654619b5f52e22dc44a4a3eb",
+    "filename":  "image906.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình 1: Một tam giác cân màu đỏ, bên trong có hình tam giác nhỏ màu vàng, bên trong hình tam giác vàng có hình một chiếc xe tải màu đen. Có các ký hiệu số và chữ cái như: 0.71z, 1.43z, 0.6z, 2z, 2z, 4z, 10z, 60°.\n\nHình 2: Một hình chữ nhật có lưới ô vuông, bên trong có hình một chiếc xe tải màu đen. Có các ký hiệu số và chữ cái như: 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.4z, 1.4z, 0.8z, 0.8z, 1.2z, 1.2z, 1.",
+    "generated_tokens":  512,
+    "size":  [
+                 431,
+                 178
+             ],
+    "elapsed_seconds":  35.22799989999976,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

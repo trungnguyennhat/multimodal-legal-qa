@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:580bd1a57576d5a4ef81f0226560dd425ba080ab4accbb9862a78e978c46d957",
+  "filename": "image366.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm 4 biển báo giao thông dạng hình chữ nhật, nền màu xanh, chữ màu trắng, được đánh số a, b, c, d.\n\n- Biển a (1.4.14a): Biển hình chữ nhật, có hình mũi tên Y hướng lên trên, chia thành hai hướng. Ghi “NAM ĐỊNH 30 km” và “NINH BÌNH 34 km”.\n\n- Biển b (1.4.14b): Biển hình chữ nhật, có hai mũi tên hướng lên trên và sang phải. Ghi “NAM ĐỊNH 30 km”, “CHÈM 8 km”, “VÂN ĐIỆN 20 km”.\n\n- Biển c (1.4.14c): Biển hình chữ nhật, có mũi tên hướng lên trên và mũi tên hướng sang phải. Ghi “BẮC NINH 25 km”, “BẮC GIANG 48 km”, “LẠNG SƠN 25 km”, “HẢI DƯƠNG 51 km”, “HẢI PHÒNG 96 km”.\n\n- Biển d (1.4.14d): Biển hình chữ nhật, có mũi tên hướng lên trên, mũi tên hướng sang trái và mũi tên hướng sang phải. Ghi “ĐỒNG MÔ 32 km”, “LẠNG SƠN 96 km”, “HẢI DƯƠNG 51 km”, “HẢI PHÒNG 96 km”.",
+  "generated_tokens": 342,
+  "size": [
+    240,
+    184
+  ],
+  "elapsed_seconds": 25.20488390000537,
+  "peak_vram_bytes": 7393954816,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

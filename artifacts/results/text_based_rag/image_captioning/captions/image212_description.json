@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1a6e250542a90f137df04d1a11a3db529c305813c09705860f59eeb0931d60ae",
+  "filename": "image212.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông dạng tam giác cân, có viền đỏ, nền vàng. Trong tam giác, có hình vẽ một hàng rào chắn bằng các thanh ngang song song, được vẽ bằng nét đen.",
+  "generated_tokens": 52,
+  "size": [
+    93,
+    81
+  ],
+  "elapsed_seconds": 4.044382400003087,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7470055424,
+  "gpu_free_bytes": 8399093760,
+  "status": "COMPLETED"
+}

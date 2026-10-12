@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:0ff7472ca05c8f8e3529207f3e1d58f4c6ed112c1911d8b290cd9134b13ac24b",
+    "filename":  "image962.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm ba phần:\n\n1. Một hình dạng giống chữ X được tạo bởi bốn đường cong giao nhau, có màu đỏ.\n\n2. Một hình dạng giống chữ X được vẽ trên lưới ô vuông, có các kích thước được ghi chú bằng số và ký hiệu kỹ thuật (ví dụ: 2.4x, 0.8x, 9.5x, 12.2, 19.8, 19.2, 11.2, 11.2, 12.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 11.2, 1",
+    "generated_tokens":  512,
+    "size":  [
+                 430,
+                 217
+             ],
+    "elapsed_seconds":  35.33697399999983,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

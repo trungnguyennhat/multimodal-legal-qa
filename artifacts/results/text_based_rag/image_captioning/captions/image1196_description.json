@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b491c29905a5b325b3cee1bcc3aee4d1c14c6a795e2a03138cbb1ed3bd7f79e9",
+  "filename": "image1196.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần minh họa:\n\n1. **Phần bên trái**: Một hình chữ nhật đứng có chiều cao 16x và chiều rộng 10x. Bên trong hình chữ nhật có một hình chữ nhật nhỏ hơn, chứa hình ảnh hai người đi bộ (một người cầm gậy, một người đi cạnh). Các kích thước được ghi chú: chiều cao hình chữ nhật nhỏ là 10x, chiều rộng là 8x; chiều cao hình ảnh hai người là 8x, chiều rộng là 6x. Có các đường kẻ chia hình thành các phần nhỏ hơn.\n\n2. **Phần bên phải**: Một hình chữ nhật được chia thành lưới ô vuông. Trong đó có hình ảnh hai người đi bộ (một người cầm gậy, một người đi cạnh). Các kích thước được ghi chú: chiều rộng hình chữ nhật là 8x, chiều cao là 10x. Các kích thước nhỏ hơn được ghi chú: chiều cao hình ảnh hai người là 8x, chiều rộng là 6x. Có các đường kẻ chia hình thành các phần nhỏ hơn.\n\nKhông có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 257,
+  "size": [
+    355,
+    158
+  ],
+  "elapsed_seconds": 18.422791099999813,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

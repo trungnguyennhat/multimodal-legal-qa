@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:7c65df485036b0989911c7bb04ba247e68ac63cc8695082fd613523065411f7f",
+  "filename": "image756.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình tròn màu đỏ có đường gạch chéo màu đỏ, bên trong là một mũi tên màu đen chỉ sang phải, nằm trong một hình chữ nhật nhỏ màu đen.\n\nHình 2: Một hình vẽ trên lưới ô vuông, gồm một đoạn thẳng đứng và một đoạn ngang tạo góc chữ L, phía trên đoạn ngang có một mũi tên chỉ sang phải. Có các chú thích kích thước xung quanh hình vẽ.",
+  "generated_tokens": 98,
+  "size": [
+    315,
+    107
+  ],
+  "elapsed_seconds": 6.967555299999958,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

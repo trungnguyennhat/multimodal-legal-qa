@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:49fc7820e642ae2747b32379b15b1984a28e053fc79d0ce2c655ca3827452974",
+    "filename":  "image1020.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n- Phần bên trái: Một hình tròn có đường kính 10.2x, bên trong có một biểu tượng giao lộ với ba mũi tên trắng hướng lên, sang phải và sang dưới. Có các kích thước ghi chú: chiều cao từ trên xuống dưới là 10.2x, chiều rộng từ trái sang phải là 4x và 4.8x.\n\n- Phần bên phải: Một hình chữ nhật lưới ô vuông, bên trong có biểu tượng giao lộ tương tự nhưng được chia thành các phần với các kích thước ghi chú bằng chữ số và ký hiệu x. Có các kích thước ghi chú như: 2.4x, 1.2x, 0.6x, 0.8x, 0.12x, 0.1x, 0.2x, 0.4x, 0.6x, 0.8x, 1.2x, 1.6x, 2.2x, 2.4x, 2.6x, 3.2x, 4.2x, 4.8x, 6.4x, 8.4x, 9.6x, 10.2x, 12.4x, 14.4x, 16.4x, 18.4x, 20.4x, 22.4x, 24.4x, 26.4x, 28.4x, 30.4x, 32.4x, 34.4x, 36.4x, 38.4x, 40.4x, 42.4x, 44.4x, 46.4x, 48.4x, 50.4x, 52.4x, 54.4x, 56.4x, 58.4x, 60.4x, 62.4x, 64.4x, 66.4x, 68.4x, 70.4x, 72.4x, 74.4x, 76.4x, 78",
+    "generated_tokens":  512,
+    "size":  [
+                 421,
+                 199
+             ],
+    "elapsed_seconds":  35.13590589999967,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

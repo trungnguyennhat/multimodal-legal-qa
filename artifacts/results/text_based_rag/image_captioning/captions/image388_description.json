@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a61e46670d94d3d553be4c6bee7c31debcba98b94b76001bb96a74e2ab21b1bf",
+  "filename": "image388.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai hình chữ nhật có viền trắng, nền màu xanh dương, mỗi hình chứa một biểu tượng người đi bộ trên bậc thang.\n\n- Hình a) có nhãn “a) Biển số I.424a” dưới cùng. Biểu tượng là một người đi bộ đang bước lên bậc thang, hướng lên trên.\n- Hình b) có nhãn “b) Biển số I.424b” dưới cùng. Biểu tượng là một người đi bộ đang bước xuống bậc thang, hướng xuống dưới.\n\nCả hai hình đều có biểu tượng người đi bộ màu trắng, với các bậc thang cũng màu trắng, và được đặt trong khung hình chữ nhật có viền trắng.",
+  "generated_tokens": 153,
+  "size": [
+    204,
+    80
+  ],
+  "elapsed_seconds": 11.542816699999094,
+  "peak_vram_bytes": 7394237952,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

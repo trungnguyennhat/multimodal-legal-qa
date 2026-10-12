@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:51b783bf8672cb4686159bd2595b78d75d23aa63fb784f349749cbc92a703a24",
+  "filename": "image248.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba biển báo giao thông dạng tam giác có viền đỏ, nền vàng, và hình ảnh đen bên trong.\n\n- Biển a) có hình một vách núi hoặc đồi đang sụp đổ, có các mảnh đá rơi xuống.\n- Biển b) có hình một vách núi hoặc đồi đang sụp đổ, có các mảnh đá rơi xuống, nhưng hình ảnh được thiết kế khác so với biển a).\n- Biển c) có hình một chiếc xe đang va chạm với một vật thể, có các đường nét biểu thị sự va chạm hoặc hư hỏng.\n\nDưới mỗi hình có ghi chú chữ:\n\n- a) Biển số W.228a\n- b) Biển số W.228b\n- c) Biển số W.228c",
+  "generated_tokens": 176,
+  "size": [
+    301,
+    79
+  ],
+  "elapsed_seconds": 13.08426419999887,
+  "peak_vram_bytes": 7390458368,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

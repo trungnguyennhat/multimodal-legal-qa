@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:0f966d7b9d42c459fee0453d26b6862b2075f4cd9bb0d73f57644b001415dac1",
+    "filename":  "image846.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng và hình chữ Y màu đen ở giữa. Có các kích thước được ghi chú như: 0,71x, 1,84x, 1,16x, 0,43x, 1,34x, 0,3x, 1,34x, 1,34x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x, 0,76x, 1,12x, 1,12x,",
+    "generated_tokens":  512,
+    "size":  [
+                 421,
+                 163
+             ],
+    "elapsed_seconds":  40.634069099999806,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

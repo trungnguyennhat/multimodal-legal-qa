@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:502758f0cd056df6f42d662ab9c2212663f3c3d3ef10be83c53f16428f6d9f12",
+  "filename": "train_4_16.jpg",
+  "description": "Biển báo có hình chữ nhật, nền xanh lá cây, chữ trắng. Trên biển có:\n\n- Một hình chữ nhật nhỏ màu vàng chứa chữ \"CT.01\".\n- Một biểu tượng hình hai đường kẻ dọc màu trắng trên nền xanh.\n- Hai hình tròn: một hình tròn đỏ viền trắng chứa số \"80\", một hình tròn xanh chứa số \"60\".\n- Dưới cùng là ba dòng chữ, mỗi dòng kèm số km: \"CAM LÂM 2 km\", \"VĨNH HÀO 103 km\", \"PHAN THIẾT 204 km\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 137,
+  "size": [
+    960,
+    644
+  ],
+  "elapsed_seconds": 11.10845479999989,
+  "peak_vram_bytes": 7568945152,
+  "peak_reserved_bytes": 7669284864,
+  "gpu_free_bytes": 8199864320
+}

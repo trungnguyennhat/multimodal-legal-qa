@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:bb269fb0f636ffd47b42f72978215cab5767ee706cc7706337c5af8e221f4855",
+  "filename": "image632.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình chữ nhật đứng với các dải ngang màu đỏ và trắng xen kẽ. Trên cùng có ký hiệu chữ \"B\" chỉ chiều rộng. Bên trái có ký hiệu \"B\" chỉ chiều cao của mỗi dải màu.",
+  "generated_tokens": 51,
+  "size": [
+    104,
+    170
+  ],
+  "elapsed_seconds": 3.815663700006553,
+  "peak_vram_bytes": 7392270848,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

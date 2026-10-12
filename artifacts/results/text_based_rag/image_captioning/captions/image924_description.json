@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:fa76c645716b9b3607d468ccbee122bace25359d289395e26375aa134074d867",
+  "filename": "image924.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Một hình tam giác cân màu đỏ, bên trong có hình tam giác nhỏ màu vàng, và bên trong hình tam giác vàng có hình tam giác đen nhỏ hơn. Có các chú thích kích thước và góc 60°.\n\n2. Một hình tam giác cân màu đen trên nền lưới vuông, có các chú thích kích thước và tỷ lệ.",
+  "generated_tokens": 81,
+  "size": [
+    400,
+    166
+  ],
+  "elapsed_seconds": 5.980955300000005,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

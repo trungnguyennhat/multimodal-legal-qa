@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:2a3a65df13857fa8e52daad4165a96634f691c9cafc40749a1e5fadef9bbd9b9",
+  "filename": "image832.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng và hai thanh dọc đen song song nằm ngang, nằm trong tam giác. Có các kích thước được ghi chú xung quanh hình.\n\nHình 2: Một hình chữ nhật có lưới ô vuông, bên trong có hai thanh dọc đen song song nằm ngang, nằm trong hình chữ nhật. Có các kích thước được ghi chú xung quanh hình.",
+  "generated_tokens": 100,
+  "size": [
+    303,
+    116
+  ],
+  "elapsed_seconds": 7.079103799999984,
+  "peak_vram_bytes": 7397206016,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

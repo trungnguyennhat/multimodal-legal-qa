@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:f6f41da97ce4865f06224b7158302d5d73bf322165613b1df67af5447086e036",
+  "filename": "image666.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình 1: Hình chữ nhật đứng, trên cùng có nửa hình tròn màu đỏ, bên trong có chữ \"PHỦ LÕ\" và dưới đó là \"5 km\".\n\nHình 2: Hình chữ nhật đứng, trên cùng có hình chữ nhật nhỏ màu đỏ, bên trong có chữ \"QL 3\", dưới đó có các số đo chiều cao: 20, 12, 9, và tổng chiều cao là 40.",
+  "generated_tokens": 99,
+  "size": [
+    184,
+    205
+  ],
+  "elapsed_seconds": 6.985816400003387,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

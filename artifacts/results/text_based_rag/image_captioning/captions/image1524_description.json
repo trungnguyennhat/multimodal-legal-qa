@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:3709c8d694b7343ca5b58acafcb9babd25732192b523a7c2e6123cb6d400a502",
+  "filename": "image1524.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một hình chữ nhật có viền đen, bên trong có hình một cây lớn với tán lá tròn, bên dưới có hình một người đang đứng. Xung quanh hình chữ nhật có các ký hiệu chữ cái: A (dọc hai cạnh bên), B (cao từ trên xuống dưới của hình chữ nhật), C (cao từ trên xuống dưới của viền ngoài), D (cao từ trên xuống dưới của viền trong), E (cao từ trên xuống dưới của góc trên bên phải).",
+  "generated_tokens": 107,
+  "size": [
+    175,
+    165
+  ],
+  "elapsed_seconds": 8.400818799999797,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

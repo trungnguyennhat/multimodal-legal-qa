@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5ec351874c00a0d990be2fa63eec4f68860953158e26a3b3958cce0e6db8c2ed",
+  "filename": "image1188.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có nền màu xanh, bên trong có chữ “VỊNH HẠ LONG” màu trắng, được chia thành lưới ô vuông nhỏ. Xung quanh hình chữ nhật có các kích thước được ghi bằng số và ký hiệu “x” ở các cạnh. Dưới hình chữ nhật có dòng chữ nhỏ hơn, không rõ nội dung.",
+  "generated_tokens": 78,
+  "size": [
+    253,
+    190
+  ],
+  "elapsed_seconds": 5.732175900000584,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

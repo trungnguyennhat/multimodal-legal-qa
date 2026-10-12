@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:6bf72f5d42e0289367fb7e50c944e43176968a0bcc5597e1fde03a9e83b999c9",
+  "filename": "image726.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Biểu tượng cấm xe máy: Một hình tròn đỏ có đường gạch chéo màu đỏ, bên trong là hình ảnh một chiếc xe máy đen. Xung quanh có các kích thước được ghi chú bằng chữ số và ký hiệu \"x\", ví dụ: \"40x\", \"1,62x\", \"2,86x\", \"0,72x\", \"1,4x\", \"1,62x\", \"2,86x\", \"0,72x\".\n\n2. Hình ảnh xe máy trên lưới ô vuông: Một hình ảnh đen của chiếc xe máy được đặt trên một lưới ô vuông. Xung quanh có các kích thước được ghi chú bằng chữ số và ký hiệu \"x\", ví dụ: \"40x\", \"1,62x\", \"2,86x\", \"0,72x\", \"1,4x\", \"1,62x\", \"2,86x\", \"0,72x\".",
+  "generated_tokens": 226,
+  "size": [
+    278,
+    112
+  ],
+  "elapsed_seconds": 15.63882609999996,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

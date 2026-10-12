@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:3ddcf739165823aafa6107f7a5ac00cf1b65b588b1a2540ef78a2a0ddbb4aa27",
+    "filename":  "image786.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần minh họa với các kích thước được ghi chú:\n\n**Phần bên trái:**\n- Một hình chữ nhật lớn chia thành 4 ô vuông bằng nhau, nền màu xanh.\n- Mỗi ô chứa một biểu tượng phương tiện giao thông: ô trên cùng bên trái là xe hơi, ô trên cùng bên phải là xe máy, ô dưới cùng bên trái là xe đạp, ô dưới cùng bên phải là xe buýt.\n- Trên mỗi ô có một vòng tròn chứa số: ô trên cùng bên trái có số \"60\", ô trên cùng bên phải có số \"50\", ô dưới cùng bên phải có số \"50\".\n- Có các kích thước được ghi chú xung quanh hình: chiều cao tổng cộng 9.1a, chiều rộng tổng cộng 30a, chiều rộng mỗi ô là 17a, chiều cao mỗi ô là 9.1a.\n- Một đường chéo từ góc trên bên trái đến góc dưới bên phải đi qua các ô.\n- Các kích thước nhỏ hơn được ghi chú xung quanh các cạnh của hình, như 0.2a, 0.1a, 0.27a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a, 0.2a, 0.1a",
+    "generated_tokens":  512,
+    "size":  [
+                 341,
+                 158
+             ],
+    "elapsed_seconds":  35.13017159999981,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

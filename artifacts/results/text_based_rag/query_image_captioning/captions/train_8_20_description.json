@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:ec0c5b0ca26581280e2e1d82e66f682acfe1a600b8c2d6193923b923af4b7a3d",
+  "filename": "train_8_20.jpg",
+  "description": "Biển báo hình chữ nhật có đầu mũi tên chỉ sang trái. Bên trong biển có hai phần: phần bên trái là hình một bàn tay đang đỡ một hình chữ thập đỏ, và phần bên phải là hình chữ nhật nền xanh với dòng chữ \"TRẠM CẤP CỨU\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 64,
+  "size": [
+    228,
+    228
+  ],
+  "elapsed_seconds": 4.951278500004264,
+  "peak_vram_bytes": 7390975488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000
+}

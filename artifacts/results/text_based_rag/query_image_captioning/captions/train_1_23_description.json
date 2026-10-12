@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:30a8a938bf38a966d81e28ec2025aa73e6f0de8570f4681faa4e08ea7d7a2b75",
+  "filename": "train_1_23.jpg",
+  "description": "Biển báo có hình tam giác đều, viền đỏ, nền vàng, bên trong có hình dấu cộng đen ở giữa.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 27,
+  "size": [
+    268,
+    268
+  ],
+  "elapsed_seconds": 2.2053490999969654,
+  "peak_vram_bytes": 7390975488,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912
+}

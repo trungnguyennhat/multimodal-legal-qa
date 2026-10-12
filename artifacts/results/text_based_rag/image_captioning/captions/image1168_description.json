@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5efd9d6802e668e716ee8aa52828770d3063bc03a10d62e26efbde40302818a2",
+  "filename": "image1168.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật màu xanh, chia thành hai phần ngang. Phần trên có ba dòng chữ trắng: \"BẮC NINH 25 km\", \"BẮC GIANG 40 km\", \"LẠNG SƠN 95 km\", kèm mũi tên trắng chỉ lên trên. Phần dưới có hai dòng chữ trắng: \"HẢI DƯƠNG 51 km\", \"HẢI PHÒNG 98 km\", kèm mũi tên trắng chỉ lên trên và sang phải. Xung quanh hình chữ nhật có các kích thước được ghi bằng chữ số và ký hiệu đo lường.",
+  "generated_tokens": 136,
+  "size": [
+    343,
+    190
+  ],
+  "elapsed_seconds": 9.662308299999495,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

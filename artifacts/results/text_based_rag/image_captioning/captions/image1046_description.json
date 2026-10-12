@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:0cf931ad20bf272f3d2aa5d30c44678d621f55e73a3dbb9ba6877f9a8ca8274a",
+  "filename": "image1046.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần minh họa:\n\n- Phần bên trái: Một hình chữ nhật màu xanh, chia thành hai phần dọc. Mỗi phần chứa hình ảnh một chiếc xe điện (xe golf) màu trắng, có hai người ngồi trên xe. Có các kích thước được ghi chú bằng chữ số và ký hiệu \"z\" (ví dụ: 0.1z, 4.5z, 6z, 10z, 12z, 0.2z).\n\n- Phần bên phải: Một hình chữ nhật chia thành lưới ô vuông. Trong đó có hai hình đen (silhouette) của xe điện (xe golf) và một chiếc xe tải nhỏ, xếp chồng lên nhau. Có các kích thước được ghi chú bằng chữ số và ký hiệu \"z\" (ví dụ: 4z, 8z, 1z, 5.2z, 0.7z, 0.6z, 0.7z, 4z, 8z).",
+  "generated_tokens": 222,
+  "size": [
+    419,
+    181
+  ],
+  "elapsed_seconds": 15.46609989999979,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8b8b43f8b19efa1392ef6106879616355ee65460de0f687c2e2a8e14529bdf63",
+  "filename": "image174.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một vòng tròn có viền xanh, bên trong là số \"50\" màu đen, được gạch chéo bởi một đường gạch chéo màu đen từ góc trên bên trái sang góc dưới bên phải.",
+  "generated_tokens": 51,
+  "size": [
+    84,
+    83
+  ],
+  "elapsed_seconds": 3.881376299999829,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7470055424,
+  "gpu_free_bytes": 8399093760,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:bfad144d0c5a0858c0dc938e806e3f2049c77a80b20f709653135baf1ed3d19a",
+  "filename": "image1502.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh là một biển báo giao thông hình mũi tên chỉ hướng, nền màu xanh lá cây, viền trắng. Trên biển có dòng chữ “SÂN BAY LONG THÀNH” màu trắng, in hoa, được chia thành hai dòng. Bên trái có biểu tượng máy bay màu đen trong khung hình vuông. Phía bên phải có mũi tên chỉ hướng màu trắng, góc cong với các góc được ghi số đo 120° và 25°, kèm chiều dài cạnh 85. Biển có các kích thước được ghi chú: chiều dài tổng L, chiều rộng W, và các khoảng cách k1, a, k.",
+  "generated_tokens": 145,
+  "size": [
+    344,
+    165
+  ],
+  "elapsed_seconds": 11.104580999999598,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

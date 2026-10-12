@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:3a9af33bf43cea216c966d85f03c83a0e7dfa4416ab52e86cc89feb9156e4a7b",
+  "filename": "image130.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình tròn có viền đỏ, bên trong là nền trắng. Trong hình tròn có chữ số \"3,5 m\" được viết bằng chữ đen. Trên và dưới chữ số có hai tam giác đen chỉ xuống và chỉ lên, tạo thành hình dạng như một dấu X.",
+  "generated_tokens": 61,
+  "size": [
+    84,
+    83
+  ],
+  "elapsed_seconds": 4.773873500002082,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5d3acfb5ecf049e857a6bc08845e849fb23973a523ccce3687797997b4074c6a",
+  "filename": "image1138.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một hình chữ nhật lớn được chia thành lưới ô vuông nhỏ. Bên trong hình chữ nhật lớn có một hình chữ nhật nhỏ màu đỏ nằm ở vị trí trung tâm, được bao quanh bởi các ô màu xanh lam. Các cạnh của hình chữ nhật lớn và các phần bên trong được ghi chú bằng các ký hiệu và chữ số: \"12z\" ở trên cùng, \"6z\" và \"5z\" ở hai bên cạnh trái, \"7z\" và \"16z\" ở cạnh phải, \"4z\" và \"2z\" ở dưới cùng, và \"0.1z\" ở góc dưới bên trái. Ngoài ra, có các chú thích \"4z\", \"2z\", \"2z\" ở trên cùng và \"4z\" ở dưới cùng. Một số ký hiệu \"z\" xuất hiện ở các góc và cạnh của hình.",
+  "generated_tokens": 191,
+  "size": [
+    183,
+    213
+  ],
+  "elapsed_seconds": 13.869835599999533,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

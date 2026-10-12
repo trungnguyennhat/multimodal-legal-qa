@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:103f4a0a1cc5942ac9a8f970f05136add1a3f7e040b3f26eb63fbb8b806387de",
+  "filename": "train_7_40.jpg",
+  "description": "Biển hình tròn, nền trắng, viền đỏ, có hình một chiếc xe đang rẽ phải bị gạch chéo đỏ.  \nDưới biển có biển phụ hình chữ nhật, nền trắng, viền đen, ghi chữ số \"6:00 - 22:00\".  \nPhía dưới biển phụ có biển hình chữ nhật, nền xanh, chữ trắng, có hình một chiếc xe máy và dòng chữ \"XE MÔ TÔ 2 BÁNH\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 105,
+  "size": [
+    1280,
+    853
+  ],
+  "elapsed_seconds": 8.06988960000308,
+  "peak_vram_bytes": 7659827712,
+  "peak_reserved_bytes": 7746879488,
+  "gpu_free_bytes": 8122269696
+}

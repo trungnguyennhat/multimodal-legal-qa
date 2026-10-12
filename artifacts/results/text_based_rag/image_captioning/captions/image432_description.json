@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:f738c2e5004da3f9cf952546df88bef46b9a33aa35f55edee2f646ffd37f5ef2",
+  "filename": "image432.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một hình tam giác màu vàng, nằm trong một hình vuông nền màu xanh. Dưới hình tam giác có dòng chữ \"CHO-MARKET\" viết hoa, màu trắng.",
+  "generated_tokens": 44,
+  "size": [
+    104,
+    101
+  ],
+  "elapsed_seconds": 3.349827100006223,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

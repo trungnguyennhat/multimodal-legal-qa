@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1ac69eeff07d5b5bdaa38227f737bbd4f55544088c52f636a6e4a34721f82e10",
+  "filename": "image510.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh minh họa một đường cong hình cung với các yếu tố ghi chú:\n\n- Đường cong hình cung có đỉnh ở giữa, được đánh dấu là “Cao độ mặt đường”.\n- Hai bên đường cong có các đoạn thẳng đứng, mỗi đoạn có ghi chú “1,2m”.\n- Trên đỉnh cung có ghi chú “11,2m”.\n- Có các đường kẻ dọc, song song với trục đường cong, ghi chú “Chiều dài tầm nhìn vượt xe tối thiểu”.\n- Ghi chú “Tia nhìn” chỉ các đường thẳng từ đỉnh cung ra hai bên.\n- Ghi chú “Vùng cấm vượt” nằm dưới đường cong.\n- Ghi chú “Cao độ mặt đường” được ghi ở đỉnh cung.\n- Ghi chú “a” ở hai đầu đoạn thẳng đứng bên trái và phải.\n\nCác chữ xuất hiện trong hình: “1,2m”, “11,2m”, “Chiều dài tầm nhìn vượt xe tối thiểu”, “Tia nhìn”, “Cao độ mặt đường”, “Vùng cấm vượt”, “a”.",
+  "generated_tokens": 245,
+  "size": [
+    325,
+    149
+  ],
+  "elapsed_seconds": 17.999401899993245,
+  "peak_vram_bytes": 7389888000,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

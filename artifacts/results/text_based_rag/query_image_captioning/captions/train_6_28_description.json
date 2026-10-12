@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:d18aecb8f3fc7622cc572ba32e0c3d98ef98742f0b9f4547100e424b90bebcb5",
+  "filename": "train_6_28.jpg",
+  "description": "Biển báo hình tròn, có viền đỏ, bên trong có hình hai chiếc xe: một xe ô tô và một xe máy, đang đi cùng chiều.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 35,
+  "size": [
+    1000,
+    651
+  ],
+  "elapsed_seconds": 3.1036048000023584,
+  "peak_vram_bytes": 7582157312,
+  "peak_reserved_bytes": 7688159232,
+  "gpu_free_bytes": 8180989952
+}

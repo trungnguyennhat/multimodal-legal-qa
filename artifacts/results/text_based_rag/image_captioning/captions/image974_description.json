@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:fce0961a91414b5a62cfbfb988f113f6fee3cd3a0a9fe6a084ac93c1a5f6f1d9",
+  "filename": "image974.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần minh họa:\n\n- Phần bên trái: Một biển báo tam giác màu đỏ, có viền trắng, bên trong có chữ “BÌ CHẬM” màu đen. Dưới biển báo tam giác là một biển hình chữ nhật màu trắng, có chữ “SLOW” màu đen. Hai biển báo được gắn trên một cột trụ có sọc đỏ trắng.\n\n- Phần bên phải: Một hình chữ nhật chứa chữ “SLOW” màu đen, bên dưới là một hình chữ nhật nhỏ hơn có sọc đỏ trắng. Xung quanh có lưới ô vuông và các kích thước được ghi chú bằng số.",
+  "generated_tokens": 137,
+  "size": [
+    429,
+    240
+  ],
+  "elapsed_seconds": 9.81431049999992,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

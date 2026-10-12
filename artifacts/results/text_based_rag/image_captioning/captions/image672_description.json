@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:589b8ad4bb688ca7297a9379e3e861691a6abd597527eb689accbe8574517376",
+    "filename":  "image672.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai hình vẽ kỹ thuật đứng cạnh nhau, đều có dạng hình hộp chữ nhật đứng với phần đỉnh hình chóp tam giác. Trên đỉnh mỗi hình có một khối hình chóp tam giác màu đỏ, trên đó có chữ viết.\n\nHình bên trái:\n- Trên đỉnh khối chóp có dòng chữ “QL.10” và dưới là “Km 175”.\n- Có các đường kẻ ngang và dọc, kèm theo các số đo kích thước (như 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 280, 285, 290, 295, 300, 305, 310, 315, 320, 325, 330, 335, 340, 345, 350, 355, 360, 365, 370, 375, 380, 385, 390, 395, 400, 405, 410, 415, 420, 425, 430, 435, 4",
+    "generated_tokens":  512,
+    "size":  [
+                 241,
+                 223
+             ],
+    "elapsed_seconds":  36.36198959999996,
+    "peak_vram_bytes":  7393691648,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

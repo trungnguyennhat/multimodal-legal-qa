@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4aaaeed6bf491c81c3f6a01547c8d2f17ebceb214561ac2d65d69f8f00b4fc86",
+  "filename": "image1560.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật đứng, nền xanh lá cây, viền trắng. Trong hình có:\n\n- Dòng chữ “KHẨN CẤP” ở trên, in hoa, màu trắng.\n- Dưới đó là dòng chữ “EMERGENCY”, in hoa, màu trắng.\n- Một hình ảnh biểu tượng điện thoại đen, dạng đầu dây nghe, nằm nghiêng, hướng lên bên phải.\n- Dưới biểu tượng điện thoại là chữ “S.O.S”, in hoa, màu đen.\n- Dưới cùng là dãy số “0904 XXX XXX”, màu trắng.\n- Có các kích thước được ghi chú: chiều rộng W, chiều cao L, và các khoảng cách dọc theo chiều cao với các giá trị 15, 20, 10, 15, 10, 75, 10, 20, 15.",
+  "generated_tokens": 200,
+  "size": [
+    289,
+    325
+  ],
+  "elapsed_seconds": 15.147270300000855,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

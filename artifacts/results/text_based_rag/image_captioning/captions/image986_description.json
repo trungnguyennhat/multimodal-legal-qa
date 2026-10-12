@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:2d3c96706db6faf226effcfd2e9046ac96f98cb68bfb2079973f85fe15e2b16a",
+  "filename": "image986.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\nPhần bên trái: Một hình tròn màu xanh dương, có đường kính được ghi là 6x. Bên trong hình tròn có một mũi tên trắng chỉ lên trên, nằm dọc theo trục đối xứng của hình tròn. Kích thước tổng thể của hình tròn được ghi là 10x ở phía trên, và có các kích thước phụ: 1.2x ở phía trên mũi tên, và 4x ở phía dưới.\n\nPhần bên phải: Một hình vẽ trên lưới ô vuông, gồm một hình trụ đứng với đầu trên là hình tam giác nhọn (mũi tên). Các kích thước được ghi: chiều cao tổng cộng là 4x, chiều cao phần thân là 2.4x, chiều cao phần đầu mũi tên là 1.6x. Kích thước đường kính phần thân là 1x, và chiều rộng phần đầu mũi tên là 0.6x và 1x (phân chia đối xứng).",
+  "generated_tokens": 224,
+  "size": [
+    424,
+    173
+  ],
+  "elapsed_seconds": 15.42566910000005,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

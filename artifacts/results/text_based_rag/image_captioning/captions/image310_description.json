@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:f48d88bf8fd01f404be0212b54fa5c59242a7041ff14a4c99f47bf18d1b17a61",
+  "filename": "image310.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biểu tượng hình tròn nền xanh, có đường viền trắng.\n\n- Biểu tượng a) có hình một mũi tên chỉ lên trên và một mũi tên chỉ sang trái, bên dưới ghi chữ “a) Biển số R.308a”.\n\n- Biểu tượng b) có hình một mũi tên chỉ lên trên và một mũi tên chỉ sang phải, bên dưới ghi chữ “b) Biển số R.308b”.",
+  "generated_tokens": 101,
+  "size": [
+    205,
+    74
+  ],
+  "elapsed_seconds": 7.603645900002448,
+  "peak_vram_bytes": 7388212736,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

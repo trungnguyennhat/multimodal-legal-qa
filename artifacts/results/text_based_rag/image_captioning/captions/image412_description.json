@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:0086e5275814d5180b5dbc238dbd699ffc9cb58e56c408c3a8cb3541a9adab65",
+  "filename": "image412.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba biển báo hình chữ nhật có viền xanh, nền trắng, chứa các biểu tượng đen:\n\n- Biển a) có biểu tượng một chiếc lều dạng tam giác ngược.\n- Biển b) có biểu tượng một chiếc xe trại (xe cắm trại) hình chữ nhật với cửa sổ và bánh xe.\n- Biển c) có biểu tượng một chiếc lều dạng tam giác ngược đặt trên một chiếc xe trại.\n\nDưới mỗi biển báo có ghi chữ:  \na) Biển số I.433b  \nb) Biển số I.433c  \nc) Biển số I.433d",
+  "generated_tokens": 143,
+  "size": [
+    297,
+    116
+  ],
+  "elapsed_seconds": 10.411709699998028,
+  "peak_vram_bytes": 7394237952,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

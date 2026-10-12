@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4d2b14cd17442ec60eaa7d91c9b77fb50c93c18f95cff63c24b17408f9c9eb2f",
+  "filename": "image032.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai phần hình chữ nhật màu xanh lá cây, xếp chồng lên nhau.\n\n- Phần trên:  \n  - Góc trên bên trái có hình chữ nhật màu vàng, trong đó có chữ “LỐI RA” ở dòng trên và chữ “EXIT” ở dòng dưới, đều viết hoa, in đậm.  \n  - Phía bên phải của hình chữ nhật vàng có dòng chữ “BẾN LỨC 2 km”, viết hoa, in đậm.\n\n- Phần dưới:  \n  - Phía bên trái có một mũi tên trắng chỉ lên và sang phải, tạo góc 45 độ.  \n  - Phía bên phải của mũi tên có hai dòng chữ:  \n    - Dòng trên: “TT. BẾN LỨC”  \n    - Dòng dưới: “TT. ĐỨC HÒA”  \n  - Tất cả chữ đều viết hoa, in đậm.\n\nHình ảnh có viền trắng bao quanh toàn bộ.",
+  "generated_tokens": 210,
+  "size": [
+    223,
+    146
+  ],
+  "elapsed_seconds": 15.078386900000623,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

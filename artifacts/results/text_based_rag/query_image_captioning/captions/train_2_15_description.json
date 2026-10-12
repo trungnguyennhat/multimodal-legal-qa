@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:253bf3da777c9fb71d7ed1d6aabef9c606c2faf1dca526bd6b029521c0960107",
+  "filename": "train_2_15.jpg",
+  "description": "Biển báo hình chữ nhật đứng, nền xanh, có viền trắng. Trên biển có dòng chữ trắng “QUẢNG NINH HẢI PHÒNG EXPRESSWAY”, bên dưới là hai hình tròn: hình tròn bên trái nền đỏ viền trắng, có số “80” màu trắng; hình tròn bên phải nền xanh dương, có số “60” màu trắng. Phía trên góc trái biển có hình chữ nhật nền vàng, có chữ “CT.09” màu đen.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 111,
+  "size": [
+    600,
+    315
+  ],
+  "elapsed_seconds": 8.75041400000191,
+  "peak_vram_bytes": 7404336640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:de7a58116f350604d6eba2a73006623f507ab9eacdde834e2d8f29b71b0d8f39",
+  "filename": "image1034.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần minh họa:\n\n1. Hình chữ nhật màu xanh dương, có kích thước được ghi theo đơn vị z: chiều cao 16z, chiều rộng 12z. Bên trong hình chữ nhật có một hình ảnh xe buýt nhìn từ trước (hình vẽ đơn giản) và phía trên là một hình thoi (bốn cạnh bằng nhau, góc nhọn) nằm trong một khung nhỏ hơn. Các kích thước nhỏ hơn được ghi xung quanh: 0.1z ở trên cùng, 0.2z ở dưới cùng, 7z ở bên trái, 6z ở bên phải.\n\n2. Hình minh họa trên lưới ô vuông, có kích thước được ghi theo đơn vị z: chiều cao 8z, chiều rộng 7z. Trong hình có hình ảnh xe buýt nhìn từ trước và phía trên là một hình thoi. Các kích thước nhỏ hơn được ghi xung quanh: 0.3z, 1z, 2z, 3.5z, 5z, 2z, 1.5z, 2z, 1z, 0.5z, 1.5z, 2z, 3.5z, 7z. Có các đường kẻ chéo và đường kẻ ngang dọc để định vị hình ảnh.",
+  "generated_tokens": 303,
+  "size": [
+    422,
+    185
+  ],
+  "elapsed_seconds": 20.817207999999482,
+  "peak_vram_bytes": 7399021056,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

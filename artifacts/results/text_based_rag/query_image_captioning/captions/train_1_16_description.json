@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:31a1c296630f866c631d3b4ae211d6be3f52b1e64e3a818d3053fc26df87dcca",
+  "filename": "train_1_16.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh, có các hình vẽ trắng bên trong:\n\n- Ở hàng trên: xe ô tô, xe máy, xe máy.\n- Ở hàng dưới: xe buýt, xe ô tô, xe máy, xe buýt, xe tải.\n\nCác hình được sắp xếp theo hàng ngang và cột dọc, có đường kẻ chia giữa các loại xe.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 87,
+  "size": [
+    550,
+    401
+  ],
+  "elapsed_seconds": 7.0891769000008935,
+  "peak_vram_bytes": 7413497344,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176
+}

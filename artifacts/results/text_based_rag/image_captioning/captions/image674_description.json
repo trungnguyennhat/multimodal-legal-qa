@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:87840bbc36dcfb36ec8908a98618f200435b42c8a8ac69245164bdd068bba911",
+  "filename": "image674.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh gồm hai phần minh họa:\n\n- Phần trên: Một đường thẳng ngang đại diện cho \"Đường bộ\", có hai cọc mốc ở hai đầu. Trên đường thẳng có ghi \"Giới hạn hành lang an toàn đường bộ\" và \"Giới hạn ngoài đất của đường bộ\". Có một đoạn cong sóng ở giữa, nối với hai cọc mốc. Ghi chú \"L\" chỉ khoảng cách giữa hai cọc mốc.\n\n- Phần dưới: Một đường thẳng ngang, có hai cọc mốc ở hai đầu, nối với nhau bằng một đoạn cong sóng. Ghi chú \"L\" chỉ khoảng cách giữa hai cọc mốc. Ghi chú \"B\" và \"B\" ở hai đầu, có ghi chú \"B\" ở phía dưới là \"Bề rộng hành lang ATTR theo quy định\".\n\nCác chữ xuất hiện: \"Cọc mốc\", \"Giới hạn hành lang an toàn đường bộ\", \"Giới hạn ngoài đất của đường bộ\", \"Đường bộ\", \"L\", \"B\", \"B\", \"Bề rộng hành lang ATTR theo quy định\".",
+  "generated_tokens": 243,
+  "size": [
+    332,
+    167
+  ],
+  "elapsed_seconds": 16.875722699995094,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

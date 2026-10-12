@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:813052e840bb9b382f7683ed5c6bb799ee939ab9d5af12623529d44f876196e4",
+  "filename": "image542.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một sơ đồ mặt cắt ngang của một đoạn đường hoặc công trình giao thông.\n\n- Có một vùng màu xám chiếm phần lớn diện tích, đại diện cho mặt đường hoặc nền đường.\n- Trên vùng xám có một đường kẻ màu vàng chạy dọc theo chiều dài, có độ cong nhẹ, không thẳng.\n- Phía dưới đường kẻ vàng là một đường kẻ trắng mỏng hơn, chạy song song.\n- Ở phía bên trái, có một mũi tên màu vàng chỉ sang phải, kèm theo một ký hiệu tam giác màu vàng có dấu \"=\" bên trong.\n- Dưới cùng là một thước đo với các đoạn được ghi chú:\n  - Đoạn đầu tiên có độ dài D, được đánh dấu bằng một mũi tên chỉ vào đoạn đó.\n  - Đoạn giữa có độ dài L.\n  - Đoạn cuối có độ dài d.\n- Gần đầu tiên của đoạn D, có một chú thích \"D/4\" chỉ vào một phần của đoạn D, có vẻ như là một phần của mặt cắt ngang.\n- Có các dấu mũi tên nhỏ màu trắng nằm dọc theo mặt đường, chỉ hướng đi.",
+  "generated_tokens": 245,
+  "size": [
+    371,
+    118
+  ],
+  "elapsed_seconds": 18.204121099995973,
+  "peak_vram_bytes": 7396256768,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

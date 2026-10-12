@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:fae56e4a1f97532b206100dbe213feac183d9c1730c1600b8fd8aab0956ad093",
+  "filename": "image790.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình tròn màu đỏ, bên trong có một hình chữ nhật đen nằm ngang, dưới hình chữ nhật có chữ “KIỂM TRA” viết hoa. Có các kích thước được ghi chú: đường kính hình tròn là 9.0x, chiều cao hình chữ nhật là 0.8x, chiều rộng hình chữ nhật là 3.0x, và chiều cao chữ “KIỂM TRA” là 1.4x.\n\nHình 2: Một hình chữ nhật đen nằm ngang trên nền lưới ô vuông, dưới hình chữ nhật có chữ “KIỂM TRA” viết hoa. Có các kích thước được ghi chú: chiều rộng hình chữ nhật là 6.0x, chiều cao hình chữ nhật là 1.2x, chiều cao chữ “KIỂM TRA” là 1.0x, và chiều cao từ đỉnh hình chữ nhật đến đỉnh chữ là 1.2x.",
+  "generated_tokens": 215,
+  "size": [
+    283,
+    113
+  ],
+  "elapsed_seconds": 15.584636400000136,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

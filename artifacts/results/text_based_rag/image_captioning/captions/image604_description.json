@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:54f7a1ae7aa6f0ad2820f1f68f17b5bee0d9322d33ae8fdba502504c428edbb2",
+  "filename": "image604.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh chứa một hình chữ nhật lớn màu xám, bên trong có một dãy các hình chữ nhật nhỏ hơn, nằm ngang, xếp chồng lên nhau. Trên cùng của hình có một đoạn thẳng ngang với ký hiệu chiều dài ≥300. Bên trái và bên phải dãy hình chữ nhật nhỏ có các ký hiệu: bên trái là \"60\" và bên phải là \"40(45)\".",
+  "generated_tokens": 93,
+  "size": [
+    217,
+    91
+  ],
+  "elapsed_seconds": 7.083771900004649,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

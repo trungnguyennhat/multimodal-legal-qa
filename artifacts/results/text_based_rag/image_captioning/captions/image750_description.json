@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:86aea580a86bad6d69a6a34b9c49bd285043f4aa15bc1b3dcbe71681c324d439",
+    "filename":  "image750.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai hình minh họa:\n\n1. Hình tròn có viền đỏ, bên trong là hình ảnh một chiếc xe tải và dòng chữ “14 m” nằm ngang dưới xe. Xung quanh hình tròn có các kích thước được ghi chú: đường kính hình tròn là 10x, chiều cao từ trên xuống dưới là 7x, và chiều rộng từ trái sang phải là 10x.\n\n2. Hình chữ nhật được chia thành lưới ô vuông, bên trong là hình ảnh một chiếc xe tải và dòng chữ “14 m” nằm ngang dưới xe. Các kích thước được ghi chú: chiều rộng tổng thể là 6x, chiều cao tổng thể là 4x, và các ô lưới được đánh số kích thước như 2x, 3x, 4x, 5x, 6x, 7x, 8x, 9x, 10x, 11x, 12x, 13x, 14x, 15x, 16x, 17x, 18x, 19x, 20x, 21x, 22x, 23x, 24x, 25x, 26x, 27x, 28x, 29x, 30x, 31x, 32x, 33x, 34x, 35x, 36x, 37x, 38x, 39x, 40x, 41x, 42x, 43x, 44x, 45x, 46x, 47x, 48x, 49x, 50x, 51x, 52x, 53x, 54x, 55x, 56x, 57x, 58x, 59x, 60x, 61x, 62x, 63x, 64x, 65x, 66x, 67x, 68x, 69x, 70x, 71x,",
+    "generated_tokens":  512,
+    "size":  [
+                 283,
+                 108
+             ],
+    "elapsed_seconds":  36.54869459999986,
+    "peak_vram_bytes":  7399027200,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

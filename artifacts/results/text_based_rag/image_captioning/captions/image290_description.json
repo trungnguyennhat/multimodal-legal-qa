@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:54e93a72b45fe16c4be9bad96f27d3ca959d22b18f8cc2f5c92c3f9b940b5b9d",
+  "filename": "image290.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh hiển thị một tam giác có cạnh cong, màu nền vàng, viền đỏ. Không có chữ nào xuất hiện trong hình.",
+  "generated_tokens": 30,
+  "size": [
+    109,
+    85
+  ],
+  "elapsed_seconds": 2.396056400000816,
+  "peak_vram_bytes": 7387639808,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

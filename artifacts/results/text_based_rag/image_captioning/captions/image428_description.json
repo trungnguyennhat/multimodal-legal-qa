@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:fcb743d01f1990ca28920b09ee4521b0eab8232a8fb8cec2e728e4f933619c73",
+  "filename": "image428.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình chữ nhật có viền trắng, nền màu xanh dương. Trong hình có dòng chữ màu trắng:\n\n- Dòng chữ lớn ở trên: “ĐOẠN ĐƯỜNG THI CÔNG”\n- Dòng chữ nhỏ hơn ở dưới: “Từ km + đến km + QL”",
+  "generated_tokens": 68,
+  "size": [
+    164,
+    66
+  ],
+  "elapsed_seconds": 5.194919599998684,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

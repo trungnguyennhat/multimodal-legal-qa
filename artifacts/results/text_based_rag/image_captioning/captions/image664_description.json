@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:48d23ff046203271e03eb6613107775ceb68a263657a4003de7305a4bcb993b9",
+  "filename": "image664.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh chứa một biểu tượng xe đạp màu trắng trên nền xám. Xung quanh biểu tượng có các kích thước được ghi chú bằng chữ số và đơn vị cm. \n\n- Trên cùng: dãy số (75) 110 (170) với mũi tên chỉ chiều ngang.\n- Bên trái: dãy số (150) 178 (275) với mũi tên chỉ chiều dọc.\n- Dưới cùng: dòng chữ “Don vi: cm”.\n\nCác số và chữ được đặt ở các vị trí tương ứng với chiều dài và chiều cao của biểu tượng xe đạp.",
+  "generated_tokens": 140,
+  "size": [
+    113,
+    157
+  ],
+  "elapsed_seconds": 9.729258500003198,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

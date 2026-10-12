@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:7e656cf2dba659c976daf77bc555efff9ea197dab6ebfcc26b38ea9f9e446b91",
+  "filename": "image470.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một hình chữ nhật có viền đen, bên trong là một mũi tên màu đen chỉ xuống dưới, nằm ở trung tâm hình chữ nhật.",
+  "generated_tokens": 35,
+  "size": [
+    96,
+    59
+  ],
+  "elapsed_seconds": 2.6778870999987703,
+  "peak_vram_bytes": 7388592640,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

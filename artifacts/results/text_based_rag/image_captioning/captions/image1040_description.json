@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:3dfe7cc999638286e3f5e7f1b7a2b1b0efa1663ab40a08c3b4454705e741ec8a",
+    "filename":  "image1040.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần minh họa với các kích thước được ghi bằng chữ số và ký hiệu \"z\".\n\nPhần bên trái:\n- Một hình chữ nhật lớn được chia thành hai phần bằng nhau theo chiều dọc.\n- Phần trên: hình minh họa một người đi xe máy, có kích thước chiều cao 8z, chiều rộng 12z.\n- Phần dưới: hình minh họa một người đi xe đạp, có kích thước chiều cao 8z, chiều rộng 12z.\n- Có các kích thước ghi chú: chiều cao tổng cộng 16z, chiều rộng 12z.\n- Ở góc trên bên phải có ghi chú kích thước nhỏ: 0.2z và 0.1z.\n\nPhần bên phải:\n- Một hình chữ nhật được chia thành lưới ô vuông.\n- Trong hình có hai hình minh họa: một hình trên là người đi xe máy, một hình dưới là người đi xe đạp.\n- Có các kích thước ghi chú:\n  - Chiều cao tổng cộng: 1.3z + 6z + 1.3z = 8.6z (gần như 8.6z, nhưng có thể là 8.6z hoặc 8.6z theo cách ghi chú).\n  - Chiều rộng: 4z + 4z = 8z.\n  - Các kích thước nhỏ hơn: 0.2z, 0.1z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.2z, 0.",
+    "generated_tokens":  512,
+    "size":  [
+                 425,
+                 187
+             ],
+    "elapsed_seconds":  34.98570419999942,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

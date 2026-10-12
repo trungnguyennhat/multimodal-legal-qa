@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:cad859a6553508f2b4f19656334a0d6644a4d5f6182e6c497a6a8bae59c60d33",
+  "filename": "train_4_15.jpg",
+  "description": "Biển báo có hình tam giác cân, viền đỏ, nền vàng. Trong biển có hai hình chữ nhật đứng, màu đen, được đặt cạnh nhau, trong đó hình bên trái có đường cong uốn cong về phía trong.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 51,
+  "size": [
+    500,
+    500
+  ],
+  "elapsed_seconds": 4.131024599999364,
+  "peak_vram_bytes": 7423879168,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024
+}

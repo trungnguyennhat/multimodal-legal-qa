@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a837e174f2fb833eabc19f1b03162e08b952ad31c3e5365c90d4a65c12871e75",
+  "filename": "image918.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng và hình hai đứa trẻ đang đi bộ. Có các kích thước được ghi chú như: 0,71z, 1,34z, 1,88z, 0,62z, 1,71z, 2,04z, 0,5z, 1,0z, và góc 60°.\n\nHình 2: Một hình chữ nhật được chia thành lưới ô vuông, bên trong có hình hai đứa trẻ đang đi bộ. Có các kích thước được ghi chú như: 2z, 3,75z, 1z, và 1,5z.",
+  "generated_tokens": 159,
+  "size": [
+    398,
+    173
+  ],
+  "elapsed_seconds": 11.01701389999971,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

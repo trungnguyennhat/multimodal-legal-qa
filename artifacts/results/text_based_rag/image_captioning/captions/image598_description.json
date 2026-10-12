@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:af87e6946002d1e8c8c460628b9306cfed7e35266875ed0a915f20a27f2a9d0b",
+  "filename": "image598.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một biển báo giao thông hình chữ nhật đứng, có chữ \"STOP\" in hoa ở giữa. Biển báo có viền màu vàng dọc theo cạnh bên trái. Phía trên biển báo có một phần mở rộng hình chữ T, và có các kích thước được ghi chú: chiều cao từ 200 đến 300 mm, chiều rộng từ 70 đến 40 mm. Dưới biển báo có ghi chú \"6dm vs cm\".",
+  "generated_tokens": 109,
+  "size": [
+    276,
+    136
+  ],
+  "elapsed_seconds": 7.757922899996629,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

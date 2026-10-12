@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5f82b47e1546414a1238b863e1fbcf81ac057691a5ce4b1177157aacd96b4aaa",
+  "filename": "image226.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo hình tam giác có viền đỏ, nền vàng. Trong tam giác có hình minh họa một chiếc xe hơi đang đi trên mặt nước, với các đường sóng nước dưới thân xe. Không có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 58,
+  "size": [
+    93,
+    82
+  ],
+  "elapsed_seconds": 4.588581399999384,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

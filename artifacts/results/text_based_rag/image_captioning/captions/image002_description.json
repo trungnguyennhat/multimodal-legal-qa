@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:6f05a9ed9cd6bb3eb81fac08dc68d5bca20c0d6245ea2ceb31041da15b5711db",
+  "filename": "image002.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa sáu hình minh họa kỹ thuật:\n\n1. Hình 1 (trái trên): Một hình đa giác đều tám cạnh (bát giác), có ghi chú chiều rộng D và chiều cao B, kèm mũi tên chỉ vào đỉnh góc.\n\n2. Hình 2 (giữa trên): Một hình tròn có đường kính D, bên trong có đường chéo ghi chú 45°, và có ghi chú chiều rộng B ở bên phải.\n\n3. Hình 3 (phải trên): Một hình tam giác cân, có ghi chú chiều dài L ở đỉnh, chiều rộng B ở đáy, và chiều cao C từ đỉnh đến đáy.\n\n4. Hình 4 (phải trên, sát hình 3): Một hình tam giác cân tương tự, nhưng có ghi chú chiều dài L ở đáy, chiều rộng B ở hai bên cạnh, và chiều cao C từ đỉnh đến đáy.\n\n5. Hình 5 (dưới cùng): Một hình chữ nhật, có ghi chú chiều cao C ở phía trên bên phải.\n\n6. Hình 6 (trái dưới): Một hình chữ nhật, có ghi chú chiều cao C ở phía trên bên phải.\n\nChú ý: Hình 5 và hình 6 giống nhau về hình dạng và ghi chú.",
+  "generated_tokens": 283,
+  "size": [
+    360,
+    206
+  ],
+  "elapsed_seconds": 21.03912560000026,
+  "peak_vram_bytes": 7388592640,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

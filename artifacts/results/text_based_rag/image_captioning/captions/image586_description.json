@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:de46cdce1bcaf4c415ca949c982e894b8d8e8495d97f2ee6a4f0e01c220a40ac",
+  "filename": "image586.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một bản đồ hoặc sơ đồ giao thông với các đường phố và giao lộ. Có một hình chữ T ở giữa, với một đường thẳng đứng và hai đường ngang ở trên và dưới. Trên mỗi đường ngang có các dấu chấm trắng dọc theo chiều dài, và hai bên đường ngang có các hình chữ nhật nhỏ với các ký hiệu bên trong. Ở giữa hình chữ T có một vòng tròn nhỏ. Các đường phố được phân chia bởi các đường kẻ ngang và dọc. Có các ký hiệu hình chữ nhật nhỏ ở hai bên đường ngang, với các ký hiệu bên trong không rõ ràng do độ mờ. Không có văn bản rõ ràng có thể đọc được trong hình.",
+  "generated_tokens": 156,
+  "size": [
+    141,
+    226
+  ],
+  "elapsed_seconds": 11.286404300000868,
+  "peak_vram_bytes": 7392270848,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

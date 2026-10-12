@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:bbef82a2f0acb92d7fb0efb771e355bc553f93665b719af2e03bdc3ebac1d2cc",
+  "filename": "train_1_21.jpg",
+  "description": "Các biển báo trong ảnh có hình tròn, hình chữ nhật, và hình tam giác. Một số biển có hình vòng cung, hình chữ nhật với viền đỏ, và hình tròn với nền trắng. Trong đó có biển hình tròn với đường chéo đỏ, biển hình tròn ghi số \"10\", biển hình chữ nhật ghi giờ, và biển hình tròn có hình người đi bộ, xe máy, xe đạp, xe tải, và hình cấm dừng. Một số biển có hình tam giác cảnh báo, và một biển hình chữ nhật có hình người đi bộ bị gạch chéo.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 133,
+  "size": [
+    850,
+    502
+  ],
+  "elapsed_seconds": 10.094910800005891,
+  "peak_vram_bytes": 7475028480,
+  "peak_reserved_bytes": 7608467456,
+  "gpu_free_bytes": 8260681728
+}

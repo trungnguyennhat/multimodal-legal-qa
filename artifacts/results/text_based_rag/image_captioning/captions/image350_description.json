@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1eab233234c36330443c51a7fb322a5e8965a00349e292b2cfc35744eb3d10ea",
+  "filename": "image350.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba hình chữ nhật có nền xanh, mỗi hình chứa một ký hiệu hình học màu đỏ và có ghi chú chữ dưới:\n\na) Biển số I.405a: Hình chữ H màu trắng, trong đó thanh đứng giữa bị cắt ngang bởi một hình chữ nhật đỏ đứng ở giữa.\n\nb) Biển số I.405b: Hình chữ H màu trắng, trong đó thanh ngang trên bị cắt ngang bởi một hình chữ nhật đỏ đứng ở giữa.\n\nc) Biển số I.405c: Hình chữ T màu trắng, trong đó thanh ngang trên bị cắt ngang bởi một hình chữ nhật đỏ nằm ngang ở giữa.",
+  "generated_tokens": 150,
+  "size": [
+    406,
+    146
+  ],
+  "elapsed_seconds": 11.225972799998999,
+  "peak_vram_bytes": 7388212736,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

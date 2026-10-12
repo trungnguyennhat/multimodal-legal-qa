@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:4e398abadb8154b4679523b2e16ae40c33f434819defa718091337ce94c6f2a2",
+  "filename": "train_1_3.jpg",
+  "description": "Biển hình tròn, nền đỏ, có hình một chiếc xe buýt màu đen bên trong, bị một đường gạch chéo màu đỏ cắt ngang. Dưới hình xe buýt có dòng chữ “>29 CHỖ”.\n\nDưới biển tròn là biển hình chữ nhật, nền trắng, có hai dòng chữ đen ghi giờ: “06:30-08:00” và “16:30-18:30”.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 101,
+  "size": [
+    1200,
+    900
+  ],
+  "elapsed_seconds": 9.241997700002685,
+  "peak_vram_bytes": 7693010944,
+  "peak_reserved_bytes": 7795113984,
+  "gpu_free_bytes": 8074035200
+}

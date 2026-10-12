@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:e9630f015e46bd565816fee8872dbcdf84230f45200646646e8d1ba06366204b",
+  "filename": "image1480.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một hình chữ nhật có góc bo, bên trong có hình minh họa một chiếc vòi bơm xăng. Có các ký hiệu chữ cái chỉ định các kích thước: A (chiều cao tổng thể), B (khoảng cách từ trên cùng đến đỉnh hình vòi bơm), C (khoảng cách từ cạnh trên đến cạnh dưới của hình vòi bơm), D (chiều cao từ đỉnh hình vòi bơm đến đáy hình chữ nhật), E (khoảng cách từ cạnh trên của hình chữ nhật đến đỉnh hình vòi bơm).",
+  "generated_tokens": 138,
+  "size": [
+    184,
+    176
+  ],
+  "elapsed_seconds": 10.039698900000076,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

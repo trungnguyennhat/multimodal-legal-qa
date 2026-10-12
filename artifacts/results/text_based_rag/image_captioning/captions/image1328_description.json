@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:41252897e25a229de0675c12004ed9af5df1e161b5fb044c5d0176045d3d9042",
+    "filename":  "image1328.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm ba hình minh họa dạng sơ đồ kỹ thuật, mỗi hình có tiêu đề bằng tiếng Việt.\n\nHình trên cùng:\n- Tiêu đề: \"Biển số 3.503a: Hướng tác dụng của biển\"\n- Hình dạng: Một hình chữ nhật lớn, bên trong có một hình chữ nhật nhỏ hơn, và một mũi tên màu đen chỉ sang phải nằm giữa hai hình chữ nhật.\n- Có các ký hiệu kích thước như: 4a, 8a, 16a, 3a, 4a, 0,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,6a, 1,",
+    "generated_tokens":  512,
+    "size":  [
+                 433,
+                 536
+             ],
+    "elapsed_seconds":  37.195969700000205,
+    "peak_vram_bytes":  7422319616,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

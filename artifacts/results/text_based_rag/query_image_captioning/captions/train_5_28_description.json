@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:d81fe8d23bfd275b0b9539f466abdfb2c377aa5758fa55d732baee863ca3c358",
+  "filename": "train_5_28.jpg",
+  "description": "Biển báo có hình dạng một dãy các tòa nhà, gồm nhiều hình khối trắng đứng trên nền xanh dương. Có các hình dạng khác nhau: hình tam giác nhọn, hình chữ nhật, hình vuông, và một số hình có góc nghiêng, tạo thành một đường chân trời thành phố. Tất cả các hình đều được vẽ bằng đường nét đơn giản, không có chi tiết nội dung hay họa tiết khác.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 93,
+  "size": [
+    800,
+    667
+  ],
+  "elapsed_seconds": 7.55740109999897,
+  "peak_vram_bytes": 7517465600,
+  "peak_reserved_bytes": 7572815872,
+  "gpu_free_bytes": 8296333312
+}

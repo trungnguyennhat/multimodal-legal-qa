@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:5efcf0d552821d594ac29be89862e551292e7ac69e9912e6fe71c400afcd0ada",
+    "filename":  "image874.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n1. Hình bên trái: Một tam giác cân màu đỏ, bên trong có một tam giác nhỏ màu vàng, và ở giữa có ba hình tròn xếp dọc (trên cùng là đỏ, giữa là vàng, dưới cùng là xanh lá). Các kích thước được ghi chú bằng chữ số và đơn vị \"x\" (ví dụ: 0,71x, 1,36x, 1,48x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6x, 0,8x, 0,6",
+    "generated_tokens":  512,
+    "size":  [
+                 431,
+                 188
+             ],
+    "elapsed_seconds":  36.08644230000027,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

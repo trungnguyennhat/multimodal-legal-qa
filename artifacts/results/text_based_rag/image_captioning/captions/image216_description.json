@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:16cb1f1f95c57724f2c7b9e000adca567d0e14422827d3271f539ffdca432f54",
+  "filename": "image216.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông dạng tam giác có viền đỏ, nền vàng. Trong tam giác có hai đường nét đen cong, giống như hình chữ S ngược, nằm đối xứng ở giữa.",
+  "generated_tokens": 47,
+  "size": [
+    93,
+    81
+  ],
+  "elapsed_seconds": 3.598191899996891,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

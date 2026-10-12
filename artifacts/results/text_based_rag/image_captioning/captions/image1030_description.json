@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:dd72363561a65c3694e7efe27275ef03d499f9dc78f597396bec6391d549be0d",
+    "filename":  "image1030.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai hình minh họa:\n\n1. Hình bên trái: Một hình chữ nhật màu xanh dương, bên trong có hình vẽ một chiếc xe hơi màu trắng nhìn từ phía trước. Có các đường kẻ chia hình thành lưới ô vuông và các chú thích kích thước bằng chữ \"z\" như: 0.1z, 0.2z, 4.5z, 12z, 16z, 3z, 4.5z, 1.2z, 1.2z, 9z, 4.5z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z, 1.2z,",
+    "generated_tokens":  512,
+    "size":  [
+                 415,
+                 188
+             ],
+    "elapsed_seconds":  35.19342710000001,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

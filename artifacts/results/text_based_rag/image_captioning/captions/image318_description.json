@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:60915b271359555027af748ee09a78e4fc1ce2f2d8be4bc2b8c32fe239beccd5",
+  "filename": "image318.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "- a) Hình chữ nhật nền xanh, có đường chéo đỏ từ góc trên bên trái sang dưới bên phải. Trong hình có biểu tượng xe ô tô trắng.\n- b) Hình chữ nhật nền xanh, chia thành hai phần ngang bởi đường chéo đỏ từ góc trên bên trái sang dưới bên phải. Phần trên có biểu tượng xe ô tô trắng, phần dưới có biểu tượng xe máy trắng.\n- c) Hình chữ nhật nền xanh, có đường chéo đỏ từ góc trên bên trái sang dưới bên phải. Trong hình có biểu tượng xe buýt trắng và phía trên bên trái có biểu tượng hình thoi trắng.\n- d) Hình chữ nhật nền xanh, có đường chéo đỏ từ góc trên bên trái sang dưới bên phải. Trong hình có biểu tượng xe ô tô trắng (loại sedan).",
+  "generated_tokens": 176,
+  "size": [
+    206,
+    205
+  ],
+  "elapsed_seconds": 13.139826500002528,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c3486269686dd65646547db24b2cc12c65da8a2cfbd06ff7afccf7ab44d8263c",
+  "filename": "image1540.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật màu xanh lá cây, có viền trắng. Trong hình có chữ trắng: \"ĐT.830\", \"TP. TÂN AN\", \"8 km\", \"23 km\". Có các ký hiệu kích thước: L, W, k1, H1, H2.",
+  "generated_tokens": 66,
+  "size": [
+    433,
+    212
+  ],
+  "elapsed_seconds": 5.055437300000449,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

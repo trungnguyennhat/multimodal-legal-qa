@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:6cc5d492e6647ef79ec71f9b915defeee4db5150738582ff3a72ed1785b39687",
+  "filename": "train_7_23.jpg",
+  "description": "- Biển hình chữ nhật màu xanh lá cây, có viền trắng, chứa dòng chữ màu trắng.\n- Biển hình tròn, viền đỏ, nền trắng, có số màu đen ở giữa.\n- Biển hình tròn, viền xanh, nền trắng, có số màu đen ở giữa.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 67,
+  "size": [
+    800,
+    533
+  ],
+  "elapsed_seconds": 5.640961700002663,
+  "peak_vram_bytes": 7472565248,
+  "peak_reserved_bytes": 7608467456,
+  "gpu_free_bytes": 8260681728
+}

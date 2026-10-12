@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:5a09f85c6b002b47b6247fd17e360841a2120b236a2263efcdf29e52880e6a79",
+  "filename": "image208.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh hiển thị một tam giác có màu vàng, viền đỏ, hướng đỉnh xuống dưới. Không có chữ nào xuất hiện trong hình.",
+  "generated_tokens": 31,
+  "size": [
+    93,
+    80
+  ],
+  "elapsed_seconds": 2.5730601999966893,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

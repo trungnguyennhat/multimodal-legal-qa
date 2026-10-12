@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:48be23e97ada28a3bcdde2aed8e9b4c2833e76754bcce102d16703c440e34dd2",
+  "filename": "image1360.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có góc bo, nền màu vàng, có chữ \"CT.04\" màu đen ở giữa.",
+  "generated_tokens": 26,
+  "size": [
+    84,
+    37
+  ],
+  "elapsed_seconds": 2.2216785999999047,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7474249728,
+  "gpu_free_bytes": 8394899456,
+  "status": "COMPLETED"
+}

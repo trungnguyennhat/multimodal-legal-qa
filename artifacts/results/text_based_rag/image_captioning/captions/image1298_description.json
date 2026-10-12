@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:32ac7441d60a942b85e104a412529e92f1e127bfd53cc7f260639b9840055e27",
+  "filename": "image1298.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Một hình chữ nhật có nền xanh, chia thành hai phần ngang. Phần bên trái có hình minh họa một chiếc cờ phướn nghiêng sang phải, được vẽ bằng đường nét màu xanh dương. Phần bên phải có dòng chữ “CHÚ Ý GIÓ NGANG” viết hoa, màu trắng, nằm ngang, được chia thành hai dòng: dòng trên là “CHÚ Ý”, dòng dưới là “GIÓ NGANG”.\n\n2. Một hình vuông chia lưới ô vuông nhỏ, bên trong có hình minh họa giống như phần bên trái của hình chữ nhật trên, là một chiếc cờ phướn nghiêng sang phải, được vẽ bằng đường nét màu xanh dương, nằm trong lưới ô vuông.",
+  "generated_tokens": 175,
+  "size": [
+    433,
+    134
+  ],
+  "elapsed_seconds": 13.490693400000055,
+  "peak_vram_bytes": 7396256768,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

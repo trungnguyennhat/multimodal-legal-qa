@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:75596a79b49d74139b8ce51bd398903b718d163388c3abc16ce4e1122d7d5a70",
+  "filename": "image1464.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật đứng, chia thành hai phần bằng nhau theo chiều dọc. Phần trên có chữ \"P\" màu trắng, kích thước cao 75 đơn vị. Phần dưới có chữ \"750m\" màu trắng, kích thước cao 100 đơn vị. Tổng chiều cao hình là 217 đơn vị, chiều rộng là 159 đơn vị. Có các kích thước được ghi chú: chiều cao tổng cộng 217, chiều rộng 159, chiều cao phần trên 75, chiều cao phần dưới 100, và chiều cao phần dưới được chia thành hai phần H1 và H2, mỗi phần cao 100 đơn vị.",
+  "generated_tokens": 162,
+  "size": [
+    189,
+    159
+  ],
+  "elapsed_seconds": 11.884451799999624,
+  "peak_vram_bytes": 7394447360,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

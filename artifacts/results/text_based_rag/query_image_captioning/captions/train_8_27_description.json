@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:3e959d91db301234135f4cdba39721c35b73ad5dc7107395cab7fe83aa7ed288",
+  "filename": "train_8_27.jpg",
+  "description": "- Biển hình chữ nhật, nền xanh, chữ trắng, có mũi tên chỉ lên trên và dòng chữ \"LÀO CAI 151 KM\".\n- Biển hình chữ nhật, nền xanh, chữ trắng, có dòng chữ \"ĐƯỜNG CAO TỐC\", \"NỘI ĐÔ - LÀO CAI\", \"VỀ BÀI\", \"LỐI RA 1 CHIẾU\", kèm mũi tên chỉ hướng.\n- Biển hình tròn, nền đỏ, viền trắng, có số \"100\" bên trong.\n- Biển hình tròn, nền trắng, viền đỏ, có số \"60\" bên trong.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 149,
+  "size": [
+    450,
+    306
+  ],
+  "elapsed_seconds": 12.501378900000418,
+  "peak_vram_bytes": 7389912576,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024
+}

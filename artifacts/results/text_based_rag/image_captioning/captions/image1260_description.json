@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:07e2fd56f8096c0457e6d3305ac5ba44c91a8a09a72257d4378acfac2044e015",
+  "filename": "image1260.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh chứa một biển chỉ dẫn hình mũi tên, có nền màu xanh dương. Bên trái biển là hình minh họa máy bay màu xanh dương, bên phải là chữ “SÂN BAY” và dưới là chữ “Airport”, tất cả đều màu trắng. Biển có các kích thước được ghi chú bằng số và ký hiệu đơn vị. Bên phải biển là hình minh họa máy bay nhỏ hơn, nằm trên lưới ô vuông, kèm theo các kích thước được ghi chú.",
+  "generated_tokens": 109,
+  "size": [
+    379,
+    133
+  ],
+  "elapsed_seconds": 8.548454699999638,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:63c57f14ebbc6702bb7ddb98cbc0bab6d52ee142cb5573e430f44e4a737791eb",
+  "filename": "image028.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông hình chữ nhật đứng, nền xanh lá cây, có viền trắng. Mỗi biển gồm hai phần:\n\n- Phần trên: Ghi chữ \"TP. HCM\", \"TRUNG LƯỢNG\", \"EXPRESSWAY\", bên trái có hình chữ nhật vàng chứa ký hiệu \"CT.01\", bên phải có biểu tượng đường cao tốc bị gạch chéo.\n\n- Phần dưới: Ghi chữ \"KẾT THÚC\", \"END\", và số \"500 m\".\n\nBiển bên trái được ghi chú là \"a) Biển số IE.453a\", biển bên phải là \"b) Biển số IE.453b\".",
+  "generated_tokens": 155,
+  "size": [
+    401,
+    146
+  ],
+  "elapsed_seconds": 11.667113600000448,
+  "peak_vram_bytes": 7388212736,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

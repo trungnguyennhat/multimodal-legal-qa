@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a9e0ea2855d2d2d81fa2817264e0be534cc472d0d837102dcb340a4ddaf02c13",
+  "filename": "image136.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình tròn có viền đỏ, bên trong là hình ảnh một chiếc xe tải kéo theo một chiếc xe tải khác, dưới hình ảnh đó có dòng chữ “–14 m–”.",
+  "generated_tokens": 42,
+  "size": [
+    83,
+    83
+  ],
+  "elapsed_seconds": 3.2286157999988063,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

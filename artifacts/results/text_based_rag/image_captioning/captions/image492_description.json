@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:6e514a67abec269d66851532f5ccc7981bb7dcc0992f25427dc946977d5e2b7b",
+  "filename": "image492.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai hình chữ nhật chứa các biểu tượng hình học:\n\n- Hình a) có ba mũi tên thẳng đứng hướng lên trên, trong đó mũi tên bên phải bị nghiêng sang phải.\n- Hình b) có ba mũi tên thẳng đứng hướng xuống dưới, trong đó mũi tên bên phải bị nghiêng sang phải.\n\nDưới mỗi hình có ghi chữ:\n\n- a) Biển số S.G,11a\n- b) Biển số S.G,11c",
+  "generated_tokens": 104,
+  "size": [
+    263,
+    124
+  ],
+  "elapsed_seconds": 7.876931300001161,
+  "peak_vram_bytes": 7389888000,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

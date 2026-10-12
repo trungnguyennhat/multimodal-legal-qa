@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:8a00dd840d128dff79c96d70b27c997ff8e8ce47d5ec3594b0b3985ffd029d67",
+    "filename":  "image528.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh là bản vẽ mặt cắt ngang của một đoạn đường bộ. Có các phần được ghi chú bằng chữ:\n\n- Trên cùng: \"Vạch 3 ta\", \"Vạch 3 ta\", \"Đèn phân cách giữa\", \"Vạch 3 ta\".\n- Giữa: \"Vạch 2.5\".\n- Dưới cùng: \"Vạch 3 ta\", \"Lề đường\", \"Đèn chiếu\", \"Lề đường 3m\", \"Vạch 3 ta\", \"Đèn 4.5m\".\n\nCác kích thước được ghi chú ở hai bên và dưới hình:\n\n- Bên trái: \"15.5m\", \"7m\".\n- Bên phải: \"10.5m\", \"Cột hạn 6m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"10.5m\", \"",
+    "generated_tokens":  512,
+    "size":  [
+                 304,
+                 131
+             ],
+    "elapsed_seconds":  35.5345743,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:773c9d902cb02dfdfed6e3aeb98b058a07ba2161843fac2151604facd7de04f0",
+  "filename": "image364.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm ba biển báo giao thông hình chữ nhật đứng, nền xanh, viền trắng, có ký hiệu trắng bên trong:\n\n- Biển a) Biển số 1.413a: Chia thành hai phần dọc. Phần trên có hình xe tải đi thẳng và mũi tên chỉ thẳng lên. Phần dưới có mũi tên chỉ thẳng xuống.\n\n- Biển b) Biển số 1.413b: Chia thành hai phần ngang. Phần trên có mũi tên chỉ sang trái và hình xe tải đi theo hướng đó. Phần dưới có mũi tên chỉ sang phải.\n\n- Biển c) Biển số 1.413c: Chia thành hai phần ngang. Phần trên có mũi tên chỉ sang trái. Phần dưới có hình xe tải đi sang trái và mũi tên chỉ sang phải.",
+  "generated_tokens": 179,
+  "size": [
+    257,
+    65
+  ],
+  "elapsed_seconds": 13.242803499997535,
+  "peak_vram_bytes": 7390458368,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:b8b71440460e2f2419fa41e8dd038ae00ac6b1ab883ff0be980cb00af8fa312b",
+  "filename": "image1366.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có góc bo, nền màu vàng, có chữ \"CT.07\" màu đen ở giữa.",
+  "generated_tokens": 26,
+  "size": [
+    77,
+    37
+  ],
+  "elapsed_seconds": 2.210504800000308,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7474249728,
+  "gpu_free_bytes": 8394899456,
+  "status": "COMPLETED"
+}

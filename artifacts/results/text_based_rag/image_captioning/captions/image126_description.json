@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:1ca6fe38f4b40a8e317d5f45dfeb3c358044fa4fcf5152c36864c9a5a15608ed",
+  "filename": "image126.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình tròn có viền đỏ, bên trong là nền trắng, có chữ số \"10\" màu đen, phía trên chữ số \"10\" có ký hiệu \"t\" nhỏ màu đen.",
+  "generated_tokens": 44,
+  "size": [
+    84,
+    82
+  ],
+  "elapsed_seconds": 3.4999202999970294,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

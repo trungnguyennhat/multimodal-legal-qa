@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:61823dcfd8c40488ee8e2448699166b3bafedfea93670ee97b46aa638b9cbf50",
+  "filename": "image148.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biểu đồ đường cong với các trục tọa độ và nhiều đường cong.\n\n- Trục tung (trái) ghi: \"Tầm nhìn tối thiểu (m)\" với các giá trị từ 0 đến 300.\n- Trục hoành (dưới) ghi: \"Độ dốc dọc đường (dấu '+' lên dốc, dấu '-' xuống dốc)\" với các giá trị từ -7 đến +8.\n- Trục bên phải ghi: \"Tốc độ hành trình (V, km/h)\" với các giá trị từ 50 đến 120.\n- Có nhiều đường cong giảm dần từ trái sang phải, mỗi đường cong tương ứng với một tốc độ hành trình cụ thể (ghi ở phía trên mỗi đường cong).\n- Các đường cong được đánh số tốc độ: 50, 60, 70, 80, 90, 100, 110, 120 km/h.\n- Ghi chú nhỏ ở góc trên bên phải: \"V = 120 km/h\".\n\nCác đường cong đều có dạng giảm dần, bắt đầu từ điểm cao trên trục tung và kéo xuống theo hướng tăng độ dốc (trên trục hoành).",
+  "generated_tokens": 275,
+  "size": [
+    317,
+    287
+  ],
+  "elapsed_seconds": 19.55689970000094,
+  "peak_vram_bytes": 7388019712,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

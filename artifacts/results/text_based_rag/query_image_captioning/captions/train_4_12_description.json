@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:ca54aaf7ff25a12d96f5c43c5432c73b1d98b39f6dd2849f22ce23dfdd15795f",
+  "filename": "train_4_12.jpg",
+  "description": "Biển báo hình tròn, có viền đỏ, bên trong là hình một chiếc xe hơi đang rẽ phải, và toàn bộ hình được phủ một đường gạch chéo màu đỏ từ góc trên bên trái sang góc dưới bên phải.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 51,
+  "size": [
+    230,
+    230
+  ],
+  "elapsed_seconds": 4.200393600003736,
+  "peak_vram_bytes": 7390975488,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912
+}

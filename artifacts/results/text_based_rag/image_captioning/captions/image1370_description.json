@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:63c0321f8d7725b546837120d2e48cad5308957330ca01aa72ae308747cf43b2",
+  "filename": "image1370.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có viền đen, nền màu vàng, bên trong có chữ \"CT.09\" màu đen, được viết hoa, in đậm, nằm ở giữa hình.",
+  "generated_tokens": 40,
+  "size": [
+    75,
+    38
+  ],
+  "elapsed_seconds": 3.278450100000555,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

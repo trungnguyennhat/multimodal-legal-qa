@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:7188e874459e34e26fcb18e4668c6dfbd505dcabfe52c82f4be7a49a285857c0",
+  "filename": "image1398.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có nền vàng, viền đen. Trong hình có chữ \"CT.09\" màu đen, in hoa, nằm ở giữa. Có các kích thước được ghi chú xung quanh hình: chiều dài 130, chiều rộng 70, và các kích thước nhỏ hơn ở góc phải (40, 1.5, 1.5, 8).",
+  "generated_tokens": 88,
+  "size": [
+    268,
+    136
+  ],
+  "elapsed_seconds": 6.992823900000076,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c94947165b5e7f5b84a64f5930f87b21cfacdde4f6399be7cd4cabffa5469fbd",
+  "filename": "image144.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một vòng tròn lớn có viền đỏ, bên trong là nền trắng. Trong vòng tròn, có hai hình ảnh xe hơi: một xe màu đỏ và một xe màu đen, được đặt cạnh nhau. Không có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 60,
+  "size": [
+    83,
+    83
+  ],
+  "elapsed_seconds": 4.560283999999228,
+  "peak_vram_bytes": 7392857600,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

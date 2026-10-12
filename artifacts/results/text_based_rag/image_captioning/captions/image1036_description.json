@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:a8bec0d579a59da56bd8d5958be1415793504fd0f767b2ff778670177973a690",
+  "filename": "image1036.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai hình minh họa:\n\n1. Hình bên trái: Một hình chữ nhật màu xanh, bên trong có hình vẽ một chiếc xe hơi dạng phác thảo trắng. Có các kích thước được ghi chú bằng chữ \"z\": chiều cao tổng cộng là 16z, chiều rộng là 12z, và các kích thước nhỏ hơn như 2.1z, 0.2z, 0.1z, 21z, 2.1z, 0.2z được ghi xung quanh hình.\n\n2. Hình bên phải: Một hình chữ nhật có lưới ô vuông, bên trong có hình vẽ một chiếc xe hơi dạng phác thảo đen. Có các kích thước được ghi chú bằng chữ \"z\": chiều rộng tổng cộng là 10z (gồm 5z + 5z), chiều cao là 42z, và chiều cao từ đỉnh xe đến đường trung tâm là 13z, chiều cao từ đường trung tâm đến đáy xe là 29z (tổng cộng 42z). Có một chiều cao nhỏ 1z được ghi ở góc trên bên phải.\n\nCác hình đều có đường trung tâm chia đôi theo chiều dọc và chiều ngang.",
+  "generated_tokens": 282,
+  "size": [
+    424,
+    185
+  ],
+  "elapsed_seconds": 19.485642499999813,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

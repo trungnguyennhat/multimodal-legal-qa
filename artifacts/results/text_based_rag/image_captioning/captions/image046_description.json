@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:10a3c54c6355be516da1f3a62cc3a155f466ccc195c8428fb16846f6b1d24b20",
+  "filename": "image046.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh hiển thị ba biển báo giao thông dạng chữ nhật đứng, nền màu xanh lá cây, chữ màu trắng. Từ trái sang phải:\n\n- Biển nhỏ nhất: có chữ “Km” ở trên, số “5” ở dưới.\n- Biển ở giữa: có chữ “Km” ở trên, số “5” ở dưới, và một số “5” nhỏ hơn nằm ngay dưới số “5” chính.\n- Biển lớn nhất: có chữ “Km” ở trên, số “5” ở dưới, và hai số “5” nhỏ hơn nằm ngay dưới số “5” chính, xếp chồng lên nhau.\n\nDưới mỗi biển có ghi chú chữ “Biển số IE.460a”, “Biển số IE.460b”, “Biển số IE.460c” tương ứng.",
+  "generated_tokens": 186,
+  "size": [
+    337,
+    235
+  ],
+  "elapsed_seconds": 13.856439399998635,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

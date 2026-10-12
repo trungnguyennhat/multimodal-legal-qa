@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:425cc3f28dd3ed24efdcc66f0635f64664315d4f325ffa76ab4af2dd2c6e2f0d",
+  "filename": "image1106.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\nPhần trên: Một hình chữ nhật màu xanh, có các hình minh họa trắng bên trong, bao gồm:\n- Hình xe ô tô ở góc trên bên trái.\n- Hình xe ô tô ở giữa trên.\n- Hình xe máy ở giữa dưới.\n- Hình xe đạp ở góc dưới bên phải.\n- Hình xe máy ở góc trên bên phải.\n- Một đường chéo màu đỏ cắt ngang từ góc trên bên trái đến góc dưới bên phải.\n- Các đường kẻ dọc phân chia không gian.\n- Có các ký hiệu kích thước xung quanh hình chữ nhật.\n\nPhần dưới: Một hình chữ nhật lớn hơn, có lưới ô vuông, chứa các hình minh họa tương tự như phần trên, nhưng được bố trí lại và có kích thước lớn hơn, kèm theo các ký hiệu kích thước xung quanh. Các hình minh họa bao gồm:\n- Hình xe ô tô ở góc dưới bên trái.\n- Hình xe ô tô ở giữa trên.\n- Hình xe máy ở giữa trên bên phải.\n- Hình xe máy ở giữa dưới.\n- Hình xe đạp ở góc dưới bên phải.\n- Một đường kẻ dọc phân chia không gian.\n- Các ký hiệu kích thước xung quanh hình chữ nhật.\n\nCác ký hiệu kích thước được ghi rõ ở các cạnh và góc của cả hai hình.",
+  "generated_tokens": 294,
+  "size": [
+    391,
+    507
+  ],
+  "elapsed_seconds": 21.586317600000257,
+  "peak_vram_bytes": 7409886208,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872,
+  "status": "COMPLETED"
+}

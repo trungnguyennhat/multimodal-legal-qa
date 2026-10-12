@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:dbbf6cec86911a8f6797bb473a9a212d9659845bf2154157702b7b8f19a6a68e",
+  "filename": "image1124.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật có kích thước 7.4x và 10x, bên trong có một hình chữ nhật nhỏ hơn màu xanh dương chứa chữ cái \"P\" màu trắng. Trên hình chữ nhật lớn có dòng chữ \"ZONE\" nằm ngang, được phủ bởi một hình tam giác màu đen có đường chéo từ góc trên bên trái xuống góc dưới bên phải. Các kích thước được ghi chú xung quanh hình.",
+  "generated_tokens": 93,
+  "size": [
+    240,
+    220
+  ],
+  "elapsed_seconds": 6.669524099999762,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

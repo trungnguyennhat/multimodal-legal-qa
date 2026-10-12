@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8b7a897d25e0c879e8dde75b39b1026971e7a81c83a5023e320ee4ace47b3f4a",
+  "filename": "image634.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình minh họa gồm một hình chữ T được chia thành các phần, trong đó có một hình chữ nhật màu đỏ nằm nghiêng với góc 30 độ. Có các chú thích số liệu: 0.15 ở hai đầu của hình chữ nhật màu đỏ, và góc 30 độ ở phía dưới bên trái. Dưới cùng có dòng chữ “Đơn vị: m”.",
+  "generated_tokens": 86,
+  "size": [
+    153,
+    142
+  ],
+  "elapsed_seconds": 6.266213800001424,
+  "peak_vram_bytes": 7391702528,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

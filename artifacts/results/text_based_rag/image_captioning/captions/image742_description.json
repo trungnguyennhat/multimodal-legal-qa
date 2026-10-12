@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:afb65af849584781ad5bc1381b2a6a39bd22a72cad85a9c0fc07cafb8d23647d",
+    "filename":  "image742.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n- Phần bên trái: Một hình tròn có viền đỏ, bên trong là chữ số \"7\" và ký hiệu \"t\" ở góc trên bên phải của chữ số. Dưới chữ số \"7\" có một thanh ngang với hai đầu hình như móc nối. Xung quanh hình tròn có các kích thước được ghi chú.\n\n- Phần bên phải: Một bản vẽ kỹ thuật của hình tròn bên trái, với lưới ô vuông và các kích thước chi tiết được ghi chú xung quanh hình, bao gồm các số đo như 2,37, 2,43, 1,43, 2,2, 0,68, 1,2, 0,42, 0,82, 0,88, 0,42, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,2, 1,",
+    "generated_tokens":  512,
+    "size":  [
+                 288,
+                 113
+             ],
+    "elapsed_seconds":  36.52855340000008,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:8cff519a5c7e3b02b4a96e5f24f0e691087d3f17ff5f055a466e92bfe6d89cac",
+  "filename": "image1500.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật màu xanh lá cây, chia thành hai phần:\n\n- Phần trên: Chữ màu trắng, gồm dòng chữ “SÂN BAY LONG THÀNH” và “CLB GÔN LONG BÌNH”.\n- Phía trên chữ “SÂN BAY LONG THÀNH” có hai hình vuông nhỏ, mỗi hình chứa một biểu tượng đen: hình máy bay và hình người đi bộ.\n- Phần dưới: Một mũi tên trắng chỉ sang bên phải.\n\nCác kích thước được ghi chú: chiều cao tổng cộng 1000, chiều rộng tổng cộng 2a, chiều cao phần trên là 1000, chiều rộng phần trên là a, chiều cao phần dưới là 500, chiều rộng phần dưới là a.",
+  "generated_tokens": 169,
+  "size": [
+    291,
+    193
+  ],
+  "elapsed_seconds": 13.189379200000076,
+  "peak_vram_bytes": 7393636352,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

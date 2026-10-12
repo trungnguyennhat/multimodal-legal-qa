@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:c400c3257345b526a8674266499736b0df224d7f374bea4e35dce2ca7291946e",
+  "filename": "image698.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\n1. Biểu tượng cấm rẽ trái: Một hình tròn đỏ có đường gạch chéo màu đỏ đi ngang qua, bên trong là hình ảnh một chiếc xe hơi đang rẽ trái.\n\n2. Biểu tượng rẽ trái: Một hình ảnh minh họa một chiếc xe hơi đang rẽ trái, được đặt trong một lưới ô vuông, kèm theo các kích thước được ghi chú bằng chữ số và ký hiệu đo lường.",
+  "generated_tokens": 105,
+  "size": [
+    249,
+    102
+  ],
+  "elapsed_seconds": 7.5020710999999665,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:6affe2a634ee0187dd7e3696857f4366a8f846ae2f6055f90598db0bf753401e",
+  "filename": "image958.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần minh họa:\n\n1. Hình tam giác cân màu đỏ, bên trong có hình chữ nhật màu vàng chứa hình ảnh một chiếc xe hơi đang bị va chạm. Có các kích thước được ghi chú: chiều cao 1,11z, chiều rộng 1,71z, góc 60°, và chiều dài đáy 1,87z. Dưới hình tam giác có ghi chú \"1,87z x 1,87z\" và \"1,87z\".\n\n2. Hình chữ nhật có lưới ô vuông, bên trong có hình ảnh một chiếc xe hơi. Có các kích thước được ghi chú: chiều cao 2,86z, chiều rộng 4,2z, và chiều cao từ đỉnh đến thân xe là 1,4z.\n\nDưới hai hình minh họa là một bảng có 4 cột, ghi các tiêu đề: \"Loại đường\", \"Đường một làn và đường đôi mỗi làn\", \"Đường hai chiều\", \"Đường đôi chiều\". Dưới mỗi tiêu đề có một giá trị số: 20m, 120, 87,5, 70.\n\nCác ký hiệu \"z\" xuất hiện trong các kích thước.",
+  "generated_tokens": 280,
+  "size": [
+    428,
+    199
+  ],
+  "elapsed_seconds": 19.36330590000034,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

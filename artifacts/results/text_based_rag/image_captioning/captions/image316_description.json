@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:afb4347d9754ee1979d9fdbbd1c9bf4a061cd2411aa5890be2081341c97ba645",
+  "filename": "image316.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm 10 hình chữ nhật màu xanh dương, mỗi hình chứa một biểu tượng phương tiện giao thông trắng và kèm theo chữ viết tiếng Việt dưới mỗi hình.\n\n- a) Biển số R.403a: Hình một chiếc ô tô.\n- b) Biển số R.403b: Hình một chiếc xe máy.\n- c) Biển số R.403c: Hình một chiếc xe buýt.\n- d) Biển số R.403d: Hình một chiếc ô tô nhỏ (xe sedan).\n- e) Biển số R.403e: Hình một chiếc xe máy.\n- f) Biển số R.403f: Hình một chiếc xe đạp.\n- g) Biển số R.403g: Hình một chiếc xe tải nhỏ (xe ben).\n- h) Biển số R.403h: Hình một chiếc xe điện 4 chỗ (xe điện loại golf cart).\n- k) Biển số R.403k: Hình một chiếc xe điện 4 chỗ (xe điện loại golf cart) và một chiếc xe tải nhỏ (xe ben) được xếp chồng lên nhau.\n\nChữ viết dưới mỗi hình là mã biển số theo chuẩn R.403a, R.403b, ..., R.403k.",
+  "generated_tokens": 291,
+  "size": [
+    333,
+    435
+  ],
+  "elapsed_seconds": 20.679976200000965,
+  "peak_vram_bytes": 7391999488,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

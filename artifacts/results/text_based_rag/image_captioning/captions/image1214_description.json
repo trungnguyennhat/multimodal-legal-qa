@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:190c740ca7b4e24626b4a7a9ac944bee07bea14b538f7dcb5e933a8e125ca684",
+    "filename":  "image1214.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n1. **Phần bên trái**: Một hình chữ nhật lớn, có viền xanh, bên trong chứa hình ảnh một chiếc máy hút bụi (hoặc thiết bị tương tự) màu đen, với dây kéo dài xuống dưới. Xung quanh hình chữ nhật có các kích thước được ghi rõ bằng số liệu (ví dụ: 12.2, 6.2, 3.8, 5.2, 7.2, 16.2, 3.2, 0.2, 0.12, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0",
+    "generated_tokens":  512,
+    "size":  [
+                 376,
+                 181
+             ],
+    "elapsed_seconds":  35.50438219999978,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

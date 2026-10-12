@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:d4f98d8ec651f4ffdcfac0afb8263af315cf7c0dce0c2cbc4deadecddd962df4",
+  "filename": "image256.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh là một biển báo giao thông hình tam giác có viền đỏ, nền vàng. Trong tam giác có hình một con hươu đang nhảy, được vẽ bằng màu đen.",
+  "generated_tokens": 43,
+  "size": [
+    92,
+    82
+  ],
+  "elapsed_seconds": 3.4278622999991057,
+  "peak_vram_bytes": 7388019712,
+  "peak_reserved_bytes": 7467958272,
+  "gpu_free_bytes": 8401190912,
+  "status": "COMPLETED"
+}

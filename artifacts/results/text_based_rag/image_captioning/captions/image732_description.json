@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:37924de0f62572bf8485ca30017b5309b4ccb01aca0a986f4d15d340035d2299",
+    "filename":  "image732.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần:\n\n1. Biểu tượng cấm xe máy: Một hình tròn đỏ có đường gạch chéo màu đỏ, bên trong là hình vẽ một chiếc xe máy màu đen. Xung quanh biểu tượng có các kích thước được ghi bằng chữ số và ký hiệu \"x\", ví dụ: \"10x\", \"3x\", \"2x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x\", \"1.5x",
+    "generated_tokens":  512,
+    "size":  [
+                 288,
+                 111
+             ],
+    "elapsed_seconds":  35.610003000000006,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

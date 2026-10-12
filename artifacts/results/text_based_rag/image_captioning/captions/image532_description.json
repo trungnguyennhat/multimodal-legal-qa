@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:e82eb9e4789dafe779807a37bd07d1328b6209a2de348160d88c8cd049e746ee",
+    "filename":  "image532.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh minh họa một đoạn đường cao tốc hoặc đường bộ với các làn xe.\n\n- Có ba làn xe chạy theo chiều từ trái sang phải.\n- Làn bên trái được ghi chú “Vạch 3.3”.\n- Làn giữa được ghi chú “Vạch 3.2”.\n- Làn bên phải có một đoạn đường cong với các vạch chéo, ghi chú “Đường lách là”.\n- Phía dưới làn xe có một đoạn “Đường lách là” và một đoạn “Đường lách là” khác.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách là” ở phía dưới bên phải.\n- Có một đoạn “Đường lách là” ở phía dưới bên trái.\n- Có một đoạn “Đường lách",
+    "generated_tokens":  512,
+    "size":  [
+                 343,
+                 96
+             ],
+    "elapsed_seconds":  35.05694510000001,
+    "peak_vram_bytes":  7393691648,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

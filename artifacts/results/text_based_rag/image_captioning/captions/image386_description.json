@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:44d75317e2e24f113b52bc5cc37c5761077410c66b82dec592e2fd1d63df34af",
+  "filename": "image386.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm một hình chữ nhật có viền xanh, bên trong là nền trắng. Trên nền trắng có hai hình silhoutte đen: một người đi bộ với cây gậy, và một người đi bộ đi cạnh, tay cầm túi xách. Không có chữ nào xuất hiện trong hình.",
+  "generated_tokens": 66,
+  "size": [
+    104,
+    131
+  ],
+  "elapsed_seconds": 5.024288499997056,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

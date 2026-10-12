@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:f6dc891b2a27c2e785cc9c3ec53e9d28ce879560c97a00dcd28cc538b59199a3",
+  "filename": "image554.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh minh họa một đoạn đường giao thông với hai làn xe chạy ngược chiều nhau, được phân cách bởi vạch kẻ màu vàng. Trên mỗi làn xe có các mũi tên chỉ hướng đi. Có hai hình tam giác ngược màu trắng, mỗi hình có các đường kẻ ngang bên trong, được đặt ở hai bên của đoạn đường. Dưới hình ảnh có các ký hiệu: một đoạn thẳng được ghi là \"d\", một đoạn thẳng khác được ghi là \"l\", và một đoạn thẳng nhỏ hơn được ghi là \"s\".",
+  "generated_tokens": 120,
+  "size": [
+    217,
+    63
+  ],
+  "elapsed_seconds": 8.533626799995545,
+  "peak_vram_bytes": 7396256768,
+  "peak_reserved_bytes": 7503609856,
+  "gpu_free_bytes": 8365539328,
+  "status": "COMPLETED"
+}

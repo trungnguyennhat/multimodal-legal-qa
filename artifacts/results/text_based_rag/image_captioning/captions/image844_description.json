@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:04ba7522b77491b37969e25bdf0fde09c47942f3367b471d95e3993c2a26437e",
+  "filename": "image844.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng và chữ \"T\" màu đen ở giữa. Các cạnh và chiều cao tam giác được ghi chú kích thước bằng chữ số và đơn vị \"z\".\n\nHình 2: Một hình chữ nhật có chiều rộng 3z và chiều cao 1z, bên trong có hình chữ \"T\" màu đen. Các kích thước chiều cao và chiều rộng của chữ \"T\" cũng được ghi chú bằng chữ số và đơn vị \"z\".",
+  "generated_tokens": 113,
+  "size": [
+    420,
+    163
+  ],
+  "elapsed_seconds": 8.02344939999989,
+  "peak_vram_bytes": 7397206016,
+  "peak_reserved_bytes": 7482638336,
+  "gpu_free_bytes": 8386510848,
+  "status": "COMPLETED"
+}

@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:26dfa5d648cfa49702fe1b3e939126a2f683fbcb51fe70a50bc1f4896afa9152",
+  "filename": "image1280.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình chữ nhật dài, nền màu xanh, có chữ “OA TÀU ĐIỆN NGÂN” và “Metro” màu trắng. Bên trái có hình mũi tên chỉ sang trái, trong đó có biểu tượng hình chữ A cách điệu. Có các kích thước được ghi chú xung quanh hình.",
+  "generated_tokens": 69,
+  "size": [
+    433,
+    187
+  ],
+  "elapsed_seconds": 5.182368699999643,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

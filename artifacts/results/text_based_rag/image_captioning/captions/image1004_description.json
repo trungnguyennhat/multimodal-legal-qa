@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:9c1168b6507163b2356d0a1abd6eb0192dc7a56c108f202217f24b3202071c14",
+  "filename": "image1004.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh gồm hai phần:\n\nPhần bên trái: Một hình tròn màu xanh, có đường kính được ghi là 10x. Bên trong hình tròn có một mũi tên trắng chỉ xuống dưới bên phải. Dọc theo đường kính ngang, có ghi 3x và 3.6x. Dọc theo đường kính dọc, có ghi 3.6x và 3x.\n\nPhần bên phải: Một hình chữ nhật nghiêng được vẽ trên lưới ô vuông. Có các chú thích kích thước: chiều dài 3x và 1.2x, chiều rộng 3x và 1.2x. Ở góc trên bên phải có ghi \"15\" và \"12\".",
+  "generated_tokens": 162,
+  "size": [
+    428,
+    191
+  ],
+  "elapsed_seconds": 11.414470400000027,
+  "peak_vram_bytes": 7392560640,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

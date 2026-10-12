@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:3c9dd6bb4aabd1b7dcc749dc0ccdf293c0e165e4854846d3e49731d083180db9",
+  "filename": "image774.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình 1: Một hình tròn có viền đỏ, bên trong là chữ số \"50\" màu đen, nằm trong một hình tròn lớn hơn. Có các kích thước được ghi chú xung quanh hình tròn.\n\nHình 2: Một hình chữ nhật được chia thành lưới ô vuông nhỏ, bên trong có chữ số \"50\" màu đen. Có các kích thước được ghi chú xung quanh hình chữ nhật.",
+  "generated_tokens": 99,
+  "size": [
+    225,
+    91
+  ],
+  "elapsed_seconds": 7.206038199999966,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

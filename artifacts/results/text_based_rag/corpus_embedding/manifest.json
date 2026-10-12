@@ -1,0 +1,51 @@
+{
+  "status": "COMPLETED",
+  "created_at": "2026-10-12T20:42:49.839785+00:00",
+  "model": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "model_path": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181",
+  "pooling": "CLS",
+  "normalize": "L2",
+  "dimension": 1024,
+  "stored_dtype": "float32",
+  "inference_dtype": "bfloat16",
+  "attention": "sdpa",
+  "batch_size": 4,
+  "index_type": "numpy_exact_inner_product",
+  "similarity": "cosine",
+  "input_prefix": "",
+  "chunks": 1024,
+  "input_max_tokens": 512,
+  "model_max_tokens": 8192,
+  "input_sha256": {
+    "chunks.jsonl": "8eb7eb682c01b6869bca51555fc419fb4039989d9f0e09ab133748e475a4e9fd",
+    "organized_corpus.jsonl": "a888b335d1c1726463a4ff018aa2e12c42d6b7f0286aa8f9cf3ee5320642dbfb",
+    "manifest.json": "cb819daa7c88eec9f68aa0271bc0aea4e59c5669493fd996038f7397243e273c"
+  },
+  "model_files_sha256": {
+    "pytorch_model.bin": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
+    "config.json": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+    "tokenizer.json": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08"
+  },
+  "libraries": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.57.1",
+    "numpy": "2.5.2"
+  },
+  "resources": {
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "total_vram_bytes": 17102864384,
+    "free_vram_before_load": 15908995072,
+    "pytorch_budget_bytes": 8589934592,
+    "peak_vram_bytes": 1192428544,
+    "peak_reserved_bytes": 1222639616,
+    "free_vram_after_inference": 14648606720
+  },
+  "elapsed_seconds": 21.263514199999918,
+  "index_bytes": 4194432,
+  "output_sha256": {
+    "vectors.npy": "2cb78f9bf96745fec928cc2eec4d1a815b035d192252d49c8dc372f140e92a01",
+    "chunks.jsonl": "7b6b24781cb7a26ad51a7ea9c52395b486a4bdaa86ad8cdba2228ddc941df9a1",
+    "organized_corpus.jsonl": "a888b335d1c1726463a4ff018aa2e12c42d6b7f0286aa8f9cf3ee5320642dbfb"
+  }
+}

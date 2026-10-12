@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:be92db74f2fdf4efa6418e64776ec11dc1d5e6788823f2f0f6af9db538e6f580",
+    "filename":  "image1086.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai phần minh họa:\n\n- Phần bên trái: Một hình chữ nhật đứng, có kích thước được ghi là 16z x 12z. Bên trong hình chữ nhật có nền màu xanh, chứa một hình ảnh trắng của xe buýt và một mũi tên trắng hướng lên trên. Một đường chéo màu đỏ cắt ngang từ góc dưới bên trái lên góc trên bên phải. Xung quanh hình chữ nhật có các kích thước và chú thích như 8z, 12z, 0.2z, 0.1z, 0.2z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5z, 0.5",
+    "generated_tokens":  512,
+    "size":  [
+                 428,
+                 200
+             ],
+    "elapsed_seconds":  36.2531227999998,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

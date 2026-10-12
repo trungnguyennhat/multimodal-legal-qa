@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:0753db5a253741dffe21e18f90b7c9da8419c76b39cebe87a5b5935dfac20d11",
+  "filename": "image590.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh hiển thị một dải vật thể dạng tấm phẳng, có bề mặt chia thành lưới ô vuông nhỏ. Dọc theo mép dưới của tấm này, có một dãy các khối hình chữ nhật nhỏ, màu vàng xen kẽ với các khối màu trắng. Dưới tấm phẳng có một vùng bóng đổ màu xám, có hình dạng cong mềm mại. Không có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 93,
+  "size": [
+    240,
+    93
+  ],
+  "elapsed_seconds": 6.6417889000003925,
+  "peak_vram_bytes": 7397206016,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

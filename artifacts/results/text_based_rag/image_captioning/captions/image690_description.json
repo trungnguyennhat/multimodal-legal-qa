@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:4422aae76bec08385cdc7a38965a677c3bc0ef25542c235171e08d90373a845c",
+  "filename": "image690.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị một vòng tròn màu đỏ, có dạng vành đai (đường tròn rỗng), nằm trên nền lưới vuông. Vòng tròn này được bao quanh bởi các đường kẻ lưới và có các chú thích kích thước:\n\n- Dọc theo chiều dọc bên phải: có ghi “1.8” và “1.2”.\n- Dọc theo chiều ngang dưới cùng: có ghi “1.8” và “1.2”.\n- Dọc theo chiều ngang dưới cùng, có một chú thích “1.8” và “1.2”.\n- Dọc theo chiều dọc bên phải, có một chú thích “1.8” và “1.2”.\n\nCác số liệu này có thể là kích thước hoặc tỷ lệ của hình vẽ.",
+  "generated_tokens": 180,
+  "size": [
+    110,
+    107
+  ],
+  "elapsed_seconds": 13.375433000000044,
+  "peak_vram_bytes": 7395686400,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}

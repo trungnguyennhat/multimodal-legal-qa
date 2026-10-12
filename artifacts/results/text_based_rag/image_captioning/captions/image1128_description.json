@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:fe72543d80d16ab12d441840c4e12d1118a244497fa679a21bb6a4e22b4b86a2",
+    "filename":  "image1128.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai hình minh họa dạng bản vẽ kỹ thuật, được bố trí cạnh nhau.\n\nHình bên trái:\n- Một hình chữ nhật lớn màu xanh dương, có kích thước được ghi là 12x.\n- Bên trong hình chữ nhật có một hình chữ nhật nhỏ hơn, chứa một hình vòm cong (hình vòm cửa sổ) ở giữa.\n- Có các đường kẻ chia lưới và các chú thích kích thước xung quanh hình, với các giá trị như: 0.1x, 0.2x, 0.3x, 0.4x, 0.5x, 0.6x, 0.7x, 0.8x, 0.9x, 1.0x, 1.1x, 1.2x, 1.3x, 1.4x, 1.5x, 1.6x, 1.7x, 1.8x, 1.9x, 2.0x, 2.1x, 2.2x, 2.3x, 2.4x, 2.5x, 2.6x, 2.7x, 2.8x, 2.9x, 3.0x, 3.1x, 3.2x, 3.3x, 3.4x, 3.5x, 3.6x, 3.7x, 3.8x, 3.9x, 4.0x, 4.1x, 4.2x, 4.3x, 4.4x, 4.5x, 4.6x, 4.7x, 4.8x, 4.9x, 5.0x, 5.1x, 5.2x, 5.3x, 5.4x, 5.5x, 5.6x, 5.7x, 5.8x, 5.9x, 6.0x, 6.1x, 6.2x, 6.3x, 6.4x, 6.5x, 6.6x, 6.7x,",
+    "generated_tokens":  512,
+    "size":  [
+                 396,
+                 205
+             ],
+    "elapsed_seconds":  35.58628829999998,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

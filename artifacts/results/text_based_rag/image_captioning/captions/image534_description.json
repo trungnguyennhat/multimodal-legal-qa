@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:e3a265af8c38533f5e53f7efe7d3e163f014362825bb8c01babfca829560cc6f",
+  "filename": "image534.jpg",
+  "config_fingerprint": "d5bd5a541f2b75f006e4b3b6a2f65d99233ed19f188095aa55e2d749025a19e6",
+  "description": "Hình ảnh minh họa một đoạn đường với các yếu tố sau:\n\n- Một đoạn đường cao tốc hoặc đường nhiều làn xe, có các mũi tên chỉ hướng đi thẳng.\n- Một đoạn đường dẫn vào (gọi là “Đường nhập vào”) với các vạch kẻ dạng tam giác hoặc hình răng cưa, nghiêng về phía trên.\n- Một phần đường được ghi chú là “Đa phân cách giữa” – nằm ở giữa hai chiều đường.\n- Một phần đường được ghi chú là “Giới hạn làn xe” – nằm ở phía dưới bên phải.\n- Có các ký hiệu số “30” và “30” ở giữa đoạn đường, có thể là chỉ số chiều rộng hoặc khoảng cách.\n- Có một ký hiệu “10” ở phía bên phải, gần “Giới hạn làn xe”.\n\nCác yếu tố này được vẽ theo phong cách kỹ thuật, đơn giản, màu xám, không có chi tiết trang trí.",
+  "generated_tokens": 210,
+  "size": [
+    276,
+    98
+  ],
+  "elapsed_seconds": 14.432161700002325,
+  "peak_vram_bytes": 7391884800,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

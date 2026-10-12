@@ -1,0 +1,36 @@
+{
+    "image_id":  "sha256:36b0de8c89e3be46a51a0f19c6f70495fcaf394cb354ed003c1a8b778abea306",
+    "filename":  "train_2_26.jpg",
+    "description":  "- Biển hình chữ nhật nền xanh, có mũi tên chỉ hướng và chữ viết.\n- Biển hình tròn nền trắng, có số \"50\" ở giữa.\n- Biển hình tròn nền đỏ, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền đỏ, có hình xe tải bị gạch chéo.\n- Biển hình chữ nhật nền đỏ, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền xanh, có hình xe máy và xe tải bị gạch chéo.\n- Biển hình tròn nền x",
+    "settings":  {
+                     "model":  "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+                     "revision":  "10d842936325905934ea24e64325d774693f166e",
+                     "prompt":  "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+                     "min_pixels":  131072,
+                     "max_pixels":  786432,
+                     "max_new_tokens":  384,
+                     "crop":  false,
+                     "do_sample":  false,
+                     "dtype":  "bfloat16",
+                     "attention":  "sdpa",
+                     "libraries":  {
+                                       "torch":  "2.7.1+cu128",
+                                       "transformers":  "4.57.1",
+                                       "bitsandbytes":  "0.49.0",
+                                       "Pillow":  "12.3.0"
+                                   }
+                 },
+    "status":  "COMPLETED",
+    "token_limit_reached":  true,
+    "generated_tokens":  384,
+    "size":  [
+                 653,
+                 490
+             ],
+    "elapsed_seconds":  29.71176469999773,
+    "peak_vram_bytes":  7436971008,
+    "peak_reserved_bytes":  7509901312,
+    "gpu_free_bytes":  8359247872,
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

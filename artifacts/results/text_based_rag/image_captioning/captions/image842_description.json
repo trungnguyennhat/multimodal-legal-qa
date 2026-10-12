@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:a3be16efb6e77a58bbebeaa7cc0c1aa01649fae4a9fe7b336b93adc318e96a03",
+    "filename":  "image842.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình 1: Một tam giác cân màu đỏ, bên trong có nền vàng và một hình chữ T màu đen ở giữa. Có các kích thước được ghi chú xung quanh hình: chiều cao 1.94x, chiều rộng đáy 10x, bán kính cong 0.64x, và các chiều dài khác như 0.71x, 1.94x, 1.94x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0.78x, 0",
+    "generated_tokens":  512,
+    "size":  [
+                 407,
+                 172
+             ],
+    "elapsed_seconds":  36.23122850000004,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

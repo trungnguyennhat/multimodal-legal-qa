@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:90bb86d27c0976a749196fd3281ffb5715796520185b2d2187ba9231c20db39c",
+  "filename": "image454.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh gồm hai biển báo giao thông hình chữ nhật, nền màu xanh, viền trắng, có nội dung chữ màu trắng.\n\n- Biển a) có mã số I.447c:  \n  - Trên cùng ghi “QUỐC LỘ 1”  \n  - Dưới ghi “HÀ NỘI” ở bên trái và “QUỐC LỘ 6” ở bên phải  \n  - Giữa có biểu tượng đường giao nhau dạng chữ T, với đường thẳng đứng (đường Quốc Lộ 1) và đường ngang (đường Quốc Lộ 6) giao nhau ở giữa, có mũi tên chỉ hướng đi lên trên.\n\n- Biển b) có mã số I.447d:  \n  - Trên cùng ghi “QUỐC LỘ 1”  \n  - Dưới ghi “HÀ NỘI” ở bên trái và “QUỐC LỘ 6” ở bên phải  \n  - Giữa có biểu tượng đường giao nhau dạng chữ T, với đường thẳng đứng (đường Quốc Lộ 1) và đường ngang (đường Quốc Lộ 6) giao nhau ở giữa, nhưng có thêm một mũi tên chỉ hướng đi sang phải từ điểm giao.\n\nHai biển có bố cục và nội dung chữ giống nhau, chỉ khác ở biểu tượng mũi tên hướng đi.",
+  "generated_tokens": 302,
+  "size": [
+    249,
+    79
+  ],
+  "elapsed_seconds": 22.114657300000545,
+  "peak_vram_bytes": 7393501696,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176,
+  "status": "COMPLETED"
+}

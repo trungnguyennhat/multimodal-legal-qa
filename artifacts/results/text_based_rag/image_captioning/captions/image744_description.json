@@ -1,0 +1,18 @@
+{
+    "image_id":  "sha256:12cf02fccc03acf830bb8557c50f938f5e7f3fe53967c73da74a8992f9edcca5",
+    "filename":  "image744.jpg",
+    "config_fingerprint":  "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+    "description":  "Hình ảnh gồm hai hình minh họa:\n\n1. Hình tròn có viền đỏ, bên trong có chữ số \"3,5m\" được viết màu đen, nằm ở trung tâm. Xung quanh hình tròn có các đường kẻ và chú thích kích thước như: \"3,5m\" được chia thành hai phần bằng nhau theo chiều dọc, và các chú thích \"1,65x\", \"3,30x\", \"3,30x\" ở dưới cùng.\n\n2. Hình chữ nhật có lưới ô vuông, bên trong có hình tam giác ngược màu đen ở giữa, phía trên có hình cung cong. Trong hình có chữ số \"3,5m\" ở giữa, và các chú thích kích thước như: \"4x\", \"2,5x\", \"2,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"3,5x\", \"",
+    "generated_tokens":  512,
+    "size":  [
+                 297,
+                 136
+             ],
+    "elapsed_seconds":  36.60412710000003,
+    "peak_vram_bytes":  7399021056,
+    "peak_reserved_bytes":  7507804160,
+    "gpu_free_bytes":  8361345024,
+    "status":  "COMPLETED",
+    "original_status":  "INCOMPLETE",
+    "accepted_by_user":  true
+}

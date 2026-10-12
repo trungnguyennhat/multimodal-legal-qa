@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:3a1942ad849a179cfa882a73125e87747ca0c7bdabb8e18a915f1970773925c7",
+  "filename": "image374.jpg",
+  "config_fingerprint": "6f0d654a6c0f226a68628ffff444be811440ee1999de0d02f2e5903c2cba5c5a",
+  "description": "Hình ảnh chứa một biểu tượng hình chữ nhật màu xanh dương với các đường kẻ ngang và dọc tạo thành lưới. Trong lưới đó, có một đường cong màu đen, bắt đầu từ phía trên bên trái, uốn cong xuống dưới và sang phải, tạo thành hình dạng giống như một mũi tên quay đầu hoặc một đường đi曲折 (uốn khúc). Không có chữ viết nào xuất hiện trong hình.",
+  "generated_tokens": 89,
+  "size": [
+    92,
+    73
+  ],
+  "elapsed_seconds": 6.9186040999993565,
+  "peak_vram_bytes": 7392643584,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000,
+  "status": "COMPLETED"
+}

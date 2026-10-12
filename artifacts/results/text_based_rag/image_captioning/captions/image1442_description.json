@@ -1,0 +1,16 @@
+{
+  "image_id": "sha256:136f3eec89ca61f1cca6819a44547b3555d1bd7cbc3f341e16c8339ed3d6cc13",
+  "filename": "image1442.jpg",
+  "config_fingerprint": "28d920ee779eae81e3ba3e77ea515b07c5da81c763bed8a487c8e4eade6e3c2b",
+  "description": "Hình ảnh hiển thị một biển báo giao thông dạng hình chữ nhật, được chia thành hai phần ngang:\n\n- Phần trên: nền màu xanh lá cây, có một hình chữ nhật nhỏ màu vàng ở góc trái với chữ “LỐI RA” và “EXIT” bên trong. Phía bên phải có dòng chữ “BẾN LỨC 2 km”.\n\n- Phần dưới: nền màu xanh lá cây, có một mũi tên trắng chỉ lên và sang phải với góc 45 độ, bên dưới mũi tên có ghi “35”. Phía bên phải có hai dòng chữ: “TT. BẾN LỨC” và “TT. ĐỨC HÒA”.\n\nBiển báo có các kích thước được ghi chú bằng số và ký hiệu như chiều dài L, chiều rộng W, và các khoảng cách H1, H2, K1, K2, v.v.",
+  "generated_tokens": 194,
+  "size": [
+    367,
+    224
+  ],
+  "elapsed_seconds": 15.309772200000225,
+  "peak_vram_bytes": 7392270848,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024,
+  "status": "COMPLETED"
+}
