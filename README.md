@@ -4,6 +4,18 @@ Hệ thống nghiên cứu cho VLSP 2025 MLQA-TSR, không phải công cụ tư 
 
 ## Tiến độ
 
+Rollback ngày 13/10/2026 — `AWAITING_USER_TEST`: theo yêu cầu người dùng, đã gỡ corpus_relations và toàn bộ thay đổi liên quan đến bổ sung quan hệ, khôi phục code chunking/embedding/retrieval trước thí nghiệm. Giữ TOP_K=5 do người dùng đã chọn lại. Agent được yêu cầu chạy lại và đã hoàn tất: 1.024 chunk, 418 query train; F2@5=0,1271638941, Recall@5=0,1657296651, Precision@5=0,0712918660, khớp điểm top-5 trước relation. File kết quả hoạt động nằm tại `artifacts/results/text_based_rag/query_retrieval/retrieval_results.jsonl`, metric trong metrics.json cùng thư mục. Output thí nghiệm relation được giữ ở các folder *_relation_backup_<timestamp>, không dùng trong pipeline. Model, caption, vector query và baseline không đổi. Lệnh thực tế đã chạy từ root:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+.\.venv\Scripts\python.exe -m text_based_rag.corpus_chunking
+.\.venv\Scripts\python.exe -m text_based_rag.corpus_embedding index
+.\.venv\Scripts\python.exe -m text_based_rag.query_retrieval
+```
+
+Ba lệnh trên đã chạy xong; không cần chạy lại để xem kết quả. Code đã khôi phục cơ chế từ chối output tồn tại: nếu muốn chạy lại, tự lưu/đổi tên ba thư mục corpus_chunking, corpus_embedding và query_retrieval trước. Manifest của cả ba output hiện COMPLETED; chờ người dùng xác nhận bản rollback.
+
 Lượt baseline Visualized-BGE trên train: `AWAITING_USER_TEST`. Runner `temp/run_official_baseline_train.py` gọi lại hàm embedding, top-5 vector rồi bỏ trùng citation và evaluator F2 của `data/raw/VLSP2025-MLQA-TSR/retrieval.py`; ảnh/query lấy từ train split 418 mẫu để so sánh cùng tập với text_based_rag. Không dùng adapter đã xóa. Dùng weight Visualized_m3.pth có sẵn, float32, inference_mode, không cắt text. Đây là baseline zero-shot, không training. Chỉ sửa đường dẫn và bọc chuỗi HTML bằng StringIO để tương thích pandas mới; không sửa file baseline gốc.
 
 Lượt agent chạy ngày 12/10/2026 đã FAILED ở corpus vector 325/933, khi xử lý G.1; chưa tạo prediction hoặc metric. Manifest lỗi tại `data/raw/VLSP2025-MLQA-TSR/results/baseline_train_20261012_224453/manifest.json`. Kiểm tra tokenizer nguồn cho G.1 cho thấy 16.765 token, vượt giới hạn vị trí 8.192 của BGE-M3 (ảnh còn chiếm thêm vị trí). Code gốc không truncation/chunking nên lỗi CUDA indexing. Phải thống nhất cách giới hạn text trước khi chạy lại; chưa tự thay đổi baseline.

@@ -6,7 +6,7 @@ Xây dựng Multimodal Legal RAG cho bộ dữ liệu VLSP 2025 MLQA-TSR theo t�
 
 ## Quy trình bắt buộc
 
-1. Trước khi làm việc, đọc toàn bộ `AGENTS.md` và `README.md`.
+1. Trước khi làm việc, đọc toàn bộ `AGENTS.md`.
 2. Chỉ thực hiện stage mà người dùng yêu cầu rõ ràng. Không chuẩn bị trước code của stage sau.
 3. Không đổi phạm vi hoặc kiến trúc đã duyệt nếu chưa giải thích và được người dùng đồng ý.
 4. Cuối mỗi stage:

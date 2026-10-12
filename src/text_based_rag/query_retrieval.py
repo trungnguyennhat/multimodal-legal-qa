@@ -15,7 +15,7 @@ from .image_captioning import ROOT, read_lines, save
 BASE = ROOT / "artifacts/results/text_based_rag"
 OUTPUT = BASE / "query_retrieval"
 TRAIN = ROOT / "data/processed/splits/train.json"
-TOP_K = 10
+TOP_K = 5
 
 
 def scores(tp, predicted, relevant):
