@@ -65,7 +65,7 @@ def main():
     config["libraries"] = {name: importlib.metadata.version(name)
                            for name in ("torch", "transformers", "bitsandbytes", "Pillow", "accelerate")}
     fingerprint = sha256(json.dumps(config, sort_keys=True).encode()).hexdigest()
-    run = ROOT / "artifacts/results/text_based_rag/image_captioning"
+    run = ROOT / "artifacts/experiments/text_based_rag/image_captioning"
     previous = {}
     if (run / "manifest.json").exists():
         previous = json.loads((run / "manifest.json").read_text(encoding="utf-8"))

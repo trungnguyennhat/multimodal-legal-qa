@@ -1,5 +1,6 @@
-"""Caption only images referenced by the train split; no query embedding or retrieval."""
+"""Caption images referenced by a train/dev split without reading labels."""
 
+import argparse
 from datetime import datetime, timezone
 from hashlib import sha256
 from importlib.metadata import version
@@ -13,12 +14,17 @@ from .image_captioning import ROOT, MODEL, REVISION, CACHE, MIN_PIXELS, MAX_PIXE
 
 INPUT = ROOT / "data/processed/splits/train.json"
 IMAGES = ROOT / "data/processed/images/train"
-OUTPUT = ROOT / "artifacts/results/text_based_rag/query_image_captioning"
+OUTPUT = ROOT / "artifacts/experiments/text_based_rag/query_image_captioning_train"
 MAX_NEW_TOKENS = 384
 TRAIN_PROMPT = """Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì."""
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--split', choices=('train', 'dev'), default='train')
+    args = parser.parse_args()
+    INPUT = ROOT / f'data/processed/splits/{args.split}.json'
+    OUTPUT = ROOT / f'artifacts/experiments/text_based_rag/query_image_captioning_{args.split}'
     rows = read_json_list(INPUT)
     query_ids, unique, mapping = set(), {}, []
     by_filename = {}
@@ -72,7 +78,7 @@ def main():
             if saved.get("status") == "COMPLETED" and saved.get("description", "").strip():
                 results[image_id] = saved
     resumed = len(results)
-    manifest = {"status": "IN_PROGRESS", "split": "train", "input": str(INPUT),
+    manifest = {"status": "IN_PROGRESS", "split": args.split, "input": str(INPUT),
                 "input_sha256": sha256(INPUT.read_bytes()).hexdigest(),
                 "train_images_signature": signature, "settings": settings,
                 "queries": len(rows), "image_files": len(by_filename), "unique_image_hashes": len(unique),
@@ -102,7 +108,7 @@ def main():
             for item in mapping:
                 stream.write(json.dumps(item, ensure_ascii=False) + "\n")
         temporary.replace(OUTPUT / "query_image_mapping.jsonl")
-        print(f"[resume] Giữ {resumed} ảnh đã xong; chỉ caption ảnh train còn thiếu.", flush=True)
+        print(f"[resume] split={args.split}; giữ {resumed} ảnh đã xong; chỉ caption ảnh còn thiếu.", flush=True)
         report()
         if len(results) < len(unique):
             import torch
@@ -128,7 +134,7 @@ def main():
                 dtype=torch.bfloat16, device_map={"": 0}, attn_implementation="sdpa").eval()
             if not model.is_loaded_in_4bit:
                 raise RuntimeError("Dừng: Qwen không được nạp ở 4-bit.")
-            phase = "train-image-caption-inference"
+            phase = f"{args.split}-image-caption-inference"
             for image_id, item in unique.items():
                 if image_id in results:
                     continue

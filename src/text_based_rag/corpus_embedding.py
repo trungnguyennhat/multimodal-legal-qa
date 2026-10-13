@@ -16,8 +16,8 @@ MODEL = "BAAI/bge-m3"
 REVISION = "5617a9f61b028005a4858fdac845db406aefb181"
 CACHE = ROOT / "models/huggingface/hub"
 SNAPSHOT = CACHE / "models--BAAI--bge-m3" / "snapshots" / REVISION
-INPUT = ROOT / "artifacts/results/text_based_rag/corpus_chunking"
-OUTPUT = ROOT / "artifacts/results/text_based_rag/corpus_embedding"
+INPUT = ROOT / "artifacts/experiments/text_based_rag/corpus_chunking"
+OUTPUT = ROOT / "artifacts/experiments/text_based_rag/corpus_embedding"
 
 
 def file_hash(path):

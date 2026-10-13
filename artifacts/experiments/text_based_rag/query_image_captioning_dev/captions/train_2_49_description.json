@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:cecc844386c6d114cf1ca888389c269ea32834dc7ea97c0598d7ed0a95f8e0cf",
+  "filename": "train_2_49.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh, có hình biểu tượng đường cao tốc ở góc trên bên trái, và hai mũi tên chỉ hướng: một mũi tên chỉ thẳng, một mũi tên chỉ sang phải, cùng dòng chữ \"500 m\" ở dưới.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 58,
+  "size": [
+    2048,
+    1211
+  ],
+  "elapsed_seconds": 5.236445900001854,
+  "peak_vram_bytes": 7685010432,
+  "peak_reserved_bytes": 7786725376,
+  "gpu_free_bytes": 8082423808
+}

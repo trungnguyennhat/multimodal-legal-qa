@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:13ec1339bdaa4549687f7526121f156961e96df354d8ec19781b9d7b04d4128c",
+  "filename": "train_8_19.jpg",
+  "description": "Biển hình tròn, nền đỏ, có dấu X màu đen ở giữa, bên trong là nền xanh dương.\n\nDưới biển đó là biển hình chữ nhật, nền trắng, có hình một chiếc xe buýt đen ở giữa.\n\nDưới biển chữ nhật là biển hình chữ nhật nhỏ hơn, nền trắng, có dòng chữ đen ghi giờ: \"6:00 - 10:00\" và \"16:00 - 20:00\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 102,
+  "size": [
+    500,
+    330
+  ],
+  "elapsed_seconds": 8.257561599995825,
+  "peak_vram_bytes": 7395620864,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000
+}

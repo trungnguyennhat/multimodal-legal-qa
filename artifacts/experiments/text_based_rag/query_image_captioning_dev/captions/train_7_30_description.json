@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:b80e27998451645cee65a1b4870ac7dc9886035b69bf3fb51b1f2937676b2d24",
+  "filename": "train_7_30.jpg",
+  "description": "Các biển báo trong ảnh có hình chữ nhật, với nền màu xanh dương và chữ màu trắng. Một số biển có hình mũi tên chỉ hướng, một số có hình biểu tượng xe hơi, xe máy, và hình người đi bộ. Có biển hiển thị số km và biển có hình vòng tròn với đường gạch chéo. Một biển có hình chữ nhật nhỏ với nền đỏ và chữ số màu trắng.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 87,
+  "size": [
+    1200,
+    675
+  ],
+  "elapsed_seconds": 8.076818600005936,
+  "peak_vram_bytes": 7654228480,
+  "peak_reserved_bytes": 7746879488,
+  "gpu_free_bytes": 8122269696
+}

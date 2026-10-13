@@ -1,0 +1,47 @@
+{
+  "split": "dev",
+  "example_split": "train",
+  "method": "example_citation_transfer",
+  "top_k": 5,
+  "neighbors": 5,
+  "queries": 112,
+  "queries_with_train_image_overlap": 5,
+  "macro": {
+    "precision": 0.28958333333333336,
+    "recall": 0.5818027210884354,
+    "f1": 0.36974270768913625,
+    "f2": 0.46344673363879757
+  },
+  "micro": {
+    "precision": 0.27941176470588236,
+    "recall": 0.5984251968503937,
+    "f1": 0.38095238095238093,
+    "f2": 0.48717948717948717
+  },
+  "hit_rate_at_5": 0.7767857142857143,
+  "candidate_recall": 0.6388818027210884,
+  "eligible_label_coverage": 0.9285714285714286,
+  "mean_predicted_count": 4.857142857142857,
+  "gold_citations_missing_from_index": [
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "22.0"
+    },
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "9.0"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "22 B.15"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "G1.1"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "I.414"
+    }
+  ]
+}

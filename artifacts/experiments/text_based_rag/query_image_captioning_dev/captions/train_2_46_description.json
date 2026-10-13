@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:531d7c11bcefb7af7bc9c73b79b03338290319f7c4430ef5a2d503828e60b2a4",
+  "filename": "train_2_46.jpg",
+  "description": "Biển hình tròn, nền đỏ, có hình xe đạp màu đen ở giữa, bị một đường gạch chéo màu đen cắt ngang.  \nDưới biển hình tròn là biển chữ nhật nền đỏ, chữ trắng, có dòng chữ “CẤM” và dòng chữ nhỏ hơn bên dưới.  \nPhía sau biển hình tròn có biển hình tam giác nền xanh, có hình mũi tên chỉ hướng.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 90,
+  "size": [
+    800,
+    600
+  ],
+  "elapsed_seconds": 7.3776141999987885,
+  "peak_vram_bytes": 7488859648,
+  "peak_reserved_bytes": 7532969984,
+  "gpu_free_bytes": 8336179200
+}

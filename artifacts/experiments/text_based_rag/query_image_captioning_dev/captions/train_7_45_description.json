@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:80db7757a56d3539d02bd0150ca1814994eaf115593cf377f53f77233bb4e619",
+  "filename": "train_7_45.jpg",
+  "description": "- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.\n- Biển hình chữ nhật",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "INCOMPLETE",
+  "token_limit_reached": true,
+  "generated_tokens": 384,
+  "size": [
+    414,
+    276
+  ],
+  "elapsed_seconds": 30.488121700000193,
+  "peak_vram_bytes": 7397883904,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872
+}

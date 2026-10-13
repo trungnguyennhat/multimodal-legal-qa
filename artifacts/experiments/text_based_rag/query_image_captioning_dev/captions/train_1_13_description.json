@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:7b62f5c7f1cb46634c2b1d228e4fe560ec496a431458779d277e9da765ac44c4",
+  "filename": "train_1_13.jpg",
+  "description": "- Biển hình chữ nhật, nền đen, chữ vàng: có hình một chiếc xe máy và một chiếc xe hơi, kèm chữ số \"2m\".\n- Biển hình tròn, nền đỏ, viền trắng: có hình một đường thẳng ngang màu đỏ.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy, một chiếc xe hơi, và một người đi bộ, tất cả đều bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một người đi bộ bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.\n- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.\n-",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "INCOMPLETE",
+  "token_limit_reached": true,
+  "generated_tokens": 384,
+  "size": [
+    868,
+    579
+  ],
+  "elapsed_seconds": 30.165171000000555,
+  "peak_vram_bytes": 7493422592,
+  "peak_reserved_bytes": 7549747200,
+  "gpu_free_bytes": 8319401984
+}

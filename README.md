@@ -1,547 +1,73 @@
 # Multimodal Legal RAG
 
-Hệ thống nghiên cứu cho VLSP 2025 MLQA-TSR, không phải công cụ tư vấn pháp lý production.
+Project nghiên cứu VLSP 2025 MLQA-TSR, không phải công cụ tư vấn pháp lý production. Quy tắc làm việc: [AGENTS.md](AGENTS.md).
 
-## Tiến độ
+## Trạng thái
 
-Rollback ngày 13/10/2026 — `AWAITING_USER_TEST`: theo yêu cầu người dùng, đã gỡ corpus_relations và toàn bộ thay đổi liên quan đến bổ sung quan hệ, khôi phục code chunking/embedding/retrieval trước thí nghiệm. Giữ TOP_K=5 do người dùng đã chọn lại. Agent được yêu cầu chạy lại và đã hoàn tất: 1.024 chunk, 418 query train; F2@5=0,1271638941, Recall@5=0,1657296651, Precision@5=0,0712918660, khớp điểm top-5 trước relation. File kết quả hoạt động nằm tại `artifacts/results/text_based_rag/query_retrieval/retrieval_results.jsonl`, metric trong metrics.json cùng thư mục. Output thí nghiệm relation được giữ ở các folder *_relation_backup_<timestamp>, không dùng trong pipeline. Model, caption, vector query và baseline không đổi. Lệnh thực tế đã chạy từ root:
+| Thành phần | Trạng thái |
+| --- | --- |
+| Stage 0–1: khởi tạo, dữ liệu và split | `COMPLETED` |
+| Stage 2–5 cũ: đã gỡ retrieval/adapter/QA | `AWAITING_USER_TEST` |
+| Stage 6–7: ablation, demo và đóng gói | `NOT_STARTED` |
+| Chuẩn hóa, chunk và index corpus | `AWAITING_USER_TEST` |
+| Caption corpus và query train; embedding query train | `COMPLETED` |
+| Caption, embedding dev và retrieval dev từ kho train | `AWAITING_USER_TEST` |
+
+## Luồng hiện tại
+
+```text
+Câu hỏi dev + caption ảnh → BGE-M3 → tìm trong 418 mẫu train
+→ lấy relevant_articles của 5 hàng xóm → gom điểm → tối đa 5 citation
+```
+
+Citation nhận cosine cao nhất trong các hàng xóm hỗ trợ nó, hòa điểm theo citation ID. Chỉ trả citation tồn tại trong index luật. Không fine-tune; nhãn dev chỉ dùng đánh giá sau khi dự đoán. Code từ chối query ID trùng train/dev và loại ví dụ cùng ID/pixel ảnh trước tìm kiếm; chưa phát hiện gần trùng do resize/crop/nén lại. Đã phát hiện 2 cặp ảnh train/dev trùng pixel dù khác ID.
+
+Kết quả dev ngày 14/10/2026: 112 query, macro **F2 = 0,4634**, precision = 0,2896, recall = 0,5818, hit rate = 77,68%; candidate recall = 0,6389. Evaluator chính thức cho F2 = 0,4634467334, khớp metric local trong sai số epsilon. Có 5 query phải loại ví dụ cùng ảnh từ kho train; đã kiểm tra nguồn hàng xóm và loại ảnh cho toàn bộ prediction. Có 5 gold citation dev thiếu trong index, vẫn giữ trong mẫu số recall. Đã tạo đủ 61 description nhưng 7 bị cắt ở 384 token (ảnh hưởng 15 query); giữ `INCOMPLETE` và dùng qua cờ cho phép bên dưới. Manifest embedding/retrieval `COMPLETED`; chờ người dùng kiểm tra kết quả.
+
+## Chạy trên dev
+
+Chạy PowerShell từ root. Cần `.venv`, model local Qwen3-VL-8B NF4/BGE-M3, ảnh trong `data/processed/images/train`, split và vector train/corpus hiện có. Caption/embedding cần GPU CUDA; retrieval dùng CPU. Không cần tạo lại đầu vào đã hoàn tất.
 
 ```powershell
 $env:PYTHONPATH="src"
 $env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m text_based_rag.corpus_chunking
-.\.venv\Scripts\python.exe -m text_based_rag.corpus_embedding index
-.\.venv\Scripts\python.exe -m text_based_rag.query_retrieval
-```
-
-Ba lệnh trên đã chạy xong; không cần chạy lại để xem kết quả. Code đã khôi phục cơ chế từ chối output tồn tại: nếu muốn chạy lại, tự lưu/đổi tên ba thư mục corpus_chunking, corpus_embedding và query_retrieval trước. Manifest của cả ba output hiện COMPLETED; chờ người dùng xác nhận bản rollback.
-
-Lượt baseline Visualized-BGE trên train: `AWAITING_USER_TEST`. Runner `temp/run_official_baseline_train.py` gọi lại hàm embedding, top-5 vector rồi bỏ trùng citation và evaluator F2 của `data/raw/VLSP2025-MLQA-TSR/retrieval.py`; ảnh/query lấy từ train split 418 mẫu để so sánh cùng tập với text_based_rag. Không dùng adapter đã xóa. Dùng weight Visualized_m3.pth có sẵn, float32, inference_mode, không cắt text. Đây là baseline zero-shot, không training. Chỉ sửa đường dẫn và bọc chuỗi HTML bằng StringIO để tương thích pandas mới; không sửa file baseline gốc.
-
-Lượt agent chạy ngày 12/10/2026 đã FAILED ở corpus vector 325/933, khi xử lý G.1; chưa tạo prediction hoặc metric. Manifest lỗi tại `data/raw/VLSP2025-MLQA-TSR/results/baseline_train_20261012_224453/manifest.json`. Kiểm tra tokenizer nguồn cho G.1 cho thấy 16.765 token, vượt giới hạn vị trí 8.192 của BGE-M3 (ảnh còn chiếm thêm vị trí). Code gốc không truncation/chunking nên lỗi CUDA indexing. Phải thống nhất cách giới hạn text trước khi chạy lại; chưa tự thay đổi baseline.
-
-Sau khi người dùng đồng ý, lượt `baseline_train_20261012_225338` đã chạy xong trên 418 query: 933 vector corpus, 431 vector corpus bị cắt còn 2.048 token, 0 query bị cắt, F2 baseline gốc trên train = 0,10653633. Model dùng Visualized_m3.pth zero-shot, không phải adapter fine-tune. Output tại `data/raw/VLSP2025-MLQA-TSR/results/baseline_train_20261012_225338/`; 418 prediction, mỗi query có 1–5 citation sau bỏ trùng. Đây là phép so sánh trên train và truncation làm thay đổi nội dung đưa vào model; không xem là baseline gốc nguyên vẹn. Trạng thái bước này giữ `AWAITING_USER_TEST` đến khi người dùng xác nhận kết quả.
-
-Điều kiện: model Visualized-BGE và snapshot BGE-M3 local; dependency trong `.venv` gồm pandas/lxml/tabulate. Runner cắt text ở 2.048 token và ghi số vector bị cắt trong manifest. Log mỗi 30 giây có số vector/query, %, elapsed và ETA. Allocator giới hạn tối đa 12 GiB, chừa 2 GiB theo VRAM trống đầu lượt.
-
-```powershell
 $env:HF_HUB_OFFLINE="1"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -u temp/run_official_baseline_train.py
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_image_captioning --split dev
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_embedding --split dev --allow-incomplete-captions
+.\.venv\Scripts\python.exe -u -m text_based_rag.example_citation_retrieval --split dev --neighbors 5 --overwrite
 ```
 
-Output: `data/raw/VLSP2025-MLQA-TSR/results/baseline_train_<timestamp>/` gồm law_id.npy, law_embedding.npy, predictions.json (418 query khi hoàn tất), metrics.json (F2 macro chính thức trong file baseline) và manifest.json (COMPLETED/FAILED, thông số và tài nguyên). Prediction checkpoint được lưu mỗi query; chạy lại tạo thư mục mới, không resume. Nếu thiếu pandas/lxml/tabulate, cài bằng `.\.venv\Scripts\python.exe -m pip install pandas lxml tabulate`. Nếu OOM, lượt chạy báo FAILED; đóng ứng dụng dùng GPU trước khi chạy lại. Người dùng đã cho phép agent trực tiếp chạy lượt này; vẫn chờ người dùng kiểm tra kết quả trước khi xác nhận COMPLETED.
+Caption resume ảnh đã hoàn tất. Cờ `--allow-incomplete-captions` cho phép dùng description không rỗng bị chạm giới hạn token, giữ trạng thái `INCOMPLETE`, không đánh dấu người dùng đã duyệt; bỏ cờ để yêu cầu mọi caption hoàn tất. Embedding từ chối output đã tồn tại; muốn tạo lại phải tự lưu bản cũ trước. **Retrieval `--overwrite` ghi đè kết quả cũ**, không thay caption/vector train. Bỏ cờ để từ chối ghi đè.
 
-| Stage | Nội dung | Trạng thái |
-| --- | --- | --- |
-| 0 | Khởi tạo và quản trị | `COMPLETED` |
-| 1 | Dữ liệu | `COMPLETED` |
-| 2 | Evaluator còn giữ; baseline retrieval đã xóa | `AWAITING_USER_TEST` |
-| 3 | Visual retrieval và adapter đã xóa | `AWAITING_USER_TEST` |
-| 4 | Hybrid retrieval đã xóa | `AWAITING_USER_TEST` |
-| 5 | QA và kết quả đã xóa | `AWAITING_USER_TEST` |
-| 6 | Thực nghiệm luận văn | `NOT_STARTED` |
-| 7 | Demo và đóng gói | `NOT_STARTED` |
-| Corpus text_based_rag | Chuẩn hóa văn bản, hình và bảng; chưa chunk/index | `AWAITING_USER_TEST` |
-| Caption corpus text_based_rag | Người dùng chấp nhận toàn bộ 787 caption, gồm 117 mô tả INCOMPLETE | `COMPLETED` |
-| Chunk corpus text_based_rag | Văn bản hoàn chỉnh, chunk theo cấu trúc và bản xem text embedding | `AWAITING_USER_TEST` |
-| Embedding corpus text_based_rag | BGE-M3 dense và index cosine local | `AWAITING_USER_TEST` |
-| Caption query train text_based_rag | 239 caption; người dùng chấp nhận 21 caption INCOMPLETE | `COMPLETED` |
-| Embedding query train text_based_rag | Người dùng đã chạy xong embedding query | `COMPLETED` |
-| Retrieval query train text_based_rag | Chuyển citation từ mẫu train tương tự, loại nhóm ảnh | `AWAITING_USER_TEST` |
+| Output dưới `artifacts/experiments/text_based_rag/` | Nội dung |
+| --- | --- |
+| `query_image_captioning_dev/captions/*_description.json` | Description và trạng thái từng ảnh |
+| `query_image_captioning_train/`, `query_image_captioning_dev/` | Mapping query/ảnh, caption tổng và manifest |
+| `query_embedding_train/`, `query_embedding_dev/` | Vector, mapping, text preview và manifest |
+| `query_retrieval/` | `retrieval_results.jsonl`, `retrieval_preview.txt`, `metrics.json`, `per_query_metrics.jsonl`, `manifest.json` |
 
-## Retrieval query train — `AWAITING_USER_TEST`
+Mong đợi: 112 query dev, 61 ảnh, vector shape `(112, 1024)`, 112 dòng prediction, kho có 418 train, nhưng query dev có ảnh trùng train được loại các mẫu cùng ảnh trước tìm kiếm. Manifest embedding/retrieval `COMPLETED`; caption có thể `INCOMPLETE` nếu có ảnh chạm token. Metric chính là macro F2; precision/recall/hit rate và candidate recall dùng phân tích lỗi. Tác vụ dài in phase, processed/total, %, elapsed và ETA khoảng mỗi 30 giây.
 
-Ngày 13/10/2026: đã triển khai `src/text_based_rag/example_citation_retrieval.py` và agent chạy theo yêu cầu người dùng, ghi đè kết quả cũ tại `artifacts/results/text_based_rag/query_retrieval/`. Đoạn rollback phía trên mô tả lượt chạy trước. Giữ source baseline corpus `query_retrieval.py`; không dùng dev, không chạy model hoặc thay đổi trọng số/index/caption/vector.
+Chế độ cũ vẫn có qua `example_citation_retrieval --split train`: loại query đang xét và cùng ID/pixel ảnh khỏi kho. Retrieval mặc định là dev; caption/embedding mặc định vẫn train để tương thích.
 
-Đọc vector câu hỏi + caption train hiện có. Với mỗi query, loại chính nó, mọi mẫu cùng source image ID hoặc cùng kích thước/pixel RGB sau giải mã và áp dụng EXIF orientation. Lấy 5 hàng xóm bằng cosine, chuyển relevant_articles từ hàng xóm, gom citation bằng cosine hỗ trợ cao nhất, trả tối đa 5 citation duy nhất. Hòa điểm theo query_id rồi citation. Không padding khi thiếu citation. Nhãn query đang xét chỉ dùng đánh giá sau dự đoán. Hash pixel không phát hiện gần trùng do resize/crop/nén lại.
+## Dữ liệu và source
 
-Điều kiện: `.venv` có NumPy/Pillow; manifest query_embedding và corpus_embedding COMPLETED; train/vector/mapping/ảnh phải khớp hash. Chỉ đọc mapping citation corpus. Nhãn rỗng làm dừng; citation không có trong index được cảnh báo và loại khỏi nguồn prediction nhưng vẫn giữ trong gold để tính recall. Lượt này có 15 citation duy nhất như vậy, danh sách trong metrics.json; không tự sửa nhãn.
+Split: 418 train / 112 dev (seed 2025, nhóm theo ID ảnh); 100 public test có nhãn; 146 private test không có gold. Không dùng public/private để chọn cấu hình; sample submission không phải ground truth.
 
-Lệnh PowerShell từ root (ghi đè output retrieval; không cần chạy lại chỉ để xem kết quả):
+- `src/multimodal_legal_rag/data.py`: loader, validator và split.
+- `src/text_based_rag/`: chuẩn hóa, caption, chunk, embedding, retrieval.
+- `example_citation_retrieval.py`: tìm ví dụ train; `query_retrieval.py`: baseline tìm trực tiếp trong corpus.
+- `data/processed/`: ảnh/split; `models/`: model local; `artifacts/`: output chạy.
 
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -u -m text_based_rag.example_citation_retrieval --neighbors 5 --overwrite
-```
+Đã đổi thư mục output sang `artifacts/experiments/`; caption/vector train nằm trong `query_image_captioning_train/` và `query_embedding_train/`. Chỉ đổi vị trí, không chạy lại hay sửa nội dung artifact; đường dẫn trong manifest cũ là thông tin lịch sử. Đầu vào train/corpus đã có. Khi cần tái tạo, đặt biến môi trường như trên và chạy lần lượt qua `.\.venv\Scripts\python.exe -m`: `text_based_rag.corpus_normalization`, `text_based_rag.image_captioning`, `text_based_rag.corpus_chunking`, `text_based_rag.corpus_embedding index`, `text_based_rag.query_image_captioning --split train`, `text_based_rag.query_embedding --split train`. Các bước này không mặc định ghi đè output cũ; kiểm tra manifest và preview trước bước tiếp theo.
 
-Bỏ `--overwrite` để từ chối output đã tồn tại; `--neighbors` mặc định 5, phải >= 1. Không chọn tham số bằng test/private. Git chỉ rollback được file đã theo dõi; không thêm dataset/artifact vào Git.
+## Lỗi và giới hạn
 
-Output trong `query_retrieval/`:
+- Import lỗi: dùng Python `.venv`, đặt `PYTHONPATH=src` và chạy từ root.
+- Hash/mapping không khớp hoặc query ID train-dev trùng: kiểm tra nguồn/split; không bỏ validation.
+- Citation nhãn thiếu trong index: báo và loại khỏi nguồn prediction, vẫn tính trong gold recall; không tự sửa nhãn.
+- Thiếu model: tải BGE-M3 bằng `corpus_embedding download`, Qwen bằng `temp/download_vlm.py`, qua Python `.venv` trước inference.
+- OOM: đóng ứng dụng GPU; embedding có thể giảm `--batch-size 1`.
+- Caption INCOMPLETE có thể làm giảm chất lượng. Không suy diễn kết quả dev từ điểm train; chọn cấu hình nhiều lần trên dev cũng có thể quá khớp.
 
-- `retrieval_results.jsonl`: query, số mẫu bị loại/còn lại, hàng xóm train, cosine, hash pixel, citation nguồn và citation cuối.
-- `retrieval_preview.txt`: câu hỏi/caption, citation, query nguồn, gold và F2 từng câu.
-- `per_query_metrics.jsonl`: precision/recall/F1/F2, hit, candidate recall, mức phủ nhãn kho còn lại.
-- `metrics.json`: macro/micro, hit rate, candidate recall, mức phủ nhãn, số citation trung bình, gold thiếu trong index.
-- `manifest.json`: trạng thái, cấu hình, quy tắc loại/xếp hạng, hash input/code/ảnh, encoder, thư viện, thời gian và bộ nhớ vector/ma trận cosine CPU. Không dùng GPU ở bước retrieval.
-
-Kết quả agent chạy: 418 query, manifest COMPLETED; macro precision=0.2820972887, recall=0.5613835726, F2=0.4519640065; hit rate=0.7966507177; candidate recall=0.6480861244; mức phủ nhãn kho còn lại=0.9133971292; trung bình 4.8397 citation/query. Baseline corpus trước đó trên cùng train có F2=0.1271638941 nhưng luôn trả 5 citation, còn phương pháp mới trả tối đa 5 và dùng nhãn các mẫu train khác.
-
-Đã đối chiếu bằng chính hàm eval_retrieval trong retrieval.py của ban tổ chức, chỉ nạp hàm evaluator tránh chạy inference: F2=0.4519640062376162, khớp metric local trong sai số epsilon của evaluator. Đã kiểm tra loại self/cùng ID ảnh/cùng hash pixel trên toàn bộ 418 query. Đây là đánh giá train loại nhóm ảnh, chưa chứng minh hiệu quả trên dev; tối ưu trên train vẫn có nguy cơ quá khớp.
-
-Mong đợi khi chạy lại: 418 dòng kết quả và metric; 0–5 citation duy nhất/query có trong index; manifest COMPLETED. Tác vụ dài có log khoảng mỗi 30 giây: phase, processed/total, %, elapsed, ETA. Hash không khớp: kiểm tra đúng file được báo, không bỏ validation. Thiếu ảnh/lỗi giải mã: kiểm tra ảnh train gốc. Thiếu thư viện: chỉ cài trong `.venv`. Không còn mẫu hợp lệ làm dừng trước ghi đè. Chờ người dùng kiểm tra và xác nhận trước khi chuyển trạng thái COMPLETED.
-
-## Embedding query train — `COMPLETED`
-
-Code: `src/text_based_rag/query_embedding.py`. Chỉ xử lý 418 query của `data/processed/splits/train.json`, ghép câu hỏi với caption Qwen đã lưu. Không đưa choices, answer hoặc relevant_articles vào text hay output; không chạy lại Qwen. Mỗi query tạo một vector, chưa tính cosine, top-k hoặc đánh giá retrieval.
-
-Text thực tế đưa vào BGE-M3 có dạng sau; metadata query_id, image_id và dấu phân cách trong preview không được embedding:
-
-```text
-Câu hỏi:
-{question}
-
-Mô tả biển báo trong ảnh:
-{description}
-```
-
-Dùng lại encoder và hàm embedding của `corpus_embedding.py`: BGE-M3 local cùng revision/weight với corpus, CLS pooling, L2, BF16/SDPA, vector float32 1.024 chiều. Kiểm tra mapping query–caption, hash ảnh, model và trạng thái corpus trước khi chạy. Không chia nhỏ query, không tự cắt khi vượt 8.192 token. Caption sai vẫn được sử dụng theo yêu cầu người dùng; COMPLETED không chứng minh nội dung đúng.
-
-Điều kiện: caption query và corpus embedding có manifest COMPLETED; model BGE-M3 đã tải, không cần tải lại. Dùng `.venv` hiện có, GPU CUDA BF16 với ít nhất 5 GiB VRAM trống; đóng process Qwen. Batch mặc định 4, allocator tối đa 8 GiB và chừa 2 GiB theo VRAM trống ban đầu.
-
-Chạy từ root project:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m text_based_rag.query_embedding
-```
-
-Output tại `artifacts/results/text_based_rag/query_embedding/`:
-
-- `queries.jsonl`: text hoàn chỉnh của mỗi query, số token, metadata ảnh/caption và vector_row tương ứng.
-- `query_text_preview.txt`: bản dễ đọc của đúng text embedding, ngăn cách từng query.
-- `vectors.npy`: kỳ vọng 418 × 1.024, float32, mỗi hàng có chuẩn L2 bằng 1.
-- `manifest.json`: trạng thái, model, hash input/caption/weight, thông số inference, phiên bản thư viện, thời gian và VRAM.
-
-Terminal in tiến độ, phần trăm, elapsed và ETA mỗi batch, heartbeat khoảng mỗi 30 giây kể cả lúc nạp model. Cuối lượt kỳ vọng `queries=418; dimensions=1024`, manifest COMPLETED; pipeline đọc lại vector và kiểm tra chuẩn L2, shape và ánh xạ hàng. Preview và queries được lưu trước khi inference batch đầu tiên.
-
-Output đã tồn tại thì dừng để tránh ghi đè. Nếu OOM hoặc bị ngắt, tự chuyển thư mục query_embedding cũ sang nơi khác rồi chạy lại; bước này chưa resume batch. Khi OOM, đóng ứng dụng GPU và chạy cùng lệnh với `--batch-size 1`. Thiếu/sai caption hoặc mapping thì kiểm tra query_id được báo; không bỏ query tự động. Model không khớp corpus thì kiểm tra cache và manifest corpus, không tự tải model khác. Query vượt giới hạn token thì giữ nguyên và báo ID để quyết định xử lý riêng.
-
-Người dùng đã xác nhận chạy xong embedding query trước khi yêu cầu bước retrieval top-5. Agent không chạy inference.
-
-## Caption ảnh query train — `COMPLETED`
-
-Code: `src/text_based_rag/query_image_captioning.py`. Chỉ lấy ảnh được tham chiếu bởi `data/processed/splits/train.json`: 418 query, 243 tên ảnh theo split hiện tại. Đây là train split, không phải toàn bộ train gốc 530 mẫu/304 ảnh. Không dùng 112 mẫu dev, public test hay private test. Chỉ đọc id và image_id để lập danh sách/ánh xạ; câu hỏi, choices, answer và relevant_articles không được truyền cho Qwen hoặc xuất vào mapping. Không embedding query, không sửa index corpus và không đánh giá retrieval trong bước này.
-
-Qwen3-VL-8B NF4 dùng cache/revision và giới hạn ảnh đã có ở corpus, không crop. TRAIN_PROMPT sao chép nguyên prompt ảnh train đang có trong temp/describe_images.py; prompt chuẩn của bước này nằm tại hằng TRAIN_PROMPT trong query_image_captioning.py. Sửa temp không tự đổi prompt pipeline. Greedy, SDPA, BF16 theo checkpoint; tối đa 384 token output như thử nghiệm train. Mỗi hash ảnh chỉ caption một lần; query chung ảnh dùng chung file mô tả. Nếu hai tên ảnh có cùng bytes, mapping trỏ tới caption của tên đầu tiên.
-
-Điều kiện: train split và ảnh `data/processed/images/train` đã có; Qwen local và `.venv` như bước corpus. Cần GPU CUDA BF16 với ít nhất 11 GiB VRAM trống; đóng process BGE/Qwen khác trước. Inference tuần tự từng ảnh, allocator tối đa 12 GiB và chừa 2 GiB theo VRAM trống ban đầu; không bảo đảm chống OOM nếu ứng dụng khác chiếm thêm VRAM. Không tải model hoặc cài dependency mới.
-
-Chạy từ root project:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m text_based_rag.query_image_captioning
-```
-
-Output tại `artifacts/results/text_based_rag/query_image_captioning/`, không có folder fingerprint:
-
-- `captions/train_1_3_description.json` và các file tương tự: mô tả từng ảnh, image hash, model/prompt/thông số thực tế, token, trạng thái, thời gian và VRAM.
-- `query_image_mapping.jsonl`: mỗi query train trỏ tới source_image_id, tên ảnh, hash và file caption; không có đáp án/citation.
-- `image_captions.jsonl`: tổng hợp tất cả caption sau khi chạy hết lượt, gồm cả INCOMPLETE có ghi trạng thái, không coi chúng là hoàn tất.
-- `manifest.json`: split, đường dẫn/hash nguồn, số query/ảnh/hash, số ảnh hoàn tất, danh sách ảnh INCOMPLETE, tài nguyên và trạng thái lượt chạy.
-
-Chạy lại cùng command giữ ảnh COMPLETED có hash khớp, thử lại ảnh INCOMPLETE hoặc chưa có. Đổi prompt/giới hạn token được phép chạy tiếp; ảnh đã xong không bị làm lại, mỗi checkpoint giữ thông số sinh caption riêng. Muốn làm lại một ảnh đã xong, tự lưu/xóa đúng checkpoint của ảnh đó trước khi chạy lại. Danh sách query/ảnh hoặc bytes ảnh đổi thì code dừng để tránh dùng nhầm caption; tự lưu thư mục output cũ sang nơi khác trước nếu chủ động đổi dữ liệu. Không chạy hai phiên cùng output.
-
-Caption rỗng hoặc chạm token được lưu INCOMPLETE, báo cảnh báo rồi tiếp tục ảnh kế tiếp. Cuối lượt, manifest INCOMPLETE liệt kê ảnh cần xử lý; không tự chấp nhận như ngoại lệ corpus trước đó. Chạy lại sau khi sửa prompt/MAX_NEW_TOKENS nếu cần. CUDA/OOM, thiếu ảnh hoặc lỗi đọc/ghi file vẫn dừng; caption đã lưu được giữ để tiếp tục. Thiếu ảnh: kiểm tra train split và thư mục train; không tự bỏ query. Thiếu model: kiểm tra cache Qwen đã có, không dùng lại downloader BGE.
-
-Mong đợi: mapping 418 dòng; 243 tên ảnh và tối đa 243 caption theo hash. Terminal in từng mô tả và tiến độ/ETA mỗi ảnh, đồng thời heartbeat khoảng mỗi 30 giây kể cả lúc nạp model. Khi mọi ảnh xong, manifest.status=COMPLETED. Đối chiếu caption với ảnh thực tế, nhất là biển phụ/chữ/số; không suy ra độ đúng từ trạng thái hoàn tất. Runtime kiểm tra ID query, đường dẫn ảnh, tên checkpoint và hash ảnh/ánh xạ khi xuất.
-
-Người dùng đã chạy xong và yêu cầu chấp nhận toàn bộ caption ngày 12/10/2026. Đã chuyển 21 caption INCOMPLETE thành COMPLETED trong checkpoint, bản tổng hợp và manifest; giữ original_status và accepted_by_user để truy vết. Tổng 239 hash ảnh có mô tả không rỗng, dùng cho 418 query/243 tên ảnh. Việc chấp nhận không sửa nội dung caption hoặc chạy lại inference.
-
-## Embedding corpus và tạo index — `AWAITING_USER_TEST`
-
-Người dùng đã chọn BGE-M3 ngày 12/10/2026. Code: `src/text_based_rag/corpus_embedding.py`. Chỉ embedding corpus; chưa mô tả ảnh câu hỏi, embedding query, chọn top-k hoặc đánh giá retrieval. Không fine-tune hay cập nhật trọng số. Bước chia chunk giữ AWAITING_USER_TEST cho đến khi người dùng xác nhận kiểm tra bản sửa câu dẫn thành công.
-
-Dùng `BAAI/bge-m3`, revision `5617a9f61b028005a4858fdac845db406aefb181`, đúng tokenizer đang chia chunk. Máy đã có tokenizer nhưng chưa có weight text encoder; model Visualized_m3.pth và Qwen giữ nguyên. Lệnh download chỉ tải BGE-M3 vào cache local, không chạy GPU. Weight được tải bằng GET trực tiếp, tiếp tục file .incomplete và kiểm tra SHA256/kích thước trước khi dùng; không tải nhánh sparse/ColBERT. Không cài thêm dependency.
-
-Index dùng NumPy đã có sẵn: mỗi hàng là một vector dense 1.024 chiều, float32, chuẩn hóa L2. Tích vô hướng với query cũng chuẩn hóa sẽ bằng cosine. Đây là index local tìm kiếm chính xác cho corpus hiện khoảng 1.024 chunk, chưa phải dịch vụ database FAISS/Chroma. Chưa cần ANN cho quy mô này. Chỉ dùng trường `text` của chunks.jsonl, không thêm instruction/prefix và không embedding metadata hay dấu phân cách preview. CLS pooling theo phần dense của BGE-M3, inference BF16/SDPA trong Transformers, không cần FlagEmbedding runtime.
-
-Điều kiện: chunk manifest COMPLETED, `.venv` có torch/transformers/numpy/huggingface_hub/requests đã có; GPU CUDA hỗ trợ BF16 và ít nhất 5 GiB VRAM trống. Đóng process Qwen trước khi chạy. Batch mặc định 4; allocator PyTorch tối đa 8 GiB, chừa 2 GiB theo bộ nhớ trống lúc bắt đầu. Ứng dụng khác vẫn có thể chiếm VRAM; giới hạn không bảo đảm tránh OOM.
-
-Chạy lần lượt từ root project:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-$env:HF_HUB_DISABLE_XET="1"
-.\.venv\Scripts\python.exe -m text_based_rag.corpus_embedding download
-.\.venv\Scripts\python.exe -m text_based_rag.corpus_embedding index
-```
-
-Download cần mạng; command index chỉ đọc checkpoint local, không tải model trong lúc inference. Download chạy lại được để tiếp tục. Không dùng .venv Python để chạy hai lệnh song song. Log mỗi batch và khoảng mỗi 30 giây có bước, số lượng, %, elapsed và ETA; download có thêm tiến độ byte của weight.
-
-Output cố định `artifacts/results/text_based_rag/corpus_embedding/`:
-
-- `vectors.npy`: ma trận vector chuẩn hóa, hàng thứ i khớp vector_row=i trong chunks.jsonl. Khoảng 4 MiB với 1.024 chunk; chỉ dùng khi manifest COMPLETED.
-- `chunks.jsonl`: bản snapshot chunk đầu vào và metadata, thêm vector_row; text giữ nguyên.
-- `organized_corpus.jsonl`: bản mục luật đầy đủ đi cùng index để lấy context, không embedding nguyên mục dài.
-- `manifest.json`: model/revision, pooling, chuẩn hóa, batch, chiều vector, dtype, hash đầu vào/weight/tokenizer/output, phiên bản thư viện, thời gian, VRAM và trạng thái.
-
-Mong đợi: số vector bằng số chunk trong đầu vào, dimension=1024, manifest.status=COMPLETED. Pipeline đọc lại file index để kiểm tra vector hữu hạn, norm gần 1 và ánh xạ hàng/ID đúng; không đánh giá độ chính xác retrieval ở bước này. Kiểm tra manifest và số dòng chunks.jsonl bằng các file output; không thêm command self-check.
-
-Thiếu weight: chạy download thành công trước. Download mất mạng: chạy lại cùng lệnh; nếu SHA256 sai sau tải đủ thì kiểm tra file được báo, tự lưu/xóa đúng file weight lỗi trước khi tải lại. OOM: đóng ứng dụng GPU và dùng `index --batch-size 1`. Chunk quá dài: chia lại chunk; code không âm thầm truncate text. Output tồn tại (kể cả FAILED): tự đổi tên lưu bản cũ trước rồi chạy lại index. Chưa hỗ trợ resume embedding giữa batch; nếu lỗi phải tạo lại index. Không trộn vector từ model hoặc corpus khác.
-
-Ví dụ lưu output cũ và chạy batch nhỏ:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-if (Test-Path -LiteralPath "artifacts/results/text_based_rag/corpus_embedding") {
-    Rename-Item -LiteralPath "artifacts/results/text_based_rag/corpus_embedding" -NewName ("corpus_embedding_backup_" + (Get-Date -Format "yyyyMMdd_HHmmss_fff")) -ErrorAction Stop
-}
-.\.venv\Scripts\python.exe -m text_based_rag.corpus_embedding index --batch-size 1
-```
-
-Agent chưa chạy download/inference/test và chưa sinh index. Chờ người dùng tự chạy, kiểm tra và xác nhận; chưa triển khai bước query retrieval.
-
-## Tổ chức văn bản và chia chunk — `AWAITING_USER_TEST`
-
-Code chính: `src/text_based_rag/corpus_chunking.py`. Bước này chỉ chuẩn bị text, không inference Qwen, không embedding, không tạo vector database. Đọc bản chuẩn hóa và từng checkpoint caption trực tiếp; không phụ thuộc file structured_corpus do bước caption xuất vì lượt inference trước có INCOMPLETE nên chưa xuất file đó.
-
-Theo yêu cầu người dùng ngày 11/10/2026, đã đổi 117 checkpoint INCOMPLETE thành COMPLETED, giữ `original_status=INCOMPLETE` và `accepted_by_user=true`. Cả 787 caption đều có text. Manifest caption đã đánh dấu chấp nhận, giữ danh sách ảnh trước đó chưa hoàn tất và `corpus_export_pending=true`; COMPLETED ở đây là chấp nhận caption hiện có, không xác nhận caption hết bị cắt. Người dùng đã cho phép chuyển bước; bảng tiến độ caption là COMPLETED. Không chạy lại inference hoặc pipeline để sinh corpus caption.
-
-Pipeline ghép tiêu đề, đoạn luật, chú thích nguồn và mô tả hình thành văn bản đọc được. Chú thích đã ghép vào hình/bảng không lặp lại thành đoạn riêng. Giữ đoạn nguồn, không tóm tắt hoặc viết lại luật. Văn bản luật và mô tả do model sinh được phân biệt bằng dòng “Mô tả hình:”. ID block, source_span, JSON và tên trường kỹ thuật không nằm trong text embedding.
-
-Sửa ngày 12/10/2026: ngữ cảnh bổ sung chỉ được chèn nếu chưa có nguyên đoạn đó trong chunk đang ghép hoặc trong nội dung nhóm. Vì vậy câu dẫn “Trong Quy chuẩn này, các từ ngữ dưới đây được hiểu như sau:” xuất hiện một lần khi nhiều định nghĩa 3.8–3.11 nằm cùng chunk; khi bắt đầu chunk mới, câu dẫn cần thiết được bổ sung lại. Chỉ loại phần ngữ cảnh thêm vào bị trùng, không xóa đoạn lặp vốn có trong nguồn. Bản organized_corpus giữ cách tổ chức nội dung nguồn.
-
-Để kiểm tra bản sửa, lưu output cũ bằng lệnh bên dưới rồi chạy lại pipeline; không cần chạy Qwen. Thư mục backup mang thời gian để tránh ghi đè. Sau khi chạy, xem embedding_text_preview.txt ở nhóm định nghĩa 3.8–3.11 và hai bên ranh giới chunk: câu dẫn không lặp trước từng khoản trong cùng chunk nhưng vẫn có ở chunk mới cần nó. Agent chưa chạy pipeline/test; giữ AWAITING_USER_TEST.
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-if (Test-Path -LiteralPath "artifacts/results/text_based_rag/corpus_chunking") {
-    Rename-Item -LiteralPath "artifacts/results/text_based_rag/corpus_chunking" -NewName ("corpus_chunking_backup_" + (Get-Date -Format "yyyyMMdd_HHmmss_fff")) -ErrorAction Stop
-}
-.\.venv\Scripts\python.exe -m text_based_rag.corpus_chunking
-```
-
-Ưu tiên gom hình với đoạn lân cận và ngoại lệ có dấu hiệu rõ; điểm a), b), ... mang theo câu dẫn kết thúc bằng dấu hai chấm. Tham chiếu hình/bảng đã resolved ở đoạn ngoài bảng được bổ sung vào ngữ cảnh. Trong ô bảng, tham chiếu hình resolved được bổ sung; tham chiếu khác ghi issues, không suy diễn. Bảng chuyển thành từng hàng có tên cột nếu có th, hoặc số cột khi không có header rõ; ô gộp được trải theo grid nên nội dung rowspan được nhắc lại ở hàng tương ứng. Từng hàng mang tiêu đề, đơn vị và header. Bảng ngắn có thể được ghép lại vào cùng chunk khi đủ token. Bảng lồng nhau vẫn được đọc đệ quy.
-
-Mặc định dùng **tokenizer BGE-M3 local đã có**, tối đa **512 token tính cả tiêu đề/ngữ cảnh/special tokens**, overlap **64 token chỉ khi buộc chia nhóm quá dài**. Đây là thông số khởi đầu để kiểm tra, chưa khóa model embedding hay tối ưu retrieval. Khi chọn tokenizer khác, chạy lại bước chia chunk bằng `--tokenizer` trỏ thư mục tokenizer local. Không tải model hay thêm dependency.
-
-Nhóm quá dài được chia tại đoạn/câu trước; một câu quá dài mới cắt theo token bằng offset ký tự để giữ nguyên chữ nguồn. Chunk luôn mang tiêu đề mục. Ngữ cảnh quá dài được chuyển thành nội dung để chia và ghi issue; không thể bảo đảm mọi phụ thuộc ngữ nghĩa nằm trong giới hạn 512 token. `article_key`, `previous_chunk_id`, `next_chunk_id`, block nguồn và image_ids giữ riêng trong metadata để bước retrieval sau có thể lấy mục đầy đủ hoặc đoạn liền kề. Metadata block nguồn là nguồn của nhóm/ngữ cảnh, có thể bao quát nhiều phần khi nhóm bị chia.
-
-Điều kiện: preprocessing schema 2 COMPLETED, caption đã được chấp nhận như trên; tokenizer local và transformers trong `.venv`. Chạy từ root project:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m text_based_rag.corpus_chunking
-```
-
-Output cố định tại `artifacts/results/text_based_rag/corpus_chunking/`:
-
-- `organized_corpus.jsonl`: mỗi mục có text hoàn chỉnh và metadata, không còn cây blocks.
-- `organized_corpus.txt`: văn bản đã tổ chức của tất cả mục, chỉ text, chưa chia nhỏ.
-- `chunks.jsonl`: `text` chính xác để embedding, token_count, ID mục gốc, liên kết chunk trước/sau và metadata truy vết.
-- `embedding_text_preview.txt`: lấy nguyên trường text của từng chunk, ngăn cách bằng dòng dấu bằng; dấu ngăn cách không đưa vào embedding.
-- `issues.jsonl`: caption được chấp nhận dù bị cắt, tham chiếu chưa giải quyết, nhóm phải chia, ô bảng thiếu hoặc ngữ cảnh quá dài.
-- `manifest.json`: nguồn, cấu hình/tokenizer/hash, thống kê, thời gian và trạng thái chạy.
-
-Mong đợi: 402 mục trong organized_corpus; số chunk phụ thuộc nội dung và giới hạn token. Manifest cuối có status COMPLETED; runtime kiểm tra đoạn văn nguồn còn trong bản tổ chức, block có truy vết, chunk ID duy nhất và token_count không vượt giới hạn. Log khoảng mỗi 30 giây gồm số mục, %, elapsed và ETA. Mở organized_corpus.txt và embedding_text_preview.txt để đối chiếu mục B.24, hình, bảng, câu dẫn và vị trí cắt; kiểm tra các issue trước khi chấp nhận.
-
-Nếu thiếu tokenizer: kiểm tra thư mục `models/huggingface/hub/models--BAAI--bge-m3/snapshots/5617a9f61b028005a4858fdac845db406aefb181` hoặc truyền `--tokenizer`. Nếu tiêu đề quá dài: tăng `--max-tokens` (ví dụ 768) nhưng phải phù hợp model embedding sau này. Nếu thiếu caption/corpus thay đổi: sửa dữ liệu đầu vào, không tự bỏ hình. Nếu kiểm tra nội dung/provenance thất bại: gửi traceback, không dùng output dở. Thư mục output đã tồn tại sẽ bị từ chối để tránh ghi đè; tự đổi tên lưu bản cũ trước khi chạy lại, kể cả sau một lượt FAILED. Không tự xóa output.
-
-Ví dụ chạy lại với giới hạn khác sau khi tự lưu bản output cũ:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m text_based_rag.corpus_chunking --max-tokens 768 --overlap-tokens 64
-```
-
-Agent chưa chạy pipeline/test và chưa sinh output corpus_chunking theo AGENTS.md. Chờ người dùng tự chạy và xác nhận; chưa triển khai embedding hoặc retrieval.
-
-## Chuẩn hóa corpus text_based_rag — `AWAITING_USER_TEST`
-
-Đã triển khai `src/text_based_rag/corpus_normalization.py`, dùng Python standard library và loader JSON đã có. Không cài dependency, không dùng GPU. Theo xác nhận của người dùng, hướng retrieval mới dùng Qwen3-VL-8B NF4 với prompt trong file hiện tại, không crop; bước này chỉ chuẩn hóa corpus, chưa chạy VLM, tạo caption, chia chunk hoặc embedding.
-
-Schema phiên bản 2: mỗi record dẫn xuất giữ `id`, `title`, ID/tiêu đề văn bản, `article_key` theo vị trí nguồn và `blocks` theo thứ tự; không lưu lại `text` gốc hoặc thuộc tính HTML/CSS (`attributes`). Nội dung chuẩn hóa nằm trong các block văn bản và ô bảng. Block có ID duy nhất và `source_span` là khoảng ký tự `[start, end)` của vùng nguồn chứa block trong `text` ở law_db (vùng HTML có thể chứa nhiều block, không phải offset chính xác của từng từ). Đường dẫn/hash nguồn nằm trong manifest để đối chiếu mà không nhân bản nội dung gốc. HTML được đọc bằng HTMLParser; bỏ markup trang trí, giải mã entity, giữ ngắt đoạn, biểu diễn sub/sup bằng `_(...)`/`^(...)`. Văn bản ngoài HTML giữ ranh giới xuống dòng. File gốc không được ghi lại.
-
-Hình lấy từ marker và thẻ img, kể cả trong ô bảng; giải mã URL, đối chiếu basename với thư mục ảnh local, không tải ảnh từ mạng. Manifest ảnh lưu SHA256 và mọi vị trí xuất hiện; file có cùng hash dùng cùng image_id. `description_vlm` hiện là null. Bảng giữ từng ô, tọa độ bắt đầu, rowspan/colspan, nội dung block trong ô và grid tham chiếu cell_id; null trong grid là ô thiếu, không phải số 0. `th` được đánh dấu header; không tự đoán header từ ô `td`. Bảng/chú thích/đơn vị không bị chuyển thành đoạn số liệu phẳng. `caption_original`/`unit_original` là chữ chú thích/đơn vị đã chuẩn hóa lấy từ nguồn, không chứa bản HTML gốc.
-
-Nhãn hình được gắn khi đoạn ngay sau bắt đầu bằng “Hình ...”; tên bảng/đơn vị được tìm trong tối đa ba đoạn liên tiếp trước bảng. Đoạn chú thích vẫn được giữ trong blocks. Tham chiếu đơn giản “Hình/Bảng + số hoặc A.1” được giải quyết trong mục hiện tại trước, sau đó trong cùng văn bản nếu chỉ có một đích. Không chọn tùy tiện nếu có nhiều đích. Nhãn không tìm được, tham chiếu mơ hồ/không tìm được, HTML cần sửa cấu trúc và bảng bất thường được ghi vào issues. Chưa suy diễn tham chiếu khoảng, nhóm hình con, hoặc các cách viết phức tạp; kiểm tra bản preview cùng text gốc khi gặp các trường hợp này. Bộ kiểm tra tính toàn vẹn ID và đích liên kết chạy ngay trong command chuẩn hóa.
-
-Điều kiện: file luật và ảnh đã được giải nén ở đường dẫn Stage 1, `.venv` có sẵn. Chạy từ root project:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m text_based_rag.corpus_normalization
-```
-
-Output cố định tại `artifacts/results/text_based_rag/data_preprocessing/`. Thư mục normalization hiện có đã được đổi tên theo yêu cầu; không cần chạy lại. Command chuẩn hóa từ chối chạy nếu thư mục đích đã tồn tại để tránh ghi đè:
-
-- `structured_corpus.jsonl`: một record dẫn xuất cho mỗi mục gốc, chỉ có nội dung chuẩn hóa trong blocks cùng ID và thông tin truy vết; không có text HTML gốc hoặc attributes trang trí.
-- `image_manifest.jsonl`: danh sách ảnh local được tham chiếu, hash và vị trí sử dụng.
-- `corpus_inventory.json`: số văn bản/mục, các loại block, số lần sử dụng ảnh và thống kê issue.
-- `corpus_preview.md`: nội dung đọc được, ảnh, bảng theo từng ô và liên kết để đối chiếu.
-- `issues.jsonl`: các trường hợp cần người dùng kiểm tra; không tự sửa nội dung luật.
-- `manifest.json`: hash nguồn, đường dẫn, phiên bản schema, số lượng, thời gian và trạng thái chạy.
-
-Mong đợi trên dữ liệu hiện tại: 2 văn bản, 402 record trong structured_corpus; ảnh lấy cả từ 761 marker và các thẻ img nên không cố định số ảnh manifest bằng 761. Bảng có thể lồng nhau nên số block table không nhất thiết bằng số marker TABLE. Terminal in tiến trình khoảng mỗi 30 giây và đường dẫn output cuối cùng. `manifest.status=COMPLETED` nghĩa là command hoàn tất, không có nghĩa các issue đã được duyệt; trạng thái bàn giao vẫn AWAITING_USER_TEST.
-
-Mở `corpus_preview.md` để đối chiếu mục 12, B.24 và một bảng có ảnh; kiểm tra thứ tự, chữ/số/đơn vị, ảnh thuộc đúng ô, cell_id ở grid và references. Xem thống kê issue trong corpus_inventory rồi các chi tiết trong issues.jsonl. Nếu thiếu ảnh, kiểm tra thư mục `data/processed/images/law`; có thể truyền `--source` và `--image-dir` khi dữ liệu nằm ở vị trí khác. Lỗi import: đặt PYTHONPATH=src và dùng đúng Python .venv. Nếu chạy bị lỗi, thư mục giữ manifest FAILED; không dùng làm corpus hoàn chỉnh, sửa nguyên nhân, tự đổi tên thư mục data_preprocessing đang lỗi để lưu lại rồi chạy lại. HTMLParser chỉ sửa một số thẻ đóng tùy chọn; trường hợp HTML bất thường phải xem lại text gốc, không coi bản chuẩn hóa là tự động chính xác tuyệt đối.
-
-Agent không chạy lại pipeline chuẩn hóa; chỉ đổi tên thư mục output hiện có theo yêu cầu. Bước caption đã được triển khai theo lệnh tiếp tục của người dùng.
-
-Corpus trong data_preprocessing hiện có schema 2. Nếu cần chuẩn hóa lại, tự đổi tên thư mục đích hiện có để lưu bản cũ trước khi chạy cùng command; code không tự ghi đè hoặc xóa result. Mong đợi record không còn trường text cấp mục, block/table/cell không còn attributes; text trong block paragraph vẫn là nội dung luật đã chuẩn hóa. Trạng thái giữ AWAITING_USER_TEST.
-
-## Caption ảnh corpus — `COMPLETED` theo chấp nhận của người dùng
-
-Code: `src/text_based_rag/image_captioning.py`. Đọc corpus schema 2 và image_manifest từ `artifacts/results/text_based_rag/data_preprocessing/`; kiểm tra hash ảnh, mô tả mỗi hash đúng một lần, rồi gắn `description_vlm` vào mọi block hình tương ứng, kể cả hình trong bảng lồng nhau. Nội dung luật và caption gốc được giữ riêng với mô tả do model sinh. Chưa chia chunk hoặc embedding.
-
-Điều kiện: `.venv` và checkpoint Qwen3-VL NF4 local đã có từ thử nghiệm; GPU CUDA hỗ trợ BF16, ít nhất 11 GiB VRAM trống. Dùng `LAW_PROMPT` hiện tại trong module image_captioning.py do người dùng chỉnh. Sửa prompt pipeline tại module mới; sửa temp không tự thay prompt pipeline. Không crop, max_pixels=786432, max_new_tokens=1024, greedy, SDPA. Giới hạn allocator tối đa 12 GiB và chừa tối thiểu 2 GiB theo VRAM trống lúc bắt đầu; đây không phải bảo đảm chống OOM khi ứng dụng khác dùng GPU.
-
-Chạy từ root project, chỉ một phiên caption cùng lúc:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m text_based_rag.image_captioning
-```
-
-Output nằm trực tiếp trong `artifacts/results/text_based_rag/image_captioning/`, không có thư mục fingerprint. Chạy lại cùng lệnh sẽ tiếp tục các ảnh chưa hoàn tất. Bạn có thể sửa prompt hoặc giới hạn token rồi chạy tiếp: caption COMPLETED được giữ nguyên; ảnh chưa xong dùng prompt và giới hạn token hiện tại. Terminal báo số ảnh giữ lại và số còn cần xử lý. Chỉ dừng nếu corpus hoặc danh sách ảnh thay đổi. Không sửa file trong data_preprocessing.
-
-- `captions/<tên_ảnh>_description.json`: checkpoint từng ảnh, ví dụ `image008_description.json`; chứa mô tả, trạng thái, token, thời gian và VRAM. Nếu hai ảnh khác đuôi có cùng tên, giữ thêm đuôi để phân biệt (ví dụ `image008.png_description.json`). Hash chỉ dùng bên trong để kiểm tra dữ liệu và cấu hình. Ghi qua file tạm rồi thay thế để tránh checkpoint bị ghi dở. Tại thời điểm cập nhật, thư mục image_captioning không còn tồn tại nên không có checkpoint cũ để đổi tên.
-- `image_captions.jsonl`: tổng hợp caption sau khi toàn bộ ảnh hoàn tất.
-- `structured_corpus.jsonl`: corpus mới có description_vlm tại các block hình; giữ nguyên cấu trúc và liên kết.
-- `corpus_preview.md`: bản đọc có cả chú thích nguồn và mô tả VLM để đối chiếu ảnh.
-- `manifest.json`: cấu hình/prompt đầy đủ, tài nguyên và trạng thái chạy. Chỉ dùng corpus khi status là COMPLETED.
-
-Mong đợi với corpus hiện tại: 787 caption theo hash và 402 record corpus. Terminal in mô tả từng ảnh, tiến độ/ETA mỗi ảnh và khoảng mỗi 30 giây. Lần sau nếu caption đủ thì không cần nạp model để xuất lại corpus. Kiểm tra preview cùng ảnh gốc để đánh giá độ đúng; COMPLETED chỉ xác nhận xử lý đủ, không xác nhận mô tả chính xác.
-
-Thiếu ảnh hoặc hash thay đổi: sửa dữ liệu và chuẩn hóa lại, không bỏ qua hình. Thiếu model local: kiểm tra cache checkpoint ghi bên dưới. Thiếu VRAM/OOM: đóng ứng dụng GPU rồi chạy lại cùng command; caption thành công đã lưu sẽ được bỏ qua. Caption rỗng/chạm giới hạn token: chương trình lưu checkpoint INCOMPLETE, báo cảnh báo rồi tiếp tục ảnh tiếp theo, không dừng terminal vì trường hợp này. Cuối lượt, nếu còn ảnh chưa xong, manifest có status INCOMPLETE và incomplete_images liệt kê tên ảnh; chưa xuất corpus hoàn chỉnh. Chạy lại cùng command sẽ thử lại các ảnh này, bỏ qua caption COMPLETED. Nếu vẫn chạm giới hạn, chỉnh prompt hoặc MAX_NEW_TOKENS trước khi chạy lại. Lỗi CUDA/OOM hoặc lỗi đọc/ghi file vẫn dừng và báo lỗi. Nếu đổi prompt hoặc MAX_NEW_TOKENS, chạy lại cùng command để tiếp tục, không cần chuyển thư mục. Ảnh INCOMPLETE được thử lại; caption COMPLETED không tự được mô tả lại. Các ảnh có thể dùng prompt khác nhau; manifest lưu lịch sử trong caption_settings và mỗi checkpoint giữ mã đối chiếu với lịch sử đó. Muốn làm lại một ảnh đã xong, tự xóa checkpoint tương ứng trước khi chạy. Lỗi import: dùng đúng Python .venv và PYTHONPATH=src.
-
-Người dùng đã chạy inference và yêu cầu chấp nhận toàn bộ caption để chuyển bước. 117 mô tả vốn INCOMPLETE đã được đánh dấu chấp nhận; chi tiết ở phần chia chunk phía trên. Agent không chạy lại inference.
-
-## Thử mô tả ảnh bằng Qwen3-VL — `AWAITING_USER_TEST`
-
-Theo yêu cầu ngày 10/10/2026, đã xóa hai cache Qwen2.5-VL-3B-Instruct và Qwen2.5-VL-7B-Instruct (gồm weight tải dở và lock tương ứng). Giữ model embedding/Visualized-BGE, dữ liệu và các output mô tả ảnh cũ. Script hiện chỉ dùng `unsloth/Qwen3-VL-8B-Instruct-bnb-4bit`, bản lượng tử hóa sẵn từ Qwen3-VL-8B-Instruct; không cần cài package Unsloth hoặc chạy remote code.
-
-Agent đã tải hoàn tất checkpoint vào `models/huggingface/models--unsloth--Qwen3-VL-8B-Instruct-bnb-4bit/snapshots/10d842936325905934ea24e64325d774693f166e`, cả hai safetensors khớp kích thước và SHA256 LFS. Chưa chạy inference hoặc sinh caption Qwen3-VL; người dùng có thể chạy trực tiếp lệnh inference bên dưới, không cần tải lại.
-
-### Chọn cấu hình và VRAM
-
-RTX 5060 Ti có 16311 MiB VRAM (15,93 GiB); lúc kiểm kê còn 14416 MiB (14,08 GiB) trống. Index checkpoint ghi 8.767.123.696 tham số: tính BF16 2 byte/tham số là khoảng 17,53 GB (16,33 GiB) chỉ cho trọng số, chưa tính activations xử lý ảnh, KV cache và CUDA; không phù hợp yêu cầu chừa headroom khi chạy toàn model trên GPU này. Chọn NF4 4-bit double quant cho phần ngôn ngữ, giữ vision/embedding/lm_head BF16 theo config checkpoint. Đây là bản đóng gói bởi Unsloth, không phải checkpoint lượng tử hóa do Qwen phát hành.
-
-Ước lượng lập kế hoạch cho inference một ảnh ngắn: khoảng 8–11 GiB, chưa đo trên máy này. Mức dùng thực tế phụ thuộc kích thước ảnh, số token và phiên bản thư viện. Script xử lý tuần tự một ảnh, SDPA, greedy, giới hạn ảnh tối đa 768 × 32 × 32 pixel, input tối đa 2048 token và output 384 token. Qwen3-VL dùng patch/merge theo bội 32; không giữ cấu hình bội 28 của Qwen2.5-VL. Hai prompt người dùng đã chỉnh và tọa độ crop được giữ nguyên. Thay preprocessing/model làm các số đo cũ không phải phép so sánh chỉ thay model.
-
-Script lấy VRAM trống lúc bắt đầu, đặt ngân sách allocator PyTorch bằng `min(12 GiB, VRAM trống - 2 GiB)` và dừng nếu ngân sách dưới 9 GiB. Giới hạn này có thể làm PyTorch báo OOM trước khi GPU đầy; không tự offload sang CPU, không tự giảm ảnh hoặc đổi model. Đây không phải giới hạn toàn bộ VRAM: CUDA và ứng dụng khác có thể dùng thêm bộ nhớ. Cần theo dõi `nvidia-smi` khi chạy lần đầu. JSON lưu peak allocated, peak reserved và VRAM trống sau inference để đánh giá headroom thực tế; không bảo đảm hết OOM cho cấu hình ảnh/prompt tùy ý.
-
-Nguồn: [model gốc Qwen](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct), [config NF4 của checkpoint được chọn](https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-bnb-4bit/blob/main/config.json), [Qwen3-VL trong Transformers 4.57.1](https://huggingface.co/docs/transformers/v4.57.1/model_doc/qwen3_vl).
-
-### File và điều kiện
-
-- `temp/describe_images.py`: inference local với Qwen3VLForConditionalGeneration, crop tùy chọn, output JSON/PNG theo timestamp; không tải model trong lúc inference.
-- `temp/download_vlm.py`: chỉ tải checkpoint vào `models/huggingface`, không nạp model/GPU hoặc sinh caption; chạy lại để tiếp tục tải dở. Cố định revision `10d842936325905934ea24e64325d774693f166e` trong cả hai script. Metadata tải qua Hugging Face Hub; hai safetensors tải trực tiếp từ resolve URL của revision, tổng 7.226.399.236 byte (6,73 GiB), kiểm tra kích thước và SHA256 LFS trước đổi tên file `.incomplete`. Cách này tránh đường tải weight qua HEAD redirect bị đứng trên máy. Log mỗi 30 giây có số file, byte, %, elapsed và ETA ước lượng.
-- `.venv`: Transformers 4.57.1, tokenizers 0.22.2, bitsandbytes 0.49.0, Accelerate 1.4.0, PyTorch 2.7.1+cu128 hiện có. Chỉ nâng Transformers/tokenizers để hỗ trợ Qwen3-VL; không nâng PyTorch. hf_xet 1.7.0 đã có từ lần thử trước, mặc định lệnh dưới dùng HTTP.
-- Ảnh đã giải nén trong `data/processed/images/train` và `data/processed/images/law`; cần ít nhất 11 GiB VRAM trống. Không đọc câu hỏi, đáp án hoặc citation; chưa xây retrieval/OCR/detector.
-
-### Lệnh PowerShell từ root project
-
-Nếu cần thiết lập trên máy mới hoặc tiếp tục tải checkpoint:
-
-```powershell
-$env:PYTHONUTF8="1"
-$env:HF_HUB_DISABLE_XET="1"
-.\.venv\Scripts\python.exe -m pip install transformers==4.57.1 bitsandbytes==0.49.0
-.\.venv\Scripts\python.exe -u temp\download_vlm.py
-```
-
-Người dùng tự chạy inference sau khi tải hoàn tất:
-
-```powershell
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -u temp\describe_images.py --train-image train_1_3.jpg --crop-train
-```
-
-Lệnh trên chạy ba đầu vào: train toàn cảnh, crop cả biển chính/phụ `(655, 0, 1168, 682)` và `law/image001.png`. Thay `--train-image` bằng `train_1_1.jpg` hoặc `train_1_2.jpg` để thử các ảnh trước; mặc định là ảnh thứ nhất. Ảnh thứ nhất có hai crop nên tổng bốn đầu vào. Không còn option `--model` trỏ tới model cũ đã xóa.
-
-Mong đợi: log model NF4, phiên bản thư viện, VRAM trống/ngân sách, log tiến trình khoảng mỗi 30 giây; output `temp/qwen_descriptions_<timestamp>.json` có `completed: true` khi đủ đầu vào, kèm prompt, model revision, quantization config, token, thời gian và tài nguyên. PNG crop nằm cạnh JSON. Không ghi đè kết quả trước; không tự sửa caption sai. Mở ảnh và đối chiếu chữ/số, hình dạng, nét gạch chéo, chi tiết bị thiếu hoặc bịa thêm. Agent không chạy inference hoặc test theo yêu cầu người dùng; trạng thái giữ `AWAITING_USER_TEST` đến khi người dùng phản hồi.
-
-Lỗi thường gặp: thiếu model local thì chạy downloader đến `100% completed`; mạng ngắt thì chạy lại downloader để tiếp tục file `.incomplete`. Nếu lỗi SHA256/kích thước, kiểm tra đúng file được báo; không dùng checkpoint lỗi, chỉ xóa file đó nếu cần tải lại. Import không có Qwen3VL thì cài đúng Transformers trong `.venv`. Thiếu VRAM/OOM thì đóng ứng dụng dùng GPU rồi chạy lại; giữ nguyên giới hạn allocator. Lỗi encoding thì đặt `PYTHONUTF8=1`. Crop lỗi kích thước thì kiểm tra đúng ảnh gốc (680×454, 800×522, 1200×900). Output chạm 384 token có cảnh báo có thể bị cắt.
-
-Các kết quả Qwen2.5-VL-3B trước đây được giữ để tham khảo: `temp/qwen_descriptions_20261009T214816588067Z.json` (train_1_1), `temp/qwen_descriptions_20261009T215035817639Z.json` (train_1_2), `temp/qwen_descriptions_20261010T112649092456Z.json` (train_1_3). Bản 3B từng đọc đúng hai khung giờ trên ảnh thứ ba nhưng bỏ dấu `>` trước `29 CHỖ` và mô tả sai nét gạch đỏ; crop chưa sửa hết lỗi. Chưa có kết quả Qwen3-VL để kết luận cải thiện.
-
-## Reset retrieval và QA — 09/10/2026
-
-Theo yêu cầu người dùng, đã xóa code BM25 baseline, visual/hybrid retrieval, adapter fine-tune, code QA (gồm chọn evidence và inference), toàn bộ experiment/kết quả retrieval và QA dev/public/private, cùng prediction submission và ZIP private đã sinh. Không triển khai pipeline thay thế.
-
-Giữ nguyên `models/` (weight, source model, Hugging Face cache), `.venv` và cấu hình môi trường, `data/`, loader/validator/split, evaluator F2/Accuracy, Git và tài liệu nền tảng. `bm25_evaluation.py` chỉ còn evaluator, không còn command `baseline`. `artifacts/experiments/note.md` chỉ là ghi chú công thức metric, không phải kết quả thí nghiệm.
-
-Stage 2–5 ở trạng thái `AWAITING_USER_TEST` để xác nhận việc dọn dẹp, không phải đã triển khai lại. Retrieval và QA hiện chưa có pipeline. Kiến trúc mới sẽ được duyệt khi người dùng yêu cầu xây lại; không tự tiếp tục Stage 6.
-
-### Kiểm tra dọn dẹp
-
-Điều kiện: mở PowerShell tại root project.
-
-```powershell
-git status --short
-Get-ChildItem src\multimodal_legal_rag
-Get-ChildItem artifacts -Recurse
-Test-Path src\multimodal_legal_rag\grounded_qa.py
-Test-Path src\multimodal_legal_rag\visual_retrieval.py
-Test-Path src\multimodal_legal_rag\hybrid_retrieval.py
-Test-Path .venv\Scripts\python.exe
-Test-Path models\Visualized_m3.pth
-Test-Path models\huggingface
-Test-Path data\processed
-```
-
-Mong đợi: ba lệnh kiểm tra source trả về `False`, bốn lệnh cuối trả về `True`. Không còn prediction, metric, adapter, evidence hay submission trong `artifacts/`; có thể còn thư mục rỗng và `note.md`. Nếu file bị khóa khi dọn, đóng process giữ file rồi báo lại đường dẫn; không xóa model hay environment. Agent chỉ kiểm kê filesystem, không chạy code/test/pipeline.
-
-File nguồn còn dùng: `data.py` (dữ liệu), `bm25_evaluation.py` (evaluator) và `__init__.py` (package).
-
-## Stage 0 — Bàn giao
-
-### Đã hoàn thành
-
-- Khởi tạo Git repository.
-- Thêm quy trình stage-gate và user-test trong `AGENTS.md`.
-- Thêm cấu trúc package Python tối thiểu tại `src/multimodal_legal_rag`.
-- Thêm `.gitignore` để loại trừ dữ liệu, model, artifact, cache và secrets.
-- Tạo virtual environment riêng tại `.venv`; các stage không cài package vào Python hệ thống.
-- Ghi nhận môi trường hiện tại: Python 3.12.0, Git 2.46.2, NVIDIA GeForce RTX 5060 Ti 16 GB, driver 596.49.
-
-Stage 0 chưa cài PyTorch hoặc thư viện ML. Dependency sẽ được cài vào `.venv` ở stage sử dụng đầu tiên để tránh khóa phiên bản khi chưa biết chính xác pipeline và dữ liệu.
-
-### Điều kiện tiên quyết
-
-- Mở PowerShell tại thư mục gốc project:
-
-```powershell
-cd "C:\Users\ADMIN\Documents\code\Personal Project\multimodal-legal-qa"
-```
-
-Nếu `.venv` chưa tồn tại trên máy khác, tạo và kích hoạt bằng:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-Python hệ thống chỉ được dùng một lần để tạo `.venv`. Sau đó mọi lệnh Python của project phải dùng interpreter trong `.venv`.
-
-### Cách tự kiểm tra
-
-Chạy lần lượt:
-
-```powershell
-git status --short
-.\.venv\Scripts\python.exe --version
-nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader
-.\.venv\Scripts\python.exe -c "import sys; sys.path.insert(0, 'src'); import multimodal_legal_rag; print(multimodal_legal_rag.__version__)"
-```
-
-Kết quả mong đợi:
-
-- `git status --short` liệt kê các file mới chưa commit; không xuất hiện thư mục dữ liệu, model hoặc cache.
-- Python trong `.venv` in ra `Python 3.12.0` hoặc một phiên bản Python tương thích được cài sau này.
-- GPU in ra `NVIDIA GeForce RTX 5060 Ti, 16311 MiB, 596.49` hoặc thông tin driver mới hơn.
-- Lệnh import cuối cùng in ra `0.1.0`.
-
-Sau khi cả bốn lệnh thành công, hãy báo: `Stage 0 test thành công`. Khi đó agent mới đánh dấu Stage 0 là `COMPLETED`; Stage 1 vẫn chỉ bắt đầu khi bạn yêu cầu tiếp tục.
-
-### Lỗi thường gặp
-
-- `git status` cảnh báo không đọc được global ignore tại `.config/git/ignore`: đây là cảnh báo quyền truy cập của Git, không làm hỏng repository; Stage 0 vẫn đạt nếu danh sách file mới được hiển thị bên dưới cảnh báo.
-- Không tạo được `.venv`: kiểm tra `python --version`; Python hệ thống chỉ đóng vai trò tạo virtual environment ban đầu.
-- PowerShell chặn `Activate.ps1`: không cần kích hoạt; dùng trực tiếp `.\.venv\Scripts\python.exe` như các command kiểm tra ở trên.
-- `nvidia-smi` không được nhận diện: kiểm tra/cài NVIDIA driver. Việc này không ảnh hưởng lệnh import package nhưng cần thiết trước các stage chạy model trên GPU.
-- Import thất bại: bảo đảm đang chạy từ đúng thư mục gốc project và thư mục `src\multimodal_legal_rag` tồn tại.
-
-## Nguồn tham khảo
-
-Danh sách nguồn ban đầu nằm tại [multimodal_legal_qa_vlsp2025_sources.md](multimodal_legal_qa_vlsp2025_sources.md).
-
-## Stage 1 — Bàn giao dữ liệu
-
-### Đã hoàn thành
-
-- Tải official repository vào `data/raw/VLSP2025-MLQA-TSR` (thư mục này không được Git theo dõi).
-- Thêm loader và CLI thuần Python standard library tại `src/multimodal_legal_rag/data.py`.
-- Validator kiểm tra JSON schema, ID trùng, loại câu hỏi/đáp án, citation, ảnh thiếu, ZIP lỗi và header ảnh JPG/PNG.
-- Lệnh `prepare` giải nén ảnh vào các thư mục ổn định dưới `data/processed/images` và bỏ metadata `__MACOSX`.
-- Chia 530 mẫu gốc thành 418 train và 112 dev với seed `2025`. Việc chia nhóm theo `image_id` bảo đảm không có cùng ảnh ở cả hai tập.
-- Giữ nguyên 100 mẫu public test có nhãn làm holdout. Private test có 146 mẫu nhưng repository không cung cấp gold labels.
-- Lệnh `split` tự in `sample_overlap` và `image_overlap` để kiểm tra trực tiếp việc chia dữ liệu.
-
-Không tự sửa các bất thường trong nhãn gốc. Validator báo chúng thành warning để Stage 2 xử lý bằng quy tắc chuẩn hóa có kiểm thử.
-
-### Ghi chú sử dụng dữ liệu
-
-Biểu mẫu nằm tại:
-
-```text
-data/raw/VLSP2025-MLQA-TSR/VLSP 2025 data agreement.docx
-```
-
-Theo xác nhận của chủ dự án, data agreement không phải điều kiện chặn việc triển khai. Biểu mẫu vẫn được giữ nguyên theo official repository để tham khảo. Không bán, cho mượn, công bố hoặc phân phối lại dữ liệu; khi sử dụng trong luận văn phải trích dẫn challenge paper.
-
-`sample_submission/submission.zip` chứa prediction mẫu cho 146 mẫu private test, không phải gold labels:
-
-- `submission_task1.json`: prediction retrieval mẫu.
-- `submission_task2.json`: prediction QA mẫu; 24 output bị cắt như `C. Xe ô` hoặc `Sai. Biển`, phù hợp với baseline dùng `max_new_tokens=5`.
-
-Hai file `submission_task1_no_labels.json` và `submission_task2_no_labels.json` là input không nhãn. Không được dùng sample submission làm ground truth hoặc báo cáo Accuracy/F2 như kết quả private test.
-
-Ban tổ chức đã xác nhận qua email rằng nhãn private test không được cung cấp. Kết quả private chính thức chỉ được lấy bằng cách gửi file dự đoán tại [Codabench VLSP 2025 MLQA-TSR](https://www.codabench.org/competitions/9525/), mục **Post Submission**, theo từng subtask. Vì vậy quy trình đánh giá được cố định như sau:
-
-- Train split: huấn luyện hoặc xây index.
-- Dev split: chọn model, prompt, top-k, threshold và fusion weight.
-- Public test có nhãn: báo cáo đánh giá local sau khi đã khóa cấu hình.
-- Private test không nhãn: sinh submission và gửi Codabench; điểm trả về được lưu cùng file dự đoán và cấu hình đã dùng.
-
-### Thiết lập trên máy mới
-
-Chỉ chạy lệnh tải nếu `data/raw/VLSP2025-MLQA-TSR` chưa tồn tại:
-
-```powershell
-git clone --depth 1 https://github.com/sonlam1102/VLSP2025-MLQA-TSR.git data/raw/VLSP2025-MLQA-TSR
-```
-
-Sau đó đặt biến để Python tìm package trong `src`:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-```
-
-Hai biến trên chỉ áp dụng cho cửa sổ PowerShell hiện tại. Stage 1 không cần cài thêm package vào `.venv`.
-
-### Cách tự kiểm tra
-
-Từ thư mục gốc project, chạy lần lượt:
-
-```powershell
-$env:PYTHONPATH="src"
-$env:PYTHONUTF8="1"
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.data validate
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.data prepare
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.data split
-.\.venv\Scripts\python.exe -m multimodal_legal_rag.data stats
-```
-
-Kết quả mong đợi:
-
-- Validate: `ERRORS: 0`; warning phản ánh bất thường vốn có trong dữ liệu chính thức và được in rõ theo từng nhóm.
-- Prepare: `train: 304`, `public_test: 90`, `private_test: 104`, `law: 1576`.
-- Split: 418 train, 112 dev, 243 ảnh train, 61 ảnh dev, `sample_overlap: 0`, `image_overlap: 0`.
-- Stats: 530 mẫu train, 100 mẫu public test có nhãn, 146 mẫu private test không có gold, 402 article records thuộc 2 văn bản luật và 761 tham chiếu ảnh trong corpus.
-- Các split được lưu tại `data/processed/splits`; ảnh đã giải nén nằm tại `data/processed/images`. Cả hai đều không được Git theo dõi.
-
-Người dùng đã chạy trực tiếp các lệnh và xác nhận kết quả thành công ngày 12/09/2026. Stage 1 đã `COMPLETED`; Stage 2 chỉ bắt đầu khi có lệnh riêng.
-
-### Lỗi thường gặp
-
-- `No module named multimodal_legal_rag`: chạy lại `$env:PYTHONPATH="src"` trong đúng cửa sổ PowerShell.
-- Chữ tiếng Việt bị lỗi khi in: chạy lại `$env:PYTHONUTF8="1"`.
-- `destination path ... already exists` khi clone: dữ liệu đã được tải; bỏ qua lệnh clone và chạy validator.
-- Validator báo thiếu file: kiểm tra clone đã hoàn tất và không đổi cấu trúc thư mục official repository.
-- Warning về định dạng ảnh, citation và ID trùng là bất thường đã ghi nhận của dữ liệu gốc, không phải lỗi command. Không được tự sửa trực tiếp dữ liệu nguồn.
-
+Không commit/phân phối lại dataset, weights, index, cache hoặc secrets; tôn trọng data agreement và giấy phép. Git chỉ rollback được file đã theo dõi. Nguồn: [tài liệu tham khảo](multimodal_legal_qa_vlsp2025_sources.md). Chờ người dùng kiểm tra trước khi chuyển trạng thái `COMPLETED`.

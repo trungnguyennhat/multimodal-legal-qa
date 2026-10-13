@@ -1,4 +1,4 @@
-"""Embed train questions and their accepted image descriptions with the corpus encoder."""
+"""Embed train/dev questions and image descriptions with the corpus encoder."""
 
 import argparse
 from datetime import datetime, timezone
@@ -12,19 +12,26 @@ from .corpus_embedding import MODEL, REVISION, SNAPSHOT, file_hash, load_encoder
 from .image_captioning import ROOT, read_lines, save
 
 INPUT = ROOT / "data/processed/splits/train.json"
-CAPTIONS = ROOT / "artifacts/results/text_based_rag/query_image_captioning"
-CORPUS = ROOT / "artifacts/results/text_based_rag/corpus_embedding"
-OUTPUT = ROOT / "artifacts/results/text_based_rag/query_embedding"
+CAPTIONS = ROOT / "artifacts/experiments/text_based_rag/query_image_captioning_train"
+CORPUS = ROOT / "artifacts/experiments/text_based_rag/corpus_embedding"
+OUTPUT = ROOT / "artifacts/experiments/text_based_rag/query_embedding_train"
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--batch-size", type=int, default=4)
+    parser.add_argument('--split', choices=('train', 'dev'), default='train')
+    parser.add_argument('--allow-incomplete-captions', action='store_true',
+                        help='Use nonempty truncated captions, retaining their INCOMPLETE status.')
     args = parser.parse_args()
+    INPUT = ROOT / f'data/processed/splits/{args.split}.json'
+    suffix = f'_{args.split}'
+    CAPTIONS = ROOT / f'artifacts/experiments/text_based_rag/query_image_captioning{suffix}'
+    OUTPUT = ROOT / f'artifacts/experiments/text_based_rag/query_embedding{suffix}'
     if args.batch_size < 1:
         parser.error("batch-size phải >= 1")
     if OUTPUT.exists():
-        raise FileExistsError("Output query_embedding đã tồn tại. Tự lưu thư mục cũ sang nơi khác trước khi chạy lại.")
+        raise FileExistsError(f"Output {OUTPUT} đã tồn tại. Tự lưu thư mục cũ sang nơi khác trước khi chạy lại.")
     started, stopped = time.perf_counter(), Event()
     phase, done, total = "prepare-query-text", 0, 0
     manifest = None
@@ -45,8 +52,10 @@ def main():
     try:
         caption_manifest = json.loads((CAPTIONS / "manifest.json").read_text(encoding="utf-8-sig"))
         corpus_manifest = json.loads((CORPUS / "manifest.json").read_text(encoding="utf-8"))
-        if caption_manifest.get("status") != "COMPLETED" or caption_manifest.get("split") != "train":
-            raise ValueError("Caption query train chưa hoàn tất hoặc chưa được chấp nhận.")
+        allowed_statuses = {'COMPLETED', 'INCOMPLETE'} if args.allow_incomplete_captions else {'COMPLETED'}
+        if (caption_manifest.get("status") not in allowed_statuses or caption_manifest.get("split") != args.split
+                or caption_manifest.get('input_sha256') != file_hash(INPUT)):
+            raise ValueError("Caption chưa hoàn tất hoặc không khớp split/nguồn query.")
         expected = {"status": "COMPLETED", "model": MODEL, "revision": REVISION,
                     "pooling": "CLS", "normalize": "L2", "dimension": 1024,
                     "stored_dtype": "float32", "inference_dtype": "bfloat16", "input_prefix": ""}
@@ -78,7 +87,7 @@ def main():
                 image_hashes[item["filename"]] = "sha256:" + file_hash(image_path)
             caption = json.loads(path.read_text(encoding="utf-8-sig"))
             description, question = caption.get("description"), row.get("question")
-            if (caption.get("status") != "COMPLETED" or caption.get("image_id") != item["image_id"]
+            if (caption.get("status") not in allowed_statuses or caption.get("image_id") != item["image_id"]
                     or image_hashes[item["filename"]] != item["image_id"]
                     or not isinstance(description, str) or not description.strip()
                     or not isinstance(question, str) or not question.strip()):
@@ -87,9 +96,14 @@ def main():
             queries.append({"query_id": row["id"], "source_image_id": row["image_id"],
                             "image_id": item["image_id"], "caption_file": item["caption_file"],
                             "accepted_caption": caption.get("accepted_by_user", False),
+                            "caption_status": caption['status'],
                             "text": f"Câu hỏi:\n{question}\n\nMô tả biển báo trong ảnh:\n{description}",
                             "vector_row": len(queries)})
         phase = "load-text-encoder"
+        incomplete_queries = sum(q['caption_status'] == 'INCOMPLETE' for q in queries)
+        if incomplete_queries:
+            print(f'[warning] Dùng caption INCOMPLETE cho {incomplete_queries}/{total} query; '
+                  'giữ nguyên trạng thái, chưa được người dùng duyệt.', flush=True)
         import numpy as np
         import torch
         tokenizer, model, resources = load_encoder()
@@ -100,13 +114,15 @@ def main():
                 raise ValueError(f"Query {query['query_id']} vượt {maximum} token; không tự cắt nội dung.")
         OUTPUT.mkdir(parents=True, exist_ok=False)
         manifest = {"status": "IN_PROGRESS", "created_at": datetime.now(timezone.utc).isoformat(),
-                    "split": "train", "queries": total, "model": MODEL, "revision": REVISION,
+                    "split": args.split, "queries": total, "model": MODEL, "revision": REVISION,
                     "pooling": "CLS", "normalize": "L2", "dimension": 1024,
                     "stored_dtype": "float32", "inference_dtype": "bfloat16", "attention": "sdpa",
                     "input_fields": ["question", "image_description"], "input_prefix": "",
                     "batch_size": args.batch_size, "model_max_tokens": maximum,
+                    "allow_incomplete_captions": args.allow_incomplete_captions,
+                    "incomplete_caption_queries": incomplete_queries,
                     "input_max_tokens": max(q["token_count"] for q in queries),
-                    "input_sha256": {"train.json": file_hash(INPUT),
+                    "input_sha256": {f"{args.split}.json": file_hash(INPUT),
                                      "query_image_mapping.jsonl": file_hash(CAPTIONS / "query_image_mapping.jsonl"),
                                      "caption_manifest.json": file_hash(CAPTIONS / "manifest.json"),
                                      "corpus_manifest.json": file_hash(CORPUS / "manifest.json")},

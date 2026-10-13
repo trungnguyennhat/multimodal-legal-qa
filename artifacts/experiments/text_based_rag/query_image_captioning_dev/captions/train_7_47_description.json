@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:7caca0a9de317f3082b5975f7b532fea40ffe333d0515de9e73a719859853f2c",
+  "filename": "train_7_47.jpg",
+  "description": "- Biển hình chữ nhật màu xanh lá cây, có hai phần: phần trên ghi \"CAO BỒ MAI SON EXPRESSWAY\" kèm biểu tượng người đi bộ, phần dưới có hai hình tròn: một hình tròn đỏ viền trắng chứa số \"80\", một hình tròn xanh chứa số \"60\".\n\n- Biển hình chữ nhật màu vàng, có dòng chữ \"GIỮ KHOẢNG CÁCH AN TOÀN\" và dòng chữ nhỏ bên dưới \"SAFE STOPPING DISTANCE\".\n\n- Biển hình chữ nhật nhỏ màu xanh lá cây, có dòng chữ \"CT.01\" trong khung màu vàng.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 141,
+  "size": [
+    840,
+    480
+  ],
+  "elapsed_seconds": 11.848677200003294,
+  "peak_vram_bytes": 7463807488,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872
+}

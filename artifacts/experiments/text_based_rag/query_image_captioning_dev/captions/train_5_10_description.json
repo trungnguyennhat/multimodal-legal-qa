@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:0bfe32479d17668956cd0676db7a1c4c4c499610467dde4da0bb4e137b1d43a4",
+  "filename": "train_5_10.jpg",
+  "description": "- Biển hình tròn, nền đỏ, viền trắng, có chữ số \"50\" màu đen ở giữa.\n- Biển hình chữ nhật đứng, nền xanh, có các hình vẽ: xe máy, xe ô tô, xe buýt, xe tải, và dòng chữ \"XE 2 VA 3 BAN\" bên dưới.\n- Biển hình chữ nhật đứng, nền trắng, có hình mũi tên chỉ sang phải.\n- Biển hình chữ nhật đứng, nền trắng, có hình xe buýt và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng, nền trắng, có hình xe tải và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng, nền trắng, có hình xe máy và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng, nền trắng, có hình xe ô tô và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng, nền trắng, có hình xe buýt và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng, nền trắng, có hình xe tải và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng, nền trắng, có hình xe máy và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng, nền trắng, có hình xe ô tô và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng, nền trắng, có hình xe buýt và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng, nền trắng, có hình xe tải và dòng chữ \"XE 2 VA 3 BAN\".\n- Biển hình chữ nhật đứng",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "INCOMPLETE",
+  "token_limit_reached": true,
+  "generated_tokens": 384,
+  "size": [
+    666,
+    430
+  ],
+  "elapsed_seconds": 29.363900700001977,
+  "peak_vram_bytes": 7428938240,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872
+}

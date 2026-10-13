@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:2dae074d17ea46085d60760b617718ca0c9f3b3a6e30cd4a49e5b0cbcaf132b7",
+  "filename": "train_4_22.jpg",
+  "description": "- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe đạp bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình số \"30\" bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe buýt bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe đạp bên trong.\n- Biển hình chữ nhật, nền xanh, có hình xe buýt bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.\n- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "INCOMPLETE",
+  "token_limit_reached": true,
+  "generated_tokens": 384,
+  "size": [
+    500,
+    325
+  ],
+  "elapsed_seconds": 29.77611969999998,
+  "peak_vram_bytes": 7397883904,
+  "peak_reserved_bytes": 7511998464,
+  "gpu_free_bytes": 8357150720
+}

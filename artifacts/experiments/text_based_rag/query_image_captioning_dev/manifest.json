@@ -1,0 +1,47 @@
+{
+  "status": "INCOMPLETE",
+  "split": "dev",
+  "input": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\data\\processed\\splits\\dev.json",
+  "input_sha256": "982a852348a358ce2aca0c1bcf84ca6f2e8c130ddeed6be71b025b8eeeda405e",
+  "train_images_signature": "938a5cc153c984dc5359956324d9e8a7962337888f7777223d10428809a72618",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "queries": 112,
+  "image_files": 61,
+  "unique_image_hashes": 61,
+  "started_at": "2026-10-13T21:20:56.249270+00:00",
+  "resumed_images": 0,
+  "resources": {
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "total_vram_bytes": 17102864384,
+    "free_vram_before_load": 15908995072,
+    "pytorch_budget_bytes": 12884901888
+  },
+  "captioned_images": 54,
+  "incomplete_images": [
+    "train_1_6.jpg",
+    "train_1_13.jpg",
+    "train_4_22.jpg",
+    "train_5_10.jpg",
+    "train_7_45.jpg",
+    "train_7_24.jpg",
+    "train_8_25.jpg"
+  ],
+  "elapsed_seconds": 573.9680729999964
+}

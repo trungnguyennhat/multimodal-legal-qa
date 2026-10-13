@@ -12,7 +12,7 @@ from multimodal_legal_rag.data import read_json_list
 from .corpus_embedding import file_hash
 from .image_captioning import ROOT, read_lines, save
 
-BASE = ROOT / "artifacts/results/text_based_rag"
+BASE = ROOT / "artifacts/experiments/text_based_rag"
 OUTPUT = BASE / "query_retrieval"
 TRAIN = ROOT / "data/processed/splits/train.json"
 TOP_K = 5
@@ -48,7 +48,7 @@ def main():
     report()
     try:
         inputs, hashes, manifests = {}, {}, {}
-        for folder, mapping_name, id_field in (("query_embedding", "queries.jsonl", "query_id"),
+        for folder, mapping_name, id_field in (("query_embedding_train", "queries.jsonl", "query_id"),
                                                 ("corpus_embedding", "chunks.jsonl", "chunk_id")):
             source = BASE / folder
             meta = json.loads((source / "manifest.json").read_text(encoding="utf-8-sig"))
@@ -69,7 +69,7 @@ def main():
                     or any(m["vector_row"] != i for i, m in enumerate(mapping))):
                 raise ValueError(f"Vector hoặc ánh xạ hàng không hợp lệ: {folder}")
             inputs[folder], manifests[folder] = (mapping, vectors), meta
-        qm, cm = manifests["query_embedding"], manifests["corpus_embedding"]
+        qm, cm = manifests["query_embedding_train"], manifests["corpus_embedding"]
         for key in ("model", "revision", "model_files_sha256", "pooling", "normalize", "dimension",
                     "stored_dtype", "inference_dtype", "input_prefix"):
             if key not in qm or qm[key] != cm.get(key):
@@ -80,7 +80,7 @@ def main():
         if qm.get("input_sha256", {}).get("train.json") != train_hash:
             raise ValueError("Train đã thay đổi sau embedding query; kiểm tra nguồn trước khi đánh giá.")
         hashes["train.json"] = train_hash
-        queries, query_vectors = inputs["query_embedding"]
+        queries, query_vectors = inputs["query_embedding_train"]
         chunks, chunk_vectors = inputs["corpus_embedding"]
         total = len(queries)
         groups = {}

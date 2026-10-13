@@ -13,8 +13,8 @@ import time
 from .corpus_normalization import OUTPUT as PREPROCESSING, ROOT
 from .image_captioning import blocks, read_lines, save
 
-CAPTIONS = ROOT / "artifacts/results/text_based_rag/image_captioning"
-OUTPUT = ROOT / "artifacts/results/text_based_rag/corpus_chunking"
+CAPTIONS = ROOT / "artifacts/experiments/text_based_rag/image_captioning"
+OUTPUT = ROOT / "artifacts/experiments/text_based_rag/corpus_chunking"
 TOKENIZER = ROOT / "models/huggingface/hub/models--BAAI--bge-m3/snapshots/5617a9f61b028005a4858fdac845db406aefb181"
 CLAUSE = re.compile(r"^(?:\d+(?:\.\d+)*\.?|[a-zđ]\))\s+", re.I)
 EXCEPTION = re.compile(r"^(?:trừ|ngoại lệ|tuy nhiên|không áp dụng)\b", re.I)
