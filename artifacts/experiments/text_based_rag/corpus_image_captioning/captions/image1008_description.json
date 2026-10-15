@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4777a8bd954c089cf621f08c345bcf77b4b2c5b6a7cb5270ba0aebf30b3b4ed8",
+  "filename": "image1008.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo hiệu lệnh nhóm R.302 (Hướng phải đi vòng chướng ngại vật) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số R.302a, R.302b, R.302c\",\n      \"visual_or_geometric_features\": \"Hình tròn có viền, bên trong có mũi tên cong hướng theo chiều kim đồng hồ (vòng phải). Bản vẽ kèm các kích thước: đường kính ngoài 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị); bán kính vòng tròn trong là 67,5mm; chiều rộng mũi tên 12,5mm; góc lệch 45°; khoảng cách từ tâm đến mép trong 37,5mm.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh hướng phải đi vòng chướng ngại vật, áp dụng cho các loại đường khác nhau với kích thước z(mm) tương ứng theo bảng quy định trong điều luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 306,
+  "elapsed_seconds": 5.7887704000022495,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

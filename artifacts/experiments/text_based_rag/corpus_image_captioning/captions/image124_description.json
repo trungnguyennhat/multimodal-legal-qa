@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6ba74ee6251d87f5509c27ab01e9b2242dd4324de58fb817d37ef9109b19eb93",
+  "filename": "image124.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.114 'Cấm xe vật nuôi kéo' theo QCVN 41:2024/BGTVT, dùng để báo hiệu cấm súc vật vận tải hàng hóa hoặc hành khách đi qua.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.114\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có dấu chéo đỏ cắt ngang; bên trong là hình vẽ đen của một con ngựa đang kéo xe.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe vật nuôi kéo (súc vật vận tải hàng hóa hoặc hành khách) dù kéo xe hay chở trên lưng đi qua, theo Điều B.14 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 206,
+  "elapsed_seconds": 3.449221499999112,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

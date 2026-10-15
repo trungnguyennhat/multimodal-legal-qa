@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5f22f12b074d6d50d66b78dce6ba16367de7c0ec79c97e27c353e54a776f2ab8",
+  "filename": "image792.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo cấm P.101 (Đường cấm) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.101 (Đường cấm)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có hình chữ X màu đỏ cắt chéo từ góc trên trái xuống góc dưới phải. Bản vẽ kèm lưới ô vuông và các kích thước: 0,7z (chiều rộng viền đỏ), 0,5z (chiều rộng chữ X), 0,7z (chiều rộng viền đỏ ở hai bên), 0,6z (chiều cao tổng thể), 1,8z (chiều rộng tổng thể), 0,5z (chiều rộng chữ X), 0,7z (chiều rộng viền đỏ ở hai bên).\",\n      \"meaning_or_specification\": \"Theo Điều M.1 của QCVN 41:2024/BGTVT, biển P.101 dùng để báo hiệu 'Đường cấm'. Kích thước z (đường kính biển) phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị). Các tỷ lệ trong bản vẽ (0,7z, 0,5z, 0,6z, 1,8z) được dùng để xác định kích thước chi tiết của viền đỏ và hình chữ X dựa trên giá trị z tương ứng.\"\n    }\n  ]\n}",
+  "generated_tokens": 406,
+  "elapsed_seconds": 7.1086264999976265,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

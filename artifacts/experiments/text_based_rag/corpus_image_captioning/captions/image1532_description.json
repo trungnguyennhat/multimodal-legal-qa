@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4bfcf7274174682c1da462798b9b472b4bec10ef4aff5e40d3ba0e48c94bd07f",
+  "filename": "image1532.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn công trình kiểm soát tải trọng xe (mã IE.463a) với nền xanh lá cây, chữ trắng và mũi tên chỉ hướng, kèm các ký hiệu kích thước kỹ thuật.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số IE.463a\",\n      \"visual_or_geometric_features\": \"Hình dạng: Biển chữ nhật có mũi tên chỉ hướng bên phải; Màu sắc: Nền xanh lá cây, chữ và mũi tên màu trắng; Biểu tượng: Chữ 'CÔNG TRÌNH KSTTX' và 'WEIGH STATION' cùng mũi tên chỉ hướng.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn công trình kiểm soát tải trọng xe, dùng để báo hiệu vị trí trạm cân xe; các ký hiệu k1, H1, k1', H1' là thông số kích thước theo quy chuẩn QCVN 41:2024/BGTVT (ví dụ: H1=400mm, k1=H1=33cm, k1'=H1'=25cm).\"\n    }\n  ]\n}",
+  "generated_tokens": 266,
+  "elapsed_seconds": 4.450632500003849,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

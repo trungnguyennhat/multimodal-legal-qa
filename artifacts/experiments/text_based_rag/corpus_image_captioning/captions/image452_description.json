@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a04450def9e13c138a95b32909fbff0a8ca5fa967ac80fd752f465306959323f",
+  "filename": "image452.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biến thể của biển số I.447a và I.447b theo QCVN 41:2024/BGTVT, dùng để báo hiệu cầu vượt liên thông tại các nút giao khác nhau.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.447a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, viền trắng, chữ trắng; bên trong ghi 'QUỐC LỘ 1 HÀ NỘI - HÀ LAN' và 'QUỐC LỘ 1 HÀ NỘI - HÀ LAN' (hai dòng)\",\n      \"meaning_or_specification\": \"Biển báo hiệu vị trí trước khi vào cầu vượt có tổ chức giao thông liên thông giữa các tuyến, phù hợp với sơ đồ nút giao tương ứng theo quy định tại Điều E.50 của QCVN 41:2024/BGTVT.\"\n    },\n    {\n      \"identifier\": \"Biển số I.447b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, viền trắng, chữ trắng; bên trong ghi 'QUỐC LỘ 1 HÀ NỘI - HÀ LAN' và 'QUỐC LỘ 1 HÀ NỘI - HÀ LAN' (hai dòng, nhưng bố cục khác biệt so với I.447a)\",\n      \"meaning_or_specification\": \"Biển báo hiệu vị trí trước khi vào cầu vượt có tổ chức giao thông liên thông giữa các tuyến, phù hợp với sơ đồ nút giao khác biệt so với I.447a, theo quy định tại Điều E.50 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 400,
+  "elapsed_seconds": 6.299266900001385,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

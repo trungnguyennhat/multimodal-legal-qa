@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:88c066244c92352dc5a55bb7628b77014f995f2662f3cd1aed4e2fe6550e78b6",
+  "filename": "image760.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa các biển báo cấm thuộc nhóm biển báo cấm theo QCVN 41:2024/BGTVT, bao gồm biển cấm đi ngược chiều, cấm rẽ trái, cấm rẽ phải và cấm rẽ trái và quay đầu xe.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.102\",\n      \"visual_or_geometric_features\": \"Biển tròn viền đỏ, nền trắng, biểu tượng hai mũi tên đen chỉ hướng ngược chiều (một lên, một xuống) bị gạch chéo đỏ.\",\n      \"meaning_or_specification\": \"Biển báo cấm đi ngược chiều (P.102), cấm phương tiện đi theo hướng ngược lại với chiều cho phép của đường.\"\n    },\n    {\n      \"identifier\": \"P.123a\",\n      \"visual_or_geometric_features\": \"Biển tròn viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái bị gạch chéo đỏ.\",\n      \"meaning_or_specification\": \"Biển báo cấm rẽ trái (P.123a), cấm phương tiện rẽ trái tại vị trí biển báo.\"\n    },\n    {\n      \"identifier\": \"P.123b\",\n      \"visual_or_geometric_features\": \"Biển tròn viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ phải bị gạch chéo đỏ.\",\n      \"meaning_or_specification\": \"Biển báo cấm rẽ phải (P.123b), cấm phương tiện rẽ phải tại vị trí biển báo.\"\n    },\n    {\n      \"identifier\": \"P.124c\",\n      \"visual_or_geometric_features\": \"Biển tròn viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái và mũi tên đen chỉ hướng quay đầu xe bị gạch chéo đỏ.\",\n      \"meaning_or_specification\": \"Biển báo cấm rẽ trái và quay đầu xe (P.124c), cấm phương tiện rẽ trái và quay đầu xe tại vị trí biển báo.\"\n    }\n  ]\n}",
+  "generated_tokens": 458,
+  "elapsed_seconds": 7.900806300000113,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

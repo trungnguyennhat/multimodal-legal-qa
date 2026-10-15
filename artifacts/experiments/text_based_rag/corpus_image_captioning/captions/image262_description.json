@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8533c16d6e6caa50c04728574756880d8bcc11ccfab249acb1d6de7db9d13216",
+  "filename": "image262.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.234 'Giao nhau với đường hai chiều' theo QCVN 41:2024/BGTVT, dùng để báo trước vị trí giao nhau trên đường một chiều.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.234\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai mũi tên song song hướng ngược nhau (← →) màu đen ở giữa\",\n      \"meaning_or_specification\": \"Biển báo hiệu sự sắp tới của vị trí giao nhau với đường hai chiều; được đặt trên đường một chiều để cảnh báo người tham gia giao thông, trừ trong nội thành/nội thị có thể không cần đặt.\"\n    }\n  ]\n}",
+  "generated_tokens": 196,
+  "elapsed_seconds": 3.2761616999996477,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

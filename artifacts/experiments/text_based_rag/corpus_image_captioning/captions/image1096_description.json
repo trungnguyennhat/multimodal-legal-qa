@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8e25b8217b1337306f4cb0826de2ce19cc4b9238de7ac9434a97b3ded96d12a0",
+  "filename": "image1096.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển hiệu lệnh R.301a (Các xe chỉ được đi thẳng) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển hiệu lệnh R.301a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng lưới ô vuông), có mũi tên hướng lên trên và hình xe ô tô ở giữa. Bản vẽ kèm các ký hiệu kích thước: chiều cao tổng 16z, chiều rộng 12z, các khoảng cách chi tiết như 8z, 2z, 0.2z, 0.1z, 0.5z, 3.4z, 6.8z, 1.6z, 2.2z, 6.2z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cấm rẽ trái và rẽ phải, chỉ cho phép các xe đi thẳng. Kích thước z (mm) phụ thuộc vào loại đường: 140 (đường cao tốc), 126 (đường đôi ngoài đô thị), 87,5 (đường thông thường), 70 (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 323,
+  "elapsed_seconds": 6.066003699997964,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

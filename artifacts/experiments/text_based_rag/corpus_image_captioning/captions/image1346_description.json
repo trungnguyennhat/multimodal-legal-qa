@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c4c9c387bf3dd3ea4ed208385602cd00ea3229b23925610f7f7e680f19310325",
+  "filename": "image1346.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển chỉ dẫn địa điểm (biển số I.444) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn địa điểm (Biển số I.444)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với mũi tên chỉ hướng ở phía bên phải. Bản vẽ bao gồm các kích thước chiều dài và chiều rộng được chia thành các đoạn nhỏ (ví dụ: 7,5m, 19,5m, 5m, 11,5m, 18,2m, 18,4m) và chiều cao tổng thể (10m).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học và khoảng cách lắp đặt cho biển chỉ dẫn địa điểm (Biển số I.444) theo QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 258,
+  "elapsed_seconds": 5.203217100002803,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

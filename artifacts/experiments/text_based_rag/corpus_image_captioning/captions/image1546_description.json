@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d71af68df550ace802ab21e308813c5963b5633b4b16b2fd931095f8555e036c",
+  "filename": "image1546.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước và bố trí các thông số hình học của biển chỉ dẫn nhập làn (IE.467a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn nhập làn (IE.467a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các ký hiệu kích thước: L (chiều rộng), W (chiều cao), 200 (chiều rộng biểu tượng), k₁, k₁' (khoảng cách từ mép biển đến biểu tượng), a (khoảng cách căn giữa), H₁, H₁' (chiều cao chữ), H₂, H₂' (chiều cao số/chữ phụ).\",\n      \"meaning_or_specification\": \"Quy định kích thước và vị trí tương đối của biển báo, trong đó chiều rộng biểu tượng nhập làn là 200 cm, khoảng cách từ mép biển đến biểu tượng là k₁ = H₁ = 33 cm và k₁' = H₁' = 25 cm; chiều cao chữ 'NHẬP LÀN' là H₁ = 40 cm, chiều cao chữ 'MERGE LANE' là H₂ = 25 cm; khoảng cách căn giữa hai bên biển là a.\"\n    }\n  ]\n}",
+  "generated_tokens": 325,
+  "elapsed_seconds": 5.301581599997007,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

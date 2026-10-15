@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:db82b09e8ae0ce18e6f7af85127d4ed54a40079aa01cba5372c4c0b6f5bfbc1d",
+  "filename": "image368.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.415 'Mũi tên chỉ hướng đi' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn hướng đi đến địa danh lân cận và khoảng cách trong khu đông dân cư hoặc tại giao lộ.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.415\",\n      \"visual_or_geometric_features\": \"Hình dạng: Biển hình mũi tên chỉ hướng (hình tam giác cân với đỉnh hướng phải). Màu sắc: Nền xanh dương, chữ và mũi tên màu trắng. Biểu tượng: Chữ 'HÀ NỘI 20 km' được đặt bên trong hình mũi tên.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để chỉ dẫn hướng đi đến một địa danh lân cận tiếp theo (ở đây là Hà Nội) và khoảng cách làm tròn đến km (20 km) đến nơi đó, theo quy định tại Điều E.15 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 251,
+  "elapsed_seconds": 4.073648599995067,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

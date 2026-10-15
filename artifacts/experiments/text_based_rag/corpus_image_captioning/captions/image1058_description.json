@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a5c5461418bbe1928d9ffe81176acc8d3b73fa2140bbfe7da56432962af03277",
+  "filename": "image1058.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo giao thông thuộc nhóm biển hiệu lệnh (R.301a, R.301b, R.301c, R.301d, R.301e, R.301f, R.301h, R.301i) và biển báo đường dành cho xe thô sơ (R.304), theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.301a, R.301b, R.301c, R.301d, R.301e, R.301f, R.301h, R.301i\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, có các biểu tượng xe máy và xe đạp kèm mũi tên chỉ hướng (thẳng, rẽ phải, rẽ trái, kết hợp). Kích thước được quy định bằng ký hiệu z(mm) với các giá trị: 140 (đường cao tốc), 126 (đường đôi ngoài đô thị), 87,5 (đường thông thường), 70 (đường đô thị).\",\n      \"meaning_or_specification\": \"Biển hiệu lệnh chỉ dẫn các xe chỉ được đi thẳng, rẽ phải, rẽ trái hoặc kết hợp các hướng đi tùy theo loại đường.\"\n    },\n    {\n      \"identifier\": \"Biển báo R.304\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, có biểu tượng xe đạp và xe máy. Kích thước được quy định bằng ký hiệu z(mm) với các giá trị: 140 (đường cao tốc), 126 (đường đôi ngoài đô thị), 87,5 (đường thông thường), 70 (đường đô thị).\",\n      \"meaning_or_specification\": \"Biển báo hiệu đường dành cho xe thô sơ (xe máy, xe đạp).\"\n    }\n  ]\n}",
+  "generated_tokens": 500,
+  "elapsed_seconds": 8.659977499999513,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

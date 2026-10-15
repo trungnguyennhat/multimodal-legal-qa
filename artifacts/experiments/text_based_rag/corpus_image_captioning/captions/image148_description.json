@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:61823dcfd8c40488ee8e2448699166b3bafedfea93670ee97b46aa638b9cbf50",
+  "filename": "image148.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình B.27a là toán đồ kỹ thuật dùng để xác định tốc độ tối đa cho phép của xe cơ giới dựa trên tầm nhìn xe chạy và độ dốc dọc đường, phục vụ việc thiết lập biển P.127 theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Toán đồ xác định tốc độ tối đa cho phép\",\n      \"visual_or_geometric_features\": \"Biểu đồ dạng lưới tọa độ với trục tung là 'Tầm nhìn xe chạy (m)' (từ 50 đến 300), trục hoành là 'Độ dốc dọc đường (%)' (từ -7 đến +7), và các đường cong đẳng mức tương ứng với các giá trị tốc độ (v) từ 40 đến 120 km/h.\",\n      \"meaning_or_specification\": \"Dùng để tham khảo khi không có nghiên cứu cụ thể nhằm xác định giá trị tốc độ tối đa cho phép cho từng hướng đường (lên dốc, xuống dốc, bằng phẳng) dựa trên điều kiện thực tế của đường; số tốc độ ghi trên biển P.127 phải phù hợp với tiêu chuẩn kỹ thuật hoặc điều kiện khai thác thực tế.\"\n    }\n  ]\n}",
+  "generated_tokens": 293,
+  "elapsed_seconds": 4.975747999997111,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

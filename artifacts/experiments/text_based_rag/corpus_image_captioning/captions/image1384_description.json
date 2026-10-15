@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e712c386423ea520a5b601496ddb54be60469e762e2c64a4e9667de6648ee363",
+  "filename": "image1384.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo hiệu đường cao tốc với mã CT.16, thuộc nhóm biển báo hiệu đường cao tốc theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"CT.16\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu vàng, chữ màu đen, ghi mã 'CT.16'.\",\n      \"meaning_or_specification\": \"Biển báo hiệu đường cao tốc, dùng để chỉ định tên hoặc mã của tuyến đường cao tốc cụ thể theo quy định trong QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 178,
+  "elapsed_seconds": 3.3446897999965586,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

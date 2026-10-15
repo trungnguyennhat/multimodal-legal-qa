@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6d403970c77dfc3a1b8f0bd39dabb14ac049759b7b5282d4cd06e0bd32240c9e",
+  "filename": "image1474.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo nhà vệ sinh (biểu tượng nam và nữ) theo QCVN 41:2024/BGTVT, Điều P.9.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo nhà vệ sinh (biểu tượng nam và nữ)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có viền bo tròn, bên trong chia làm hai phần: phần trái là hình người nữ, phần phải là hình người nam; các kích thước được ký hiệu bằng A, B, C, D, E\",\n      \"meaning_or_specification\": \"Theo Điều 4 (Nhà vệ sinh) của QCVN 41:2024/BGTVT, kích thước A = 60,0 cm (Loại B) hoặc 75,0 cm (Loại A); B = 1,5 cm (Loại B) hoặc 2,0 cm (Loại A); C = 5,0 cm (cả hai loại); D = 50,0 cm (Loại B) hoặc 62,6 cm (Loại A); E = 5,0 cm (cả hai loại).\"\n    }\n  ]\n}",
+  "generated_tokens": 292,
+  "elapsed_seconds": 4.946166200003063,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

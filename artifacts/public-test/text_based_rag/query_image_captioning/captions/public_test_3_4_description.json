@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:ba8b53a59401db8e08679df3cd267d7f5f45d6fd0658aadbf61a41d7ed7c417f",
+  "filename": "public_test_3_4.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh, có các mũi tên trắng chỉ hướng: một mũi tên quay trái, một mũi tên thẳng, một mũi tên quay phải, và một mũi tên thẳng ở giữa.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 47,
+  "size": [
+    2500,
+    1637
+  ],
+  "elapsed_seconds": 4.473601799996686,
+  "peak_vram_bytes": 7676556288,
+  "peak_reserved_bytes": 7763656704,
+  "gpu_free_bytes": 8105492480
+}

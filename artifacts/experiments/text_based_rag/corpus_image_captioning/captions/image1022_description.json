@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:96e1f93bb55e20ad948db1aa34fc30e1bdefed267f6690e508a36f24bf404c6b",
+  "filename": "image1022.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục biểu tượng cho biển báo giao thông R.301a (Các xe chỉ được đi thẳng) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.301a: Các xe chỉ được đi thẳng\",\n      \"visual_or_geometric_features\": \"Hình tròn đường kính 140mm (trên đường cao tốc), bên trong có biểu tượng mũi tên chỉ hướng đi thẳng. Bản vẽ kỹ thuật hiển thị kích thước chi tiết: đường kính ngoài 140mm, chiều cao biểu tượng xe 32mm, chiều rộng biểu tượng xe 24mm, khoảng cách từ mép biển đến biểu tượng 14mm, và các đường dẫn hướng.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được đi thẳng, không được rẽ trái hoặc rẽ phải. Kích thước z (đường kính biển) phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 308,
+  "elapsed_seconds": 5.827890699998534,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8cb0c62918f5ec2d1c6e07c24c0edda41bc2133c9e23c3309693d8c6b1dea6f8",
+  "filename": "image398.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.427b 'Công trình kiểm soát tải trọng xe' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn vị trí đặt công trình kiểm soát tải trọng xe trên đường bộ.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.427b\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền màu xanh dương, chữ viết màu trắng: 'C.TRÌNH KSTTX'\",\n      \"meaning_or_specification\": \"Chỉ dẫn nơi đặt Công trình kiểm soát tải trọng xe, theo Điều E.29 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 185,
+  "elapsed_seconds": 3.105171099996369,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

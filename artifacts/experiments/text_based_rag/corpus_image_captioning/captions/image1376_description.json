@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3777a9b7d8aab6e686a9f4c80f08d0aa0ca21ad9edbb85034c926d1ff6440c20",
+  "filename": "image1376.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo hiệu đường bộ mã CT.12 theo QCVN 41:2024/BGTVT, dùng để chỉ mã hiệu của đường cao tốc Bắc - Nam phía Đông Hà Nội - Cần Thơ.\",\n  \"items\": [\n    {\n      \"identifier\": \"CT.12\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu vàng, chữ và khung viền màu đen, nội dung ghi mã 'CT.12'.\",\n      \"meaning_or_specification\": \"Mã hiệu đường cao tốc Bắc - Nam phía Đông Hà Nội - Cần Thơ, điểm đầu tại nút giao Pháp Vân, điểm cuối tại TP. Cần Thơ, đi qua các vị trí: Pháp Vân - Cầu Giẽ - Ninh Bình - Nghi Sơn (Thanh Hoá) - Vũng Áng (Hà Tĩnh) - Bùng (Quảng Bình) - Cam Lộ (Quảng Trị) - La Sơn (Thừa Thiên Huế) - Tuý Loan (Đà Nẵng) - Quảng Ngãi - An Nhơn (Bình Định) - Nha Trang - Phan Thiết (Bình Thuận) - Dầu Giây (Đồng Nai) - Long Thành (Đồng Nai) - Bến Lức (Long An) - Trung Lương (Tiền Giang) - Mỹ Thuận (Vĩnh Long) - Cần Thơ.\"\n    }\n  ]\n}",
+  "generated_tokens": 308,
+  "elapsed_seconds": 5.2519642999977805,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

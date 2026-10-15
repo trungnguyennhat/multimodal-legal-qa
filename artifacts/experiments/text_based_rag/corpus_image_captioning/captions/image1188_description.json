@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5ec351874c00a0d990be2fa63eec4f68860953158e26a3b3958cce0e6db8c2ed",
+  "filename": "image1188.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển chỉ dẫn địa điểm (mã I.444) theo QCVN 41:2024/BGTVT, với các thông số chiều rộng, chiều cao và khoảng cách giữa các thành phần.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn địa điểm (mã I.444)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền trắng, nền xanh dương, chia thành lưới ô vuông nhỏ. Bên trong có chữ 'VỊNH HÀ LONG' được tạo bởi các ô vuông trắng. Các kích thước được ghi chú: chiều rộng tổng 1000mm (chia thành 4 đoạn 250mm), chiều cao tổng 600mm (chia thành 4 đoạn 150mm), chiều cao chữ 112mm, khoảng cách từ mép biển đến chữ 44mm.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, đây là biển chỉ dẫn địa điểm (I.444a–I.444l, L444j–L444l) dùng để chỉ dẫn tên địa điểm, di tích lịch sử, hoặc điểm tham quan. Kích thước biển phụ thuộc vào loại đường: 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường, 50mm cho đường đô thị. Hình ảnh minh họa kích thước chi tiết cho biển có chữ lớn, phù hợp với tiêu chuẩn kỹ thuật.\"\n    }\n  ]\n}",
+  "generated_tokens": 388,
+  "elapsed_seconds": 7.121195600004285,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:788bc85ce2232d0e405a887d531b6e0d5b4fc089299e9db6f91ab96b1d4c9e6b",
+  "filename": "public_test_2_8.jpg",
+  "description": "- Biển hình tròn, nền đỏ, viền trắng, có số \"60\" màu trắng ở giữa.\n- Biển hình chữ nhật đứng, nền xanh, có dòng chữ màu trắng, phía dưới có hình ảnh các loại xe (ô tô, xe máy, xe buýt, xe tải) được sắp xếp theo hàng ngang.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 75,
+  "size": [
+    480,
+    264
+  ],
+  "elapsed_seconds": 6.37025619999622,
+  "peak_vram_bytes": 7390975488,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000
+}

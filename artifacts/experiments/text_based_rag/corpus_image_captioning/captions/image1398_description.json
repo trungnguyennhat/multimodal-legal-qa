@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7188e874459e34e26fcb18e4668c6dfbd505dcabfe52c82f4be7a49a285857c0",
+  "filename": "image1398.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước mã hiệu đường bộ (cỡ chữ 40 cm) với các thông số chiều dài, chiều rộng và khoảng cách căn giữa.\",\n  \"items\": [\n    {\n      \"identifier\": \"Mã hiệu đường bộ (CT.09)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, nội dung gồm chữ 'CT.09' màu đen trên nền vàng huỳnh quang. Các kích thước được ghi chú: chiều dài 1300 mm, chiều cao 400 mm, khoảng cách từ mép đến chữ là 80 mm, khoảng cách giữa các ký tự là 130 mm và 150 mm.\",\n      \"meaning_or_specification\": \"Theo QCVN 41:2024/BGTVT, đây là mã hiệu đường bộ cỡ chữ 40 cm, dùng cho đường cao tốc hoặc quốc lộ/tỉnh/huyện tùy loại nền (vàng cho cao tốc, trắng cho các loại khác). Vật liệu phải là màng phản quang loại VIII, IX, XI cấu trúc kim cương; chữ/số/khung màu đen.\"\n    }\n  ]\n}",
+  "generated_tokens": 281,
+  "elapsed_seconds": 4.669001499998558,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

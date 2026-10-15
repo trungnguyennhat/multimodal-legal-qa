@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:93edf07d2721b0c7d6f9f7e2102375215eb3b60a46f7790e04194adcb3618ff3",
+  "filename": "image078.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh hiển thị biển báo hiệu lệnh giảm tốc độ với nền màu vàng và chữ màu đen, phù hợp với quy định tại Điều 47.24 của QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"IE.473\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu vàng huỳnh quang, chữ màu đen ghi nội dung 'GIẢM TỐC ĐỘ' và 'SLOW DOWN'.\", \"meaning_or_specification\": \"Biển cảnh báo người điều khiển phương tiện chú ý lái xe và giảm tốc độ tại khu vực có nguy cơ mất an toàn giao thông như đường cong nguy hiểm, khu vực sắp đến trạm thu phí, trạm dừng nghỉ, hoặc khu vực hay có sương mù.\"}]}",
+  "generated_tokens": 183,
+  "elapsed_seconds": 4.78049469999678,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

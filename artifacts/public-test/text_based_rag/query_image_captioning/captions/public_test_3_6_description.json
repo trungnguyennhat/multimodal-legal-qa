@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:862c7e0d33eeb3d9cb6cd7da154853d1ecb7f27104d3180300db4f7b6364e1cd",
+  "filename": "public_test_3_6.jpg",
+  "description": "Biển báo hình chữ nhật đứng, nền xanh, có các hình ảnh biểu thị loại phương tiện và giới hạn tốc độ.\n\n- Ở hàng trên: ba hình tròn đỏ viền trắng, mỗi hình chứa số \"40\".\n- Ở hàng dưới: các hình ảnh phương tiện:\n  - Hai hình ô tô con.\n  - Một hình xe buýt.\n  - Một hình xe buýt nhỏ hơn.\n  - Một hình xe máy.\n  - Một hình xe tải nhỏ (xe 2 và 3 bánh).\n  - Một hình xe tải lớn (xe 2 và 3 bánh) bên dưới có dòng chữ \"XE 2 VÀ 3 BÁNH\".\n  - Một hình xe tải lớn hơn, có dòng chữ \"≤ 5T\" bên dưới.\n\nBiển báo có các hình ảnh biểu thị loại phương tiện và giới hạn tốc độ.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 184,
+  "size": [
+    470,
+    263
+  ],
+  "elapsed_seconds": 15.012954099998751,
+  "peak_vram_bytes": 7390975488,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176
+}

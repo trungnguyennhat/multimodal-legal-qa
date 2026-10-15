@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:54f7a1ae7aa6f0ad2820f1f68f17b5bee0d9322d33ae8fdba502504c428edbb2",
+  "filename": "image604.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật minh họa quy cách bố trí và kích thước của cụm vạch báo gần chỗ giao nhau với đường sắt (vạch chéo 'X' kèm vạch nét đứt và chữ 'R') theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Cụm vạch báo gần chỗ giao nhau với đường sắt\",\n      \"visual_or_geometric_features\": \"Hình vẽ gồm: 1) Vạch chéo 'X' màu trắng, bề rộng 40 cm, dài 600 cm theo chiều dọc; 2) Hai vạch nét đứt nằm ngang song song trước và sau vạch 'X', mỗi nét dài 60 cm, cách nhau 60 cm; 3) Chữ 'R' (biểu tượng biển R.122) ở hai bên vạch chéo 'X'; 4) Kích thước khoảng cách từ điểm gần nhất của ray đường sắt đến vạch dừng xe là 300 cm.\",\n      \"meaning_or_specification\": \"Theo Điều G.2.7 của QCVN 41:2024/BGTVT, cụm vạch này dùng để báo hiệu cho người tham gia giao thông biết phía trước có chỗ giao nhau với đường sắt (khi không có người gác chắn). Vạch chéo 'X' và vạch nét đứt nằm ngang đều được sơn phản quang màu trắng. Chữ 'R' dùng để chỉ vị trí phải dừng xe. Khoảng cách từ vạch dừng xe đến ray đường sắt phải là 300 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 358,
+  "elapsed_seconds": 6.561464400001569,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

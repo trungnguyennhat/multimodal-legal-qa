@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0ee5c9d13d55a8aaadb3812996502752a71eaf10e389ec52c0b8f898f3a5adb7",
+  "filename": "image068.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai biển báo chỉ dẫn hướng rẽ trái và hướng rẽ phải thuộc nhóm biển chỉ dẫn trên đường cao tốc theo QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển số IE.468a\", \"visual_or_geometric_features\": \"Hình dạng: Hình chữ nhật đứng, nền màu vàng huỳnh quang, viền màu đen. Biểu tượng: Mũi tên màu đen chỉ hướng rẽ phải.\", \"meaning_or_specification\": \"Chỉ dẫn chướng ngại vật phía trước, báo hiệu người tham gia giao thông cần đi theo hướng bên phải.\"}, {\"identifier\": \"Biển số IE.468b\", \"visual_or_geometric_features\": \"Hình dạng: Hình chữ nhật đứng, nền màu vàng huỳnh quang, viền màu đen. Biểu tượng: Mũi tên màu đen chỉ hướng rẽ trái.\", \"meaning_or_specification\": \"Chỉ dẫn chướng ngại vật phía trước, báo hiệu người tham gia giao thông cần đi theo hướng bên trái.\"}]}",
+  "generated_tokens": 233,
+  "elapsed_seconds": 5.50368349999917,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

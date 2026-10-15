@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6e514a67abec269d66851532f5ccc7981bb7dcc0992f25427dc946977d5e2b7b",
+  "filename": "image492.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai mẫu biển chỉ dẫn số lượng làn và hướng đi cho từng làn xe theo QCVN 41:2024/BGTVT, gồm biển S.G.11a (hướng lên) và S.G.11c (hướng xuống), với số mũi tên tương ứng số làn xe.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển S.G.11a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền trắng, viền đen, chứa 3 mũi tên màu đen hướng lên trên (2 mũi thẳng, 1 mũi cong nhẹ về phải)\",\n      \"meaning_or_specification\": \"Chỉ dẫn có 3 làn xe cùng hướng đi lên; trong đó 2 làn đi thẳng, 1 làn có thể rẽ nhẹ sang phải hoặc lệch hướng nhẹ.\"\n    },\n    {\n      \"identifier\": \"Biển S.G.11c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền trắng, viền đen, chứa 3 mũi tên màu đen hướng xuống dưới (2 mũi thẳng, 1 mũi cong nhẹ về trái)\",\n      \"meaning_or_specification\": \"Chỉ dẫn có 3 làn xe cùng hướng đi xuống; trong đó 2 làn đi thẳng, 1 làn có thể rẽ nhẹ sang trái hoặc lệch hướng nhẹ.\"\n    }\n  ]\n}",
+  "generated_tokens": 319,
+  "elapsed_seconds": 5.079207300004782,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

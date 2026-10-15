@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4d2b14cd17442ec60eaa7d91c9b77fb50c93c18f95cff63c24b17408f9c9eb2f",
+  "filename": "image032.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh hiển thị biển chỉ dẫn lối ra và khoảng cách đến nút giao với đường dẫn vào đường cao tốc, bao gồm biển IE.450a và IE.464b.\", \"items\": [{\"identifier\": \"Biển IE.450a\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ và biểu tượng màu trắng. Gồm ô vuông màu vàng có chữ 'LỐI RA EXIT' ở góc trên bên trái, dòng chữ 'BẾN LỰC 2 km' ở dòng trên, và mũi tên chỉ hướng rẽ trái ở dòng dưới.\", \"meaning_or_specification\": \"Biển chỉ dẫn khoảng cách (2 km) và hướng rẽ trái đến nút giao với đường dẫn vào đường cao tốc (đến Bến Lực).\"}, {\"identifier\": \"Biển IE.464b\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ và biểu tượng màu trắng. Gồm mũi tên chỉ hướng rẽ trái và tên địa điểm 'TT. BẾN LỰC' ở dòng trên, 'TT. ĐỨC HÒA' ở dòng dưới.\", \"meaning_or_specification\": \"Biển chỉ dẫn địa điểm và phương hướng tại lối ra, hướng dẫn xe rẽ trái để đến các địa điểm: Thị trấn Bến Lực và Thị trấn Đức Hòa.\"}]}",
+  "generated_tokens": 302,
+  "elapsed_seconds": 6.52757940000447,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

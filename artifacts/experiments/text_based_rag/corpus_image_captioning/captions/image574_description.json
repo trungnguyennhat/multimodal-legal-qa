@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e3abe15666ddb8d3a34ebb0cd6e0aa3b94ef71bd6f6a1b0831cba3e75e1cfb0f",
+  "filename": "image574.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ minh họa quy cách kích thước và tỷ lệ của Vạch 1.3 (vạch đôi song song, nét liền) dùng để phân chia hai chiều xe chạy ngược chiều.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.3 (Vạch đôi song song, nét liền)\",\n      \"visual_or_geometric_features\": \"Hình tròn chứa hai vạch song song, nét liền, nghiêng một góc. Có các ký hiệu kích thước: b = 15 cm (bề rộng nét vẽ), 15 cm (khoảng cách giữa hai vạch), 50 cm (khoảng cách lớn nhất giữa hai vạch), và tỷ lệ L1/L2 = 1:2.\",\n      \"meaning_or_specification\": \"Vạch 1.3 là vạch đôi song song, liền nét, màu vàng, bề rộng nét vẽ b = 15 cm, khoảng cách phía trong hai mép vạch đơn nhỏ nhất là 15 cm; lớn nhất là 50 cm. Tỷ lệ L1/L2=1:2. Vạch này dùng để phân chia hai chiều xe chạy ngược chiều, xe không được lấn làn, không được đè lên vạch, thường dùng cho đường có từ 4 làn xe cơ giới trở lên hoặc ở các vị trí cần thiết khác.\"\n    }\n  ]\n}",
+  "generated_tokens": 305,
+  "elapsed_seconds": 8.214791400001559,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

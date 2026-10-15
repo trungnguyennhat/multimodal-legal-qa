@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6399f7e5ed155c11b45fc0f81b201903f83b8c805da608f7ffb6b95452278c6d",
+  "filename": "image1294.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo I.445 (Biển báo mô tả tình trạng đường) theo QCVN 41:2024/BGTVT, bao gồm kích thước tổng thể, kích thước biểu tượng và lưới chia tỷ lệ.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.445 (Biển báo mô tả tình trạng đường)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, có lưới chia ô để đo đạc. Kích thước tổng thể: chiều ngang 30,5z, chiều dọc 12,5z. Kích thước biểu tượng sóng: chiều ngang 11,8z, chiều cao 2,4z (mỗi sóng). Kích thước phần chữ: chiều ngang 11,8z, chiều cao 2,4z (mỗi dòng).\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, đây là biển báo mô tả tình trạng đường. Kích thước z (mm) phụ thuộc vào loại đường: 80mm (đường đôi ngoài đô thị), 60mm (đường thông thường), 40mm (đường đô thị). Các thông số trên hình là tỷ lệ so với giá trị z.\"\n    }\n  ]\n}",
+  "generated_tokens": 326,
+  "elapsed_seconds": 6.2154910000026575,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

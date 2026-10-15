@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9dfc801216e302d5b633b0d1a0b1a69b1615e7dce4ff3078270b02397c1155dd",
+  "filename": "image420.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.435 'Bến xe điện' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn chỗ dừng đỗ xe điện cho khách lên xuống.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.435\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật dọc, nền xanh dương, viền trắng, biểu tượng xe điện màu đen ở giữa, dòng chữ 'BẾN XE ĐIỆN' và 'TRAMWAY STATION' màu trắng bên dưới.\",\n      \"meaning_or_specification\": \"Chỉ dẫn chỗ dừng đỗ xe điện cho khách lên xuống, theo quy định tại Điều E.38 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 199,
+  "elapsed_seconds": 3.3067433000032906,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

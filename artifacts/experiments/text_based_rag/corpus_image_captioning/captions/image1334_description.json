@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:12af34da737574dedff4ce8e922e7c18ff77c25810380ffc41e38ebf03e929df",
+  "filename": "image1334.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật đen trắng quy định kích thước hình học và bố cục của các biển báo chỉ dẫn nhóm I.405 (Đường cụt) và I.427b (Công trình kiểm soát tải trọng xe) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.405a: Loại xe\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, bên trong có hình vẽ một chiếc xe tải. Các kích thước được ghi chú: chiều rộng 1000mm, chiều cao 600mm, chiều dài 1800mm. Có lưới ô vuông để xác định tỷ lệ.\",\n      \"meaning_or_specification\": \"Quy định kích thước cho biển báo chỉ dẫn đường cụt dành riêng cho loại xe tải.\"\n    },\n    {\n      \"identifier\": \"Biển số I.405b: Loại xe hạn chế qua cầu\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, bên trong có 3 hàng chữ số '00' (mỗi hàng cách nhau 100mm). Kích thước tổng thể: chiều rộng 1800mm, chiều cao 1000mm. Các khoảng cách giữa các hàng chữ số và mép biển được ghi chú chi tiết (ví dụ: 100mm, 200mm).\",\n      \"meaning_or_specification\": \"Quy định kích thước và bố cục cho biển báo chỉ dẫn đường cụt dành cho loại xe hạn chế qua cầu.\"\n    },\n    {\n      \"identifier\": \"Biển số I.405c: Tải trọng hạn chế qua cầu\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, bên trong có bảng ghi 'TRỤC BÓN', 'TRỤC KÉP', 'TRỤC BA' kèm các giá trị tải trọng (10t, 00t, 00t). Kích thước tổng thể: chiều rộng 1800mm, chiều cao 1000mm. Các khoảng cách từ mép biển đến các dòng chữ và giữa các dòng chữ được ghi chú chi tiết (ví dụ: 100mm, 200mm, 300mm).\",\n      \"meaning_or_specification\": \"Quy định kích thước và bố cục cho biển báo chỉ dẫn tải trọng hạn chế qua cầu.\"\n    }\n  ]\n}",
+  "generated_tokens": 563,
+  "elapsed_seconds": 9.853501099998539,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

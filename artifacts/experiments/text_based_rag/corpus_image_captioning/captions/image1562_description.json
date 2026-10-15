@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1e631e0c8785584330c07f0c321954105f6f37ce2afef5ed97a609d1495789db",
+  "filename": "image1562.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn giữ khoảng cách an toàn (mã IE.471) theo QCVN 41:2024/BGTVT, với nền vàng huỳnh quang, chữ đen, kèm kích thước kỹ thuật và ghi chú về tỷ lệ.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.471\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có bo góc, nền màu vàng huỳnh quang, chữ màu đen gồm dòng tiếng Việt 'GIỮ KHOẢNG CÁCH AN TOÀN' và dòng tiếng Anh 'Keep Safe Distance'. Các kích thước được đánh dấu: L (chiều rộng), W (chiều cao), k1, k1', H1, H1' theo ghi chú kỹ thuật.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn người tham gia giao thông duy trì khoảng cách an toàn với phương tiện phía trước; kích thước và bố cục tuân thủ QCVN 41:2024/BGTVT, trong đó k1 = H1 = 40 cm, k1' = H1' = 30 cm, vật liệu phản quang loại VIII, IX, XI cấu trúc kim cương.\"\n    }\n  ]\n}",
+  "generated_tokens": 292,
+  "elapsed_seconds": 4.7221029000065755,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

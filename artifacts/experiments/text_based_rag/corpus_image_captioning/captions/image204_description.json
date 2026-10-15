@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:66a78abab2d3acec72f6f9ec4b51aebef433d43402bbffa1ebdc306e24009605",
+  "filename": "image204.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba kiểu biển số W.207 (a, g, h) thuộc nhóm 'Giao nhau với đường không ưu tiên (đường nhánh)' theo QCVN 41:2024/BGTVT, dùng để báo trước nơi giao nhau trên đường ưu tiên.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.207a\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng đen: đường thẳng có nhánh rẽ trái và phải (giao nhau với đường không ưu tiên từ hai phía)\",\n      \"meaning_or_specification\": \"Dùng để báo trước nơi giao nhau với đường không ưu tiên (đường nhánh) trên đường ưu tiên, khi đường ưu tiên có nhánh rẽ cả hai bên.\"\n    },\n    {\n      \"identifier\": \"Biển số W.207g\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng đen: đường thẳng có nhánh rẽ phải (giao nhau với đường không ưu tiên từ bên phải)\",\n      \"meaning_or_specification\": \"Dùng để báo trước nơi giao nhau với đường không ưu tiên (đường nhánh) trên đường ưu tiên, khi đường ưu tiên chỉ có nhánh rẽ phải.\"\n    },\n    {\n      \"identifier\": \"Biển số W.207h\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng đen: đường thẳng có nhánh rẽ trái (giao nhau với đường không ưu tiên từ bên trái)\",\n      \"meaning_or_specification\": \"Dùng để báo trước nơi giao nhau với đường không ưu tiên (đường nhánh) trên đường ưu tiên, khi đường ưu tiên chỉ có nhánh rẽ trái.\"\n    }\n  ]\n}",
+  "generated_tokens": 424,
+  "elapsed_seconds": 6.783889699996507,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

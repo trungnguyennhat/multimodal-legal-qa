@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d9122b5f2cd64c1b55db504a4a2085f3754536a018d468cebcd1a3193a87ac01",
+  "filename": "image1208.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển số L428 (Trạm cấp cứu) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số L428: Trạm cấp cứu\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong chia thành lưới ô vuông. Phần trên là hình chữ thập màu đỏ (biểu tượng trạm cấp cứu), phần dưới là hình chữ nhật màu xanh dương. Các kích thước được ghi chú bằng số và ký hiệu: chiều dài tổng 1000mm, chiều rộng 750mm, chiều cao phần chữ thập 340mm, chiều cao phần nền 360mm, chiều rộng phần nền 750mm, chiều rộng phần chữ thập 500mm, chiều cao khung viền 100mm, chiều rộng khung viền 100mm.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo chỉ dẫn trạm cấp cứu (L428) cho các loại đường: Đường đôi ngoài đô thị (z=100mm), Đường thông thường (z=75mm), Đường đô thị (z=50mm). Hình vẽ minh họa tỷ lệ và kích thước chi tiết của biểu tượng trạm cấp cứu và khung biển.\"\n    }\n  ]\n}",
+  "generated_tokens": 336,
+  "elapsed_seconds": 6.3462117000017315,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

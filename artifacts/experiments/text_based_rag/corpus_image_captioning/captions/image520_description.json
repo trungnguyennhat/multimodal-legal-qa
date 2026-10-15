@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3a0b39505d0be130d5df5fec0b60cd8ed796d937ebbf1f43a251ca9b21b89599",
+  "filename": "image520.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ minh họa quy cách kích thước của Vạch 1.2 (vạch phân chia hai chiều xe chạy, dạng vạch đơn, nét liền) theo quy định tại QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.2 (Vạch phân chia hai chiều xe chạy)\",\n      \"visual_or_geometric_features\": \"Hình khối chữ nhật dài, dạng vạch đơn, nét liền. Có ký hiệu kích thước chiều rộng vạch là b = 15 cm.\",\n      \"meaning_or_specification\": \"Theo Điều G.1.2.b của QCVN 41:2024/BGTVT, Vạch 1.2 là vạch đơn, liền nét, màu vàng, bề rộng vạch 15 cm. Vạch này dùng để phân chia hai chiều xe chạy ngược chiều; xe không được lấn làn, không được đè lên vạch. Thường sử dụng ở đoạn đường không đảm bảo tầm nhìn vượt xe, nguy cơ tai nạn giao thông đối đầu lớn trên các đường có 2 hoặc 3 làn xe cơ giới và không có dải phân cách giữa.\"\n    }\n  ]\n}",
+  "generated_tokens": 278,
+  "elapsed_seconds": 7.826451400003862,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

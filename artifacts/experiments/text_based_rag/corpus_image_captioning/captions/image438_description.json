@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0cb0264beb84b5107a963a8c4465ed867adce47a42872131421aed8a8e87182e",
+  "filename": "image438.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba loại biển báo chỉ dẫn địa điểm thuộc nhóm I.444 theo QCVN 41:2024/BGTVT, bao gồm biển chỉ dẫn khu danh thắng và du lịch (I.444g), trạm xăng dầu (I.444h) và trạm rửa xe (I.444i).\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.444g\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, viền trắng, biểu tượng hình núi và cây cối màu trắng ở giữa\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn khu danh thắng và du lịch, đặt ở trước nơi đường giao nhau với đường vào khu danh thắng và du lịch\"\n    },\n    {\n      \"identifier\": \"Biển số I.444h\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, viền trắng, biểu tượng hình vòi xăng màu trắng ở giữa\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn trạm xăng, đặt ở trước nơi đường giao nhau với đường vào trạm bán xăng dầu\"\n    },\n    {\n      \"identifier\": \"Biển số I.444i\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, viền trắng, biểu tượng hình xe hơi đang được rửa (có vòi phun nước) màu trắng ở giữa\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn trạm rửa xe, đặt ở trước nơi đường giao nhau với đường vào trạm phục vụ rửa xe\"\n    }\n  ]\n}",
+  "generated_tokens": 388,
+  "elapsed_seconds": 6.2592446000053314,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

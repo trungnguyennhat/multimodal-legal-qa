@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e2c9714f85eab8006e653c63574d764273ce97663cec774959f05bfd2bb7de2c",
+  "filename": "image1410.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước mã hiệu đường bộ (cỡ chữ 40 cm) với các thông số hình học và khoảng cách lắp đặt.\",\n  \"items\": [\n    {\n      \"identifier\": \"Khung mã hiệu\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có kích thước tổng thể 100 cm (chiều ngang) x 70 cm (chiều dọc), viền khung dày 1,5 cm, góc bo tròn R10,0. Nội dung gồm ký tự 'ĐT.909' được căn giữa theo trục ngang và dọc.\",\n      \"meaning_or_specification\": \"Quy định kích thước mã hiệu đường bộ cỡ chữ 40 cm theo QCVN 41:2024/BGTVT, với khoảng cách căn giữa 'a' được chỉ định để căn chỉnh nội dung chữ/số trong khung.\"\n    }\n  ]\n}",
+  "generated_tokens": 224,
+  "elapsed_seconds": 3.8342604999998002,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

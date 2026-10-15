@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ac2391ce66d711cd687128b76a20b0e092968b804ffda1e2b8a4d07201199330",
+  "filename": "image396.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.427a 'Trạm sửa chữa' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn vị trí trạm sửa chữa phương tiện trên đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.427a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng đen hình chiếc cờ lê (công cụ sửa chữa) ở trung tâm.\",\n      \"meaning_or_specification\": \"Chỉ dẫn nơi đặt xưởng hoặc trạm chuyên phục vụ sửa chữa ô tô, xe máy hỏng trên đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 171,
+  "elapsed_seconds": 2.9011874999996508,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

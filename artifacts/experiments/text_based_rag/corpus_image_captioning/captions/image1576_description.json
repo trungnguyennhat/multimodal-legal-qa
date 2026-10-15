@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:93613452b37bf980a6a43e048a4dcfcad0ae06416f7db16ee3721c2bf45f34ef",
+  "filename": "image1576.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn lối ra (mã IE.474) theo QCVN 41:2024/BGTVT, với nền xanh lá cây, chữ trắng và mũi tên chỉ hướng, kèm các thông số kích thước kỹ thuật.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn lối ra (IE.474)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh lá cây, chữ 'LỐI RA' và 'EXIT' màu trắng ở phần trên, mũi tên chỉ hướng màu trắng ở phần dưới; kèm các ký hiệu kích thước: L (chiều rộng), W (chiều cao), k₁, k₁', H₁, H₁', a, 61,5 cm\",\n      \"meaning_or_specification\": \"Biển báo hiệu chỉ dẫn phương tiện di chuyển theo hướng lối ra; các thông số kỹ thuật như k₁=H₁=40 cm, k₁'=H₁'=30 cm, chiều cao phần mũi tên 100 cm, chiều cao phần chữ 180 cm, khoảng cách căn giữa a, và chiều rộng biển L được quy định trong điều P.26 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 311,
+  "elapsed_seconds": 4.992713999999978,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

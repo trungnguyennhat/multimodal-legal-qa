@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:05a5b995f1122dd6a2a1d0138d56c5faff64421b0439a66802811e688e791c5a",
+  "filename": "image720.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo cấm xe ôtô (P.103a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.103a (Cấm xe ôtô)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô đen bị gạch chéo đỏ. Bản vẽ kèm kích thước: đường kính biển 600mm, chiều cao biểu tượng xe 150mm, chiều rộng xe 250mm, chiều dài xe 350mm, khoảng cách từ mép biển đến đỉnh xe 100mm, khoảng cách từ mép biển đến đáy xe 100mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô (P.103a) được quy định trong Điều M.1 của QCVN 41:2024/BGTVT, dùng để chỉ đường cấm xe ôtô lưu thông. Kích thước biển và vị trí lắp đặt phải tuân thủ theo bảng quy định trong điều luật, với z(mm) thay đổi tùy loại đường (140mm cho đường cao tốc, 126mm cho đường đôi ngoài đô thị, 87,5mm cho đường thông thường, 70mm cho đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 339,
+  "elapsed_seconds": 6.169893000005686,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

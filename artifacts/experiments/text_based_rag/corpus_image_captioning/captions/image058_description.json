@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ab2a8fc2adcf9d120a1c782a413ee3a1e5d739f1a6488a9982c0ce6957f7abce",
+  "filename": "image058.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số IE.464b chỉ dẫn địa điểm và phương hướng tại lối ra đường cao tốc, theo quy định tại Điều 47.15 của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số IE.464b\",\n      \"visual_or_geometric_features\": \"Hình dạng: Biển chỉ dẫn hình mũi tên lớn hướng sang phải. Màu sắc: Nền màu xanh lá cây, chữ và mũi tên màu trắng.\",\n      \"meaning_or_specification\": \"Biển này được đặt tại dải phân ngã ba của nhánh rẽ hoặc ở vị trí gần nút giao phía lưng đường cong trên đường ra khỏi đường cao tốc, dùng để chỉ dẫn địa danh nơi đến và mũi tên chỉ hướng cho một làn xe chạy cụ thể.\"\n    }\n  ]\n}",
+  "generated_tokens": 213,
+  "elapsed_seconds": 5.217759399994975,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

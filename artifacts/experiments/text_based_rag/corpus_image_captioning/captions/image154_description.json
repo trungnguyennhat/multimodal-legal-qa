@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d5936242ee6616a74cf6eb471f530b7522baec0c750cf7f20ca7dce9b2be1a3d",
+  "filename": "image154.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.127b – Biển ghép tốc độ tối đa cho phép trên từng làn đường, với ba làn đường tương ứng tốc độ 80, 60 và 50 km/h.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.127b\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật nền màu xanh, trên đó có ba mũi tên trắng hướng lên trên, mỗi mũi tên gắn liền với một biển tròn nền trắng viền đỏ ghi số tốc độ: 80, 60, 50 (đơn vị km/h).\",\n      \"meaning_or_specification\": \"Biển quy định tốc độ tối đa cho phép trên từng làn đường riêng biệt; xe chạy trên làn nào phải tuân thủ tốc độ tối đa được ghi trên làn đó theo Điều B.27b của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 233,
+  "elapsed_seconds": 3.8827515999946627,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

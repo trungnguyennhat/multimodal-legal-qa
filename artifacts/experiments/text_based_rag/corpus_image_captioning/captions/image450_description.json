@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1e93f69162241ca26edefe75077dfeafae5587c1fa55032c9ecb8162177a6af0",
+  "filename": "image450.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.446 'Nơi đỗ xe dành cho người khuyết tật' theo quy định QCVN 41:2024/BGTVT, dùng để báo hiệu vị trí đỗ xe dành riêng cho người khuyết tật.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.446\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng người ngồi xe lăn màu trắng ở trung tâm.\",\n      \"meaning_or_specification\": \"Báo hiệu nơi đỗ xe dành cho người khuyết tật; có thể kết hợp với biển P.131a 'Cấm đỗ xe' và biển I.408 'Nơi đỗ xe' để tăng tính rõ ràng và tuân thủ quy định.\"\n    }\n  ]\n}",
+  "generated_tokens": 205,
+  "elapsed_seconds": 3.428640300000552,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ddd8bb453a31eeb20ed84637a903987d3e48d6cbb817d6d435f769250b6eebc1",
+  "filename": "image192.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển số W.202a và W.202b theo QCVN 41:2024/BGTVT, dùng để báo trước hai chỗ ngoặt nguy hiểm liên tiếp ngược chiều nhau.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.202a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen gồm hai đoạn đường cong liên tiếp hướng vòng bên trái\",\n      \"meaning_or_specification\": \"Đặt khi có từ 2 chỗ ngoặt gần nhau (khoảng cách <160m), trong đó ít nhất một chỗ nguy hiểm và chỗ ngoặt đầu tiên hướng vòng bên trái\"\n    },\n    {\n      \"identifier\": \"Biển số W.202b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen gồm hai đoạn đường cong liên tiếp hướng vòng bên phải\",\n      \"meaning_or_specification\": \"Đặt khi có từ 2 chỗ ngoặt gần nhau (khoảng cách <160m), trong đó ít nhất một chỗ nguy hiểm và chỗ ngoặt đầu tiên hướng vòng bên phải\"\n    }\n  ]\n}",
+  "generated_tokens": 299,
+  "elapsed_seconds": 4.837977800001681,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

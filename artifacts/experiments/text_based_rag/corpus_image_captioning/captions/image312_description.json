@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6f6e807bde734d69d56d74448cc4aa2299bd65734d363b554a2194cfc7b4d0d2",
+  "filename": "image312.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông R.309 'Ấn còi' theo QCVN 41:2024/BGTVT, dùng để yêu cầu người lái xe ấn còi khi đến vị trí có tầm nhìn hạn chế.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.309\",\n      \"visual_or_geometric_features\": \"Hình tròn nền xanh dương, viền trắng, biểu tượng chiếc còi màu trắng ở trung tâm\",\n      \"meaning_or_specification\": \"Biển báo hiệu xe cộ đi đến vị trí đặt biển đó thì phải ấn còi; đặt ở trước khúc đường ngoặt gấp hoặc sắp vào đường đèo dốc dọc lớn hơn 10%, nơi tầm nhìn bị hạn chế.\"\n    }\n  ]\n}",
+  "generated_tokens": 194,
+  "elapsed_seconds": 3.241106100002071,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

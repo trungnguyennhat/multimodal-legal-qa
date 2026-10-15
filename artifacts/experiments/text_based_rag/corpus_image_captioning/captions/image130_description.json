@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3a9af33bf43cea216c966d85f03c83a0e7dfa4416ab52e86cc89feb9156e4a7b",
+  "filename": "image130.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.117 'Hạn chế chiều cao' với trị số 3,5 m, dùng để báo hiệu giới hạn chiều cao tối đa cho xe cơ giới và thô sơ khi đi qua.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.117\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có chữ số '3,5 m' màu đen và biểu tượng mũi tên đen hướng xuống dưới (hình tam giác ngược)\",\n      \"meaning_or_specification\": \"Biển báo cấm các xe có chiều cao vượt quá 3,5 m đi qua; trị số này được tính bằng chiều cao tĩnh không trừ 0,5 m và làm tròn đến 0,1 m theo hướng tăng (theo Điều B.17 c) QCVN 41:2024/BGTVT)\"\n    }\n  ]\n}",
+  "generated_tokens": 230,
+  "elapsed_seconds": 3.8823641999988467,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

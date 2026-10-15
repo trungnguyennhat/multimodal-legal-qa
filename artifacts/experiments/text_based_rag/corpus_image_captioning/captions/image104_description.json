@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b1f8492f5af4b9d2eb8c4e0701711371ccfb13bcc1a7c647789e71d94835ecf9",
+  "filename": "image104.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm xe ô tô khách (P.107a) theo QCVN 41:2024/BGTVT, với biểu tượng xe buýt bị gạch chéo trong vòng tròn đỏ.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.107a\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có đường chéo đỏ từ góc trên bên trái xuống góc dưới bên phải, bên trong là hình vẽ đen của xe buýt (xe ô tô khách).\",\n      \"meaning_or_specification\": \"Biển báo này dùng để báo đường cấm ô tô chở khách đi qua, trừ các xe ưu tiên theo quy định; biển này không cấm xe buýt. Trường hợp cấm xe khách theo số chỗ ngồi thì có thể sử dụng biển phụ ghi số chỗ ngồi hoặc ghi số chỗ ngồi vào biểu tượng xe bằng chữ trắng.\"\n    }\n  ]\n}",
+  "generated_tokens": 223,
+  "elapsed_seconds": 3.732965899995179,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

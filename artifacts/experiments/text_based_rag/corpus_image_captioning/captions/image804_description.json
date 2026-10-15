@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0a0f217739b28d43a5540e620845412d5575a126939aff902ca293125052e1fa",
+  "filename": "image804.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo P.127 (Tốc độ tối đa cho phép) và P.127a (Tốc độ tối đa cho phép về ban đêm) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.127 (Tốc độ tối đa cho phép)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền xanh, nền trắng, số '50' màu đen ở giữa; kèm bản vẽ kỹ thuật với các kích thước: đường kính ngoài 700 mm, đường kính trong 525 mm, chiều cao số 100 mm, khoảng cách từ mép biển đến điểm đặt 125 mm, và chiều cao tổng thể 700 mm.\",\n      \"meaning_or_specification\": \"Biển báo này quy định tốc độ tối đa cho phép trên các loại đường khác nhau (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với chiều cao z tương ứng 140, 126, 87,5 và 70 mm theo Điều M.1 của QCVN 41:2024/BGTVT.\"\n    },\n    {\n      \"identifier\": \"Biển báo P.127a (Tốc độ tối đa cho phép về ban đêm)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền xanh, nền trắng, số '50' màu đen ở giữa; kèm bản vẽ kỹ thuật với các kích thước: đường kính ngoài 630 mm, đường kính trong 472,5 mm, chiều cao số 90 mm, khoảng cách từ mép biển đến điểm đặt 112,5 mm, và chiều cao tổng thể 630 mm.\",\n      \"meaning_or_specification\": \"Biển báo này quy định tốc độ tối đa cho phép về ban đêm trên các loại đường (đường cao tốc và đường đôi ngoài đô thị, đường thông thường, đường đô thị) với chiều cao z tương ứng 126, 87,5 và 70 mm theo Điều M.1 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 542,
+  "elapsed_seconds": 9.12163330000476,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

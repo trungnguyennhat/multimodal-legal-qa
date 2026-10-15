@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:08804e2892998b1ded4e5cfb369e16c145c6afbead0e936ade4b109ca714ba65",
+  "filename": "image074.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh là biển chỉ dẫn trạm thu phí trên đường cao tốc, bao gồm tên trạm và khoảng cách đến trạm.\", \"items\": [{\"identifier\": \"Biển số IE.472a\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ màu trắng, chia làm hai phần: phần trên ghi 'TRẠM THU PHÍ TOLL PLAZA', phần dưới ghi '750 m'.\", \"meaning_or_specification\": \"Biển số IE.472a chỉ dẫn khoảng cách đến trạm thu phí, được đặt cách trạm thu phí một khoảng cách phù hợp nhằm thông báo cho người điều khiển phương tiện biết trước chuẩn bị đến trạm thu phí.\"}]}",
+  "generated_tokens": 168,
+  "elapsed_seconds": 4.539802100000088,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3e6476b50ce78b8dd35ffc43ca931173252176573bfada40a909d7383163163a",
+  "filename": "image156.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.127c theo QCVN 41:2024/BGTVT, quy định tốc độ tối đa cho phép theo từng loại phương tiện trên các làn đường riêng biệt.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.127c\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật nền xanh, chia thành 3 cột dọc bằng vạch trắng đứt; mỗi cột có biển tròn đỏ viền trắng chứa số tốc độ (60, 50, 50) và biểu tượng phương tiện tương ứng (ô tô, xe tải, xe máy, xe ba bánh, xe đạp).\",\n      \"meaning_or_specification\": \"Quy định tốc độ tối đa cho phép theo từng loại phương tiện trên từng làn đường: làn 1 (ô tô) tối đa 60 km/h, làn 2 (xe tải) và làn 3 (xe máy, xe ba bánh, xe đạp) tối đa 50 km/h; các phương tiện phải đi đúng làn và tuân thủ tốc độ quy định.\"\n    }\n  ]\n}",
+  "generated_tokens": 265,
+  "elapsed_seconds": 4.380700499998056,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

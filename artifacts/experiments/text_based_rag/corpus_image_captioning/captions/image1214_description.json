@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:190c740ca7b4e24626b4a7a9ac944bee07bea14b538f7dcb5e933a8e125ca684",
+  "filename": "image1214.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn I.428 (Cửa hàng xăng dầu; Trạm nạp điện; Cửa hàng xăng dầu và Trạm nạp điện) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.428 (Cửa hàng xăng dầu; Trạm nạp điện; Cửa hàng xăng dầu và Trạm nạp điện)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật nền xanh dương, biểu tượng xe tải đang nạp nhiên liệu (hoặc trạm nạp điện) màu đen ở trung tâm. Bản vẽ kèm các kích thước: chiều rộng biển 12,2 đơn vị, chiều cao 6,2 đơn vị; kích thước biểu tượng xe tải và các chi tiết như vòi bơm, bình chứa, giá đỡ; khoảng cách từ mép biển đến biểu tượng; và các kích thước phụ như 0,62, 0,37, 1,2, 2,7, 0,6, 1,8, 7,5, 12,2, 6,2, 0,62, 0,37, 1,2, 2,7, 0,6, 1,8, 7,5.\",\n      \"meaning_or_specification\": \"Biển báo I.428 dùng để chỉ dẫn vị trí cửa hàng xăng dầu, trạm nạp điện hoặc cả hai. Kích thước biển và biểu tượng được quy định theo loại đường: Đường đôi ngoài đô thị (z=100mm), Đường thông thường (z=75mm), Đường đô thị (z=50mm). Bản vẽ này cung cấp tỷ lệ và kích thước chi tiết để sản xuất biển báo đúng chuẩn kỹ thuật.\"\n    }\n  ]\n}",
+  "generated_tokens": 424,
+  "elapsed_seconds": 7.759689799997432,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

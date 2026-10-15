@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8b8b43f8b19efa1392ef6106879616355ee65460de0f687c2e2a8e14529bdf63",
+  "filename": "image174.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số DP.134 'Hết tốc độ tối đa cho phép' theo QCVN 41:2024/BGTVT, dùng để báo hiệu kết thúc hiệu lực của biển cấm tốc độ tối đa.\",\n  \"items\": [\n    {\n      \"identifier\": \"DP.134\",\n      \"visual_or_geometric_features\": \"Hình tròn, viền xanh dương, nền trắng, số '50' màu đen ở giữa, có đường chéo gạch chéo màu đen từ góc trên trái xuống góc dưới phải.\",\n      \"meaning_or_specification\": \"Biển báo hiệu rằng hiệu lực của biển số P.127 (cấm tốc độ tối đa) đã hết tác dụng; kể từ biển này, các xe được phép chạy với tốc độ tối đa đã quy định trong Luật Đường bộ và Luật Trật tự, An toàn giao thông đường bộ.\"\n    }\n  ]\n}",
+  "generated_tokens": 222,
+  "elapsed_seconds": 3.6927292000036687,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:16c14dd6b2c8395cdbad9c56fd83ffba5828582b59192f21bcba105719522bb8",
+  "filename": "image1164.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển chỉ dẫn địa điểm (mã I.444a–I.444l) theo QCVN 41:2024/BGTVT, với các thông số chiều rộng, chiều cao và khoảng cách lắp đặt.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn địa điểm (mã I.444a–I.444l)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, nền màu xanh dương (trong bản vẽ kỹ thuật được thể hiện bằng lưới ô vuông), chứa hai dòng chữ 'NAM ĐỊNH' và 'NINH BÌNH' cùng khoảng cách '30 km' và '56 km'. Bên dưới là biểu tượng hình chữ Y chia làm hai nhánh, mỗi nhánh có một mũi tên chỉ hướng. Các kích thước được ghi chú: chiều rộng biển 1800 mm, chiều cao biển 1000 mm, khoảng cách từ mép dưới biển đến mặt đường 1800 mm, khoảng cách từ mép trên biển đến đỉnh mũi tên 1200 mm, và khoảng cách giữa hai nhánh mũi tên 1200 mm.\",\n      \"meaning_or_specification\": \"Biển này dùng để chỉ dẫn địa điểm (thành phố, thị xã, huyện...) và khoảng cách còn lại đến địa điểm đó. Kích thước biển phụ thuộc vào loại đường: đường đôi ngoài đô thị (z=100mm), đường thông thường (z=75mm), đường đô thị (z=50mm). Trong bản vẽ này, các thông số như 1800mm, 1000mm, 1200mm là kích thước cụ thể cho biển loại đường đôi ngoài đô thị hoặc được minh họa theo tỷ lệ chuẩn.\"\n    }\n  ]\n}",
+  "generated_tokens": 433,
+  "elapsed_seconds": 7.809954799995467,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

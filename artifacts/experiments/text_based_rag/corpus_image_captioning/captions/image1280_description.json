@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:26dfa5d648cfa49702fe1b3e939126a2f683fbcb51fe70a50bc1f4896afa9152",
+  "filename": "image1280.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn 'GA TÀU ĐIỆN NGẦM Metro' theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn 'GA TÀU ĐIỆN NGẦM Metro'\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với mũi tên chỉ hướng bên trái. Bản vẽ có lưới ô vuông để xác định tỷ lệ và các kích thước được ghi bằng ký hiệu 'a' (ví dụ: 48a, 11a, 8a, 2a, 1a, 12a, 8a, 6a, 4a).\",\n      \"meaning_or_specification\": \"Đây là bản vẽ kỹ thuật minh họa kích thước hình học của biển báo. Các thông số như '48a', '11a', '8a'... là các giá trị kích thước được quy định trong điều luật (ví dụ: chiều dài, chiều rộng, khoảng cách giữa các phần của biển) dựa trên một đơn vị cơ bản 'a' (thường là 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường, 50mm cho đường đô thị). Hình dạng tổng thể là hình chữ nhật với mũi tên chỉ hướng, dùng để chỉ dẫn ga tàu điện ngầm.\"\n    }\n  ]\n}",
+  "generated_tokens": 338,
+  "elapsed_seconds": 6.401505399997404,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

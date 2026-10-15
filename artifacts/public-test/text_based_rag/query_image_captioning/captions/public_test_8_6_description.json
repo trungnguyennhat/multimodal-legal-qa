@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:1147eb0da8ec35ea707bdeed54eeee9ea82d2c6d6bab3daa2accc3b5d6bfe7cf",
+  "filename": "public_test_8_6.jpg",
+  "description": "Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có chữ số \"10\" và ký hiệu \"t\" nhỏ ở góc trên bên phải của chữ số.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 41,
+  "size": [
+    1000,
+    600
+  ],
+  "elapsed_seconds": 3.7342181999993045,
+  "peak_vram_bytes": 7561359360,
+  "peak_reserved_bytes": 7600078848,
+  "gpu_free_bytes": 8269070336
+}

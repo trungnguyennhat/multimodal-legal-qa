@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:be34849ebae867b816da85c181fd8e36697bc6e740dd2e9171f60aebe2fb685d",
+  "filename": "image1184.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước và bố cục của biển chỉ dẫn địa giới hành chính (biển số I.419a hoặc I.419b) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn địa giới (Hình chữ nhật)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền lưới ô vuông, nền màu xanh dương (trong bản vẽ kỹ thuật được thể hiện bằng vùng màu xanh đặc trưng cho biển chỉ dẫn), chữ viết màu trắng. Các ký hiệu kích thước bao gồm: chiều dài biển (ký hiệu 'a'), chiều rộng biển (ký hiệu 'b'), chiều cao chữ (ký hiệu 'h'), khoảng cách từ mép biển đến mép khung (ký hiệu 'x'), và khoảng cách giữa các dòng chữ (ký hiệu 'y').\",\n      \"meaning_or_specification\": \"Đây là bản vẽ kỹ thuật cho biển chỉ dẫn địa giới (theo Điều M.4, mục I.419a/I.419b trong văn bản gốc). Các thông số 'a', 'b', 'h', 'x', 'y' quy định kích thước hình học và khoảng cách lắp đặt của biển báo này để đảm bảo tính thống nhất và dễ nhận biết trên đường bộ.\"\n    }\n  ]\n}",
+  "generated_tokens": 320,
+  "elapsed_seconds": 6.14488519999577,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

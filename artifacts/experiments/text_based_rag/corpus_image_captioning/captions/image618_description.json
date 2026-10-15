@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:eff9b68e80f6d4d6702f7c5b73d096bcbf7f11cbb062a6ea745436fbee6a6dc3",
+  "filename": "image618.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa bố trí vạch dừng xe (vạch liền) và vạch chỉ dẫn sắp đến chỗ có bố trí vạch đi bộ qua đường (hình thoi) trên đường, kèm theo các khoảng cách bố trí cụ thể.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch dừng xe (Vạch 7.1)\",\n      \"visual_or_geometric_features\": \"Vạch kẻ ngang màu trắng, liền nét, chạy song song với tim đường. Hình ảnh minh họa vị trí đặt vạch này cách mép vạch người đi bộ qua đường một khoảng từ 1,5m đến 3,0m.\",\n      \"meaning_or_specification\": \"Dùng để xác định vị trí dừng xe để chờ tín hiệu cho phép đi tiếp hoặc nhường đường cho người đi bộ. Vạch này kẻ ngang toàn bộ bề rộng đường của hướng xe chạy.\"\n    },\n    {\n      \"identifier\": \"Vạch chỉ dẫn sắp đến chỗ có bố trí vạch đi bộ qua đường (Vạch 7.6)\",\n      \"visual_or_geometric_features\": \"Vạch kẻ dạng hình thoi màu trắng, được bố trí trên làn đường để báo hiệu phía trước có vạch đi bộ qua đường.\",\n      \"meaning_or_specification\": \"Sử dụng để báo hiệu sắp đến chỗ có bố trí vạch đi bộ qua đường, đặc biệt ở giữa đoạn đường nối hai nút giao, nhằm cảnh báo người lái xe phải nhường đường cho người đi bộ.\"\n    },\n    {\n      \"identifier\": \"Khoảng cách bố trí\",\n      \"visual_or_geometric_features\": \"Hình ảnh ghi chú các khoảng cách: 1,5m và 3,0m (giữa hai mũi tên chỉ vị trí vạch dừng xe và vạch người đi bộ), và 50m (khoảng cách giữa các cụm vạch chỉ dẫn hình thoi).\",\n      \"meaning_or_specification\": \"Khoảng cách từ mép vạch dừng xe đến mép vạch người đi bộ qua đường nên từ 1,5m đến 3,0m. Các vạch chỉ dẫn hình thoi được bố trí cách nhau 50m dọc theo chiều dài đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 484,
+  "elapsed_seconds": 8.459456299999147,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

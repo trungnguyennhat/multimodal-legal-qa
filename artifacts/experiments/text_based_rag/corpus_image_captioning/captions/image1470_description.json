@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:042dd1e5a357d5421b2e3f0fea24a8d68a51812b2be9ed1d4073f1291cfcaf5e",
+  "filename": "image1470.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng 'Cảnh sát giao thông' thuộc nhóm biển báo dịch vụ công cộng theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng Cảnh sát giao thông\",\n      \"visual_or_geometric_features\": \"Hình khối biểu tượng dạng người mặc đồng phục, tay giơ cao (hình chữ T), nằm trong khung hình chữ nhật có bo góc; các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường nét và mũi tên chỉ rõ chiều dài, chiều rộng, độ dày viền, khoảng cách giữa các phần của biểu tượng.\",\n      \"meaning_or_specification\": \"Theo Điều P.9 mục 9 của QCVN 41:2024/BGTVT, biểu tượng này dùng để báo hiệu 'Cảnh sát giao thông'. Kích thước cho hai loại biển (Loại A và Loại B) được quy định cụ thể: Loại A có A=75,0 cm; B=120,0 cm; C=5,0 cm; D=7,7 cm; E=5,0 cm; Loại B có A=60,0 cm; B=96,0 cm; C=2,5 cm; D=6,5 cm; E=5,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 332,
+  "elapsed_seconds": 5.51774309999746,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

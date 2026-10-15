@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:63036dbb9ab111eb9ce2eea91cf689c658dfa0ed9f88aea4c1430ef187243912",
+  "filename": "image640.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa vạch đứng (vạch 8.1) trên mốc cố định hoặc đảo an toàn, với các nét chéo đỏ-trắng xen kẽ, nghiêng 45°, dùng để cảnh báo chướng ngại vật cao hơn mặt đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch đứng 8.1 trên mốc cố định\",\n      \"visual_or_geometric_features\": \"Các nét chéo màu đỏ và trắng xen kẽ, nghiêng góc 45° so với mặt phẳng ngang, bề rộng mỗi nét là 15 cm, chiều dài đoạn vạch đỏ (L1) khoảng 1–2 m, đoạn vạch trắng (L2) khoảng 2–4 m, tỷ lệ L1:L2 = 1:2.\",\n      \"meaning_or_specification\": \"Sử dụng để cảnh báo người điều khiển phương tiện chú ý có chướng ngại vật cao hơn mặt đường phía trước (như trụ cầu, tường cầu vượt, đảo an toàn...). Màu đỏ-trắng dùng cho khu vực đô thị; màu vàng-đen dùng cho vùng ngoài đô thị. Khi cần thiết, vạch có thể được bẻ gập dạng chữ V.\"\n    }\n  ]\n}",
+  "generated_tokens": 276,
+  "elapsed_seconds": 4.8755201999956626,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9599a2f64e0d6944114f281984ae5c067088b9f37c75b0b2133781f14b178d94",
+  "filename": "image1148.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo chỉ dẫn đường một chiều (mũi tên chỉ hướng đi) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn đường một chiều (mũi tên chỉ hướng đi)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với nền xanh dương, viền trắng, bên trong có mũi tên trắng chỉ hướng đi trái. Các kích thước được ký hiệu bằng z và các phân đoạn của z (ví dụ: 0,1z, 0,2z, 1,5z, 6z, 16,5z, 20z, 3,5z, 1,2z, 0,3z).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo I.415 (Mũi tên chỉ hướng đi) theo loại đường: Đường đôi ngoài đô thị (z=100mm), Đường thông thường (z=75mm), Đường đô thị (z=50mm). Các giá trị như 20z, 16,5z, 3,5z... là các khoảng cách hoặc chiều dài được tính theo tỷ lệ với z để đảm bảo tỷ lệ hình học chuẩn cho từng loại đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 329,
+  "elapsed_seconds": 6.240101999996114,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

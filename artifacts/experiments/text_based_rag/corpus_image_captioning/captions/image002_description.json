@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6f05a9ed9cd6bb3eb81fac08dc68d5bca20c0d6245ea2ceb31041da15b5711db",
+  "filename": "image002.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình 1 trong QCVN 41:2024/BGTVT minh họa các hình dạng và ký hiệu kích thước cơ bản của biển báo giao thông cho đường đô thị (hệ số 1), bao gồm biển tròn, bát giác, tam giác và biển chữ nhật.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển tròn\",\n      \"visual_or_geometric_features\": \"Hình tròn với đường kính ngoài D, viền đỏ rộng B, vạch đỏ trong A, bán kính cung tròn R, và khoảng cách từ tâm đến mép trong C.\",\n      \"meaning_or_specification\": \"Theo Bảng 1: D=700mm, B=100mm, A=50mm, R=35mm, C=20-30mm. Dùng cho biển báo cấm, hiệu lệnh, nguy hiểm, cảnh báo trên đường đô thị.\"\n    },\n    {\n      \"identifier\": \"Biển bát giác\",\n      \"visual_or_geometric_features\": \"Hình bát giác với đường kính ngoài D, viền trắng xung quanh rộng B.\",\n      \"meaning_or_specification\": \"Theo Bảng 1: D=600mm, B=30mm. Dùng cho biển báo cấm (ví dụ: dừng lại) trên đường đô thị.\"\n    },\n    {\n      \"identifier\": \"Biển tam giác\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều với chiều dài cạnh L, viền đỏ rộng B, bán kính lượn tròn R, khoảng cách đỉnh cung đến đỉnh tam giác C.\",\n      \"meaning_or_specification\": \"Theo Bảng 1: L=700mm, B=50mm, R=35mm, C=30mm. Dùng cho biển báo nguy hiểm trên đường đô thị.\"\n    },\n    {\n      \"identifier\": \"Biển chữ nhật/vuông\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các góc bo tròn, khoảng cách từ đỉnh cung tròn đến đỉnh hình cơ bản là C.\",\n      \"meaning_or_specification\": \"Theo Bảng 1: C=20-30mm. Dùng cho biển chỉ dẫn trên đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 505,
+  "elapsed_seconds": 8.515707999998995,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

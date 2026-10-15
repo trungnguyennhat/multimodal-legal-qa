@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7ca9f392efd009894718b0305d1af7685954e837fd119431031591f99ebb39b9",
+  "filename": "image146.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm xe ô tô tải vượt, thuộc nhóm biển báo cấm theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.126\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, biểu tượng gồm hình xe ô tô tải màu đen và hình xe cơ giới khác (xe con) màu đen nằm bên phải, tất cả nằm trong vòng tròn đỏ.\",\n      \"meaning_or_specification\": \"Biển báo cấm các loại ô tô tải có khối lượng chuyên chở lớn hơn 3.500 kg (kể cả xe được ưu tiên) vượt xe cơ giới khác; được phép vượt xe máy 2 bánh, xe gắn máy; không cấm các loại xe cơ giới khác vượt nhau hoặc vượt ô tô tải; hết hiệu lực khi có biển DP.133 hoặc DP.135.\"\n    }\n  ]\n}",
+  "generated_tokens": 234,
+  "elapsed_seconds": 3.896658600002411,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:49cdb8604ab09e0466d70f9892de4d4de3b716afa7d11b31b290291ec613f369",
+  "filename": "image1574.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn giảm tốc độ (IE.473) với nền vàng huỳnh quang, chữ đen ghi 'GIẢM TỐC ĐỘ / SLOW DOWN', kèm các ký hiệu kích thước kỹ thuật theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số IE.473\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền vàng huỳnh quang, chữ đen in hoa 'GIẢM TỐC ĐỘ' và 'SLOW DOWN', kèm các ký hiệu kích thước: k1, k1', H1, H1', W, L\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn giảm tốc độ, dùng để báo hiệu người tham gia giao thông cần giảm tốc độ; các thông số k1=H1=40 cm, k1'=H1'=30 cm, L là chiều rộng biển, W là chiều cao biển theo quy định kỹ thuật.\"\n    }\n  ]\n}",
+  "generated_tokens": 252,
+  "elapsed_seconds": 4.1205068999988725,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

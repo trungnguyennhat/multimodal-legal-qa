@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8cbf2321aeec50dfb97b8df61b92e13981b3279ba12fc486f0387381d9f1256e",
+  "filename": "image1310.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo chỉ dẫn tên đường và số hiệu đường (thuộc nhóm biển chỉ dẫn), với các thông số chiều dài, chiều rộng và độ dày của khung viền.\",\n  \"items\": [\n    {\n      \"identifier\": \"Khung viền biển báo\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền răng cưa, được chia thành lưới ô vuông nhỏ để biểu diễn tỷ lệ. Các ký hiệu kích thước được ghi rõ: chiều dài 1820mm, chiều rộng 1480mm, và độ dày của khung viền 50mm.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo chỉ dẫn tên đường và số hiệu đường (ví dụ: biển Quốc lộ 1 - Hà Nội - Quốc lộ 8) theo QCVN 41:2024/BGTVT. Kích thước này áp dụng cho loại đường 'Đường đôi ngoài đô thị' (theo cột z(mm) = 100 trong điều luật, tuy nhiên hình vẽ có thể là bản vẽ tỷ lệ hoặc quy định cho loại đường khác, cần kiểm tra lại điều luật cụ thể).\"\n    }\n  ]\n}",
+  "generated_tokens": 289,
+  "elapsed_seconds": 5.670930899999803,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

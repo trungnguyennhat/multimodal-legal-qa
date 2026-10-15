@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:95b08f8381074ab5d51b61eee72394a280d8046bfa0985afdfe77489d0edbdae",
+  "filename": "image1104.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo hiệu lệnh nhóm R.301 (hướng đi) và R.403 (đường dành cho xe), kèm theo các thông số z(mm) theo loại đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo hiệu lệnh nhóm R.301 (hướng đi)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, biểu tượng trắng gồm ô tô, xe máy, xe đạp, xe buýt; chia thành 3 làn với các mũi tên chỉ hướng đi thẳng, rẽ phải, rẽ trái; có các ký hiệu kích thước z (0,1z, 0,2z, 0,1z, 10z, 20z, 18z, 36z) và lưới ô vuông để xác định tỷ lệ.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo hiệu lệnh nhóm R.301 (các xe chỉ được đi thẳng, rẽ phải, rẽ trái, đi thẳng và rẽ phải, đi thẳng và rẽ trái, rẽ trái và rẽ phải) theo Điều M.3 của QCVN 41:2024/BGTVT, với giá trị z(mm) tùy loại đường (đường cao tốc: 140mm, đường đôi ngoài đô thị: 126mm, đường thông thường: 87,5mm, đường đô thị: 70mm).\"\n    },\n    {\n      \"identifier\": \"Biển báo đường dành cho xe (nhóm R.403)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, biểu tượng trắng gồm ô tô, xe máy, xe đạp, xe buýt; chia thành các làn riêng biệt cho từng loại xe; có các ký hiệu kích thước z (0,3z, 0,1z, 6z, 17,1z, 0,3z, 0,1z, 9z, 12,5, 4,5, 5,7, 2,3, 1,5, 6z, 2,9, 4,7, 1,5) và lưới ô vuông để xác định tỷ lệ.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo đường dành cho xe (nhóm R.403) theo Điều M.3 của QCVN 41:2024/BGTVT, với giá trị z(mm) tùy loại đường (đường cao tốc: 100mm, đường đôi ngoài đô thị: 90mm, đường thông thường: 62,5mm, đường đô thị: 50mm).\"\n    }\n  ]\n}",
+  "generated_tokens": 637,
+  "elapsed_seconds": 10.767030599999998,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

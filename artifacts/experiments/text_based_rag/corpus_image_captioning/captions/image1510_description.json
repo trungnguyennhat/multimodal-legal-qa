@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:96d1a650938b23ef64110778eb1aca4b576a7ff4301fa16644e96648e02c13a8",
+  "filename": "image1510.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo 'Khu công nghiệp' theo QCVN 41:2024/BGTVT, với các ký hiệu A, B, C, D, E chỉ các chiều kích thước.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo Khu công nghiệp\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có viền bo tròn, bên trong có biểu tượng nhà máy (hình khối chữ nhật với ống khói) và số '1' lớn. Các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và mũi tên chỉ rõ các chiều.\",\n      \"meaning_or_specification\": \"Theo Điều 5 của QCVN 41:2024/BGTVT, biển báo này dùng để chỉ khu công nghiệp. Kích thước được quy định cho hai loại: Loại A (A=75,0 cm; B=2,0 cm; C=6,2 cm; D=62,6 cm; E=5,0 cm) và Loại B (A=60,0 cm; B=1,5 cm; C=5,0 cm; D=50,0 cm; E=5,0 cm).\"\n    }\n  ]\n}",
+  "generated_tokens": 308,
+  "elapsed_seconds": 5.152111800001876,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

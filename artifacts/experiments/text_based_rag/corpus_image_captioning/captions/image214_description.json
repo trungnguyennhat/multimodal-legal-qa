@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:df4f7699a30c655416fb9e9a8cc6a631eb171621357011e8f0551449191c1159",
+  "filename": "image214.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.211 'Giao nhau với đường sắt không có rào chắn' theo quy định QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.211\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình đoàn tàu hỏa đang chạy trên đường ray\",\n      \"meaning_or_specification\": \"Biển báo trước chỗ giao nhau giữa đường bộ và đường sắt không có rào chắn, không có người điều khiển giao thông, nhằm cảnh báo người tham gia giao thông.\"\n    }\n  ]\n}",
+  "generated_tokens": 172,
+  "elapsed_seconds": 2.9809378999998444,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

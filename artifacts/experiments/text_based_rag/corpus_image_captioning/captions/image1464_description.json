@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:75596a79b49d74139b8ce51bd398903b718d163388c3abc16ce4e1122d7d5a70",
+  "filename": "image1464.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn nơi đỗ xe trong trạm dừng nghỉ theo QCVN 41:2024/BGTVT, gồm hai biển IE.457a và IE.457b với kích thước và thông số kỹ thuật chi tiết.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.457a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh lá cây, chữ 'P' màu trắng kích thước lớn ở phần trên, chiều cao biển 217 cm, chiều rộng 159 cm, phần chữ 'P' cao 75 cm.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn nơi đỗ xe trong trạm dừng nghỉ, dùng để báo hiệu vị trí đỗ xe cho người tham gia giao thông.\"\n    },\n    {\n      \"identifier\": \"IE.457b\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh lá cây, chữ '750m' màu trắng ở phần dưới, chiều cao biển 100 cm, chiều rộng 159 cm, chiều cao chữ '750m' là H₁=40 cm, chiều cao số '0' là h₂=25 cm.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn khoảng cách đến nơi đỗ xe trong trạm dừng nghỉ, thông tin bổ sung cho biển IE.457a.\"\n    }\n  ]\n}",
+  "generated_tokens": 352,
+  "elapsed_seconds": 5.557610600000771,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

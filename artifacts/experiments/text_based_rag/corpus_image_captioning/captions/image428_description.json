@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:fcb743d01f1990ca28920b09ee4521b0eab8232a8fb8cec2e728e4f933619c73",
+  "filename": "image428.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số I.440 'Đoạn đường thi công' theo quy định tại Điều E.43 của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.440\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh dương, chữ và khung viền màu trắng, nội dung ghi 'ĐOẠN ĐƯỜNG THI CÔNG' ở dòng trên và 'Từ km ... đến km ... QL' ở dòng dưới.\",\n      \"meaning_or_specification\": \"Chỉ dẫn đoạn đường đang thi công, sửa chữa hoặc nâng cấp cải tạo; được đặt ở hai đầu đoạn đường và sau biển I.441; lý trình ghi trên biển được làm tròn đến mét.\"\n    }\n  ]\n}",
+  "generated_tokens": 207,
+  "elapsed_seconds": 3.441878199999337,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a92125559df326c927e409f23b85d1df4ac6aa5989f615218bb1cedabf23288b",
+  "filename": "image712.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm xe ôtô (P.103a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.103a: Cấm xe ôtô\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô màu đen ở giữa; kèm các ký hiệu kích thước: đường kính biển D, chiều cao chữ số M, chiều rộng xe ôtô W, chiều cao xe ôtô H, khoảng cách từ mép biển đến trục xe L, và khoảng cách từ mép biển đến mặt đường d.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo cấm xe ôtô (P.103a) và các thông số lắp đặt: D là đường kính biển, M là chiều cao chữ số trên biển, W là chiều rộng xe ôtô, H là chiều cao xe ôtô, L là khoảng cách từ mép biển đến trục xe, d là khoảng cách từ mép biển đến mặt đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 281,
+  "elapsed_seconds": 5.283610700003919,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

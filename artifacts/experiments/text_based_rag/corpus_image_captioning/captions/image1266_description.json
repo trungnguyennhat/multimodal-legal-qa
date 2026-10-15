@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:59b6d4ccd673ba9b1b8fc58a7ae630429b5980525f9818a3a0262bb9a825ecb3",
+  "filename": "image1266.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn I.434a (Bến xe buýt) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.434a: Bến xe buýt\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình chữ nhật với phần mũi tên chỉ hướng ở bên trái. Các thông số kích thước được ghi chú trên hình bao gồm: chiều dài tổng cộng 480mm, chiều rộng 160mm, chiều cao phần chữ 140mm, chiều cao phần mũi tên 140mm, chiều rộng phần mũi tên 110mm, chiều rộng phần chữ 330mm, và các khoảng cách chi tiết khác như 60mm, 30mm, 10mm, 100mm, 10mm, 10mm.\",\n      \"meaning_or_specification\": \"Đây là bản vẽ kỹ thuật cho biển báo chỉ dẫn loại I.434a (Bến xe buýt). Theo điều luật, biển này dùng để chỉ dẫn vị trí bến xe buýt. Kích thước z (chiều cao) của biển báo này phụ thuộc vào loại đường: 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường và 50mm cho đường đô thị. Hình vẽ minh họa tỷ lệ và bố cục chuẩn để sản xuất biển báo này.\"\n    }\n  ]\n}",
+  "generated_tokens": 363,
+  "elapsed_seconds": 6.758634800004074,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

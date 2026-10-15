@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:416facec414a603ccecb8d9926a10f2fda10c0a4c8b564c8a5d27f3d1f078f4b",
+  "filename": "image564.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường dạng vạch đôi (một vạch liền, một vạch đứt) kết hợp với vạch kênh hóa dòng xe dạng gạch chéo để phân chia hai chiều xe chạy và ngăn cản việc lấn làn trong khu vực đường cong hoặc điểm nguy hiểm.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch phân chia hai chiều xe chạy (Vạch 1.4)\",\n      \"visual_or_geometric_features\": \"Dạng vạch đôi song song gồm một vạch nét liền và một vạch nét đứt xen kẽ. Bên trong khoảng cách giữa hai vạch này là các vạch gạch chéo (dạng kênh hóa dòng xe).\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn tiếp giáp vạch đứt được phép cắt qua khi cần thiết; xe trên làn tiếp giáp vạch liền không được lấn làn hoặc đè lên vạch. Vạch này thường dùng cho đường có từ 2 làn xe trở lên, không có dải phân cách, ở các đoạn cần cấm vượt theo một hướng nhất định để đảm bảo an toàn.\"\n    },\n    {\n      \"identifier\": \"Vạch kênh hóa dòng xe (Vạch 4.1)\",\n      \"visual_or_geometric_features\": \"Các vạch gạch chéo song song nằm trong phạm vi giới hạn bởi vạch phân chia hai chiều xe chạy.\",\n      \"meaning_or_specification\": \"Sử dụng để kênh hóa dòng xe, giới hạn các phần mặt đường không sử dụng cho xe chạy. Khi sử dụng, phương tiện không được lấn vạch hoặc cắt qua trừ trường hợp khẩn cấp. Trong trường hợp này, các vạch gạch chéo được vẽ song song, mỗi vạch rộng 45cm, khoảng cách hai mép vạch 100cm, nghiêng một góc 135 độ theo chiều ngược chiều kim đồng hồ so với hướng chuyển động của xe.\"\n    }\n  ]\n}",
+  "generated_tokens": 422,
+  "elapsed_seconds": 10.00711020000017,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:18e0b6453b07b009586860f294bc52532b720aef814a93bf5822d3904a6ae4c2",
+  "filename": "image024.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai biển chỉ dẫn lối vào đường cao tốc (IE.451a và IE.451b) theo quy chuẩn QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển số IE.451a\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh dương, chữ màu trắng. Gồm hai phần: phần trên ghi tên địa điểm (TP. HCM, TRUNG LƯƠNG EXPRESSWAY) và ký hiệu đường cao tốc; phần dưới ghi 'LỐI VÀO ENTRANCE' và khoảng cách '500 m'.\", \"meaning_or_specification\": \"Chỉ dẫn khoảng cách đến lối vào đường cao tốc, được đặt trên đường dẫn vào đường cao tốc.\"}, {\"identifier\": \"Biển số IE.451b\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh dương, chữ màu trắng. Gồm hai phần: phần trên ghi tên địa điểm (TP. HCM, TRUNG LƯƠNG EXPRESSWAY) và ký hiệu đường cao tốc; phần dưới ghi 'LỐI VÀO ENTRANCE'.\", \"meaning_or_specification\": \"Chỉ dẫn lối vào đường cao tốc, được đặt ở vị trí cuối đường dẫn vào đường cao tốc.\"}]}",
+  "generated_tokens": 299,
+  "elapsed_seconds": 6.564688799997384,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

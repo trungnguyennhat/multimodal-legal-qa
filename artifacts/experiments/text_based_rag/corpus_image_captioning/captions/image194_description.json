@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:57a28eca74a6cc11b0ace1dc66c42899de81648a380e171528b9c798c2aab08a",
+  "filename": "image194.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biến thể của biển số W.203 (a, b, c) theo QCVN 41:2024/BGTVT, dùng để báo trước đoạn đường bị thu hẹp với các tình huống khác nhau về phía thu hẹp.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.203a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai vạch đen song song ở giữa (biểu thị đường bị thu hẹp cả hai bên)\",\n      \"meaning_or_specification\": \"Đặt khi đường bị thu hẹp cả hai bên, cảnh báo người tham gia giao thông về đoạn đường có khả năng thông qua giảm đột ngột và nguy hiểm cho xe đi ngược chiều.\"\n    },\n    {\n      \"identifier\": \"Biển số W.203b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai vạch đen song song với một vạch nghiêng về phía trái (biểu thị đường bị thu hẹp về phía trái)\",\n      \"meaning_or_specification\": \"Đặt khi đường bị thu hẹp về phía trái, cảnh báo người tham gia giao thông về đoạn đường có khả năng thông qua giảm đột ngột và nguy hiểm cho xe đi ngược chiều.\"\n    },\n    {\n      \"identifier\": \"Biển số W.203c\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai vạch đen song song với một vạch nghiêng về phía phải (biểu thị đường bị thu hẹp về phía phải)\",\n      \"meaning_or_specification\": \"Đặt khi đường bị thu hẹp về phía phải, cảnh báo người tham gia giao thông về đoạn đường có khả năng thông qua giảm đột ngột và nguy hiểm cho xe đi ngược chiều.\"\n    }\n  ]\n}",
+  "generated_tokens": 434,
+  "elapsed_seconds": 6.869188699994993,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

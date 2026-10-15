@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:206d32b1e2c6679d8ae9eb5d499faabb3f5ec9ef5573d8ca08af455d7e898702",
+  "filename": "image390.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển báo giao thông số I.424c và I.424d dùng để chỉ dẫn người đi bộ qua hầm chui, với biểu tượng người đi bộ trên bậc thang trong nền xanh dương.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.424c\",\n      \"visual_or_geometric_features\": \"Hình vuông, nền xanh dương, biểu tượng người đi bộ đang bước lên bậc thang (hướng sang phải)\",\n      \"meaning_or_specification\": \"Chỉ dẫn cho người đi bộ sử dụng hầm chui qua đường theo hướng di chuyển sang phải\"\n    },\n    {\n      \"identifier\": \"Biển số I.424d\",\n      \"visual_or_geometric_features\": \"Hình vuông, nền xanh dương, biểu tượng người đi bộ đang bước lên bậc thang (hướng sang trái)\",\n      \"meaning_or_specification\": \"Chỉ dẫn cho người đi bộ sử dụng hầm chui qua đường theo hướng di chuyển sang trái\"\n    }\n  ]\n}",
+  "generated_tokens": 250,
+  "elapsed_seconds": 4.076368199996068,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

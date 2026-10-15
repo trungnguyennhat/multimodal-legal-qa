@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:62e50b9693065dbd86937a15484c07c86fd19313c05937c6ceacb74aa795e2ee",
+  "filename": "image1416.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của mã hiệu đường bộ (cỡ chữ 40 cm) theo QCVN 41:2024/BGTVT, với các thông số chiều dài, chiều rộng, bán kính góc và khoảng cách căn giữa.\",\n  \"items\": [\n    {\n      \"identifier\": \"Mã hiệu đường bộ (cỡ chữ 40 cm)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có 4 góc bo tròn (bán kính R3), nội dung ký hiệu 'ĐH.23' (mô phỏng mã hiệu đường huyện), kèm các kích thước: chiều dài 150, chiều rộng 40, bán kính góc R3, và khoảng cách căn giữa 'a' ở hai bên dưới.\",\n      \"meaning_or_specification\": \"Theo Điều O của QCVN 41:2024/BGTVT, đây là kích thước chuẩn cho mã hiệu đường bộ cỡ chữ 40 cm; nền trắng, chữ/số/khung đen, vật liệu màng phản quang loại VIII, IX, XI cấu trúc kim cương, kiểu chữ gt2.\"\n    }\n  ]\n}",
+  "generated_tokens": 278,
+  "elapsed_seconds": 4.591775300003064,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

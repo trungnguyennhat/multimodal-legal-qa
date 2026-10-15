@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:51b783bf8672cb4686159bd2595b78d75d23aa63fb784f349749cbc92a703a24",
+  "filename": "image248.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biển báo nguy hiểm thuộc nhóm W.228 theo QCVN 41:2024/BGTVT, dùng để cảnh báo các hiện tượng địa chất nguy hiểm trên đường bộ.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.228a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: khối đá đang trượt từ sườn núi xuống đường.\",\n      \"meaning_or_specification\": \"Báo trước đoạn đường có hiện tượng đất đá từ trên ta luy dương sụt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường, đặc biệt ở đoạn đường miền núi.\"\n    },\n    {\n      \"identifier\": \"Biển số W.228b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: khối đá đang trượt từ sườn núi xuống đường (giống W.228a nhưng có thể khác chi tiết nhỏ tùy phiên bản).\",\n      \"meaning_or_specification\": \"Cùng mục đích với W.228a, dùng để báo trước đoạn đường có hiện tượng đá lở; người tham gia giao thông phải chú ý, hạn chế dừng đỗ xe trong khu vực đá lở sau mưa lớn.\"\n    },\n    {\n      \"identifier\": \"Biển số W.228c\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: các viên sỏi đá bắn lên từ mặt đường khi xe đi qua.\",\n      \"meaning_or_specification\": \"Báo trước nơi có kết cấu mặt đường rời rạc, khi phương tiện đi qua làm các viên đá, sỏi bắn lên gây nguy hiểm và mất an toàn cho người và phương tiện tham gia giao thông.\"\n    }\n  ]\n}",
+  "generated_tokens": 432,
+  "elapsed_seconds": 6.827215599994815,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

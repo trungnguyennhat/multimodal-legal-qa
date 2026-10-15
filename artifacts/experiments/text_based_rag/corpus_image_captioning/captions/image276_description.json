@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1ed1f1b001b592d02915418af59e505493948e1615491f032f8461802d610f86",
+  "filename": "image276.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo W.240 'Đường hầm' theo QCVN 41:2024/BGTVT, dùng để cảnh báo lái xe chuẩn bị vào hầm đường bộ.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.240\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình cổng hầm đường bộ ở giữa\",\n      \"meaning_or_specification\": \"Biển báo hiệu cảnh báo trước khi vào hầm đường bộ, yêu cầu người lái xe chú ý và chuẩn bị\"\n    }\n  ]\n}",
+  "generated_tokens": 161,
+  "elapsed_seconds": 2.76501239999925,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

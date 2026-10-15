@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9fcba0ac443a09777e14493fa9c8dc1f16b17f5d997fd41733569684e07930c0",
+  "filename": "image1156.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo giao thông thuộc nhóm chỉ dẫn, cụ thể là biển số I.401 (Bắt đầu đường ưu tiên) và I.402 (Hết đoạn đường ưu tiên), với các thông số chiều rộng, chiều cao, khoảng cách từ mép biển đến khung và độ dày chữ.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.401 và I.402\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong là biểu tượng mũi tên chỉ hướng (mũi tên cong hướng xuống dưới cho I.401, mũi tên thẳng hướng lên trên cho I.402). Bản vẽ ghi rõ các kích thước: chiều rộng tổng 1000mm, chiều cao 720mm, khoảng cách từ mép biển đến khung 40mm, độ dày chữ 44,2mm, khoảng cách giữa hai phần mũi tên 44,2mm, và khoảng cách từ mép biển đến chân mũi tên 40mm.\",\n      \"meaning_or_specification\": \"Biển I.401 báo hiệu bắt đầu đoạn đường ưu tiên; biển I.402 báo hiệu hết đoạn đường ưu tiên. Kích thước được quy định theo loại đường: đường đôi ngoài đô thị (z=100mm), đường thông thường (z=75mm), đường đô thị (z=50mm). Bản vẽ này minh họa kích thước cho loại đường đôi ngoài đô thị (z=100mm).\"\n    }\n  ]\n}",
+  "generated_tokens": 381,
+  "elapsed_seconds": 7.101900800000294,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

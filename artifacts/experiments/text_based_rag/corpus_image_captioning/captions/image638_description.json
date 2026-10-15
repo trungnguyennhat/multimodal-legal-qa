@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4c4251604677871e0f128c0c71c30001440d02c5b01610724fc2d2e57cee5dab",
+  "filename": "image638.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật minh họa quy cách kích thước của vạch đứng trên mốc cố định (vạch 8.1) theo QCVN 41:2024/BGTVT, với thông số chiều rộng vạch a = 10 cm.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch đứng trên mốc cố định (vạch 8.1)\",\n      \"visual_or_geometric_features\": \"Hình khối chữ nhật dài, có phần nổi bật màu đỏ ở giữa, với kích thước chiều rộng vạch được ghi chú là a = 0.10 m (tương đương 10 cm).\",\n      \"meaning_or_specification\": \"Theo Điều G.3.a của QCVN 41:2024/BGTVT, đây là vạch 8.1 dùng để cảnh báo chướng ngại vật cao hơn mặt đường. Khi chiều cao H < 2m và bề rộng b ≤ 30cm thì chiều rộng vạch a = 10cm. Vạch được cấu tạo từ các nét chéo vàng-đen hoặc đỏ-trắng xen kẽ, nghiêng 45° về phía xe chạy.\"\n    }\n  ]\n}",
+  "generated_tokens": 277,
+  "elapsed_seconds": 4.883862300004694,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

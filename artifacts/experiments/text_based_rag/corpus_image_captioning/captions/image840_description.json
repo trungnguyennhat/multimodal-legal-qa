@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e81bf27dde40df6de7815ff705bfc5d19ea7ed7ecd191ef26c0eece2c6e277b5",
+  "filename": "image840.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo nguy hiểm W.201a (chỗ ngoặt nguy hiểm vòng bên trái) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201a\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân có đỉnh hướng lên trên, viền đỏ, nền vàng, biểu tượng đen là đường cong ngoặt sang trái. Bản vẽ kèm các kích thước: chiều cao tam giác 1,34z; chiều rộng đáy 1,2z; độ dày viền đỏ 0,071z; góc nghiêng của đường cong ngoặt 45°; chiều dài phần đường cong ngoặt 0,7z; chiều rộng phần đường cong ngoặt 0,2z; chiều cao phần đường cong ngoặt 0,2z.\",\n      \"meaning_or_specification\": \"Biển báo nguy hiểm W.201a dùng để cảnh báo tài xế về chỗ ngoặt nguy hiểm vòng bên trái. Kích thước biển được quy định theo bảng trong điều luật, với giá trị z (mm) phụ thuộc vào loại đường: 140 (đường cao tốc), 126 (đường đôi ngoài đô thị), 87,5 (đường thông thường), 70 (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 344,
+  "elapsed_seconds": 6.379007999996247,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

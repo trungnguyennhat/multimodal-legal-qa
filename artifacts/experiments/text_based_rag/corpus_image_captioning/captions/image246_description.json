@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:42a9bce7c6e07de1346c1a089a45a9989b15513b7ae36939a2487c58f4083e0f",
+  "filename": "image246.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số W.227 'Công trường' theo QCVN 41:2024/BGTVT, dùng để cảnh báo đoạn đường đang thi công có người và máy móc làm việc.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.227\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: người đang đào đất bằng cuốc và xe đẩy đất\",\n      \"meaning_or_specification\": \"Báo trước gần tới đoạn đường đang tiến hành thi công sửa chữa, cải tạo, nâng cấp có người và máy móc đang làm việc trên mặt đường; khi gặp biển này tốc độ xe phải giảm cho thích hợp, không gây nguy hiểm cho người và máy móc trên đoạn đường đó.\"\n    }\n  ]\n}",
+  "generated_tokens": 207,
+  "elapsed_seconds": 3.4476582999996026,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

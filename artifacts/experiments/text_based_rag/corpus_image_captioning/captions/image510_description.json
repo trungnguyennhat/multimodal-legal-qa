@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1ac69eeff07d5b5bdaa38227f737bbd4f55544088c52f636a6e4a34721f82e10",
+  "filename": "image510.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch phân chia hai chiều xe chạy (vạch tim đường) dạng vạch đôi gồm một vạch nét liền và một vạch nét đứt (Vạch 1.4) tại các đoạn đường cong nằm hoặc đứng không đảm bảo tầm nhìn vượt xe an toàn.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.4 (Vạch phân chia hai chiều xe chạy)\",\n      \"visual_or_geometric_features\": \"Hình vẽ thể hiện một đoạn đường cong nằm và đường cong đứng. Trên mặt đường có bố trí vạch tim đường dạng vạch đôi song song: một vạch nét liền và một vạch nét đứt. Vạch nét liền được vẽ về phía có yêu cầu cấm vượt. Hình ảnh minh họa các vùng cấm vượt (vùng có tầm nhìn thực tế nhỏ hơn tầm nhìn vượt xe an toàn) và vùng cho phép vượt xen kẽ. Các ký hiệu kích thước bao gồm: chiều dài đoạn vạch liền (L1), chiều dài đoạn vạch đứt (L2), khoảng cách giữa hai vạch (d), và chiều dài vùng cấm vượt (L).\",\n      \"meaning_or_specification\": \"Vạch 1.4 dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn tiếp giáp vạch đứt được phép cắt qua để vượt; xe trên làn tiếp giáp vạch liền không được lấn làn hoặc đè lên vạch. Vạch này được sử dụng tại các đoạn đường cong nằm hoặc đứng không đảm bảo tầm nhìn vượt xe an toàn, nơi cần cấm vượt theo một phía. Quy cách: Vạch đôi song song, một vạch liền, một vạch đứt, màu vàng. Bề rộng nét vẽ b = 15 cm. Khoảng cách phía trong hai mép vạch đơn là 15 cm - 20 cm. Đối với vạch đứt: chiều dài đoạn nét liền L1 = (1 m - 3 m), chiều dài đoạn nét đứt L2 = (2 m - 6 m), tỷ lệ L1/L2 = 1:2. Tốc độ vận hành càng cao, chiều dài đoạn nét liền và đoạn nét đứt càng lớn. Trong phạm vi đường cong bán kính nhỏ, chọn giá trị L1 và L2 nhỏ hơn để tăng tính dẫn hướng.\"\n    }\n  ]\n}",
+  "generated_tokens": 493,
+  "elapsed_seconds": 11.126546999999846,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

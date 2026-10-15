@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ad17766452f8a5a86e7ef11473646cf0c7905aec8223f5c4d222c717bade787f",
+  "filename": "image1504.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển chỉ dẫn khu du lịch công cộng và giải trí (màu nâu, chữ trắng, có biểu tượng người tập thể dục và mũi tên chỉ hướng).\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn CLB GÔN LONG BÌNH\",\n      \"visual_or_geometric_features\": \"Hình dạng: Biển hình mũi tên chỉ hướng, nền màu nâu, chữ và biểu tượng màu trắng. Các ký hiệu kích thước: L (chiều rộng), W (chiều cao), a (khoảng cách căn giữa), k1, k2 (khoảng cách từ mép biển đến viền chữ/biểu tượng), góc 120° và 25° ở phần mũi tên, đoạn thẳng 85 mm.\",\n      \"meaning_or_specification\": \"Theo Điều P.12 của QCVN 41:2024/BGTVT, đây là biển số IE.461c (hoặc IE.461d tùy phiên bản), dùng để chỉ dẫn khu du lịch công cộng và giải trí. Các thông số k1, k2, L, W được quy định cụ thể trong điều luật để đảm bảo tính đồng bộ và khả năng nhận diện từ xa.\"\n    }\n  ]\n}",
+  "generated_tokens": 308,
+  "elapsed_seconds": 5.063725499996508,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

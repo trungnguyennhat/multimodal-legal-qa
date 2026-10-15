@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6c5226541054c391738334e3d501de7e42f054ba60361d0314912280b3788ecc",
+  "filename": "image610.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật minh họa quy cách bố trí và kích thước của vạch dừng xe (Vạch 7.1) tại nút giao thông có đèn tín hiệu, theo quy định của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch dừng xe (Vạch 7.1)\",\n      \"visual_or_geometric_features\": \"Hình khối chữ nhật lớn (tượng trưng cho bề rộng đường) với các vạch ngang song song màu trắng. Các kích thước được ghi chú: chiều rộng mỗi vạch là 40 cm, khoảng cách giữa hai vạch liên tiếp là 40 cm, và chiều rộng tổng thể của khu vực vạch dừng xe là 400 cm.\",\n      \"meaning_or_specification\": \"Theo Điều G.2.1, Vạch 7.1 là vạch liền nét màu trắng dùng để xác định vị trí dừng xe chờ tín hiệu đèn đỏ hoặc biển số R.122. Bề rộng vạch được chọn từ 20, 30 hoặc 40 cm tùy thuộc vào cấp đường và lưu lượng xe (trong hình là 40 cm). Vạch này kẻ ngang toàn bộ bề rộng đường của hướng xe chạy.\"\n    }\n  ]\n}",
+  "generated_tokens": 295,
+  "elapsed_seconds": 5.663253499995335,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

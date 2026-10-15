@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:46d4af99826d9274f03041833eb9e79831d240960f183b08a9740fc2d7d0c161",
+  "filename": "image1166.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn I.415 (Mũi tên chỉ hướng đi) với các thông tin địa điểm và khoảng cách cụ thể.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.415: Mũi tên chỉ hướng đi\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh dương, viền trắng. Bên trong có 3 mũi tên trắng chỉ hướng: thẳng, rẽ trái, rẽ phải. Các mũi tên này được sử dụng để chỉ dẫn phương hướng đi của các tuyến đường cụ thể.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để chỉ hướng đi cho các tuyến đường hoặc địa điểm cụ thể. Trong hình ảnh, biển báo chỉ hướng đi đến Nam Định (30 km), Chèm (8 km) và Vân Điển (20 km).\"\n    }\n  ]\n}",
+  "generated_tokens": 213,
+  "elapsed_seconds": 4.534870700001193,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

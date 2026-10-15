@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:28af50ee81665f280a4a1019e099aacf1cdbfd5f1b08bd1a5e81bd9df4043ab5",
+  "filename": "image280.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biến thể của biển số W.242 (a,b) dùng để báo hiệu nơi đường sắt giao vuông góc với đường bộ, với hình dạng chữ X và hai cặp X chồng chéo, màu đỏ trên nền trắng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.242a\",\n      \"visual_or_geometric_features\": \"Hình dạng: Chữ X đơn, Màu sắc: Đỏ trên nền trắng, Biểu tượng: Một chữ X lớn\",\n      \"meaning_or_specification\": \"Được đặt khi tại chỗ giao nhau, đường sắt chỉ có một cặp đường ray cắt ngang đường bộ; biển đặt trên đường bộ cách ray gần nhất của đường sắt 10 m.\"\n    },\n    {\n      \"identifier\": \"Biển số W.242b\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hai chữ X chồng chéo tạo thành hình tam giác ngược, Màu sắc: Đỏ trên nền trắng, Biểu tượng: Hai cặp đường ray cắt ngang\",\n      \"meaning_or_specification\": \"Được đặt khi tại chỗ giao nhau, đường sắt có từ hai cặp đường ray trở lên cắt ngang đường bộ; biển đặt trên đường bộ cách ray gần nhất của đường sắt 10 m.\"\n    }\n  ]\n}",
+  "generated_tokens": 302,
+  "elapsed_seconds": 4.856264199996076,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

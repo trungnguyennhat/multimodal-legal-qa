@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a9af1de98e89d516e87134b0fa8f7e0f06291a46d75be63590c80fa6bfb0235d",
+  "filename": "image1176.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn I.417c (Chỉ hướng đường phải đi cho từng loại xe) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.417c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng lưới chấm), chứa dòng chữ 'HÀ NỘI', dòng chữ 'Xe trên 10 t' và 'Xe kéo moóc' cùng mũi tên chỉ hướng đi bên phải. Bản vẽ kèm các kích thước: chiều rộng biển 1600mm, chiều cao biển 800mm, khoảng cách từ mép biển đến các thành phần nội dung (400mm, 400mm, 400mm), kích thước chữ và khoảng cách giữa các dòng chữ.\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn cho biết hướng đi của các loại xe cụ thể (xe trên 10 tấn và xe kéo moóc) tại địa điểm Hà Nội. Kích thước biển được quy định tùy theo loại đường: 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường và 50mm cho đường đô thị (theo Điều M.4, mục Biển số I.417c trong văn bản).\"\n    }\n  ]\n}",
+  "generated_tokens": 347,
+  "elapsed_seconds": 6.532582599997113,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

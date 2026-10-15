@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a61e46670d94d3d553be4c6bee7c31debcba98b94b76001bb96a74e2ab21b1bf",
+  "filename": "image388.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển báo giao thông số I.424a và I.424b dùng để chỉ dẫn cầu vượt cho người đi bộ, với biểu tượng người đi bộ trên bậc thang trong nền xanh dương.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.424a\",\n      \"visual_or_geometric_features\": \"Hình vuông, nền màu xanh dương, viền trắng, biểu tượng người đi bộ đang bước lên bậc thang màu trắng\",\n      \"meaning_or_specification\": \"Chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường theo hướng di chuyển cụ thể (hướng trái hoặc phải tùy theo vị trí lắp đặt)\"\n    },\n    {\n      \"identifier\": \"Biển số I.424b\",\n      \"visual_or_geometric_features\": \"Hình vuông, nền màu xanh dương, viền trắng, biểu tượng người đi bộ đang bước lên bậc thang màu trắng (hướng ngược lại so với I.424a)\",\n      \"meaning_or_specification\": \"Chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường theo hướng di chuyển khác (phù hợp với hướng thực tế của người đi bộ)\"\n    }\n  ]\n}",
+  "generated_tokens": 285,
+  "elapsed_seconds": 4.570677399999113,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:486c7477d742b27e297cee95349d18a33d2053921f36c2e2d4ffec6ed37e9d6c",
+  "filename": "image776.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo P.127 (Tốc độ tối đa cho phép) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.127\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, chữ số '70' màu đen ở giữa. Bản vẽ kèm các kích thước: đường kính biển 700mm, chiều cao khung biển 700mm, khoảng cách từ mép biển đến mép khung 50mm, chiều cao khung 700mm, chiều rộng khung 700mm, khoảng cách từ mép biển đến mép khung bên dưới 50mm, chiều cao khung bên dưới 700mm, chiều rộng khung bên dưới 700mm, khoảng cách từ mép biển đến mép khung bên trên 50mm, chiều cao khung bên trên 700mm, chiều rộng khung bên trên 700mm, khoảng cách từ mép biển đến mép khung bên trái 50mm, chiều cao khung bên trái 700mm, chiều rộng khung bên trái 700mm, khoảng cách từ mép biển đến mép khung bên phải 50mm, chiều cao khung bên phải 700mm, chiều rộng khung bên phải 700mm.\",\n      \"meaning_or_specification\": \"Biển báo P.127 quy định tốc độ tối đa cho phép là 70 km/h. Kích thước biển và khung lắp đặt được quy định trong điều luật QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 415,
+  "elapsed_seconds": 7.258539800001017,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

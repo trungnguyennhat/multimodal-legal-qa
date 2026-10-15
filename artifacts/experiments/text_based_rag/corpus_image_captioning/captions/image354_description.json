@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8265e47a2c2154e077672a2be1b9790dd889f375ba6ebb988c81791063809fe3",
+  "filename": "image354.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biến thể của biển số I.407 (a, b, c) thuộc nhóm biển chỉ dẫn đường một chiều theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.407a\",\n      \"visual_or_geometric_features\": \"Hình vuông, nền xanh dương, viền trắng, biểu tượng mũi tên hướng lên trên màu trắng\",\n      \"meaning_or_specification\": \"Chỉ dẫn đoạn đường chạy một chiều; đặt sau nơi giao nhau, không cần đặt nếu đã có biển R.302 tại đầu dải phân cách.\"\n    },\n    {\n      \"identifier\": \"Biển số I.407b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật ngang, nền xanh dương, viền trắng, biểu tượng mũi tên hướng sang phải màu trắng\",\n      \"meaning_or_specification\": \"Chỉ dẫn đoạn đường chạy một chiều; đặt trước nơi giao nhau trên đường chuẩn bị đi vào đường một chiều.\"\n    },\n    {\n      \"identifier\": \"Biển số I.407c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật ngang, nền xanh dương, viền trắng, biểu tượng mũi tên hướng sang trái màu trắng\",\n      \"meaning_or_specification\": \"Chỉ dẫn đoạn đường chạy một chiều; đặt trước nơi giao nhau trên đường chuẩn bị đi vào đường một chiều (chiều ngược lại so với I.407b).\"\n    }\n  ]\n}",
+  "generated_tokens": 357,
+  "elapsed_seconds": 5.674883500003489,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

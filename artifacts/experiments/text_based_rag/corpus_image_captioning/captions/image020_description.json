@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0915b812cd3d0bf3bb13b2372b06752a2ecb36891a1d78fa5a7a77031feb873a",
+  "filename": "image020.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật minh họa quy định về chiều cao lắp đặt tối thiểu của biển chỉ dẫn trên đường cao tốc so với mặt đường và khoảng cách từ chân giá đỡ đến mép lề đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn\",\n      \"visual_or_geometric_features\": \"Hình khối chữ nhật màu xanh lá cây (màu sắc chỉ mang tính minh họa, không phải là màu sắc thực tế của biển báo theo quy chuẩn), được gắn trên một cấu trúc kim loại (giá long môn hoặc cột cần vươn).\",\n      \"meaning_or_specification\": \"Chiều cao tối thiểu từ đáy biển chỉ dẫn đến điểm cao nhất của mặt đường không nhỏ hơn 5,2 m (theo Điều 46.9.1.b).\"\n    },\n    {\n      \"identifier\": \"Khoảng cách từ chân giá đỡ đến mép lề đường\",\n      \"visual_or_geometric_features\": \"Khoảng cách được đánh dấu bằng mũi tên và số liệu 0,5m, đo từ chân cấu trúc đỡ biển đến mép ngoài của lề đường.\",\n      \"meaning_or_specification\": \"Chân giá long môn hoặc cột cần vươn phải cách mép ngoài lề đường tối thiểu là 0,5 m (theo Điều 46.9.1.b).\"\n    }\n  ]\n}",
+  "generated_tokens": 313,
+  "elapsed_seconds": 6.536825900002441,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

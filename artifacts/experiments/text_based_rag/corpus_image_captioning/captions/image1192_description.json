@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7e3eebb2ae0af33f45860ce6098f8a122f56e6b907c17efc2ae3038edce231b3",
+  "filename": "image1192.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo giao thông dạng tam giác cân, có biểu tượng người đi bộ, dùng để chỉ dẫn vị trí người đi bộ sang ngang.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo dạng tam giác cân\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng vùng màu xanh), viền trắng, bên trong có hình người đi bộ màu đen. Các kích thước được ghi chú: chiều cao tổng cộng 600 mm, chiều rộng đáy 600 mm, chiều cao tam giác 500 mm, chiều rộng phần nền xanh 400 mm, chiều rộng phần viền trắng mỗi bên 100 mm, chiều cao phần viền trắng trên cùng 100 mm, chiều cao phần viền trắng dưới cùng 100 mm.\",\n      \"meaning_or_specification\": \"Theo QCVN 41:2024/BGTVT, đây là biển số I.423a hoặc I.423b (Vị trí người đi bộ sang ngang), thuộc nhóm biển chỉ dẫn, dùng để báo hiệu vị trí người đi bộ sang ngang trên đường. Kích thước z(mm) cho đường đôi ngoài đô thị là 100, đường thông thường là 75, đường đô thị là 50 — tuy nhiên trong bản vẽ này, các kích thước cụ thể (600x600x500) là kích thước tiêu chuẩn cho biển báo dạng này theo quy định kỹ thuật.\"\n    }\n  ]\n}",
+  "generated_tokens": 376,
+  "elapsed_seconds": 6.931437100000039,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

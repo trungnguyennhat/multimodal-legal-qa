@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c3486269686dd65646547db24b2cc12c65da8a2cfbd06ff7afccf7ab44d8263c",
+  "filename": "image1540.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn địa điểm và khoảng cách IE.465a theo QCVN 41:2024/BGTVT, hiển thị mã đường ĐT.830 và khoảng cách đến TP. Tân An.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.465a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh lá cây, chữ trắng; bên trái có khung trắng chứa mã đường 'ĐT.830', bên phải ghi '8 km' và 'TP. TÂN AN 23 km'.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn địa điểm và khoảng cách, thông báo tên địa điểm (TP. Tân An) và số km còn lại (8 km và 23 km), đồng thời ghi mã đường ĐT.830.\"\n    }\n  ]\n}",
+  "generated_tokens": 218,
+  "elapsed_seconds": 3.7052805999992415,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

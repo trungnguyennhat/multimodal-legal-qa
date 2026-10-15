@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:548bc8c49af4482be5246b780cf80827ee0dd5a660eac95c175dc5c91c5f53af",
+  "filename": "image714.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo cấm xe taxi (P.107b) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.107b: Cấm xe ôtô taxi\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, chữ 'TAXI' màu đen ở giữa, hình vẽ xe taxi màu đen ở trung tâm. Bản vẽ kèm kích thước: đường kính biển 700mm, chiều cao chữ TAXI 140mm, chiều rộng chữ TAXI 280mm, khoảng cách từ mép biển đến mép chữ TAXI 140mm, chiều cao hình xe taxi 140mm, chiều rộng hình xe taxi 280mm, khoảng cách từ mép biển đến mép hình xe taxi 140mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô taxi (P.107b) được quy định trong Điều M.1 của QCVN 41:2024/BGTVT, với kích thước z(mm) = 70 cho đường đô thị, 87,5 cho đường thông thường, 126 cho đường đôi ngoài đô thị, và 140 cho đường cao tốc. Bản vẽ minh họa chi tiết các thông số hình học để đảm bảo tính đồng nhất và khả năng nhận diện của biển báo.\"\n    }\n  ]\n}",
+  "generated_tokens": 366,
+  "elapsed_seconds": 6.514606500000809,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

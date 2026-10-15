@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:eb571c7d6ba0c09a1131412c13202d9a256410c0c067ca376a799d4c1b7330ba",
+  "filename": "image1302.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn 'XUỐNG ĐỐC LIÊN TỤC' (thuộc nhóm biển chỉ dẫn, có thể liên quan đến biển I.415 hoặc tương tự về mũi tên chỉ hướng), với các thông số kích thước chi tiết cho từng phần của biển.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn 'XUỐNG ĐỐC LIÊN TỤC'\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, được chia thành hai phần: phần bên trái có biểu tượng mũi tên chỉ hướng xuống dốc (màu xanh dương trên nền trắng, nhưng trong bản vẽ kỹ thuật là đen trắng), phần bên phải có dòng chữ 'XUỐNG ĐỐC LIÊN TỤC'. Bản vẽ kèm theo các ký hiệu kích thước: chiều rộng tổng 900mm, chiều cao tổng 600mm; các đoạn chia: 110mm, 120mm, 50mm; chiều cao phần biểu tượng 300mm, chiều cao chữ 300mm; khoảng cách từ mép biển đến biểu tượng 50mm, từ mép biển đến chữ 50mm. Bên phải là bản vẽ lưới ô vuông minh họa tỷ lệ biểu tượng mũi tên.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học chuẩn cho biển báo chỉ dẫn 'XUỐNG ĐỐC LIÊN TỤC', đảm bảo tính đồng nhất và dễ nhận biết trong điều kiện giao thông. Kích thước này áp dụng cho loại đường tương ứng theo QCVN 41:2024/BGTVT (ví dụ: đường đô thị, thông thường hoặc đôi ngoài đô thị) với giá trị z(mm) phù hợp (thường là 50, 75 hoặc 100 tùy loại đường).\"\n    }\n  ]\n}",
+  "generated_tokens": 429,
+  "elapsed_seconds": 7.74955079999927,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

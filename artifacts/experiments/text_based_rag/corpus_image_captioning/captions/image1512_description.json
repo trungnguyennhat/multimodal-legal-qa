@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9e02db648bd3142364ffb8cb1006c21a5bff530873255161e24a63ef3e7c6aa8",
+  "filename": "image1512.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng neo (biển báo khu công nghiệp, dịch vụ công cộng và giải trí) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng neo (khu công nghiệp, dịch vụ công cộng và giải trí)\",\n      \"visual_or_geometric_features\": \"Hình vuông có các góc bo tròn, bên trong là hình vẽ neo màu đen trên nền trắng. Các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và mũi tên chỉ rõ chiều dài, chiều rộng và độ dày của khung biển.\",\n      \"meaning_or_specification\": \"Theo Điều P.13 của QCVN 41:2024/BGTVT, kích thước A, B, C, D, E tương ứng với các loại biển (Loại A và Loại B) được quy định cụ thể trong văn bản, ví dụ: Loại A có A=75,0 cm; B=2,0 cm; C=6,2 cm; D=62,6 cm; E=5,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 286,
+  "elapsed_seconds": 4.856407999999647,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

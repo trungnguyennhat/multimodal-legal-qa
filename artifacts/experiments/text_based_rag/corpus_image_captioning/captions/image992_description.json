@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5e66fe1d26955f08a49b893e9e45e4d4b23a4ca5b679fdcad3ef86ffcc6541ff",
+  "filename": "image992.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển hiệu lệnh R.301b (Các xe chỉ được rẽ phải) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển hiệu lệnh R.301b\",\n      \"visual_or_geometric_features\": \"Hình tròn nền xanh dương, có mũi tên trắng chỉ hướng rẽ phải. Bản vẽ kỹ thuật kèm theo quy định các kích thước: đường kính biển 37,5z, chiều rộng mũi tên 3,5z, chiều cao phần ngang mũi tên 4z, chiều cao phần dọc mũi tên 3,5z, và các khoảng cách lắp đặt z (140mm cho đường cao tốc, 126mm cho đường đôi ngoài đô thị, 87,5mm cho đường thông thường, 70mm cho đường đô thị).\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cấm rẽ trái và đi thẳng, chỉ cho phép các xe rẽ phải. Kích thước hình học được quy định chi tiết trong Điều M.3 của QCVN 41:2024/BGTVT, với giá trị z thay đổi tùy theo loại đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 310,
+  "elapsed_seconds": 5.840560800003004,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

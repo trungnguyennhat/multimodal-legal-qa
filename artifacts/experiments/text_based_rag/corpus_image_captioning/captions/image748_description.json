@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:073c9fc2185bb5dbc6fcc06b000dbc2c0945c1bc006cd351fdf3d29f1998c727",
+  "filename": "image748.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo cấm xe ôtô tải (P.106a, P.106b) và biển báo hạn chế chiều ngang xe (P.118) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm xe ôtô tải (P.106a, P.106b)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô tải màu đen ở giữa. Bản vẽ kỹ thuật cung cấp các thông số kích thước: đường kính ngoài 1020 mm, đường kính trong 840 mm, chiều cao biểu tượng xe 1080 mm, chiều rộng biểu tượng xe 1080 mm, khoảng cách từ mép trong vòng tròn đến đáy xe 1080 mm, và khoảng cách từ mép trong vòng tròn đến đỉnh xe 1080 mm.\",\n      \"meaning_or_specification\": \"Biển báo này được sử dụng để cấm xe ôtô tải đi vào đoạn đường. Kích thước các thành phần được quy định chi tiết trong điều luật cho từng loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biển báo hạn chế chiều ngang xe (P.118)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen, biểu tượng xe ôtô tải màu đen với các kích thước chiều ngang được ghi chú. Bản vẽ kỹ thuật cung cấp các thông số: chiều rộng tổng thể của biển 1020 mm, chiều cao biển 1080 mm, chiều rộng biểu tượng xe 1080 mm, chiều cao biểu tượng xe 1080 mm, và khoảng cách từ mép trái biển đến mép trái xe 1080 mm, từ mép phải biển đến mép phải xe 1080 mm.\",\n      \"meaning_or_specification\": \"Biển báo này được sử dụng để hạn chế chiều ngang của xe ôtô tải đi qua đoạn đường. Kích thước các thành phần được quy định chi tiết trong điều luật cho từng loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 551,
+  "elapsed_seconds": 9.25514110000222,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

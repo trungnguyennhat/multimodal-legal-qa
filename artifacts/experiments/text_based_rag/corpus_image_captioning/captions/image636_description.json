@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0196393848ae21926b78208a7ea8d3b90462d148a004eea549511ea55d95bc50",
+  "filename": "image636.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa vạch đứng 8.5 (vạch đỏ - trắng xen kẽ) được sử dụng ở thanh ngang trên cùng của hàng rào chắn tại các vị trí nguy hiểm như đường cong bán kính nhỏ, đường dốc xuống hoặc khu vực cao hơn so với xung quanh.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch đứng 8.5\",\n      \"visual_or_geometric_features\": \"Vạch kẻ dạng thanh ngang với các đoạn màu đỏ và trắng xen kẽ; chiều dài đoạn đỏ là 1,00 m, chiều dài đoạn trắng là 2,00 m; tổng chiều dài vạch là 3,00 m.\",\n      \"meaning_or_specification\": \"Theo Điều G.3.e của QCVN 41:2024/BGTVT, vạch 8.5 được dùng để cảnh báo tại các vị trí nguy hiểm như thanh ngang trên cùng của hàng rào chắn ở đường cong bán kính nhỏ, đường dốc xuống hoặc nơi cao hơn khu vực xung quanh. Vạch có kích thước: vạch đỏ dài 1 m, vạch trắng dài 2 m, tỷ lệ L1:L2 = 1:2.\"\n    }\n  ]\n}",
+  "generated_tokens": 279,
+  "elapsed_seconds": 4.912519900004554,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

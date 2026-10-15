@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:067269f75bafeecebf96bfbbfe237561f544a09d3f370f229f76c9a52bc51b71",
+  "filename": "image1268.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn Trạm cấp cứu (First Aid) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn Trạm cấp cứu (First Aid)\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình tam giác cân hướng mũi tên sang trái. Kích thước tổng thể: Chiều dài 4m, chiều cao 1,2m. Các thông số chi tiết: Chiều rộng phần thân 3,6m, chiều cao phần thân 0,8m; chiều rộng mũi tên 0,4m, chiều cao mũi tên 0,4m. Biển có lưới ô vuông để xác định tỷ lệ và vị trí các thành phần.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học cho biển báo chỉ dẫn Trạm cấp cứu (First Aid) thuộc nhóm biển chỉ dẫn (Nhóm I.4), dùng để chỉ dẫn vị trí trạm cấp cứu trên đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 258,
+  "elapsed_seconds": 5.254059999999299,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

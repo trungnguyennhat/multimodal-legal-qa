@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ed24f8eae755ae284b309a9640b43f29811def980a6060aa6f82fb8bfa255305",
+  "filename": "image1444.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn khoảng cách đến lối ra tiếp (mã IE.455a và IE.455b) theo QCVN 41:2024/BGTVT, với nền xanh lá cây, biểu tượng lối ra vàng huỳnh quang và thông tin tên nút giao cùng khoảng cách.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số IE.455a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh lá cây, có hai khối chữ nhật nhỏ màu vàng huỳnh quang ở góc trên bên trái ghi 'LỐI RA EXIT' (chữ đen), bên phải ghi tên nút giao 'BẾN LỰC' và khoảng cách '16 km' (chữ trắng).\",\n      \"meaning_or_specification\": \"Chỉ dẫn khoảng cách 16 km đến nút giao 'BẾN LỰC' theo chiều di chuyển; tuân thủ quy định về kích thước ký tự H₂=33 cm, khoảng cách căn giữa a, chiều rộng L và chiều cao W theo điều P.6a của QCVN 41:2024/BGTVT.\"\n    },\n    {\n      \"identifier\": \"Biển số IE.455b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh lá cây, có hai khối chữ nhật nhỏ màu vàng huỳnh quang ở góc trên bên trái ghi 'LỐI RA EXIT' (chữ đen), bên phải ghi tên nút giao 'CHỢ ĐỆM' và khoảng cách '27 km' (chữ trắng).\",\n      \"meaning_or_specification\": \"Chỉ dẫn khoảng cách 27 km đến nút giao 'CHỢ ĐỆM' theo chiều di chuyển; tuân thủ quy định về kích thước ký tự H₂=33 cm, khoảng cách căn giữa a, chiều rộng L và chiều cao W theo điều P.6b của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 461,
+  "elapsed_seconds": 7.2376781000057235,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:52317c1a34dff26010a16651c7a5d714cec331b0dc9e1c83fcfabdfd0737d725",
+  "filename": "image1238.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục lắp đặt của biển báo chỉ dẫn I.435 (Bến xe điện) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.435: Bến xe điện\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, khung viền màu xanh dương (trong bản vẽ kỹ thuật là đường nét đen), nền trắng. Bên trong có biểu tượng xe điện (tramway) màu đen. Phần dưới có dòng chữ 'BẾN XE ĐIỆN' và 'TRAMWAY STATION'. Bản vẽ kèm các kích thước: chiều cao tổng 900mm, chiều rộng 600mm; chiều cao phần biểu tượng 400mm, chiều cao phần chữ 300mm; chiều rộng phần chữ 400mm (chia đôi mỗi bên 200mm).\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn loại I.435 dùng để báo hiệu bến xe điện. Theo điều luật, đối với đường đô thị, chiều cao ký hiệu z = 50mm (tương ứng với kích thước biểu tượng xe điện trong bản vẽ). Bản vẽ này quy định kích thước thực tế của biển báo khi sản xuất và lắp đặt.\"\n    }\n  ]\n}",
+  "generated_tokens": 328,
+  "elapsed_seconds": 6.271769099999801,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

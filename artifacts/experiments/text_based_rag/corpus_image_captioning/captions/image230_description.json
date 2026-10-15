@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1bd845d53e34c68f7d7b64709ec6e4de247a4e31af23739755e7f8cbc65732ae",
+  "filename": "image230.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số W.219 'Dốc xuống nguy hiểm' theo QCVN 41:2024/BGTVT, dùng để báo trước đoạn đường xuống dốc nguy hiểm với độ dốc từ 10% trở lên.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.219\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, bên trong có hình tam giác đen ở dưới và chữ '10%' màu đen ở trên\",\n      \"meaning_or_specification\": \"Biển báo hiệu đoạn đường xuống dốc nguy hiểm, trong đó con số '10%' chỉ độ dốc thực tế tính bằng phần trăm (làm tròn không có số thập phân), áp dụng khi độ dốc từ 10% trở lên và chiều dài dốc trên 140 m.\"\n    }\n  ]\n}",
+  "generated_tokens": 216,
+  "elapsed_seconds": 3.6075063000025693,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

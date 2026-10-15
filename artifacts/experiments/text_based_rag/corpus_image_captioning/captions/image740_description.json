@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c1884986385f19611253417351339ce5ed56f26bf7649c83cdadb4bb40878788",
+  "filename": "image740.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo P.115 (Hạn chế tải trọng toàn bộ xe) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.115\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, chữ số '10' và ký hiệu 't' màu đen ở trung tâm. Bản vẽ kèm lưới ô vuông để xác định tỷ lệ và các kích thước: đường kính ngoài biển (140mm), đường kính vòng tròn đỏ (126mm), chiều cao chữ số '10' (87,5mm), chiều cao ký hiệu 't' (70mm), khoảng cách từ mép biển đến mép vòng tròn (17,5mm), và khoảng cách từ tâm biển đến mép dưới (105mm).\",\n      \"meaning_or_specification\": \"Biển báo P.115: Hạn chế tải trọng toàn bộ xe. Kích thước được quy định theo loại đường: Đường cao tốc (140mm), Đường đôi ngoài đô thị (126mm), Đường thông thường (87,5mm), Đường đô thị (70mm).\"\n    }\n  ]\n}",
+  "generated_tokens": 317,
+  "elapsed_seconds": 5.806493399999454,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

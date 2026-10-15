@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3709c8d694b7343ca5b58acafcb9babd25732192b523a7c2e6123cb6d400a502",
+  "filename": "image1524.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật đen trắng minh họa kích thước hình học của biển báo 'Rừng sinh thái' theo QCVN 41:2024/BGTVT, với các ký hiệu A, B, C, D, E chỉ các chiều kích thước theo điều luật.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo Rừng sinh thái (Điều 10)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có viền dày, bên trong là biểu tượng đen gồm hình cây và người đang đi bộ; các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và mũi tên chỉ rõ chiều dài, chiều rộng, độ dày viền và khoảng cách.\",\n      \"meaning_or_specification\": \"Theo Điều 10 của QCVN 41:2024/BGTVT, biển báo này dùng để chỉ khu rừng sinh thái. Kích thước cho loại A: A=75,0 cm; B=2,0 cm; C=4,0 cm; D=67,0 cm; E=5,0 cm. Kích thước cho loại B: A=60,0 cm; B=1,5 cm; C=3,0 cm; D=54,0 cm; E=5,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 314,
+  "elapsed_seconds": 5.251983900001505,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

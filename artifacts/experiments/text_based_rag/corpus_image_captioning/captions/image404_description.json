@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d96c685710590415fb05a95537fa906979bb18d8203b003831bcd83d519ea52b",
+  "filename": "image404.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.430 'Điện thoại' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn nơi có trạm điện thoại công cộng phục vụ khách đi đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.430\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng điện thoại màu đen ở giữa, dòng chữ '1900565656' màu trắng ở dưới cùng\",\n      \"meaning_or_specification\": \"Chỉ dẫn những nơi có đặt trạm điện thoại công cộng chuyên phục vụ khách đi đường, theo quy định tại Điều E.32 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 204,
+  "elapsed_seconds": 3.382554199997685,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:f121a85a84063e97d86f9b6ffb04fc04678f7ce9920bdae17e3cc4f634eb359f",
+  "filename": "image1110.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển hiệu lệnh nhóm R.301 (hướng đi) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển hiệu lệnh nhóm R.301 (Các xe chỉ được đi thẳng, rẽ phải, rẽ trái, đi thẳng và rẽ phải, đi thẳng và rẽ trái, rẽ trái và rẽ phải)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng vùng lưới), biểu tượng các tòa nhà và mũi tên chỉ hướng đi. Các thông số kích thước được ghi chú: chiều rộng biển 24z, chiều cao biển 20z, độ dày khung viền 1z, khoảng cách từ mép biển đến mép khung 0.1z, 0.2z, 0.5z, 1.2z, 2.7z, 5z, 12z.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển hiệu lệnh nhóm R.301 tùy theo loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z (mm) tương ứng theo bảng trong điều luật gốc.\"\n    }\n  ]\n}",
+  "generated_tokens": 329,
+  "elapsed_seconds": 6.1293155000021216,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

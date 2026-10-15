@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ac4060458d518e0c12fd8c2cd2f9c86c903874092250d99850d5efde7e7980d3",
+  "filename": "image766.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo cấm P.102 (Cấm đi ngược chiều) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.102 (Cấm đi ngược chiều)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có hai mũi tên đen chỉ hai chiều đối ngược nhau. Bản vẽ kèm các ký hiệu kích thước: D (đường kính biển), z (khoảng cách từ mép biển đến mép cột), và các kích thước chi tiết của mũi tên (chiều dài, chiều rộng, góc nghiêng).\",\n      \"meaning_or_specification\": \"Biển báo cấm xe đi ngược chiều. Kích thước z (khoảng cách từ mép biển đến mép cột) được quy định tùy theo loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị). Các thông số khác như D, chiều dài/chu vi mũi tên cũng được quy định chi tiết trong bản vẽ kỹ thuật để đảm bảo tính đồng nhất và khả năng nhận diện.\"\n    }\n  ]\n}",
+  "generated_tokens": 315,
+  "elapsed_seconds": 5.779049500000838,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

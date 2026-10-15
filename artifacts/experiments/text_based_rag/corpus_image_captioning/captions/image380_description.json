@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c2fa6a549ac495461ad391125c24464dd172f08b1c2a3743890ee2107a508448",
+  "filename": "image380.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.422a 'Vinh Hạ Long' – biển chỉ dẫn di tích lịch sử hoặc danh lam thắng cảnh, thuộc nhóm biển chỉ dẫn, hình chữ nhật đứng, nền xanh dương, chữ trắng.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.422a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền màu xanh dương, chữ viết màu trắng: 'VINH' ở dòng trên, 'HÀ LONG' ở dòng dưới, không có biểu tượng đồ họa bên trong.\",\n      \"meaning_or_specification\": \"Biển số I.422a dùng để chỉ dẫn những nơi có di tích lịch sử hoặc danh lam thắng cảnh (ở đây là 'Vinh Hạ Long'), áp dụng cho các tuyến đường không phải đối ngoại hoặc không có nhiều người nước ngoài đi lại.\"\n    }\n  ]\n}",
+  "generated_tokens": 219,
+  "elapsed_seconds": 3.620518900002935,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

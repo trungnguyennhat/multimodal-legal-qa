@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3ba7d41ad1b769c9881cabdf5facda6a07272d18f725e4185a2cc29b7c4d5023",
+  "filename": "image278.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.241 'Ùn tắc giao thông' theo QCVN 41:2024/BGTVT, dùng để cảnh báo đoạn đường hay xảy ra ùn tắc.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.241\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen gồm ba chiếc xe hơi xếp chồng lên nhau theo chiều dọc\",\n      \"meaning_or_specification\": \"Biển báo hiệu đoạn đường hay xảy ra ùn tắc giao thông, yêu cầu người tham gia giao thông chủ động giảm tốc độ và chuẩn bị ứng phó.\"\n    }\n  ]\n}",
+  "generated_tokens": 181,
+  "elapsed_seconds": 3.043400999995356,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

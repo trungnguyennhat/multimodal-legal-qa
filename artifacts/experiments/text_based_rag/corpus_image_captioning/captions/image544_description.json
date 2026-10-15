@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:468c69886bc964f31f376a09c17a5d46e4841d649759c41acfaed38b03536abb",
+  "filename": "image544.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch sơn phân chia hai chiều xe chạy (vạch tim đường) dạng vạch đôi gồm một vạch nét liền và một vạch nét đứt (Vạch 1.4) trong khu vực bề rộng phần xe chạy bị thay đổi.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch tim đường (Vạch 1.4)\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song, gồm một vạch nét liền và một vạch nét đứt, màu vàng. Hình ảnh minh họa sự thay đổi bề rộng phần xe chạy với các đoạn D (đoạn đầu), L (đoạn chuyển tiếp), và d (đoạn cuối).\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn đường tiếp giáp với vạch đứt nét được phép cắt qua và sử dụng làn ngược chiều khi cần thiết; xe trên làn đường tiếp giáp với vạch liền nét không được lấn làn hoặc đè lên vạch. Trong khu vực bề rộng phần xe chạy bị thay đổi, vạch này được sử dụng để phân chia hai chiều xe chạy.\"\n    }\n  ]\n}",
+  "generated_tokens": 268,
+  "elapsed_seconds": 7.650850999998511,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

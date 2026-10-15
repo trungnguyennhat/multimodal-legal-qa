@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b9f88d804e6ac2c73d2809992d2b54f6de9da7339f23df78b287485c040096fa",
+  "filename": "image686.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình K.4 trong QCVN 41:2024/BGTVT minh họa chi tiết các chữ cái in hoa và con số dạng chữ in hoa, kiểu chữ nén (gt1) với kích thước đơn vị mm, phục vụ cho việc thiết kế và sản xuất biển báo giao thông theo quy chuẩn.\",\n  \"items\": [\n    {\n      \"identifier\": \"Chữ cái và con số dạng chữ in hoa, kiểu chữ nén (gt1)\",\n      \"visual_or_geometric_features\": \"Các ký tự A-Z và 0-9 được trình bày dưới dạng chữ in hoa, kiểu chữ nén (compressed uppercase font), mỗi ký tự có điểm đặt (dot) ở giữa và các kích thước chiều cao, chiều rộng được quy định theo đơn vị mm. Hình ảnh là bản vẽ kỹ thuật đen trắng, không phải màu sắc biển báo thực tế.\",\n      \"meaning_or_specification\": \"Đây là hình mẫu kỹ thuật để xác định hình dạng, kích thước và cách trình bày chữ trên biển báo giao thông theo quy chuẩn QCVN 41:2024/BGTVT, đảm bảo tính đồng nhất và dễ đọc trong điều kiện giao thông.\"\n    }\n  ]\n}",
+  "generated_tokens": 280,
+  "elapsed_seconds": 4.562929100000474,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

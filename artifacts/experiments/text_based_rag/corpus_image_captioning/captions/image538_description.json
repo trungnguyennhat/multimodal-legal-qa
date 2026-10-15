@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:95efd69b6ee410bcc8a8f49a80f073710a42411752830e87f4513f3439cb547e",
+  "filename": "image538.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch 3.2 và 3.3) để phân cách giữa làn xe cơ bản và làn xe chuyển tốc trong khu vực tách và nhập làn.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 3.2 (Vạch liền nét)\",\n      \"visual_or_geometric_features\": \"Vạch kẻ màu trắng liền nét, bề rộng lớn hơn vạch đứt nét bên cạnh.\",\n      \"meaning_or_specification\": \"Sử dụng để phân cách giữa làn xe cơ bản và làn xe chuyển tốc (hoặc làn xe phụ thêm). Xe không được phép chuyển làn qua vạch này trừ các trường hợp khẩn cấp theo quy định.\"\n    },\n    {\n      \"identifier\": \"Vạch 3.3 (Vạch đứt nét)\",\n      \"visual_or_geometric_features\": \"Vạch kẻ màu trắng đứt nét, bề rộng nhỏ hơn vạch liền nét bên cạnh.\",\n      \"meaning_or_specification\": \"Sử dụng để phân cách giữa làn xe cơ bản và làn xe chuyển tốc (hoặc làn xe phụ thêm). Xe được phép cắt, chuyển làn qua vạch này. Ngoài ra, vạch này còn được sử dụng để kẻ đoạn chuyển tiếp từ vạch 2.1 sang vạch 3.2.\"\n    },\n    {\n      \"identifier\": \"Khu vực tách và nhập làn\",\n      \"visual_or_geometric_features\": \"Khu vực mặt đường có sự thay đổi số làn xe, được phân chia bởi các vạch 3.2 và 3.3.\",\n      \"meaning_or_specification\": \"Đây là khu vực tách và nhập làn. Vạch 3.2 và 3.3 được sử dụng để phân cách, kênh hóa các làn xe trong khu vực này tùy theo từng trường hợp cụ thể.\"\n    }\n  ]\n}",
+  "generated_tokens": 413,
+  "elapsed_seconds": 9.875301899999613,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

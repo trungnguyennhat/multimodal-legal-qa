@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:b4777aebf65144bb344b5b2d08370b6605918c2c561d2fe52ccf93cd61a3b6c1",
+  "filename": "public_test_6_4.jpg",
+  "description": "- Biển hình tròn, viền đỏ, nền trắng, có số \"80\" ở giữa.\n- Biển hình tròn, viền đỏ, nền trắng, có số \"60\" ở giữa.\n- Biển hình chữ nhật, nền xanh, có hình ô tô.\n- Biển hình chữ nhật, nền xanh, có hình xe buýt.\n- Biển hình chữ nhật, nền xanh, có hình xe tải.\n- Biển hình chữ nhật, nền xanh, có hình xe máy.\n- Biển hình chữ nhật, nền xanh, có hình xe máy và người đi bộ.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 132,
+  "size": [
+    1000,
+    708
+  ],
+  "elapsed_seconds": 11.03356939999503,
+  "peak_vram_bytes": 7625756160,
+  "peak_reserved_bytes": 7713325056,
+  "gpu_free_bytes": 8155824128
+}

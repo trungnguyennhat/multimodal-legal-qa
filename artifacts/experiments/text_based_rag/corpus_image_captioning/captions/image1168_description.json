@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5efd9d6802e668e716ee8aa52828770d3063bc03a10d62e26efbde40302818a2",
+  "filename": "image1168.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn địa điểm (nhóm biển I.414) với các thông tin về địa phương và khoảng cách, kèm theo mũi tên chỉ hướng và biểu tượng xe khách.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.414: Chỉ hướng đường\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, viền trắng, chữ và biểu tượng màu trắng. Bên trong có mũi tên chỉ hướng đi thẳng, tên các địa điểm (Bắc Ninh, Bắc Giang, Lạng Sơn, Hải Dương, Hải Phòng) kèm khoảng cách (km), và biểu tượng xe khách ở góc dưới bên phải.\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn địa điểm, cung cấp thông tin về các địa phương và khoảng cách còn lại, đồng thời chỉ hướng đi cho xe khách (biểu tượng xe khách).\"\n    }\n  ]\n}",
+  "generated_tokens": 222,
+  "elapsed_seconds": 4.694400600004883,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

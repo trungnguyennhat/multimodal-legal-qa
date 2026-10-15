@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:40c0c468f05d79470ca06e0eb472c1f4092baecd8d0ede5bc5da7b9b4919d226",
+  "filename": "image114.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm xe đạp đi qua theo quy định QCVN 41:2024/BGTVT, mã biển P.110a.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.110a\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có biểu tượng xe đạp màu đen bị gạch chéo đỏ từ góc trên bên trái xuống góc dưới bên phải.\",\n      \"meaning_or_specification\": \"Biển báo đường cấm xe đạp đi qua; không cấm người dắt xe đạp.\"\n    }\n  ]\n}",
+  "generated_tokens": 159,
+  "elapsed_seconds": 2.835638700002164,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

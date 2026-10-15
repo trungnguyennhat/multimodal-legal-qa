@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:813052e840bb9b382f7683ed5c6bb799ee939ab9d5af12623529d44f876196e4",
+  "filename": "image542.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch tim) dạng vạch đôi, nét liền và nét đứt trong khu vực bề rộng phần xe chạy bị thu hẹp (đoạn D, L, d) theo quy định tại Điều G.1.3e của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch phân chia hai chiều xe chạy (Vạch 1.3)\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song, nét liền, màu vàng. Hình ảnh minh họa bố trí vạch này trong 3 đoạn: D (đoạn đầu thu hẹp), L (đoạn thu hẹp), và d (đoạn cuối thu hẹp).\",\n      \"meaning_or_specification\": \"Theo Điều G.1.3e, trong khu vực bề rộng phần xe chạy bị thay đổi, vạch 1.3 được sử dụng để phân chia hai chiều xe chạy. Chiều dài đoạn biến đổi bề rộng mặt đường L được xác định theo công thức L = V²/W (khi V ≤ 60km/h) hoặc L = 0.625V.W (khi V > 60 km/h). Đoạn kéo dài d tại điểm cuối cùng giảm chiều rộng được lựa chọn là 40m (nếu tốc độ > 60km/h) hoặc 20m (các loại đường khác). Đoạn D là chiều dài tầm nhìn dừng xe an toàn.\"\n    },\n    {\n      \"identifier\": \"Biển báo nguy hiểm (Hình tam giác)\",\n      \"visual_or_geometric_features\": \"Biển báo hình tam giác, viền đỏ, nền vàng, có biểu tượng tam giác bên trong (màu đen), đặt tại điểm bắt đầu đoạn D.\",\n      \"meaning_or_specification\": \"Biển báo này cảnh báo người tham gia giao thông về sự thay đổi bề rộng phần xe chạy phía trước, yêu cầu đi chậm và thận trọng.\"\n    }\n  ]\n}",
+  "generated_tokens": 453,
+  "elapsed_seconds": 10.526476799997909,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

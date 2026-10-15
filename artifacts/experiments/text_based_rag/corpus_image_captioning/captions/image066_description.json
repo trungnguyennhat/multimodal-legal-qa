@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:658ec5e3798c21299805a894cc843d6bc823cd2fb1b2560675d81a9a14497658",
+  "filename": "image066.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa ba loại biển số IE.468a, IE.468b và IE.468c thuộc nhóm biển chỉ dẫn chướng ngại vật phía trước theo QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển số IE.468a\", \"visual_or_geometric_features\": \"Hình chữ nhật dọc, nền màu vàng huỳnh quang, có các đường xiên màu đen chạy chéo từ trên xuống dưới bên trái sang dưới bên phải.\", \"meaning_or_specification\": \"Chỉ dẫn người tham gia giao thông đi theo hướng bên trái để vượt qua chướng ngại vật phía trước.\"}, {\"identifier\": \"Biển số IE.468b\", \"visual_or_geometric_features\": \"Hình chữ nhật dọc, nền màu vàng huỳnh quang, có các đường xiên màu đen chạy chéo từ trên xuống dưới bên trái sang dưới bên phải và ngược lại (hình mũi tên zig-zag).\", \"meaning_or_specification\": \"Chỉ dẫn người tham gia giao thông có thể đi được cả hai hướng để vượt qua chướng ngại vật phía trước.\"}, {\"identifier\": \"Biển số IE.468c\", \"visual_or_geometric_features\": \"Hình chữ nhật dọc, nền màu vàng huỳnh quang, có các đường xiên màu đen chạy chéo từ trên xuống dưới bên phải sang dưới bên trái.\", \"meaning_or_specification\": \"Chỉ dẫn người tham gia giao thông đi theo hướng bên phải để vượt qua chướng ngại vật phía trước.\"}]}",
+  "generated_tokens": 342,
+  "elapsed_seconds": 7.148482699994929,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

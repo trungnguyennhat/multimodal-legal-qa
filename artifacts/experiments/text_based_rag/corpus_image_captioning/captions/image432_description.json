@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:f738c2e5004da3f9cf952546df88bef46b9a33aa35f55edee2f646ffd37f5ef2",
+  "filename": "image432.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số I.442 'Chợ' theo QCVN 41:2024/BGTVT, dùng để báo trước khu vực có chợ gần đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.442\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, đỉnh hướng lên trên, nền màu vàng, viền màu xanh dương, bên trong có chữ 'CHỢ-MARKET' màu trắng\",\n      \"meaning_or_specification\": \"Biển báo này được đặt để cảnh báo người tham gia giao thông sắp đến khu vực có chợ; xe cơ giới phải chú ý quan sát và giảm tốc độ khi qua lại khu vực này.\"\n    }\n  ]\n}",
+  "generated_tokens": 188,
+  "elapsed_seconds": 3.1468702999991365,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

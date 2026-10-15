@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:082772fccfc89a742ec7b5d20633099ddeb1153eeb57e0bb62fe6e4deeb98bba",
+  "filename": "image1482.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng 'Ăn uống' trong nhóm biển báo dịch vụ công cộng theo QCVN 41:2024/BGTVT, Điều P.9.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng 'Ăn uống' (dạng bản vẽ kỹ thuật)\",\n      \"visual_or_geometric_features\": \"Hình vuông có khung viền dày, bên trong là hình ảnh đen trắng của một chiếc thìa và một chiếc dĩa xếp chéo nhau. Các kích thước được ký hiệu bằng chữ A, B, C, D, E với các giá trị số tương ứng theo điều luật.\",\n      \"meaning_or_specification\": \"Theo Điều P.9 mục 8 của QCVN 41:2024/BGTVT, biểu tượng này dùng để báo hiệu dịch vụ ăn uống. Kích thước A (chiều rộng tổng thể) = 60,0 cm (Loại B) hoặc 75,0 cm (Loại A); B (chiều cao phần biểu tượng) = 1,5 cm (Loại B) hoặc 2,0 cm (Loại A); C (chiều dày khung viền) = 5,0 cm; D (chiều cao tổng thể) = 50,0 cm (Loại B) hoặc 62,6 cm (Loại A); E (chiều cao phần biểu tượng) = 5,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 344,
+  "elapsed_seconds": 5.705587099997501,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

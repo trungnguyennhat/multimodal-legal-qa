@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:896e5dec3f33b867ee6f61ed22d3426efe317f25c2ec7fe752d9b521b407e233",
+  "filename": "image1516.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo 'Đập thủy điện' theo QCVN 41:2024/BGTVT, với các thông số A, B, C, D, E được ghi rõ trên hình.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo Đập thủy điện\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền bo góc, bên trong gồm biểu tượng mặt nước (sóng ngang), đập tam giác đen và phần nước hạ lưu; các kích thước A, B, C, D, E được đánh dấu bằng mũi tên và ghi rõ giá trị cho Loại A và Loại B.\",\n      \"meaning_or_specification\": \"Theo Điều 6 của QCVN 41:2024/BGTVT, biển báo này dùng để cảnh báo người tham gia giao thông về sự hiện diện của đập thủy điện. Kích thước A (chiều rộng), B (khoảng cách từ đỉnh đập đến trên cùng), C (chiều cao phần nước hạ lưu), D (chiều cao phần nước thượng lưu), E (chiều dày khung viền) được quy định cụ thể cho hai loại biển: Loại A (kích thước lớn hơn) và Loại B (kích thước nhỏ hơn).\"\n    }\n  ]\n}",
+  "generated_tokens": 309,
+  "elapsed_seconds": 5.172331600006146,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

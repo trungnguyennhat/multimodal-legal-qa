@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b9c492912e07610815f64fc096298879dfe5695c33081c9ac8930ebc910cd75a",
+  "filename": "image084.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai loại tiêu phản quang dạng mũi tên: một chỉ hướng thuận chiều (mũi tên trắng trên nền đỏ) và một chỉ hướng ngược chiều (mũi tên đỏ trên nền trắng), được quy định tại Điều 56.3 của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Mã biển: Hình 34b - Tiêu phản quang dạng mũi tên (bên trái) cho đường 2 chiều\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền đỏ, có một mũi tên lớn màu trắng chỉ hướng sang trái.\",\n      \"meaning_or_specification\": \"Sử dụng cho hướng ngược chiều (bên trái) theo chiều đi của đường hai chiều (để cảnh báo người lái đi nhầm đường) và sử dụng cho các đường lánh nạn.\"\n    },\n    {\n      \"identifier\": \"Mã biển: Tiêu phản quang dạng mũi tên chỉ hướng thuận chiều\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền đỏ, có một mũi tên lớn màu trắng chỉ hướng sang phải.\",\n      \"meaning_or_specification\": \"Sử dụng để chỉ hướng xe chạy vào ban đêm hoặc trong điều kiện sương mù, điều kiện hạn chế tầm nhìn, bố trí tại các nơi mà tuyến đường có thể gây hiểu lầm hoặc chưa rõ về hướng đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 326,
+  "elapsed_seconds": 5.979986199999985,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

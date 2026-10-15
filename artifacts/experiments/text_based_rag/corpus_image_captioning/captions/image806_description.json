@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:529ca959af56bab3a56c15168a51d456afed3ec228672415c727bf7031151268",
+  "filename": "image806.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo P.117 (Hạn chế chiều cao) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.117: Hạn chế chiều cao\",\n      \"visual_or_geometric_features\": \"Hình tròn viền xanh dương, bên trong có hình tam giác cân màu đen với đường chéo màu trắng (biểu tượng hạn chế chiều cao). Bản vẽ kèm các kích thước: đường kính ngoài 140mm, đường kính trong 126mm, chiều cao tam giác 87,5mm, chiều rộng đáy tam giác 70mm, khoảng cách từ tâm biển đến điểm treo 61,6mm, và khoảng cách từ mép dưới biển đến điểm treo 47,6mm.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để hạn chế chiều cao của phương tiện được phép lưu thông trên đường. Kích thước được quy định theo loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 317,
+  "elapsed_seconds": 5.803179700000328,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

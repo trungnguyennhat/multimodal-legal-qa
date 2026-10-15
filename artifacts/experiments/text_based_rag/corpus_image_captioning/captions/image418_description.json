@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d6cfc9761ba663a6ede036e1140e521f309606980250b950570d1033b066250c",
+  "filename": "image418.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.434b 'Bến xe tải' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn khu vực đỗ xe tải cho việc nhận và trả hàng hóa.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.434b\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng đen là hình vẽ đơn giản của một chiếc xe tải bên trong.\",\n      \"meaning_or_specification\": \"Chỉ dẫn khu vực đỗ xe tải để nhận và trả hàng hóa; trong trường hợp không phải là bến xe theo quy định hiện hành, thay chữ 'Bến xe tải' bằng 'Điểm dừng xe tải'.\"\n    }\n  ]\n}",
+  "generated_tokens": 197,
+  "elapsed_seconds": 3.286590099996829,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

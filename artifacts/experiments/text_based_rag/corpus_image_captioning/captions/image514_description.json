@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:eb91b2bf702d3b2c349c693389b521d73f08a28ba7aeb3000771fffce6cde3aa",
+  "filename": "image514.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch 1.3 (vạch đôi liền nét màu vàng) và vạch kênh hóa dòng xe dạng gạch chéo (vạch 4.1) để phân chia hai chiều xe chạy và nhấn mạnh vùng cấm vượt trên đường cong.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.3 (Vạch phân chia hai chiều xe chạy)\",\n      \"visual_or_geometric_features\": \"Dạng vạch đôi song song, nét liền, màu vàng. Hình ảnh minh họa hai đoạn vạch song song với khoảng cách giữa hai mép phía trong.\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều, xe không được lấn làn, không được đè lên vạch. Thường dùng cho đường có từ 4 làn xe cơ giới trở lên hoặc ở các vị trí cần thiết khác để nhấn mạnh mức độ nguy hiểm. Quy cách: Bề rộng nét vẽ b = 15 cm, khoảng cách phía trong hai mép vạch đơn nhỏ nhất là 15 cm, lớn nhất là 50 cm.\"\n    },\n    {\n      \"identifier\": \"Vạch 4.1 (Vạch kênh hóa dòng xe dạng gạch chéo)\",\n      \"visual_or_geometric_features\": \"Dạng các vạch gạch chéo màu vàng, nghiêng một góc so với hướng chuyển động của xe, nằm trong phạm vi được giới hạn bởi vạch 1.3.\",\n      \"meaning_or_specification\": \"Sử dụng để phân chia hai chiều xe chạy khi khoảng cách hai mép phía trong của các vạch đơn lớn hơn 50 cm. Vạch này có tác dụng kênh hóa dòng xe, ngăn cản xe lấn làn hoặc đè lên vạch. Quy cách: Các vạch liền nét, màu vàng, bề rộng nét vẽ b = 15 cm, nghiêng một góc 135° theo chiều ngược chiều kim đồng hồ so với hướng chuyển động của xe.\"\n    }\n  ]\n}",
+  "generated_tokens": 437,
+  "elapsed_seconds": 10.230877400004829,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

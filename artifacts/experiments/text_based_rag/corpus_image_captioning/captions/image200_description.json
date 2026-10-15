@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a487870a5a2fb2dc5a51543cd820a58910a5dcdc4505ad102791b80070e81a1f",
+  "filename": "image200.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.206 'Giao nhau chạy theo vòng xuyến' với hình tam giác vàng viền đỏ, biểu tượng mũi tên vòng tròn chỉ chiều đi vòng xuyến quanh đảo an toàn.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.206\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, nền màu vàng, viền đỏ, bên trong có biểu tượng ba mũi tên cong tạo thành vòng tròn đồng tâm, chỉ chiều đi vòng xuyến theo chiều kim đồng hồ.\",\n      \"meaning_or_specification\": \"Báo trước nơi giao nhau có bố trí đảo an toàn ở giữa nút giao; các loại xe qua nút giao phải đi vòng xuyến quanh đảo an toàn theo chiều mũi tên. Trong nội thành, nội thị có thể không đặt biển này.\"\n    }\n  ]\n}",
+  "generated_tokens": 208,
+  "elapsed_seconds": 3.470039400002861,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

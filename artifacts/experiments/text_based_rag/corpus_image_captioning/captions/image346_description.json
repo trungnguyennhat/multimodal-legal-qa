@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:306130d6d3f031fcd321ac34111fe114e54dad0be191511118d40d3214572c7d",
+  "filename": "image346.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.401 'Bắt đầu đường ưu tiên' theo QCVN 41:2024/BGTVT, dùng để báo hiệu sự bắt đầu của đoạn đường ưu tiên.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.401\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình thoi (kim cương). Màu sắc: Nền trắng, viền đen, hình thoi vàng ở giữa. Biểu tượng: Không có biểu tượng phụ, chỉ là hình thoi vàng đơn thuần.\",\n      \"meaning_or_specification\": \"Biển báo hiệu sự bắt đầu của đường ưu tiên, yêu cầu phương tiện từ đường nhánh phải dừng lại nhường đường cho phương tiện trên đường chính. Trên đoạn đường này, phương tiện được quyền ưu tiên đi qua nơi giao nhau không có điều khiển giao thông.\"\n    }\n  ]\n}",
+  "generated_tokens": 217,
+  "elapsed_seconds": 3.6767373000038788,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

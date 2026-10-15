@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8b7a897d25e0c879e8dde75b39b1026971e7a81c83a5023e320ee4ace47b3f4a",
+  "filename": "image634.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ minh họa chi tiết quy cách bố trí vạch đứng (vạch 8.1) trên mốc cố định hoặc đảo an toàn, với các thông số kích thước và góc nghiêng theo quy định QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch đứng (vạch 8.1) trên mốc cố định\",\n      \"visual_or_geometric_features\": \"Hình khối hình chữ nhật nghiêng, được chia thành các dải chéo xen kẽ màu đỏ và trắng (trong bản vẽ kỹ thuật thể hiện bằng màu đỏ và trắng), nghiêng góc 30° so với mặt phẳng đứng. Các kích thước được ghi chú: chiều rộng mỗi vạch là 0.15 m, khoảng cách giữa các vạch là 0.15 m, và góc nghiêng của toàn bộ vạch là 30°.\",\n      \"meaning_or_specification\": \"Theo Điều G.3.a của QCVN 41:2024/BGTVT, vạch 8.1 dùng để cảnh báo chướng ngại vật cao hơn mặt đường. Vạch cấu tạo từ nét chéo vàng/đen (ngoài đô thị) hoặc đỏ/trắng (trong đô thị), nghiêng 45° về phía đường xe chạy. Tuy nhiên, hình vẽ này minh họa một trường hợp đặc biệt với góc nghiêng 30° và kích thước vạch 0.15m, phù hợp với chú dẫn: 'H < 2m; b > 30cm thì a = 15cm' (a là chiều rộng vạch).\"\n    }\n  ]\n}",
+  "generated_tokens": 368,
+  "elapsed_seconds": 6.216543599999568,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

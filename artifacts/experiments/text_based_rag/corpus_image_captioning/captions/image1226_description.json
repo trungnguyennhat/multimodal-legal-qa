@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bc2011992ce50abce1647e2faf0061eb03c33a53fd1566ed9cd90e167865296e",
+  "filename": "image1226.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục biểu tượng cho biển báo I.405a (Đường cụt) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.405a: Đường cụt\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, có khung viền và nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng lưới ô vuông), bên trong có biểu tượng tam giác đen hướng lên trên đặt trên một đường ngang. Các ký hiệu kích thước bao gồm: chiều cao tổng thể 18z, chiều rộng 9z, chiều cao phần biểu tượng 6z, chiều rộng biểu tượng 4z, và các khoảng cách chi tiết như 0,5z, 0,8z, 2z, 0,5z.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để báo hiệu đường cụt. Theo điều luật, kích thước z (đơn vị cơ bản) phụ thuộc vào loại đường: 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường, và 50mm cho đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 304,
+  "elapsed_seconds": 5.902795499998319,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

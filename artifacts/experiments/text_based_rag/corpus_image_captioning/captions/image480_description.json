@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0676201eafa6ce19496cef9d716ad4da4fc1bab493f2bc809fe890c517e2d080",
+  "filename": "image480.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số S.507 'Hướng rẽ' theo QCVN 41:2024/BGTVT, dùng để báo trước chỗ rẽ nguy hiểm và chỉ hướng rẽ.\",\n  \"items\": [\n    {\n      \"identifier\": \"S.507\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền đỏ, có 4 mũi tên trắng hướng về phía bên trái (←←←←), biểu thị hướng rẽ trái.\",\n      \"meaning_or_specification\": \"Biển được sử dụng độc lập để báo trước chỗ rẽ nguy hiểm và chỉ hướng rẽ; có thể đặt đồng thời hai biển ngược chiều nhau để chỉ hướng rẽ trái và rẽ phải, với độ cao từ 1,2 m đến 1,5 m.\"\n    }\n  ]\n}",
+  "generated_tokens": 199,
+  "elapsed_seconds": 3.346506399997452,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:89e3df424d3290c0b1231a4712e9d61886dc58d0f9b1448a6e4914471f33e120",
+  "filename": "image1548.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và vị trí các thành phần của biển chỉ dẫn nhập làn (IE.467a và IE.467b) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn nhập làn (IE.467a và IE.467b)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các kích thước tổng thể L (chiều rộng) và W (chiều cao). Biển được chia thành hai phần: phần trên chứa biểu tượng nhập làn (200x200 cm), phần dưới chứa chữ 'NHẬP LÀN MERGE LANE' và số '250 m'. Các ký hiệu kích thước bao gồm: L, W, h1, h1', h2, h2', k1, k1', k2, k2', a, b, c, d, e, f, g, h, i, j, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z.\",\n      \"meaning_or_specification\": \"Quy định chi tiết về kích thước hình học của biển báo, bao gồm chiều rộng L, chiều cao W, kích thước biểu tượng nhập làn (200x200 cm), kích thước chữ và khoảng cách giữa các thành phần. Các ký hiệu như k1, k1', k2, k2' đại diện cho khoảng cách từ mép biển đến các thành phần bên trong, trong khi h1, h1', h2, h2' là chiều cao của các phần tử cụ thể.\"\n    }\n  ]\n}",
+  "generated_tokens": 402,
+  "elapsed_seconds": 6.41546009999729,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

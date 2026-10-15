@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:849eb8864a27d0c5aba6ff25311bfd2cf484de772aae5b19b882d9ef23b6bf0e",
+  "filename": "image1528.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật màu sắc minh họa kích thước và bố cục của biển chỉ dẫn công trình kiểm soát tải trọng xe (IE.463a) theo QCVN 41:2024/BGTVT, với các thông số chiều cao, chiều rộng và phân vùng nội dung được ghi chú rõ ràng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển IE.463a (Biển chỉ dẫn công trình kiểm soát tải trọng xe)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia làm hai phần: phần trên ghi 'CÔNG TRÌNH KSTTX WEIGH STATION', phần dưới ghi '750 m'. Các ký hiệu kích thước bao gồm: L (chiều rộng biển), W (chiều cao biển), 490 (chiều cao phần trên), 360 (chiều cao phần dưới), a (chiều rộng mép trái/phải), h1, h2, k2, k2', H1, H2, H2'.\",\n      \"meaning_or_specification\": \"Theo Điều P.15 của QCVN 41:2024/BGTVT, đây là biển số IE.463a dùng để chỉ dẫn vị trí công trình kiểm soát tải trọng xe. Kích thước và phân vùng nội dung được quy định chi tiết trong văn bản, với nền xanh lá cây, chữ trắng, vật liệu phản quang loại VIII, IX, XI cấu trúc kim cương. Các ký hiệu như k2=H2, k2'=H2' thể hiện mối quan hệ tỷ lệ hoặc trùng lặp giữa các đoạn chiều cao trong thiết kế.\"\n    }\n  ]\n}",
+  "generated_tokens": 390,
+  "elapsed_seconds": 6.249840000004042,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

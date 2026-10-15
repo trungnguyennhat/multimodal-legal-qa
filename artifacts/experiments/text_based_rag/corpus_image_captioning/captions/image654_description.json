@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:78473a1d3848bc1f4b799b8a7a2d3d3f0229e1b074b6729276ff3c6a7d64972e",
+  "filename": "image654.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa vạch chữ 'STOP' trên mặt đường theo quy định QCVN 41:2024/BGTVT, thuộc mục 9.5a – Vạch dạng chữ viết trên mặt đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch chữ 'STOP'\",\n      \"visual_or_geometric_features\": \"Chữ 'STOP' in hoa, màu trắng, nền xám (mô phỏng mặt đường), được vẽ dạng vạch kẻ trên mặt đường.\",\n      \"meaning_or_specification\": \"Sử dụng để báo hiệu lệnh dừng xe bắt buộc cho người điều khiển phương tiện tại các vị trí quy định; chiều cao chữ 3,0 m (đường cao tốc), 2,5 m (đường khác), hoặc 1,6 m (đô thị tốc độ thấp); bề rộng nét vẽ 12–18 cm; khoảng cách giữa các hàng chữ 1,0–1,5 m theo phương dọc đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 240,
+  "elapsed_seconds": 4.372887199999241,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

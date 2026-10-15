@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ceec0d285dd1dedc52f979db0108bc3846e083d6ab5ab62b02267dc19eee4514",
+  "filename": "image164.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.129 'Kiểm tra' theo QCVN 41:2024/BGTVT, dùng để báo nơi đặt trạm kiểm tra phương tiện.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.129\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có một thanh ngang màu đen ở giữa và dòng chữ 'KIỂM TRA' màu đen bên dưới thanh ngang.\",\n      \"meaning_or_specification\": \"Báo nơi đặt trạm kiểm tra; các loại phương tiện vận tải qua đó phải dừng lại để làm thủ tục kiểm tra, kiểm soát theo quy định.\"\n    }\n  ]\n}",
+  "generated_tokens": 179,
+  "elapsed_seconds": 3.025771499997063,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

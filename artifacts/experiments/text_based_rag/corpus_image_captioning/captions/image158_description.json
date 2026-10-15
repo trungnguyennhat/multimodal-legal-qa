@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:594bcc0452b64701481e69f967f3d0ebf2185133fb9e4ef637c48e420e31efff",
+  "filename": "image158.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển số DP.127a và DP.127b theo QCVN 41:2024/BGTVT, dùng để báo hiệu hết hiệu lực của biển ghép tốc độ tối đa cho phép.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số DP.127a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng; chia thành 3 cột dọc: cột trái (xe ô tô), cột giữa (xe ô tô + xe máy), cột phải (xe máy + xe đạp); mỗi cột có biển tròn cấm tốc độ 60, 50, 50 (đường chéo đỏ) và biểu tượng phương tiện tương ứng bên dưới.\",\n      \"meaning_or_specification\": \"Báo hiệu rằng từ biển này trở đi, các phương tiện được phép chạy với tốc độ tối đa đã quy định trong Luật Đường bộ và Luật Trật tự, an toàn giao thông đường bộ, kể từ khi hết hiệu lực của biển ghép số P.127b, P.127c.\"\n    },\n    {\n      \"identifier\": \"Biển số DP.127b\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng; gồm 3 mũi tên hướng lên trên, mỗi mũi tên kèm một biển tròn: 80 (không cấm), 60 (cấm - đường chéo đỏ), 50 (cấm - đường chéo đỏ).\",\n      \"meaning_or_specification\": \"Báo hiệu rằng từ biển này trở đi, hiệu lực của biển ghép tốc độ tối đa cho phép (P.127b, P.127c) đã hết; các xe được phép chạy với tốc độ tối đa theo quy định chung của Luật Đường bộ và Luật Trật tự, an toàn giao thông đường bộ.\"\n    }\n  ]\n}",
+  "generated_tokens": 446,
+  "elapsed_seconds": 7.050158800004283,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

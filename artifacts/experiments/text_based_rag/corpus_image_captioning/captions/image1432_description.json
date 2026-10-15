@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2124da28f26dd0f0f2bd401acd0c2f98202f852a6cae8499042252eee2ff4291",
+  "filename": "image1432.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn bắt đầu đường cao tốc phân làn đường có tốc độ khác nhau (mã IE.452) theo QCVN 41:2024/BGTVT, với các thông số kỹ thuật và biểu tượng rõ ràng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển IE.452\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh lá cây, chia thành hai phần: trên là hai vòng tròn (trái: trắng viền đỏ chữ đen '120'; phải: xanh lam chữ trắng '60'), dưới là hai mũi tên trắng hướng xuống.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn bắt đầu đường cao tốc phân làn đường có tốc độ khác nhau: làn trái tốc độ tối đa 120 km/h, làn phải tốc độ tối thiểu 60 km/h.\"\n    }\n  ]\n}",
+  "generated_tokens": 226,
+  "elapsed_seconds": 3.8057618999955594,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

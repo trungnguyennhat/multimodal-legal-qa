@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:539cfa60dc30ef294d25f9dfdcfa3184ec0388f2e15c7d94fee5d40d978199d2",
+  "filename": "image410.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số I.433a 'Nơi nghỉ mát' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn địa điểm nghỉ ngơi cho người tham gia giao thông.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.433a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng đen gồm hình cây thông và bàn ghế nhỏ bên dưới\",\n      \"meaning_or_specification\": \"Chỉ dẫn nơi nghỉ mát cho người tham gia giao thông, thường đặt tại các điểm dừng chân, khu nghỉ dưỡng hoặc trạm dừng nghỉ dọc đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 181,
+  "elapsed_seconds": 3.0270506000015303,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

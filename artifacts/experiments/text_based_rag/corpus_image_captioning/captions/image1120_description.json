@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9fdc8873edf07e7d9c4d526cd612f94b9fc99759e0b87c6606a855e389a8ac01",
+  "filename": "image1120.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo hiệu lệnh nhóm R.420 (Bắt đầu khu đông dân cư) và R.E,9a (Cấm đỗ xe theo giờ trong khu vực) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo bắt đầu khu đông dân cư (R.420)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, có khung viền, bên trong có chữ 'ZONE' và biểu tượng vòng tròn đỏ với đường chéo cắt ngang (biểu tượng cấm). Kích thước được ghi chú: chiều cao tổng 14,28z, chiều rộng 10z, các khoảng cách nội bộ như 1,62z, 1,38z, 0,88z, 0,92z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh bắt đầu khu đông dân cư, dùng để thông báo người tham gia giao thông rằng họ đang vào khu vực có quy định đặc biệt về tốc độ và đỗ xe. Kích thước được quy định theo hệ số z tùy thuộc vào loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biển báo cấm đỗ xe theo giờ trong khu vực (R.E,9a)\",\n      \"visual_or_geometric_features\": \"Hình tròn đỏ với đường chéo cắt ngang (biểu tượng cấm), được đặt trên nền lưới ô vuông để minh họa tỷ lệ. Kích thước đường kính vòng tròn được ghi chú là 7,8z, và kích thước ô lưới là 0,84z.\",\n      \"meaning_or_specification\": \"Biển báo cấm đỗ xe theo giờ trong khu vực, dùng để hạn chế việc đỗ xe trong một khoảng thời gian nhất định tại khu vực được quy định. Kích thước được quy định theo hệ số z tùy thuộc vào loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 483,
+  "elapsed_seconds": 8.417276599997422,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

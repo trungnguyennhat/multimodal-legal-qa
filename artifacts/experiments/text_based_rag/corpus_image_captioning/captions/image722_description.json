@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5752b7987b97804d230628410699b0048c717e198b9cd6ce148b2db651fdee43",
+  "filename": "image722.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm xe đạp (P.110a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm xe đạp (P.110a)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có biểu tượng xe đạp màu đen bị gạch chéo màu đỏ. Bản vẽ kèm lưới ô vuông để xác định kích thước và các kích thước kích thước chi tiết: 140mm (đường kính biển), 87,5mm (chiều cao biểu tượng xe đạp), 70mm (chiều rộng biểu tượng), 35mm (chiều cao đường chéo), 140mm (chiều cao tổng thể của vòng tròn cấm), 87,5mm (khoảng cách từ tâm đến mép biểu tượng), 70mm (khoảng cách giữa hai bánh xe), 35mm (chiều cao đường chéo), 140mm (chiều cao tổng thể của vòng tròn cấm), 87,5mm (khoảng cách từ tâm đến mép biểu tượng), 70mm (khoảng cách giữa hai bánh xe), 35mm (chiều cao đường chéo).\",\n      \"meaning_or_specification\": \"Biển báo P.110a: Cấm xe đạp. Kích thước z(mm) theo điều luật: 140 (đường cao tốc), 126 (đường đôi ngoài đô thị), 87,5 (đường thông thường), 70 (đường đô thị). Biểu tượng xe đạp được vẽ theo tỷ lệ chuẩn với các kích thước chi tiết như trên.\"\n    }\n  ]\n}",
+  "generated_tokens": 420,
+  "elapsed_seconds": 7.3126751000017975,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

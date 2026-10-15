@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c94947165b5e7f5b84a64f5930f87b21cfacdde4f6399be7cd4cabffa5469fbd",
+  "filename": "image144.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm vượt (P.125) theo QCVN 41:2024/BGTVT, với hình tròn đỏ viền trắng và hai xe cơ giới đối diện nhau bên trong.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.125\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có hai hình xe cơ giới (một đỏ, một đen) đối diện nhau, biểu thị hành động vượt nhau bị cấm.\",\n      \"meaning_or_specification\": \"Biển báo cấm tất cả các loại xe cơ giới vượt nhau (kể cả xe được ưu tiên), nhưng vẫn được phép vượt xe máy 2 bánh, xe gắn máy. Hiệu lực kết thúc khi có biển P.133 hoặc P.135.\"\n    }\n  ]\n}",
+  "generated_tokens": 210,
+  "elapsed_seconds": 3.5312684000018635,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

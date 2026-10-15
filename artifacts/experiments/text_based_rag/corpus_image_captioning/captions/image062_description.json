@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6dc4a1189469a01364e7bf589e48cff02c1ca24e1d4d9f602ef2119759b31f2f",
+  "filename": "image062.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn địa điểm và phương hướng (mã IE.464) trên nền xanh lá cây, dùng để chỉ dẫn địa danh nơi đến và mũi tên hướng cho một làn xe chạy cụ thể.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.464\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ và mũi tên màu trắng. Biển bao gồm hai phần: bên trái là biểu tượng máy bay và tên địa điểm 'TÂN SƠN NHẤT' (TP. HCM); bên phải là tên địa điểm 'TT. BẾN LỰC' và 'TT. ĐỨC HÒA' kèm theo mũi tên chỉ hướng rẽ phải.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn địa điểm và phương hướng dùng để chỉ dẫn địa danh nơi đến và mũi tên chỉ xuống làn xe chạy cụ thể. Biển được bố trí trên giá long môn trước khu vực lối ra. Mũi tên xiên lên trên chỉ hướng có hiệu lực đến một địa điểm nào đó.\"\n    }\n  ]\n}",
+  "generated_tokens": 258,
+  "elapsed_seconds": 5.873704199999338,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

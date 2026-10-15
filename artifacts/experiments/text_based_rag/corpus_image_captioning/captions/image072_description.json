@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0d9e062b7c33c63c90837df7e46fccd8e69df7afbd8d5c9205336022d230fd71",
+  "filename": "image072.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh hiển thị biển báo IE.471 cảnh báo người tham gia giao thông giữ khoảng cách an toàn khi lưu thông trên đường cao tốc.\", \"items\": [{\"identifier\": \"IE.471\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu vàng huỳnh quang, viền màu đen, chữ màu đen ghi nội dung 'GIỮ KHOẢNG CÁCH AN TOÀN' và 'Keep Safe Distance'.\", \"meaning_or_specification\": \"Biển báo này dùng để thông báo cho người điều khiển phương tiện biết cần giữ khoảng cách lái xe an toàn khi lưu thông trên đường cao tốc.\"}]}",
+  "generated_tokens": 150,
+  "elapsed_seconds": 4.229116099995736,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

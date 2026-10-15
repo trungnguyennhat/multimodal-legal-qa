@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:da184fe1c3edc0c3b42850d7b1ba7f5d7d945d8e90a960e5d574fee841a1aebe",
+  "filename": "image254.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số W.230 'Gia súc' theo QCVN 41:2024/BGTVT, dùng để báo hiệu đoạn đường thường có gia súc qua đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.230\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng con bò đen ở giữa\",\n      \"meaning_or_specification\": \"Báo trước gần tới đoạn đường thường có gia súc thả rông hoặc lùa qua ngang đường, đường ở vùng đồng cỏ của nông trường chăn nuôi, vùng thảo nguyên...; người tham gia giao thông có trách nhiệm đi chậm, quan sát và dừng lại bảo đảm cho gia súc có thể qua đường không bị nguy hiểm.\"\n    }\n  ]\n}",
+  "generated_tokens": 200,
+  "elapsed_seconds": 3.333644700003788,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

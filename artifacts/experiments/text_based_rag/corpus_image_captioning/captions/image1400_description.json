@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c475d5afe7609e038ca2d580051f82ddc3f76b7d2c6d26091ee4b8c2fac0079b",
+  "filename": "image1400.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước mã hiệu đường bộ (cỡ chữ 33 cm) theo QCVN 41:2024/BGTVT, với các thông số chiều dài, chiều rộng, bán kính góc bo và khoảng cách căn giữa.\",\n  \"items\": [\n    {\n      \"identifier\": \"Mã hiệu đường bộ (cỡ chữ 33 cm)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có 4 góc bo (bán kính R2,5), kích thước tổng thể 120 x 55 đơn vị (theo tỷ lệ bản vẽ), chiều cao vùng nội dung chữ là 33 đơn vị, khoảng cách từ mép dưới đến chân chữ là 1 đơn vị, khoảng cách giữa các dòng chữ (nếu có) là 1 đơn vị, khoảng cách căn giữa 'a' được chỉ định ở hai bên dưới.\",\n      \"meaning_or_specification\": \"Theo Điều O của QCVN 41:2024/BGTVT, đây là kích thước chuẩn cho mã hiệu đường bộ cỡ chữ 33 cm, dùng để xác định hình học và bố trí nội dung trên biển báo phản quang, đảm bảo tính đồng bộ và dễ nhận diện.\"\n    }\n  ]\n}",
+  "generated_tokens": 297,
+  "elapsed_seconds": 4.89184980000573,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a8fa4c39a4dc52625a9be3d80bd8da001069338abc7c23d468821a9386ef28b6",
+  "filename": "image1426.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật đen trắng minh họa kích thước, khoảng cách và bố cục của biển chỉ dẫn lối vào đường cao tốc (mã IE.451a và IE.451b) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn lối vào đường cao tốc (IE.451a và IE.451b)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia làm hai phần ngang: phần trên có mã hiệu đường cao tốc (CT.01) và biểu tượng đường cao tốc; phần dưới ghi 'LỐI VÀO / ENTRANCE' và khoảng cách '500 m'. Bản vẽ kèm các ký hiệu kích thước: L (chiều rộng biển), W (chiều cao biển), a, b, c (khoảng cách căn giữa), k₁, k₁', k₂, k₂', h₁, h₂, H₁, H₂, H₂'.\",\n      \"meaning_or_specification\": \"Theo Điều P.2 của QCVN 41:2024/BGTVT, đây là biển chỉ dẫn lối vào đường cao tốc với mã IE.451a (có mã hiệu) và IE.451b (không có mã hiệu). Các thông số kỹ thuật được quy định chi tiết trong văn bản: ví dụ H₁=40 cm, k₁'=H₁'=30 cm, k₂=H₂=33 cm, k₂'=H₂'=25 cm, h₂=25 cm, và biểu tượng đường cao tốc kích thước 100x70 cm, mã hiệu nền vàng huỳnh quang chữ đen kích thước 55x120 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 423,
+  "elapsed_seconds": 6.754277899999579,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

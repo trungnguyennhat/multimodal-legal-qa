@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d7292122810976d2af15daf503b487052a18997f134280f515a0716b949af0b5",
+  "filename": "image018.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa các biểu tượng dịch vụ công cộng và giải trí được quy định tại Điều 46.7 của QCVN 41:2024/BGTVT, dùng để trình bày nội dung trên biển chỉ dẫn đường cao tốc.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn dịch vụ công cộng và giải trí (Hình 5)\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình chữ nhật có viền đen. Màu sắc: Nền trắng, hình vẽ đen (trừ biển bệnh viện có nền trắng, hình vẽ đỏ). Biểu tượng: 15 biểu tượng khác nhau.\",\n      \"meaning_or_specification\": \"Các biểu tượng này được sử dụng để trình bày nội dung của một số biển chỉ dẫn nhằm mục đích đưa thông tin ngắn gọn, dễ hiểu đến người tham gia giao thông. Về nguyên tắc, các biểu tượng được thể hiện trên nền màu trắng, hình vẽ màu đen và đường viền màu đen. Màu sắc của một số biểu tượng phải tuân thủ theo quy định tại Công ước Viên về báo hiệu đường bộ.\"\n    }\n  ]\n}",
+  "generated_tokens": 264,
+  "elapsed_seconds": 5.7867748999997275,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

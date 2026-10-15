@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d88df22360e774c431cfb33a047a4be031c1d8a02c02295f487296189f0db468",
+  "filename": "image048.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai biển chỉ dẫn địa điểm và phương hướng (IE.461a và IE.461b) theo quy chuẩn QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển số IE.461a\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ và biểu tượng màu trắng. Nội dung: Tên địa điểm 'SÂN BAY LONG THÀNH' và 'CLB GÔN LONG BÌNH' kèm biểu tượng máy bay và người chơi golf, cùng khoảng cách '750 m'.\", \"meaning_or_specification\": \"Chỉ dẫn khoảng cách và hướng đến khu dịch vụ công cộng, giải trí (sân bay, câu lạc bộ golf).\"}, {\"identifier\": \"Biển số IE.461b\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ và biểu tượng màu trắng. Nội dung: Tên địa điểm 'SÂN BAY LONG THÀNH' và 'CLB GÔN LONG BÌNH' kèm biểu tượng máy bay và người chơi golf, cùng mũi tên chỉ hướng rẽ phải.\", \"meaning_or_specification\": \"Chỉ dẫn hướng rẽ vào khu dịch vụ công cộng, giải trí (sân bay, câu lạc bộ golf).\"}]}",
+  "generated_tokens": 297,
+  "elapsed_seconds": 6.486845799998264,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

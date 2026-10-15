@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8763221c6e685b23b698bfc3e1d7651dd819662545abf96cc5f6b4013c1ebc61",
+  "filename": "image108.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm xe kéo rơ-moóc (P.108) theo QCVN 41:2024/BGTVT, với biểu tượng xe kéo rơ-moóc bị gạch chéo trong vòng tròn đỏ.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.108\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có dấu gạch chéo đỏ từ trên trái xuống dưới phải; bên trong là hình vẽ đen của xe kéo rơ-moóc (xe tải kéo rơ-moóc).\",\n      \"meaning_or_specification\": \"Biển báo cấm các loại xe cơ giới kéo theo rơ-moóc (kể cả xe máy, máy kéo, ô tô khách kéo rơ-moóc) đi lại, trừ loại ôtô sơ-mi rơ-moóc và các xe được ưu tiên (có kéo theo rơ-moóc) theo quy định.\"\n    }\n  ]\n}",
+  "generated_tokens": 240,
+  "elapsed_seconds": 3.9393106999996235,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

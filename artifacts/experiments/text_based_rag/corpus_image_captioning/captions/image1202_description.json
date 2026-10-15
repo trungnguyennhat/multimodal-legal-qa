@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:11c450725dab1a9ed8e3e459bb73350efa18bc4dc9bdafb809128950a2376562",
+  "filename": "image1202.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo I.405a (Đường cụt) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.405a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong có biểu tượng hình mũi tên chỉ hướng đường cụt (hình chữ L ngược). Các kích thước được ghi chú: chiều rộng biển 600mm, chiều cao biển 800mm, chiều cao phần biểu tượng 440mm, chiều rộng phần biểu tượng 360mm, chiều cao khung viền 40mm, chiều rộng khung viền 40mm.\",\n      \"meaning_or_specification\": \"Biển báo I.405a dùng để báo hiệu đường cụt. Kích thước biển phụ thuộc vào loại đường: 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường, 50mm cho đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 269,
+  "elapsed_seconds": 5.378694200000609,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

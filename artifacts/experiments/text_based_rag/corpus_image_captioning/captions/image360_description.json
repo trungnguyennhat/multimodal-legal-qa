@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2ea56b6c210375710a35bc897aba149e7c12d5a453da01fcfc4bcfa839711bf5",
+  "filename": "image360.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số I.409 'Chỗ quay xe' theo quy định tại Điều E.9 của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.409\",\n      \"visual_or_geometric_features\": \"Hình vuông, nền xanh dương, biểu tượng mũi tên trắng uốn cong 180 độ (chỉ dẫn quay đầu xe)\",\n      \"meaning_or_specification\": \"Chỉ dẫn vị trí được phép quay đầu xe; có thể đặt kèm biển S.502 'Khoảng cách đến đối tượng báo hiệu' bên dưới.\"\n    }\n  ]\n}",
+  "generated_tokens": 177,
+  "elapsed_seconds": 2.998508099997707,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

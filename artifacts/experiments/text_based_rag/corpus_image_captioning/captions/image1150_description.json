@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:935e8b617c0592dd70234978a509666fcb23185b09e0069f9e95115cec3612a5",
+  "filename": "image1150.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo chỉ dẫn thuộc nhóm biển chỉ dẫn (Điều M.4), cụ thể là biển số I.449 (Tên đường) hoặc tương tự, với các thông số kích thước được ghi rõ bằng ký hiệu 'a' và 'z'.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn (hình vuông)\",\n      \"visual_or_geometric_features\": \"Hình vuông, có khung viền, bên trong là nền màu xanh dương (trong bản vẽ kỹ thuật này được thể hiện bằng lưới ô vuông màu xanh dương), chứa ký hiệu chữ 'P' (có thể là ký hiệu tạm thời hoặc mã nội bộ trong bản vẽ này, nhưng theo điều luật thì biển I.449 là biển tên đường). Các kích thước được ghi chú: chiều rộng cạnh biển là 12a, chiều cao khung viền là 6a, chiều cao phần nền biển là 6a, chiều rộng phần viền trên cùng là 0,5a, chiều cao phần viền trên cùng là 0,5a, chiều rộng phần viền dưới cùng là 0,5a, chiều cao phần viền dưới cùng là 0,5a.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, đây là biển báo chỉ dẫn (nhóm I.4xx). Kích thước 'z' (chiều cao biển) phụ thuộc vào loại đường: 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường, 50mm cho đường đô thị. Trong bản vẽ này, 'a' là đơn vị tính toán để xác định kích thước thực tế của biển báo dựa trên loại đường và quy chuẩn kỹ thuật.\"\n    }\n  ]\n}",
+  "generated_tokens": 421,
+  "elapsed_seconds": 7.60587569999916,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

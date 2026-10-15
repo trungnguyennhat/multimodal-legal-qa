@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ec30a521adbbb2c67f19816dfc653fadcefd1bc688070cbf525cf46b055c7de4",
+  "filename": "image1146.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật quy định kích thước hình học của biển báo I.415 (Mũi tên chỉ hướng đi) theo QCVN 41:2024/BGTVT, với các thông số z(mm) thay đổi tùy loại đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển I.415: Mũi tên chỉ hướng đi\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong là mũi tên chỉ hướng đi (hình tam giác lớn với đuôi hình chữ nhật), được chia thành các ô lưới để minh họa tỷ lệ. Các kích thước được ghi bằng ký hiệu 'z' và các phần trăm của z (ví dụ: 0.1z, 0.2z, 0.3z, 1.5z, 2.0z, 10.5z, 2.2z).\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, biển I.415 dùng để chỉ hướng đi của xe. Kích thước chiều dài và chiều rộng của biển (ký hiệu z) phụ thuộc vào loại đường: 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường, và 50mm cho đường đô thị. Các tỷ lệ trong hình (0.1z, 0.2z, ...) xác định vị trí và kích thước tương đối của các thành phần hình học của biển so với tổng kích thước z.\"\n    }\n  ]\n}",
+  "generated_tokens": 366,
+  "elapsed_seconds": 6.7931520999991335,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

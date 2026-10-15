@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3c28a28ac562b8435610464dfadc36cbb85681ed6e78a2c5004544dd1d682e7e",
+  "filename": "image570.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch tim và vạch kênh hóa dòng xe) tại một nút giao lộ hoặc điểm phân luồng phức tạp.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch phân chia hai chiều xe chạy (vạch tim đường)\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song, gồm một vạch nét liền và một vạch nét đứt, màu vàng. Vạch nét đứt có các đoạn nét liền xen kẽ các đoạn nét đứt.\",\n      \"meaning_or_specification\": \"Đây là Vạch 1.4 (theo Điều G.1.1.d). Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn tiếp giáp vạch đứt được phép cắt qua để sử dụng làn ngược chiều; xe trên làn tiếp giáp vạch liền không được lấn làn hoặc đè lên vạch.\"\n    },\n    {\n      \"identifier\": \"Vạch kênh hóa dòng xe dạng gạch chéo\",\n      \"visual_or_geometric_features\": \"Các vạch liền nét màu vàng được vẽ song song, nghiêng một góc (thường là 45 độ hoặc 135 độ tùy quy ước vẽ) tạo thành các ô vuông/khối gạch chéo.\",\n      \"meaning_or_specification\": \"Đây là Vạch 4.1 (theo Điều G.1.4.a). Dùng để kênh hóa dòng xe, giới hạn các phần mặt đường không sử dụng cho xe chạy (ví dụ: đảo giao thông, khu vực tách nhập làn). Xe không được lấn vạch hoặc cắt qua trừ trường hợp khẩn cấp.\"\n    },\n    {\n      \"identifier\": \"Vạch xác định phạm vi kẻ vạch kênh hóa dòng xe\",\n      \"visual_or_geometric_features\": \"Vạch đơn liền nét màu vàng bao quanh khu vực gạch chéo.\",\n      \"meaning_or_specification\": \"Theo quy định tại Điều G.1.4.a, đây là vạch giới hạn phạm vi kẻ vạch kênh hóa dòng xe dạng gạch chéo, có bề rộng nét vẽ b = 20 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 458,
+  "elapsed_seconds": 10.591157499999099,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

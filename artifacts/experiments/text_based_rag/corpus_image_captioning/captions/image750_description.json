@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:86aea580a86bad6d69a6a34b9c49bd285043f4aa15bc1b3dcbe71681c324d439",
+  "filename": "image750.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo P.117 (Hạn chế chiều cao) và P.118 (Hạn chế chiều ngang xe) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển P.117: Hạn chế chiều cao\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có hình vẽ xe tải và số '14 m' ở giữa. Kích thước chiều cao biển được ghi là 140 mm, chiều rộng biển là 140 mm. Khoảng cách từ mép dưới biển đến mặt đường là 140 mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe vượt qua chiều cao quy định (14 m). Kích thước biển và khoảng cách lắp đặt tuân thủ theo bảng quy định cho biển P.117 trong điều luật.\"\n    },\n    {\n      \"identifier\": \"Biển P.118: Hạn chế chiều ngang xe\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có hình vẽ xe tải và số '14 m' ở giữa. Kích thước chiều cao biển được ghi là 140 mm, chiều rộng biển là 140 mm. Khoảng cách từ mép dưới biển đến mặt đường là 140 mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe vượt qua chiều ngang quy định (14 m). Kích thước biển và khoảng cách lắp đặt tuân thủ theo bảng quy định cho biển P.118 trong điều luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 401,
+  "elapsed_seconds": 7.048701899999287,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

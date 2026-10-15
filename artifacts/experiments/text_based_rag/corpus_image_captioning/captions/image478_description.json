@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:f2c9073840be7f9745d36ba5ae8a166c37e18faa18bc2d7a2ace563a5d559518",
+  "filename": "image478.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật đen trắng minh họa bố cục và vị trí tương đối của biển số S.506a và S.506b theo quy định trong QCVN 41:2024/BGTVT, Điều F.8.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số S.506a\",\n      \"visual_or_geometric_features\": \"Hình vuông chia thành 4 phần bằng nhau; phần dưới bên trái có hình chữ L ngược (góc cong), phần còn lại là các ô trống; ký hiệu 'a) Biển số S.506a' ở dưới hình\",\n      \"meaning_or_specification\": \"Biển được đặt bên dưới biển chỉ dẫn biển số I.401 trên đường ưu tiên để chỉ dẫn hướng đường ưu tiên ở ngã tư.\"\n    },\n    {\n      \"identifier\": \"Biển số S.506b\",\n      \"visual_or_geometric_features\": \"Hình vuông chia thành 4 phần bằng nhau; phần dưới bên phải có hình chữ L ngược (góc cong), phần còn lại là các ô trống; ký hiệu 'b) Biển số S.506b' ở dưới hình\",\n      \"meaning_or_specification\": \"Biển được đặt bên dưới biển số W.208 và biển số R.122 trên đường không ưu tiên để chỉ dẫn hướng đường ưu tiên ở ngã tư.\"\n    }\n  ]\n}",
+  "generated_tokens": 338,
+  "elapsed_seconds": 5.387518100003945,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

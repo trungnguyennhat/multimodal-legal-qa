@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:dfddf918c20cfbeba44c41ad492de115b2ea477338886fd0903c25ff2491679d",
+  "filename": "image1494.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học, khoảng cách và bố cục của biển chỉ dẫn khu tham quan du lịch (mã IE.459a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn khu tham quan du lịch (IE.459a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia làm hai phần ngang: phần trên có khung chữ nhật chứa tên khu du lịch và tên địa danh; phần dưới có mũi tên chỉ hướng. Các ký hiệu kích thước bao gồm: L (chiều rộng biển), W (chiều cao biển), H1 (chiều cao phần trên), 1000 (chiều cao phần dưới), 1800 (chiều rộng phần tên khu du lịch), 200 (khoảng cách mép biển đến khung tên), k1 (khoảng cách giữa khung tên và tên địa danh), a (khoảng cách từ mép biển đến khung tên), 630 (chiều cao phần dưới từ đáy biển đến đáy khung tên).\",\n      \"meaning_or_specification\": \"Quy định kích thước và bố cục của biển IE.459a theo Điều P.11 của QCVN 41:2024/BGTVT, với các thông số kỹ thuật cụ thể cho từng phần của biển để đảm bảo tính thống nhất và dễ nhận biết trong hệ thống báo hiệu đường bộ.\"\n    }\n  ]\n}",
+  "generated_tokens": 354,
+  "elapsed_seconds": 5.739126899999974,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

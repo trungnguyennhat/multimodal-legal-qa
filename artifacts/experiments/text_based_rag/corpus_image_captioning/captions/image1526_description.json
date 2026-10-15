@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a21c5c603ed60771cb2d51dd15c8855e1ba8024172a4ff6b9136d644c45bf4c8",
+  "filename": "image1526.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn tần số trên sóng Radio (IE.462) theo QCVN 41:2024/BGTVT, với nội dung 'THÔNG TIN GIAO THÔNG / TRAFFIC INFO / 91 MHz' và các thông số kích thước kỹ thuật được ghi chú.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.462\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có khung viền trắng mỏng; bên trong ghi rõ dòng chữ 'THÔNG TIN GIAO THÔNG', 'TRAFFIC INFO', và tần số '91 MHz'.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn tần số trên sóng Radio dùng để cung cấp thông tin liên lạc khẩn cấp hoặc điều phối giao thông qua tần số 91 MHz; các thông số k1, k2', H1, H2, L, W được quy định trong điều luật để đảm bảo chuẩn hóa thiết kế và lắp đặt.\"\n    }\n  ]\n}",
+  "generated_tokens": 254,
+  "elapsed_seconds": 4.163739299998269,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

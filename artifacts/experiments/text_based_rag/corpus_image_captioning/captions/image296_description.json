@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ac5a1003018a22327db9ddf1c72c0ae5686cb37cdac2e79517929604f3e49218",
+  "filename": "image296.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa 4 kiểu biển số R.301 (f, h, g, h) thuộc nhóm biển báo hiệu lệnh 'Hướng đi phải theo' theo QCVN 41:2024/BGTVT, với biểu tượng mũi tên chỉ hướng bắt buộc trên nền xanh dương.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số R.301f\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng; biểu tượng gồm mũi tên thẳng và mũi tên rẽ phải\",\n      \"meaning_or_specification\": \"Các xe chỉ được đi thẳng và rẽ phải\"\n    },\n    {\n      \"identifier\": \"Biển số R.301h\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng; biểu tượng gồm mũi tên rẽ trái và mũi tên rẽ phải\",\n      \"meaning_or_specification\": \"Các xe chỉ được rẽ trái và rẽ phải\"\n    },\n    {\n      \"identifier\": \"Biển số R.301g\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng; biểu tượng gồm mũi tên thẳng và mũi tên rẽ trái\",\n      \"meaning_or_specification\": \"Các xe chỉ được đi thẳng và rẽ trái\"\n    },\n    {\n      \"identifier\": \"Biển số R.301h (lặp lại trong hình)\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng; biểu tượng gồm mũi tên rẽ trái và mũi tên rẽ phải\",\n      \"meaning_or_specification\": \"Các xe chỉ được rẽ trái và rẽ phải\"\n    }\n  ]\n}",
+  "generated_tokens": 398,
+  "elapsed_seconds": 6.461430200004543,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

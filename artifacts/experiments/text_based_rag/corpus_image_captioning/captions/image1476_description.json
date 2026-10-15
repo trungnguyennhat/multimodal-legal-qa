@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:061d960a084eb69274917c40c3ee06977f07d0ac9a80cb0055771fa340b22b91",
+  "filename": "image1476.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng 'Nhà nghỉ' thuộc nhóm biển báo dịch vụ công cộng theo QCVN 41:2024/BGTVT, Điều P.9.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng Nhà nghỉ (Loại A và Loại B)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền dày, bên trong là hình vẽ một chiếc giường đơn với đầu giường và chân giường rõ ràng. Các kích thước được ký hiệu bằng chữ A, B, C, D, E trên bản vẽ.\",\n      \"meaning_or_specification\": \"Theo Điều 5 (Nhà nghỉ) của QCVN 41:2024/BGTVT, kích thước cho Loại A là: A=75,0 cm; B=2,0 cm; C=22,0 cm; D=31,0 cm; E=5,0 cm. Kích thước cho Loại B là: A=60,0 cm; B=1,5 cm; C=18,7 cm; D=22,6 cm; E=5,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 286,
+  "elapsed_seconds": 4.865037299998221,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

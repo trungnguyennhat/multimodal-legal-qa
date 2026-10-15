@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c2b168ee12d6b6623047b4137fc6d91292585b0dba37c5a22eff9c9542b5e2a4",
+  "filename": "image1338.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển số I.408a (Nơi đỗ xe một phần trên hè phố) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.408a: Nơi đỗ xe một phần trên hè phố\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong chia thành các ô lưới (grid). Nội dung gồm hai dòng chữ: '7:30-10:30' và '16:00-18:30'. Bản vẽ có các ký hiệu kích thước chi tiết như: chiều dài tổng thể 540mm, chiều rộng 400mm, chiều cao khung chữ 100mm, khoảng cách giữa các ô lưới, và các kích thước phụ như 50mm, 80mm, 100mm, 120mm, 140mm, 160mm, 180mm, 200mm, 220mm, 240mm, 260mm, 280mm, 300mm, 320mm, 340mm, 360mm, 380mm, 400mm, 420mm, 440mm, 460mm, 480mm, 500mm, 520mm, 540mm.\",\n      \"meaning_or_specification\": \"Biển báo này được sử dụng để chỉ dẫn nơi đỗ xe một phần trên hè phố, với thời gian cho phép đỗ xe là từ 7:30 đến 10:30 và từ 16:00 đến 18:30. Kích thước hình học của biển báo được quy định trong điều luật để đảm bảo tính đồng nhất và dễ nhận biết trên đường bộ.\"\n    }\n  ]\n}",
+  "generated_tokens": 470,
+  "elapsed_seconds": 8.45010110000294,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

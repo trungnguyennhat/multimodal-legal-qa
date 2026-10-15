@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:aa1e083d1ce3ac3fa2e5da6186bc20718de66cbb22d89bf05b271f4eb9211035",
+  "filename": "image1032.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo R.304 (Đường dành cho xe thô sơ) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.304: Đường dành cho xe thô sơ\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, viền trắng. Bên trong có biểu tượng ô tô (trên) và xe máy (dưới), cách nhau bởi đường ngang trắng. Kích thước tổng thể: chiều rộng 1260mm (chia thành 0,72 + 45,5 + 45,5 + 0,72 mm ở trên; 6,6 + 6,6 + 0,72 + 0,72 + 6,6 mm ở dưới), chiều cao 1260mm (chia thành 7,2 + 7,2 + 0,72 + 7,2 mm).\",\n      \"meaning_or_specification\": \"Biển báo này chỉ dành cho xe thô sơ (xe máy, xe đạp...) đi trên đường thông thường, đường đôi ngoài đô thị, đường cao tốc hoặc đường đô thị tùy loại đường. Kích thước z (chiều cao biển) được quy định trong điều luật: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 376,
+  "elapsed_seconds": 6.82480729999952,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

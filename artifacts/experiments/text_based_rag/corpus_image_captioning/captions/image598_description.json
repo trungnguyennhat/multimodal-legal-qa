@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:af87e6946002d1e8c8c460628b9306cfed7e35266875ed0a915f20a27f2a9d0b",
+  "filename": "image598.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa bố trí vạch dừng xe kết hợp với chữ STOP theo quy định QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch dừng xe (Vạch 7.1)\",\n      \"visual_or_geometric_features\": \"Vạch liền nét màu trắng, bề rộng 30 cm (theo kích thước 300 mm trên hình), kẻ ngang toàn bộ bề rộng đường.\",\n      \"meaning_or_specification\": \"Dùng để xác định vị trí dừng xe khi có tín hiệu đèn đỏ hoặc biển số R.122. Vạch này phải đặt sao cho lái xe dễ quan sát, và đỉnh chữ STOP cách mép vạch từ 2,0 m đến 3,0 m.\"\n    },\n    {\n      \"identifier\": \"Chữ STOP\",\n      \"visual_or_geometric_features\": \"Chữ in hoa màu trắng, được vẽ trên mặt đường.\",\n      \"meaning_or_specification\": \"Báo hiệu bổ sung cho vạch dừng xe. Đỉnh chữ STOP phải cách mép vạch dừng xe trong khoảng từ 2,0 m đến 3,0 m.\"\n    }\n  ]\n}",
+  "generated_tokens": 281,
+  "elapsed_seconds": 5.432668500005093,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

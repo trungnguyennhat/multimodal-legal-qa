@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6bff3bc44529e75e270ca198cf0176a9ee3c97dd19dc0fd025314e2b0c6296b7",
+  "filename": "image1450.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật chi tiết kích thước, bố cục và ký hiệu khoảng cách cho biển chỉ dẫn trạm dừng nghỉ có 4 dịch vụ (mã IE.456a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn trạm dừng nghỉ (mã IE.456a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với 3 vùng ngang: vùng trên (xanh lá, chữ trắng), vùng giữa (xanh lá, nền trắng cho 4 biểu tượng dịch vụ), vùng dưới (xanh lá, chữ '750 m'). Các ký hiệu kích thước: L (chiều rộng), W (chiều cao), a,b,c,d,e (khoảng cách căn giữa), k1, k2, H1, H2, h2, gt1, gt2.\",\n      \"meaning_or_specification\": \"Quy định kỹ thuật về kích thước, vị trí tương đối và khoảng cách giữa các thành phần của biển báo IE.456a theo QCVN 41:2024/BGTVT, bao gồm tên trạm, biểu tượng dịch vụ công cộng (nhiên liệu, ăn uống, vệ sinh, thông tin) và khoảng cách đến biển.\"\n    }\n  ]\n}",
+  "generated_tokens": 313,
+  "elapsed_seconds": 5.194013199994515,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

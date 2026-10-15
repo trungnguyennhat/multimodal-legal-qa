@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e63c7a0f42617faa1d0602a140477207da5fe851030c95f69eb07c9a221c7afa",
+  "filename": "image266.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số W.236 'Kết thúc đường đôi' theo quy định QCVN 41:2024/BGTVT, dùng để báo trước việc kết thúc đoạn đường hai chiều phân chia bằng dải phân cách cứng.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.236\",\n      \"visual_or_geometric_features\": \"Biển tam giác đều, viền đỏ, nền vàng, biểu tượng đen gồm hai mũi tên: một mũi tên hướng lên trên (chiều đi) và một mũi tên hướng xuống dưới (chiều về), biểu thị sự kết thúc của đường đôi.\",\n      \"meaning_or_specification\": \"Được đặt để báo trước sắp kết thúc đoạn đường có chiều đi và chiều về phân biệt bằng dải phân cách cứng; không đặt trên đường hai chiều chỉ phân chia bằng vạch sơn; trong nội thành, nội thị có thể không đặt biển này.\"\n    }\n  ]\n}",
+  "generated_tokens": 230,
+  "elapsed_seconds": 3.7628068000049097,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

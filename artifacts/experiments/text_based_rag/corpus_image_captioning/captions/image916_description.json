@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:abb9a7c69fadfacf2b43d7f0cbd7ccedcbf5571ddc040f1f89ec8ba67ceb713b",
+  "filename": "image916.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo nguy hiểm W.204 (Đường hai chiều) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.204: Đường hai chiều\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng đen hình hai mũi tên đối đầu (một hướng lên, một hướng xuống). Bản vẽ kèm các kích thước: chiều cao tam giác 1,07z; chiều rộng đáy 1,0z; khoảng cách từ đỉnh tam giác đến mép trên 0,71z; khoảng cách từ đáy tam giác đến mép dưới 0,84z; khoảng cách từ tâm hình tam giác đến mép trái/phải 0,58z; khoảng cách từ tâm hình tam giác đến mép trên/dưới 0,58z; khoảng cách từ tâm hình tam giác đến mép trái/phải của hình vuông bao quanh 0,58z; khoảng cách từ tâm hình tam giác đến mép trên/dưới của hình vuông bao quanh 0,58z; khoảng cách từ tâm hình tam giác đến mép trái/phải của hình vuông bao quanh 0,58z; khoảng cách từ tâm hình tam giác đến mép trên/dưới của hình vuông bao quanh 0,58z.\",\n      \"meaning_or_specification\": \"Biển báo này được sử dụng để cảnh báo người tham gia giao thông về đoạn đường hai chiều, nơi xe có thể đi ngược chiều nhau. Kích thước z (mm) phụ thuộc vào loại đường: 140mm cho đường cao tốc, 126mm cho đường đôi ngoài đô thị, 87,5mm cho đường thông thường và 70mm cho đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 443,
+  "elapsed_seconds": 7.875079099998402,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:93d56ec4a8457af68f77673f0a5229ccde522b90f244e837ef295e8f81f7d656",
+  "filename": "image140.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển báo cấm rẽ trái (P.123a) và cấm rẽ phải (P.123b) theo quy định QCVN 41:2024/BGTVT, điều B.23.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số P.123a\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có dấu chéo đỏ cắt ngang mũi tên đen chỉ hướng rẽ trái\",\n      \"meaning_or_specification\": \"Biển báo cấm xe cơ giới và thô sơ rẽ trái tại vị trí đường giao nhau, trừ xe ưu tiên theo quy định.\"\n    },\n    {\n      \"identifier\": \"Biển số P.123b\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có dấu chéo đỏ cắt ngang mũi tên đen chỉ hướng rẽ phải\",\n      \"meaning_or_specification\": \"Biển báo cấm xe cơ giới và thô sơ rẽ phải tại vị trí đường giao nhau, trừ xe ưu tiên theo quy định.\"\n    }\n  ]\n}",
+  "generated_tokens": 267,
+  "elapsed_seconds": 4.357783599996765,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

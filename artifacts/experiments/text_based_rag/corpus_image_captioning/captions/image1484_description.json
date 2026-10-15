@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b213962cade5b0a09e26a8a209d3f4496b68260018d54e52a96ebd1c4870f5dd",
+  "filename": "image1484.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo cảnh sát giao thông theo QCVN 41:2024/BGTVT, điều P.9 mục 9.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cảnh sát giao thông (mục 9)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có bo góc, với các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và mũi tên chỉ rõ chiều cao, chiều rộng, và các khoảng cách cụ thể.\",\n      \"meaning_or_specification\": \"Theo điều luật, đây là biển báo cảnh sát giao thông với hai loại kích thước: Loại B (A=60,0 cm; B=96,0 cm; C=2,5 cm; D=6,5 cm; E=5,0 cm) và Loại A (A=75,0 cm; B=120,0 cm; C=5,0 cm; D=7,7 cm; E=5,0 cm). Hình vẽ minh họa cấu trúc hình học và các thông số kỹ thuật cần tuân thủ khi sản xuất biển báo.\"\n    }\n  ]\n}",
+  "generated_tokens": 291,
+  "elapsed_seconds": 4.921953099998063,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4aaaeed6bf491c81c3f6a01547c8d2f17ebceb214561ac2d65d69f8f00b4fc86",
+  "filename": "image1560.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn số điện thoại khẩn cấp (IE.470) theo QCVN 41:2024/BGTVT, với nền xanh lá cây, chữ trắng và biểu tượng điện thoại SOS.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển IE.470 – Biển chỉ dẫn số điện thoại khẩn cấp\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh lá cây, viền trắng; chữ 'KHẨN CẤP' và 'EMERGENCY' màu trắng; biểu tượng điện thoại đen trên nền trắng; dòng chữ 'S.O.S' và số điện thoại mẫu '0904 XXX XXX' màu trắng.\",\n      \"meaning_or_specification\": \"Biển báo hiệu vị trí có số điện thoại khẩn cấp cho người tham gia giao thông hoặc người dân sử dụng trong tình huống khẩn cấp, tuân thủ quy định về màu sắc, vật liệu phản quang và kích thước ký tự theo QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 255,
+  "elapsed_seconds": 4.1847202999997535,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

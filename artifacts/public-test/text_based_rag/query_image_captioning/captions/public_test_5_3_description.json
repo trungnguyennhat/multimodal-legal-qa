@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:3c356f96525809fe54d02c584f62f6ba4549938b9a5e0097f0dab9e447bf5afc",
+  "filename": "public_test_5_3.jpg",
+  "description": "Hình ảnh có hai biển báo hình chữ nhật, nền xanh lá cây, chữ trắng.\n\nBiển bên trái có hình mũi tên chỉ lên trên, bên dưới là ba dòng chữ: \"LÀO CAI\", \"YÊN BÁI\", \"VIỆT TRÌ\", \"VĨNH YÊN\", kèm theo các khoảng cách tương ứng.\n\nBiển bên phải có hình mũi tên chỉ lên trên và sang phải, bên dưới là dòng chữ \"KCN BÌNH XUYÊN\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 110,
+  "size": [
+    600,
+    366
+  ],
+  "elapsed_seconds": 9.229295599994657,
+  "peak_vram_bytes": 7409951744,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024
+}

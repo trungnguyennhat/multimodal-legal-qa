@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5f82b47e1546414a1238b863e1fbcf81ac057691a5ce4b1177157aacd96b4aaa",
+  "filename": "image226.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo W.217 'Bến phà' theo QCVN 41:2024/BGTVT, dùng để báo trước sắp đến bến phà.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.217\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: chiếc xe ô tô đang di chuyển trên mặt nước với sóng biển phía dưới\",\n      \"meaning_or_specification\": \"Biển báo hiệu cảnh báo người tham gia giao thông sắp đến bến phà; người tham gia giao thông phải tuân theo nội quy bến phà.\"\n    }\n  ]\n}",
+  "generated_tokens": 175,
+  "elapsed_seconds": 3.016514199996891,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

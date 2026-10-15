@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e627e34afb4a423004aa9c55f28746fb4c74c39e9e6382b2a9d9c9747eb79742",
+  "filename": "image1428.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật chi tiết kích thước hình học và bố trí các thông số (k1, k2, H1, H2, L, W, a, b, c) cho biển chỉ dẫn lối vào đường cao tốc TP. HCM Trung Lương Expressway theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn lối vào đường cao tốc (IE.451a/b)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia làm 2 phần ngang: phần trên ghi 'TP. HCM TRUNG LƯƠNG EXPRESSWAY' với biểu tượng đường cao tốc; phần dưới ghi 'LỐI VÀO ENTRANCE'. Có các ký hiệu kích thước: L (chiều rộng), W (chiều cao), a (khoảng cách dọc), b (khoảng cách ngang), c (khoảng cách cạnh phải), k1, k2, H1, H2, k1', k2' (khoảng cách căn giữa các thành phần nội dung).\",\n      \"meaning_or_specification\": \"Quy định kỹ thuật về kích thước và vị trí tương đối của các thành phần trên biển báo, bao gồm: chiều rộng L, chiều cao W, khoảng cách căn giữa a, b, c; các khoảng cách nội dung k1, k2, H1, H2, k1', k2' được liên hệ với các thông số H1, H2 trong điều luật (ví dụ: k1' = H1', k2 = H2, k2' = H2').\"\n    }\n  ]\n}",
+  "generated_tokens": 372,
+  "elapsed_seconds": 6.012057100000675,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

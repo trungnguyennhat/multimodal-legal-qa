@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9189de5defd25a1f2b342f31b8d6025cd56cfdb7d224b6f56bc8a1127edc69a6",
+  "filename": "image1422.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn sơ đồ và khoảng cách đến nút giao với nhánh nối vào đường cao tốc, mã IE.450a, theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.450a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh lam, có biểu tượng đường cao tốc (trắng, xanh lá cây), ký hiệu đường tỉnh DT.830 (nền trắng, chữ đen), khung CT.01 (nền vàng huỳnh quang, chữ đen), mũi tên chỉ hướng rẽ phải và thẳng, cùng ghi chú '500 m' và 'Thay đổi'.\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn sơ đồ và khoảng cách đến nút giao với nhánh nối vào đường cao tốc, cung cấp thông tin về tuyến đường tỉnh DT.830, điểm thay đổi (CT.01), và hướng di chuyển đến TP. HCM Trung Lương.\"\n    }\n  ]\n}",
+  "generated_tokens": 256,
+  "elapsed_seconds": 4.277227699996729,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

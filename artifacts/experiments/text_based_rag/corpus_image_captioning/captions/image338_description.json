@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ad9a4bdc892298879a818823587324db611f82a42ce7c6092f8cd73fe2536c0e",
+  "filename": "image338.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số R.421 'Hết khu đông dân cư' theo QCVN 41:2024/BGTVT, dùng để báo hiệu kết thúc phạm vi áp dụng quy định giao thông trong khu đông dân cư.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.421\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, viền trắng, biểu tượng trắng gồm hình ảnh các tòa nhà và công trình đô thị (tượng trưng cho khu đông dân cư), có dấu gạch chéo đỏ cắt ngang toàn bộ biển.\",\n      \"meaning_or_specification\": \"Báo hiệu hết đoạn đường qua phạm vi khu đông dân cư; từ điểm này trở đi, các quy định đi đường áp dụng trong khu đông dân cư không còn hiệu lực.\"\n    }\n  ]\n}",
+  "generated_tokens": 210,
+  "elapsed_seconds": 3.508866800002579,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

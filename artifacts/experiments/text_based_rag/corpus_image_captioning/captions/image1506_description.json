@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:022833eb901288ab2fbd43446f5a0611f153244f7e5be489d7d5c47f30005a46",
+  "filename": "image1506.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo sân bay (cảng hàng không) theo QCVN 41:2024/BGTVT, với các thông số A, B, C, D, E được ghi rõ trên hình.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo sân bay (cảng hàng không)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có các góc bo tròn, bên trong có biểu tượng máy bay màu đen. Các kích thước được ký hiệu bằng chữ A, B, C, D, E và số liệu tương ứng với Loại A và Loại B theo điều luật.\",\n      \"meaning_or_specification\": \"Theo Điều P.13 của QCVN 41:2024/BGTVT, biển báo này dùng để chỉ khu vực sân bay hoặc cảng hàng không. Kích thước cụ thể: Loại A có A=75,0 cm; B=2,0 cm; C=6,2 cm; D=62,6 cm; E=5,0 cm; Loại B có A=60,0 cm; B=1,5 cm; C=5,0 cm; D=50,0 cm; E=5,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 307,
+  "elapsed_seconds": 5.136957999995502,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

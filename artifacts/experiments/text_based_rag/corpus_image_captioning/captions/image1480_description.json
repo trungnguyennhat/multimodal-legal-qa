@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e9630f015e46bd565816fee8872dbcdf84230f45200646646e8d1ba06366204b",
+  "filename": "image1480.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng 'Xăng dầu, nạp điện' thuộc nhóm biển báo dịch vụ công cộng theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng xăng dầu, nạp điện\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền dày, bên trong là hình khối đen biểu diễn trạm bơm xăng với vòi phun và dây dẫn; các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và mũi tên chỉ rõ chiều dài, chiều rộng và các phần tử cấu thành.\",\n      \"meaning_or_specification\": \"Theo Điều P.9 mục 7 của QCVN 41:2024/BGTVT, biểu tượng này có hai loại kích thước: Loại A (A=75,0 cm; B=2,0 cm; C=10,0 cm; D=55,0 cm; E=5,0 cm) và Loại B (A=60,0 cm; B=1,5 cm; C=7,5 cm; D=45,0 cm; E=5,0 cm), dùng để chỉ nơi cung cấp nhiên liệu hoặc dịch vụ nạp điện cho phương tiện.\"\n    }\n  ]\n}",
+  "generated_tokens": 316,
+  "elapsed_seconds": 5.299033299997973,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

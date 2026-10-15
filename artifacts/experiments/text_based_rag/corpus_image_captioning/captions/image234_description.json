@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c8c6f2a0773ee8c4f852f2c510a222fa8ae5dc5213f694839e6b8636447bd8e1",
+  "filename": "image234.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển báo giao thông W.221a và W.221b theo QCVN 41:2024/BGTVT, dùng để cảnh báo đoạn đường không bằng phẳng hoặc có gồ giảm tốc.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.221a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình hai đường cong lồi lõm (gập ghềnh)\",\n      \"meaning_or_specification\": \"Báo hiệu đoạn đường đang tốt nhưng sắp chuyển sang đoạn lồi lõm, gập ghềnh, ổ gà, lượn sóng; không đặt khi tốc độ dưới 50 km/h hoặc có vạch sơn giảm tốc.\"\n    },\n    {\n      \"identifier\": \"Biển số W.221b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình một gồ nổi đơn (gồ giảm tốc)\",\n      \"meaning_or_specification\": \"Báo hiệu đoạn đường có gồ giảm tốc hoặc vị trí tiếp giáp với đầu cầu, cống bị lún, võng; yêu cầu xe đi chậm trước khi qua.\"\n    }\n  ]\n}",
+  "generated_tokens": 308,
+  "elapsed_seconds": 4.970148799999151,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

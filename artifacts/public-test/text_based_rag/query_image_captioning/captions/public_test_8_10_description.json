@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:22f7ad20a234613d2e652a37bcede146f3bb5ea079000102607dfd62beeceb78",
+  "filename": "public_test_8_10.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh lá cây, có viền trắng. Trên biển có:\n\n- Một hình chữ nhật nhỏ màu vàng ở góc trên bên trái, chứa chữ \"CT.01\".\n- Dưới hình chữ nhật vàng là dòng chữ \"CAM LÂM\" và \"VĨNH HẢO\" xếp theo hàng ngang, dưới là chữ \"EXPRESSWAY\".\n- Một biểu tượng hình tháp cao tốc ở góc trên bên phải.\n- Dưới phần chữ là hai hình tròn: hình tròn bên trái có nền trắng, viền đỏ, chứa số \"90\"; hình tròn bên phải có nền xanh, viền trắng, chứa số \"60\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 151,
+  "size": [
+    800,
+    533
+  ],
+  "elapsed_seconds": 12.487161500001093,
+  "peak_vram_bytes": 7472565248,
+  "peak_reserved_bytes": 7610564608,
+  "gpu_free_bytes": 8258584576
+}

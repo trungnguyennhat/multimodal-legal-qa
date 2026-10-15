@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8d7844491ae58a892b4ae1676158b606935b003b939bb7a342fd60a78d9c2190",
+  "filename": "image1204.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo giao thông I.423a, I.423b, I.423c (Vị trí người đi bộ sang ngang / Điểm bắt đầu đường đi bộ) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.423a, I.423b, I.423c\",\n      \"visual_or_geometric_features\": \"Hình vuông có khung viền, bên trong là hình người đang bước đi trên nền có các vạch kẻ ngang (biểu thị đường đi bộ). Các kích thước được ghi chú: chiều rộng biển 1000mm, chiều cao biển 1000mm, chiều cao phần hình người 440mm, chiều cao phần nền 560mm, chiều rộng phần nền 1000mm, chiều cao khung viền 100mm.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, đây là các biển chỉ dẫn thuộc nhóm biển chỉ dẫn (Nhóm I), cụ thể là biển báo vị trí người đi bộ sang ngang (I.423a, I.423b) và điểm bắt đầu đường đi bộ (I.423c). Kích thước z (chiều cao hình vẽ) đối với đường đô thị là 50mm, nhưng bản vẽ này thể hiện kích thước tổng thể của biển (1000x1000mm) và tỷ lệ hình vẽ bên trong.\"\n    }\n  ]\n}",
+  "generated_tokens": 394,
+  "elapsed_seconds": 7.202111999999033,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

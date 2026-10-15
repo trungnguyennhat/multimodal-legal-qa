@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d6f9871248bf86a3fdb656cfa1686d69e3db39d9b94cc420089a559a5812b451",
+  "filename": "image1254.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo chỉ dẫn 'Chợ' (mã I.442) theo QCVN 41:2024/BGTVT, với các thông số chiều rộng, chiều cao và độ dày ký hiệu.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn 'Chợ' (I.442)\",\n      \"visual_or_geometric_features\": \"Hình vuông có lưới ô vuông, bên trong có tam giác vàng (biểu tượng chợ), chữ 'CHỢ - MARKET' màu trắng trên nền xanh dương. Các ký hiệu kích thước: 800 (chiều rộng), 720 (chiều cao), 100 (độ dày ký hiệu), 100 (khoảng cách từ mép biển đến biểu tượng), 100 (khoảng cách từ mép biển đến chữ).\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, biển số I.442 là biển báo chỉ dẫn địa điểm 'Chợ'. Kích thước hình học được quy định cho đường đôi ngoài đô thị, đường thông thường và đường đô thị với độ dày ký hiệu z lần lượt là 100mm, 75mm và 50mm. Hình ảnh minh họa kích thước cho đường đôi ngoài đô thị (z=100mm).\"\n    }\n  ]\n}",
+  "generated_tokens": 347,
+  "elapsed_seconds": 6.525268199999118,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

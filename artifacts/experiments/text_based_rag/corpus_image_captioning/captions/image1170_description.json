@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:f35d46663e0c17897bb137d682ea1ec77361770475cb86a1403c79426e64a212",
+  "filename": "image1170.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn địa điểm (nhóm biển I.444) với nhiều điểm đến và khoảng cách, kèm theo các ký hiệu kích thước kỹ thuật z và b.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.444 (Biển báo chỉ dẫn địa điểm)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, viền trắng, có các dòng chữ tên địa điểm (LANG SƠN, BỒNG MÔ, BẮC NINH, HẢI DƯƠNG, HẢI PHÒNG) kèm khoảng cách (km) và mũi tên chỉ hướng. Hình ảnh còn có các ký hiệu kích thước kỹ thuật: z (chiều cao từng phần), b (chiều rộng tổng thể).\",\n      \"meaning_or_specification\": \"Biển báo này thuộc nhóm biển chỉ dẫn địa điểm (I.444), dùng để chỉ dẫn các địa điểm cụ thể và khoảng cách đến chúng. Theo QCVN 41:2024/BGTVT, biển này có kích thước phụ thuộc vào loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị) với chiều cao z tương ứng 60mm, 80mm, 40mm và chiều rộng b được quy định theo tiêu chuẩn.\"\n    }\n  ]\n}",
+  "generated_tokens": 313,
+  "elapsed_seconds": 6.026446000003489,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

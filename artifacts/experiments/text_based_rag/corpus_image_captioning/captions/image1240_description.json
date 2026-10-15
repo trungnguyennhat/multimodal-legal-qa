@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8f987dd6f84bbc3b1ea58e7e6a3bd2a3d3a5f510497eb98659f360f692ab35b5",
+  "filename": "image1240.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo chỉ dẫn thuộc nhóm biển chỉ dẫn đường ưu tiên (I.401, I.402, I.405a, I.405b, I.405c) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn đường ưu tiên (I.401, I.402, I.405a, I.405b, I.405c)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, có khung viền và lưới ô vuông bên trong. Các thông số kích thước được ghi chú bằng số và mũi tên: chiều rộng tổng cộng 1800mm, chiều cao tổng cộng 1200mm, chiều cao phần chữ 'CSGT' là 400mm, chiều cao phần chữ 'POLICE' là 400mm, chiều rộng mỗi phần ngang là 400mm, chiều cao phần trên cùng là 100mm, chiều cao phần dưới cùng là 100mm.\",\n      \"meaning_or_specification\": \"Đây là bản vẽ kỹ thuật quy định kích thước hình học của biển báo chỉ dẫn đường ưu tiên (I.401, I.402, I.405a, I.405b, I.405c) theo QCVN 41:2024/BGTVT. Kích thước được quy định cụ thể cho từng loại đường: đường đôi ngoài đô thị, đường thông thường và đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 400,
+  "elapsed_seconds": 7.293250399998215,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

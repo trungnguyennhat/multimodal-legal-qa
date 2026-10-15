@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5b393c91ddc96379765f78746c194a4f0a9d8cb5d6d50cdb99c2d6da6ab184e0",
+  "filename": "image1244.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo chỉ dẫn 'CẦU YÊN CHỈ' thuộc nhóm biển chỉ dẫn (Điều M.4, QCVN 41:2024/BGTVT), với các thông số chiều rộng, chiều cao và khoảng cách giữa các thành phần.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn 'CẦU YÊN CHỈ'\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong chia thành 3 ô ngang: ô trên ghi 'CẦU YÊN CHỈ', ô giữa ghi 'Km 02 + 00', ô dưới ghi '0,4'. Bản vẽ kèm các kích thước: chiều cao tổng 800mm, chiều rộng mỗi phần 740mm (tổng 1480mm), chiều cao mỗi phần 140mm, chiều rộng tổng 1480mm, khoảng cách giữa các phần 740mm.\",\n      \"meaning_or_specification\": \"Biển báo này thuộc nhóm biển chỉ dẫn, dùng để chỉ tên cầu và vị trí trên tuyến đường (km). Kích thước được quy định theo loại đường: đường đôi ngoài đô thị (z=100mm), đường thông thường (z=75mm), đường đô thị (z=50mm). Trong hình, các thông số như 800mm, 740mm, 140mm là kích thước thực tế cho một loại đường cụ thể (có thể là đường đôi ngoài đô thị hoặc đường thông thường tùy theo tiêu chuẩn áp dụng).\"\n    }\n  ]\n}",
+  "generated_tokens": 384,
+  "elapsed_seconds": 7.058601299999282,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

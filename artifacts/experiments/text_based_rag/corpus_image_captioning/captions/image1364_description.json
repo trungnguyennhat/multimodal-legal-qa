@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6f858f5a0e1ebb4d7c8ea1e445568c730417f9508e76e3eb64de4a7cc79cbcac",
+  "filename": "image1364.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo hiệu đường cao tốc với mã CT.06, thuộc nhóm biển báo hiệu đường cao tốc theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"CT.06\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu vàng, chữ màu đen, nội dung là mã hiệu đường cao tốc CT.06\",\n      \"meaning_or_specification\": \"Biển báo hiệu đường cao tốc, dùng để chỉ định mã hiệu của tuyến đường cao tốc cụ thể theo quy định trong QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 180,
+  "elapsed_seconds": 3.372787199994491,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

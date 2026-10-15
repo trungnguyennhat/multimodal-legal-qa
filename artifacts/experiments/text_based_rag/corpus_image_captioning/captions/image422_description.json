@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:cd6a1bf3261abe2c7fe4bebaecdb0da3c6cf062faf3e3b9dad55a9388d18729b",
+  "filename": "image422.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.436 'Trạm cảnh sát giao thông' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn vị trí trạm CSGT và yêu cầu phương tiện giảm tốc độ, không được vượt.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.436\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, chữ trắng: 'CSGT' ở phần trên, 'POLICE' ở phần dưới.\",\n      \"meaning_or_specification\": \"Chỉ dẫn nơi đặt trạm cảnh sát giao thông; các phương tiện phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này.\"\n    }\n  ]\n}",
+  "generated_tokens": 189,
+  "elapsed_seconds": 3.15938019999885,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

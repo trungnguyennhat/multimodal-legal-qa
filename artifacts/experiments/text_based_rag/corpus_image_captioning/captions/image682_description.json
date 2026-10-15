@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0bfb9517227a226c4f1dc68b16bcfd87fa3ec32f2cb20a38a7e95768d960621f",
+  "filename": "image682.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình K.2 trong QCVN 41:2024/BGTVT minh họa chi tiết các ký tự chữ in hoa và con số dạng chữ thường (gt2) dùng cho biển báo giao thông, với quy chuẩn về kích thước, khoảng cách và bố cục.\",\n  \"items\": [\n    {\n      \"identifier\": \"Chữ cái A-Z\",\n      \"visual_or_geometric_features\": \"Các ký tự chữ in hoa (A, B, C, ..., Z) được trình bày theo kiểu chữ thường (gt2), mỗi ký tự nằm trong khung hình chữ nhật riêng biệt, có tỷ lệ chiều cao và chiều rộng nhất quán, được sắp xếp theo hàng dọc và ngang.\",\n      \"meaning_or_specification\": \"Quy định hình dạng và kích thước chuẩn của các chữ cái in hoa dùng trên biển báo giao thông theo QCVN 41:2024/BGTVT, đảm bảo tính đồng nhất và dễ đọc.\"\n    },\n    {\n      \"identifier\": \"Con số 0-9\",\n      \"visual_or_geometric_features\": \"Các con số từ 0 đến 9 được trình bày theo kiểu chữ thường (gt2), mỗi số nằm trong khung hình chữ nhật riêng biệt, có tỷ lệ chiều cao và chiều rộng nhất quán, được sắp xếp theo hàng dọc và ngang.\",\n      \"meaning_or_specification\": \"Quy định hình dạng và kích thước chuẩn của các con số dùng trên biển báo giao thông theo QCVN 41:2024/BGTVT, đảm bảo tính đồng nhất và dễ đọc.\"\n    },\n    {\n      \"identifier\": \"Ký hiệu kích thước\",\n      \"visual_or_geometric_features\": \"Các đường kẻ và ký hiệu kích thước (ví dụ: chiều cao chữ, khoảng cách giữa các ký tự) được minh họa bằng các đường thẳng và số đo, giúp xác định chính xác các thông số kỹ thuật của từng ký tự.\",\n      \"meaning_or_specification\": \"Đảm bảo các ký tự chữ và số trên biển báo giao thông tuân thủ đúng quy chuẩn về kích thước và khoảng cách theo QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 495,
+  "elapsed_seconds": 7.688109599999734,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

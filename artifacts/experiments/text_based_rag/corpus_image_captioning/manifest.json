@@ -1,0 +1,111 @@
+{
+  "status": "COMPLETED",
+  "config": {
+    "model": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\huggingface\\Qwen3.5-9B-GGUF\\Qwen3.5-9B-Q4_K_M.gguf",
+    "projector": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\huggingface\\Qwen3.5-9B-GGUF\\mmproj-F16.gguf",
+    "prompt": "Bạn là chuyên gia số hóa quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ Việt Nam.\nNhiệm vụ: Kết hợp HÌNH ẢNH đính kèm và VĂN BẢN ĐIỀU LUẬT gốc để trích xuất mô tả chuẩn hóa phục vụ tìm kiếm văn bản.\n\nNội dung điều luật gốc:\n\"{law_article_text}\"\n\nBƯỚC 1 - PHÂN LOẠI HÌNH ẢNH (`image_category`):\nHãy xác định hình ảnh thuộc đúng 1 trong 3 loại sau:\n- \"SIGN_ILLUSTRATION\": Hình vẽ mẫu biển báo giao thông cụ thể (có màu sắc, biểu tượng giao thông bên trong).\n- \"TECHNICAL_DIAGRAM\": Bản vẽ kỹ thuật đen trắng quy định kích thước hình học, thông số ký hiệu, hoặc sơ đồ khoảng cách/chiều cao lắp đặt.\n- \"MARKING_AND_SIGNAL\": Hình vẽ vạch kẻ đường, đèn tín hiệu, cọc tiêu, rào chắn hoặc hiệu lệnh người điều khiển giao thông.\n\nBƯỚC 2 - QUY TẮC TRÍCH XUẤT THEO TỪNG LOẠI:\n1. Nếu là \"SIGN_ILLUSTRATION\":\n   - Sử dụng từ vựng chuẩn về Nhóm biển, Hình dạng  và Màu sắc.\n   - Nêu rõ mã biển (trích từ điều luật), hình vẽ biểu tượng bên trong và ý nghĩa.\n2. Nếu là \"TECHNICAL_DIAGRAM\":\n   - TUYỆT ĐỐI KHÔNG mô tả màu đen/trắng của nét vẽ kỹ thuật thành màu sắc của biển báo.\n   - Không coi các chữ cái ký hiệu kích thước là chữ in trên biển báo thực tế.\n   - Liệt kê các hình khối xuất hiện trong bản vẽ và giải thích ý nghĩa của từng ký hiệu kích thước/góc độ dựa trên văn bản điều luật đi kèm.\n3. Nếu là \"MARKING_AND_SIGNAL\":\n   - Mô tả hình thái vạch kẻ, tín hiệu đèn hoặc tư thế điều khiển giao thông và tác dụng pháp lý.\n\nHãy trả về kết quả duy nhất dưới định dạng JSON theo cấu trúc sau:\n{\n  \"image_category\": \"SIGN_ILLUSTRATION | TECHNICAL_DIAGRAM | MARKING_AND_SIGNAL\",\n  \"summary\": \"Tóm tắt 1 câu về nội dung chính của hình ảnh trong ngữ cảnh điều luật\",\n  \"items\": [\n    {\n      \"identifier\": \"Mã biển (nếu là SIGN_ILLUSTRATION) hoặc Tên hình khối/đối tượng kỹ thuật\",\n      \"visual_or_geometric_features\": \"Nếu là biển báo cụ thể: ghi Hình dạng + Màu sắc + Biểu tượng. Nếu là bản vẽ kỹ thuật: ghi Hình dạng hình học + Các thông số/ký hiệu kích thước đi kèm trên hình\",\n      \"meaning_or_specification\": \"Ý nghĩa báo hiệu giao thông HOẶC quy định kỹ thuật của các thông số đó trong điều luật\"\n    }\n  ]\n}",
+    "max_new_tokens": 4096,
+    "temperature": 0,
+    "seed": 2025,
+    "enable_thinking": false,
+    "crop": false,
+    "context_size": 16384,
+    "input_fields": [
+      "image",
+      "law_article_text"
+    ],
+    "response_schema": {
+      "type": "object",
+      "required": [
+        "image_category",
+        "summary",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "image_category": {
+          "type": "string",
+          "enum": [
+            "SIGN_ILLUSTRATION",
+            "TECHNICAL_DIAGRAM",
+            "MARKING_AND_SIGNAL"
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "identifier",
+              "visual_or_geometric_features",
+              "meaning_or_specification"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "identifier": {
+                "type": "string"
+              },
+              "visual_or_geometric_features": {
+                "type": "string"
+              },
+              "meaning_or_specification": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "corpus_sha256": "cdba66644823b7acb1ae842749c10c008380818568ee77cb5e99945ed26eca97",
+    "images_sha256": "8fe8a82c985d8d41b8ed94021cbf46c49e22a858ccfaeef0e7437eab9160115e",
+    "libraries": {
+      "requests": "2.34.2"
+    },
+    "runtime": "llama.cpp-b11624-win-cuda-13.4"
+  },
+  "input": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\artifacts\\experiments\\text_based_rag\\data_preprocessing",
+  "started_at": "2026-10-14T22:51:52.283157+00:00",
+  "unique_images": 787,
+  "resources": {
+    "backend": "llama.cpp CUDA",
+    "gpu_layers": "all"
+  },
+  "captioned_images": 787,
+  "incomplete_images": [],
+  "elapsed_seconds": 6955.860171100001,
+  "original_status": "INCOMPLETE",
+  "accepted_by_user": true,
+  "accepted_at": "2026-10-15T10:28:16.923452+00:00",
+  "accepted_incomplete_captions": [
+    "image1018.jpg",
+    "image1026.jpg",
+    "image1050.jpg",
+    "image1134.jpg",
+    "image1142.jpg",
+    "image1152.jpg",
+    "image1154.jpg",
+    "image1158.jpg",
+    "image1160.jpg",
+    "image1178.jpg",
+    "image1180.jpg",
+    "image1220.jpg",
+    "image1274.jpg",
+    "image1434.jpg",
+    "image718.jpg",
+    "image756.jpg",
+    "image780.jpg",
+    "image818.jpg",
+    "image828.jpg",
+    "image858.jpg",
+    "image864.jpg",
+    "image870.jpg",
+    "image876.jpg",
+    "image888.jpg",
+    "image940.jpg",
+    "image942.jpg",
+    "image950.jpg"
+  ]
+}

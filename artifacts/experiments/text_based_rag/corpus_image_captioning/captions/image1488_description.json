@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5607e9c6d132796c98191707bc6ffdcc11d5f4d3fb09f2037a4ed56c343a447a",
+  "filename": "image1488.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng 'Nơi rửa xe' thuộc nhóm biển báo dịch vụ công cộng theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng 'Nơi rửa xe' (Điều 11)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong chứa hình ảnh một chiếc ô tô và vòi phun nước phía trên; các kích thước được ký hiệu bằng chữ A, B, C, D, E với đơn vị cm.\",\n      \"meaning_or_specification\": \"Theo Điều 11 của QCVN 41:2024/BGTVT, biểu tượng này dùng để chỉ nơi rửa xe. Kích thước cho loại A: A=75,0 cm; B=2,0 cm; C=5,5 cm; D=64,0 cm; E=5,0 cm. Kích thước cho loại B: A=60,0 cm; B=1,5 cm; C=3,0 cm; D=54,0 cm; E=5,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 287,
+  "elapsed_seconds": 4.885750100002042,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

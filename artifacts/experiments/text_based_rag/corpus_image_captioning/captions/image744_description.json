@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:12cf02fccc03acf830bb8557c50f938f5e7f3fe53967c73da74a8992f9edcca5",
+  "filename": "image744.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước và cách bố trí biển báo P.117 (Hạn chế chiều cao) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển P.117\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có chữ '3,5 m' ở giữa và hai mũi tên đen chỉ lên trên. Bản vẽ kèm lưới ô vuông để xác định kích thước, với các ký hiệu: 3,5 m (chiều cao hạn chế), 400 mm (chiều rộng biển), 140 mm (chiều cao biển), 126 mm (chiều cao phần chữ số), 87,5 mm (chiều cao phần mũi tên), 70 mm (chiều cao phần chữ '3,5'), 50 mm (chiều cao phần mũi tên nhỏ), 40 mm (chiều rộng phần mũi tên nhỏ), 30 mm (chiều rộng phần chữ '3,5'), 20 mm (chiều rộng phần mũi tên nhỏ), 10 mm (chiều rộng phần chữ '3,5'), 5 mm (chiều rộng phần mũi tên nhỏ).\",\n      \"meaning_or_specification\": \"Biển P.117: Hạn chế chiều cao. Chiều cao hạn chế là 3,5 m. Kích thước biển được quy định theo loại đường: Đường cao tốc (z=140mm), Đường đôi ngoài đô thị (z=126mm), Đường thông thường (z=87,5mm), Đường đô thị (z=70mm).\"\n    }\n  ]\n}",
+  "generated_tokens": 409,
+  "elapsed_seconds": 7.161259399996197,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

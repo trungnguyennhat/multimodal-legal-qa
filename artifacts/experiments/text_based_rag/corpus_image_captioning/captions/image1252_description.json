@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:da371a51b5571163952447e02c2670aeace4975c15dc27094869faa69fd356a9",
+  "filename": "image1252.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo I.440 (Đường đang thi công) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.440\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền lưới ô vuông (grid), bên trong nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng vùng màu hoặc ký hiệu đặc biệt), chứa các dòng chữ 'PHÍA TRƯỚC', 'AHEAD', '50 m', 'CÔNG TRƯỜNG', 'WORKS'. Các kích thước được ghi chú: chiều rộng 1000mm, chiều cao 600mm, và các khoảng cách từ mép biển đến các dòng chữ (ví dụ: 200mm, 100mm, 150mm, 100mm).\",\n      \"meaning_or_specification\": \"Biển báo I.440 dùng để báo hiệu cho người tham gia giao thông biết rằng phía trước có công trình đang thi công. Kích thước biển được quy định tùy theo loại đường: 100mm (đường đôi ngoài đô thị), 75mm (đường thông thường), 50mm (đường đô thị) – tuy nhiên, hình ảnh này minh họa cụ thể cho một kích thước mẫu (có thể là cho đường đôi ngoài đô thị hoặc kích thước tiêu chuẩn lớn nhất).\"\n    }\n  ]\n}",
+  "generated_tokens": 356,
+  "elapsed_seconds": 6.682999999997264,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

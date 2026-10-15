@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d2afba0d7568969cd61a4dc6a42e95f05ff2ed40764dd5a10a811c2798ff1ba0",
+  "filename": "image1014.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo giao thông thuộc nhóm biển hiệu lệnh (Điều M.3) và biển chỉ dẫn (Điều R.4xx, R.E.xx) trong QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo hình tròn\",\n      \"visual_or_geometric_features\": \"Hình tròn nằm trên nền lưới ô vuông, có số '60' ở giữa. Các ký hiệu kích thước bao gồm: z (chiều cao biển), 10z (chiều rộng biển), và các khoảng cách từ mép biển đến các điểm mốc trên lưới (0,5z, 1,5z, 2z, 2,5z).\",\n      \"meaning_or_specification\": \"Quy định về kích thước hình học của biển báo hình tròn (ví dụ: biển tốc độ tối đa hoặc biển giới hạn tốc độ) theo các loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với các giá trị z tương ứng (140mm, 126mm, 87,5mm, 70mm). Các ký hiệu như 10z, 0,5z, 1,5z... dùng để xác định tỷ lệ kích thước và khoảng cách lắp đặt chuẩn.\"\n    }\n  ]\n}",
+  "generated_tokens": 337,
+  "elapsed_seconds": 6.230802099998982,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:91f5bf3797803a0a5a5b62b984aa65ba0b22b5a5614f699e375af86506c0da71",
+  "filename": "image772.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm xe ôtô (P.103a) và biển báo cấm xe ôtô rẽ phải (P.103b) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm xe ôtô (P.103a)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có hình chữ nhật đỏ (biểu tượng cấm), kèm hình vẽ xe ôtô đen trắng ở giữa. Kích thước được ghi chú: đường kính ngoài 140mm, chiều cao hình chữ nhật đỏ 87,5mm, chiều rộng 87,5mm, khoảng cách từ mép trong hình chữ nhật đỏ đến mép trong hình tròn là 56mm.\",\n      \"meaning_or_specification\": \"Biển báo P.103a: Cấm xe ôtô. Kích thước z (chiều cao hình chữ nhật đỏ) phụ thuộc loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị). Hình ảnh minh họa cho trường hợp z = 87,5mm.\"\n    },\n    {\n      \"identifier\": \"Biển báo cấm xe ôtô rẽ phải (P.103b)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có hình chữ nhật đỏ (biểu tượng cấm) kèm mũi tên chỉ hướng rẽ phải. Kích thước được ghi chú: đường kính ngoài 140mm, chiều cao hình chữ nhật đỏ 87,5mm, chiều rộng 87,5mm, khoảng cách từ mép trong hình chữ nhật đỏ đến mép trong hình tròn là 56mm.\",\n      \"meaning_or_specification\": \"Biển báo P.103b: Cấm xe ôtô rẽ phải. Kích thước z (chiều cao hình chữ nhật đỏ) phụ thuộc loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị). Hình ảnh minh họa cho trường hợp z = 87,5mm.\"\n    }\n  ]\n}",
+  "generated_tokens": 563,
+  "elapsed_seconds": 9.442026400000032,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:39e30743177cde5ee0c3c589916e19c54cb37596c0e9ec4b9263ebe18cd58dc3",
+  "filename": "image372.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biến thể của biển số I.417(a,b,c) theo QCVN 41:2024/BGTVT, dùng để chỉ hướng đường phải đi cho từng loại xe tại các điểm giao nhau có hạn chế.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.417a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, chữ và mũi tên trắng; nội dung: 'HÀ NỘI' (trên), 'Xe tải (trừ xe tải trọng 3,5 tấn)' (dưới), mũi tên hướng phải.\",\n      \"meaning_or_specification\": \"Chỉ dẫn xe tải (trừ xe tải trọng 3,5 tấn) phải đi theo hướng phải tại điểm giao nhau có hạn chế.\"\n    },\n    {\n      \"identifier\": \"Biển số I.417b\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, chữ và mũi tên trắng; nội dung: 'HÀ NỘI' (trên), 'Xe tải (trừ xe tải trọng 3,5 tấn)' (dưới), mũi tên hướng thẳng đứng lên trên.\",\n      \"meaning_or_specification\": \"Chỉ dẫn xe tải (trừ xe tải trọng 3,5 tấn) phải đi theo hướng thẳng đứng lên trên tại điểm giao nhau có hạn chế.\"\n    },\n    {\n      \"identifier\": \"Biển số I.417c\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, chữ và mũi tên trắng; nội dung: 'HÀ NỘI' (trên), 'Xe tải (trừ xe tải trọng 3,5 tấn)' (dưới), mũi tên hướng phải.\",\n      \"meaning_or_specification\": \"Chỉ dẫn xe tải (trừ xe tải trọng 3,5 tấn) phải đi theo hướng phải tại điểm giao nhau có hạn chế (giống I.417a nhưng được liệt kê riêng trong điều luật).\"\n    }\n  ]\n}",
+  "generated_tokens": 477,
+  "elapsed_seconds": 7.429018499999074,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

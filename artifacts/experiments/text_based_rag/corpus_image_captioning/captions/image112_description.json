@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9f6d90376fb63f90c070431fdb6c80d1c5cdf52648cfda7ec70ebf291c2d5fde",
+  "filename": "image112.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông P.109 'Cấm máy kéo' theo quy định QCVN 41:2024/BGTVT, dùng để báo hiệu cấm các loại máy kéo đi qua.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.109\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có đường chéo đỏ cắt ngang từ góc trên bên trái xuống góc dưới bên phải; bên trong là hình ảnh đen của một chiếc máy kéo (bánh hơi hoặc bánh xích).\",\n      \"meaning_or_specification\": \"Biển báo cấm các loại máy kéo, kể cả máy kéo bánh hơi và bánh xích, đi qua khu vực được đặt biển này.\"\n    }\n  ]\n}",
+  "generated_tokens": 192,
+  "elapsed_seconds": 3.2042768000028445,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

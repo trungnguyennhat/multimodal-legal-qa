@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d116888ab2c31e12e61c1ceed59dd885f1d7272999ccf7cacd9ca180062255a4",
+  "filename": "image178.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông P.136 'Cấm đi thẳng' theo quy định QCVN 41:2024/BGTVT, dùng để cấm tất cả các loại xe (trừ xe ưu tiên) đi thẳng qua nút giao.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.136\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng mũi tên đen hướng lên trên bị gạch chéo đỏ từ góc trên trái xuống góc dưới phải\",\n      \"meaning_or_specification\": \"Biển báo cấm tất cả các loại xe (trừ xe ưu tiên theo quy định) đi thẳng qua nút giao; được đặt ngay trước nút giao của đường cấm đi thẳng. Nếu có quy định cấm theo thời gian hoặc loại xe cụ thể, phải sử dụng biển báo phụ tương ứng.\"\n    }\n  ]\n}",
+  "generated_tokens": 217,
+  "elapsed_seconds": 3.5938022999980603,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

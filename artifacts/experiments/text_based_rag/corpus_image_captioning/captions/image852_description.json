@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:98952b75d97b3e43e0b1d3bb84787de954d75895477429fa3b3f755ad24187f7",
+  "filename": "image852.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo nguy hiểm W.201c (chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201c\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân có viền đỏ, nền vàng, biểu tượng đen ở giữa (xe hơi nghiêng sang phải). Bản vẽ kèm các kích thước: chiều cao tam giác 140z, chiều rộng đáy 140z, bán kính cong các cạnh 0,71z, 0,34z, 0,14z, 0,08z, 0,04z; góc nghiêng 60°; vị trí biểu tượng cách đáy 0,78z, cách đỉnh 0,78z; chiều rộng biểu tượng 0,78z, chiều cao biểu tượng 1,28z.\",\n      \"meaning_or_specification\": \"Biển báo nguy hiểm cảnh báo chỗ ngoặt có nguy cơ lật xe bên phải khi đường cong vòng sang trái. Kích thước z phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 363,
+  "elapsed_seconds": 6.6695137999995495,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

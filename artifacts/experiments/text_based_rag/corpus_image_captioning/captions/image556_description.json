@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c618aa3166b0adfdcc3247c633a30edda1a4a2803ec01b640a1b5c3d5fea849f",
+  "filename": "image556.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch tim) dạng vạch đôi gồm một vạch liền và một vạch đứt (Vạch 1.4) tại các vị trí đường cong nằm hoặc đường cong đứng để xác định vùng cấm vượt xe.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.4 (Vạch phân chia hai chiều xe chạy, dạng vạch đôi gồm một vạch nét liền, một vạch nét đứt)\",\n      \"visual_or_geometric_features\": \"Hình vẽ thể hiện hai loại vạch kẻ song song trên mặt đường: một vạch nét liền và một vạch nét đứt xen kẽ. Vạch liền nét nằm ở phía bên trong đường cong (phía có yêu cầu cấm vượt). Hình ảnh minh họa hai trường hợp: một bên là đường cong đứng (đường cong đứng) và một bên là đường cong nằm (đường cong nằm).\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn đường tiếp giáp với vạch đứt nét được phép cắt qua và sử dụng làn ngược chiều khi cần thiết; xe trên làn đường tiếp giáp với vạch liền nét không được lấn làn hoặc đè lên vạch. Vạch này được sử dụng trên đường có từ 2 làn xe trở lên, không có dải phân cách giữa, ở các đoạn cần thiết phải cấm xe sử dụng làn ngược chiều theo một hướng xe chạy nhất định để đảm bảo an toàn (vùng cấm vượt). Trong trường hợp này, nét sơn liền trong vạch 1.4 được vẽ về phía có yêu cầu cấm vượt.\"\n    }\n  ]\n}",
+  "generated_tokens": 360,
+  "elapsed_seconds": 9.066675300004135,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3c8978a14fa8b0f109e1101c4e98568973984d1b70f91a220223456a55364e71",
+  "filename": "image1408.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật quy định kích thước hình học của mã hiệu quốc lộ cỡ chữ 30 cm theo QCVN 41:2024/BGTVT, bao gồm chiều dài, chiều cao, bán kính góc bo và khoảng cách căn giữa.\",\n  \"items\": [\n    {\n      \"identifier\": \"Khung mã hiệu quốc lộ\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các kích thước được ghi chú: chiều dài 100 mm, chiều cao 50 mm, bán kính góc bo R2, và khoảng cách căn giữa 'a' ở hai bên dưới cùng.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học cho mã hiệu quốc lộ cỡ chữ 30 cm theo Điều O của QCVN 41:2024/BGTVT, dùng để xác định kích thước thực tế khi sản xuất biển báo.\"\n    }\n  ]\n}",
+  "generated_tokens": 225,
+  "elapsed_seconds": 3.838255400005437,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:72f249c349dbb6bfe7a139cd49162fb1d4a1102f106665d20e4e2df1ec7d0770",
+  "filename": "image224.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển báo W.216a và W.216b theo QCVN 41:2024/BGTVT, dùng để cảnh báo về đường ngầm và nguy cơ lũ quét.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.216a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình mặt cắt đường ngầm (hai đường song song với dòng nước chảy qua)\",\n      \"meaning_or_specification\": \"Dùng để báo trước những vị trí có đường ngầm (đường tràn); trường hợp đường ngầm thường xuyên có lũ quét thì dùng biển W.216b.\"\n    },\n    {\n      \"identifier\": \"Biển số W.216b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen gồm hình mặt cắt đường ngầm kèm dấu chấm than (!) ở giữa\",\n      \"meaning_or_specification\": \"Dùng để báo trước những vị trí có đường ngầm có nguy cơ lũ quét; khi cần thiết có thể đặt thêm biển phụ chữ “LŨ” bên dưới.\"\n    }\n  ]\n}",
+  "generated_tokens": 293,
+  "elapsed_seconds": 4.762016100001347,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

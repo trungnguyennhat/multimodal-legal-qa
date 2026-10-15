@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:653f9e06dae71e57c5c5cdb6cac2c36e25710609ff1d4e8ae0414f1ca5a32b37",
+  "filename": "image1006.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo giao thông R.301a (Các xe chỉ được đi thẳng) và R.301b (Các xe chỉ được rẽ phải) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.301a (Các xe chỉ được đi thẳng)\",\n      \"visual_or_geometric_features\": \"Hình tròn, có hai mũi tên trắng hướng xuống dưới và sang phải (mũi tên chính giữa và mũi tên bên phải). Bản vẽ kèm theo các kích thước: đường kính 1100mm, chiều rộng mũi tên 300mm, chiều cao mũi tên 300mm, góc mở của phần cung trên cùng là 90°, và khoảng cách từ tâm đến mép cung là 140mm.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được đi thẳng. Kích thước hình học được quy định trong điều luật cho các loại đường khác nhau (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biển báo R.301b (Các xe chỉ được rẽ phải)\",\n      \"visual_or_geometric_features\": \"Hình tròn, có hai mũi tên trắng hướng xuống dưới và sang phải (mũi tên chính giữa và mũi tên bên phải). Bản vẽ kèm theo các kích thước: đường kính 1100mm, chiều rộng mũi tên 300mm, chiều cao mũi tên 300mm, góc mở của phần cung trên cùng là 90°, và khoảng cách từ tâm đến mép cung là 140mm.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được rẽ phải. Kích thước hình học được quy định trong điều luật cho các loại đường khác nhau (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 483,
+  "elapsed_seconds": 8.425986000002013,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

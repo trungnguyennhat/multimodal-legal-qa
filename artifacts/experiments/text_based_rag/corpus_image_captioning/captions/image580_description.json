@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:27a3d1b105d9dde1ca8f4fff21bdab882695f5668368e0abe634658b21d87d3a",
+  "filename": "image580.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch tim) dạng vạch đôi gồm một vạch liền và một vạch đứt (Vạch 1.4) tại các vị trí giao cắt với đường nhánh hoặc điểm đặc biệt trên mặt đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.4 (Vạch phân chia hai chiều xe chạy, dạng vạch đôi gồm một vạch nét liền, một vạch nét đứt)\",\n      \"visual_or_geometric_features\": \"Hình vẽ thể hiện các đoạn vạch kẻ màu vàng trên mặt đường. Cụ thể là một vạch nét liền song song với một vạch nét đứt. Vạch nét đứt bao gồm các đoạn nét liền xen kẽ các đoạn nét đứt. Hình ảnh minh họa cho thấy cách bố trí các đoạn vạch này tại các vị trí giao cắt (giao lộ T) và điểm đặc biệt (giao lộ X).\",\n      \"meaning_or_specification\": \"Theo Điều G.1.4 của QCVN 41:2024/BGTVT, Vạch 1.4 dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn đường tiếp giáp với vạch đứt nét được phép cắt qua và sử dụng làn ngược chiều khi cần thiết; xe trên làn đường tiếp giáp với vạch liền nét không được lấn làn hoặc đè lên vạch. Quy cách: Vạch đôi song song, một vạch liền nét, một vạch đứt nét. Bề rộng nét vẽ của các vạch b = 15 cm; khoảng cách phía trong hai mép vạch đơn là 15 cm - 20 cm. Đối với vạch đứt nét, chiều dài đoạn nét liền L1 = (1 m - 3 m); chiều dài đoạn nét đứt L2 = (2 m - 6m); tỷ lệ L1/L2 = 1:2.\"\n    }\n  ]\n}",
+  "generated_tokens": 413,
+  "elapsed_seconds": 9.914968000004592,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

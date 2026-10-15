@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bf2b96134022f52e28297e354df152219fc734dde3d23764b9a983e4e90a071b",
+  "filename": "image424.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.437 'Đường cao tốc' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn bắt đầu đường cao tốc.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.437\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, biểu tượng trắng gồm hai dải đường song song mở rộng dần từ dưới lên trên, có một đường ngang cắt ngang ở phần trên cùng (biểu thị cầu vượt hoặc điểm bắt đầu)\",\n      \"meaning_or_specification\": \"Chỉ dẫn bắt đầu đường cao tốc; được đặt tại vị trí bắt đầu đoạn đường cao tốc theo quy định tại Điều E.40 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 208,
+  "elapsed_seconds": 3.436962100000528,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

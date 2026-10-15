@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e617f8270314be1fa8e439139de2f188b9aacb8a051b22549466a7dfd5987f1d",
+  "filename": "image444.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba loại biển số I.445a, I.445b và I.445c thuộc nhóm biển báo mô tả tình trạng đường theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.445a\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, đỉnh hướng lên trên; nền màu vàng, viền và chữ màu đen; biểu tượng: hình chiếc xe hơi đang trượt trên mặt đường trơn với dòng chữ 'ĐƯỜNG TRƠN CHẠY CHẬM'\",\n      \"meaning_or_specification\": \"Biển báo đường trơn phải chạy chậm – đặt trước đoạn đường bị trơn trượt khi trời mưa hoặc láng dầu, nhằm nhắc lái xe giảm tốc độ và tập trung quan sát.\"\n    },\n    {\n      \"identifier\": \"Biển số I.445b\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, đỉnh hướng lên trên; nền màu vàng, viền và chữ màu đen; biểu tượng: hình tam giác nghiêng biểu thị độ dốc kèm dòng chữ 'ĐƯỜNG DỐC CHẠY CHẬM'\",\n      \"meaning_or_specification\": \"Biển báo đường dốc phải đi chậm – đặt trước đoạn đường có độ dốc lớn và tầm nhìn hạn chế, yêu cầu lái xe cẩn thận và giảm tốc.\"\n    },\n    {\n      \"identifier\": \"Biển số I.445c\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, đỉnh hướng lên trên; nền màu vàng, viền và chữ màu đen; biểu tượng: hình đám mây sương mù kèm dòng chữ 'ĐƯỜNG SƯƠNG MÙ CHẠY CHẬM'\",\n      \"meaning_or_specification\": \"Biển báo đoạn đường sương mù, tầm nhìn hạn chế phải đi chậm – đặt trước đoạn đường nhiều sương mù, nhắc nhở lái xe tập trung quan sát và giảm tốc độ.\"\n    }\n  ]\n}",
+  "generated_tokens": 454,
+  "elapsed_seconds": 7.202345400000922,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bbd03e429d029d93beffa24e3fe727c8d5573293711d6901fb2d3f4aad9df09a",
+  "filename": "image170.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.132 'Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp' theo quy định QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.132\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có hai mũi tên: một mũi tên đen hướng xuống dưới và một mũi tên đỏ hướng lên trên, nằm song song nhau trong vòng tròn.\",\n      \"meaning_or_specification\": \"Báo hiệu các loại xe (cơ giới và thô sơ) kể cả xe được ưu tiên phải nhường đường cho xe cơ giới đang đi ngược chiều qua đoạn đường hoặc cầu hẹp khi thấy biển này; biển có hiệu lực khi đặt trên đoạn đường hẹp và có xe cơ giới đang tiến tới từ hướng ngược lại.\"\n    }\n  ]\n}",
+  "generated_tokens": 219,
+  "elapsed_seconds": 3.7017255000027944,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

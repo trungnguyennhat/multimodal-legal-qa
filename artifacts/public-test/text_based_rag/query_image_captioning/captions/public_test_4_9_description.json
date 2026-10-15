@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:f31484ec52c83eb177d175aa7e208a673691e445c8823ab74ee4d1145d97db94",
+  "filename": "public_test_4_9.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh lá cây, có viền trắng. Trên biển có:\n\n- Một hình chữ nhật nhỏ màu vàng chứa chữ \"CT.01\".\n- Dòng chữ \"TRUNG LƯỢNG\" ở trên, \"MỸ THUẬN\" ở giữa, \"EXPRESSWAY\" ở dưới.\n- Một biểu tượng hình chữ A bên trong khung hình chữ nhật nhỏ ở góc trên bên phải.\n- Biểu tượng vòng tròn đỏ chứa số \"80\".\n- Biểu tượng vòng tròn xanh chứa số \"60\".",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 123,
+  "size": [
+    870,
+    652
+  ],
+  "elapsed_seconds": 10.20986719999928,
+  "peak_vram_bytes": 7528059392,
+  "peak_reserved_bytes": 7562330112,
+  "gpu_free_bytes": 8306819072
+}

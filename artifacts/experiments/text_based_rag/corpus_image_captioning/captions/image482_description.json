@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:223874f51b4a366c8491a07388ca2a938862f612450cfafc86ccb958e6d9bdd1",
+  "filename": "image482.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biến thể của Biển số S.508 (a và b) dùng để biểu thị thời gian hiệu lực của biển báo cấm hoặc hiệu lệnh, với nội dung thời gian cụ thể bằng tiếng Việt.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số S.508a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen, chữ đen; nội dung: '7:30–10:30'\",\n      \"meaning_or_specification\": \"Biển số S.508a quy định thời gian hiệu lực của biển báo cấm hoặc hiệu lệnh trong khoảng từ 7 giờ 30 phút đến 10 giờ 30 phút trong ngày.\"\n    },\n    {\n      \"identifier\": \"Biển số S.508b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen, chữ đen; nội dung: '7:30–10:30' và '16:00–18:30' (hai dòng)\",\n      \"meaning_or_specification\": \"Biển số S.508b quy định thời gian hiệu lực của biển báo cấm hoặc hiệu lệnh trong hai khoảng thời gian: từ 7 giờ 30 phút đến 10 giờ 30 phút và từ 16 giờ đến 18 giờ 30 phút trong ngày.\"\n    }\n  ]\n}",
+  "generated_tokens": 343,
+  "elapsed_seconds": 5.434320400003344,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

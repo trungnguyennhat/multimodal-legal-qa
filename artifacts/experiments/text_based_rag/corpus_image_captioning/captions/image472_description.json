@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:15e79b25906b05394e29f9b3817dfb4b41213a36489b4e4e3644003ba773af5f",
+  "filename": "image472.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số S.505a với biểu tượng xe tải, dùng để chỉ loại xe chịu hiệu lực của biển báo cấm, hiệu lệnh hoặc chỉ dẫn.\",\n  \"items\": [\n    {\n      \"identifier\": \"S.505a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen, bên trong có hình vẽ đen của một chiếc xe tải (xe chở hàng).\",\n      \"meaning_or_specification\": \"Biển số S.505a được đặt bên dưới các biển báo cấm, biển hiệu lệnh hay biển chỉ dẫn để chỉ loại xe chịu hiệu lực của biển báo đó; hình vẽ xe tải biểu thị đây là biển dành cho loại xe tải.\"\n    }\n  ]\n}",
+  "generated_tokens": 187,
+  "elapsed_seconds": 3.1353263999990304,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

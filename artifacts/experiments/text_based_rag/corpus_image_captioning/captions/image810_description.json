@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2a49a0a8f6cbb310f045c503a38f5e5795f85fc0dcab458e8708517bc1081a60",
+  "filename": "image810.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm P.102 (Cấm đi ngược chiều) và P.103a (Cấm xe ôtô), kèm theo các thông số z(mm) theo loại đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.102 (Cấm đi ngược chiều)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có mũi tên đen chỉ lên trên bị gạch chéo đỏ. Bản vẽ kỹ thuật hiển thị kích thước đường kính biển (D), chiều cao mũi tên (h), và khoảng cách từ mép dưới biển đến mặt đường (z).\",\n      \"meaning_or_specification\": \"Biển báo cấm xe cơ giới đi ngược chiều. Kích thước z (khoảng cách lắp đặt) phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biển báo P.103a (Cấm xe ôtô)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có hình vẽ xe ôtô đen bị gạch chéo đỏ. Bản vẽ kỹ thuật hiển thị kích thước đường kính biển (D), chiều cao hình xe (h), và khoảng cách từ mép dưới biển đến mặt đường (z).\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô. Kích thước z (khoảng cách lắp đặt) phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 439,
+  "elapsed_seconds": 7.606339600002684,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:eeee24dcec4eba15fe155b9bcdbfff27428a563c596442f366db6d0f48a3e3ed",
+  "filename": "image1296.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn I.417a, I.417b, I.417c (Chỉ hướng đường phải đi cho từng loại xe) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.417a, I.417b, I.417c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật nằm ngang, chia thành hai phần: phần bên trái có biểu tượng xe buýt và xe tải (trên bản vẽ kỹ thuật là hình khối đơn giản), phần bên phải là khung chữ chứa nội dung 'XE LỚN ĐI SÁT VỀ BÊN PHẢI'. Bản vẽ kèm theo các kích thước chi tiết: chiều dài tổng 30,5z, chiều cao 12,5z, các khoảng cách nội bộ 11,5z, 20,5z, 0,5z, 1,5z, 10,3z, 3,5z, 3,0z, 3,2z, 3,3z.\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn cho biết hướng đi bắt buộc của các loại xe lớn (xe buýt, xe tải) phải sát về bên phải khi di chuyển trên đường. Kích thước z (mm) thay đổi tùy loại đường: 100 (đường đôi ngoài đô thị), 75 (đường thông thường), 50 (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 382,
+  "elapsed_seconds": 7.041072100000747,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

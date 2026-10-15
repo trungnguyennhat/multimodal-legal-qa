@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:321ea65effa23b276c9de3ff1c5fce4dd1acf74d8d3667f713ca12e3ff7bfb38",
+  "filename": "image884.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo nguy hiểm W.201c (chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201c\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, đỉnh hướng lên trên, có khung viền và nền màu đỏ (trong bản vẽ kỹ thuật thể hiện bằng các đường nét định hình tam giác), bên trong có biểu tượng xe tải đang nghiêng sang phải trên nền vàng (trong bản vẽ kỹ thuật thể hiện bằng hình khối đen trắng mô phỏng xe tải và nền tam giác). Các kích thước được ghi chú: chiều cao tam giác z = 140 mm (đường cao tốc), 126 mm (đường đôi ngoài đô thị), 87,5 mm (đường thông thường), 70 mm (đường đô thị); chiều rộng đáy tam giác 90,5 mm; các khoảng cách từ đỉnh tam giác đến các điểm mốc trên hình là 0,71z, 0,31z, 0,51z, 0,18z, 0,08z; chiều rộng phần biểu tượng xe tải là 3,8z và 2,5z; chiều cao phần biểu tượng xe tải là 1,08z; các khoảng cách ngang từ mép tam giác đến biểu tượng là 1,08z và 1,41z; chiều cao tổng thể của biểu tượng xe tải so với đáy tam giác là 1,70z; khoảng cách từ đỉnh tam giác đến đỉnh xe tải là 0,8z; khoảng cách từ đỉnh tam giác đến đáy xe tải là 1,12z.\",\n      \"meaning_or_specification\": \"Biển báo W.201c cảnh báo người tham gia giao thông về chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái. Kích thước z (chiều cao tam giác) được quy định tùy theo loại đường: 140 mm cho đường cao tốc, 126 mm cho đường đôi ngoài đô thị, 87,5 mm cho đường thông thường và 70 mm cho đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 551,
+  "elapsed_seconds": 9.45986019999691,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

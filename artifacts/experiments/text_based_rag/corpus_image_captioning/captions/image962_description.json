@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0ff7472ca05c8f8e3529207f3e1d58f4c6ed112c1911d8b290cd9134b13ac24b",
+  "filename": "image962.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo nguy hiểm W.203 (Đường bị thu hẹp cả hai bên) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.203: Đường bị thu hẹp cả hai bên\",\n      \"visual_or_geometric_features\": \"Hình khối chữ X (hai đường chéo cắt nhau) được vẽ trên nền lưới ô vuông, kèm các kích thước: chiều rộng tổng thể 104,5 mm, chiều cao tổng thể 127,5 mm, độ dày nét 0,85 mm, và các khoảng cách từ mép biển đến tâm hình X là 6,75 mm và 6,45 mm.\",\n      \"meaning_or_specification\": \"Theo Điều M.2 của QCVN 41:2024/BGTVT, biển W.203 dùng để cảnh báo đoạn đường bị thu hẹp cả hai bên. Kích thước z (độ dày nét) phụ thuộc vào loại đường: 90 mm (đường đôi ngoài đô thị), 82,5 mm (đường thông thường), 50 mm (đường đô thị). Hình vẽ này minh họa tỷ lệ và kích thước chuẩn cho biển W.203.\"\n    }\n  ]\n}",
+  "generated_tokens": 329,
+  "elapsed_seconds": 6.165539399997215,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

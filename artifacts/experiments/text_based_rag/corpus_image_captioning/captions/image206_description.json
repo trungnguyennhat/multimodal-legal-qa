@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:de3eb3d8af0e1381437f180a929aa351bb43932e7eed09176c8797a7d2a0b377",
+  "filename": "image206.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba kiểu biển số W.207 (a, b, c) thuộc nhóm 'Giao nhau với đường không ưu tiên (đường nhánh)' theo QCVN 41:2024/BGTVT, dùng để báo trước nơi giao nhau trên đường ưu tiên.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.207a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: mũi tên chỉ hướng trái và dấu cộng chéo (giao nhau với đường không ưu tiên)\",\n      \"meaning_or_specification\": \"Đặt trên đường ưu tiên để báo trước sắp đến nơi giao nhau với đường không ưu tiên; xe đi trên đường này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho xe ưu tiên theo quy định.\"\n    },\n    {\n      \"identifier\": \"Biển số W.207b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: mũi tên chỉ hướng phải và dấu cộng chéo (giao nhau với đường không ưu tiên)\",\n      \"meaning_or_specification\": \"Tương tự W.207a nhưng dành cho trường hợp giao nhau với đường không ưu tiên theo hướng phải; đặt trước nơi giao nhau ở ngoài phạm vi nội thành, nội thị.\"\n    },\n    {\n      \"identifier\": \"Biển số W.207c\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: mũi tên chỉ hướng phải và dấu cộng chéo (giao nhau với đường không ưu tiên)\",\n      \"meaning_or_specification\": \"Tương tự W.207b; được đặt trên tất cả các nhánh đường giao với đoạn đường ưu tiên (giữa biển I.401 và I.402) ở nơi giao nhau.\"\n    }\n  ]\n}",
+  "generated_tokens": 453,
+  "elapsed_seconds": 7.237162000004901,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:686b74f7a067d610c7746ef56da8c8fbc19904e4006f11510cbc72d7ab68b4af",
+  "filename": "image1430.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật chi tiết biển chỉ dẫn bắt đầu đường cao tốc phân làn có tốc độ khác nhau (IE.452), với các thông số kích thước và vị trí ký hiệu theo quy chuẩn QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn bắt đầu đường cao tốc (IE.452)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia làm hai phần: phần trên có khung chữ nhật chứa mã hiệu CT.01 (vàng), tên đường TP.HCM Trung Lương Expressway và biểu tượng đường cao tốc; phần dưới có hai vòng tròn (Ø100) thể hiện tốc độ tối đa 100 và tối thiểu 60. Các ký hiệu kích thước: a, b, c, k, k', L, W, H1, H1' được đánh dấu bằng nét đứt và mũi tên chỉ khoảng cách căn giữa, chiều rộng, chiều cao.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để chỉ dẫn bắt đầu đoạn đường cao tốc phân làn với tốc độ khác nhau. Các thông số kỹ thuật như a, b, c, k, k', L, W, H1, H1' quy định vị trí căn giữa, khoảng cách giữa các thành phần và kích thước tổng thể của biển theo tiêu chuẩn QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 346,
+  "elapsed_seconds": 5.546794600006251,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

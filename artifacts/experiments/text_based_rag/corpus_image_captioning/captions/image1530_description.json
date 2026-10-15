@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8245e49914747320200967ef07c700d9b226e022b4aac64512ba0486ce46ab51",
+  "filename": "image1530.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số ký hiệu cho biển chỉ dẫn công trình kiểm soát tải trọng xe (QCVN 41:2024/BGTVT, Điều P.15).\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn công trình kiểm soát tải trọng xe (IE.463a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia làm hai phần: phần trên có chữ 'CÔNG TRÌNH KSTTX / WEIGH STATION', phần dưới có mũi tên chỉ hướng lên phải. Bản vẽ kèm các ký hiệu kích thước: L (chiều rộng), W (chiều cao tổng), 1450 (chiều cao phần trên), 1050 (chiều cao phần dưới), k2, k2', H2, H2', h2 (các thông số chiều cao con), a (khoảng cách mép), 300 (khoảng cách dưới mũi tên).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học và vị trí các thành phần của biển IE.463a theo QCVN 41:2024/BGTVT, Điều P.15, với các thông số kỹ thuật cụ thể như chiều cao chữ, khoảng cách giữa các phần, và kích thước mũi tên chỉ hướng.\"\n    }\n  ]\n}",
+  "generated_tokens": 331,
+  "elapsed_seconds": 5.435852700000396,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

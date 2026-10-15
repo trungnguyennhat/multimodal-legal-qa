@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:707725f403ee27b1f9fbefe8874197e1f6ccfa52762e9f2f9a0e64319c416db1",
+  "filename": "image668.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật đen trắng minh họa hai loại cột kilômét (dạng cột thấp và dạng cột cao) với các kích thước, ký hiệu và bố trí chi tiết theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Hình I.1 - Cột kilômét dạng cột thấp\",\n      \"visual_or_geometric_features\": \"Hình vẽ kỹ thuật đen trắng gồm: biển hình chữ nhật (có nền đỏ bán nguyệt ở trên, chữ 'C.CHUI' và '11 km' bên trong), gắn trên cột trụ có chân đế; các kích thước được ghi bằng ký hiệu A, B, C, D, E, F, G, H, J (đơn vị mm).\",\n      \"meaning_or_specification\": \"Theo Điều I.4 của QCVN 41:2024/BGTVT, đây là cột kilômét dạng tấm hình chữ nhật đặt ở lề đường, dùng để chỉ lý trình trên đường cao tốc (nền xanh lá cây, viền trắng). Kích thước biển: chiều rộng 350 mm, chiều cao 700 mm hoặc 1000 mm tùy số lượng con số lý trình. Các ký hiệu A–J trong hình biểu thị các thông số kỹ thuật về vị trí lắp đặt, độ cao biển, khoảng cách từ mặt đất đến đáy biển, v.v.\"\n    },\n    {\n      \"identifier\": \"Hình I.2 - Cột kilômét dạng cột cao\",\n      \"visual_or_geometric_features\": \"Hình vẽ kỹ thuật đen trắng gồm: biển hình chữ nhật (có nền đỏ ở trên, chữ 'QL' và '5' bên trong), gắn trên cột trụ cao hơn với chân đế phức tạp hơn; các kích thước được ghi bằng ký hiệu A, B, C, D, E, F, G, H, J (đơn vị mm).\",\n      \"meaning_or_specification\": \"Theo Điều I.4 của QCVN 41:2024/BGTVT, đây là cột kilômét dạng cột cao, dùng cho các đường ô tô khác (nền xanh lam, viền trắng). Biển có kích thước tương tự nhưng được lắp đặt cao hơn để phù hợp với tầm nhìn trên đường. Các ký hiệu A–J biểu thị các thông số kỹ thuật về vị trí lắp đặt, độ cao biển, khoảng cách từ mặt đất đến đáy biển, v.v.\"\n    }\n  ]\n}",
+  "generated_tokens": 565,
+  "elapsed_seconds": 8.797608200002287,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

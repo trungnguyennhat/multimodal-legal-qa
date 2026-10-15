@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:185f075f24a150527848ae686a5a6cbdd21b80cd2d0251630c0bd1cea32c50fd",
+  "filename": "image1056.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo hiệu lệnh nhóm R.301 (các xe chỉ được đi thẳng, rẽ phải, rẽ trái, đi thẳng và rẽ phải, đi thẳng và rẽ trái, rẽ trái và rẽ phải) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.301a, R.301b, R.301c, R.301d, R.301e, R.301f, R.301h, R.301i\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng khối màu xanh), có biểu tượng xe máy và mũi tên chỉ hướng đi (thẳng, rẽ phải, rẽ trái, kết hợp). Kích thước chiều cao tổng thể: 1200mm (chia thành 800mm + 400mm), chiều rộng: 1200mm. Có các kích thước phụ: 0,2z, 0,1z, 0,3z, 0,2z ở phần khung viền và mũi tên. Bản vẽ bên phải minh họa tỷ lệ biểu tượng xe máy trên lưới ô vuông với các kích thước: 8z, 4z, 1z, 3z, 4z.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học và vị trí lắp đặt của biển báo hiệu lệnh cho phép các xe đi theo hướng nhất định (thẳng, rẽ phải, rẽ trái, hoặc kết hợp) trên các loại đường khác nhau (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z thay đổi theo từng loại đường (z = 140mm, 126mm, 87,5mm, 70mm).\"\n    }\n  ]\n}",
+  "generated_tokens": 466,
+  "elapsed_seconds": 8.15618440000253,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

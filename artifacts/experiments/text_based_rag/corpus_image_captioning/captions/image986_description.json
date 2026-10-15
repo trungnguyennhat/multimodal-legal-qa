@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2d3c96706db6faf226effcfd2e9046ac96f98cb68bfb2079973f85fe15e2b16a",
+  "filename": "image986.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số ký hiệu cho các biển báo hiệu lệnh thuộc nhóm biển chỉ dẫn và biển hiệu lệnh trong QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số R.301a: Các xe chỉ được đi thẳng\",\n      \"visual_or_geometric_features\": \"Hình tròn, đường viền và biểu tượng mũi tên chỉ hướng đi thẳng được vẽ bằng nét trắng trên nền xanh dương. Kích thước chiều cao của biển được chia thành các phần: 1,5z ở phần trên cùng, 1,5z ở phần giữa (nơi có mũi tên), và 6z ở phần dưới cùng. Tổng chiều cao của biển là 9z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được đi thẳng. Kích thước z (chiều cao của chữ hoặc hình vẽ) phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), và 70mm (đường đô thị). Chiều cao tổng thể của biển được tính theo tỷ lệ với z.\"\n    },\n    {\n      \"identifier\": \"Biển số R.301a: Các xe chỉ được đi thẳng (chi tiết kích thước)\",\n      \"visual_or_geometric_features\": \"Hình tròn, đường viền và biểu tượng mũi tên chỉ hướng đi thẳng được vẽ bằng nét trắng trên nền xanh dương. Kích thước chiều cao của biển được chia thành các phần: 1,5z ở phần trên cùng, 1,5z ở phần giữa (nơi có mũi tên), và 6z ở phần dưới cùng. Tổng chiều cao của biển là 9z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được đi thẳng. Kích thước z (chiều cao của chữ hoặc hình vẽ) phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), và 70mm (đường đô thị). Chiều cao tổng thể của biển được tính theo tỷ lệ với z.\"\n    }\n  ]\n}",
+  "generated_tokens": 541,
+  "elapsed_seconds": 9.37644989999535,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

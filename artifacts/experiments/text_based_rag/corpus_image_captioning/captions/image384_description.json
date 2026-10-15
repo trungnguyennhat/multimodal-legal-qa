@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b32c3e6ba66a437c34b245f51ed49cee40e41b2a732d48f97766161cb36582b4",
+  "filename": "image384.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biến thể của biển số I.423(a,b) 'Vị trí người đi bộ sang ngang' theo QCVN 41:2024/BGTVT, với biểu tượng người đi bộ trên nền xanh và viền trắng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.423a\",\n      \"visual_or_geometric_features\": \"Hình dạng: Tam giác cân, đỉnh hướng lên trên. Màu sắc: Nền xanh dương, viền trắng, biểu tượng người đi bộ màu trắng. Biểu tượng: Người đang bước chân sang ngang.\",\n      \"meaning_or_specification\": \"Chỉ dẫn vị trí dành cho người đi bộ sang ngang; người tham gia giao thông phải chạy chậm, quan sát và ưu tiên cho người đi bộ. Chiều người đi bộ trên biển phải hướng vào đường.\"\n    },\n    {\n      \"identifier\": \"Biển số I.423b\",\n      \"visual_or_geometric_features\": \"Hình dạng: Tam giác cân, đỉnh hướng lên trên. Màu sắc: Nền xanh dương, viền trắng, biểu tượng người đi bộ màu trắng. Biểu tượng: Người đang bước chân sang ngang (giống I.423a nhưng có thể khác chi tiết nhỏ như hướng chân hoặc tư thế).\",\n      \"meaning_or_specification\": \"Cùng chức năng với I.423a — chỉ dẫn vị trí sang ngang cho người đi bộ; được dùng độc lập hoặc phối hợp với vạch kẻ đường; người tham gia giao thông phải ưu tiên người đi bộ.\"\n    }\n  ]\n}",
+  "generated_tokens": 366,
+  "elapsed_seconds": 5.796728099994652,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

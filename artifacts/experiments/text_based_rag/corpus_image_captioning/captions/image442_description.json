@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ceaa242a2d534421d9723da845cb107ce83f7ea76b756208359934104b477c97",
+  "filename": "image442.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo chỉ dẫn trạm sửa chữa xe (biển số I.444m) theo QCVN 41:2024/BGTVT, với biểu tượng cờ lê và tua vít trên nền xanh dương, kèm chữ 'TRẠM SỬA CHỮA Ô TÔ' và 'Garage'.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.444m\",\n      \"visual_or_geometric_features\": \"Hình dạng: Biển hình chữ nhật ngang, nền màu xanh dương, viền trắng. Biểu tượng: Cờ lê và tua vít màu trắng ở bên trái. Văn bản: 'TRẠM SỬA CHỮA Ô TÔ' (dòng trên), 'Garage' (dòng dưới, nhỏ hơn) ở bên phải.\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn trạm sửa chữa xe (biển số I.444m) được đặt ở trước nơi đường giao nhau với đường vào trạm sửa chữa xe trong khu dịch vụ, nhằm chỉ dẫn cho người đi đường biết hướng đến địa điểm này.\"\n    }\n  ]\n}",
+  "generated_tokens": 272,
+  "elapsed_seconds": 4.551476799999364,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

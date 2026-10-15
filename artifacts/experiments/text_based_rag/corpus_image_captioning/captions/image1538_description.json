@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:84efb0d38bcc23cfeb18243f16eb4e47c4fb1ea0841a96db1e3405f934761321",
+  "filename": "image1538.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật đen trắng minh họa kích thước hình học và các thông số ký hiệu của biển chỉ dẫn địa điểm TP. Tân An, Long An theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn địa điểm (TP. TÂN AN LONG AN)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với mũi tên chỉ hướng bên phải; các ký hiệu kích thước: L (chiều rộng), W (chiều cao), k1 (khoảng cách từ mép biển đến cạnh chữ), H1 (chiều cao dòng chữ), góc 120° và kích thước mũi tên 250 x 65\",\n      \"meaning_or_specification\": \"Theo Điều P.16, biển số IE.464a: k1 = H1 = 40 cm; nền xanh lá cây, chữ trắng, phản quang loại VIII, IX, XI cấu trúc kim cương; mũi tên chỉ hướng; không mô tả màu sắc của nét vẽ kỹ thuật.\"\n    }\n  ]\n}",
+  "generated_tokens": 266,
+  "elapsed_seconds": 4.4203304999973625,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

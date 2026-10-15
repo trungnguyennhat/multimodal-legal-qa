@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:40491e398c34f15f4a304657eb657339ede893132f752018258f9640ff1cd186",
+  "filename": "image1108.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển hiệu lệnh nhóm R.301 (hướng đi) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển hiệu lệnh nhóm R.301 (Các xe chỉ được đi thẳng, rẽ phải, rẽ trái, đi thẳng và rẽ phải, đi thẳng và rẽ trái, rẽ trái và rẽ phải)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong là biểu tượng hình học mô tả các hướng đi (đi thẳng, rẽ phải, rẽ trái, kết hợp). Có các kích thước được ghi chú: chiều cao tổng thể 20z, chiều rộng tổng thể 24z, chiều rộng phần biểu tượng 22z, các khoảng cách từ mép biển đến biểu tượng là 1z, 0,2z, 0,1z, 0,2z, 0,1z, 0,2z, 27z, 12z, 5z.\",\n      \"meaning_or_specification\": \"Theo Điều M.3 của QCVN 41:2024/BGTVT, biển này thuộc nhóm hiệu lệnh, dùng để chỉ dẫn phương hướng đi bắt buộc cho các loại xe trên các loại đường khác nhau (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị). Kích thước z (mm) phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 409,
+  "elapsed_seconds": 7.325653899999452,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:db47ba1a47452707307af4cafdc69a4eba312d202abb8910a75721494188feb2",
+  "filename": "image336.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo hiệu bắt đầu khu đông dân cư (R.420) theo QCVN 41:2024/BGTVT, với biểu tượng hình ảnh các công trình kiến trúc đô thị.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.420\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình chữ nhật đứng. Màu sắc: Nền xanh dương, hình vẽ trắng. Biểu tượng: Hình ảnh các công trình kiến trúc (nhà cao tầng, nhà thấp tầng) tượng trưng cho khu đông dân cư.\",\n      \"meaning_or_specification\": \"Biển báo hiệu bắt đầu đoạn đường vào phạm vi khu đông dân cư, yêu cầu người tham gia giao thông tuân thủ các quy định đi đường áp dụng trong khu vực này.\"\n    }\n  ]\n}",
+  "generated_tokens": 204,
+  "elapsed_seconds": 3.5213254999980563,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:92f3abda6f55907a6976d46c7ad45789e0e135e3c8c2497a8c8349c0e9e93f3a",
+  "filename": "image184.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông P.139 'Cấm đi thẳng, rẽ phải' theo quy định QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.139\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có mũi tên đen chỉ hướng đi thẳng và rẽ phải, bị gạch chéo đỏ từ trên xuống dưới\",\n      \"meaning_or_specification\": \"Biển báo cấm tất cả các loại xe (trừ xe ưu tiên theo quy định) đi thẳng hoặc rẽ phải tại nút giao; biển được đặt ngay trước nút giao, có thể kèm biển báo phụ về thời gian hoặc loại xe cấm nếu có quy định.\"\n    }\n  ]\n}",
+  "generated_tokens": 195,
+  "elapsed_seconds": 3.271071600000141,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

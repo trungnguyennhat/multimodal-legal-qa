@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:76fd3878e05a87b946ba466be1507849e3706eaab3834e9201e6f0667aa10e94",
+  "filename": "image240.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.224 'Đường người đi bộ cắt ngang' theo quy định QCVN 41:2024/BGTVT, dùng để báo trước phần đường dành cho người đi bộ sang qua đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.224\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen là hình người đang bước qua vạch kẻ đường ngang.\",\n      \"meaning_or_specification\": \"Báo trước sắp tới phần đường dành cho người đi bộ sang qua đường; xe phải giảm tốc độ, nhường ưu tiên cho người đi bộ và chỉ được chạy khi không gây nguy hiểm cho người đi bộ.\"\n    }\n  ]\n}",
+  "generated_tokens": 193,
+  "elapsed_seconds": 3.280815400001302,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

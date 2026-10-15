@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:750962326005af2b97ddb0d320d63a0ceb601dc07dceaf74733063d5a70dcec9",
+  "filename": "image764.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm rẽ phải (P.103b) và biển báo cấm rẽ trái (P.103c) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm rẽ phải (P.103b)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có mũi tên đen chỉ hướng đi và bị vòng cong đỏ cắt ngang (ký hiệu cấm rẽ phải). Bản vẽ kèm các kích thước: đường kính biển 87,5 mm; chiều rộng mũi tên 10 mm; chiều dài mũi tên 20 mm; khoảng cách từ tâm biển đến đầu mũi tên 40 mm; khoảng cách từ tâm biển đến điểm bắt đầu vòng cấm 20 mm; chiều rộng vòng cấm 20 mm; chiều dài vòng cấm 20 mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô rẽ phải, được quy định tại Điều M.1, mục Biển số P.103b của QCVN 41:2024/BGTVT. Kích thước z = 87,5 mm áp dụng cho đường thông thường và đường đô thị.\"\n    },\n    {\n      \"identifier\": \"Biển báo cấm rẽ trái (P.103c)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có mũi tên đen chỉ hướng đi và bị vòng cong đỏ cắt ngang (ký hiệu cấm rẽ trái). Bản vẽ kèm các kích thước: đường kính biển 87,5 mm; chiều rộng mũi tên 10 mm; chiều dài mũi tên 20 mm; khoảng cách từ tâm biển đến đầu mũi tên 40 mm; khoảng cách từ tâm biển đến điểm bắt đầu vòng cấm 20 mm; chiều rộng vòng cấm 20 mm; chiều dài vòng cấm 20 mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô rẽ trái, được quy định tại Điều M.1, mục Biển số P.103c của QCVN 41:2024/BGTVT. Kích thước z = 87,5 mm áp dụng cho đường thông thường và đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 541,
+  "elapsed_seconds": 9.101196999996318,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

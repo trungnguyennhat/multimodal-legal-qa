@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:44d75317e2e24f113b52bc5cc37c5761077410c66b82dec592e2fd1d63df34af",
+  "filename": "image386.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.423c 'Điểm bắt đầu đường đi bộ' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn nơi bắt đầu đoạn đường dành cho người đi bộ.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.423c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng hai bóng đen người đi bộ đang bước đi trên nền trắng\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn điểm bắt đầu đoạn đường dành cho người đi bộ; không dùng cho vị trí đi bộ cắt ngang qua đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 178,
+  "elapsed_seconds": 3.02993919999426,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

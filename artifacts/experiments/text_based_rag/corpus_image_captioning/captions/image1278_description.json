@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0d20df96d33efccc23a6ad3155fb02f0b0bac84f6241ffa8ba48b9a33027f00c",
+  "filename": "image1278.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo chỉ dẫn I.436 (Trạm cảnh sát giao thông) với biểu tượng xe cảnh sát và chữ 'BẾN PHÀ Ferry', kèm bản vẽ kỹ thuật kích thước lưới.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.436: Trạm cảnh sát giao thông\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình chữ nhật với mũi tên chỉ hướng ở bên trái. Màu sắc: Nền xanh dương, chữ và biểu tượng màu trắng. Biểu tượng: Xe cảnh sát (ô tô có đèn báo hiệu) bên cạnh dòng chữ 'BẾN PHÀ Ferry'.\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn vị trí trạm cảnh sát giao thông hoặc bến phà (trong trường hợp này là bến phà được quản lý bởi CSGT). Theo QCVN 41:2024/BGTVT, biển I.436 thuộc nhóm biển chỉ dẫn, dùng để báo hiệu nơi có trạm cảnh sát giao thông hoặc các điểm dừng đặc biệt như bến phà.\"\n    },\n    {\n      \"identifier\": \"Bản vẽ kỹ thuật kích thước biển báo\",\n      \"visual_or_geometric_features\": \"Hình dạng: Bản vẽ lưới ô vuông (grid) với hình vẽ xe cảnh sát và các kích thước được ghi bằng số (ví dụ: 400, 300, 200, 100, 50, 25, 12,5 mm).\",\n      \"meaning_or_specification\": \"Bản vẽ này quy định kích thước chuẩn của biển báo I.436 theo điều luật QCVN 41:2024/BGTVT. Các thông số như chiều dài, chiều rộng, kích thước biểu tượng và chữ được xác định dựa trên loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z(mm) tương ứng là 100, 75, 50.\"\n    }\n  ]\n}",
+  "generated_tokens": 464,
+  "elapsed_seconds": 8.276504600005865,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

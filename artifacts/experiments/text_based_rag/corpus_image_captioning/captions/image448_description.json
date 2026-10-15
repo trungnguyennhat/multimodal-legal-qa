@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d5165a1ff94b88f4e7bc5e880d612d5778bbad75eab27a59527c108536d132b6",
+  "filename": "image448.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai loại biển báo I.445a và I.445b thuộc nhóm biển báo mô tả tình trạng đường, dùng để cảnh báo lái xe về điều kiện đường trơn hoặc đường dốc phải đi chậm.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.445a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, viền trắng, biểu tượng xe hơi đang trượt trên mặt đường trơn (có dấu mũi tên chỉ hướng trượt)\",\n      \"meaning_or_specification\": \"Biển báo đường trơn phải chạy chậm – đặt trước đoạn đường bị trơn trượt khi trời mưa hoặc láng dầu, nhằm nhắc lái xe giảm tốc độ và tập trung quan sát.\"\n    },\n    {\n      \"identifier\": \"Biển số I.445b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, viền trắng, biểu tượng xe hơi đang leo dốc với mũi tên chỉ hướng lên trên\",\n      \"meaning_or_specification\": \"Biển báo đường dốc phải đi chậm, lái xe phải cẩn thận – đặt trước đoạn đường có độ dốc lớn và tầm nhìn hạn chế, nhằm cảnh báo lái xe giảm tốc độ và đi sát bên phải.\"\n    }\n  ]\n}",
+  "generated_tokens": 299,
+  "elapsed_seconds": 4.948061900002358,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

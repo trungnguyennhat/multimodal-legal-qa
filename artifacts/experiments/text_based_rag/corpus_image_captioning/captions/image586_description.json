@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:de46cdce1bcaf4c415ca949c982e894b8d8e8495d97f2ee6a4f0e01c220a40ac",
+  "filename": "image586.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch tim) dạng vạch đôi gồm một vạch nét liền và một vạch nét đứt (Vạch 1.4) để phân chia hai chiều xe chạy ngược chiều.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.4 (Vạch phân chia hai chiều xe chạy)\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song, gồm một vạch nét liền và một vạch nét đứt xen kẽ. Bề rộng nét vẽ của các vạch là 15 cm. Khoảng cách phía trong hai mép vạch đơn là 15 cm - 20 cm. Đối với vạch đứt nét, chiều dài đoạn nét liền L1 là 1 m - 3 m; chiều dài đoạn nét đứt L2 là 2 m - 6 m; tỷ lệ L1/L2 = 1:2.\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn đường tiếp giáp với vạch đứt nét được phép cắt qua và sử dụng làn ngược chiều khi cần thiết; xe trên làn đường tiếp giáp với vạch liền nét không được lấn làn hoặc đè lên vạch. Vạch này được sử dụng trên đường có từ 2 làn xe trở lên, không có dải phân cách giữa, ở các đoạn cần thiết phải cấm xe sử dụng làn ngược chiều theo một hướng nhất định để đảm bảo an toàn.\"\n    }\n  ]\n}",
+  "generated_tokens": 331,
+  "elapsed_seconds": 8.608345100001316,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3540027e7ab5da1b068d9509609bedbf9ea09cf68fcb4c226ddc96ba26a721a3",
+  "filename": "image1284.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo chỉ dẫn I.427a (Trạm sửa chữa ô tô) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.427a: Trạm sửa chữa ô tô\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong chia thành hai phần: phần trái là hình tam giác hướng về phía trước (mũi tên), phần phải là hình chữ nhật chứa biểu tượng xe nâng và dòng chữ 'TRẠM SỬA CHỮA Ô TÔ Garage'. Bản vẽ có các ký hiệu kích thước: chiều dài tổng cộng 4000mm, chiều rộng 1000mm, chiều cao 800mm, chiều cao phần mũi tên 400mm, chiều cao phần chữ 400mm, và chiều cao khung viền 100mm.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, biển số I.427a dùng để chỉ dẫn vị trí trạm sửa chữa ô tô. Kích thước hình học được quy định trong bảng phụ lục của điều luật, với giá trị z (chiều cao khung viền) phụ thuộc vào loại đường: 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường, và 50mm cho đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 364,
+  "elapsed_seconds": 6.774988999997731,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

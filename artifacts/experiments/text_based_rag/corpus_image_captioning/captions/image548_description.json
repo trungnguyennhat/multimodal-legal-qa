@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6b34524d71dd1bfdeb6b476e3cea5ad663e4743ca769ffce88ba846adce13fd2",
+  "filename": "image548.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch tim) dạng vạch đôi, một vạch liền và một vạch đứt, được sử dụng để phân chia hai chiều xe chạy ngược chiều trong khu vực bề rộng phần xe chạy bị thu hẹp.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch phân chia hai chiều xe chạy (Vạch 1.4)\",\n      \"visual_or_geometric_features\": \"Hình vẽ thể hiện một đoạn đường có bề rộng phần xe chạy bị thu hẹp dần từ hai bên vào giữa. Vạch kẻ đường ở giữa là vạch đôi gồm một vạch nét liền và một vạch nét đứt màu vàng. Hình ảnh có các ký hiệu kích thước D, L, d và một mũi tên cảnh báo (biển W.203) ở đầu đoạn đường bị thu hẹp.\",\n      \"meaning_or_specification\": \"Đây là minh họa cho quy định về việc sử dụng vạch 1.4 (vạch đôi, một vạch liền, một vạch đứt) để phân chia hai chiều xe chạy trong khu vực bề rộng phần xe chạy bị thay đổi (thu hẹp). Vạch liền ngăn cản xe lấn làn, vạch đứt cho phép xe cắt qua khi cần thiết. Chiều dài đoạn biến đổi bề rộng mặt đường L được xác định theo công thức dựa trên tốc độ và chiều rộng giảm đi, đoạn d là đoạn kéo dài vạch ở điểm cuối cùng.\"\n    }\n  ]\n}",
+  "generated_tokens": 320,
+  "elapsed_seconds": 8.446758700003556,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

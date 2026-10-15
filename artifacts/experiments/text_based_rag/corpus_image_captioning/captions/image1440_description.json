@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d5fc9b3621e4290b511500474bb11b7f801edc346505c5b2ff9086853ab81b8a",
+  "filename": "image1440.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo IE.453a – Biển chỉ dẫn kết thúc đường cao tốc, với nền xanh lá cây, biểu tượng đường cao tốc màu trắng và vạch chéo đỏ cắt ngang.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.453a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh lá cây, hình vẽ biểu tượng đường cao tốc màu trắng (hai làn đường song song với mũi tên hướng lên), có một vạch chéo đỏ dày cắt từ góc dưới trái lên góc trên phải.\",\n      \"meaning_or_specification\": \"Biển báo hiệu sự kết thúc của đoạn đường cao tốc, yêu cầu người lái xe chuẩn bị chuyển sang điều kiện giao thông thường hoặc tuân thủ các biển báo tiếp theo.\"\n    }\n  ]\n}",
+  "generated_tokens": 200,
+  "elapsed_seconds": 3.500368900000467,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

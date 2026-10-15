@@ -1,5 +1,6 @@
-"""Retrieve five unique legal citations by cosine and evaluate on train labels."""
+"""Retrieve five unique citations from the law corpus and evaluate dev or public test."""
 
+import argparse
 from datetime import datetime, timezone
 from importlib.metadata import version
 import json
@@ -8,13 +9,13 @@ import time
 
 import numpy as np
 
-from multimodal_legal_rag.data import read_json_list
+from multimodal_legal_rag.data import DATA_FILES, DEFAULT_SOURCE, read_json_list
 from .corpus_embedding import file_hash
-from .image_captioning import ROOT, read_lines, save
+from .corpus_image_captioning import ROOT, read_lines, save
 
 BASE = ROOT / "artifacts/experiments/text_based_rag"
 OUTPUT = BASE / "query_retrieval"
-TRAIN = ROOT / "data/processed/splits/train.json"
+DEV = ROOT / "data/processed/splits/dev.json"
 TOP_K = 5
 
 
@@ -27,8 +28,20 @@ def scores(tp, predicted, relevant):
 
 
 def main():
-    if OUTPUT.exists():
-        raise FileExistsError("Output query_retrieval đã tồn tại. Tự lưu thư mục cũ sang nơi khác trước khi chạy lại.")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--split', choices=('dev', 'public_test'), default='dev')
+    parser.add_argument("--overwrite", action="store_true", help="Replace retrieval output files.")
+    args = parser.parse_args()
+    OUTPUT = ROOT / 'artifacts/public-test/text_based_rag' if args.split == 'public_test' else BASE / 'query_retrieval'
+    LABELS = DEFAULT_SOURCE / DATA_FILES['public_test'] if args.split == 'public_test' else DEV
+    query_folder = 'query_embedding' if args.split == 'public_test' else 'query_embedding_dev'
+    query_source = OUTPUT / query_folder if args.split == 'public_test' else BASE / query_folder
+    output_names = ('manifest.json', 'retrieval_results.jsonl', 'per_query_metrics.jsonl',
+                    'metrics.json', 'retrieval_preview.txt')
+    if args.split == 'public_test':
+        output_names += ('submission_task1.json',)
+    if any((OUTPUT / name).exists() for name in output_names) and not args.overwrite:
+        raise FileExistsError(f"Output retrieval tại {OUTPUT} đã tồn tại; dùng --overwrite để thay thế.")
     started, stopped = time.perf_counter(), Event()
     phase, done, total = "validate-input", 0, 0
     manifest = None
@@ -48,9 +61,9 @@ def main():
     report()
     try:
         inputs, hashes, manifests = {}, {}, {}
-        for folder, mapping_name, id_field in (("query_embedding_train", "queries.jsonl", "query_id"),
+        for folder, mapping_name, id_field in ((query_folder, "queries.jsonl", "query_id"),
                                                 ("corpus_embedding", "chunks.jsonl", "chunk_id")):
-            source = BASE / folder
+            source = query_source if folder == query_folder else BASE / folder
             meta = json.loads((source / "manifest.json").read_text(encoding="utf-8-sig"))
             if meta.get("status") != "COMPLETED":
                 raise ValueError(f"{folder} chưa COMPLETED.")
@@ -69,18 +82,18 @@ def main():
                     or any(m["vector_row"] != i for i, m in enumerate(mapping))):
                 raise ValueError(f"Vector hoặc ánh xạ hàng không hợp lệ: {folder}")
             inputs[folder], manifests[folder] = (mapping, vectors), meta
-        qm, cm = manifests["query_embedding_train"], manifests["corpus_embedding"]
+        qm, cm = manifests[query_folder], manifests["corpus_embedding"]
         for key in ("model", "revision", "model_files_sha256", "pooling", "normalize", "dimension",
                     "stored_dtype", "inference_dtype", "input_prefix"):
             if key not in qm or qm[key] != cm.get(key):
                 raise ValueError(f"Encoder query/corpus không khớp: {key}")
-        if qm.get("split") != "train" or qm["normalize"] != "L2":
-            raise ValueError("Cần vector train được chuẩn hóa L2.")
-        train_hash = file_hash(TRAIN)
-        if qm.get("input_sha256", {}).get("train.json") != train_hash:
-            raise ValueError("Train đã thay đổi sau embedding query; kiểm tra nguồn trước khi đánh giá.")
-        hashes["train.json"] = train_hash
-        queries, query_vectors = inputs["query_embedding_train"]
+        if qm.get("split") != args.split or qm["normalize"] != "L2":
+            raise ValueError("Cần vector đúng split được chuẩn hóa L2.")
+        label_hash = file_hash(LABELS)
+        if qm.get("input_sha256", {}).get(f"{args.split}.json") != label_hash:
+            raise ValueError("Dữ liệu đã thay đổi sau embedding query; kiểm tra nguồn trước khi đánh giá.")
+        hashes[f"{args.split}.json"] = label_hash
+        queries, query_vectors = inputs[query_folder]
         chunks, chunk_vectors = inputs["corpus_embedding"]
         total = len(queries)
         groups = {}
@@ -89,7 +102,7 @@ def main():
             groups.setdefault(citation, []).append(i)
         if len(groups) < TOP_K:
             raise ValueError("Corpus có ít hơn 5 điều khoản duy nhất.")
-        phase = "cosine-and-article-ranking"
+        phase = "dense-corpus-retrieval-inference-cpu"
         similarity = query_vectors @ chunk_vectors.T
         if not np.isfinite(similarity).all():
             raise ValueError("Điểm cosine không hợp lệ.")
@@ -112,11 +125,14 @@ def main():
             done += 1
         report()
         # Labels are read only after ranking; they never influence the scores or selected citations.
-        phase = "evaluate-train"
-        gold_rows = read_json_list(TRAIN)
+        phase, done = f"evaluate-{args.split}", 0
+        gold_rows = read_json_list(LABELS)
         gold = {r["id"]: r["relevant_articles"] for r in gold_rows}
         if len(gold) != len(gold_rows) or set(gold) != {q["query_id"] for q in queries}:
-            raise ValueError("ID nhãn train không khớp query.")
+            raise ValueError("ID nhãn không khớp query.")
+        image_ids = {r["id"]: r["image_id"] for r in gold_rows}
+        if any(image_ids[q["query_id"]] != q["source_image_id"] for q in queries):
+            raise ValueError("Image ID không khớp mapping query.")
         per_query, missing_gold = [], set()
         for result in results:
             relevant = {(str(r["law_id"]), str(r["article_id"])) for r in gold[result["query_id"]]}
@@ -130,7 +146,8 @@ def main():
                               **scores(tp, len(predicted), len(relevant)), "hit": int(tp > 0),
                               "gold_citations": [{"law_id": law, "article_id": article}
                                                  for law, article in sorted(relevant)]})
-        metrics = {"split": "train", "top_k": TOP_K, "queries": total,
+            done += 1
+        metrics = {"method": "dense_corpus_retrieval", "split": args.split, "top_k": TOP_K, "queries": total,
                    "macro": {key: sum(r[key] for r in per_query) / total
                              for key in ("precision", "recall", "f1", "f2")},
                    "micro": scores(sum(r["true_positives"] for r in per_query),
@@ -139,20 +156,30 @@ def main():
                    "hit_rate_at_5": sum(r["hit"] for r in per_query) / total,
                    "gold_citations_missing_from_index": [{"law_id": law, "article_id": article}
                                                          for law, article in sorted(missing_gold)]}
-        OUTPUT.mkdir(parents=True, exist_ok=False)
+        # Validate all inputs and predictions before replacing the authorized output files.
+        OUTPUT.mkdir(parents=True, exist_ok=True)
         manifest = {"status": "IN_PROGRESS", "created_at": datetime.now(timezone.utc).isoformat(),
-                    "split": "train", "queries": total, "chunks": len(chunks), "articles": len(groups),
+                    "method": "dense_corpus_retrieval", "split": args.split, "queries": total,
+                    "chunks": len(chunks), "articles": len(groups),
                     "top_k": TOP_K, "similarity": "cosine", "article_aggregation": "max_chunk_score",
                     "citation_key": ["law_id", "article_id"], "tie_break": "citation_lexicographic_then_chunk_row",
                     "input_sha256": hashes, "numpy_version": version("numpy"),
-                    "resources": {"device": "cpu", "similarity_matrix_bytes": similarity.nbytes}}
+                    "source_sha256": file_hash(ROOT / "src/text_based_rag/query_retrieval.py"),
+                    "query_encoder": qm, "corpus_encoder": cm, "overwrite": args.overwrite,
+                    "resources": {"device": "cpu", "similarity_matrix_bytes": similarity.nbytes,
+                                  "vector_bytes": query_vectors.nbytes + chunk_vectors.nbytes}}
         save(OUTPUT / "manifest.json", manifest)
         for name, records in (("retrieval_results.jsonl", results), ("per_query_metrics.jsonl", per_query)):
-            with (OUTPUT / name).open("x", encoding="utf-8") as stream:
+            with (OUTPUT / name).open("w" if args.overwrite else "x", encoding="utf-8") as stream:
                 for record in records:
                     stream.write(json.dumps(record, ensure_ascii=False) + "\n")
         save(OUTPUT / "metrics.json", metrics)
-        with (OUTPUT / "retrieval_preview.txt").open("x", encoding="utf-8") as stream:
+        if args.split == 'public_test':
+            save(OUTPUT / 'submission_task1.json', [
+                {'id': result['query_id'], 'relevant_articles': [
+                    {'law_id': hit['law_id'], 'article_id': hit['article_id']} for hit in result['results']]}
+                for result in results])
+        with (OUTPUT / "retrieval_preview.txt").open("w" if args.overwrite else "x", encoding="utf-8") as stream:
             for result, evaluation in zip(results, per_query):
                 stream.write(f"===== {result['query_id']} =====\n{result['query_text']}\n\n")
                 stream.write(f"Precision@5={evaluation['precision']:.4f}; Recall@5={evaluation['recall']:.4f}; "
@@ -162,9 +189,8 @@ def main():
                                  f"cosine={hit['score']:.6f} | {hit['title']}\n"
                                  f"{hit['best_chunk_id']}\n{hit['best_chunk_text']}\n\n")
         manifest.update(status="COMPLETED", elapsed_seconds=time.perf_counter() - started,
-                        output_sha256={name: file_hash(OUTPUT / name) for name in
-                                       ("retrieval_results.jsonl", "per_query_metrics.jsonl", "metrics.json",
-                                        "retrieval_preview.txt")})
+                        output_sha256={name: file_hash(OUTPUT / name) for name in output_names
+                                       if name != 'manifest.json'})
         save(OUTPUT / "manifest.json", manifest)
         report()
         print(f"[metrics@5] {json.dumps(metrics['macro'])}", flush=True)

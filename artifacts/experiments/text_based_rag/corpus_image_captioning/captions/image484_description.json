@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:af5a7fef558f517874b2c6465b8b64849c545f15122e6bd34c0d554168451300",
+  "filename": "image484.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển số S.509a và S.509b theo quy định tại Điều F.11 của QCVN 41:2024/BGTVT, dùng để bổ sung thông tin cho các biển báo khác.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số S.509a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, chữ trắng, nội dung: 'CHIỀU CAO AN TOÀN 5 m'\",\n      \"meaning_or_specification\": \"Được đặt bên dưới biển W.239 'Đường cáp điện ở phía trên' để chỉ rõ chiều cao tối đa cho phép các phương tiện đi qua an toàn.\"\n    },\n    {\n      \"identifier\": \"Biển số S.509b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, chữ trắng, nội dung: 'CẤM ĐỖ XE'\",\n      \"meaning_or_specification\": \"Được đặt bên dưới biển P.130, P.131 (a,b,c) để làm rõ thông tin cấm đỗ xe trong trường hợp cần thiết.\"\n    }\n  ]\n}",
+  "generated_tokens": 295,
+  "elapsed_seconds": 4.741301900001417,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

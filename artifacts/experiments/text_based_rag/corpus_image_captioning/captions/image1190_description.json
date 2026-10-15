@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9ffc841a4458e997106f5ebbe0c64a856a2f1f00271a5af09f517f723eddd92d",
+  "filename": "image1190.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước và bố cục của biển chỉ dẫn địa điểm (mã I.444) với nội dung 'VỊNH HA LONG BAY', bao gồm các thông số kích thước theo điều luật QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn địa điểm (mã I.444)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh dương, chữ trắng in hoa 'VỊNH HA LONG BAY' được chia thành 3 dòng. Bản vẽ có khung lưới ô vuông bao quanh và các ký hiệu kích thước: chiều rộng 600mm (chia thành 4x150mm), chiều cao 800mm (chia thành 4x200mm), và chiều cao chữ 150mm (chia thành 3x50mm).\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, đây là biển chỉ dẫn địa điểm (I.444). Kích thước chiều rộng (z) cho đường đôi ngoài đô thị là 60mm, đường thông thường là 80mm, đường đô thị là 40mm. Tuy nhiên, hình vẽ này thể hiện kích thước thực tế lớn hơn (600x800mm) phù hợp với biển lớn hoặc biển quảng cáo, không phải kích thước tiêu chuẩn theo quy định.\"\n    }\n  ]\n}",
+  "generated_tokens": 364,
+  "elapsed_seconds": 6.795550399998319,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5ffdd7b070d16c318d5359e17ba6f5343a7e757c2750e2070e8d88417107fe82",
+  "filename": "image348.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.402 'Hết đoạn đường ưu tiên' theo quy định tại Điều E.2 của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.402\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình thoi (bên trong hình vuông viền trắng). Màu sắc: Nền vàng, viền đen, biểu tượng là hai thanh ngang màu đen song song trên nền vàng. Biểu tượng: Hai thanh ngang đen nằm nghiêng 45° trong hình thoi vàng.\",\n      \"meaning_or_specification\": \"Biển báo hiệu sự kết thúc của đoạn đường ưu tiên; người tham gia giao thông phải tuân thủ các quy định về ưu tiên từ điểm này trở đi.\"\n    }\n  ]\n}",
+  "generated_tokens": 204,
+  "elapsed_seconds": 3.387631400000828,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

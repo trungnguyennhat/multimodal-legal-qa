@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:78d1de18af2cb2ca7653409d31944a5026c044fabadc080e7881b1dba8a949c6",
+  "filename": "public_test_6_7.jpg",
+  "description": "Dưới đây là mô tả hình dạng và nội dung hình trong các biển báo:\n\n**Hàng trên:**\n1. Biển tròn, viền đỏ, bên trong là hình tròn trắng.\n2. Biển tròn, viền đỏ, bên trong có hình chữ nhật xanh dương bị gạch chéo đỏ.\n3. Biển hình chữ nhật đứng, viền đỏ, bên trong có một thanh ngang màu trắng.\n4. Biển tròn, viền đỏ, bên trong có hình một người đi xe máy bị gạch chéo đỏ.\n\n**Hàng dưới:**\n5. Biển tròn, viền đỏ, bên trong có hình chữ nhật xanh dương bị gạch chéo đỏ.\n6. Biển tròn, viền đỏ, bên trong có hình một chiếc xe hơi bị gạch chéo đỏ.\n7. Biển tròn, viền đỏ, bên trong có hình hai mũi tên: một mũi tên hướng sang trái, một mũi tên hướng sang phải, đều bị gạch chéo đỏ.\n8. Biển tròn, viền đỏ, bên trong có hình một chiếc xe hơi đang rẽ trái bị gạch chéo đỏ.\n\nTất cả các biển đều có viền đỏ và hình nền trắng hoặc màu xanh dương.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 271,
+  "size": [
+    631,
+    380
+  ],
+  "elapsed_seconds": 21.127462900003593,
+  "peak_vram_bytes": 7419119616,
+  "peak_reserved_bytes": 7509901312,
+  "gpu_free_bytes": 8359247872
+}

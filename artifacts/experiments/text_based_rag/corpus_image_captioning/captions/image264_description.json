@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:36f541f37eb9f7f629c529defc041113870c332110c99a70c54b0f9e33216c21",
+  "filename": "image264.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.235 'Đường đôi' theo QCVN 41:2024/BGTVT, dùng để báo trước đoạn đường có chiều đi và chiều về phân biệt bằng dải phân cách cứng.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.235\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen gồm hai mũi tên hướng ngược nhau (một lên, một xuống) nằm trên một đường kẻ ngang chia đôi tam giác.\",\n      \"meaning_or_specification\": \"Báo trước sắp đến đoạn đường có chiều đi và chiều về phân biệt bằng dải phân cách cứng; trong nội thành, nội thị có thể không đặt biển này.\"\n    }\n  ]\n}",
+  "generated_tokens": 197,
+  "elapsed_seconds": 3.2898414000010234,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

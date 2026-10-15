@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:48d23ff046203271e03eb6613107775ceb68a263657a4003de7305a4bcb993b9",
+  "filename": "image664.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật quy định kích thước hình học của ký hiệu xe đạp dùng để vạch kẻ trên mặt đường dành riêng cho xe đạp theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Hình G.82 - Ký hiệu xe đạp\",\n      \"visual_or_geometric_features\": \"Hình vẽ kỹ thuật đen trắng, dạng hình học đơn giản hóa của một chiếc xe đạp (có bánh trước, bánh sau, khung, tay lái, yên), kèm theo các kích thước được ghi chú: chiều rộng 75/110/170 cm và chiều cao 120/170/275 cm.\",\n      \"meaning_or_specification\": \"Theo Điều G.4.f của QCVN 41:2024/BGTVT, đây là hình mẫu cho 'Vạch ký hiệu xe đạp trên mặt đường' (vạch 9.6), dùng để chỉ làn đường dành riêng cho xe đạp. Kích thước hình vẽ có thể chọn từ ba cặp giá trị: 75x120 cm, 110x170 cm, hoặc 170x275 cm, tùy theo bề rộng của làn xe đạp.\"\n    }\n  ]\n}",
+  "generated_tokens": 301,
+  "elapsed_seconds": 5.253640999995696,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

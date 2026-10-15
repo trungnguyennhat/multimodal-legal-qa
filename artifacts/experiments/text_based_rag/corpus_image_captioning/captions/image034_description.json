@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2c79d17ade02825c32adcdb1851d41ae80a93cd99371235ff693d2061911b6d3",
+  "filename": "image034.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn địa điểm và khoảng cách (mã IE.465) theo quy định tại Điều 47.16 của QCVN 41:2024/BGTVT, dùng để chỉ dẫn địa danh nơi đến và khoảng cách trên đường cao tốc.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.465\",\n      \"visual_or_geometric_features\": \"Hình dạng: Biển chỉ dẫn hình mũi tên (hình tam giác cân có đáy rộng hơn, hướng về phía trước). Màu sắc: Nền màu xanh lá cây, chữ màu trắng. Biểu tượng: Gồm hai dòng chữ địa danh (TP. TÂN AN và LONG AN) được sắp xếp theo thứ tự ưu tiên (địa danh gần nhất ở trên, địa danh xa hơn ở dưới), kèm theo mũi tên chỉ hướng đi thẳng.\",\n      \"meaning_or_specification\": \"Biển số IE.465 chỉ dẫn địa điểm và khoảng cách. Biển này bao gồm hai hoặc ba dòng mang tên của đích đến và khoảng cách tới đích đó tính bằng kilômét. Dòng thứ nhất xác định vị trí nút giao đến địa danh gần nhất. Dòng thứ hai (nếu có) xác định khoảng cách đến khu du lịch giải trí hoặc đầu mối giao thông lớn. Biển được đặt ở bên lề đường ngay khi vào đường cao tốc và sẽ được lặp lại với khoảng cách lớn hơn 10 km.\"\n    }\n  ]\n}",
+  "generated_tokens": 336,
+  "elapsed_seconds": 7.145702200003143,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

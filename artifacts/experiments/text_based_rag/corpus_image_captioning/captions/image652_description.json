@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9d1952b6dc84351c18fe4c1bb323a5db0e693fe8efffbbe4404b41e7a0a6bb2b",
+  "filename": "image652.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật minh họa quy cách kích thước và hình dáng của vạch 9.1 (vạch cấm xe quay đầu) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 9.1 - Vạch cấm xe quay đầu\",\n      \"visual_or_geometric_features\": \"Hình vẽ gồm hai bản vẽ kỹ thuật đen trắng: bản vẽ bên trái thể hiện toàn cảnh vạch kẻ trên mặt đường với kích thước chiều dài và chiều rộng; bản vẽ bên phải là chi tiết phóng to hình dáng vạch kẻ dạng chữ M (gãy khúc) với các kích thước chiều cao, chiều rộng nét và khoảng cách giữa các đỉnh. Các ký hiệu kích thước được ghi rõ: 200 cm (chiều cao chữ M), 100 cm (chiều rộng vạch), 150 cm (khoảng cách giữa các đỉnh), 20 cm (chiều rộng nét vẽ), 100 cm (chiều dài đoạn thẳng giữa hai đỉnh), 150 cm (chiều dài đoạn xiên), 20 cm (chiều rộng nét vẽ ở phần cong), 100 cm (chiều dài đoạn thẳng cuối), 150 cm (chiều dài đoạn xiên cuối).\",\n      \"meaning_or_specification\": \"Theo Điều G.4.a của QCVN 41:2024/BGTVT, vạch 9.1 là vạch cấm xe quay đầu, sử dụng vạch màu vàng, hình dáng và kích thước như trên Hình G.71. Vạch được vẽ dạng gãy khúc (hình chữ M), chiều cao chữ M bằng 2,0 m, đường xiên của chữ M bằng nhau và bằng 2,0 m. Bề rộng nét vẽ là 10 cm. Khoảng cách giữa các đỉnh và các đoạn thẳng/xiên tuân thủ các kích thước ghi trên hình.\"\n    }\n  ]\n}",
+  "generated_tokens": 445,
+  "elapsed_seconds": 7.372118900006171,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:49b4c75b2c55c51e4400706e1194c2b076c9116182f370b70dbf689e13682dad",
+  "filename": "image010.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật quy định kích thước hình học của mũi tên chỉ hướng (mũi tên xiên) được sử dụng trên biển chỉ dẫn trên đường cao tốc.\",\n  \"items\": [\n    {\n      \"identifier\": \"Mũi tên chỉ hướng (xiên)\",\n      \"visual_or_geometric_features\": \"Hình khối mũi tên xiên hướng lên trên, có phần thân chữ nhật và phần đầu mũi tên tam giác. Các ký hiệu kích thước được ghi trên hình: A, B, C, D, E, R.\",\n      \"meaning_or_specification\": \"Theo Điều 46.5.3.b của QCVN 41:2024/BGTVT, đây là kích thước của mũi tên chỉ hướng dùng để chỉ lối ra hoặc hướng đi. Các thông số kỹ thuật cụ thể là: chiều rộng A=48,0 cm; chiều cao B=40,0 cm; chiều rộng phần thân C=18,0 cm; chiều cao phần đầu mũi tên D=4,0 cm; chiều cao tổng E=80,0 cm; bán kính cong R=3,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 275,
+  "elapsed_seconds": 5.892381199999363,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

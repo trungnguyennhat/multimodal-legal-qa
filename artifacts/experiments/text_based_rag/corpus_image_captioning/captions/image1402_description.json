@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:742dc9626c7f0b3919daeb4ee1f4545078ff4e4404bd2e0e5a25ba6c7af690b5",
+  "filename": "image1402.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước mã hiệu đường bộ (cỡ chữ 30 cm) với các thông số hình học và khoảng cách chi tiết.\",\n  \"items\": [\n    {\n      \"identifier\": \"Mã hiệu đường bộ (cỡ chữ 30 cm)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các kích thước: chiều dài 100, chiều rộng 50, bán kính góc bo R2, khoảng cách căn giữa 'a' ở hai bên, và chiều cao phần chữ/số là 30 (chia thành 0.75 + 0.75).\",\n      \"meaning_or_specification\": \"Theo QCVN 41:2024/BGTVT, đây là kích thước kỹ thuật cho mã hiệu đường tỉnh hoặc huyện cỡ chữ 30 cm, với nền vàng huỳnh quang (theo điều a) hoặc trắng (theo điều c,d), chữ đen, vật liệu màng phản quang loại VIII, IX, XI cấu trúc kim cương.\"\n    }\n  ]\n}",
+  "generated_tokens": 254,
+  "elapsed_seconds": 4.274084799995762,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

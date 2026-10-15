@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:760428af14f29b6085a45a489a9c474b7d6343a798df246ffe4b28b7e9016958",
+  "filename": "image582.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch 1.4 và vạch 5.1) tại nút giao lộ để phân chia hai chiều xe chạy và dẫn hướng xe rẽ trái.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.4 (Vạch phân chia hai chiều xe chạy)\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song gồm một vạch nét liền và một vạch nét đứt màu vàng. Vạch liền nét nằm ở phía đối diện với vạch đứt nét. Vạch đứt nét có các đoạn nét liền xen kẽ các đoạn nét đứt.\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn đường tiếp giáp với vạch đứt nét được phép cắt qua và sử dụng làn ngược chiều khi cần thiết; xe trên làn đường tiếp giáp với vạch liền nét không được lấn làn hoặc đè lên vạch. Quy cách: Bề rộng nét vẽ b = 15 cm; khoảng cách phía trong hai mép vạch đơn là 15 cm - 20 cm. Đối với vạch đứt nét, chiều dài đoạn nét liền L1 = (1 m - 3 m); chiều dài đoạn nét đứt L2 = (2 m - 6m); tỷ lệ L1/L2 = 1:2.\"\n    },\n    {\n      \"identifier\": \"Vạch 5.1 (Vạch dẫn hướng rẽ trái qua phạm vi nút giao)\",\n      \"visual_or_geometric_features\": \"Đoạn vạch đơn màu vàng kéo dài từ vạch 1.4 vào nút giao, có dạng nét đứt xen kẽ nét liền.\",\n      \"meaning_or_specification\": \"Dùng để định hướng quỹ đạo cho dòng xe rẽ trái theo giải pháp tổ chức giao thông làn đường được sử dụng trong nút. Mục đích sử dụng vạch là tăng tính dẫn hướng cho xe chạy; xe có thể cắt qua vạch khi cần thiết. Quy cách: Bề rộng nét vẽ b = 15 cm; chiều dài đoạn nét liền L1 = (0,5 m - 2,0m); chiều dài đoạn nét đứt L2 = (0,5 m - 2,0 m). Tỷ lệ L1/L2 = 1:1.\"\n    }\n  ]\n}",
+  "generated_tokens": 505,
+  "elapsed_seconds": 11.2867327999993,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7a16ed6c32e53b1e1e228c9f1e31740504320dc5bdd260c5fdf3edda8c313903",
+  "filename": "image1222.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn I.432 (Khách sạn) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.432: Khách sạn\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, khung viền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng đường nét đậm), nền trắng. Bên trong có biểu tượng một chiếc giường đơn. Kích thước được quy định bằng các ký hiệu 'a' và 'b' (ví dụ: chiều rộng 1,6a, chiều cao 2,4a).\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn loại I.432 dùng để báo hiệu khách sạn. Theo điều luật, kích thước 'a' (chiều cao của hình khối biểu tượng) phụ thuộc vào loại đường: 100mm (đường đôi ngoài đô thị), 75mm (đường thông thường), 50mm (đường đô thị). Kích thước 'b' là chiều rộng của biển.\"\n    }\n  ]\n}",
+  "generated_tokens": 285,
+  "elapsed_seconds": 5.652875399995537,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

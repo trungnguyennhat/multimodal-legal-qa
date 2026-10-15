@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4ab1af90f811b57166c317e2b87f8eda666dc8c95bcaa9cc6e2ab26efb271680",
+  "filename": "image326.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số R.412 (a,b,c,d,e,f,g,h) 'Làn đường dành riêng cho từng loại xe hoặc nhóm xe' với biểu tượng mũi tên hướng lên, xe buýt và xe ô tô con trên nền xanh dương.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.412 (a,b,c,d,e,f,g,h)\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền màu xanh dương, có hình vẽ biểu tượng: mũi tên hướng lên trên cùng, hình xe buýt ở giữa và hình xe ô tô con ở dưới cùng.\",\n      \"meaning_or_specification\": \"Báo hiệu làn đường dành riêng cho từng loại xe hoặc nhóm xe riêng biệt; các loại xe khác không được đi vào làn đường này (trừ xe ưu tiên). Biển được đặt phía trên làn xe, ở đầu đường theo chiều xe chạy.\"\n    }\n  ]\n}",
+  "generated_tokens": 225,
+  "elapsed_seconds": 3.9072975000017323,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

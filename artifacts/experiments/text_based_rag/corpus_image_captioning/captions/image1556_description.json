@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:68414a2f972ae7774c23a42aebe2ac917d4ad2098811657d012bf74af7a31be9",
+  "filename": "image1556.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật minh họa kích thước và hình học của biển chỉ dẫn chướng ngại vật phía trước (IE.468a,b,c) theo QCVN 41:2024/BGTVT, với các thông số A, B, C, D, E, F được quy định cụ thể.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn chướng ngại vật phía trước (IE.468a,b,c)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng với các đường chéo màu vàng đen xen kẽ; các ký hiệu kích thước A, B, C, D, E, F và góc 45° được đánh dấu trên bản vẽ kỹ thuật.\",\n      \"meaning_or_specification\": \"Theo Điều P.20 của QCVN 41:2024/BGTVT, biển này dùng để báo hiệu chướng ngại vật phía trước; các thông số kỹ thuật yêu cầu: A=30 cm, B=90 cm, C=12,5 cm, D=7,5 cm, E=45°, F=1,6 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 279,
+  "elapsed_seconds": 4.489918999999645,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

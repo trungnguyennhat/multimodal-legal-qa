@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8cff519a5c7e3b02b4a96e5f24f0e691087d3f17ff5f055a466e92bfe6d89cac",
+  "filename": "image1500.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn sân bay và khu giải trí công cộng (IE.461a) với nền xanh lá cây, chữ trắng, biểu tượng máy bay và người chơi golf, cùng mũi tên hướng dẫn.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.461a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh lá cây, chữ trắng, biểu tượng máy bay và người chơi golf trên nền trắng, mũi tên trắng chỉ hướng lên phải.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn khu du lịch công cộng và giải trí: Sân bay Long Thành và CLB Golf Long Bình, kèm hướng dẫn di chuyển.\"\n    }\n  ]\n}",
+  "generated_tokens": 179,
+  "elapsed_seconds": 3.182219399997848,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

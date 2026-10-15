@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c36bd183eb5393afe6e57a5cee37d048adcec8e8470a789969c30fa619b68b20",
+  "filename": "image406.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.431 'Trạm dừng nghỉ' với các biểu tượng dịch vụ đi kèm theo quy định QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.431 'Trạm dừng nghỉ'\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng, có chữ 'TRẠM DỪNG NGHỈ' màu trắng ở dưới cùng; phía trên là 4 biểu tượng trắng: dao nĩa (ăn uống), vòi nước (nước uống), vòi xăng (nhiên liệu), và vòi dầu (dầu bôi trơn).\",\n      \"meaning_or_specification\": \"Chỉ dẫn những nơi có dịch vụ phục vụ khách đi đường như ăn uống, nghỉ ngơi, cung cấp nhiên liệu và nước uống; tùy theo dịch vụ có sẵn mà bố trí biểu tượng tương ứng.\"\n    }\n  ]\n}",
+  "generated_tokens": 233,
+  "elapsed_seconds": 3.816404600001988,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

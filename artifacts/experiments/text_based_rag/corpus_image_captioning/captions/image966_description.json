@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:66118f9f39089f74042ed943d67e387c7bfeffb1dcaa6316e5957d8dbdeae56a",
+  "filename": "image966.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo nguy hiểm W.202a (nhiều chỗ ngoặt nguy hiểm liên tiếp mà chỗ ngoặt đầu tiên hướng vòng bên trái) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.202a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, bên trong có hai dải chéo song song nghiêng sang phải (biểu thị hướng vòng bên phải). Bản vẽ kèm kích thước: chiều cao tổng thể 140mm, chiều rộng 82,5mm; các dải chéo có độ dày 26,25mm và khoảng cách giữa các dải là 26,25mm; tổng chiều dài của dải chéo là 82,5mm.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo tài xế về nhiều chỗ ngoặt nguy hiểm liên tiếp, trong đó chỗ ngoặt đầu tiên hướng vòng bên phải. Kích thước được quy định tùy theo loại đường: 140mm cho đường cao tốc, 126mm cho đường đôi ngoài đô thị, 87,5mm cho đường thông thường và 70mm cho đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 314,
+  "elapsed_seconds": 5.931714600003033,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

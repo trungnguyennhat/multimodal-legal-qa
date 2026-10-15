@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8d7b61c839f46ef0cdb74d1d70dce1efd577f79e12c05ee66644ac0c488540d0",
+  "filename": "image232.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.220 'Dốc lên nguy hiểm' với biểu tượng tam giác cảnh báo có số 9% chỉ độ dốc.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.220\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, bên trong có hình tam giác đen ở dưới cùng và số '9%' màu đen ở phần trên\",\n      \"meaning_or_specification\": \"Biển báo trước đoạn đường lên dốc nguy hiểm; con số 9% thể hiện độ dốc thực tế tính bằng %, làm tròn đến % theo quy định tại Điều C.20 của QCVN 41:2024/BGTVT\"\n    }\n  ]\n}",
+  "generated_tokens": 192,
+  "elapsed_seconds": 3.2536736000038218,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

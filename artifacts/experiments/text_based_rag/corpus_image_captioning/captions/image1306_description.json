@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4e074cde3b7b52701b6cabd489ce09b80a93e4d5d4e195c04799deb753df65ad",
+  "filename": "image1306.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo I.446 (Nơi để xe dành cho người khuyết tật) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.446\",\n      \"visual_or_geometric_features\": \"Hình vuông có khung viền lưới ô vuông, bên trong có biểu tượng người khuyết tật ngồi xe lăn màu trắng trên nền xanh dương. Các kích thước được ghi chú: chiều rộng tổng thể 1400mm, chiều cao tổng thể 1400mm, chiều rộng biểu tượng 1100mm, chiều cao biểu tượng 1100mm, và khoảng cách từ mép biển đến mép biểu tượng là 150mm.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, đây là biển chỉ dẫn nơi để xe dành cho người khuyết tật. Kích thước z (chiều cao/kích thước biểu tượng) đối với đường đô thị là 50mm, nhưng hình vẽ này thể hiện kích thước thực tế của biển báo (1400x1400mm) và kích thước biểu tượng (1100x1100mm) để phục vụ thiết kế và sản xuất biển báo đúng chuẩn.\"\n    }\n  ]\n}",
+  "generated_tokens": 335,
+  "elapsed_seconds": 6.355266899998242,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

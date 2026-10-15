@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a4902bec4b65dd98f362adfaaab4d60b22fd596c17020f68a4135c7a0c481f50",
+  "filename": "image1246.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo I.440 'Đường đang thi công' theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.440\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật nằm ngang, có khung viền và nội dung chữ 'ĐOẠN ĐƯỜNG THI CÔNG' cùng dòng phụ 'Từ km+ đến km+ QL'. Bản vẽ kèm các ký hiệu kích thước: chiều rộng biển (B), chiều cao biển (H), khoảng cách từ mép biển đến mép đường (z), và khoảng cách giữa các biển (nếu có).\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, biển I.440 thuộc nhóm biển chỉ dẫn, dùng để báo hiệu đoạn đường đang thi công. Kích thước z (khoảng cách từ mép biển đến mép đường) phụ thuộc vào loại đường: 78 mm cho đường đôi ngoài đô thị, 56,25 mm cho đường thông thường, và 37,5 mm cho đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 301,
+  "elapsed_seconds": 5.892993399997067,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

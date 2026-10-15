@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:704a05354c02e9da4e4684e660efe61807fdfb21a5ec752b638968e15e40cdaa",
+  "filename": "image1012.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo giao thông thuộc nhóm biển hiệu lệnh và biển làn đường, theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số R.305: Đường dành cho người đi bộ\",\n      \"visual_or_geometric_features\": \"Hình tròn đường kính 140 mm (trên đường cao tốc), 126 mm (đường đôi ngoài đô thị), 87,5 mm (đường thông thường), 70 mm (đường đô thị). Bên trong hình tròn là hình người đi bộ màu trắng trên nền xanh dương.\",\n      \"meaning_or_specification\": \"Biển báo hiệu đường dành riêng cho người đi bộ, được quy định tại Điều M.3, mục Biển số R.305 của QCVN 41:2024/BGTVT.\"\n    },\n    {\n      \"identifier\": \"Biển số R.301a: Các xe chỉ được đi thẳng\",\n      \"visual_or_geometric_features\": \"Hình vuông kích thước 400 mm x 400 mm (trên đường cao tốc), 360 mm x 360 mm (đường đôi ngoài đô thị), 250 mm x 250 mm (đường thông thường), 200 mm x 200 mm (đường đô thị). Bên trong hình vuông là hình người đi bộ màu trắng trên nền xanh dương.\",\n      \"meaning_or_specification\": \"Biển báo hiệu các xe chỉ được đi thẳng, được quy định tại Điều M.3, mục Biển số R.301a của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 427,
+  "elapsed_seconds": 7.569733800002723,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

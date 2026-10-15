@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c565087aee02030322c4b783490c085ddf3339616aeb1201f60aaefecf07228c",
+  "filename": "image606.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí và kích thước của vạch đi bộ qua đường dạng chữ nhật (Mẫu 2) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch đi bộ qua đường (Mẫu 2)\",\n      \"visual_or_geometric_features\": \"Hai vạch liền song song, màu trắng, bề rộng mỗi vạch b = 40 cm, chiều dài mỗi vạch 40 cm, khoảng cách giữa hai vạch 40 cm. Tổng chiều rộng khu vực vạch là 80 cm. Chiều dài toàn bộ khu vực vạch (bao gồm cả khoảng cách giữa các vạch) là ≥300 cm.\",\n      \"meaning_or_specification\": \"Dùng để xác định phần đường dành cho người đi bộ qua đường. Mẫu 2 chỉ áp dụng tại những nơi có đèn tín hiệu phân định thời gian người đi bộ được phép qua đường. Trước vạch này cần bố trí vạch dừng xe.\"\n    }\n  ]\n}",
+  "generated_tokens": 241,
+  "elapsed_seconds": 4.869661800003087,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

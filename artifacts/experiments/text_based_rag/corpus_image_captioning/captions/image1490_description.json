@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:87f9866e7d637bc252932a701b5922d78722c9f69e086bd3c268d45adbe5f811",
+  "filename": "image1490.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật minh họa kích thước, bố cục và ký hiệu thông số của biển chỉ dẫn khoảng cách đến các trạm dừng nghỉ tiếp theo (mã IE.458) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn khoảng cách đến trạm dừng nghỉ (IE.458)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật ngang, chia thành 3 hàng ngang; mỗi hàng gồm: phần trái là khung hình chữ nhật nhỏ chứa biểu tượng trạm dừng nghỉ (nền xanh lam, chữ trắng), phần giữa là tên trạm dừng nghỉ, phần phải là khoảng cách (số km). Các ký hiệu kích thước: L (chiều rộng biển), W (chiều cao biển), H₁, H₂ (chiều cao các phần tử), k₁ (khoảng cách giữa các cột), 20 (bề rộng mép biển), 100 (chiều cao khung biểu tượng), 140 (chiều cao mỗi hàng), 250 (chiều rộng phần giữa), gt2 (kích thước tối thiểu chữ).\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn khoảng cách đến các trạm dừng nghỉ tiếp theo (Trạm Dừng Nghỉ, Bến Lực, Thần Cửu Nghĩa) với đơn vị km; tuân thủ quy chuẩn về màu sắc (nền xanh lá cây, chữ trắng, nền xanh lam cho biểu tượng), vật liệu (màng phản quang loại VIII, IX, XI cấu trúc kim cương), và kích thước hình học theo QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 391,
+  "elapsed_seconds": 6.180666799999017,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,34 +1,80 @@
 {
+  "query_id": "train_149",
   "image_id": "sha256:83d00066b21037a3cc3615c59f65810d9fbcfb9a49bb4a59c89a07364d084322",
   "filename": "train_3_7.jpg",
-  "description": "Biển báo hình chữ nhật, nền xanh, có đường kẻ chia dọc giữa.  \nPhía bên trái: hai hình xe ô tô nhìn mặt trước, cách nhau bởi đường kẻ chấm dứt.  \nPhía bên phải: trên cùng là hình xe máy, dưới là hình xe ba bánh (xe máy ba bánh), phía dưới có dòng chữ tiếng Việt.",
+  "question_text": "\"Xe ô tô đang di chuyển ở làn giữa được phép di chuyển qua làn trong cùng bên phải không\", đúng hay sai ?",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Biển báo hiệu đường bộ quy định làn đường dành riêng cho xe ô tô và làn đường dành cho xe máy, xe ba bánh.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo hiệu làn đường - phần trái\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, viền trắng. Có hai biểu tượng xe ô tô màu trắng nằm cạnh nhau, ngăn cách bởi một vạch kẻ đường màu trắng dạng nét đứt dọc.\",\n      \"meaning_or_specification\": \"Biển báo hiệu làn đường dành riêng cho xe ô tô.\",\n      \"is_relevant\": true\n    },\n    {\n      \"identifier\": \"Biển báo hiệu làn đường - phần phải\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, viền trắng. Có biểu tượng xe máy và xe ba bánh màu trắng. Dưới biểu tượng có dòng chữ: 'XE 02 BÁNH VÀ 03 BÁNH'.\",\n      \"meaning_or_specification\": \"Biển báo hiệu làn đường dành riêng cho xe máy và xe ba bánh.\",\n      \"is_relevant\": true\n    }\n  ]\n}",
   "settings": {
-    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
-    "revision": "10d842936325905934ea24e64325d774693f166e",
-    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
-    "min_pixels": 131072,
-    "max_pixels": 786432,
-    "max_new_tokens": 384,
+    "model": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\huggingface\\Qwen3.5-9B-GGUF\\Qwen3.5-9B-Q4_K_M.gguf",
+    "projector": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\huggingface\\Qwen3.5-9B-GGUF\\mmproj-F16.gguf",
+    "prompt": "Bạn là chuyên gia phân tích hệ thống báo hiệu đường bộ Việt Nam.\nNhiệm vụ: Trích xuất mô tả chuẩn hóa từ HÌNH ẢNH để tìm kiếm điều luật, sau đó dùng CÂU HỎI để xác định đối tượng liên quan.\n\nNGUYÊN TẮC ƯU TIÊN BẰNG CHỨNG:\n- Quan sát ảnh trước khi xét câu hỏi. Hình dạng, màu sắc, chữ viết, biểu tượng và vị trí phải lấy từ ảnh; không lấy từ lời mô tả hay giả định trong câu hỏi.\n- Câu hỏi có thể chứa phát biểu sai hoặc yêu cầu đánh giá đúng/sai. Không coi phát biểu đó là sự thật, không chép nó vào mô tả hoặc ý nghĩa của biển. Không trả lời câu hỏi đúng/sai trong lần trích xuất này.\n- Không suy ngược hình dạng hoặc màu sắc từ tên, ý nghĩa hay chữ trên biển; kiểm tra riêng đường viền ngoài, nền, chữ và biểu tượng theo những gì nhìn thấy.\n- Nếu chi tiết bị mờ, che khuất hoặc quá nhỏ, ghi \"không đọc rõ\" hoặc \"không xác định từ ảnh\" cho chi tiết đó; không tự điền chi tiết quen thuộc.\n- Chỉ xuất nội dung tiếng Việt, giữ nguyên chữ/số đọc được trên biển.\n\nBƯỚC 1 - PHÂN LOẠI HÌNH ẢNH (`image_category`):\nXác định hình ảnh thuộc đúng 1 trong 3 loại sau (đồng bộ với cơ sở dữ liệu luật):\n- \"SIGN_ILLUSTRATION\": Ảnh chụp giao thông thực tế hoặc hình minh họa có chứa biển báo hiệu đường bộ.\n- \"TECHNICAL_DIAGRAM\": Bản vẽ kỹ thuật đen trắng quy định kích thước hình học, thông số ký hiệu, hoặc sơ đồ khoảng cách/chiều cao lắp đặt.\n- \"MARKING_AND_SIGNAL\": Ảnh chụp hoặc hình vẽ tập trung vào vạch kẻ đường, đèn tín hiệu, cọc tiêu, rào chắn hoặc người điều khiển giao thông.\n\nBƯỚC 2 - QUY TẮC TRÍCH XUẤT & LỌC NHIỄU:\n1. KHÔNG ĐOÁN MÃ BIỂN: Tuyệt đối không tự suy đoán mã số kỹ thuật của biển báo trừ khi mã số đó được viết rõ bằng chữ trong ảnh hoặc trong câu hỏi.\n2. NẾU LÀ \"SIGN_ILLUSTRATION\":\n   - Sử dụng từ vựng chuẩn về Nhóm biển, Hình dạng và Màu sắc.\n   - Chép đúng chữ viết, con số, đơn vị (tấn, t, m, km, giờ...) thực sự đọc được trên mặt biển chính và biển phụ; phần không đọc được ghi \"không đọc rõ\".\n   - Mỗi biển là một item. Ghi vị trí trong ảnh và quan hệ giữa các biển chỉ khi quan sát được. Hai biển ở gần nhau trong ảnh chưa chắc gắn cùng cột; nếu không rõ, không khẳng định cùng cột.\n   - Ý nghĩa chỉ mô tả ở mức nhận diện được, không thêm điều kiện pháp lý hoặc ví dụ tình huống không có bằng chứng; nếu chưa đủ căn cứ, ghi \"chưa xác định chắc chắn\".\n3. NẾU LÀ \"TECHNICAL_DIAGRAM\":\n   - Không mô tả màu đen/trắng của nét vẽ kỹ thuật thành màu sắc thực tế của biển báo.\n   - Liệt kê đúng tên hình khối hình học và các chữ cái ký hiệu kích thước/góc độ (như D, L, A, B, C, R, 45°...) xuất hiện trong hình.\n4. NẾU LÀ \"MARKING_AND_SIGNAL\":\n   - Mô tả rõ loại vạch kẻ (nét liền/nét đứt, đơn/đôi, màu trắng/vàng), màu đèn tín hiệu hoặc tư thế người điều khiển giao thông.\n5. ĐÁNH GIÁ ĐỘ LIÊN QUAN (`is_relevant`):\n   - Chỉ sau khi mô tả xong bằng chứng thị giác, đối chiếu câu hỏi để gán `is_relevant`; không sửa mô tả thị giác để khớp câu hỏi.\n   - Đặt `true` cho đối tượng được hỏi trực tiếp hoặc quan sát rõ là điều khiển hướng đi/làn đường đang xét; bao gồm biển phụ thực sự đi kèm đối tượng đó.\n   - Không coi mọi biển trong cùng cảnh là liên quan. Đặt `false` cho biển phía xa không được hỏi trực tiếp, biển thuộc hướng/làn khác, hoặc khi chưa đủ căn cứ xác định liên quan.\n\nCâu hỏi của người dùng (chỉ dùng để xác định đối tượng liên quan, không dùng làm bằng chứng thị giác):\n\"{question_text}\"\n\nTrước khi xuất JSON, kiểm tra lại từng item có khớp đường viền, màu nền, chữ và vị trí thực sự trong ảnh không. Không đưa các bước phân tích vào output.\n\nHãy trả về kết quả duy nhất dưới định dạng JSON theo cấu trúc sau:\n{\n  \"image_category\": \"SIGN_ILLUSTRATION | TECHNICAL_DIAGRAM | MARKING_AND_SIGNAL\",\n  \"summary\": \"Tóm tắt 1 câu về bối cảnh giao thông hoặc nội dung kỹ thuật trong ảnh gắn với câu hỏi\",\n  \"items\": [\n    {\n      \"identifier\": \"Nhóm biển + Vị trí (ví dụ: 'Biển báo cấm - phía trên', 'Biển phụ - ngay bên dưới') HOẶC Tên hình khối kỹ thuật\",\n      \"visual_or_geometric_features\": \"Nếu là biển báo cụ thể: ghi Hình dạng + Màu sắc + Biểu tượng. Nếu là bản vẽ kỹ thuật: ghi Hình dạng hình học + Các thông số/ký hiệu kích thước đi kèm trên hình\",\n      \"meaning_or_specification\": \"Ý nghĩa báo hiệu giao thông\",\n      \"is_relevant\": true\n    }\n  ]\n}",
+    "max_new_tokens": 4096,
     "crop": false,
-    "do_sample": false,
-    "dtype": "bfloat16",
-    "attention": "sdpa",
+    "temperature": 0,
+    "seed": 2025,
+    "context_size": 16384,
+    "enable_thinking": false,
+    "response_schema": {
+      "type": "object",
+      "required": [
+        "image_category",
+        "summary",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "image_category": {
+          "type": "string",
+          "enum": [
+            "SIGN_ILLUSTRATION",
+            "TECHNICAL_DIAGRAM",
+            "MARKING_AND_SIGNAL"
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "identifier",
+              "visual_or_geometric_features",
+              "meaning_or_specification",
+              "is_relevant"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "identifier": {
+                "type": "string"
+              },
+              "visual_or_geometric_features": {
+                "type": "string"
+              },
+              "meaning_or_specification": {
+                "type": "string"
+              },
+              "is_relevant": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "input_fields": [
+      "image",
+      "question"
+    ],
+    "caption_unit": "query_id",
+    "runtime": "llama.cpp-b11624-win-cuda-13.4",
     "libraries": {
-      "torch": "2.7.1+cu128",
-      "transformers": "4.57.1",
-      "bitsandbytes": "0.49.0",
-      "Pillow": "12.3.0"
+      "requests": "2.34.2"
     }
   },
   "status": "COMPLETED",
-  "token_limit_reached": false,
-  "generated_tokens": 80,
-  "size": [
-    660,
-    495
-  ],
-  "elapsed_seconds": 6.947886699999799,
-  "peak_vram_bytes": 7441433088,
-  "peak_reserved_bytes": 7505707008,
-  "gpu_free_bytes": 8363442176
+  "finish_reason": "stop",
+  "generated_tokens": 275,
+  "elapsed_seconds": 5.013627100008307
 }

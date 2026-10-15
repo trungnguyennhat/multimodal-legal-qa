@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1f811bc58041d43dd425418cf6c1545315de094c0b294f09eec48ddf28b49b04",
+  "filename": "image218.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.213 'Cầu tạm' theo quy định QCVN 41:2024/BGTVT, dùng để báo trước cầu tạm cho xe cộ qua lại.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.213\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng bên trong là hình cầu tạm với hai bên có bậc thang và mặt cầu phẳng.\",\n      \"meaning_or_specification\": \"Biển báo này được đặt để cảnh báo người tham gia giao thông sắp đến cầu tạm – loại cầu được xây dựng tạm thời cho xe cộ qua lại; khi gặp biển này cần thận trọng, đặc biệt không được qua cầu khi nước ngập.\"\n    }\n  ]\n}",
+  "generated_tokens": 200,
+  "elapsed_seconds": 3.55863419999514,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

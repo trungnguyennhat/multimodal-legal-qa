@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7af190b36a1838b081b7bd55bbe615b5fca560ad2576c93aaa9e98694dc0edd6",
+  "filename": "image724.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo cấm xe đạp (P.110a) và biển báo cấm xe gắn máy (P.111a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm xe đạp (P.110a)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe đạp màu đen ở trung tâm. Bản vẽ kỹ thuật bên trái hiển thị kích thước: đường kính ngoài 87,5 mm; chiều cao biểu tượng xe đạp 50 mm; chiều rộng biểu tượng 35 mm; khoảng cách từ mép trong vòng tròn đến mép ngoài biểu tượng 25 mm; khoảng cách từ tâm biểu tượng đến mép trong vòng tròn 25 mm.\",\n      \"meaning_or_specification\": \"Theo Điều M.1, biển P.110a dùng để cấm xe đạp trên các loại đường (cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với kích thước z(mm) tương ứng 140, 126, 87,5, 70. Bản vẽ này minh họa tỷ lệ và kích thước chuẩn cho biển P.110a (z=87,5 mm).\"\n    },\n    {\n      \"identifier\": \"Biển báo cấm xe gắn máy (P.111a)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe gắn máy màu đen ở trung tâm. Bản vẽ kỹ thuật bên phải hiển thị kích thước: đường kính ngoài 87,5 mm; chiều cao biểu tượng xe gắn máy 50 mm; chiều rộng biểu tượng 35 mm; khoảng cách từ mép trong vòng tròn đến mép ngoài biểu tượng 25 mm; khoảng cách từ tâm biểu tượng đến mép trong vòng tròn 25 mm.\",\n      \"meaning_or_specification\": \"Theo Điều M.1, biển P.111a dùng để cấm xe gắn máy trên các loại đường (cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với kích thước z(mm) tương ứng 140, 126, 87,5, 70. Bản vẽ này minh họa tỷ lệ và kích thước chuẩn cho biển P.111a (z=87,5 mm).\"\n    }\n  ]\n}",
+  "generated_tokens": 575,
+  "elapsed_seconds": 9.620751000002201,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

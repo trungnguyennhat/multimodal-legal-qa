@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bee8a742b333658c7b38023e7e925cf10cf0f7e430c04075f94c262eb071e956",
+  "filename": "image408.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số I.432 'Khách sạn' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn nơi có khách sạn phục vụ khách đi đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.432\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng; bên trong có hình vẽ đơn giản của một chiếc giường đơn màu đen, phía dưới ghi chữ 'KHÁCH SAN' màu trắng trên nền xanh dương.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn nơi có khách sạn phục vụ khách đi đường, theo quy định tại Điều E.34 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 201,
+  "elapsed_seconds": 3.331879100005608,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

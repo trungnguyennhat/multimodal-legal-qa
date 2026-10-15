@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4c2db15f07bcca5733ad5f585f60b80ca3b0a3d1f8e2bdf01acee778d7b42c99",
+  "filename": "image1162.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo chỉ dẫn nhóm I.415 (Mũi tên chỉ hướng đi) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.415: Mũi tên chỉ hướng đi\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong có hai mũi tên chỉ hướng đi (một mũi tên hướng lên trên, một mũi tên hướng xuống dưới). Bản vẽ kèm các ký hiệu kích thước: chiều rộng biển 1000mm, chiều cao biển 1200mm, chiều cao mũi tên 100mm, chiều rộng mũi tên 100mm, khoảng cách giữa hai mũi tên 100mm, khoảng cách từ mép biển đến mũi tên 100mm, và các thông số khác như 50mm, 75mm, 50mm, 100mm, 1200mm, 1000mm.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để chỉ hướng đi của xe trên đường. Kích thước biển và các thông số kỹ thuật được quy định tùy theo loại đường: đường đôi ngoài đô thị (z=100mm), đường thông thường (z=75mm), và đường đô thị (z=50mm). Các thông số trên bản vẽ là kích thước tiêu chuẩn cho loại đường đôi ngoài đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 367,
+  "elapsed_seconds": 6.885337099993194,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e1102db1a1f1317fe090c17725af7f289fd7caca761aada4ff295e08654f5907",
+  "filename": "image1320.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo I.448 (Làn đường cứu nạn hay làn thoát xe khẩn cấp) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.448\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng lưới chấm xanh), có mũi tên trắng chỉ hướng đi lên trên và dòng chữ 'ĐƯỜNG CỨU NẠN' ở phía dưới. Bản vẽ kèm các kích thước chi tiết: chiều rộng biển 1200mm (chia thành 280mm + 130mm + 790mm), chiều cao biển 2000mm (chia thành 200mm + 500mm + 200mm + 500mm + 600mm + 200mm), kích thước mũi tên 400mm x 200mm, và khoảng cách giữa các phần tử.\",\n      \"meaning_or_specification\": \"Biển báo I.448 dùng để chỉ dẫn làn đường cứu nạn hay làn thoát xe khẩn cấp. Theo điều luật, kích thước z (chiều cao ký hiệu) cho loại đường đô thị là 50mm, đường thông thường là 75mm, và đường đôi ngoài đô thị là 100mm. Bản vẽ này minh họa kích thước thực tế cho biển báo này.\"\n    }\n  ]\n}",
+  "generated_tokens": 369,
+  "elapsed_seconds": 6.894635199998447,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

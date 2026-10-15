@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4e981f54fa85cb000f06e076d88a115a3597054d00285fa7666ad6fcd4f3b351",
+  "filename": "image1322.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển số I.449 (Tên đường) theo QCVN 41:2024/BGTVT, với các thông số z(mm) cho từng loại đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.449: Tên đường\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, có khung viền và nội dung chữ 'AH112' (mẫu ký tự). Bản vẽ kèm các kích thước: chiều rộng tổng 250z, chiều cao tổng 120z; các khoảng cách nội bộ: 90z, 10,2z, 17,8z; và chiều cao ký tự 32z.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, biển I.449 dùng để chỉ tên đường. Kích thước z (đơn vị cơ bản) thay đổi tùy loại đường: 100mm (đường đôi ngoài đô thị), 75mm (đường thông thường), 50mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 296,
+  "elapsed_seconds": 5.767864499997813,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

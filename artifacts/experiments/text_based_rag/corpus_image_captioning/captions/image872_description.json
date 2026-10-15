@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8702c469b3c04ce1dcb02c6262712ae5bb81cad409d9c12e9b1a422c5bbf8d42",
+  "filename": "image872.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật quy định kích thước hình học và góc nghiêng của biển báo nguy hiểm W.201c (chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái).\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201c\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều hướng xuống dưới, viền đỏ, nền vàng, bên trong có biểu tượng hình chữ 'S' nghiêng 8° (ký hiệu góc nghiêng). Các kích thước được ghi chú: chiều rộng đỉnh trên là 10z, chiều rộng đáy dưới là 0,71z, chiều cao tam giác là 0,82z, góc nghiêng của biểu tượng bên trong là 8°.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo tài xế về chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái. Kích thước biển được quy định theo loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z tương ứng là 140mm, 126mm, 87,5mm, 70mm.\"\n    }\n  ]\n}",
+  "generated_tokens": 299,
+  "elapsed_seconds": 5.740809099996113,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

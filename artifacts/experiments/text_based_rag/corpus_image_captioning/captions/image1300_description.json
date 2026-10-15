@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bd1febb5d56547811a9b9227d09aa13e060a173b7e4cb70f64f1eddba12e0c5c",
+  "filename": "image1300.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo giao thông thuộc nhóm chỉ dẫn, cụ thể là biển số I.443 (Xe kéo moóc) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo số I.443: Xe kéo moóc\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật nằm ngang, nền màu xanh dương, viền trắng. Bên trái là biểu tượng xe kéo moóc màu trắng. Bên phải là dòng chữ 'ĐOẠN ĐƯỜNG HAY XẢY RA TAI NẠN' màu trắng. Bản vẽ kèm theo các kích thước: chiều dài 480mm, chiều cao 120mm, chiều cao chữ 24mm, khoảng cách từ mép dưới biển đến chân chữ 12mm, và lưới ô vuông để xác định tỷ lệ.\",\n      \"meaning_or_specification\": \"Biển báo này thuộc nhóm biển chỉ dẫn (Điều M.4), dùng để cảnh báo đoạn đường có nguy cơ xảy ra tai nạn do xe kéo moóc. Kích thước được quy định cho đường đôi ngoài đô thị (chiều cao 120mm), đường thông thường (75mm) và đường đô thị (50mm). Hình ảnh minh họa kích thước cho loại đường đôi ngoài đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 334,
+  "elapsed_seconds": 6.367620600001828,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

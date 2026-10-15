@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:59cacce1fc621146e81938241532e3195a089b972aefd8a65fdbbd37fd16613e",
+  "filename": "image434.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.443 'Xe kéo rơ-moóc' theo quy định QCVN 41:2024/BGTVT, dùng để báo hiệu xe có kéo moóc hoặc xe kéo xe.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.443\",\n      \"visual_or_geometric_features\": \"Hình vuông nền màu xanh lam, chứa hình tam giác đều màu vàng ở trung tâm, các cạnh tam giác cách đều cạnh hình vuông.\",\n      \"meaning_or_specification\": \"Biển báo hiệu xe có kéo moóc hoặc xe kéo xe; được đặt trên nóc cabin xe kéo theo Điều E.46 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 194,
+  "elapsed_seconds": 3.236866800005373,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:58128dca4c6993eb519ee9048da8d3bc8b2ba75120a1948d2213bff9c1348fd5",
+  "filename": "image132.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.118 'Hạn chế chiều ngang xe' với trị số 3,2m, dùng để báo hiệu hạn chế chiều ngang của xe khi qua chướng ngại vật trên đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.118\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có chữ '3,2m' ở giữa kèm hai mũi tên chỉ chiều ngang (trái và phải).\",\n      \"meaning_or_specification\": \"Biển báo hiệu cấm các xe (cơ giới và thô sơ) kể cả xe ưu tiên có chiều ngang vượt quá 3,2m đi qua; trị số 3,2m là khoảng cách theo chiều ngang ở trạng thái tĩnh nhỏ nhất của vật chướng ngại trừ đi 0,4m.\"\n    }\n  ]\n}",
+  "generated_tokens": 217,
+  "elapsed_seconds": 3.6379385000036564,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

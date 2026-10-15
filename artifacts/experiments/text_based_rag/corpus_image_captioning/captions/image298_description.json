@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d6ce0c959bcbce691731313b633888b2d36e39ca20153fe7c19250a4fc2c8ecd",
+  "filename": "image298.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba kiểu biển số R.302 (a, b, c) theo QCVN 41:2024/BGTVT, dùng để báo hiệu hướng đi vòng chướng ngại vật bắt buộc.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số R.302a\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng, chứa một mũi tên trắng chỉ hướng xuống phải.\",\n      \"meaning_or_specification\": \"Báo hiệu các loại xe phải đi vòng chướng ngại vật theo hướng mũi tên chỉ; dùng khi chỉ được vòng sang phải.\"\n    },\n    {\n      \"identifier\": \"Biển số R.302b\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng, chứa một mũi tên trắng chỉ hướng xuống trái.\",\n      \"meaning_or_specification\": \"Báo hiệu các loại xe phải đi vòng chướng ngại vật theo hướng mũi tên chỉ; dùng khi chỉ được vòng sang trái.\"\n    },\n    {\n      \"identifier\": \"Biển số R.302c\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng, chứa hai mũi tên trắng chỉ hướng xuống trái và xuống phải.\",\n      \"meaning_or_specification\": \"Báo hiệu các loại xe phải đi vòng chướng ngại vật theo hướng mũi tên chỉ; dùng khi có thể lựa chọn vòng sang trái hoặc sang phải.\"\n    }\n  ]\n}",
+  "generated_tokens": 355,
+  "elapsed_seconds": 5.6560845999993035,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:f1996e169c0acd73590ddbcab219d617d13c134a00cc9b1a27261733732886d9",
+  "filename": "image1392.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh là biển báo hiệu đường cao tốc với mã CT.20, thuộc nhóm biển báo hiệu đường cao tốc theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"CT.20\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu vàng, chữ màu đen, nội dung ghi 'CT.20'.\",\n      \"meaning_or_specification\": \"Biển báo hiệu đường cao tốc Bắc - Nam phía Đông Hà Nội - Cần Thơ, điểm đầu tại nút giao Pháp Vân, điểm cuối tại TP. Cần Thơ, đi qua các vị trí: Pháp Vân - Cầu Giẽ - Ninh Bình - Nghi Sơn (Thanh Hoá) - Vũng Áng (Hà Tĩnh) - Bùng (Quảng Bình) - Cam Lộ (Quảng Trị) - La Sơn (Thừa Thiên Huế) - Tuý Loan (Đà Nẵng) - Quảng Ngãi - An Nhơn (Bình Định) - Nha Trang - Phan Thiết (Bình Thuận) - Dầu Giây (Đồng Nai) - Long Thành (Đồng Nai) - Bến Lức (Long An) - Trung Lương (Tiền Giang) - Mỹ Thuận (Vĩnh Long) - Cần Thơ.\"\n    }\n  ]\n}",
+  "generated_tokens": 297,
+  "elapsed_seconds": 5.092720699998608,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bd144c29a4b3fbc29aebfe512ad1dba80ef61d581f38b1851f320c0cdba5bb47",
+  "filename": "image1486.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo 'Nơi cung cấp thông tin' theo QCVN 41:2024/BGTVT, với các thông số A, B, C, D, E được ghi rõ trên hình.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo 'Nơi cung cấp thông tin' (Điều 10)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có các góc bo tròn, bên trong có biểu tượng chữ 'i' màu đen trên nền trắng (trong bản vẽ kỹ thuật thể hiện bằng nét đen trên nền trắng). Các kích thước được ký hiệu: A (chiều rộng tổng), B (chiều cao biểu tượng 'i'), C (chiều cao phần trên và dưới của khung biển), D (chiều cao biểu tượng 'i'), E (chiều rộng phần trên và dưới của khung biển).\",\n      \"meaning_or_specification\": \"Theo Điều 10 của QCVN 41:2024/BGTVT, biển báo này dùng để chỉ nơi cung cấp thông tin cho người tham gia giao thông. Kích thước được quy định cho hai loại: Loại B (60,0 x 45,0 cm) và Loại A (75,0 x 55,0 cm), với các thông số chi tiết như B=7,5 cm, C=5,0 cm, D=45,0 cm (Loại B) hoặc B=10,0 cm, C=5,0 cm, D=55,0 cm (Loại A).\"\n    }\n  ]\n}",
+  "generated_tokens": 380,
+  "elapsed_seconds": 6.252234700004919,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

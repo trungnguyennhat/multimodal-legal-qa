@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:26a5ac36809b5deaecd5e2ec6c97892a08ff5b4c1389cff88b95e54359049616",
+  "filename": "image1172.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển chỉ dẫn tên đường (mũi tên chỉ hướng đi) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn tên đường (mũi tên chỉ hướng đi)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với phần mũi tên chỉ hướng bên phải. Các ký hiệu kích thước bao gồm: chiều dài tổng thể, chiều rộng, chiều cao chữ, chiều cao mũi tên, và các khoảng cách từ mép biển đến các thành phần.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển chỉ dẫn tên đường (mũi tên chỉ hướng đi) theo QCVN 41:2024/BGTVT, bao gồm chiều dài, chiều rộng, chiều cao chữ và các khoảng cách từ mép biển đến các thành phần.\"\n    }\n  ]\n}",
+  "generated_tokens": 234,
+  "elapsed_seconds": 4.85822090000147,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

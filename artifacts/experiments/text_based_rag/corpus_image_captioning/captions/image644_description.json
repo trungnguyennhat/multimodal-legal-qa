@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3a25c99f2fd2b48fb422e5ef3c173b831ec106b4bb778363dc9da1e6ac72e6a8",
+  "filename": "image644.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa vạch kẻ đường dạng chữ M màu vàng, dùng để quy định vị trí dừng đỗ của phương tiện giao thông công cộng (vạch 9.2 theo QCVN 41:2024/BGTVT).\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 9.2\",\n      \"visual_or_geometric_features\": \"Vạch đơn liền màu vàng, hình dáng gãy khúc dạng chữ M (nhiều đỉnh), chiều cao chữ M = 2.0 m, đường xiên của chữ M bằng nhau và mỗi đường xiên dài 2.0 m.\",\n      \"meaning_or_specification\": \"Sử dụng để quy định vị trí dừng đỗ của phương tiện giao thông công cộng (xe buýt, taxi...). Các phương tiện khác và người đi bộ không được dừng, đỗ trong phạm vi vạch và trong khoảng cách 15 m từ vị trí vạch về hai phía theo phương dọc đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 233,
+  "elapsed_seconds": 4.241225300000224,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:dd4a15eff24e6e626372af3ca00e05ca84c7561e51133542e182dc66bf64bd16",
+  "filename": "image356.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.408 'Nơi đỗ xe' theo quy định QCVN 41:2024/BGTVT, dùng để chỉ dẫn nơi được phép đỗ xe, bãi đỗ xe hoặc bến xe.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.408\",\n      \"visual_or_geometric_features\": \"Hình vuông, nền xanh dương, chữ 'P' màu trắng ở trung tâm\",\n      \"meaning_or_specification\": \"Chỉ dẫn những nơi được phép đỗ xe, bãi đỗ xe, bến xe; phạm vi hiệu lực có thể được giới hạn bằng vạch kẻ trên mặt đường hoặc bãi đỗ, và hết hiệu lực 10 m trước khi đến nơi đường giao nhau tiếp theo.\"\n    }\n  ]\n}",
+  "generated_tokens": 192,
+  "elapsed_seconds": 3.230859399998735,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

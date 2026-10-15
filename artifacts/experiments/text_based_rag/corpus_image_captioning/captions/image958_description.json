@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6affe2a634ee0187dd7e3696857f4366a8f846ae2f6055f90598db0bf753401e",
+  "filename": "image958.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và bố cục biểu tượng cho biển báo nguy hiểm W.201c (chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201c\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng xe ô tô đang rẽ trái với mũi tên chỉ hướng vòng bên phải (nguy cơ lật). Kích thước được quy định bằng hệ số z (đường kính tam giác) và các tỷ lệ phần trăm của z cho các cạnh, góc, chiều cao biểu tượng.\",\n      \"meaning_or_specification\": \"Biển báo cảnh báo chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái. Kích thước z (đường kính tam giác) phụ thuộc vào loại đường: 140mm (cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị). Các thông số như 0,71z, 1,11z, 1,75z, 60°, 1,87z, 2,13z, 1,62z, 2,66z, 1,1z, 0,66z, 4z đều là tỷ lệ hoặc giá trị tuyệt đối của z để đảm bảo tỷ lệ hình học chuẩn.\"\n    },\n    {\n      \"identifier\": \"Biểu tượng xe ô tô trong biển báo\",\n      \"visual_or_geometric_features\": \"Hình vẽ đen của xe ô tô đang rẽ trái, nằm trong khung hình chữ nhật 4z x 2,66z, với các chi tiết như chiều cao xe 1,1z, chiều rộng 0,66z, và vị trí lệch tâm theo tỷ lệ z.\",\n      \"meaning_or_specification\": \"Biểu tượng minh họa tình huống nguy hiểm: xe ô tô đang thực hiện vòng tránh hoặc rẽ trái trên đoạn đường cong nguy hiểm, dẫn đến nguy cơ lật xe về phía bên phải. Kích thước biểu tượng được quy định bằng tỷ lệ của z để đảm bảo tính nhất quán và dễ nhận biết trên các loại biển báo khác nhau.\"\n    }\n  ]\n}",
+  "generated_tokens": 556,
+  "elapsed_seconds": 9.508514000001014,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

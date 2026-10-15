@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b7c6c602ec33a1ad5ef86c8273c97f3932fa6dd7b76d2de41ba6453a76ea8b9d",
+  "filename": "image118.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa bốn biển báo cấm xe theo QCVN 41:2024/BGTVT, bao gồm cấm xe gắn máy, xe ba bánh có động cơ và xe ba bánh không có động cơ.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số P.111a\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe gắn máy màu đen bị gạch chéo đỏ\",\n      \"meaning_or_specification\": \"Báo đường cấm xe gắn máy đi qua; không có giá trị đối với xe đạp\"\n    },\n    {\n      \"identifier\": \"Biển số P.111b\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ba bánh loại có động cơ (xe lam) màu đen bị gạch chéo đỏ\",\n      \"meaning_or_specification\": \"Báo đường cấm xe ba bánh loại có động cơ như xe lam, xe xích lô máy, xe lôi máy...\"\n    },\n    {\n      \"identifier\": \"Biển số P.111c\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ba bánh loại có động cơ (xe lôi máy) màu đen bị gạch chéo đỏ\",\n      \"meaning_or_specification\": \"Báo đường cấm xe ba bánh loại có động cơ như xe lam, xe xích lô máy, xe lôi máy...\"\n    },\n    {\n      \"identifier\": \"Biển số P.111d\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ba bánh loại không có động cơ (xe xích lô) màu đen bị gạch chéo đỏ\",\n      \"meaning_or_specification\": \"Báo đường cấm xe ba bánh loại không có động cơ như xe xích lô, xe lôi đạp...\"\n    }\n  ]\n}",
+  "generated_tokens": 439,
+  "elapsed_seconds": 6.964298400002008,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:cd9261cf9960a852aede144363c55ebd33fd4a7aac4840a7422f8d0f44f0d088",
+  "filename": "image830.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt cho biển báo nguy hiểm W.201a và W.201b theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201a (Chỗ ngoặt nguy hiểm vòng bên trái)\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, đỉnh hướng lên trên. Bên trong có hình chữ nhật màu đỏ (biểu tượng đường cong vòng trái). Các kích thước được ghi chú: chiều cao tam giác 0,71z, chiều rộng đáy 0,68z, chiều cao hình chữ nhật đỏ 0,34z, chiều rộng hình chữ nhật đỏ 0,34z, khoảng cách từ đỉnh tam giác đến đỉnh hình chữ nhật đỏ là 0,37z, khoảng cách từ đáy tam giác đến đáy hình chữ nhật đỏ là 0,34z.\",\n      \"meaning_or_specification\": \"Biển báo nguy hiểm cho biết chỗ ngoặt nguy hiểm vòng bên trái. Kích thước z phụ thuộc vào loại đường (cao tốc, đường đôi ngoài đô thị, thông thường, đô thị) theo bảng quy định trong điều luật.\"\n    },\n    {\n      \"identifier\": \"Biển báo W.201b (Chỗ ngoặt nguy hiểm vòng bên phải)\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, đỉnh hướng lên trên. Bên trong có hình chữ nhật màu đỏ (biểu tượng đường cong vòng phải). Các kích thước được ghi chú: chiều cao tam giác 0,71z, chiều rộng đáy 0,68z, chiều cao hình chữ nhật đỏ 0,34z, chiều rộng hình chữ nhật đỏ 0,34z, khoảng cách từ đỉnh tam giác đến đỉnh hình chữ nhật đỏ là 0,37z, khoảng cách từ đáy tam giác đến đáy hình chữ nhật đỏ là 0,34z.\",\n      \"meaning_or_specification\": \"Biển báo nguy hiểm cho biết chỗ ngoặt nguy hiểm vòng bên phải. Kích thước z phụ thuộc vào loại đường (cao tốc, đường đôi ngoài đô thị, thông thường, đô thị) theo bảng quy định trong điều luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 529,
+  "elapsed_seconds": 9.17177190000075,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d0c25e225457dddd9a131f86a051166ca02f6e5a6dd250921032c5e704f56df7",
+  "filename": "image1304.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định chiều cao z (mm) của biển báo giao thông cho các loại đường khác nhau theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Chiều cao z của biển báo\",\n      \"visual_or_geometric_features\": \"Hình khối chữ nhật biểu diễn chiều cao z (mm) của biển báo, được minh họa bằng các giá trị số cụ thể ứng với từng loại đường.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, chiều cao z của biển báo giao thông được quy định như sau: - Đường đôi ngoài đô thị: 80 mm; - Đường thông thường: 80 mm; - Đường đô thị: 40 mm.\"\n    }\n  ]\n}",
+  "generated_tokens": 215,
+  "elapsed_seconds": 4.569063600007212,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

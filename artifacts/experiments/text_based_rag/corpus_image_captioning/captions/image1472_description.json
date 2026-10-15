@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2ca85f427ce7a54209b7a02f1dee077194a7e454f551867d92eb324c9ab7fd0b",
+  "filename": "image1472.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng 'Cấp cứu' theo QCVN 41:2024/BGTVT, với các ký hiệu A, B, C, D, E chỉ các chiều kích thước.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng Cấp cứu (Điều 3)\",\n      \"visual_or_geometric_features\": \"Hình vuông có góc bo tròn, bên trong là hình chữ thập đỏ; các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và mũi tên chỉ chiều dài, chiều rộng, độ dày viền, chiều cao chữ thập và khoảng cách từ mép đến chữ thập.\",\n      \"meaning_or_specification\": \"Theo Điều 3 của QCVN 41:2024/BGTVT, biểu tượng 'Cấp cứu' có kích thước: Loại A (A=75,0 cm; B=2,0 cm; C=13,2 cm; D=52,6 cm; E=5,0 cm) và Loại B (A=60,0 cm; B=1,5 cm; C=5,0 cm; D=50,0 cm; E=5,0 cm).\"\n    }\n  ]\n}",
+  "generated_tokens": 307,
+  "elapsed_seconds": 5.181001799996011,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

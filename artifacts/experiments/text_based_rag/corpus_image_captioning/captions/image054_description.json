@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b5013137bd7821db45204845330fb089ea2a471e57b44dea5f3bed43b3e3440c",
+  "filename": "image054.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa ba loại biển chỉ dẫn Công trình kiểm soát tải trọng xe (WEIGH STATION) theo quy chuẩn QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển số IE.463a\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ và số màu trắng. Nội dung: Dòng trên ghi 'CÔNG TRÌNH KSTTX WEIGH STATION', dòng dưới ghi khoảng cách '750 m'.\", \"meaning_or_specification\": \"Chỉ dẫn khoảng cách đến Công trình kiểm soát tải trọng xe. Biển này được đặt trên đường dẫn vào để báo trước khoảng cách sắp đến công trình.\"}, {\"identifier\": \"Biển số IE.463b\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ màu trắng. Nội dung: Dòng trên ghi 'CÔNG TRÌNH KSTTX WEIGH STATION', dòng dưới có một mũi tên chỉ hướng rẽ phải.\", \"meaning_or_specification\": \"Chỉ dẫn hướng rẽ vào Công trình kiểm soát tải trọng xe. Biển này được đặt cách nút giao vào công trình khoảng 150m.\"}, {\"identifier\": \"Biển số IE.463c\", \"visual_or_geometric_features\": \"Biển hình mũi tên chỉ hướng, nền màu xanh lá cây, chữ màu trắng. Nội dung: Dòng trên ghi 'CÔNG TRÌNH KSTTX WEIGH STATION', dòng dưới có một mũi tên lớn chỉ hướng rẽ phải.\", \"meaning_or_specification\": \"Chỉ dẫn lối vào Công trình kiểm soát tải trọng xe. Biển này được đặt ngay trước lối vào công trình tại nút giao giữa đường cao tốc và đường vào công trình.\"}]}",
+  "generated_tokens": 386,
+  "elapsed_seconds": 7.890122100005101,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:37924de0f62572bf8485ca30017b5309b4ccb01aca0a986f4d15d340035d2299",
+  "filename": "image732.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo cấm xe gắn máy (P.111a) và biển báo cấm xe ba bánh loại có động cơ (P.111c) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm xe gắn máy (P.111a)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe gắn máy màu đen ở trung tâm. Kích thước chiều cao biển (z) được ghi chú là 140mm, 126mm, 87,5mm, 70mm tùy loại đường. Bán kính vòng tròn (R) và chiều rộng biển (B) cũng được quy định tương ứng.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe gắn máy (P.111a) được quy định tại Điều M.1 của QCVN 41:2024/BGTVT, dùng để cấm xe gắn máy đi vào đoạn đường. Kích thước z (chiều cao biển) thay đổi theo loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biển báo cấm xe ba bánh loại có động cơ (P.111c)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ba bánh có động cơ màu đen ở trung tâm. Kích thước chiều cao biển (z) được ghi chú là 140mm, 126mm, 87,5mm, 70mm tùy loại đường. Bán kính vòng tròn (R) và chiều rộng biển (B) cũng được quy định tương ứng.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ba bánh loại có động cơ (P.111c) được quy định tại Điều M.1 của QCVN 41:2024/BGTVT, dùng để cấm xe ba bánh có động cơ đi vào đoạn đường. Kích thước z (chiều cao biển) thay đổi theo loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 593,
+  "elapsed_seconds": 9.877995199996803,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:85f87874ebde8964adb38a7888bce5a411d351530dd28a418f737faff2c17a7b",
+  "filename": "image1228.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn thuộc nhóm biển chỉ dẫn (Điều M.4), bao gồm hình dạng, kích thước các phần tử và tỷ lệ lưới chuẩn.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn (hình chữ nhật đứng)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, được chia thành 3 phần theo chiều dọc: phần trên (kích thước 4x), phần giữa (kích thước 2x), phần dưới (kích thước 4x). Tổng chiều cao biển là 10x. Chiều rộng biển là 6x. Bên trong phần giữa có biểu tượng xe ô tô (hình khối đen).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo chỉ dẫn (ví dụ: Biển số I.401, I.402, I.405a...). Các ký hiệu 'x' đại diện cho đơn vị tỷ lệ chuẩn để tính toán kích thước thực tế theo loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị) như quy định trong bảng z(mm) của Điều M.4.\"\n    },\n    {\n      \"identifier\": \"Biểu tượng xe ô tô\",\n      \"visual_or_geometric_features\": \"Hình khối đen nằm ở trung tâm phần giữa của biển báo, có kích thước chiều ngang 2x và chiều cao 2x.\",\n      \"meaning_or_specification\": \"Biểu tượng đại diện cho loại xe cơ giới, thường được sử dụng trong các biển báo chỉ dẫn về đường ưu tiên, đường cụt, hoặc chỉ dẫn địa điểm.\"\n    },\n    {\n      \"identifier\": \"Lưới tỷ lệ (Grid)\",\n      \"visual_or_geometric_features\": \"Hệ thống lưới ô vuông đều đặn bao phủ toàn bộ hình ảnh, dùng để xác định tỷ lệ và kích thước chính xác của các thành phần.\",\n      \"meaning_or_specification\": \"Công cụ hỗ trợ kỹ thuật để đảm bảo việc thiết kế và sản xuất biển báo tuân thủ đúng kích thước chuẩn hóa theo quy định của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 509,
+  "elapsed_seconds": 8.933672899998783,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

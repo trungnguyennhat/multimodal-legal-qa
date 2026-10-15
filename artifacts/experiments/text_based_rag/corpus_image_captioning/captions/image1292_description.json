@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:cb8facf0da179592a5a6cacca20b3206c45678a78379ce64e83e7b69301bed27",
+  "filename": "image1292.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo chỉ dẫn 'Đường nhiều sương mù' (I.414d) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn 'Đường nhiều sương mù' (I.414d)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, chia thành hai phần: phần bên trái nền trắng có chữ 'ĐI CHẬM', phần bên phải nền xanh dương có chữ 'ĐƯỜNG NHIỀU SƯƠNG MÙ'. Bản vẽ kèm các kích thước kỹ thuật: chiều rộng tổng 30,5z; chiều cao tổng 5,5z; chiều rộng phần chữ 'ĐI CHẬM' là 11,8z; chiều rộng phần chữ 'ĐƯỜNG NHIỀU SƯƠNG MÙ' là 19,5z; chiều cao phần chữ 'ĐI CHẬM' là 2,7z; chiều cao phần chữ 'ĐƯỜNG NHIỀU SƯƠNG MÙ' là 2,8z; khoảng cách từ mép trên đến phần chữ 'ĐƯỜNG NHIỀU SƯƠNG MÙ' là 2,7z; khoảng cách từ mép dưới đến phần chữ 'ĐƯỜNG NHIỀU SƯƠNG MÙ' là 2,8z; khoảng cách từ mép trái đến phần chữ 'ĐI CHẬM' là 2,2z; khoảng cách từ mép phải đến phần chữ 'ĐƯỜNG NHIỀU SƯƠNG MÙ' là 2,2z; khoảng cách giữa hai phần chữ là 0,9z.\",\n      \"meaning_or_specification\": \"Biển báo này thuộc nhóm biển chỉ dẫn (I.414d), dùng để cảnh báo người tham gia giao thông về tình trạng đường nhiều sương mù. Kích thước của biển được quy định theo bảng trong điều luật, với z là hệ số phụ thuộc vào loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 482,
+  "elapsed_seconds": 8.546848899997713,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

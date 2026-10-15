@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:610c744db211ac25aa16156e17544bd8b98b6d4672bd617c2e671af1807c3b8f",
+  "filename": "image620.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật minh họa kích thước và bố trí của Vạch 7.6 - Vạch chỉ dẫn sắp đến chỗ có bố trí vạch đi bộ qua đường theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 7.6 (Vạch chỉ dẫn sắp đến chỗ có bố trí vạch đi bộ qua đường)\",\n      \"visual_or_geometric_features\": \"Hình thoi màu trắng, có kích thước được ghi chú: chiều rộng đáy là 300 cm, chiều cao tam giác là 40 cm, và góc nhọn ở đỉnh là 60°.\",\n      \"meaning_or_specification\": \"Vạch 7.6 dùng để báo hiệu sắp đến chỗ có bố trí vạch đi bộ qua đường, đặc biệt ở giữa đoạn đường nối hai nút giao. Theo quy định, đây là vạch có dạng hình thoi màu trắng với kích thước như trên hình vẽ.\"\n    }\n  ]\n}",
+  "generated_tokens": 237,
+  "elapsed_seconds": 4.804764500004239,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

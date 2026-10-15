@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c1651dd507a09f8df66aafa4beec129766a0fc577157bb89b772e82a6723d86b",
+  "filename": "image778.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố trí lắp đặt của biển báo P.127 (Tốc độ tối đa cho phép) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.127 (Tốc độ tối đa cho phép)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật nền xanh, có 3 biển tròn đỏ viền trắng chứa số tốc độ (80, 60, 50) được sắp xếp theo chiều ngang. Bản vẽ kèm các kích thước: chiều cao biển 140mm, chiều rộng mỗi biển tròn 70mm, khoảng cách giữa các biển 50mm, chiều cao khung lắp đặt 140mm, chiều rộng khung 210mm (tổng 3x70 + 2x50).\",\n      \"meaning_or_specification\": \"Biển báo P.127 quy định tốc độ tối đa cho phép trên đường. Theo điều luật, biển này thuộc nhóm biển báo cấm, có kích thước z = 140mm cho đường cao tốc, 126mm cho đường đôi ngoài đô thị, 87,5mm cho đường thông thường và 70mm cho đường đô thị. Hình vẽ minh họa cách bố trí nhiều biển tốc độ trên cùng một khung lắp đặt.\"\n    }\n  ]\n}",
+  "generated_tokens": 339,
+  "elapsed_seconds": 6.131777700000384,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

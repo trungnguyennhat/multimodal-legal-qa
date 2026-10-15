@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:40f6f9e2a2fa2597c4cbf162f6e8b428e1deda0f62e079c4819c979fde5db24d",
+  "filename": "image1558.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo hiệu đường bộ IE.469 – Biển chỉ dẫn hướng rẽ phải, thuộc nhóm biển chỉ dẫn, hình dạng chữ nhật, nền vàng với mũi tên đen chỉ hướng rẽ phải.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.469\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu vàng, có hình mũi tên đen chỉ hướng rẽ phải; kèm theo bản vẽ kỹ thuật với các kích thước A, B, C, D, E, F được quy định theo loại biển (Loại A hoặc Loại B).\",\n      \"meaning_or_specification\": \"Biển báo hiệu phương tiện phải rẽ phải; kích thước biển được quy định tại Điều P.21 của QCVN 41:2024/BGTVT, với hai loại: Loại A (kích thước lớn hơn) và Loại B (kích thước nhỏ hơn), phù hợp với điều kiện đường bộ và vị trí lắp đặt.\"\n    }\n  ]\n}",
+  "generated_tokens": 243,
+  "elapsed_seconds": 3.970232699997723,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

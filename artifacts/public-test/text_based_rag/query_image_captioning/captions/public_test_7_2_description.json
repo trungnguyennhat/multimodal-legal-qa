@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:968dc1a9761da5cee7872d4803a6d5a114a6b71309bfcac1b3b133d27976ad6c",
+  "filename": "public_test_7_2.jpg",
+  "description": "Biển báo hình chữ nhật, có nền màu xanh dương và một phần nền trắng. Trên nền trắng có hình vẽ một chiếc xe hơi đang va chạm với một vật thể, kèm theo dấu chấm than ở trên đầu xe.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 50,
+  "size": [
+    480,
+    360
+  ],
+  "elapsed_seconds": 4.026446399999259,
+  "peak_vram_bytes": 7397071872,
+  "peak_reserved_bytes": 7480541184,
+  "gpu_free_bytes": 8388608000
+}

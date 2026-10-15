@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b6c620c1aaf2672b20b38a1428b615225383d2b00ec0cce9db4e1d36491adc21",
+  "filename": "image128.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.116 'Hạn chế tải trọng trên trục xe' theo QCVN 41:2024/BGTVT, dùng để báo cấm xe có tải trọng trên một trục vượt quá giá trị ghi trên biển.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.116\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có số '7t' màu đen ở giữa và hai mũi tên hướng ra ngoài ở dưới cùng (biểu thị tải trọng trên một trục)\",\n      \"meaning_or_specification\": \"Báo đường cấm các xe (cơ giới và thô sơ), kể cả xe ưu tiên, có tải trọng toàn bộ phân bổ trên một trục bất kỳ vượt quá 7 tấn đi qua.\"\n    }\n  ]\n}",
+  "generated_tokens": 207,
+  "elapsed_seconds": 3.4544278999965172,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

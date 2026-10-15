@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:5008c34f69b58b253667de7e48181d62f9c60be59268505d0975c760503806ce",
+  "filename": "public_test_5_11.jpg",
+  "description": "Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có hình hai chiếc xe hơi: một chiếc màu đỏ và một chiếc màu đen, đang đi cạnh nhau.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 41,
+  "size": [
+    660,
+    495
+  ],
+  "elapsed_seconds": 3.423802800003614,
+  "peak_vram_bytes": 7441433088,
+  "peak_reserved_bytes": 7505707008,
+  "gpu_free_bytes": 8363442176
+}

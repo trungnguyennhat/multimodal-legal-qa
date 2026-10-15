@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:54e93a72b45fe16c4be9bad96f27d3ca959d22b18f8cc2f5c92c3f9b940b5b9d",
+  "filename": "image290.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số W.247 'Chú ý xe đỗ' theo QCVN 41:2024/BGTVT, dùng để cảnh báo phương tiện đang đỗ chiếm một phần đường xe chạy.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.247\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, không có biểu tượng bên trong (biển dạng cảnh báo chung về xe đỗ)\",\n      \"meaning_or_specification\": \"Biển được đặt trên mặt đường để cảnh báo có xe ô tô, máy kéo, rơ-moóc hoặc sơ-mi rơ-moóc đang đỗ chiếm một phần đường xe chạy; đặt cách xe phía trước và sau tối thiểu 5m; đối với đường một chiều chỉ đặt sau xe; đối với đoàn xe trên đường hai làn thì đặt ở đầu và cuối đoàn; biển đặt trực tiếp trên mặt đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 235,
+  "elapsed_seconds": 3.9021148000028916,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

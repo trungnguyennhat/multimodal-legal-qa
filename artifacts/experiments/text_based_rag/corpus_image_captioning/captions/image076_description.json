@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1bab895a3ab6ceb9b1ad9cb4dddd62b60a669463cec69faf7b8e61d6881feb9c",
+  "filename": "image076.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo chỉ dẫn Trạm thu phí (Toll Plaza) trên đường cao tốc theo quy chuẩn QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số IE.472\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ màu trắng, có viền trắng bao quanh. Nội dung ghi: 'TRẠM THU PHÍ' và 'TOLL PLAZA'.\",\n      \"meaning_or_specification\": \"Biển số IE.472 dùng để thông báo cho người điều khiển phương tiện biết trước chuẩn bị đến trạm thu phí. Biển được lắp đặt bên lề đường hoặc trên giá kiểu khung, đặt cách trạm thu phí một khoảng cách phù hợp.\"\n    }\n  ]\n}",
+  "generated_tokens": 204,
+  "elapsed_seconds": 5.073112199999741,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

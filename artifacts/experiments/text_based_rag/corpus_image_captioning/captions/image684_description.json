@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:578bc62fd8f1aaec781ee49817b1c8ea26bd2df479d1128208c023fa93ffc608",
+  "filename": "image684.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình K.3 trong QCVN 41:2024/BGTVT minh họa chi tiết các chữ cái thường (a–z) và dấu mũ (â, ê, ô, ơ, ư) theo kiểu chữ thường (gt2), dùng để thiết kế biển báo giao thông.\",\n  \"items\": [\n    {\n      \"identifier\": \"Chữ cái thường (a–z) và dấu mũ (â, ê, ô, ơ, ư)\",\n      \"visual_or_geometric_features\": \"Các ký tự chữ cái in hoa và thường được trình bày trên nền lưới chấm bi đều đặn, với độ dày nét chữ đồng nhất, không có màu sắc (đen/trắng), không có biểu tượng giao thông hay hình khối nào khác ngoài chữ cái.\",\n      \"meaning_or_specification\": \"Đây là mẫu chữ chuẩn (kiểu chữ thường gt2) được quy định trong Điều K.1.2 của QCVN 41:2024/BGTVT, dùng làm cơ sở thiết kế chữ trên biển báo giao thông; các chữ cái phải tuân thủ tỷ lệ, độ dày nét và khoảng cách theo chuẩn kỹ thuật để đảm bảo tính đồng nhất và khả năng nhận diện.\"\n    }\n  ]\n}",
+  "generated_tokens": 289,
+  "elapsed_seconds": 4.635137900004338,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

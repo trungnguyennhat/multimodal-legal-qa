@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4e673306d0878bb0fded5ccebd5bd88454fcebee89e3461c4a493cf214a4c951",
+  "filename": "image362.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số I.410 'Khu vực quay xe' theo quy định QCVN 41:2024/BGTVT, dùng để chỉ dẫn khu vực được phép quay đầu xe.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.410\",\n      \"visual_or_geometric_features\": \"Biển hình vuông, nền xanh dương, biểu tượng hai mũi tên trắng uốn cong hướng ngược nhau (một mũi lên trên, một mũi xuống dưới) – biểu thị hành động quay xe.\",\n      \"meaning_or_specification\": \"Chỉ dẫn khu vực được phép quay đầu xe; trên biển mô tả cách thức tiến hành quay xe; có thể đặt biển S.502 'Khoảng cách đến đối tượng báo hiệu' bên dưới.\"\n    }\n  ]\n}",
+  "generated_tokens": 203,
+  "elapsed_seconds": 3.389000600000145,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:844d52de288631e00c912d2e07bc9a727aab41164f91d2a9b3455badc53501f4",
+  "filename": "image496.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo phụ 'Ngoại lệ' (mã S.H,6) theo QCVN 41:2024/BGTVT, dùng để chỉ các trường hợp ngoại lệ cho biển cấm hoặc hạn chế.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số S.H,6\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen; bên trong có hình vẽ đen của một đoàn xe buýt (biểu tượng nhóm đối tượng được ngoại lệ) và dòng chữ 'NGOẠI LỆ Except' màu đen.\",\n      \"meaning_or_specification\": \"Dùng để chỉ các trường hợp mà biển cấm hoặc hạn chế được coi là không áp dụng đặc biệt cho một nhóm đối tượng tham gia giao thông nào đó (trong trường hợp này là xe buýt).\"\n    }\n  ]\n}",
+  "generated_tokens": 210,
+  "elapsed_seconds": 3.4802175000004354,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

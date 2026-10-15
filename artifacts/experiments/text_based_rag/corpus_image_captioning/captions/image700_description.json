@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8966f20a784ff6cf67067bbf78d0c294d122f22bc2778801cd19eeebe9d303f0",
+  "filename": "image700.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm xe môtô (P.104) với biểu tượng xe môtô trong vòng tròn đỏ có gạch chéo, kèm theo bản vẽ kỹ thuật quy định kích thước z theo loại đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.104\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có biểu tượng xe môtô màu đen ở giữa và một đường chéo đỏ cắt ngang từ góc trên bên trái xuống góc dưới bên phải.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe môtô; kích thước z (chiều cao biển) được quy định theo loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biểu tượng xe môtô\",\n      \"visual_or_geometric_features\": \"Hình vẽ đen của xe môtô hai bánh, hướng về phía trước, nằm trong vòng tròn đỏ có gạch chéo.\",\n      \"meaning_or_specification\": \"Biểu tượng đặc trưng cho loại phương tiện bị cấm – xe môtô; được sử dụng để chỉ rõ đối tượng bị hạn chế theo Điều M.1 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 337,
+  "elapsed_seconds": 6.096412099999725,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

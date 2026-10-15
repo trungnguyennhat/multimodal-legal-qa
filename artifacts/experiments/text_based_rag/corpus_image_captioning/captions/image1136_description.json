@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:dc348e0039c75cd2ce7e9ac17549cf6bb5deb0c132d605783a8bda85506ffc94",
+  "filename": "image1136.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố trí các thành phần của biển báo chỉ dẫn nhóm I.414 (Chỉ hướng đường) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn (hình chữ nhật)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, có khung viền, bên trong chia thành các ô lưới (grid). Có các ký hiệu kích thước: chiều dài tổng cộng 4x, chiều rộng 4x, chiều cao 4x. Bên trong có các khối màu đỏ (biểu tượng mũi tên hoặc hình học chỉ hướng) và khối trắng (phần nền hoặc mũi tên ngược).\",\n      \"meaning_or_specification\": \"Đây là bản vẽ kỹ thuật cho biển báo chỉ dẫn thuộc nhóm I.414 (Chỉ hướng đường), quy định kích thước hình học của biển báo theo loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị) với các giá trị z(mm) tương ứng là 100, 75, 50.\"\n    }\n  ]\n}",
+  "generated_tokens": 278,
+  "elapsed_seconds": 5.5533517000003485,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

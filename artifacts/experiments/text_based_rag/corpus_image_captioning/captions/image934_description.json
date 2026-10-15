@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7289b22370bc270012a53a7b821d3463bb5596a78d3d23581e4642c61edcc445",
+  "filename": "image934.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và vị trí biểu tượng cho biển báo nguy hiểm W.230 (Gia súc) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.230: Gia súc\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng gia súc màu đen ở trung tâm. Các kích thước được ghi bằng ký hiệu 'z' (chiều cao biển) và các thông số góc độ, khoảng cách cụ thể như 60°, 0,71z, 0,75z, 1,40z, 0,875z, 2,1z, 2,1z, 10z, 4,0z, 1,4z.\",\n      \"meaning_or_specification\": \"Biển báo này cảnh báo người tham gia giao thông về nguy cơ gia súc xuất hiện trên đường. Kích thước biển (z) phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị). Các thông số kỹ thuật trong bản vẽ quy định tỷ lệ và vị trí biểu tượng gia súc so với đỉnh và đáy biển để đảm bảo tính đồng nhất và dễ nhận diện.\"\n    }\n  ]\n}",
+  "generated_tokens": 351,
+  "elapsed_seconds": 6.508839299996907,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

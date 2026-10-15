@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:fb4dbb24bc2dc6af9735e59d987e98096594556babcecae67688b26b2f1ec682",
+  "filename": "image626.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa vạch đứng 8.1 (nét chéo vàng đen) được sử dụng trên mốc cố định và đảo phân làn tại trạm thu phí theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch đứng 8.1 trên mốc cố định (Hình trên)\",\n      \"visual_or_geometric_features\": \"Vạch chéo vàng - đen nghiêng 45°, bề rộng và khoảng cách nét là 15 cm, nét chéo hướng xuống phía đường xe chạy; bố trí trên bề mặt đứng của chướng ngại vật (ví dụ: trụ cầu, tường, đảo an toàn).\",\n      \"meaning_or_specification\": \"Sử dụng để cảnh báo người điều khiển phương tiện chú ý có chướng ngại vật cao hơn mặt đường phía trước, đề phòng va quệt phải; áp dụng cho các vị trí như trụ cầu, tường cầu vượt, dải phân cách, đảo an toàn...\"\n    },\n    {\n      \"identifier\": \"Vạch đứng 8.1 trên đảo phân làn tại trạm thu phí (Hình dưới)\",\n      \"visual_or_geometric_features\": \"Vạch chéo vàng - đen nghiêng 45°, chiều rộng mỗi vạch 15 cm, bắt đầu từ đầu dải phân cách tạo góc 45° so với mặt phẳng ngang và nghiêng đều về hai phía; bố trí trên bề mặt kết cấu đảo phân làn.\",\n      \"meaning_or_specification\": \"Sử dụng để biểu thị vị trí dải phân cách làn xe nhằm tăng tính dẫn hướng cho xe đi đúng làn đường tại cổng trạm thu phí.\"\n    }\n  ]\n}",
+  "generated_tokens": 373,
+  "elapsed_seconds": 6.28602310000133,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

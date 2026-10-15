@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1013d29d082859d86fcc4564f978ed4ab84ff32642e9235026ecc782d772047f",
+  "filename": "image1412.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước mã hiệu đường bộ (cỡ chữ 33 cm) theo QCVN 41:2024/BGTVT, với các thông số chiều dài, chiều cao, bán kính góc và khoảng cách căn giữa.\",\n  \"items\": [\n    {\n      \"identifier\": \"Mã hiệu đường bộ (DT.909)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có góc bo tròn (R2,4), kích thước tổng thể 120 x 55 mm, chiều cao nội dung 33 mm, khoảng cách căn giữa 'a' ở hai bên, chữ 'DT.909' được bố trí trong khung.\",\n      \"meaning_or_specification\": \"Quy định kích thước mã hiệu đường bộ cỡ chữ 33 cm theo Điều O của QCVN 41:2024/BGTVT, dùng để xác định kích thước chuẩn cho biển báo trong thiết kế và sản xuất.\"\n    }\n  ]\n}",
+  "generated_tokens": 247,
+  "elapsed_seconds": 4.1632016000003205,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

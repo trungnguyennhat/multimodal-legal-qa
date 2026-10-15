@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7589caa6725d0fccf4e680d691a2401baced8c6582951f8a016bfa92a3fcf19e",
+  "filename": "image1282.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo chỉ dẫn nhóm I.444 (Biển báo chỉ dẫn địa điểm) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn địa điểm (Biển số I.444)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật nằm ngang, có mũi tên chỉ hướng ở bên trái. Bản vẽ được chia thành lưới ô vuông để xác định kích thước. Các ký hiệu kích thước bao gồm: chiều dài các đoạn ngang (30x, 10x, 40x, 10x, 10x, 10x), chiều cao tổng thể (10x), chiều cao phần chữ (8x, 3x), và chiều rộng các phần ngang dưới cùng (30x, 47x, 30x).\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, đây là biển báo chỉ dẫn địa điểm (mã I.444a đến I.444l, L444j, L444k, L444l). Kích thước thực tế của biển báo phụ thuộc vào loại đường: 60mm cho đường đôi ngoài đô thị, 80mm cho đường thông thường và 40mm cho đường đô thị. Các ký hiệu 'x' trong hình ảnh đại diện cho đơn vị tỷ lệ để xác định kích thước cụ thể theo từng loại đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 383,
+  "elapsed_seconds": 7.069526999999653,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

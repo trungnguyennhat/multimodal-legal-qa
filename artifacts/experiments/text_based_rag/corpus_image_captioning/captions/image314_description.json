@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:dc0967224ec490358d634154e29b005f07e3f30d7eb79f58a8563e2fb750a261",
+  "filename": "image314.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba kiểu biển số R.310a, R.310b và R.310c theo QCVN 41:2024/BGTVT, dùng để chỉ hướng đi bắt buộc cho xe chở hàng nguy hiểm tùy theo hướng di chuyển.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số R.310a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền trắng, viền đen; phần trên là hình chữ nhật màu cam (biểu tượng xe tải), phần dưới là biển tròn xanh dương với mũi tên cong hướng trái.\",\n      \"meaning_or_specification\": \"Chỉ hướng đi phải theo cho xe chở hàng nguy hiểm khi rẽ trái.\"\n    },\n    {\n      \"identifier\": \"Biển số R.310b\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền trắng, viền đen; phần trên là hình chữ nhật màu cam (biểu tượng xe tải), phần dưới là biển tròn xanh dương với mũi tên thẳng hướng lên.\",\n      \"meaning_or_specification\": \"Chỉ hướng đi phải theo cho xe chở hàng nguy hiểm khi đi thẳng.\"\n    },\n    {\n      \"identifier\": \"Biển số R.310c\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền trắng, viền đen; phần trên là hình chữ nhật màu cam (biểu tượng xe tải), phần dưới là biển tròn xanh dương với mũi tên cong hướng phải.\",\n      \"meaning_or_specification\": \"Chỉ hướng đi phải theo cho xe chở hàng nguy hiểm khi rẽ phải.\"\n    }\n  ]\n}",
+  "generated_tokens": 390,
+  "elapsed_seconds": 6.368785999999091,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

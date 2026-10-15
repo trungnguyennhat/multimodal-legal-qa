@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5130d90e615c20be4d35e2a6734a7a24b8cd3bb88376f98ab2041dc279400b07",
+  "filename": "image330.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số R.413m – Biển kết thúc làn đường dành riêng cho xe buýt, thuộc nhóm biển báo kết thúc làn đường theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.413m\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, có biểu tượng xe buýt màu trắng ở phần trên và xe ô tô con màu trắng ở phần dưới, cùng một đường chéo đỏ từ góc trên bên trái xuống góc dưới bên phải.\",\n      \"meaning_or_specification\": \"Biển báo hiệu sự kết thúc của làn đường dành riêng cho xe buýt; đồng thời cho phép các loại xe khác (như xe ô tô con) được phép lưu hành trong làn đó từ điểm này trở đi.\"\n    }\n  ]\n}",
+  "generated_tokens": 214,
+  "elapsed_seconds": 3.645401000001584,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

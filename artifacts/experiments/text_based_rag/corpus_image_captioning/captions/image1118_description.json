@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:48be4d9d11335739c30c8cde9655f36478f49b10e410965f9e99030ad078154a",
+  "filename": "image1118.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và tỷ lệ các thành phần của biển báo hiệu lệnh nhóm R.420 (Bắt đầu khu đông dân cư) và R.E,9a (Cấm đỗ xe theo giờ trong khu vực) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo hình chữ nhật đứng (Biển R.420)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, có khung viền, nội dung gồm chữ 'ZONE' và vòng tròn đỏ chứa số '50'. Bản vẽ kèm các ký hiệu kích thước: chiều cao tổng 14,28z, chiều rộng 10z, bán kính vòng tròn 3,75z, chiều cao chữ 'ZONE' 2,16z, chiều cao số '50' 3,75z.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo bắt đầu khu đông dân cư (R.420) hoặc biển cấm đỗ xe theo giờ (R.E,9a) tùy theo loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với các giá trị z tương ứng theo bảng trong điều luật.\"\n    },\n    {\n      \"identifier\": \"Biển báo hình tròn (Biển R.420 hoặc R.E,9a)\",\n      \"visual_or_geometric_features\": \"Hình tròn đỏ viền trắng, chứa số '50' ở giữa. Bản vẽ kèm các ký hiệu kích thước: đường kính vòng tròn 7,5z, chiều cao số '50' 3,75z.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo hình tròn (có thể là biển tốc độ tối đa 50 km/h hoặc biển cấm đỗ xe theo giờ) tùy theo loại đường, với các giá trị z tương ứng theo bảng trong điều luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 471,
+  "elapsed_seconds": 8.227092100001755,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

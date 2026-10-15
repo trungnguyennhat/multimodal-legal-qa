@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:dca0450b402040ef4dd87c25db5d3f8fb587dc90ddab21e6f899a9475edf38b5",
+  "filename": "image1116.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo hiệu lệnh nhóm R.301 (các xe chỉ được đi thẳng) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo hiệu lệnh (Biển số R.301a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, có lưới ô vuông chia kích thước. Bên trong có chữ 'ZONE' và hình chữ 'P' màu xanh dương (trong bản vẽ kỹ thuật này được thể hiện bằng khối màu xanh dương để minh họa vị trí hoặc phần nổi bật, nhưng theo quy tắc trích xuất kỹ thuật, đây là hình khối hình học). Các kích thước được ghi bằng đơn vị 'z' (mm) bao gồm: chiều rộng 7,7z, chiều cao 14,0z, các khoảng cách từ mép biển đến các thành phần nội dung (ví dụ: 0,88z, 2,14z, 0,71z, 0,88z ở bên trái; 1,2z ở trên phải; 1,2z ở dưới phải).\",\n      \"meaning_or_specification\": \"Theo Điều M.3 của QCVN 41:2024/BGTVT, biển số R.301a là biển hiệu lệnh 'Các xe chỉ được đi thẳng'. Kích thước z (mm) phụ thuộc vào loại đường: Đường cao tốc (140mm), Đường đôi ngoài đô thị (126mm), Đường thông thường (87,5mm), Đường đô thị (70mm). Hình vẽ này minh họa tỷ lệ và vị trí các thành phần của biển báo theo quy chuẩn kỹ thuật.\"\n    }\n  ]\n}",
+  "generated_tokens": 416,
+  "elapsed_seconds": 7.395642800001951,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

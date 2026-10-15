@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7c2f49ce4240c3e9c24d2d50cd683115803e22815ab9a4294adbc7b7880af0f3",
+  "filename": "image584.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch 1.3 và vạch 5.2) tại nút giao lộ phức tạp để phân chia hai chiều xe chạy và dẫn hướng xe đi thẳng qua nút.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.3 (Vạch phân chia hai chiều xe chạy)\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song, nét liền, màu vàng. Bề rộng mỗi vạch b = 15 cm. Khoảng cách phía trong hai mép vạch đơn nhỏ nhất là 15 cm, lớn nhất là 50 cm.\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều, xe không được lấn làn, không được đè lên vạch. Thường dùng cho đường có từ 4 làn xe cơ giới trở lên hoặc ở các vị trí cần thiết khác để nhấn mạnh mức độ nguy hiểm.\"\n    },\n    {\n      \"identifier\": \"Vạch 5.2 (Vạch phân làn đường kéo dài qua phạm vi nút giao)\",\n      \"visual_or_geometric_features\": \"Vạch đơn, nét đứt, màu trắng. Bề rộng vạch b = 15 cm. Chiều dài đoạn nét liền L1 và đoạn nét đứt L2 từ 0,5 m đến 2,0 m, tỷ lệ L1/L2 = 1:1.\",\n      \"meaning_or_specification\": \"Sử dụng ở các nút giao lệch để định hướng quỹ đạo cho dòng xe đi thẳng. Mục đích tăng tính dẫn hướng cho xe chạy; xe được phép cắt qua vạch khi cần thiết.\"\n    }\n  ]\n}",
+  "generated_tokens": 377,
+  "elapsed_seconds": 9.342317800001183,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

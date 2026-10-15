@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2cded97eb7476ec41a44d93fa3446b6d337e7f876b60beff8334ba07511c83a7",
+  "filename": "image662.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh hiển thị từ khóa 'XE ĐẠP' được sử dụng làm vạch kẻ đường dạng chữ viết, thuộc mục 9.5e của QCVN 41:2024/BGTVT, dùng để chỉ làn đường dành riêng cho xe đạp.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch chữ 'XE ĐẠP'\",\n      \"visual_or_geometric_features\": \"Vạch dạng chữ viết màu trắng (theo quy định chung của mục 9.5), nội dung chữ là 'XE ĐẠP'.\",\n      \"meaning_or_specification\": \"Sử dụng làm vạch 9.5e để chỉ rõ làn đường dành riêng cho xe đạp, thường đi kèm với vạch ký hiệu xe đạp (Hình G.82) hoặc dùng độc lập để xác định phạm vi làn xe đạp trên mặt đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 211,
+  "elapsed_seconds": 3.9416182999993907,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

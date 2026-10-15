@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:706a351d02a41a0c90ffc632eefa2812153aa500668267732df2488ec219aceb",
+  "filename": "image286.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biến thể của biển số W.245 (a,b) 'Đi chậm' theo QCVN 41:2024/BGTVT, dùng để nhắc lái xe giảm tốc độ trước đoạn đường yêu cầu đi chậm.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.245a\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, chữ 'ĐI CHẬM' màu đen in hoa ở giữa\",\n      \"meaning_or_specification\": \"Dùng để nhắc lái xe giảm tốc độ đi chậm; đặt ở vị trí thích hợp trước đoạn đường yêu cầu đi chậm.\"\n    },\n    {\n      \"identifier\": \"Biển số W.245b\",\n      \"visual_or_geometric_features\": \"Biên tam giác cân, viền đỏ, nền vàng, chữ 'ĐI CHẬM' màu đen ở trên; phía dưới là biển chữ nhật nền trắng, chữ 'SLOW' màu đen; kèm cột trụ sơn sọc đỏ-trắng\",\n      \"meaning_or_specification\": \"Dùng cho các tuyến đường đối ngoại, bắt buộc phải dùng biến thể này; có thêm biển phụ 'SLOW' và cột trụ cảnh báo.\"\n    }\n  ]\n}",
+  "generated_tokens": 306,
+  "elapsed_seconds": 4.907403199998953,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

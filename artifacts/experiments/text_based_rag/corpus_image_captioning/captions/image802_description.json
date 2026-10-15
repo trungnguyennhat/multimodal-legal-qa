@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a1756274055dabad89ec3c5de7308726ef86d62ab6f4c999f58599b65ac373fd",
+  "filename": "image802.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm xe ôtô (P.103a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.103a (Cấm xe ôtô)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền xanh dương, nền trắng, có hai hình xe ôtô đối diện nhau bị gạch chéo màu đỏ (trong bản vẽ đen trắng thể hiện bằng nét đậm). Kích thước đường kính biển z = 87,5 mm (cho đường thông thường).\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô đi vào. Theo điều luật, đối với đường thông thường, kích thước z = 87,5 mm. Hình vẽ minh họa vị trí lắp đặt: biển đặt trên cột, cách mặt đường 2,2 m; khoảng cách từ mép biển đến mép đường là 0,75 m; khoảng cách từ mép biển đến mép vạch kẻ đường (nếu có) là 0,14 m; khoảng cách từ mép biển đến mép cột là 0,2 m.\"\n    },\n    {\n      \"identifier\": \"Hình khối xe ôtô trong bản vẽ kỹ thuật\",\n      \"visual_or_geometric_features\": \"Hai hình xe ôtô đối diện nhau, mỗi xe có chiều rộng 2,8 m và chiều dài 2,8 m (theo bản vẽ), tổng chiều rộng 5,6 m. Khoảng cách giữa hai xe là 0,2 m.\",\n      \"meaning_or_specification\": \"Biểu tượng xe ôtô dùng để chỉ loại phương tiện bị cấm. Kích thước hình học này dùng để xác định tỷ lệ và bố cục biểu tượng trên biển báo, đảm bảo tính nhận diện rõ ràng.\"\n    }\n  ]\n}",
+  "generated_tokens": 428,
+  "elapsed_seconds": 7.446390799996152,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:f48d88bf8fd01f404be0212b54fa5c59242a7041ff14a4c99f47bf18d1b17a61",
+  "filename": "image310.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biến thể (a và b) của biển số R.308 theo QCVN 41:2024/BGTVT, dùng để báo hiệu tuyến đường cầu vượt cắt qua với hướng đi thẳng hoặc rẽ trái/phải.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số R.308a\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng, biểu tượng mũi tên trắng chỉ hướng rẽ trái và đi thẳng\",\n      \"meaning_or_specification\": \"Biển báo hiệu phía trước có cầu vượt, xe có thể đi thẳng hoặc rẽ trái theo chỉ dẫn trên hình vẽ\"\n    },\n    {\n      \"identifier\": \"Biển số R.308b\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng, biểu tượng mũi tên trắng chỉ hướng rẽ phải và đi thẳng\",\n      \"meaning_or_specification\": \"Biển báo hiệu phía trước có cầu vượt, xe có thể đi thẳng hoặc rẽ phải theo chỉ dẫn trên hình vẽ\"\n    }\n  ]\n}",
+  "generated_tokens": 267,
+  "elapsed_seconds": 4.318721000003279,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

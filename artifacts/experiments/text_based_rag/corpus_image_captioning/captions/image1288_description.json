@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:74e92c542075e55fe5ec1dfc72dfcb02dccdf392e46e83f9ed932bbc9c1723b8",
+  "filename": "image1288.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo chỉ dẫn số I.415 (Mũi tên chỉ hướng đi) với biểu tượng mũi tên chỉ hướng đi cho xe ưu tiên và người đi bộ, kèm theo kích thước kỹ thuật chi tiết.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.415: Mũi tên chỉ hướng đi\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, viền trắng. Bên trong có biểu tượng mũi tên chỉ hướng đi cho xe ưu tiên (mũi tên lớn màu trắng) và mũi tên chỉ hướng đi cho người đi bộ (mũi tên nhỏ màu trắng).\",\n      \"meaning_or_specification\": \"Biển báo này được sử dụng để chỉ dẫn hướng đi cho xe ưu tiên và người đi bộ trên đường bộ. Kích thước biển được quy định trong QCVN 41:2024/BGTVT, với chiều dài và chiều rộng tùy thuộc vào loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 253,
+  "elapsed_seconds": 5.127474200002325,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

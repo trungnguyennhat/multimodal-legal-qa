@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:72527fd4d2f47bd62b185734e623611ff354061559a73a4f2c17349ee87a1905",
+  "filename": "image284.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.244 'Đoạn đường hay xảy ra tai nạn' theo QCVN 41:2024/BGTVT, dùng để cảnh báo nguy hiểm đoạn đường phía trước thường xảy ra tai nạn.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.244\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen gồm hình xe tải đang va chạm với xe con và dấu chấm than (!) ở giữa\",\n      \"meaning_or_specification\": \"Biển cảnh báo đoạn đường phía trước thường xảy ra tai nạn, yêu cầu lái xe đặc biệt chú ý; được đặt ở vị trí thích hợp nơi sắp vào đoạn đường nguy hiểm.\"\n    }\n  ]\n}",
+  "generated_tokens": 197,
+  "elapsed_seconds": 3.3063399999955436,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

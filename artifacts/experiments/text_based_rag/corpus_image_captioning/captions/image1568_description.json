@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bbc4221722b265a2f768e2f1c32428b21ce15a913f7b9336ccd6f3ed74337323",
+  "filename": "image1568.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển chỉ dẫn trạm thu phí không dừng (IE.472c) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn trạm thu phí không dừng (IE.472c)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với viền đen, nền vàng huỳnh quang, chữ 'KHÔNG DỪNG ETC' màu xanh lá cây; kèm các ký hiệu kích thước: chiều rộng 230 cm, chiều cao 100 cm, khoảng cách từ mép trên đến tâm chữ 'H1', từ mép dưới đến tâm chữ 'H1'', và khoảng cách từ mép phải đến tâm mũi tên chỉ hướng '5'.\",\n      \"meaning_or_specification\": \"Theo Điều c) QCVN 41:2024/BGTVT, biển IE.472c có nền vàng huỳnh quang, viền đen, chữ xanh lá cây; kích thước thực tế là chiều rộng 230 cm, chiều cao 100 cm; H1 = 33 cm (chiều cao từ mép trên đến tâm chữ), H1' = 25 cm (chiều cao từ mép dưới đến tâm chữ); mũi tên chỉ hướng có khoảng cách 5 cm từ mép phải biển.\"\n    }\n  ]\n}",
+  "generated_tokens": 344,
+  "elapsed_seconds": 5.60928679999779,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

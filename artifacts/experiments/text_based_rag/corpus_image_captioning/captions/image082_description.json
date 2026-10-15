@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:70467de19557c0099c84822bce16464d156bdc494865c6e41d9329d984ad333b",
+  "filename": "image082.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai loại tiêu phản quang dạng mũi tên: mũi tên chỉ hướng bên phải (màu đen trên nền vàng) và mũi tên chỉ hướng ngược chiều bên trái (màu trắng trên nền đỏ), được quy định tại Điều 56.3 của QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Tiêu phản quang dạng mũi tên chỉ hướng (bên phải)\", \"visual_or_geometric_features\": \"Hình dạng: Mũi tên chỉ hướng bên phải. Màu sắc: Mũi tên màu đen trên nền vàng.\", \"meaning_or_specification\": \"Sử dụng để chỉ hướng cho xe chạy trên các đường cong nằm, đặc biệt là trên đường cao tốc tại các đường cong có bán kính bằng bán kính tối thiểu nhỏ nhất theo cấp đường, hoặc trên các đoạn đường cong hạn chế tầm nhìn, điểm đen tai nạn, đường cong dạng con rắn.\"}, {\"identifier\": \"Tiêu phản quang dạng mũi tên chỉ hướng ngược chiều (bên trái)\", \"visual_or_geometric_features\": \"Hình dạng: Mũi tên chỉ hướng bên trái. Màu sắc: Mũi tên màu trắng trên nền đỏ.\", \"meaning_or_specification\": \"Sử dụng cho hướng ngược chiều (bên trái) theo chiều đi của đường hai chiều (để cảnh báo người lái đi nhầm đường) và sử dụng cho các đường lánh nạn.\"}]}",
+  "generated_tokens": 308,
+  "elapsed_seconds": 5.744054900002084,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

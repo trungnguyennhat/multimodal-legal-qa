@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a0cfa899101bbd04af8f089ac70469dff68124b776df8716382330ba6205959e",
+  "filename": "image490.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo S.G,9b theo QCVN 41:2024/BGTVT – chỉ dẫn tới điểm đỗ xe dành cho lái xe muốn sử dụng phương tiện công cộng.\",\n  \"items\": [\n    {\n      \"identifier\": \"S.G,9b\",\n      \"visual_or_geometric_features\": \"Hình dạng: Mũi tên chỉ dẫn (hình tam giác hướng phải). Màu sắc: Nền xanh dương, chữ và viền trắng. Biểu tượng: Chữ 'P' màu trắng kèm dấu cộng '+' và từ 'METRO' màu trắng bên trong mũi tên.\",\n      \"meaning_or_specification\": \"Biển báo này được dùng để chỉ dẫn tới địa điểm đỗ xe dành cho xe có lái xe muốn sử dụng phương tiện công cộng (theo quy định tại Điều F.14 của QCVN 41:2024/BGTVT).\"\n    }\n  ]\n}",
+  "generated_tokens": 223,
+  "elapsed_seconds": 3.6556586000006064,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

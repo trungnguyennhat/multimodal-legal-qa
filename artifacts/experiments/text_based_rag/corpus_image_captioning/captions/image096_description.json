@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a56ff00b5fd1fe45d9609a0194c70ee4c625e30f8af5d6b25ac65ac3a6d52909",
+  "filename": "image096.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm xe máy (P.104) theo QCVN 41:2024/BGTVT, dùng để báo hiệu đường cấm các loại xe máy trừ xe ưu tiên.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.104\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có dấu gạch chéo đỏ từ trên trái xuống dưới phải, bên trong là hình vẽ đen của một chiếc xe máy đang di chuyển.\",\n      \"meaning_or_specification\": \"Biển báo cấm các loại xe máy đi vào đường, trừ các xe được ưu tiên theo quy định; không cấm người dắt xe máy.\"\n    }\n  ]\n}",
+  "generated_tokens": 184,
+  "elapsed_seconds": 3.2259378000017023,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ae406392db9d66aab1cf3b199039939e1846ad10e22e76622ad1a52839f0ede5",
+  "filename": "image758.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biển báo cấm thuộc nhóm biển báo cấm theo QCVN 41:2024/BGTVT, bao gồm biển cấm đi ngược chiều (P.102), biển cấm xe ôtô (P.103a) và biển cấm xe ôtô rẽ phải (P.103b), kèm theo bản vẽ kỹ thuật kích thước hình học tương ứng.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.102\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng đi ngược chiều bị gạch chéo đỏ. Bản vẽ kỹ thuật kèm theo có kích thước: đường kính biển 600mm, chiều cao mũi tên 300mm, độ dày gạch chéo 100mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm đi ngược chiều – cấm phương tiện đi theo hướng ngược với chiều cho phép của đường.\"\n    },\n    {\n      \"identifier\": \"P.103a\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, biểu tượng hình xe ôtô đen bị gạch chéo đỏ. Bản vẽ kỹ thuật kèm theo có kích thước: đường kính biển 600mm, chiều cao xe ôtô 300mm, độ dày gạch chéo 100mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô – cấm tất cả các loại xe ôtô lưu thông trên đoạn đường này.\"\n    },\n    {\n      \"identifier\": \"P.103b\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, biểu tượng hình xe ôtô đen đang rẽ phải bị gạch chéo đỏ. Bản vẽ kỹ thuật kèm theo có kích thước: đường kính biển 600mm, chiều cao xe ôtô 300mm, độ dày gạch chéo 100mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô rẽ phải – cấm xe ôtô thực hiện hành động rẽ phải tại vị trí biển báo.\"\n    }\n  ]\n}",
+  "generated_tokens": 489,
+  "elapsed_seconds": 8.385195200004091,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:747ff54728bc621fa564b634fa522662dc1f592f13d0b21338d5e7d88177c1b5",
+  "filename": "image022.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai loại biển chỉ dẫn IE.450a và IE.450b theo Điều 47.1 của QCVN 41:2024/BGTVT, dùng để báo trước khoảng cách và hướng rẽ vào đường dẫn vào đường cao tốc.\", \"items\": [{\"identifier\": \"Biển số IE.450a\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh dương, chữ và biểu tượng màu trắng. Có biểu tượng mũi tên rẽ trái và mũi tên thẳng đứng. Ghi thông tin: ĐỨC HÒA, ĐT830, CT.01, TP. HCM TRUNG LƯƠNG, 500 m.\", \"meaning_or_specification\": \"Chỉ dẫn khoảng cách đến nút giao với đường dẫn vào đường cao tốc (khoảng cách quy về bội số của 100m).\"}, {\"identifier\": \"Biển số IE.450b\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh dương, chữ và biểu tượng màu trắng. Có biểu tượng mũi tên rẽ phải và mũi tên thẳng đứng. Ghi thông tin: ĐỨC HÒA, ĐT830, CT.01, TP. HCM TRUNG LƯƠNG, 500 m.\", \"meaning_or_specification\": \"Chỉ dẫn sơ đồ đến đường dẫn vào đường cao tốc. Đặt cách nút giao tối thiểu bằng tầm nhìn một chiều của cấp đường trên đường xe đang chạy.\"}]}",
+  "generated_tokens": 336,
+  "elapsed_seconds": 7.176056299998891,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

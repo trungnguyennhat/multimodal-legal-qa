@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e10eba099d9d248fa01f92636f33d44855ae9aa4204f0893c2f39b051a70faa1",
+  "filename": "image288.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biển báo giao thông số W.246a, W.246b và W.246c thuộc nhóm 'Chú ý chướng ngại vật', với các hướng vòng tránh khác nhau.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.246a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: chướng ngại vật ở giữa với mũi tên chỉ vòng tránh ra hai bên\",\n      \"meaning_or_specification\": \"Báo trước cho lái xe biết phía trước có chướng ngại vật, cần giảm tốc độ và vòng tránh ra hai bên\"\n    },\n    {\n      \"identifier\": \"Biển số W.246b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: chướng ngại vật ở giữa với mũi tên chỉ vòng tránh sang bên trái\",\n      \"meaning_or_specification\": \"Báo trước cho lái xe biết phía trước có chướng ngại vật, cần giảm tốc độ và vòng tránh sang bên trái\"\n    },\n    {\n      \"identifier\": \"Biển số W.246c\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: chướng ngại vật ở giữa với mũi tên chỉ vòng tránh sang bên phải\",\n      \"meaning_or_specification\": \"Báo trước cho lái xe biết phía trước có chướng ngại vật, cần giảm tốc độ và vòng tránh sang bên phải\"\n    }\n  ]\n}",
+  "generated_tokens": 376,
+  "elapsed_seconds": 5.962955100003455,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

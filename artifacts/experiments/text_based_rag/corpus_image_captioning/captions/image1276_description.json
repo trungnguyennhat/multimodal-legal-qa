@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:923186b84df80f6a649b29da56ed9cc557e436a493a4f9b1edc2563197d385c3",
+  "filename": "image1276.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và bố cục lắp đặt của biển báo chỉ dẫn 'Nơi rửa xe' (I.429) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.429: Nơi rửa xe\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình mũi tên chỉ hướng (hình tam giác cân ở phía trước, hình chữ nhật ở thân). Các thông số/ký hiệu kích thước: Chiều dài mũi tên (114x), chiều rộng mũi tên (43x), chiều cao tổng thể (162x), chiều cao phần thân (48x), chiều rộng phần thân (43x), khoảng cách giữa các phần (114x), chiều cao chữ 'RỬA XE' (43x), chiều cao chữ 'Car Wash' (43x). Bản vẽ bên phải minh họa tỷ lệ lưới 4x4 cho biểu tượng xe hơi và vòi nước.\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn nơi có dịch vụ rửa xe. Kích thước z (chiều cao chữ) được quy định trong bảng điều luật: 100mm (đường đôi ngoài đô thị), 75mm (đường thông thường), 50mm (đường đô thị). Hình vẽ biểu tượng xe hơi và vòi nước nằm trong phần thân hình chữ nhật của biển.\"\n    }\n  ]\n}",
+  "generated_tokens": 353,
+  "elapsed_seconds": 6.691436799999792,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

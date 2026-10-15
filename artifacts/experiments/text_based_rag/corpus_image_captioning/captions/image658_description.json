@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d64df39f6c7f70254bc211f12da5957352387273136b82e133ed4d32cc55d32d",
+  "filename": "image658.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa vạch chữ 'XE MÁY' trên mặt đường, thuộc quy định về vạch 9.5c trong QCVN 41:2024/BGTVT, dùng để chỉ làn đường dành riêng cho xe máy.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 9.5c: Vạch chữ 'XE MÁY'\",\n      \"visual_or_geometric_features\": \"Vạch dạng chữ viết màu trắng trên mặt đường, nội dung là cụm từ 'XE MÁY' viết hoa, in đậm, bố cục rõ ràng, dễ đọc từ xa.\",\n      \"meaning_or_specification\": \"Sử dụng để chỉ làn đường dành riêng cho xe máy, tăng tính nhận diện và tuân thủ quy định phân làn giao thông. Theo điều luật, chiều cao chữ trong đô thị có thể là 1,6 m; bề rộng nét vẽ từ 12–18 cm; khoảng cách giữa các hàng chữ 1,0–1,5 m.\"\n    }\n  ]\n}",
+  "generated_tokens": 240,
+  "elapsed_seconds": 4.36967249999725,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

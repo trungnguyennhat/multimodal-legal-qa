@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1cffab98420ad6a2b30e58427a28c01b63e15fdefa133d5461403d443824cb48",
+  "filename": "image1186.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển chỉ dẫn địa giới hành chính (biển I.419a hoặc I.419b) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn địa giới (I.419a/I.419b)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng lưới chấm), chữ viết màu trắng. Các thông số kích thước được ghi chú: chiều rộng 840mm, chiều cao 600mm, khoảng cách từ mép biển đến mép khung viền 40mm, khoảng cách giữa các dòng chữ 40mm, 40mm, 40mm, 40mm. Kích thước các phần chữ: 'ĐỊA PHẬN' (840x200mm), 'HÀ NAM' (840x200mm), 'ZONE' (840x120mm), 'Km 263+700' (840x120mm).\",\n      \"meaning_or_specification\": \"Biển báo này dùng để chỉ dẫn địa giới hành chính (tỉnh, huyện, xã...). Theo điều luật, biển I.419a dùng cho chỉ dẫn địa giới thông thường, biển I.419b dùng cho chỉ dẫn địa giới trên tuyến đường đối ngoại. Kích thước biển phụ thuộc vào loại đường: đường đôi ngoài đô thị (z=100mm), đường thông thường (z=75mm), đường đô thị (z=50mm). Trong hình, kích thước 840x600mm phù hợp với biển chỉ dẫn địa giới trên đường đôi ngoài đô thị hoặc đường thông thường.\"\n    }\n  ]\n}",
+  "generated_tokens": 444,
+  "elapsed_seconds": 7.952784900000552,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:871ebd9d9b2f635cd83718d04c79d12568c4f84f3818deade7960f5a0565845e",
+  "filename": "image308.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số R.307 'Hết tốc độ tối thiểu' theo QCVN 41:2024/BGTVT, dùng để báo hiệu kết thúc hiệu lực của biển R.306.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.307\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, nền xanh dương, viền trắng, có số '60' màu trắng ở giữa và một đường chéo đỏ cắt ngang từ góc trên bên trái xuống góc dưới bên phải.\",\n      \"meaning_or_specification\": \"Biển báo hiệu rằng hiệu lực của biển số R.306 (tốc độ tối thiểu) đã hết; kể từ đây, các xe được phép chạy chậm hơn trị số ghi trên biển R.306 nhưng không được gây cản trở các xe khác.\"\n    }\n  ]\n}",
+  "generated_tokens": 217,
+  "elapsed_seconds": 3.601627299998654,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

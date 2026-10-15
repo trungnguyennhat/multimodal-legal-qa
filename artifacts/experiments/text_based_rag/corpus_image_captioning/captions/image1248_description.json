@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bc7d960abbf67e48902eeb1c6f254cd4fb01da8e45bea37c80659b613c014806",
+  "filename": "image1248.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo chỉ dẫn I.440a (hoặc I.440b) thuộc nhóm biển chỉ dẫn, dùng để báo hiệu phía trước có công trình thi công trên đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.440a / I.440b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh dương, viền trắng, chữ trắng in hoa: 'PHÍA TRƯỚC', 'AHEAD', '500 m', 'CÔNG TRƯỜNG', 'WORKS'.\",\n      \"meaning_or_specification\": \"Biển báo này thuộc nhóm biển chỉ dẫn (Điều M.4), dùng để thông báo cho người tham gia giao thông biết rằng phía trước có công trình thi công. Kích thước chiều cao z (mm) phụ thuộc vào loại đường: 78mm (đường đôi ngoài đô thị), 56,25mm (đường thông thường), 37,5mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 254,
+  "elapsed_seconds": 5.1297743000031915,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

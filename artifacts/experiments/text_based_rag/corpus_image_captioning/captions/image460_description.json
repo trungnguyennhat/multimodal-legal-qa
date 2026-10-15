@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:510887fb27b50c3b58cebcc327c9ba9b0ee488e25d61477ee783152b3eb5368d",
+  "filename": "image460.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số S.501 'Phạm vi tác dụng của biển' với thông số chiều dài đoạn đường nguy hiểm hoặc cấm là 800 m, được biểu thị bằng hai mũi tên hướng lên và giá trị số giữa chúng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số S.501\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen; bên trong có hai mũi tên hướng lên (mũi tên trên và mũi tên dưới), giữa hai mũi tên là chữ '800 m'.\",\n      \"meaning_or_specification\": \"Biển báo thông báo chiều dài đoạn đường nguy hiểm hoặc cấm hoặc hiệu lệnh hoặc hạn chế bên dưới một số biển báo chính; chiều dài được ghi theo đơn vị mét (m) và lấy chẵn đến hàng chục mét — trong trường hợp này là 800 m.\"\n    }\n  ]\n}",
+  "generated_tokens": 226,
+  "elapsed_seconds": 3.7068598000041675,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b63a6462be32e26f72615375f3951f3fa476f2c89f027e3df905c1670cc4141f",
+  "filename": "image1424.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn sơ đồ và khoảng cách đến nút giao với nhánh nối vào đường cao tốc, mã biển IE.450a (theo QCVN 41:2024/BGTVT), thể hiện hướng rẽ trái hoặc đi thẳng, tên tỉnh, mã đường tỉnh, tên thành phố và tên đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.450a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh lam, chữ và khung trắng, biểu tượng đường cao tốc màu trắng trên nền xanh lá cây, mã hiệu đường cao tốc (ĐT.830) trên nền vàng huỳnh quang chữ đen, mã hiệu đường tỉnh (CT.01) trên nền trắng chữ đen, tên tỉnh 'ĐỨC HÒA', tên thành phố 'TP. HCM' và tên đường 'TRUNG LƯƠNG', kèm mũi tên chỉ hướng rẽ trái hoặc đi thẳng.\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn sơ đồ và khoảng cách đến nút giao với nhánh nối vào đường cao tốc, cung cấp thông tin về tên tỉnh, mã đường tỉnh, tên thành phố và tên đường, cùng hướng di chuyển (rẽ trái hoặc đi thẳng) cho người tham gia giao thông.\"\n    }\n  ]\n}",
+  "generated_tokens": 308,
+  "elapsed_seconds": 5.06003690000216,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

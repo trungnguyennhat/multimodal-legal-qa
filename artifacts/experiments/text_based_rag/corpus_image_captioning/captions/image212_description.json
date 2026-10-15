@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1a6e250542a90f137df04d1a11a3db529c305813c09705860f59eeb0931d60ae",
+  "filename": "image212.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.210 'Giao nhau với đường sắt có rào chắn' theo QCVN 41:2024/BGTVT, dùng để báo trước vị trí giao nhau giữa đường bộ và đường sắt có rào chắn.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.210\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng bên trong là hình rào chắn (gồm 5 thanh ngang song song)\",\n      \"meaning_or_specification\": \"Biển báo trước sắp đến chỗ giao nhau giữa đường bộ và đường sắt có rào chắn (cần chắn hoặc giàn chắn), theo Điều C.10 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 205,
+  "elapsed_seconds": 3.412929600002826,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

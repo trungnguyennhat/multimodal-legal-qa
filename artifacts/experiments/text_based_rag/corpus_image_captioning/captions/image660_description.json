@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:98775c2b0a79c3eb085d55d68add3a0ae9a28181fd6958f0d4d2aa654ca0277d",
+  "filename": "image660.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa vạch chữ 'XE BUÝT' trên mặt đường, thuộc quy định về vạch 9.5d trong QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 9.5d: Vạch chữ 'XE BUÝT'\",\n      \"visual_or_geometric_features\": \"Vạch dạng chữ viết màu trắng (trong hình minh họa là màu xám do nền trắng), có hình dạng chữ 'XE BUÝT' được vẽ trên mặt đường.\",\n      \"meaning_or_specification\": \"Sử dụng để chỉ rõ làn đường dành riêng cho xe buýt. Theo quy định, chiều cao chữ là 2,5 m (hoặc 1,6 m ở đô thị tốc độ thấp), bề rộng nét vẽ từ 12 cm đến 18 cm, và khoảng cách giữa các hàng chữ theo phương dọc đường từ 1,0 m đến 1,5 m.\"\n    }\n  ]\n}",
+  "generated_tokens": 237,
+  "elapsed_seconds": 4.292760399999679,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

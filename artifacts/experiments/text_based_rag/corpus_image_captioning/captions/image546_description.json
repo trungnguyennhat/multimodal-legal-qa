@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3a442223df1d972635d727eb5d685728f6db7c03454405dbc03e4c7809803f1c",
+  "filename": "image546.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường (vạch tim) dạng vạch đôi gồm một vạch liền và một vạch đứt trong khu vực bề rộng phần xe chạy bị thu hẹp, kết hợp với vạch giới hạn mép phần đường xe chạy.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch phân chia hai chiều xe chạy (Vạch 1.4)\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song, gồm một vạch nét liền và một vạch nét đứt màu vàng. Hình ảnh minh họa các đoạn D (đoạn vạch đứt), L (đoạn vạch liền) và d (đoạn vạch liền kéo dài).\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn tiếp giáp vạch đứt được phép cắt qua; xe trên làn tiếp giáp vạch liền không được lấn làn. Trong khu vực bề rộng phần xe chạy bị thay đổi, đoạn L và d sử dụng vạch 1.4 để phân chia hai chiều xe chạy.\"\n    },\n    {\n      \"identifier\": \"Vạch giới hạn mép phần đường xe chạy (Vạch 3.1)\",\n      \"visual_or_geometric_features\": \"Vạch đơn nét liền màu vàng nằm ở mép ngoài cùng của phần đường xe chạy bị thu hẹp.\",\n      \"meaning_or_specification\": \"Dùng để xác định mép ngoài phần đường xe chạy. Khi bề rộng phần xe chạy bị thu hẹp, phải bố trí vạch 3.1 kết hợp với biển số W.203 (b,c) 'Đường bị thu hẹp'.\"\n    }\n  ]\n}",
+  "generated_tokens": 374,
+  "elapsed_seconds": 9.249551899993094,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

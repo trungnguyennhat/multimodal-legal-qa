@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0d2e70d5f169024eceb4b3b8e2d7e7dfee8afac93c0ea3ad26ae3bd8211010a6",
+  "filename": "image1456.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật chi tiết kích thước, khoảng cách và bố cục của biển chỉ dẫn trạm dừng nghỉ (biển IE.456a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn trạm dừng nghỉ (IE.456a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các khung phân vùng; các ký hiệu kích thước bao gồm: L (chiều rộng biển), W (chiều cao biển), a, b, c, d, e (khoảng cách căn giữa), k1, k2 (khoảng cách từ mép biển đến biểu tượng), H1, H2 (chiều cao các phần), 20, 250, 63, 100, 115, 140 (các giá trị kích thước cụ thể).\",\n      \"meaning_or_specification\": \"Quy định bố cục và kích thước kỹ thuật cho biển có 4 dịch vụ (biển IE.456a) gồm: tên trạm dừng nghỉ, biểu tượng dịch vụ công cộng (nhiên liệu, ăn uống, thông tin, nhà vệ sinh) và mũi tên chỉ hướng. Các thông số như L, W, a, b, c, d, e, k1, k2, H1, H2 được dùng để xác định vị trí và kích thước chính xác của từng thành phần trên biển theo quy chuẩn.\"\n    }\n  ]\n}",
+  "generated_tokens": 352,
+  "elapsed_seconds": 5.755200600004173,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

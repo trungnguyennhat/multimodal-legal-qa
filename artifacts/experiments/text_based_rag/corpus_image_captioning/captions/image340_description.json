@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:541731b37408d661a966f0c395bdfa08e8752fd52df12c67d36b4c57be13cb05",
+  "filename": "image340.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa 4 biển báo hiệu lệnh bắt đầu vào khu vực theo QCVN 41:2024/BGTVT, mỗi biển có mã R.E.9a–R.E.9d và biểu tượng cấm/hạn chế/chỉ dẫn cụ thể.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.E.9a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen; phía trên ghi 'ZONE' màu đen; phía dưới là biển cấm đỗ xe (hình tròn đỏ, nền trắng, gạch chéo đỏ)\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cấm đỗ xe trong khu vực\"\n    },\n    {\n      \"identifier\": \"R.E.9b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen; phía trên ghi 'ZONE' màu đen; phía dưới là biển cấm đỗ xe theo giờ (hình tròn đỏ, nền trắng, gạch chéo đỏ, kèm thời gian '6:00 - 18:00')\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cấm đỗ xe theo giờ trong khu vực\"\n    },\n    {\n      \"identifier\": \"R.E.9c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen; phía trên ghi 'ZONE' màu đen; phía dưới là biển chỉ dẫn khu vực đỗ xe (hình vuông xanh dương, chữ 'P' màu trắng)\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh quy định khu vực đỗ xe trong khu vực\"\n    },\n    {\n      \"identifier\": \"R.E.9d\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen; phía trên ghi 'ZONE' màu đen; phía dưới là biển hạn chế tốc độ tối đa (hình tròn đỏ, nền trắng, số '50' màu đen)\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh hạn chế tốc độ tối đa trong khu vực\"\n    }\n  ]\n}",
+  "generated_tokens": 482,
+  "elapsed_seconds": 7.521190999999817,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

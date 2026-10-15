@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c4344307a0780bb58d59f0d807e84f3508a2ef9b4e57c6ae980ed6b1468d206f",
+  "filename": "image1438.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật minh họa kích thước, khoảng cách và bố cục của biển chỉ dẫn kết thúc đường cao tốc (IE.453a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn kết thúc đường cao tốc (IE.453a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia làm hai phần ngang: phần trên có khung vàng chứa 'CT.01', nền xanh lá cây với dòng chữ 'TP. HCM TRUNG LƯƠNG EXPRESSWAY' và biểu tượng kết thúc đường cao tốc; phần dưới nền xanh lá cây với dòng chữ 'KẾT THÚC END'. Các ký hiệu kích thước: L (chiều rộng biển), W (chiều cao biển), a (khoảng cách từ mép trên đến giữa biển trên), b (khoảng cách từ giữa biển trên đến giữa biển dưới), c (khoảng cách từ giữa biển dưới đến mép dưới), k₁, k₁' (khoảng cách từ mép trên đến giữa biển trên), k₂, k₂' (khoảng cách từ giữa biển trên đến giữa biển dưới), h₂ (chiều cao phần dưới biển), H₁, H₁' (chiều cao phần trên biển), H₂, H₂' (chiều cao biểu tượng kết thúc).\",\n      \"meaning_or_specification\": \"Quy định kỹ thuật về kích thước và bố cục của biển IE.453a theo Điều P.4 của QCVN 41:2024/BGTVT, bao gồm các thông số như H₁=40 cm, k₁'=30 cm, k₂=33 cm, k₂'=25 cm, h₂=25 cm, cùng với mã hiệu đường cao tốc 'CT.01' trên nền vàng huỳnh quang và biểu tượng kết thúc đường cao tốc trên nền xanh lá cây.\"\n    }\n  ]\n}",
+  "generated_tokens": 451,
+  "elapsed_seconds": 7.195544400005019,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:fa7b2d826f92e85058938efedf6ea028b69c40a76671bfe2afa9bf60aa7e5abe",
+  "filename": "image550.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch 1.4 (vạch phân chia hai chiều xe chạy dạng vạch đôi gồm một vạch liền, một vạch đứt) và vạch 4.1 (vạch kênh hóa dòng xe dạng gạch chéo) tại vị trí có chướng ngại vật nằm giữa đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.4 (Vạch phân chia hai chiều xe chạy)\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song, gồm một vạch nét liền và một vạch nét đứt màu vàng. Hình ảnh minh họa các thông số: bề rộng nét vẽ (b), chiều dài đoạn nét liền (L1), chiều dài đoạn nét đứt (L2), và khoảng cách giữa hai vạch (d).\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn đường tiếp giáp với vạch đứt nét được phép cắt qua và sử dụng làn ngược chiều khi cần thiết; xe trên làn đường tiếp giáp với vạch liền nét không được lấn làn hoặc đè lên vạch. Trong trường hợp có chướng ngại vật giữa đường, đoạn d sử dụng vạch 1.4 để phân chia hai chiều xe chạy.\"\n    },\n    {\n      \"identifier\": \"Vạch 4.1 (Vạch kênh hóa dòng xe)\",\n      \"visual_or_geometric_features\": \"Vạch gạch chéo màu vàng, nghiêng một góc 135 độ so với hướng chuyển động của xe, nằm trong phạm vi được giới hạn bởi vạch 1.4.\",\n      \"meaning_or_specification\": \"Sử dụng để kênh hóa dòng xe, giới hạn các phần mặt đường không sử dụng cho xe chạy. Các phương tiện giao thông phải đi theo tuyến đường quy định, không được lấn vạch hoặc cắt qua vạch trừ những trường hợp khẩn cấp.\"\n    }\n  ]\n}",
+  "generated_tokens": 418,
+  "elapsed_seconds": 9.955037299994729,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

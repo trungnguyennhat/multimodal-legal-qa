@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c7fb9597262a03d88e4cfeb8b7fca08926164a6bec810be2afe4c39fd716e17a",
+  "filename": "image920.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo nguy hiểm W.226a (Đường người đi xe đạp cắt ngang) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.226a\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân có viền đỏ, nền vàng, biểu tượng người đi xe đạp màu đen ở giữa. Các kích thước được ghi chú bằng ký hiệu 'z' (chiều cao biển) và các khoảng cách cụ thể như 8,71z, 2,07z, 1,09z, 0,98z, 1,84z, 2,01z, 0,32z, 0,6z, 3,86z, 1,12z.\",\n      \"meaning_or_specification\": \"Theo Điều M.2 của QCVN 41:2024/BGTVT, biển W.226a dùng để cảnh báo đường người đi xe đạp cắt ngang. Kích thước 'z' thay đổi tùy loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị). Các tỷ lệ kích thước trong bản vẽ được tính theo giá trị 'z' này.\"\n    }\n  ]\n}",
+  "generated_tokens": 360,
+  "elapsed_seconds": 6.617568599998776,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

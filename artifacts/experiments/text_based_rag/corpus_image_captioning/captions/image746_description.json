@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1c0e7ed0d4b2bcfc725490a5d0f7118197141fe6667ca1e5e88e6ced7bb7bac4",
+  "filename": "image746.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo P.101 (Đường cấm) và P.103a (Cấm xe ôtô), kèm theo các kích thước chi tiết theo điều luật QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.101 (Đường cấm)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng mũi tên chéo đỏ cắt ngang. Bản vẽ kỹ thuật hiển thị kích thước đường kính ngoài 1400mm, đường kính trong 1260mm, chiều cao chữ số '3,2m' là 320mm, chiều cao mũi tên chéo là 320mm, và khoảng cách từ tâm đến mép trong là 1260mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe cơ giới đi vào đoạn đường theo hướng chỉ định. Kích thước được quy định cho loại đường thông thường (z=87,5mm) hoặc đường đô thị (z=70mm) tùy theo bảng trong điều luật.\"\n    },\n    {\n      \"identifier\": \"Biển báo P.103a (Cấm xe ôtô)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng hình xe ôtô màu đen. Bản vẽ kỹ thuật hiển thị kích thước đường kính ngoài 1400mm, đường kính trong 1260mm, chiều cao chữ số '3,2m' là 320mm, chiều cao hình xe ôtô là 320mm, và khoảng cách từ tâm đến mép trong là 1260mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô đi vào đoạn đường theo hướng chỉ định. Kích thước được quy định cho loại đường thông thường (z=87,5mm) hoặc đường đô thị (z=70mm) tùy theo bảng trong điều luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 482,
+  "elapsed_seconds": 8.24154379999527,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

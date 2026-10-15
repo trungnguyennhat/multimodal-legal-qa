@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4dc881f0f0d845def92769bce6a08711f8cf6ced5b08074849fa8c7addcfed98",
+  "filename": "image038.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai biển chỉ dẫn trạm dừng nghỉ (biển IE.456a và IE.456b) theo quy chuẩn QCVN 41:2024/BGTVT, thể hiện các dịch vụ cơ bản và khoảng cách đến trạm.\", \"items\": [{\"identifier\": \"Biển IE.456a (Biển có ba dịch vụ)\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ và biểu tượng màu trắng. Phần trên gồm hai biển nhỏ: biển 'TRẠM DỪNG NGHỈ / REST AREA' và biển 'THÂN CỬU NGHĨA'. Phần giữa có ba biểu tượng: bình xăng, dao nĩa, và hình người cung cấp thông tin. Phần dưới ghi số '750 m'.\", \"meaning_or_specification\": \"Biển số IE.456a chỉ dẫn khoảng cách đến trạm dừng nghỉ. Biển này bố trí ba dịch vụ cơ bản: xăng dầu, ăn uống và nơi cung cấp thông tin. Khoảng cách 750m là khoảng cách đến trạm dừng nghỉ.\"}, {\"identifier\": \"Biển IE.456b (Biển có bốn dịch vụ)\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ và biểu tượng màu trắng. Phần trên gồm hai biển nhỏ: biển 'TRẠM DỪNG NGHỈ / REST AREA' và biển 'THÂN CỬU NGHĨA'. Phần giữa có bốn biểu tượng: bình xăng, dao nĩa, hình người cung cấp thông tin, và hình người dùng điện thoại. Phần dưới ghi số '750 m'.\", \"meaning_or_specification\": \"Biển số IE.456b chỉ dẫn khoảng cách đến trạm dừng nghỉ. Biển này bố trí bốn dịch vụ cơ bản: xăng dầu, ăn uống, nơi cung cấp thông tin và điện thoại. Khoảng cách 750m là khoảng cách đến trạm dừng nghỉ.\"}]}",
+  "generated_tokens": 437,
+  "elapsed_seconds": 8.712089200002083,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

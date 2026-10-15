@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d2804eda94886917d6da16090c17a7c0741b84327190d07c3e4f6ac1cf000347",
+  "filename": "image1016.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo hiệu lệnh cấm rẽ trái và rẽ phải (biển số R.301d và R.301e) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo hiệu lệnh cấm rẽ trái và rẽ phải\",\n      \"visual_or_geometric_features\": \"Hình tròn nền xanh dương, có hình chữ nhật chéo màu đỏ (hoặc đen trong bản vẽ kỹ thuật) cắt ngang từ góc trên bên trái xuống góc dưới bên phải, biểu thị lệnh cấm. Bản vẽ kèm theo lưới ô vuông và các ký hiệu kích thước: 2.2z, 6.6z, 10z (chiều ngang), 2z, 6.1z, 2z (chiều dọc).\",\n      \"meaning_or_specification\": \"Theo Điều M.3 của QCVN 41:2024/BGTVT, đây là biển số R.301d (các xe chỉ được đi thẳng và rẽ phải) hoặc R.301e (các xe chỉ được rẽ trái và rẽ phải), tùy theo hướng cắt chéo. Kích thước z (đơn vị cơ bản) được quy định theo loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 358,
+  "elapsed_seconds": 6.561183400001028,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

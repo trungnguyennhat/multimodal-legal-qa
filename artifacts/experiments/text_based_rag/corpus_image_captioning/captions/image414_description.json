@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:f4baa525740b1a55726054cddd349eb11960976e8c994f215d29de4d83055314",
+  "filename": "image414.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số I.433e 'Nhà trọ' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn nơi có nhà trọ trên các tuyến đường đối ngoại hoặc có nhiều người nước ngoài.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.433e\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, bên trong có biểu tượng đen gồm một ngôi nhà và cây thông bên trái.\",\n      \"meaning_or_specification\": \"Báo hiệu sắp đến nơi có nhà trọ (Youth Hostel), được đặt trên các tuyến đường đối ngoại và các tuyến đường có nhiều người nước ngoài đi lại.\"\n    }\n  ]\n}",
+  "generated_tokens": 191,
+  "elapsed_seconds": 3.195822699999553,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

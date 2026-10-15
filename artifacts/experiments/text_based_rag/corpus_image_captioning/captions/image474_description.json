@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:935070422e87dc97e283f59e7913c9bc343e917f01ac98c723d138f45ce18f17",
+  "filename": "image474.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số S.505b 'Loại xe hạn chế qua cầu' với ba mẫu trọng tải khác nhau (00t, 00t, 00t), dùng để bổ sung cho biển P.106a nhằm chỉ rõ giới hạn trọng tải cho phép trên từng cầu.\",\n  \"items\": [\n    {\n      \"identifier\": \"S.505b - Mẫu 1\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật ngang, nền trắng, viền đen, bên trong có hình vẽ khối xe tải đơn giản (hình thang nghiêng + hình chữ nhật) và ghi '00t' ở bên phải\",\n      \"meaning_or_specification\": \"Chỉ loại xe tải chịu hiệu lực của biển báo P.106a với trọng tải toàn bộ xe cho phép là 00t (bao gồm trọng lượng bản thân và hàng hóa), không phụ thuộc vào số lượng trục.\"\n    },\n    {\n      \"identifier\": \"S.505b - Mẫu 2\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật ngang, nền trắng, viền đen, bên trong có hình vẽ khối xe tải dài hơn (hai phần nối tiếp) và ghi '00t' ở bên phải\",\n      \"meaning_or_specification\": \"Chỉ loại xe tải chịu hiệu lực của biển báo P.106a với trọng tải toàn bộ xe cho phép là 00t, phù hợp với cấu hình xe có nhiều trục hoặc chiều dài lớn hơn.\"\n    },\n    {\n      \"identifier\": \"S.505b - Mẫu 3\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật ngang, nền trắng, viền đen, bên trong có hình vẽ khối xe tải rất dài (ba phần nối tiếp) và ghi '00t' ở bên phải\",\n      \"meaning_or_specification\": \"Chỉ loại xe tải chịu hiệu lực của biển báo P.106a với trọng tải toàn bộ xe cho phép là 00t, dành cho các loại xe tải trọng lớn hoặc có cấu hình đặc biệt.\"\n    }\n  ]\n}",
+  "generated_tokens": 482,
+  "elapsed_seconds": 7.512007600002107,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

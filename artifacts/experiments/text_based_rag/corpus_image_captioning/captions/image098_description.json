@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7f9e2d8a1e3713e1c3bd20000d12a7efd4b1fb1be24e5d74fa507ea4c9ee6ab2",
+  "filename": "image098.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo P.105 ‘Cấm xe ô tô và xe máy’ theo QCVN 41:2024/BGTVT, dùng để báo hiệu đường cấm các loại xe cơ giới và xe máy đi qua trừ xe ưu tiên.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.105\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng bên trong gồm hình xe ô tô và xe máy màu đen, bị gạch chéo đỏ từ góc trên trái xuống góc dưới phải.\",\n      \"meaning_or_specification\": \"Biển báo cấm các loại xe cơ giới và xe máy đi qua đường, trừ các xe được ưu tiên theo quy định pháp luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 192,
+  "elapsed_seconds": 3.2861697999978787,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

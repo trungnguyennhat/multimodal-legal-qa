@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9eb51af24f89d3b627e0e6173c78f8ad04b88959e492350af852c56966207ede",
+  "filename": "image656.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa vạch chữ 'Ô TÔ' trên mặt đường, thuộc quy định về vạch 9.5b trong QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 9.5b: Vạch chữ 'Ô TÔ'\",\n      \"visual_or_geometric_features\": \"Vạch dạng chữ viết màu trắng (theo quy định chung của vạch 9.5), có nội dung là chữ 'Ô TÔ' được vẽ trên mặt đường.\",\n      \"meaning_or_specification\": \"Sử dụng để chỉ rõ làn đường dành riêng cho ô tô, đi kèm với các loại báo hiệu khác nhằm tăng tính rõ ràng về ý nghĩa của các báo hiệu.\"\n    }\n  ]\n}",
+  "generated_tokens": 189,
+  "elapsed_seconds": 3.59712220000074,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

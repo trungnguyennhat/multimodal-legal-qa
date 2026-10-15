@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:ca77f8442805fc139244a3e2950ea1867bf8e62180755665bbfc74c90f8bc043",
+  "filename": "image768.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo cấm P.101 (Đường cấm) và P.102 (Cấm đi ngược chiều) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.101 (Đường cấm)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe tải đen bị gạch chéo đỏ. Bản vẽ kỹ thuật hiển thị các kích thước: đường kính biển (D), chiều cao chữ số tốc độ (h), chiều rộng vạch chéo (w), khoảng cách từ mép biển đến vạch chéo (a), và khoảng cách từ tâm biển đến mép vạch chéo (b).\",\n      \"meaning_or_specification\": \"Biển báo cấm tất cả các phương tiện tham gia giao thông trên đoạn đường đó. Kích thước được quy định theo loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z(mm) tương ứng 140, 126, 87,5, 70.\"\n    },\n    {\n      \"identifier\": \"Biển báo P.102 (Cấm đi ngược chiều)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng mũi tên đen hướng lên trên bị gạch chéo đỏ. Bản vẽ kỹ thuật hiển thị các kích thước: đường kính biển (D), chiều cao mũi tên (h), chiều rộng vạch chéo (w), khoảng cách từ mép biển đến vạch chéo (a), và khoảng cách từ tâm biển đến mép vạch chéo (b).\",\n      \"meaning_or_specification\": \"Biển báo cấm phương tiện đi ngược chiều trên đoạn đường đó. Kích thước được quy định theo loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z(mm) tương ứng 140, 126, 87,5, 70.\"\n    }\n  ]\n}",
+  "generated_tokens": 487,
+  "elapsed_seconds": 8.329044899997825,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

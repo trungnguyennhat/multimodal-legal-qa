@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6b2d044e3f8d87965280b1034cffbea642e0c006d400c56cf40730bf110c1cce",
+  "filename": "image1286.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo giao thông chỉ dẫn 'ĐƯỜNG TRƠN CHẠY CHẬM' theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn 'ĐƯỜNG TRƠN CHẠY CHẬM'\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, có khung viền và nền màu xanh dương (theo quy chuẩn), bên trong có biểu tượng xe hơi đang chạy trên mặt đường gồ ghề và dòng chữ 'ĐƯỜNG TRƠN CHẠY CHẬM'. Bản vẽ kèm các kích thước chi tiết: chiều rộng biển 1100mm, chiều cao biển 600mm; kích thước biểu tượng xe 400x400mm; kích thước chữ 170x120mm; khoảng cách giữa biểu tượng và chữ 120mm; khoảng cách từ mép biển đến biểu tượng/chữ là 60mm.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo người tham gia giao thông về đoạn đường có bề mặt trơn trượt, yêu cầu giảm tốc độ khi di chuyển. Kích thước được quy định cụ thể cho từng loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị) trong điều luật, tuy nhiên hình ảnh này chỉ thể hiện kích thước cho một loại đường cụ thể (có thể là đường thông thường hoặc đường đô thị dựa trên tỷ lệ).\"\n    }\n  ]\n}",
+  "generated_tokens": 361,
+  "elapsed_seconds": 6.747755999997025,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

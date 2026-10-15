@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:62953113af0ab19f19004babe253fc60e776abc226a14b0b85d1451fa83bcdf7",
+  "filename": "image1388.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo hiệu đường cao tốc với mã CT.18, thuộc nhóm biển báo tên đường cao tốc theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"CT.18\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu vàng, chữ màu đen, nội dung là mã hiệu đường cao tốc CT.18\",\n      \"meaning_or_specification\": \"Biển báo tên đường cao tốc, dùng để chỉ định tên hoặc mã hiệu của tuyến đường cao tốc đang đi qua; trong trường hợp này là mã CT.18 tương ứng với một tuyến đường cao tốc cụ thể theo quy hoạch.\"\n    }\n  ]\n}",
+  "generated_tokens": 192,
+  "elapsed_seconds": 3.548646800001734,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

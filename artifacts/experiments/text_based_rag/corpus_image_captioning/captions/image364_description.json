@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:773c9d902cb02dfdfed6e3aeb98b058a07ba2161843fac2151604facd7de04f0",
+  "filename": "image364.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba kiểu biển số I.413a, I.413b và I.413c theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn làn đường dành cho ô tô khách hoặc rẽ ra đường có làn đó.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.413a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh, viền trắng; bên trong có mũi tên hướng lên trên (chiều ngược lại) và hình ảnh xe buýt nhỏ bên trái\",\n      \"meaning_or_specification\": \"Chỉ dẫn rằng đường phía trước có làn đường dành riêng cho ô tô khách theo chiều ngược lại; đặt tại nơi đường giao nhau đầu đường một chiều mà hướng ngược chiều có ô tô khách được phép chạy.\"\n    },\n    {\n      \"identifier\": \"Biển số I.413b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh, viền trắng; bên trong có mũi tên hướng lên trên và mũi tên rẽ phải\",\n      \"meaning_or_specification\": \"Chỉ dẫn rằng khi rẽ phải sẽ ra đường có làn đường dành riêng cho ô tô khách.\"\n    },\n    {\n      \"identifier\": \"Biển số I.413c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh, viền trắng; bên trong có mũi tên hướng lên trên và mũi tên rẽ trái\",\n      \"meaning_or_specification\": \"Chỉ dẫn rằng khi rẽ trái sẽ ra đường có làn đường dành riêng cho ô tô khách.\"\n    }\n  ]\n}",
+  "generated_tokens": 383,
+  "elapsed_seconds": 6.045493899997382,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

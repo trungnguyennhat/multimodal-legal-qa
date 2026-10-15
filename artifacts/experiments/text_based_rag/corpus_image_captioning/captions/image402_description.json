@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:44ed2493a1c48f0905692a71ea5c588af7fa240d007d6938695a7f98a52ebc1e",
+  "filename": "image402.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.429 'Nơi rửa xe' theo quy định QCVN 41:2024/BGTVT, dùng để chỉ dẫn vị trí có dịch vụ rửa xe.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.429\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng trắng gồm hình chiếc ô tô và vòi nước đang phun lên xe\",\n      \"meaning_or_specification\": \"Chỉ dẫn những nơi có bố trí dịch vụ rửa xe cho phương tiện giao thông\"\n    }\n  ]\n}",
+  "generated_tokens": 164,
+  "elapsed_seconds": 2.8164938000045368,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4c8bb77385296818fe6d81275d85dbb4fb7f3181f24a6b3b5f3b96257ba4ce0a",
+  "filename": "image1132.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật mô tả kích thước hình học và khoảng cách lắp đặt của biển báo chỉ dẫn thuộc nhóm biển chỉ dẫn (Điều M.4), bao gồm các hình khối hình học với các thông số kích thước được ghi chú rõ ràng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Hình khối hình học chính (biên dạng hình thoi lồng nhau)\",\n      \"visual_or_geometric_features\": \"Hình vẽ gồm nhiều lớp hình thoi lồng vào nhau, có viền nét đứt và nét liền, được đặt trên lưới ô vuông. Có các ký hiệu kích thước: 242, 96, 82, 48, 56, 82, 96, 48 (đơn vị mm).\",\n      \"meaning_or_specification\": \"Đây là bản vẽ kỹ thuật quy định kích thước hình học của biển báo (ví dụ: biển I.401, I.402, I.405a, I.405b, I.405c, I.406, I.407a, I.407b, I.407c, I.408, I.408a, I.409, I.410, I.413a, I.413b, I.413c, I.414a, I.414b, I.414c, I.414d, I.415, I.416, I.417a, I.417b, I.417c, I.418, I.419a, I.419b, I.422a, I.422b, I.423a, I.423b, I.423c, I.424a, I.424b, I.424c, I.424d, I.425, I.427a, I.427b, I.428, I.429, I.430, I.431, I.432, I.433a, I.433b, I.433c, I.433d, I.433e, I.434a, I.434b, I.435, I.436, I.437, I.439, I.440, I.441a, I.441b, I.441c, I.442, I.443, I.444a, I.444b, I.444c, I.444d, I.444e, I.444f, I.444g, I.444h, I.444l, I.444j, I.444k, I.444l, I.445a, I.445b, I.445c, I.445d, I.445e, I.445f, I.445g, I.445h, I.446, I.1447a, I.1447b, I.1447c, I.1447d, I.448, I.449). Các thông số như 242, 96, 82, 48, 56, 82, 96, 48 là kích thước hình học của biển báo theo điều luật, không phải màu sắc của biển báo thực tế.\"\n    }\n  ]\n}",
+  "generated_tokens": 882,
+  "elapsed_seconds": 14.466722000004665,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

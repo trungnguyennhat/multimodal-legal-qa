@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:1bfe473fb393abcfceae1de3c722a61680413a2ffe186f3a937bf47b304b7e54",
+  "filename": "public_test_2_7.jpg",
+  "description": "Dưới đây là mô tả hình dạng của các biển báo và hình ảnh có trong từng biển, theo thứ tự từ trái sang phải, từ trên xuống dưới:\n\n---\n\n**Hàng 1:**\n- Biển tròn rỗng.\n- Biển tròn có vạch ngang.\n- Biển tròn có hình ô tô bị gạch chéo.\n- Biển tròn có hình xe đang rẽ phải bị gạch chéo.\n- Biển tròn có hình xe rẽ phải bị gạch chéo.\n- Biển tròn có hình xe máy bị gạch chéo.\n\n**Hàng 2:**\n- Biển hình chữ nhật nền xanh, có 3 mũi tên thẳng đứng, bên dưới có 3 vòng tròn ghi số 80, 60, 50.\n- Biển hình chữ nhật nền xanh, chia 3 ô: ô 1 ghi 60 (xe con), ô 2 ghi 50 (xe máy), ô 3 ghi 50 (xe đạp).\n- Biển hình chữ nhật nền xanh, có 3 mũi tên thẳng đứng, bên dưới có 3 vòng tròn ghi số 80, 60, 50.\n- Biển hình chữ nhật nền xanh, chia 3 ô: ô 1 ghi 60 (xe con), ô 2 ghi 50 (xe máy), ô 3 ghi 50 (xe đạp).\n- Biển tròn có hình còi bị gạch chéo.\n- Biển tròn có vạch ngang, bên dưới ghi chữ \"KIỂM TRA\".\n\n**Hàng 3:**\n- Biển tròn nền xanh, có hình chữ X đỏ.\n-",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "INCOMPLETE",
+  "token_limit_reached": true,
+  "generated_tokens": 384,
+  "size": [
+    700,
+    525
+  ],
+  "elapsed_seconds": 30.63773719999881,
+  "peak_vram_bytes": 7452566016,
+  "peak_reserved_bytes": 7507804160,
+  "gpu_free_bytes": 8361345024
+}

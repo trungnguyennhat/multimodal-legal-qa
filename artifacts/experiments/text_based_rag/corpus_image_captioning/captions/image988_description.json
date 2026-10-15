@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:93b7cadd8662d424791ed42b90294f3a82ecff8c5a3f06751b7b14d127fccfb1",
+  "filename": "image988.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo hiệu lệnh R.301f (Các xe chỉ được đi thẳng và rẽ phải) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số R.301f: Các xe chỉ được đi thẳng và rẽ phải\",\n      \"visual_or_geometric_features\": \"Hình tròn nền xanh dương, có mũi tên trắng chỉ hướng đi thẳng và rẽ phải. Bản vẽ kỹ thuật bên phải minh họa kích thước: đường kính biển là 140mm (cho đường cao tốc), chiều cao mũi tên 1z, chiều rộng mũi tên 1z, chiều dài mũi tên 4z, chiều rộng phần thân mũi tên 2z, chiều dài phần thân 14z, chiều rộng phần đuôi 1z, chiều dài phần đuôi 1z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh yêu cầu các xe chỉ được đi thẳng hoặc rẽ phải tại điểm giao nhau hoặc đoạn đường nhất định. Kích thước z thay đổi tùy loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 327,
+  "elapsed_seconds": 6.100998299996718,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

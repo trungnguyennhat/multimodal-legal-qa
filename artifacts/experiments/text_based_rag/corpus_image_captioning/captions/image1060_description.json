@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c0e1d71d7852d886d98ddfc38bb9f4230f1a1820d216df5742b9fc243dd1c019",
+  "filename": "image1060.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo giao thông R.301a (Các xe chỉ được đi thẳng) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.301a (Các xe chỉ được đi thẳng)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh, biểu tượng xe tải màu trắng với mũi tên chỉ hướng đi thẳng. Bản vẽ kèm các kích thước: chiều rộng 12z, chiều cao 10,5z, các khoảng cách nội bộ như 0,1z, 0,2z, 5z, 2,5z, 2,5z.\",\n      \"meaning_or_specification\": \"Biển hiệu lệnh cấm rẽ trái và rẽ phải, chỉ cho phép xe đi thẳng. Kích thước z phụ thuộc vào loại đường (đường cao tốc: 140mm, đường đôi ngoài đô thị: 126mm, đường thông thường: 87,5mm, đường đô thị: 70mm).\"\n    },\n    {\n      \"identifier\": \"Biểu tượng xe tải\",\n      \"visual_or_geometric_features\": \"Hình vẽ xe tải màu trắng nằm ngang trong khung biển, có mũi tên chỉ hướng đi thẳng.\",\n      \"meaning_or_specification\": \"Biểu thị phương tiện cơ giới được phép đi qua biển báo này theo hướng thẳng.\"\n    },\n    {\n      \"identifier\": \"Biển báo R.301a (Biến thể đen trắng)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền trắng, biểu tượng xe tải màu đen với mũi tên chỉ hướng đi thẳng. Bản vẽ kèm các kích thước: chiều rộng 10,2z, chiều cao 4,2z, các khoảng cách nội bộ như 2,2z, 5z, 1,5z, 1,5z.\",\n      \"meaning_or_specification\": \"Biến thể của biển R.301a, có thể dùng cho biển báo bổ sung hoặc trong điều kiện ánh sáng yếu. Kích thước z tuân theo quy định tương tự như biển R.301a.\"\n    }\n  ]\n}",
+  "generated_tokens": 526,
+  "elapsed_seconds": 9.054170199997316,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

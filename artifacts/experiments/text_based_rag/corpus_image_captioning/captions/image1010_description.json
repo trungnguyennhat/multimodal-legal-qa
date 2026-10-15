@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:cd26beb5a2b5a33c902633343deb6a6f0cf2f24c40388a02514d5aa5d046f8a7",
+  "filename": "image1010.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo giao thông thuộc nhóm biển hiệu lệnh và biển dành cho phương tiện đặc biệt theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.304 (Đường dành cho xe thô sơ)\",\n      \"visual_or_geometric_features\": \"Hình tròn chia đôi ngang, phần trên là hình xe đạp, phần dưới là hình người đi bộ và xe đạp thồ. Kích thước: đường kính tổng 10z, bán kính trên 4z, bán kính dưới 4z; chiều ngang mỗi nửa 3,5z; chiều cao phần trên 4z, phần dưới 4z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu đường dành cho xe thô sơ (người đi bộ, xe đạp, xe thồ) theo Điều M.3, nhóm biển hiệu lệnh.\"\n    },\n    {\n      \"identifier\": \"Biển báo R.403f (Đường dành cho xe máy và xe đạp)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, bên trong có hình xe máy ở trên và hình xe đạp ở dưới. Kích thước: chiều ngang 6,4z, chiều cao tổng 4,4z; chiều cao phần xe máy 1,8z, phần xe đạp 1,5z; khoảng cách giữa hai hình 0,75z; chiều rộng mỗi hình 3,5z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu đường dành riêng cho xe máy và xe đạp theo Điều M.3, nhóm biển dành cho phương tiện đặc biệt.\"\n    }\n  ]\n}",
+  "generated_tokens": 400,
+  "elapsed_seconds": 7.187175699997169,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

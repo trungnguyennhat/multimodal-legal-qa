@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:16bcb5291e548d9ce80e7d1cc5a84d5e5a1eaa40fcf49622b34d5f0a04e48e46",
+  "filename": "image292.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số R.122 'Dừng lại' theo quy định tại Điều D.1 của QCVN 41:2024/BGTVT, dùng để buộc mọi phương tiện dừng lại trước biển hoặc vạch ngang đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.122\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình bát giác; Màu sắc: Nền đỏ, chữ trắng; Biểu tượng: Chữ 'STOP' viết hoa bằng tiếng Anh ở giữa biển.\",\n      \"meaning_or_specification\": \"Biển hiệu lệnh dạng đặc biệt, có hiệu lực buộc tất cả xe cơ giới và thô sơ (kể cả xe ưu tiên) phải dừng lại trước biển hoặc trước vạch ngang đường, chỉ được phép đi khi có tín hiệu cho phép hoặc khi không còn nguy cơ mất an toàn giao thông.\"\n    }\n  ]\n}",
+  "generated_tokens": 219,
+  "elapsed_seconds": 3.7176646000007167,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

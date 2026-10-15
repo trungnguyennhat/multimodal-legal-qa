@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:6406ea946a9717d4f3b9b5f8bc6e91ae1b6cf881e440ce649bc747f14fd9d209",
+  "filename": "public_test_2_9.jpg",
+  "description": "Biển báo hình chữ nhật, nền xanh, viền trắng, chia thành hai phần dọc.\n\n- Phần bên trái: có hình xe con, xe buýt (ghi <30 chỗ), xe tải (ghi <3.5T), và xe tải lớn hơn.\n- Phần bên phải: có hình xe máy, xe đạp, và xe máy kéo.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 81,
+  "size": [
+    1860,
+    1153
+  ],
+  "elapsed_seconds": 7.17227599999751,
+  "peak_vram_bytes": 7666081280,
+  "peak_reserved_bytes": 7755268096,
+  "gpu_free_bytes": 8113881088
+}

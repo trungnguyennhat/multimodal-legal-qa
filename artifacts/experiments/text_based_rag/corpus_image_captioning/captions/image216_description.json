@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:16cb1f1f95c57724f2c7b9e000adca567d0e14422827d3271f539ffdca432f54",
+  "filename": "image216.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.212 'Cầu hẹp' theo quy định QCVN 41:2024/BGTVT, dùng để cảnh báo tài xế về đoạn cầu có chiều rộng phần xe chạy ≤ 4,50m.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.212\",\n      \"visual_or_geometric_features\": \"Biển tam giác đều, viền đỏ, nền vàng, biểu tượng hai đường cong đối xứng hướng vào nhau (hình chữ X bị cắt đôi) màu đen ở giữa\",\n      \"meaning_or_specification\": \"Báo trước sắp đến cầu hẹp – loại cầu có chiều rộng phần xe chạy nhỏ hơn hoặc bằng 4,50 m; khi qua cầu, lái xe phải đi chậm, quan sát, nhường nhau và dừng lại chờ ở hai đầu cầu.\"\n    }\n  ]\n}",
+  "generated_tokens": 216,
+  "elapsed_seconds": 3.591802100003406,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

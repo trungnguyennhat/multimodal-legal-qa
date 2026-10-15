@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:74b1a25a2fcb311b78b75331f82c55111af32a8a5f0601661caa2f3f14ce0a0e",
+  "filename": "image956.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo nguy hiểm W.201a và W.201b theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201a (Chỗ ngoặt nguy hiểm vòng bên trái)\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng đen hình con dốc cong sang trái. Các kích thước được ghi chú: chiều cao tam giác 1,40z; chiều rộng đáy 1,06z; bán kính cong R0,82z; góc nghiêng 60°; khoảng cách từ đỉnh tam giác đến mép trên 0,21z; khoảng cách từ đáy tam giác đến mép dưới 1,22z; chiều rộng tổng thể 1,06z; chiều cao tổng thể 1,40z.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo tài xế về chỗ ngoặt nguy hiểm vòng bên trái. Kích thước z phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biển báo W.201b (Chỗ ngoặt nguy hiểm vòng bên phải)\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng đen hình con dốc cong sang phải. Các kích thước được ghi chú: chiều cao tam giác 1,40z; chiều rộng đáy 1,06z; bán kính cong R1,36z; góc nghiêng 60°; khoảng cách từ đỉnh tam giác đến mép trên 0,21z; khoảng cách từ đáy tam giác đến mép dưới 1,22z; chiều rộng tổng thể 1,06z; chiều cao tổng thể 1,40z.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo tài xế về chỗ ngoặt nguy hiểm vòng bên phải. Kích thước z phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 587,
+  "elapsed_seconds": 9.981182800001989,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

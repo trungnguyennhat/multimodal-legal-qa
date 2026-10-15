@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:63c57f14ebbc6702bb7ddb98cbc0bab6d52ee142cb5573e430f44e4a737791eb",
+  "filename": "image028.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai biển chỉ dẫn kết thúc đường cao tốc (IE.453a và IE.453b) theo quy chuẩn QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển số IE.453a\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ màu trắng. Biển có hai phần: phần trên ghi tên đường cao tốc (TP. HCM TRUNG LƯƠNG EXPRESSWAY) và ký hiệu đường cao tốc; phần dưới ghi 'KẾT THÚC END' và khoảng cách '500 m'.\", \"meaning_or_specification\": \"Biển số IE.453a chỉ dẫn khoảng cách đến điểm kết thúc đường cao tốc, được đặt trên đường cao tốc.\"}, {\"identifier\": \"Biển số IE.453b\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ màu trắng. Biển có hai phần: phần trên ghi tên đường cao tốc (TP. HCM TRUNG LƯƠNG EXPRESSWAY) và ký hiệu đường cao tốc; phần dưới ghi 'KẾT THÚC END'.\", \"meaning_or_specification\": \"Biển số IE.453b chỉ dẫn điểm kết thúc đường cao tốc, được đặt ngay tại vị trí kết thúc đường cao tốc.\"}]}",
+  "generated_tokens": 319,
+  "elapsed_seconds": 7.056348699996306,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7fb3f2bc6fb58e20107d377ecd82bda5b08d2da4106b5030d38047aaa0a09ce7",
+  "filename": "image250.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.228d 'Nền đường yếu' theo QCVN 41:2024/BGTVT, thuộc nhóm biển cảnh báo nguy hiểm.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.228d\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng bên trong là hình nền đường bị lún với các đường cong và dấu chấm chấm biểu thị sự không ổn định.\",\n      \"meaning_or_specification\": \"Biển cảnh báo đoạn nền đường yếu, đoạn đường đang theo dõi lún; lái xe cần giảm tốc độ hợp lý để đảm bảo an toàn.\"\n    }\n  ]\n}",
+  "generated_tokens": 183,
+  "elapsed_seconds": 3.1700090000013006,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

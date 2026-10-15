@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:80cd610c1eef05c029f7844b8e8b08475cdfb26c7593be2cdbc2dc38055d9a4f",
+  "filename": "image056.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa cho Biển số IE.464a chỉ dẫn địa điểm và phương hướng, dùng để chỉ dẫn địa danh nơi đến và mũi tên cho một làn xe chạy cụ thể.\", \"items\": [{\"identifier\": \"Biển số IE.464a\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ màu trắng. Biển có 3 ô ngang. Ô trên cùng có mã biển (CT.01 hoặc QL.62) trên nền vàng. Ô giữa ghi tên địa điểm (TP. HCM, LONG THÀNH, TP. TÂN AN). Ô dưới cùng có mũi tên chỉ hướng (mũi tên xuống hoặc mũi tên xiên lên trên).\", \"meaning_or_specification\": \"Biển số IE.464a chỉ dẫn địa điểm và phương hướng, dùng để chỉ dẫn địa danh nơi đến và mũi tên cho một làn xe chạy cụ thể. Các mũi tên bao gồm: mũi tên phân làn có dạng mũi tên thẳng đứng hướng xuống dưới; mũi tên chỉ hướng có dạng xiên lên trên để chỉ làn xe có hiệu lực đến một địa điểm nào đó.\"}]}",
+  "generated_tokens": 255,
+  "elapsed_seconds": 5.851439300000493,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

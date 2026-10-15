@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:339a22470dc84f33069a11b6b35a8ab236874854c2ad6bb940ceac8f50100dab",
+  "filename": "image676.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật chi tiết kích thước và bố trí các thành phần của cột kilômét dạng tấm hình chữ nhật theo QCVN 41:2024/BGTVT, với ghi chú đơn vị là cm.\",\n  \"items\": [\n    {\n      \"identifier\": \"Cột kilômét dạng tấm hình chữ nhật (Hình I.3)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng với phần mái tam giác ở đỉnh; bên trong có chữ 'H2' và '80'; các kích thước được ghi bằng cm: chiều cao tổng 60 cm, chiều rộng đáy 40 cm (chia thành 10+20+10), các đoạn chia dọc từ dưới lên: 6, 7, 8, 9, 10, 5; phần mái cao 10,5 cm; chiều cao từ mặt biển đến đỉnh mái là 60 cm.\",\n      \"meaning_or_specification\": \"Theo Điều I.4 của QCVN 41:2024/BGTVT, đây là hình dạng và kích thước chuẩn cho cột kilômét dạng tấm hình chữ nhật, dùng để hiển thị lý trình (ví dụ: '80') trên nền màu xanh lá cây (cao tốc) hoặc xanh lam (đường khác), với viền trắng và đường cao tốc nếu cần. Các kích thước trên hình là đơn vị cm, phù hợp với quy định về bố trí 1 con số lý trình theo chiều đứng.\"\n    }\n  ]\n}",
+  "generated_tokens": 354,
+  "elapsed_seconds": 5.698014499997953,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:77cade17801ab6e784fedc68b8991a4106ffbbb91bbde14b38adac49bca54b7d",
+  "filename": "image1458.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật chi tiết kích thước, khoảng cách và bố cục của biển chỉ dẫn trạm dừng nghỉ (mã IE.456a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn trạm dừng nghỉ (IE.456a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các kích thước tổng thể L (chiều rộng) và W (chiều cao). Biển được chia thành hai phần: phần trên có khung chữ nhật màu xanh dương chứa tên trạm (TRẠM DỪNG NGHỈ / REST AREA) và tên địa danh (THÂN CỬU NGHĨA); phần dưới là nền xanh lá cây chứa ba biểu tượng dịch vụ công cộng (xe xăng, dao nĩa, thông tin). Các ký hiệu kích thước bao gồm: a, b, c, d, e (khoảng cách căn giữa), k1, k2 (chiều cao chữ), H1, H2 (chiều cao tổng tên trạm), 100, 75, 140, 115 (chiều cao các vùng), 20, 250 (khoảng cách ngang).\",\n      \"meaning_or_specification\": \"Quy định kỹ thuật về hình học và bố cục của biển IE.456a (có 4 dịch vụ): tên trạm dừng nghỉ và địa danh được đặt ở phần trên với chiều cao chữ k2=H2=33cm và H1=40cm; phần dưới có 3 biểu tượng dịch vụ công cộng (xe xăng, ăn uống, thông tin) với kích thước ô 75x75cm; các khoảng cách căn giữa a, b, c, d, e và chiều cao vùng 100cm, 75cm, 140cm, 115cm được quy định để đảm bảo tính đồng bộ và dễ nhận biết.\"\n    }\n  ]\n}",
+  "generated_tokens": 458,
+  "elapsed_seconds": 7.307410500005062,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

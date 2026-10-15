@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:948377a9ddba5d8b27427bfb3d95d47ec2a009f8904ca2c050a998d1e875fe58",
+  "filename": "image694.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt của biển báo cấm xe ôtô (P.103a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.103a (Cấm xe ôtô)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô đen ở giữa; kèm các ký hiệu kích thước: đường kính biển (D), chiều cao biển (H), khoảng cách từ mặt đường đến tâm biển (z), và khoảng cách từ mép dưới biển đến mặt đường (h).\",\n      \"meaning_or_specification\": \"Theo Điều M.1, biển P.103a dùng để cấm xe ôtô trên các loại đường khác nhau với giá trị z (chiều cao lắp đặt) thay đổi tùy loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biểu đồ lưới ô vuông bên phải\",\n      \"visual_or_geometric_features\": \"Lưới ô vuông 10x10, hình vẽ xe ôtô đen ở trung tâm, kèm các ký hiệu: D (đường kính biển), H (chiều cao biển), z (khoảng cách từ mặt đường đến tâm biển), và h (khoảng cách từ mép dưới biển đến mặt đường).\",\n      \"meaning_or_specification\": \"Biểu đồ này minh họa tỷ lệ hình học chuẩn cho biển báo P.103a, giúp xác định kích thước thực tế của biển dựa trên loại đường và giá trị z quy định trong điều luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 428,
+  "elapsed_seconds": 7.433706499999971,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

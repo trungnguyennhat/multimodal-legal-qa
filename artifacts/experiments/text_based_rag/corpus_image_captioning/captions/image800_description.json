@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4a4d23ca884ccec00e638eb955867c2fe8038fecae95af81a05b4b5108fb3937",
+  "filename": "image800.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm đi ngược chiều (P.102) với biểu tượng mũi tên đen và đỏ trong vòng tròn đỏ, kèm bản vẽ kỹ thuật chi tiết kích thước.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.102\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có hai mũi tên đen hướng ngược chiều nhau (một lên, một xuống) nằm trong vòng tròn đỏ.\",\n      \"meaning_or_specification\": \"Biển báo cấm đi ngược chiều, áp dụng cho tất cả các loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với kích thước z = 140 mm.\"\n    },\n    {\n      \"identifier\": \"Biểu tượng mũi tên\",\n      \"visual_or_geometric_features\": \"Hai mũi tên đen hướng ngược chiều nhau, được bao quanh bởi vòng tròn đỏ.\",\n      \"meaning_or_specification\": \"Biểu thị lệnh cấm đi ngược chiều, tuân theo quy định của biển P.102 trong QCVN 41:2024/BGTVT.\"\n    },\n    {\n      \"identifier\": \"Kích thước kỹ thuật\",\n      \"visual_or_geometric_features\": \"Bản vẽ kỹ thuật hiển thị các thông số: đường kính biển 600 mm, chiều cao mũi tên 150 mm, khoảng cách giữa hai mũi tên 100 mm, và các kích thước phụ như 20 mm, 25 mm, 30 mm.\",\n      \"meaning_or_specification\": \"Các thông số này quy định kích thước chuẩn của biển P.102 theo QCVN 41:2024/BGTVT, đảm bảo tính đồng nhất và dễ nhận biết.\"\n    }\n  ]\n}",
+  "generated_tokens": 423,
+  "elapsed_seconds": 7.35563700000057,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:274332de70eef4f1be879b7771862d5519fd34728ec072b25506ecae90069f83",
+  "filename": "image1520.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng 'Khu câu cá' theo QCVN 41:2024/BGTVT, với các thông số A, B, C, D, E cho hai loại kích thước.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng Khu câu cá\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật bao quanh biểu tượng cá đang câu (cá đen, cần câu treo từ trên xuống), với các ký hiệu kích thước: A (chiều rộng tổng), B (chiều cao phần trên), C (chiều cao phần dưới), D (chiều cao phần giữa), E (chiều cao cần câu).\",\n      \"meaning_or_specification\": \"Theo Điều P.13 mục 8 của QCVN 41:2024/BGTVT, biểu tượng này dùng để báo hiệu khu vực câu cá. Kích thước được quy định cho hai loại: Loại B (60,0 x 1,5 x 3,0 x 54,0 x 5,0 cm) và Loại A (75,0 x 2,0 x 4,0 x 67,0 x 5,0 cm).\"\n    }\n  ]\n}",
+  "generated_tokens": 308,
+  "elapsed_seconds": 5.151421800001117,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

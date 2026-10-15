@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:356b1d668436133a2ed6b2147127ce06cb6d351226a39bc65bff430eb30086bb",
+  "filename": "image1418.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của mã hiệu đường bộ (cỡ chữ 33 cm) theo QCVN 41:2024/BGTVT, bao gồm chiều dài, chiều rộng, bán kính góc bo và khoảng cách căn giữa.\",\n  \"items\": [\n    {\n      \"identifier\": \"Mã hiệu đường bộ (cỡ chữ 33 cm)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các kích thước được ghi chú: chiều dài 120 cm, chiều cao 55 cm, bán kính góc bo R2,4 cm, và khoảng cách căn giữa 'a' (không có giá trị số cụ thể trong hình).\",\n      \"meaning_or_specification\": \"Theo Điều O của QCVN 41:2024/BGTVT, đây là kích thước chuẩn cho mã hiệu quốc lộ, đường tỉnh hoặc đường huyện với cỡ chữ 33 cm; nền trắng, chữ/số/khung đen, sử dụng màng phản quang loại VIII, IX, XI cấu trúc kim cương.\"\n    }\n  ]\n}",
+  "generated_tokens": 264,
+  "elapsed_seconds": 4.406971799995517,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

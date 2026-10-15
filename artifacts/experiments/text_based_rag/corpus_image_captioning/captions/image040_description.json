@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:048202714cc6a2c9b235d849a47d442dcc06af8f94d89c07e9a845c5c0cb5e50",
+  "filename": "image040.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa các biển chỉ dẫn trạm dừng nghỉ (IE.456, IE.457) trên đường cao tốc theo QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển số IE.456b\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh lá cây, chữ và biểu tượng màu trắng. Phần trên gồm hai ô: ô trái ghi 'TRẠM DỪNG NGHỈ REST AREA' kèm biểu tượng xe xăng, dao nĩa, và chữ 'i'; ô phải ghi 'THÂN CỨU NGHĨA' kèm biểu tượng xe cứu thương. Phần dưới là mũi tên chỉ hướng rẽ phải.\", \"meaning_or_specification\": \"Chỉ dẫn hướng rẽ vào trạm dừng nghỉ, được đặt cách nút giao vào trạm dừng nghỉ khoảng 150m.\"}, {\"identifier\": \"Biển số IE.456c\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh lá cây, chữ và biểu tượng màu trắng. Phần trên gồm hai ô: ô trái ghi 'TRẠM DỪNG NGHỈ REST AREA' kèm biểu tượng xe xăng, dao nĩa, chữ 'i' và biểu tượng xe tải; ô phải ghi 'THÂN CỨU NGHĨA' kèm biểu tượng xe cứu thương. Phần dưới là mũi tên chỉ hướng rẽ phải.\", \"meaning_or_specification\": \"Chỉ dẫn lối vào trạm dừng nghỉ, được đặt ngay trước lối vào trạm dừng nghỉ.\"}, {\"identifier\": \"Biển số IE.457a\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh lá cây, chữ và biểu tượng màu trắng. Phần trên là ký hiệu 'P' (bãi đỗ xe). Phần dưới ghi số '750 m'.\", \"meaning_or_specification\": \"Chỉ dẫn khoảng cách đến nơi đỗ xe trong trạm dừng nghỉ.\"}, {\"identifier\": \"Biển số IE.457b\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh lá cây, chữ và biểu tượng màu trắng. Phần trên là ký hiệu 'P' (bãi đỗ xe). Phần dưới là mũi tên chỉ hướng rẽ phải.\", \"meaning_or_specification\": \"Chỉ dẫn hướng rẽ đến vị trí bãi đỗ xe trong trạm dừng nghỉ.\"}]}",
+  "generated_tokens": 515,
+  "elapsed_seconds": 9.897480700004962,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

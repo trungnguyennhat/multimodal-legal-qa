@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:fd64cfa40d6d62826c06c03f572d26ac84a608c382cafcd934a1cdd3118efba1",
+  "filename": "image094.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biển số P.103a, P.103b và P.103c theo QCVN 41:2024/BGTVT, dùng để báo cấm xe ôtô đi qua hoặc rẽ phải/trái.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số P.103a\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô màu đen bị gạch chéo đỏ\",\n      \"meaning_or_specification\": \"Báo đường cấm các loại xe cơ giới kể cả xe máy 3 bánh có thùng đi qua, trừ xe máy 2 bánh, xe gắn máy và các xe được ưu tiên theo quy định\"\n    },\n    {\n      \"identifier\": \"Biển số P.103b\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô màu đen kèm mũi tên rẽ phải bị gạch chéo đỏ\",\n      \"meaning_or_specification\": \"Báo đường cấm các loại xe cơ giới kể cả xe máy 3 bánh có thùng rẽ phải, trừ xe máy 2 bánh, xe gắn máy và các xe được ưu tiên theo quy định\"\n    },\n    {\n      \"identifier\": \"Biển số P.103c\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô màu đen kèm mũi tên rẽ trái bị gạch chéo đỏ\",\n      \"meaning_or_specification\": \"Báo đường cấm các loại xe cơ giới kể cả xe máy 3 bánh có thùng rẽ trái, trừ xe máy 2 bánh, xe gắn máy và các xe được ưu tiên theo quy định\"\n    }\n  ]\n}",
+  "generated_tokens": 403,
+  "elapsed_seconds": 6.442067199997837,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

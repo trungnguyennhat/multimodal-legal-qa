@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:453378ce68ee5066bc322703a3daeeafd3330db0a3f1d85e2c8083a93e11cb27",
+  "filename": "image044.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai loại biển chỉ dẫn khu du lịch trên đường cao tốc theo quy chuẩn QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển số IE.459a\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ và khung màu trắng. Phần trên cùng có biển nhỏ hình chữ nhật ghi 'KHU DU LỊCH TOURIST AREA' và 'BẾN LỰC'. Phần dưới ghi số khoảng cách '750 m'.\", \"meaning_or_specification\": \"Biển số IE.459a thông báo khoảng cách đến khu tham quan, du lịch (trong trường hợp này là Khu du lịch Bến Lức).\"}, {\"identifier\": \"Biển số IE.459b\", \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ và khung màu trắng. Phần trên cùng có biển nhỏ hình chữ nhật ghi 'KHU DU LỊCH TOURIST AREA' và 'BẾN LỰC'. Phần dưới có một mũi tên chỉ hướng rẽ phải.\", \"meaning_or_specification\": \"Biển số IE.459b chỉ dẫn hướng rẽ vào khu tham quan, du lịch (trong trường hợp này là Khu du lịch Bến Lức).\"}]}",
+  "generated_tokens": 296,
+  "elapsed_seconds": 6.513754499996139,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

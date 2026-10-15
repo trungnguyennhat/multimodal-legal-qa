@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:706248cb76201655a28e9228f051ce82587db7cfc0debaed42083f21110c9e33",
+  "filename": "image1436.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn kết thúc đường cao tốc (IE.453a) với thiết kế hai phần, hiển thị mã tuyến, tên đường, biểu tượng kết thúc và khoảng cách đến điểm kết thúc.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.453a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh lá cây, chia thành hai phần: phần trên có khung vàng huỳnh quang chứa mã 'CT.01', chữ trắng 'TP. HCM TRUNG LƯƠNG EXPRESSWAY' và biểu tượng kết thúc đường cao tốc (hình tam giác đỏ trên nền xanh); phần dưới ghi 'KẾT THÚC END' và '500 m'.\",\n      \"meaning_or_specification\": \"Biển báo hiệu sự kết thúc của đường cao tốc Trung Lương, thuộc tuyến CT.01, cách điểm kết thúc 500m, tuân thủ QCVN 41:2024/BGTVT Điều P.4.\"\n    }\n  ]\n}",
+  "generated_tokens": 254,
+  "elapsed_seconds": 4.316077099996619,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

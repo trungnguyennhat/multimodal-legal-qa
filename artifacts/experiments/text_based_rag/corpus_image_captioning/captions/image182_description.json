@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:54a4458ba320d2fa13cbb863f2a07875a839620fdd1101952a2d022851468e19",
+  "filename": "image182.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.138 'Cấm đi thẳng, rẽ trái' theo QCVN 41:2024/BGTVT, dùng để cấm tất cả xe (trừ xe ưu tiên) đi thẳng hoặc rẽ trái tại nút giao.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.138\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có hai mũi tên đen: một mũi tên hướng lên (đi thẳng) và một mũi tên hướng xuống-trái (rẽ trái), cả hai đều bị gạch chéo đỏ cắt ngang.\",\n      \"meaning_or_specification\": \"Biển báo cấm tất cả các loại xe (trừ xe ưu tiên theo quy định) đi thẳng hoặc rẽ trái tại nút giao; phải được đặt ngay trước nút giao. Nếu có quy định cấm theo thời gian hoặc loại xe cụ thể, cần bổ sung biển báo phụ tương ứng.\"\n    }\n  ]\n}",
+  "generated_tokens": 236,
+  "elapsed_seconds": 3.8882569999987027,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

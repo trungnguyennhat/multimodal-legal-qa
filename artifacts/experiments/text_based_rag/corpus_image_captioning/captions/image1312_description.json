@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3dab573f45054fd7b6886524d8d6747d99df8fc16a7dc220cad72091cfbba41a",
+  "filename": "image1312.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển chỉ dẫn Quốc lộ 1 và Quốc lộ 6, thuộc nhóm biển chỉ dẫn theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn Quốc lộ 1 và Quốc lộ 6\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong có nền lưới ô vuông. Các thông số kích thước được ghi chú: chiều dài 302 mm, chiều cao 202 mm, chiều cao chữ 'QUỐC LỘ 1' là 32 mm, chiều cao chữ 'HÀ NỘI' là 22 mm, chiều cao chữ 'QUỐC LỘ 6' là 22 mm, chiều cao mũi tên chỉ hướng là 12 mm.\",\n      \"meaning_or_specification\": \"Theo QCVN 41:2024/BGTVT, đây là biển chỉ dẫn tên đường (thuộc nhóm biển chỉ dẫn), dùng để chỉ tên đường hoặc tuyến đường mà người tham gia giao thông đang đi hoặc sắp đi qua. Kích thước các yếu tố trên biển được quy định cụ thể trong điều luật cho từng loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 318,
+  "elapsed_seconds": 6.093125500003225,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

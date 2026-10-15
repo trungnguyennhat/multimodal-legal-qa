@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1ca6fe38f4b40a8e317d5f45dfeb3c358044fa4fcf5152c36864c9a5a15608ed",
+  "filename": "image126.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.115 'Hạn chế trọng tải toàn bộ xe' theo QCVN 41:2024/BGTVT, dùng để báo cấm các xe có trọng tải vượt quá trị số ghi trên biển.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.115\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, số '10' màu đen ở giữa, ký hiệu 't' (tấn) màu đen bên cạnh số 10\",\n      \"meaning_or_specification\": \"Báo đường cấm các xe (cơ giới và thô sơ), kể cả xe được ưu tiên, có trọng tải toàn bộ xe vượt quá 10 tấn đi qua.\"\n    }\n  ]\n}",
+  "generated_tokens": 199,
+  "elapsed_seconds": 3.3111453000019537,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

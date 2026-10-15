@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:032863d07617a226421d128b61220c077bf2ade16b6c74663b768d8114b1ba57",
+  "filename": "image1462.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển chỉ dẫn trạm dừng nghỉ (mã IE.456a) với nền xanh lá cây, chữ trắng và biểu tượng dịch vụ công cộng, kèm kích thước kỹ thuật.\",\n  \"items\": [\n    {\n      \"identifier\": \"IE.456a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh lá cây, chữ 'TRẠM DỪNG NGHỈ REST AREA' màu trắng, kèm 3 biểu tượng dịch vụ công cộng (hình tròn trắng nền đen, kích thước 75x75 cm), kích thước tổng thể: chiều rộng 250 cm, chiều cao 100 cm, góc bo R3, các khoảng cách căn giữa a, b, c, d, e và chiều cao H1=40 cm, H2=33 cm.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn trạm dừng nghỉ có 4 dịch vụ, dùng để báo hiệu vị trí trạm dừng nghỉ cho người tham gia giao thông; tuân thủ QCVN 41:2024/BGTVT, điều P.7, với vật liệu màng phản quang loại VIII, IX, XI cấu trúc kim cương, chữ kích thước gt2, nền trắng hình vẽ đen cho biểu tượng.\"\n    }\n  ]\n}",
+  "generated_tokens": 309,
+  "elapsed_seconds": 5.098973100000876,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

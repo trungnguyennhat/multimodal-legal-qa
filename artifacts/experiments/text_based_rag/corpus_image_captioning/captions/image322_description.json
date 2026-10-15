@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5945fba41d46588dcc0a2a467d58ce19408709a552322ce57183ff76e18ebe15",
+  "filename": "image322.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số R.411 'Hướng đi trên mỗi làn đường phải theo' với 3 làn đường: làn trái chỉ hướng rẽ trái, làn giữa chỉ hướng đi thẳng, làn phải chỉ hướng rẽ phải.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.411\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, có 3 mũi tên trắng chỉ hướng: mũi tên trái (rẽ trái), mũi tên thẳng (đi thẳng), mũi tên phải (rẽ phải), phân cách bởi vạch kẻ dọc trắng đứt đoạn.\",\n      \"meaning_or_specification\": \"Báo hiệu bắt buộc người tham gia giao thông phải đi đúng làn đường theo hướng mũi tên chỉ dẫn, phù hợp với vạch kẻ đường loại 9.3 (vạch mũi tên chỉ hướng trên mặt đường).\"\n    }\n  ]\n}",
+  "generated_tokens": 219,
+  "elapsed_seconds": 3.6545805999994627,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

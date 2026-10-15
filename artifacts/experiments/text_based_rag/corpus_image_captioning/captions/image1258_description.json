@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bc395e086cac99319766ff33bbeef3baf383c5eab0fff7076670059cfb2e3d84",
+  "filename": "image1258.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn 'GA TÀU' (Railway Station) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn 'GA TÀU' (Railway Station)\",\n      \"visual_or_geometric_features\": \"Hình dạng: Biển hình mũi tên chỉ hướng (hình tam giác cân ở bên trái, hình chữ nhật ở thân). Các thông số kích thước trên hình: Chiều dài tổng cộng 860mm, chiều rộng 420mm, chiều cao phần mũi tên 180mm, chiều cao phần thân 300mm, chiều rộng phần thân 420mm, chiều rộng phần mũi tên 180mm. Biểu tượng: Hình tròn chứa hình chữ nhật và đường cong (biểu tượng đường sắt).\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn vị trí ga tàu. Kích thước được quy định cho loại đường thông thường (z=75mm) hoặc đường đô thị (z=50mm) tùy theo quy định cụ thể trong điều luật, nhưng hình vẽ này thể hiện kích thước tổng thể của biển báo.\"\n    },\n    {\n      \"identifier\": \"Biểu tượng đường sắt (Railway symbol)\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình tròn chứa hình chữ nhật và đường cong. Các thông số kích thước trên hình: Đường kính hình tròn 180mm, chiều rộng hình chữ nhật 120mm, chiều cao hình chữ nhật 120mm, chiều rộng đường cong 40mm, chiều cao đường cong 40mm.\",\n      \"meaning_or_specification\": \"Biểu tượng đặc trưng cho đường sắt, được sử dụng trong biển báo chỉ dẫn vị trí ga tàu.\"\n    }\n  ]\n}",
+  "generated_tokens": 441,
+  "elapsed_seconds": 7.954810600000201,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

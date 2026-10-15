@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7ae6776f74e15a689a5fd61840e07218f0da3938e860804330cc765a6820ca84",
+  "filename": "image1144.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo I.415 (Mũi tên chỉ hướng đi) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.415: Mũi tên chỉ hướng đi\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong là hình mũi tên chỉ hướng đi lên. Các ký hiệu kích thước trên bản vẽ bao gồm: chiều rộng biển 12z, chiều cao biển 12z, chiều rộng phần thân mũi tên 6z, chiều cao phần thân mũi tên 5z, chiều rộng phần chân mũi tên 4z, chiều cao phần chân mũi tên 3z, và chiều dày khung viền 1z.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, biển số I.415 dùng để chỉ hướng đi cho các loại đường khác nhau với kích thước z (mm) tương ứng: 100 (đường đôi ngoài đô thị), 75 (đường thông thường), 50 (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 301,
+  "elapsed_seconds": 5.891156699995918,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

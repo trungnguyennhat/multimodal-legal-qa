@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:890c94eae358ce1850aaff0a56382884eef9659c2205e57b32135e77ed1610a6",
+  "filename": "image210.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số W.209 'Giao nhau có tín hiệu đèn' theo QCVN 41:2024/BGTVT, dùng để báo trước nơi giao nhau có điều khiển bằng đèn trong trường hợp người tham gia giao thông khó quan sát thay đổi đèn.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.209\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng bên trong là hình đèn tín hiệu giao thông (ba đèn dọc: đỏ, vàng, xanh)\",\n      \"meaning_or_specification\": \"Biển báo trước nơi giao nhau có điều khiển giao thông bằng tín hiệu đèn, đặt khi người tham gia giao thông khó quan sát thay đèn để kịp thời xử lý; không nên đặt nếu dễ dàng nhận biết đèn tín hiệu.\"\n    }\n  ]\n}",
+  "generated_tokens": 213,
+  "elapsed_seconds": 3.566786300005333,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

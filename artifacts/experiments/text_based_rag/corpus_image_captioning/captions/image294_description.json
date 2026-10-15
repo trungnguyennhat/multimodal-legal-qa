@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:185786603408bf38c61f288df40a7dfe7df724d0ea33336dc542e8a12567fe02",
+  "filename": "image294.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa 4 kiểu biển báo giao thông thuộc nhóm R.301 (a, b, c, d) theo QCVN 41:2024/BGTVT, quy định hướng đi bắt buộc cho các loại xe.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số R.301a\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng, biểu tượng mũi tên trắng chỉ thẳng lên trên\",\n      \"meaning_or_specification\": \"Các xe chỉ được đi thẳng; đặt ở trước hoặc sau nơi đường giao nhau tùy ngữ cảnh, cấm rẽ trái/quay đầu trong vùng tác dụng nếu đặt sau giao nhau.\"\n    },\n    {\n      \"identifier\": \"Biển số R.301b\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng, biểu tượng mũi tên trắng chỉ sang phải\",\n      \"meaning_or_specification\": \"Các xe chỉ được rẽ phải; đặt ở sau nơi đường giao nhau nhằm chỉ hướng đi ngang qua và ngăn chặn đi ngược chiều trên đường một chiều.\"\n    },\n    {\n      \"identifier\": \"Biển số R.301c\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng, biểu tượng mũi tên trắng chỉ sang trái\",\n      \"meaning_or_specification\": \"Các xe chỉ được rẽ trái; đặt ở sau nơi đường giao nhau nhằm chỉ hướng đi ngang qua và ngăn chặn đi ngược chiều trên đường một chiều.\"\n    },\n    {\n      \"identifier\": \"Biển số R.301d\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, viền trắng, biểu tượng mũi tên trắng chỉ sang phải nhưng cong góc 90 độ (rẽ phải)\",\n      \"meaning_or_specification\": \"Các xe chỉ được rẽ phải; đặt ở trước nơi đường giao nhau, bắt buộc rẽ phải ở phạm vi giao nhau phía sau biển.\"\n    }\n  ]\n}",
+  "generated_tokens": 465,
+  "elapsed_seconds": 7.434305800001312,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

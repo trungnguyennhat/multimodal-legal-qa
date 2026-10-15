@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1b60f1572446708c1c3ca72933322d1b1f70153f90eeaadb666877c8c84eaa2e",
+  "filename": "image358.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.408a 'Nơi đỗ xe một phần trên hè phố' theo quy định QCVN 41:2024/BGTVT, dùng để chỉ dẫn vị trí được phép đỗ xe một phần trên hè phố rộng.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.408a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng; có chữ 'P' màu trắng ở phần trên và hình vẽ ô tô màu trắng ở phần dưới, biểu thị xe đỗ một phần trên hè phố.\",\n      \"meaning_or_specification\": \"Chỉ dẫn những nơi được phép đỗ xe một phần trên hè phố rộng; xe phải đỗ sao cho các bánh phía ghế phụ nằm trên hè phố.\"\n    }\n  ]\n}",
+  "generated_tokens": 204,
+  "elapsed_seconds": 3.3980214999974123,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bbd501f97be4329faced36042eb9f40bf6e5821d5ab6686b646619943957fe51",
+  "filename": "image1342.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của hai biển báo thuộc nhóm chỉ dẫn: Biển số I.445a (Chủ ý đường trơn có băng tuyết) và Biển số I.445b (Chủ ý đường sắt).\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.445a: Chủ ý đường trơn có băng tuyết\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền đỏ, viền trắng. Bên trong có biểu tượng bông tuyết màu trắng và dòng chữ 'CHÚ Ý' cùng 'ĐƯỜNG TRƠN CÓ BĂNG TUYẾT'. Bản vẽ kèm các ký hiệu kích thước: B (chiều rộng), H (chiều cao), các khoảng cách từ mép biển đến viền khung, và khoảng cách giữa các thành phần nội dung.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo tài xế về tình trạng đường trơn trượt do băng tuyết. Kích thước và khoảng cách các thành phần được quy định chi tiết trong bản vẽ kỹ thuật này để đảm bảo tính thống nhất và dễ nhận biết.\"\n    },\n    {\n      \"identifier\": \"Biển số I.445b: Chủ ý đường sắt\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền đỏ, viền trắng. Bên trong có dòng chữ 'CHÚ Ý ĐƯỜNG SẮT 30 m' và biểu tượng đầu máy xe lửa màu trắng, kèm theo mũi tên chỉ hướng đi. Bản vẽ kèm các ký hiệu kích thước: B (chiều rộng), H (chiều cao), các khoảng cách từ mép biển đến viền khung, và khoảng cách giữa các thành phần nội dung.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo tài xế về sự hiện diện của đường sắt trong khoảng cách 30m. Kích thước và khoảng cách các thành phần được quy định chi tiết trong bản vẽ kỹ thuật này để đảm bảo tính thống nhất và dễ nhận biết.\"\n    }\n  ]\n}",
+  "generated_tokens": 463,
+  "elapsed_seconds": 8.335594799995306,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

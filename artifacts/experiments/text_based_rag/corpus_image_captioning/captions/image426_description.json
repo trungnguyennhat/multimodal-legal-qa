@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4517848d93a36c935be1bcc44867e3ff25b3820820c30f438f8aa880b62447f1",
+  "filename": "image426.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.439 'Tên cầu' theo quy định QCVN 41:2024/BGTVT, hiển thị tên cầu, lý trình và số hiệu đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.439\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền xanh dương, chữ và khung viền màu trắng. Nội dung: 'CẦU YÊN CHÂU', 'Km 252 + 831', 'QL.6'.\",\n      \"meaning_or_specification\": \"Biển báo tên cầu được đặt khi chiều dài cầu > 30m hoặc có tên gắn với địa danh văn hóa/lịch sử; ghi rõ tên cầu, lý trình làm tròn đến mét và tên/số hiệu đường để phục vụ quản lý và định vị.\"\n    }\n  ]\n}",
+  "generated_tokens": 217,
+  "elapsed_seconds": 3.6434969999972964,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

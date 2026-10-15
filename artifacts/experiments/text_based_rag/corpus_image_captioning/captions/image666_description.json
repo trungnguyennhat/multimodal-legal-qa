@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:f6f41da97ce4865f06224b7158302d5d73bf322165613b1df67af5447086e036",
+  "filename": "image666.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật minh họa hai loại cột kilômét dạng cột thấp và cột cao theo QCVN 41:2024/BGTVT, với các kích thước chi tiết được ghi bằng cm và mm.\",\n  \"items\": [\n    {\n      \"identifier\": \"Cột kilômét dạng cột thấp (Hình I.1)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng gồm phần trên hình bán nguyệt (đường kính 40 cm) chứa chữ 'PHỦ LỘ 5 km', phần dưới là hình chữ nhật (chiều cao 40 cm). Kích thước tổng chiều cao: 80 cm (40 + 40).\",\n      \"meaning_or_specification\": \"Dùng để báo lộ giới trên đường cao tốc; nền màu xanh lá cây, viền trắng; kích thước theo Hình I.1 trong QCVN 41:2024/BGTVT.\"\n    },\n    {\n      \"identifier\": \"Cột kilômét dạng cột cao (Hình I.2)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng gồm phần trên hình chữ nhật nhỏ (chiều rộng 20 cm, chiều cao 20 cm) chứa chữ 'QL 3', phần dưới là hình chữ nhật lớn (chiều cao 80 cm). Tổng chiều cao: 100 cm (20 + 80).\",\n      \"meaning_or_specification\": \"Dùng để báo lộ giới trên các đường ô tô khác (không phải cao tốc); nền màu xanh lam, viền trắng; kích thước theo Hình I.2 trong QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 403,
+  "elapsed_seconds": 6.425985200003197,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

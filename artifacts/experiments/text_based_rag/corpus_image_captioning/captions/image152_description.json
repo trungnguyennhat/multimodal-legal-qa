@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8056d2b57379f454d88459d51f93d2ffccf3a32379503dcd700b7c8a62f55ff3",
+  "filename": "image152.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.127a 'Tốc độ tối đa cho phép về ban đêm' với tốc độ 70 km/h, hiệu lực từ 22:00 đến 5:00.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.127a\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, nền đỏ viền trắng, chữ 'BEM' và số '70' màu trắng ở trung tâm; phía dưới có dòng chữ '22:00 - 5:00' màu đen trên nền trắng.\",\n      \"meaning_or_specification\": \"Biển quy định tốc độ tối đa cho phép về ban đêm là 70 km/h, chỉ có hiệu lực trong khoảng thời gian từ 22:00 đến 5:00, áp dụng cho khu đông dân cư nhằm nâng cao tốc độ vận hành khi đường ít xe chạy.\"\n    }\n  ]\n}",
+  "generated_tokens": 234,
+  "elapsed_seconds": 3.920022800004517,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

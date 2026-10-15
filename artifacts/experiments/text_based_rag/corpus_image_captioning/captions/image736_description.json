@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:62ee41c5ae3a0d54294609da06a70854d75596dd906536a93a77b1f410a82731",
+  "filename": "image736.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm P.101 (Đường cấm) và P.102 (Cấm đi ngược chiều) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.101 (Đường cấm)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có dấu gạch chéo đỏ từ trên trái xuống dưới phải. Bên trong có hình người đi bộ và xe đạp. Các kích thước được ghi chú: đường kính biển 87,5 mm; chiều cao người đi bộ 35 mm; chiều cao xe đạp 20 mm; khoảng cách từ mép biển đến chân người đi bộ 10 mm; khoảng cách từ mép biển đến bánh xe đạp 10 mm; tổng chiều ngang của hình người và xe đạp là 30 mm.\",\n      \"meaning_or_specification\": \"Quy định kích thước chi tiết cho biển báo P.101 (Đường cấm) khi lắp đặt trên đường thông thường hoặc đô thị (z = 87,5 mm), bao gồm tỷ lệ giữa hình người, xe đạp và khung biển để đảm bảo tính đồng nhất và dễ nhận biết.\"\n    },\n    {\n      \"identifier\": \"Biển báo P.102 (Cấm đi ngược chiều)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có dấu gạch chéo đỏ từ trên trái xuống dưới phải. Bên trong có hình người đang đi bộ theo hướng ngược chiều với biển P.101. Các kích thước được ghi chú: đường kính biển 87,5 mm; chiều cao người đi bộ 35 mm; khoảng cách từ mép biển đến chân người đi bộ 10 mm; khoảng cách từ mép biển đến đầu người đi bộ 10 mm; tổng chiều ngang của hình người là 30 mm.\",\n      \"meaning_or_specification\": \"Quy định kích thước chi tiết cho biển báo P.102 (Cấm đi ngược chiều) khi lắp đặt trên đường thông thường hoặc đô thị (z = 87,5 mm), bao gồm tỷ lệ giữa hình người và khung biển để đảm bảo tính đồng nhất và dễ nhận biết.\"\n    }\n  ]\n}",
+  "generated_tokens": 536,
+  "elapsed_seconds": 9.052158600003168,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

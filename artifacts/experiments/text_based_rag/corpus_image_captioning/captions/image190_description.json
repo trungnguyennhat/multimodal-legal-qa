@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c22931184a074eb530bfd98890bce964f7f25946d8fd60f87c2acf663f7f05e8",
+  "filename": "image190.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển báo W.201c và W.201d theo QCVN 41:2024/BGTVT, dùng để cảnh báo chỗ ngoặt nguy hiểm có nguy cơ lật xe tùy theo hướng vòng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.201c\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: xe tải đang nghiêng sang phải khi đường cong vòng sang trái\",\n      \"meaning_or_specification\": \"Biển báo trước chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái, dành cho xe có trọng tâm cao và trọng tải lớn.\"\n    },\n    {\n      \"identifier\": \"Biển số W.201d\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: xe tải đang nghiêng sang trái khi đường cong vòng bên phải\",\n      \"meaning_or_specification\": \"Biển báo trước chỗ ngoặt nguy hiểm có nguy cơ lật xe bên trái khi đường cong vòng bên phải, dành cho xe có trọng tâm cao và trọng tải lớn.\"\n    }\n  ]\n}",
+  "generated_tokens": 298,
+  "elapsed_seconds": 4.819990599993616,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:fc11079f7df85e7fbc606ca7ccacecf54b74008391937e2561d7cd686685b3ee",
+  "filename": "image650.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa vạch mũi tên chỉ hướng trên mặt đường (vạch 9.3) theo QCVN 41:2024/BGTVT, dùng để chỉ hướng xe phải đi tại nút giao, làn xe hoặc đường một chiều.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 9.3: Vạch mũi tên chỉ hướng trên mặt đường\",\n      \"visual_or_geometric_features\": \"Hai mũi tên trắng, cong nhẹ, hướng lên trên, được vẽ song song trên nền xám (mặt đường).\",\n      \"meaning_or_specification\": \"Sử dụng để chỉ hướng xe phải đi, chủ yếu ở các nút giao có tách nhập làn, trên đường nhiều làn xe hoặc phần đường một chiều. Màu sắc: trắng. Kích thước tùy theo tốc độ xe chạy (Hình G.73 cho tốc độ thấp, Hình G.74 cho tốc độ cao).\"\n    }\n  ]\n}",
+  "generated_tokens": 225,
+  "elapsed_seconds": 4.1567431000003126,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

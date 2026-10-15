@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:77eb36ef836a1d4d40f70fe825643d363130ee0c10c0873a5979c8589fc71c55",
+  "filename": "image188.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển báo giao thông W.201a và W.201b thuộc nhóm biển báo nguy hiểm, dùng để cảnh báo chỗ ngoặt nguy hiểm vòng trái và vòng phải.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.201a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen là đường cong ngoặt sang bên trái\",\n      \"meaning_or_specification\": \"Báo trước chỗ ngoặt nguy hiểm vòng bên trái; áp dụng khi góc chuyển hướng ≥45° hoặc bán kính ≤100m (đồng bằng), ≤40m (núi), hoặc ở vùng khó quan sát hoặc sau đoạn thẳng ≥1km.\"\n    },\n    {\n      \"identifier\": \"Biển số W.201b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen là đường cong ngoặt sang bên phải\",\n      \"meaning_or_specification\": \"Báo trước chỗ ngoặt nguy hiểm vòng bên phải; áp dụng cùng điều kiện như W.201a nhưng cho hướng ngoặt phải.\"\n    }\n  ]\n}",
+  "generated_tokens": 293,
+  "elapsed_seconds": 4.798137099998712,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3599fcf2e48e1319e39a906550848f7ce8b481312914e6d3d4effd9af71ee99c",
+  "filename": "image1236.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo I.434b (Bến xe tải) theo QCVN 41:2024/BGTVT, bao gồm kích thước tổng thể, kích thước biểu tượng xe tải và kích thước khung chữ.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.434b: Bến xe tải\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong có biểu tượng xe tải màu đen và dòng chữ 'BẾN XE TẢI'. Bản vẽ kèm các kích thước: chiều cao tổng 1000mm, chiều rộng tổng 1000mm; chiều cao biểu tượng xe 750mm, chiều rộng biểu tượng xe 750mm; chiều cao khung chữ 250mm, chiều rộng khung chữ 1000mm; khoảng cách từ mép biển đến biểu tượng xe là 125mm (trên và dưới), 125mm (trái và phải).\",\n      \"meaning_or_specification\": \"Theo Điều M.4, Nhóm biển chỉ dẫn, biển số I.434b dùng để chỉ dẫn bến xe tải. Kích thước z (chiều cao khung chữ) đối với đường đô thị là 50mm, nhưng trong bản vẽ này, kích thước khung chữ được quy định cụ thể là 250mm chiều cao và 1000mm chiều rộng, phù hợp với quy chuẩn kỹ thuật cho biển báo lớn.\"\n    }\n  ]\n}",
+  "generated_tokens": 370,
+  "elapsed_seconds": 6.882639499999641,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

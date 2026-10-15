@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8a3634e89ce59957d3ee1c386be081ba27cf4904f1828beb72f30461e699e948",
+  "filename": "image134.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.119 'Hạn chế chiều dài xe' theo QCVN 41:2024/BGTVT, dùng để báo hiệu cấm các xe có chiều dài lớn hơn trị số ghi trên biển đi qua.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.119\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, biểu tượng xe tải đen ở giữa và dòng chữ '9 m' bên dưới xe.\",\n      \"meaning_or_specification\": \"Biển báo cấm các loại xe (cơ giới và thô sơ) kể cả xe ưu tiên có chiều dài toàn bộ lớn hơn 9 mét đi qua, nhằm ngăn ngừa ách tắc hoặc nguy hiểm trên đoạn đường có bán kính cong nhỏ, đèo dốc quanh co hoặc đoạn đường hẹp.\"\n    }\n  ]\n}",
+  "generated_tokens": 215,
+  "elapsed_seconds": 3.601358899999468,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

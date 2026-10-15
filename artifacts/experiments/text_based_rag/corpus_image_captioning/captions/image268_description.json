@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3022706e7e67ccb7ac1ab6936c6b7fc94a81ac8db7ac0901d3bf37aa8bd1cd52",
+  "filename": "image268.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.237 'Cầu vồng' theo QCVN 41:2024/BGTVT, dùng để cảnh báo lái xe về đoạn đường có độ vồng lớn ảnh hưởng tầm nhìn.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.237\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình cầu vồng (cầu vồng) ở giữa\",\n      \"meaning_or_specification\": \"Biển báo dùng để nhắc nhở lái xe phải thận trọng khi tiếp cận đoạn đường sắp đến có công trình với độ vồng lớn, ảnh hưởng đến tầm nhìn.\"\n    }\n  ]\n}",
+  "generated_tokens": 185,
+  "elapsed_seconds": 3.1040504000047804,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

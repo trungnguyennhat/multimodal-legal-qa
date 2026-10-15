@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5689a74c3c32e9d2ae6a3827de1c15e0801199a9858e4db89d211ee6ee18a205",
+  "filename": "image016.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa các biểu tượng và ký hiệu cho biển chỉ dẫn dịch vụ công cộng trên đường cao tốc theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn dịch vụ công cộng (Hình 5)\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình chữ nhật có viền. Màu sắc: Nền xanh lam, chữ và hình vẽ màu trắng. Biểu tượng: Các hình vẽ đen trắng minh họa các loại dịch vụ.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn các điểm đến là dịch vụ công cộng, giải trí. Các biểu tượng bao gồm: a) Trạm cảnh sát giao thông (CSGT), b) Sân bay, c) Bến xe khách, d) Nhà ga, e) Bến tàu thủy, f) Khu công nghiệp, g) Đập thủy điện, h) Điện thoại công cộng, i) Trạm sửa chữa, k) Trạm xăng dầu.\"\n    }\n  ]\n}",
+  "generated_tokens": 242,
+  "elapsed_seconds": 5.540711199995712,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

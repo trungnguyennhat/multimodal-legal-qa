@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e1160710a5b639375b0b9701671b9f336b0714837ddd08db76cd2a92e3912e70",
+  "filename": "image1112.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo hiệu lệnh cấm đỗ xe theo giờ trong khu vực (R.E.9a) và biển báo khu vực đỗ xe (R.E.9c) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm đỗ xe theo giờ trong khu vực (R.E.9a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, có khung viền và nội dung biểu tượng cấm đỗ xe (vòng tròn đỏ với gạch chéo đỏ trên nền xanh) kèm chữ 'ZONE' và thời gian '6:00 - 18:00'. Các kích thước được ghi bằng đơn vị 'x' (ví dụ: 14,0x, 10x, 0,8x, 0,1x, 0,3x, 0,7x, 1,4x).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo R.E.9a theo điều luật: chiều cao tối thiểu z = 126 mm (đường đôi ngoài đô thị), 87,5 mm (đường thông thường), 70 mm (đường đô thị). Các tỷ lệ 'x' trong hình ảnh dùng để xác định kích thước thực tế dựa trên tiêu chuẩn.\"\n    },\n    {\n      \"identifier\": \"Biển báo khu vực đỗ xe (R.E.9c)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, có khung viền và biểu tượng khu vực đỗ xe (vòng tròn đỏ với gạch chéo đỏ trên nền xanh, không có chữ 'ZONE' hay thời gian). Các kích thước được ghi bằng đơn vị 'x' (ví dụ: 7,4x, 0,84x, 0,7x).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển báo R.E.9c theo điều luật: chiều cao tối thiểu z = 126 mm (đường đôi ngoài đô thị), 87,5 mm (đường thông thường), 70 mm (đường đô thị). Các tỷ lệ 'x' trong hình ảnh dùng để xác định kích thước thực tế dựa trên tiêu chuẩn.\"\n    }\n  ]\n}",
+  "generated_tokens": 538,
+  "elapsed_seconds": 9.255750900003477,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

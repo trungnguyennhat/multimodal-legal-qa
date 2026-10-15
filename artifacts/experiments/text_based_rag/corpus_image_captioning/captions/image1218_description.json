@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:77c0615afe213b4607d8c0314fc71283f4be4c321c495ab24052e63254d731f1",
+  "filename": "image1218.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn I.430 (Điện thoại) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.430: Điện thoại\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền, bên trong có biểu tượng điện thoại màu đen trên nền trắng, kèm số điện thoại mẫu '1900565656'. Bản vẽ kèm các kích thước kỹ thuật: chiều cao tổng thể 1000mm, chiều rộng 800mm, chiều cao biểu tượng 600mm, chiều rộng biểu tượng 400mm, và các khoảng cách chi tiết từ mép biển đến biểu tượng.\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn nơi có điện thoại công cộng hoặc trạm gọi khẩn cấp, thuộc nhóm biển chỉ dẫn (I.430). Kích thước được quy định theo loại đường: 100mm (đường đôi ngoài đô thị), 75mm (đường thông thường), 50mm (đường đô thị) — tuy nhiên hình vẽ này thể hiện kích thước lớn hơn (1000x800mm) để minh họa tỷ lệ hoặc phiên bản lớn.\"\n    }\n  ]\n}",
+  "generated_tokens": 327,
+  "elapsed_seconds": 6.247589899998275,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:088e3ea33ab1d7b2bebe9f53b7009e1f0d7063e2f4bdd04e5b0a178dcc67be77",
+  "filename": "image1270.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn 'Bến tàu thủy' (Waterway Station), kèm theo bảng thông số kỹ thuật chi tiết.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn Bến tàu thủy (Waterway Station)\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình tam giác chỉ dẫn (mũi tên) với phần thân chữ nhật. Các ký hiệu kích thước trên bản vẽ bao gồm: chiều dài tổng thể, chiều rộng, chiều cao của phần mũi tên, chiều cao của phần thân chữ, và các khoảng cách phân chia nội dung. Bên cạnh là bản vẽ lưới (grid) để minh họa tỷ lệ và độ dày của các đường nét.\",\n      \"meaning_or_specification\": \"Quy định về kích thước hình học và bố cục của biển báo chỉ dẫn bến tàu thủy. Theo văn bản điều luật gốc, biển này thuộc nhóm biển chỉ dẫn (Nhóm M.4), có hình dạng tam giác chỉ dẫn, nền màu xanh dương, chữ và biểu tượng màu trắng. Kích thước cụ thể (z) phụ thuộc vào loại đường: 80mm cho đường đôi ngoài đô thị, 80mm cho đường thông thường và 40mm cho đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 306,
+  "elapsed_seconds": 5.938328000003821,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

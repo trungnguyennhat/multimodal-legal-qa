@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2996a3506e815331be368072d2febd061496992aa645d44099731b4f3aa0daf5",
+  "filename": "image186.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm xe công nông và các loại xe tương tự theo QCVN 41:2024/BGTVT, mã P.140.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.140\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có dấu gạch chéo đỏ cắt ngang từ trên trái xuống dưới phải; bên trong là hình vẽ đen của một chiếc xe công nông (xe ba bánh hoặc xe tải nhỏ kiểu nông thôn).\",\n      \"meaning_or_specification\": \"Biển báo này dùng để báo hiệu đường cấm xe công nông và các loại xe tương tự đi vào, theo quy định tại Điều B.40 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 203,
+  "elapsed_seconds": 3.398913100005302,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

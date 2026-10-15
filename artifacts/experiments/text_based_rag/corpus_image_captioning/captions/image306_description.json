@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:aef5b7c1579915ea75922162f481fb531e171cf1886ebd19f3a53634bee8da83",
+  "filename": "image306.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số R.306 'Tốc độ tối thiểu cho phép' theo QCVN 41:2024/BGTVT, dùng để báo hiệu tốc độ tối thiểu bắt buộc cho xe cơ giới trên các đoạn đường ngoài khu đông dân cư.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.306\",\n      \"visual_or_geometric_features\": \"Hình tròn, nền xanh dương, chữ số '60' màu trắng ở giữa\",\n      \"meaning_or_specification\": \"Biển báo tốc độ tối thiểu cho phép các xe cơ giới chạy, trị số ghi trên biển (ví dụ: 60 km/h) là tốc độ tối thiểu phải duy trì trong điều kiện giao thông thuận lợi và an toàn; không được quy định lớn hơn tốc độ an toàn, chỉ áp dụng trên đoạn đường cần nâng cao năng lực thông xe, ngoài khu đông dân cư, xe chạy tốc độ cao.\"\n    }\n  ]\n}",
+  "generated_tokens": 236,
+  "elapsed_seconds": 3.8824570999931893,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

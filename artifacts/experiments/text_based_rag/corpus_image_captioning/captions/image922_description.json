@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:671f8e2a8710696bac31e10bf8f1c9d1259d6b9a37ac30e0ee4788612cb36c51",
+  "filename": "image922.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo nguy hiểm W.227 (Công trường) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.227 (Công trường)\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân có đỉnh hướng lên trên, được bao quanh bởi khung viền màu đỏ (trong bản vẽ kỹ thuật thể hiện bằng đường nét đậm). Bên trong hình tam giác là biểu tượng đen mô tả hình ảnh công nhân đang làm việc tại công trường (có người và máy móc). Bản vẽ kèm theo các kích thước chi tiết: chiều cao tam giác, chiều rộng đáy, bán kính cong của các cạnh, và kích thước của biểu tượng bên trong.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo người tham gia giao thông về khu vực công trường đang hoạt động. Các thông số kỹ thuật (z) trong điều luật quy định chiều cao tối thiểu của biển báo tùy thuộc vào loại đường (Đường cao tốc, Đường đôi ngoài đô thị, Đường thông thường, Đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 289,
+  "elapsed_seconds": 5.566725899996527,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

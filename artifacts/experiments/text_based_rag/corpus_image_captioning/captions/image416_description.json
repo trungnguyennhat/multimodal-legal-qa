@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:cb053ae062fe35f13d640bde7809162d2756a3fe54d8cda1ecb021f0af8d5b05",
+  "filename": "image416.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.434a 'Bến xe buýt' theo quy định QCVN 41:2024/BGTVT, dùng để chỉ dẫn chỗ dừng đỗ xe buýt cho khách lên xuống.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.434a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng, bên trong có hình vẽ đen là xe buýt và dòng chữ 'BẾN XE BUÝT' (tiếng Việt) và 'BUS STOP' (tiếng Anh).\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn chỗ dừng đỗ xe buýt cho khách lên xuống; có thể kết hợp với biển phụ để chỉ dẫn thông tin tuyến xe buýt. Trong trường hợp không phải là bến xe theo quy định, thay chữ 'Bến xe buýt' bằng 'Điểm dừng xe buýt'. Nếu dùng cho tuyến cố định, thay bằng 'Điểm đón trả khách tuyến cố định' và bỏ chữ 'BUS STOP'.\"\n    }\n  ]\n}",
+  "generated_tokens": 255,
+  "elapsed_seconds": 4.173104199995578,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

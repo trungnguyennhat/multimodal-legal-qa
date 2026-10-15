@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b46c6285ff6ff110f9463f0867c6555cf9f2f516ad98f211e11a7bae867d9c54",
+  "filename": "image984.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển hiệu lệnh dừng lại (R.122) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển hiệu lệnh R.122 (Dừng lại)\",\n      \"visual_or_geometric_features\": \"Hình bát giác, được vẽ trên lưới ô vuông với các kích thước được ghi chú bằng biểu thức đại số theo biến z (độ dày biển). Các kích thước cụ thể bao gồm: chiều cao tổng cộng 10z, chiều rộng 18z, bán kính góc 0,8z, chiều cao chữ 'STOP' là 0,86z, và khoảng cách từ mép biển đến chữ là 0,7z và 1,04z. Ngoài ra còn có các kích thước phụ như 1,4z và 1,4z ở phía trên.\",\n      \"meaning_or_specification\": \"Theo Điều M.3 của QCVN 41:2024/BGTVT, biển số R.122 là biển hiệu lệnh 'Dừng lại'. Kích thước của biển này phụ thuộc vào loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z tương ứng là 140mm, 126mm, 87,5mm và 70mm. Bản vẽ này minh họa cách tính toán các kích thước hình học của biển dựa trên giá trị z để đảm bảo tính đồng nhất và chuẩn hóa trong thiết kế.\"\n    }\n  ]\n}",
+  "generated_tokens": 383,
+  "elapsed_seconds": 6.916138199994748,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

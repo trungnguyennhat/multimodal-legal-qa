@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a3400a068db5e73e27f52e0ca5bd2d3d564d3bb218dfc80ff001ae66e9c9c10b",
+  "filename": "image1290.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước z (chiều cao hoặc chiều rộng tùy ngữ cảnh) của các biển chỉ dẫn thuộc nhóm I.405a, I.405b, I.405c, I.406, I.407a, I.407b, I.407c, I.408, I.408a, I.409, I.410, I.413a, I.413b, I.413c, I.414a, I.414b, I.414c, I.414d, I.415, I.416, I.417a, I.417b, I.417c, I.418, I.419a, I.419b, I.422a, I.422b, I.423a, I.423b, I.423c, I.424a, I.424b, I.424c, I.424d, I.425, I.427a, I.427b, I.428, I.429, I.430, I.431, I.432, I.433a, I.433b, I.433c, I.433d, I.433e, I.434a, I.434b, I.435, I.436, I.437, I.439, I.440, I.441a, I.441b, I.441c, I.442, I.443, I.444a, I.444b, I.444c, I.444d, I.444e, I.444f, I.444g, I.444h, I.444l, I.444j, I.444k, I.444l, I.445a, I.445b, I.445c, I.445d, I.445e, I.445f, I.445g, I.445h, I.446, I.1447a, I.1447b, I.1447c, I.1447d, I.448, I.449 theo loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị).\",\n  \"items\": [\n    {\n      \"identifier\": \"Kích thước z (mm)\",\n      \"visual_or_geometric_features\": \"Hình khối chữ nhật hoặc hình học biểu diễn kích thước z trên bản vẽ kỹ thuật, kèm các giá trị số: 80, 60, 40 (tùy loại đường)\",\n      \"meaning_or_specification\": \"Quy định chiều cao hoặc chiều rộng của biển báo chỉ dẫn (theo điều luật QCVN 41:2024/BGTVT) tùy theo loại đường: Đường đôi ngoài đô thị (80mm), Đường thông thường (60mm), Đường đô thị (40mm). Các giá trị này áp dụng cho nhiều biển chỉ dẫn khác nhau trong nhóm I.4xx và L444x.\"\n    }\n  ]\n}",
+  "generated_tokens": 838,
+  "elapsed_seconds": 13.802035200002138,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

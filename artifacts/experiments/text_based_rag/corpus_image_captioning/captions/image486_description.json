@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9cfa2bbb4fcc514d5404027247c9dd55f35f42d9c42bf76e78d241b3f35abce7",
+  "filename": "image486.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển báo giao thông phụ số S.510a và S.510b theo QCVN 41:2024/BGTVT, dùng để cảnh báo đường trơn có băng tuyết và giao cắt với đường sắt.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số S.510a – Chú ý đường trơn có băng tuyết\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền đỏ, viền và chữ màu trắng, biểu tượng bông tuyết màu trắng ở giữa.\",\n      \"meaning_or_specification\": \"Dùng để cảnh báo tài xế về tình trạng đường trơn, có băng tuyết trong những ngày trời có tuyết.\"\n    },\n    {\n      \"identifier\": \"Biển số S.510b – Chú ý đường sắt\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền đỏ, viền và chữ màu trắng, biểu tượng đầu máy xe lửa màu đen kèm mũi tên chỉ hướng rẽ phải.\",\n      \"meaning_or_specification\": \"Dùng để cảnh báo khi rẽ vào đường nhánh sẽ có giao cắt với đường sắt (khoảng cách giữa đường sắt với đoạn đường đặt biển dưới 100 m).\"\n    }\n  ]\n}",
+  "generated_tokens": 293,
+  "elapsed_seconds": 4.749996499995177,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

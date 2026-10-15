@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:31f6147fe6618dcc206929168282e88c3fd2f6885dd4181b09e7fd3f5315ab28",
+  "filename": "image222.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biển báo giao thông W.215a, W.215b và W.215c theo QCVN 41:2024/BGTVT, dùng để cảnh báo kè hoặc vực sâu phía trước, bên phải hoặc bên trái đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.215a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: xe tải đang đi gần mép vực sâu phía trước\",\n      \"meaning_or_specification\": \"Biển báo trước vị trí có kè chắn vực sâu hoặc sông suối ở phía trước, nhằm cảnh báo tài xế đề phòng nguy hiểm rơi xuống vực (thường ở chỗ ngoặt nguy hiểm). Không cần đặt nếu đường đã có tường bảo vệ hoặc hộ lan.\"\n    },\n    {\n      \"identifier\": \"Biển số W.215b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: xe tải đang đi sát bên phải đường với vực sâu bên phải\",\n      \"meaning_or_specification\": \"Biển báo trước vị trí có kè chắn vực sâu hoặc sông suối ở bên phải đường, cảnh báo tài xế đề phòng nguy hiểm rơi xuống vực khi đi sát mép đường bên phải.\"\n    },\n    {\n      \"identifier\": \"Biển số W.215c\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen: xe tải đang đi sát bên trái đường với vực sâu bên trái\",\n      \"meaning_or_specification\": \"Biển báo trước vị trí có kè chắn vực sâu hoặc sông suối ở bên trái đường, cảnh báo tài xế đề phòng nguy hiểm rơi xuống vực khi đi sát mép đường bên trái.\"\n    }\n  ]\n}",
+  "generated_tokens": 440,
+  "elapsed_seconds": 7.003638400005002,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:55d7911be140a8dbb4140b32a68d6d7d0fe319c784b27066acc2a330e800c8a2",
+  "filename": "image196.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số W.204 'Đường hai chiều' theo QCVN 41:2024/BGTVT, dùng để báo trước đoạn đường phải đi chung hai chiều do sửa chữa, trở ngại hoặc chuyển tiếp từ đường một chiều sang hai chiều.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.204\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai mũi tên đối hướng (một lên, một xuống) màu đen ở giữa\",\n      \"meaning_or_specification\": \"Báo trước đoạn đường phải tổ chức đi lại cho phương tiện cả hai chiều trên một phía đường (do sửa chữa, trở ngại), hoặc báo trước đoạn đường đôi tạm thời hoặc đoạn đường có chiều xe đi và về đi chung; cũng dùng tại đầu/cuối đoạn đường có dải phân cách chuyển tiếp sang đường đi chung hai chiều hoặc khi hết đoạn đường một chiều.\"\n    }\n  ]\n}",
+  "generated_tokens": 238,
+  "elapsed_seconds": 3.9278135999993538,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

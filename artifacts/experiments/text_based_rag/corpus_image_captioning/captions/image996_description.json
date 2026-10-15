@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a7f68d15f87d26ecc08a84ee7e30390e97f2ce593cab7a289c8de2675a645acf",
+  "filename": "image996.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo giao thông thuộc nhóm biển hiệu lệnh (R.301f, R.301i) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.301f: Các xe chỉ được đi thẳng và rẽ phải\",\n      \"visual_or_geometric_features\": \"Hình tròn nền xanh, có hai mũi tên trắng: một mũi tên hướng thẳng lên trên và một mũi tên hướng sang phải. Bản vẽ kèm kích thước: đường kính biển 4,2z; chiều cao mũi tên 0,8z; chiều rộng mũi tên 0,4z; khoảng cách giữa hai mũi tên 0,4z; chiều dài mũi tên 1,2z; chiều rộng mũi tên 0,4z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được đi thẳng hoặc rẽ phải tại điểm giao nhau hoặc đoạn đường nhất định.\"\n    },\n    {\n      \"identifier\": \"Biển báo R.301i: Các xe chỉ được rẽ trái và rẽ phải\",\n      \"visual_or_geometric_features\": \"Hình tròn nền xanh, có hai mũi tên trắng: một mũi tên hướng sang trái và một mũi tên hướng sang phải. Bản vẽ kèm kích thước: đường kính biển 4,2z; chiều cao mũi tên 0,8z; chiều rộng mũi tên 0,4z; khoảng cách giữa hai mũi tên 0,4z; chiều dài mũi tên 1,2z; chiều rộng mũi tên 0,4z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được rẽ trái hoặc rẽ phải tại điểm giao nhau hoặc đoạn đường nhất định.\"\n    }\n  ]\n}",
+  "generated_tokens": 431,
+  "elapsed_seconds": 7.635437899996759,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

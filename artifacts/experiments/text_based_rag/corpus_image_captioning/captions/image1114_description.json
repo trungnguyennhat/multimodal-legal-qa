@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:fd3475e427d10fbfc798ce7e0fe78bec16b357f7a4603c72b882e31db6cf6745",
+  "filename": "image1114.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và tỷ lệ của biển báo hiệu lệnh cấm dừng xe (R.122) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm dừng xe (R.122)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, bên trong có hình tròn đỏ viền đỏ, nền đỏ, có đường chéo đỏ cắt qua. Bên trong hình tròn là hình tròn màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng lưới ô vuông). Kích thước được ghi chú bằng ký hiệu 'z' và các phân đoạn: 14,28z (chiều cao tổng), 10z (chiều rộng tổng), 0,08z, 0,15z, 3,7z, 3,7z, 2,25z (các khoảng cách từ mép biển đến các phần của hình tròn). Bản vẽ bên phải là biểu đồ lưới ô vuông minh họa tỷ lệ hình tròn so với lưới, với kích thước lưới 0,7z và đường kính hình tròn 7,8z.\",\n      \"meaning_or_specification\": \"Theo Điều M.3 của QCVN 41:2024/BGTVT, biển số R.122 là biển hiệu lệnh 'Dừng lại'. Kích thước của biển báo được quy định theo bảng phụ lục, với giá trị z phụ thuộc vào loại đường (ví dụ: z=140mm cho đường cao tốc, z=70mm cho đường đô thị). Hình tròn đỏ với đường chéo đỏ biểu thị lệnh cấm dừng xe, và hình tròn xanh dương bên trong biểu thị khu vực cấm dừng.\"\n    }\n  ]\n}",
+  "generated_tokens": 411,
+  "elapsed_seconds": 7.378375000000233,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

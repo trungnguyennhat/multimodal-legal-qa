@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:524545d128c6923159e40afccd88696568c78b00fd24017aec1287255f74f16f",
+  "filename": "image352.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.406 'Được ưu tiên qua đường hẹp' theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn quyền ưu tiên đi trước trên đoạn đường hẹp.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.406\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, có hai mũi tên: mũi tên đỏ hướng xuống (chiều ưu tiên) và mũi tên trắng hướng lên (chiều phải nhường đường).\",\n      \"meaning_or_specification\": \"Chỉ dẫn cho người tham gia giao thông cơ giới biết mình được quyền ưu tiên đi trước trên đoạn đường hẹp; nếu có xe ngược chiều đã vào phạm vi đường hẹp thì phải nhường đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 197,
+  "elapsed_seconds": 3.2890103999961866,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

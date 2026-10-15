@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:84691262076571da5ed21eef72e7ee268a4cdc9fae76f06e4ba4bd93254edd05",
+  "filename": "image446.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba loại biển báo số I.445 (a, b, c) thuộc nhóm biển báo mô tả tình trạng đường theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.445a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, biểu tượng ba làn sóng trắng ngang (mô phỏng mặt đường trơn trượt)\",\n      \"meaning_or_specification\": \"Biển báo đường trơn phải chạy chậm – đặt trước đoạn đường bị trơn trượt khi trời mưa hoặc láng dầu\"\n    },\n    {\n      \"identifier\": \"Biển số I.445b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, biểu tượng xe tải đang leo dốc với mũi tên chỉ hướng lên trên\",\n      \"meaning_or_specification\": \"Biển báo đường dốc phải đi chậm, lái xe phải cẩn thận – đặt trước đoạn đường có độ dốc lớn và tầm nhìn hạn chế\"\n    },\n    {\n      \"identifier\": \"Biển số I.445c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, biểu tượng xe tải đang di chuyển trong sương mù (có các đường cong mờ bao quanh)\",\n      \"meaning_or_specification\": \"Biển báo đoạn đường sương mù, tầm nhìn hạn chế phải đi chậm, tập trung quan sát – đặt trước đoạn đường nhiều sương mù\"\n    }\n  ]\n}",
+  "generated_tokens": 357,
+  "elapsed_seconds": 5.800729800001136,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

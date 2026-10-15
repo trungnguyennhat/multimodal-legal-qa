@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a2de7bdefca706705efea9c18d40029481e7e8cbc422454d8cbe0a3068326ff7",
+  "filename": "image090.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông P.101 'Đường cấm' theo QCVN 41:2024/BGTVT, dùng để báo hiệu đường cấm các loại phương tiện đi lại cả hai hướng.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.101\",\n      \"visual_or_geometric_features\": \"Hình tròn, viền đỏ, nền trắng, không có biểu tượng bên trong (biển cấm dạng hình tròn đặc trưng theo QCVN 41:2024/BGTVT)\",\n      \"meaning_or_specification\": \"Biển báo hiệu đường cấm các loại phương tiện đi lại cả hai hướng, trừ các xe được ưu tiên theo quy định; có thể kèm theo hàng rào chắn ngang hoặc biển P.112 tùy tình huống cụ thể theo Điều B.1.\"\n    }\n  ]\n}",
+  "generated_tokens": 212,
+  "elapsed_seconds": 3.654705799999647,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

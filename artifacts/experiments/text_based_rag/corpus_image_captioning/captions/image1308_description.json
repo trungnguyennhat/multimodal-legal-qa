@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5bd1628b7650135035eaadc201fd9743310b07502bbe6e332dc5cd898e60c646",
+  "filename": "image1308.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo chỉ dẫn Quốc lộ 1 Hà Nội - Hòa Lạc thuộc nhóm biển chỉ dẫn, hình chữ nhật, nền xanh dương, viền trắng, có khung kẻ ô lưới và các thông tin địa danh cùng biểu tượng đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.414d: Chỉ hướng đường\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh dương, viền trắng, có khung kẻ ô lưới nhỏ bao quanh. Nội dung gồm: dòng chữ 'QUỐC LỘ 1' ở trên, dòng chữ 'HÀ NỘI - HÒA LẠC' ở dưới, và biểu tượng hình mũi tên chỉ hướng đi (mũi tên cong hướng xuống phải).\",\n      \"meaning_or_specification\": \"Biển báo chỉ dẫn địa điểm hoặc tên đường, cụ thể là Quốc lộ 1, đoạn từ Hà Nội đến Hòa Lạc. Dùng để chỉ hướng đi cho người tham gia giao thông.\"\n    }\n  ]\n}",
+  "generated_tokens": 241,
+  "elapsed_seconds": 4.947264999995241,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

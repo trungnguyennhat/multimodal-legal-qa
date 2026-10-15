@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2f5b2cedc93cc50cac9b877f3ca5021e7b80cea92568efaa7009155ca138c35d",
+  "filename": "image1206.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo giao thông thuộc nhóm chỉ dẫn, cụ thể là biển số I.405a (Đường cụt), với các thông số chiều rộng, chiều cao và khoảng cách giữa các thành phần.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.405a: Đường cụt\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật nền xanh dương, có viền trắng dày. Bên trong có biểu tượng hình mũi tên đỏ chỉ hướng ngược lại (hình tam giác đỏ với mũi tên trắng bên trong). Kích thước được ghi chú: chiều rộng tổng cộng 1000mm, chiều cao tổng cộng 1000mm. Khoảng cách từ mép biển đến biểu tượng: 150mm (trên), 150mm (dưới), 150mm (trái), 150mm (phải).\",\n      \"meaning_or_specification\": \"Biển báo này dùng để báo hiệu đường cụt, tức là đoạn đường không có lối đi tiếp theo. Theo QCVN 41:2024/BGTVT, biển này thuộc nhóm biển chỉ dẫn (Nhóm M.4), mã I.405a, và được áp dụng cho đường đôi ngoài đô thị, đường thông thường và đường đô thị với kích thước z(mm) tương ứng là 100, 75, 50.\"\n    }\n  ]\n}",
+  "generated_tokens": 351,
+  "elapsed_seconds": 6.574433900001168,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:359792ce4a62b0c3000c23b3d069609ee7d192c5cbd0d879707f551ae93d81dc",
+  "filename": "image1564.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển chỉ dẫn trạm thu phí (IE.472a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn trạm thu phí (IE.472a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia làm hai phần: phần trên ghi 'TRẠM THU PHÍ TOLL PLAZA', phần dưới ghi '750 m⁻¹'. Các ký hiệu kích thước bao gồm: L (chiều rộng biển), W (chiều cao biển), k₁, k₁' (khoảng cách từ mép biển đến trục chữ), H₁, H₁' (chiều cao dòng chữ), a (khoảng cách căn giữa), h₂ (chiều cao ký hiệu 'm⁻¹').\",\n      \"meaning_or_specification\": \"Quy định chi tiết các thông số kỹ thuật về kích thước hình học và vị trí bố trí nội dung trên biển IE.472a theo Điều P.24 của QCVN 41:2024/BGTVT, với đơn vị tính bằng cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 297,
+  "elapsed_seconds": 4.966892600001302,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8aec93ff3d8c56cc1ee87e2213d3c655ad443193df39efb73f0c5d6f0c3844f8",
+  "filename": "image102.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo P.107 theo QCVN 41:2024/BGTVT, cấm xe ô tô khách và xe ô tô tải (kể cả máy kéo, xe máy chuyên dùng) đi qua trừ xe ưu tiên.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.107\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có dấu chéo đỏ cắt ngang từ góc trên trái xuống góc dưới phải; bên trong có hình vẽ đen: một xe buýt (xe ô tô khách) và một xe tải (xe ô tô tải).\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ô tô chở khách và các loại xe ô tô tải (kể cả máy kéo và xe máy chuyên dùng) đi qua, trừ các xe được ưu tiên theo quy định.\"\n    }\n  ]\n}",
+  "generated_tokens": 220,
+  "elapsed_seconds": 3.730729800001427,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

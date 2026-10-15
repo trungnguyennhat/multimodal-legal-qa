@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:324571552b4e2433b1ccb7c1dbee7f625f76740a0726b9e332465d4aa95a7c09",
+  "filename": "image512.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí các loại vạch dọc đường (vạch 1.1, 1.4, vạch tim đường) trong phạm vi đường cong nằm không đảm bảo tầm nhìn vượt xe an toàn.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.1\",\n      \"visual_or_geometric_features\": \"Vạch đơn, đứt nét, màu vàng. Hình vẽ minh họa đoạn nét liền và đoạn nét đứt xen kẽ trên đường cong.\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe được phép cắt qua để sử dụng làn ngược chiều từ cả hai phía. Trong phạm vi đường cong nằm bán kính nhỏ, chọn chiều dài đoạn nét liền và đoạn nét đứt nhỏ để tăng tính dẫn hướng.\"\n    },\n    {\n      \"identifier\": \"Vạch 1.4\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song, gồm một vạch nét liền và một vạch nét đứt, màu vàng.\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn tiếp giáp vạch đứt được phép cắt qua; xe trên làn tiếp giáp vạch liền không được lấn làn. Trong phạm vi đường cong nằm, vạch liền được vẽ về phía có yêu cầu cấm vượt.\"\n    },\n    {\n      \"identifier\": \"Vùng cấm vượt\",\n      \"visual_or_geometric_features\": \"Khu vực được khoanh tròn hoặc đánh dấu trên mặt đường cong nơi bố trí vạch liền hoặc vạch 1.4.\",\n      \"meaning_or_specification\": \"Là vùng có chiều dài tầm nhìn thực tế nhỏ hơn chiều dài tầm nhìn vượt xe an toàn tối thiểu, nơi xe không được phép vượt.\"\n    },\n    {\n      \"identifier\": \"Vùng cho phép vượt\",\n      \"visual_or_geometric_features\": \"Khu vực trên mặt đường cong nơi bố trí vạch 1.1 (vạch đứt nét).\",\n      \"meaning_or_specification\": \"Là vùng không có yêu cầu cấm vượt ở cả hai phía, xe được phép thực hiện việc vượt xe.\"\n    }\n  ]\n}",
+  "generated_tokens": 484,
+  "elapsed_seconds": 11.00097029999597,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

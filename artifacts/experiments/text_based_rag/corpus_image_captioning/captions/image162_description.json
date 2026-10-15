@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:36ecd7dc9823632944725fb8d28a9f14593be11d5e56f1dda924b4586a24cdc0",
+  "filename": "image162.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm sử dụng còi (P.128) theo quy định QCVN 41:2024/BGTVT, với biểu tượng còi bị gạch chéo trên nền đỏ tròn.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.128\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng còi màu đen ở giữa, có đường chéo đỏ từ góc trên trái xuống góc dưới phải.\",\n      \"meaning_or_specification\": \"Biển báo cấm các loại xe sử dụng còi; chiều dài có hiệu lực được báo bằng biển S.501 hoặc kết thúc tại biển DP.135 nếu có nhiều lệnh cấm cùng lúc.\"\n    }\n  ]\n}",
+  "generated_tokens": 193,
+  "elapsed_seconds": 3.293650899999193,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

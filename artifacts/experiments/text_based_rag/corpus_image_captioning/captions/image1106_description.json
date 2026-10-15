@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:425cc3f28dd3ed24efdcc66f0635f64664315d4f325ffa76ab4af2dd2c6e2f0d",
+  "filename": "image1106.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo R.415a (Biển gộp làn đường theo phương tiện) thuộc nhóm biển hiệu lệnh.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.415a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh dương (trong bản vẽ kỹ thuật thể hiện bằng lưới ô vuông), có 3 làn đường dọc được phân cách bởi các vạch kẻ trắng đứt đoạn. Mỗi làn chứa biểu tượng phương tiện: ô tô (làn trái), ô tô (làn giữa), xe máy và xe đạp (làn phải). Có các kích thước tổng thể và chi tiết được ghi chú bằng ký hiệu 'z' (ví dụ: chiều rộng biển 36z, chiều cao 20z, khoảng cách giữa các làn, kích thước biểu tượng xe...).\",\n      \"meaning_or_specification\": \"Biển báo này quy định hướng đi trên mỗi làn đường phải theo cho các nhóm xe khác nhau (ô tô và xe thô sơ) trên các làn đường riêng biệt. Các thông số 'z' trong bản vẽ kỹ thuật này là đơn vị tính toán để xác định kích thước thực tế của biển báo tùy thuộc vào loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) theo quy định tại Điều M.3 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 347,
+  "elapsed_seconds": 6.460293500000262,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

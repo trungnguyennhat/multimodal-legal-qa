@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:834ef88022ef27d64af77fd7e0ac87d908b5dca63150a3cde443d87f15fc48f0",
+  "filename": "image238.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biến thể của biển báo nguy hiểm số W.223a và W.223b theo QCVN 41:2024/BGTVT, dùng để cảnh báo đoạn đường đi sát vách núi với tầm nhìn hạn chế.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số W.223a\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình vách núi nằm ở bên trái đường\",\n      \"meaning_or_specification\": \"Báo hiệu đoạn đường sắp vào khu vực đi sát vách núi, vách núi nằm ở bên trái đường; người tham gia giao thông phải cẩn thận do tầm nhìn bị hạn chế.\"\n    },\n    {\n      \"identifier\": \"Biển số W.223b\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình vách núi nằm ở bên phải đường\",\n      \"meaning_or_specification\": \"Báo hiệu đoạn đường sắp vào khu vực đi sát vách núi, vách núi nằm ở bên phải đường; người tham gia giao thông phải cẩn thận do tầm nhìn bị hạn chế.\"\n    }\n  ]\n}",
+  "generated_tokens": 293,
+  "elapsed_seconds": 4.712656399999105,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

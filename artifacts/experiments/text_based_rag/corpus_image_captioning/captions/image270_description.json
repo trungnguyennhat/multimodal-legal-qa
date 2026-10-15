@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a8c9e3cb3c52f0ff76816c79ee65e747d374199cde219dc8bcc8f4518e1acb09",
+  "filename": "image270.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo W.238 'Đường cao tốc phía trước' theo QCVN 41:2024/BGTVT, dùng để cảnh báo phương tiện trên đường nhánh có đường cao tốc phía trước.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.238\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai làn đường song song màu đen (mô phỏng đường cao tốc)\",\n      \"meaning_or_specification\": \"Biển báo này được đặt trên đường nhánh nhập vào đường cao tốc để báo cho các phương tiện đi trên đường này biết có 'Đường cao tốc phía trước'.\"\n    }\n  ]\n}",
+  "generated_tokens": 189,
+  "elapsed_seconds": 3.1610681999954977,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d8b5c41c3dda88c04a7532991647fc454c47afeedeb8ea0967a88e576c16559a",
+  "filename": "image1212.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo giao thông thuộc nhóm chỉ dẫn, cụ thể là biển số I.405a (Đường cụt), với các thông số kích thước được ghi bằng đơn vị 'z' theo quy chuẩn QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.405a: Đường cụt\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có viền khung, bên trong có biểu tượng hình tam giác hướng xuống (mũi tên chỉ đường cụt) và chữ 'C.TRÌNH KSTTX' (có thể là ký hiệu hoặc mẫu thử). Các kích thước được ghi bằng đơn vị 'z' bao gồm: chiều rộng tổng 12z, chiều cao tổng 10z, chiều rộng phần biểu tượng 4z + 4z, chiều cao phần biểu tượng 2z + 2z, và các khoảng cách viền 1z, 2z, 3z, 3,5z, 5z.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, biển số I.405a dùng để báo hiệu 'Đường cụt'. Kích thước 'z' thay đổi tùy loại đường: 100mm (đường đôi ngoài đô thị), 75mm (đường thông thường), 50mm (đường đô thị). Bản vẽ này quy định tỷ lệ hình học chuẩn để sản xuất biển báo đúng quy chuẩn.\"\n    }\n  ]\n}",
+  "generated_tokens": 383,
+  "elapsed_seconds": 7.042142500002228,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

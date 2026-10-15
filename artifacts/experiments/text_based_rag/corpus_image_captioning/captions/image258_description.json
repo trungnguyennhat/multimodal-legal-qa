@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4278d9dc5f05d15374ea496fbb4a77b63770d9d80a8e770a004197cdda0cee91",
+  "filename": "image258.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.232 'Gió ngang' theo quy định QCVN 41:2024/BGTVT, dùng để cảnh báo đoạn đường thường xuyên có gió ngang mạnh gây nguy hiểm.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.232\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng bên trong là hình cây bị thổi nghiêng do gió ngang\",\n      \"meaning_or_specification\": \"Báo trước gần tới đoạn đường thường có gió ngang thổi mạnh gây nguy hiểm; người tham gia giao thông cần điều chỉnh tốc độ để đề phòng lật xe; biển chỉ đặt ngoài phạm vi thành phố, khu đông dân cư và nên kèm thiết bị đo gió tại vị trí nguy hiểm.\"\n    }\n  ]\n}",
+  "generated_tokens": 206,
+  "elapsed_seconds": 3.427023799995368,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

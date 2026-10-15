@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8065ecbe319dc89a11409c2b31f7fba6a553534f1c07fe9e47783b817230f4b9",
+  "filename": "image1572.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và các thông số ký hiệu cho biển chỉ dẫn trạm thu phí (biển số IE.472a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn trạm thu phí (IE.472a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có bo góc, với các kích thước tổng thể: chiều rộng 160 cm, chiều cao 100 cm. Các thông số chi tiết về vị trí và kích thước chữ: H1 = 40 cm, H1' = 30 cm, h2 = 25 cm, cùng khoảng cách căn giữa a và các tham số k1, k1' được ghi chú.\",\n      \"meaning_or_specification\": \"Theo Điều P.24 a) của QCVN 41:2024/BGTVT, đây là biển số IE.472a dùng để chỉ dẫn trạm thu phí. Biển có nền xanh lá cây, chữ trắng, sử dụng màng phản quang loại VIII, IX, XI cấu trúc kim cương. Các thông số H1, H1', h2, k1, k1' quy định kích thước và vị trí chính xác của dòng chữ 'THU PHÍ PAY TOLL' trên biển.\"\n    }\n  ]\n}",
+  "generated_tokens": 329,
+  "elapsed_seconds": 5.399433400001726,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

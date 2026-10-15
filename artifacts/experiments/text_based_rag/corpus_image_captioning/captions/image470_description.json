@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7e656cf2dba659c976daf77bc555efff9ea197dab6ebfcc26b38ea9f9e446b91",
+  "filename": "image470.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số S.504 'Làn đường' theo QCVN 41:2024/BGTVT, dùng để chỉ làn đường chịu hiệu lực của biển báo hoặc đèn tín hiệu.\",\n  \"items\": [\n    {\n      \"identifier\": \"S.504\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen, biểu tượng là mũi tên đen hướng xuống dưới\",\n      \"meaning_or_specification\": \"Chỉ làn đường chịu hiệu lực của biển báo cấm, biển hiệu lệnh hay đèn tín hiệu; khi kết hợp trên cùng một mặt biển, chỉ cần vẽ mũi tên chỉ làn đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 175,
+  "elapsed_seconds": 2.975421199997072,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

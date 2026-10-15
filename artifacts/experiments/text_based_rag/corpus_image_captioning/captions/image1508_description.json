@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1e9c10f3241eee1c2fb3dc0207cc246b5dfb4531016a0db145fa87268adbe939",
+  "filename": "image1508.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng 'Bến xe khách' trong Điều P.13 của QCVN 41:2024/BGTVT, với các thông số A, B, C, D, E cho hai loại hình (Loại A và Loại B).\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng Bến xe khách\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có viền bo tròn, bên trong là hình vẽ đen trắng của đầu xe buýt (hai cửa sổ, hai đèn pha, phần thân xe), kèm các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và mũi tên.\",\n      \"meaning_or_specification\": \"Theo Điều P.13 mục 2 của QCVN 41:2024/BGTVT, biểu tượng này dùng để báo hiệu bến xe khách. Kích thước được quy định như sau: Loại A: A=75,0 cm; B=2,0 cm; C=6,2 cm; D=62,6 cm; E=5,0 cm. Loại B: A=60,0 cm; B=1,5 cm; C=5,0 cm; D=50,0 cm; E=5,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 321,
+  "elapsed_seconds": 5.340695200000482,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

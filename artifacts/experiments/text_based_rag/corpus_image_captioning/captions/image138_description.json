@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:676bd45ef8eba090724b23081e13db90aecd512ef53cda07e2c311d0b3209c98",
+  "filename": "image138.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.121 'Cự ly tối thiểu giữa hai xe' theo QCVN 41:2024/BGTVT, dùng để báo hiệu khoảng cách tối thiểu mà các xe ô tô phải duy trì khi di chuyển.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.121\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có hình hai xe ô tô đối diện nhau và số '8m' ở giữa\",\n      \"meaning_or_specification\": \"Biển báo hiệu xe ô tô phải đi cách nhau một khoảng tối thiểu bằng trị số ghi trên biển (ở đây là 8 mét). Biển cấm các xe ô tô kể cả xe được ưu tiên đi cách nhau nhỏ hơn cự ly này. Hiệu lực của biển được xác định bởi biển S.501 đặt dưới hoặc đến biển P.135 nếu có nhiều lệnh cấm cùng hết tác dụng.\"\n    }\n  ]\n}",
+  "generated_tokens": 239,
+  "elapsed_seconds": 3.973880999998073,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

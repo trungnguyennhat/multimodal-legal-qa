@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:67c90121a2c455fedbcffbf7248b61664756af8628c1561965dfa9965a188413",
+  "filename": "image762.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo P.103a (Cấm xe ôtô rẽ phải) và P.103b (Cấm xe ôtô rẽ trái) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển P.103a (Cấm xe ôtô rẽ phải)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ phải bên trong vòng tròn. Bản vẽ kèm các kích thước: đường kính ngoài 87,5 mm, đường kính trong 40 mm, chiều rộng mũi tên 10 mm, chiều dài mũi tên 20 mm, khoảng cách từ tâm đến mép ngoài 40 mm, khoảng cách từ tâm đến mép trong 20 mm, chiều cao tổng thể 87,5 mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô rẽ phải, áp dụng cho các loại đường với kích thước z(mm) tương ứng: 140 (đường cao tốc), 126 (đường đôi ngoài đô thị), 87,5 (đường thông thường), 70 (đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biển P.103b (Cấm xe ôtô rẽ trái)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái bên trong vòng tròn. Bản vẽ kèm các kích thước: đường kính ngoài 87,5 mm, đường kính trong 40 mm, chiều rộng mũi tên 10 mm, chiều dài mũi tên 20 mm, khoảng cách từ tâm đến mép ngoài 40 mm, khoảng cách từ tâm đến mép trong 20 mm, chiều cao tổng thể 87,5 mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô rẽ trái, áp dụng cho các loại đường với kích thước z(mm) tương ứng: 140 (đường cao tốc), 126 (đường đôi ngoài đô thị), 87,5 (đường thông thường), 70 (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 533,
+  "elapsed_seconds": 9.00674070000241,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

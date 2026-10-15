@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1920bc6a0979a008f13df05bd6be401ec40ba7858d78c36e82ebfc4a87c316e4",
+  "filename": "image464.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biến thể của biển số S.503 (a, b, c) dùng để chỉ hướng tác dụng của biển báo cấm hoặc hiệu lệnh, với mũi tên đơn hoặc đôi hướng trái/phải.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số S.503a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen, mũi tên đơn màu đen hướng sang phải\",\n      \"meaning_or_specification\": \"Chỉ hướng tác dụng của biển báo cấm/hiệu lệnh là hướng vuông góc với chiều đi (sang phải)\"\n    },\n    {\n      \"identifier\": \"Biển số S.503b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen, mũi tên đôi màu đen hướng trái và phải\",\n      \"meaning_or_specification\": \"Chỉ đồng thời hai hướng tác dụng: trái và phải\"\n    },\n    {\n      \"identifier\": \"Biển số S.503c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen, mũi tên đơn màu đen hướng sang trái\",\n      \"meaning_or_specification\": \"Chỉ hướng tác dụng của biển báo cấm/hiệu lệnh là hướng vuông góc với chiều đi (sang trái)\"\n    }\n  ]\n}",
+  "generated_tokens": 317,
+  "elapsed_seconds": 5.119425400000182,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

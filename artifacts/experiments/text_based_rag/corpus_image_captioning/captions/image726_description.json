@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6bf72f5d42e0289367fb7e50c944e43176968a0bcc5597e1fde03a9e83b999c9",
+  "filename": "image726.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm xe đạp (P.110a) và cấm xe gắn máy (P.111a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm xe đạp (P.110a)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe đạp màu đen ở trung tâm; kèm các ký hiệu kích thước: 82,5 (đường kính biển), 60 (chiều cao biểu tượng), 40 (chiều rộng biểu tượng), 140 (chiều cao tổng thể bao gồm phần viền), 100 (khoảng cách từ mép dưới biển đến mặt đường), 50 (khoảng cách từ tâm biển đến mép dưới), 200 (chiều dài khung lắp đặt), 100 (chiều rộng khung lắp đặt).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học và khoảng cách lắp đặt cho biển báo P.110a (Cấm xe đạp) theo Điều M.1 của QCVN 41:2024/BGTVT, áp dụng cho các loại đường khác nhau với chiều cao z(mm) tương ứng.\"\n    },\n    {\n      \"identifier\": \"Biển báo cấm xe gắn máy (P.111a)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe gắn máy màu đen ở trung tâm; kèm các ký hiệu kích thước: 82,5 (đường kính biển), 60 (chiều cao biểu tượng), 40 (chiều rộng biểu tượng), 140 (chiều cao tổng thể bao gồm phần viền), 100 (khoảng cách từ mép dưới biển đến mặt đường), 50 (khoảng cách từ tâm biển đến mép dưới), 200 (chiều dài khung lắp đặt), 100 (chiều rộng khung lắp đặt).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học và khoảng cách lắp đặt cho biển báo P.111a (Cấm xe gắn máy) theo Điều M.1 của QCVN 41:2024/BGTVT, áp dụng cho các loại đường khác nhau với chiều cao z(mm) tương ứng.\"\n    }\n  ]\n}",
+  "generated_tokens": 573,
+  "elapsed_seconds": 9.608048399997642,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

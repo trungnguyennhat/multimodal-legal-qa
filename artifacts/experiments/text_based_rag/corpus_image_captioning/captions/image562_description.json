@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:b43cc9ded4a84c3bf9f485bc15fcb9bcde3192974d11633ed92954f62fe9619d",
+  "filename": "image562.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường dạng gạch chéo (vạch 4.1) kết hợp với vạch liền nét để kênh hóa dòng xe và phân chia làn đường tại một nút giao thông.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 4.1 (Vạch kênh hóa dòng xe dạng gạch chéo)\",\n      \"visual_or_geometric_features\": \"Các vạch kẻ màu vàng dạng gạch chéo song song, nghiêng một góc 45 độ so với hướng chuyển động của xe, nằm trong phạm vi được giới hạn bởi các vạch liền nét.\",\n      \"meaning_or_specification\": \"Sử dụng để giới hạn các phần mặt đường không sử dụng cho xe chạy nhằm kênh hóa dòng giao thông. Khi sử dụng, các phương tiện không được lấn vạch hoặc cắt qua trừ trường hợp khẩn cấp. Vạch xác định phạm vi kẻ vạch này là vạch đơn liền nét.\"\n    },\n    {\n      \"identifier\": \"Vạch phân chia hai chiều xe chạy (Vạch 1.3 hoặc tương đương)\",\n      \"visual_or_geometric_features\": \"Vạch liền nét màu vàng nằm ở giữa phần đường xe chạy, phân chia hai chiều xe ngược chiều nhau.\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều, xe không được lấn làn hoặc đè lên vạch. Trong trường hợp này, khoảng cách giữa hai vạch đơn (nếu là vạch đôi) hoặc bề rộng vạch liền nét phải tuân thủ quy chuẩn (ví dụ: bề rộng 15cm, khoảng cách giữa hai vạch 15-50cm nếu là vạch đôi).\"\n    }\n  ]\n}",
+  "generated_tokens": 371,
+  "elapsed_seconds": 9.224635699996725,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

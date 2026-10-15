@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d95e34d02af266f1e04ba85fb125b1ae1a0b82155fa811b94abba7b25497a572",
+  "filename": "image1566.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật đen trắng minh họa kích thước hình học và ký hiệu lắp đặt cho biển chỉ dẫn trạm thu phí (IE.472a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn trạm thu phí (IE.472a)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với hai trụ đỡ ở hai góc trên; các ký hiệu kích thước: L (chiều rộng biển), W (chiều cao biển), k1 (khoảng cách từ mép biển đến trụ đỡ), H1 (chiều cao trụ đỡ), k1' và H1' (chiều cao phần dưới của trụ đỡ).\",\n      \"meaning_or_specification\": \"Theo Điều P.24 a) của QCVN 41:2024/BGTVT, biển này ghi nội dung 'TRẠM THU PHÍ TOLL PLAZA' trên nền xanh lá cây, chữ trắng, vật liệu màng phản quang loại VIII, IX, XI cấu trúc kim cương. Các thông số kỹ thuật: k1 = H1 = 40 cm; k1' = H1' = 30 cm; h2 = 25 cm (chiều cao chữ). L và W là chiều rộng và chiều cao biển thực tế.\"\n    }\n  ]\n}",
+  "generated_tokens": 330,
+  "elapsed_seconds": 5.4142518999942695,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

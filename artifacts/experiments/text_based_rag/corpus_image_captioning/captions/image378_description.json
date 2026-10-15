@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bae2211c973b14737113f9166ae16120fb41660c002d434397334885d738d39a",
+  "filename": "image378.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số I.419a 'Chỉ dẫn địa giới' với nội dung cụ thể về địa phận Hà Nam và lý trình Km 215+700, theo quy định tại Điều E.19 của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.419a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, chữ trắng; không có biểu tượng giao thông bên trong, chỉ ghi nội dung văn bản: 'ĐỊA PHẬN HÀ NAM ZONE Km 215+700'.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn địa giới hành chính giữa các tỉnh/thành phố (theo Điều E.19a), áp dụng cho các tuyến đường không phải đối ngoại hoặc có nhiều người nước ngoài đi lại (theo Điều E.19a). Lý trình được làm tròn đến mét (Điều E.19c).\"\n    }\n  ]\n}",
+  "generated_tokens": 250,
+  "elapsed_seconds": 4.130931899999268,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

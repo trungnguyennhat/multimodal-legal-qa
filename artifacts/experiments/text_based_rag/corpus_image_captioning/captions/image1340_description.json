@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6d053a7fbff23f66de0295a733bd09e53f563e4cf07896ca29074eab3728d121",
+  "filename": "image1340.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước và bố cục hình học của hai biển báo chỉ dẫn thuộc nhóm biển chỉ dẫn (Điều M.4) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số 8.505a: Thuyết minh biển chính\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền lưới ô vuông, bên trong là khối màu xanh dương (trong bản vẽ kỹ thuật là vùng màu xanh đặc trưng cho biển chỉ dẫn). Nội dung chữ: 'CHIỀU CAO AN TOÀN 5 m'. Các ký hiệu kích thước: chiều cao tổng thể 1000mm, chiều rộng 1000mm; chiều cao vùng chữ là 500mm; khoảng cách từ mép trên đến đỉnh chữ là 400mm; khoảng cách từ mép dưới đến chân chữ là 400mm; khoảng cách giữa hai dòng chữ là 200mm.\",\n      \"meaning_or_specification\": \"Biển báo chiều cao an toàn 5m, dùng để báo hiệu chiều cao giới hạn cho phép của phương tiện trên đoạn đường tiếp theo. Kích thước biển và vị trí chữ được quy định chi tiết trong bản vẽ kỹ thuật này.\"\n    },\n    {\n      \"identifier\": \"Biển số 8.505b: Thuyết minh biển chính\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có khung viền lưới ô vuông, bên trong là khối màu xanh dương (trong bản vẽ kỹ thuật là vùng màu xanh đặc trưng cho biển chỉ dẫn). Nội dung chữ: 'CẤM ĐỖ XE'. Các ký hiệu kích thước: chiều cao tổng thể 1000mm, chiều rộng 1000mm; chiều cao vùng chữ là 500mm; khoảng cách từ mép trên đến đỉnh chữ là 400mm; khoảng cách từ mép dưới đến chân chữ là 400mm; khoảng cách giữa hai dòng chữ là 200mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm đỗ xe, dùng để báo hiệu khu vực cấm dừng và đỗ xe. Kích thước biển và vị trí chữ được quy định chi tiết trong bản vẽ kỹ thuật này.\"\n    }\n  ]\n}",
+  "generated_tokens": 532,
+  "elapsed_seconds": 9.392157999995106,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

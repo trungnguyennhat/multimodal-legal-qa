@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:514bc10b23349be642faaca607996d8f43fe77482dba32768c011a73b5bb53a5",
+  "filename": "image086.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật quy định kích thước hình học của tiêu phản quang dạng mũi tên theo Điều 56.3.2 của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Tiêu phản quang dạng mũi tên\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật nền vàng với mũi tên đen chỉ hướng; các ký hiệu kích thước A, B, C, D, E, F được đánh dấu bằng đường kẻ và mũi tên chỉ phạm vi đo.\",\n      \"meaning_or_specification\": \"Quy định kích thước tiêu phản quang dạng mũi tên theo tốc độ thiết kế của đường: <60 km/h (A=220, B=400, C=110, D=200, E=10, F=10); 60-80 km/h (A=300, B=500, C=150, D=250, E=15, F=15); >80 km/h (A=600, B=800, C=300, D=400, E=20, F=20). Có thể tăng kích thước lên 1 cấp ở đoạn đèo dốc, sương mù.\"\n    }\n  ]\n}",
+  "generated_tokens": 315,
+  "elapsed_seconds": 5.813892199999827,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

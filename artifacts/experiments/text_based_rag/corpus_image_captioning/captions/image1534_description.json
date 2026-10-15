@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d97820f5a1a1d7288e92f85078a3a623b1a781e6d5a5e4330583a9dd5944fde1",
+  "filename": "image1534.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển chỉ dẫn địa điểm và phương hướng (mã IE.464a và IE.464b) theo QCVN 41:2024/BGTVT, với các thông số L, W, b, k₁, H₁, a được minh họa rõ ràng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển IE.464a (TP. HCM)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia thành hai phần: phần trên chứa ký hiệu CT.01 (nền vàng, chữ đen) và tên địa điểm 'TP. HCM' (chữ trắng); phần dưới chứa mũi tên hướng xuống (chữ trắng). Các kích thước được đánh dấu: L (chiều rộng tổng), W (chiều cao tổng), b (khoảng cách từ mép đến ký hiệu), k₁ (khoảng cách từ trên xuống ký hiệu), H₁ (chiều cao tên địa điểm), a (khoảng cách từ dưới lên mũi tên).\",\n      \"meaning_or_specification\": \"Theo điều luật, đây là biển chỉ dẫn địa điểm và phương hướng cho đường cao tốc (ký hiệu CT.01), nền xanh lá cây, chữ trắng, mũi tên trắng chỉ hướng đi. Kích thước k₁ = H₁ = 40 cm (đơn vị cm), chiều cao phần tên địa điểm là 230 cm, chiều cao phần mũi tên là 100 cm.\"\n    },\n    {\n      \"identifier\": \"Biển IE.464b (LONG THÀNH)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật tương tự biển IE.464a, nhưng tên địa điểm là 'LONG THÀNH' (chữ trắng), cùng ký hiệu CT.01 (nền vàng, chữ đen) và mũi tên hướng xuống. Các ký hiệu kích thước: L, W, b, k₁, H₁, a được đánh dấu giống như biển trên.\",\n      \"meaning_or_specification\": \"Đây là biển chỉ dẫn địa điểm và phương hướng cho quốc lộ (ký hiệu CT.01), nền xanh lá cây, chữ trắng, mũi tên trắng chỉ hướng đi. Theo điều luật, k₁ = H₁ = 400 mm (đơn vị mm), chiều cao phần tên địa điểm là 230 mm, chiều cao phần mũi tên là 100 mm.\"\n    }\n  ]\n}",
+  "generated_tokens": 564,
+  "elapsed_seconds": 8.873966200000723,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

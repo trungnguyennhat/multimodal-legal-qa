@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9f45693a1fcb9892c77f99c8ab216ecbfd179f0a299c9ec31d8e7272ad4d143e",
+  "filename": "image1200.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo I.423a, I.423b, I.423c (Vị trí người đi bộ sang ngang / Điểm bắt đầu đường đi bộ) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.423a, I.423b, I.423c\",\n      \"visual_or_geometric_features\": \"Hình vuông có khung viền, bên trong có biểu tượng người đi bộ đang bước lên bậc thang. Các kích thước được ghi chú: chiều rộng khung viền 14mm, chiều cao khung viền 14mm, chiều rộng biểu tượng người đi bộ 80mm, chiều cao biểu tượng người đi bộ 80mm, khoảng cách từ mép trong khung đến mép ngoài biểu tượng 12,5mm, chiều cao tổng thể biển 100mm, chiều rộng tổng thể biển 100mm.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để chỉ vị trí người đi bộ sang ngang hoặc điểm bắt đầu đường đi bộ. Kích thước z (chiều cao và chiều rộng biểu tượng) phụ thuộc vào loại đường: 100mm cho đường đôi ngoài đô thị, 75mm cho đường thông thường, và 50mm cho đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 344,
+  "elapsed_seconds": 6.467854400005308,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

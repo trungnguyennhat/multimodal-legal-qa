@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bf66c0058c8d519c5710c17620fa684d1fda12dad6ff9596087d7693efc99cae",
+  "filename": "image332.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số R.415a “Biển gộp làn đường theo phương tiện” với 4 làn đường, mỗi làn dành cho một loại phương tiện cụ thể: ô tô, xe máy, xe ba bánh và xe đạp.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.415a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh dương, có 4 cột dọc chia thành 4 làn. Mỗi làn có biểu tượng phương tiện: ô tô (làn 1), ô tô (làn 2), xe máy (làn 3), xe ba bánh (làn 4) và xe đạp (làn 5 - nhưng chỉ có 4 làn được hiển thị rõ).\",\n      \"meaning_or_specification\": \"Báo hiệu số lượng làn đường và loại xe được phép lưu thông trên từng làn theo quy định; biển không áp dụng cho xe chuyển làn để ra vào hoặc dừng, đỗ bên đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 247,
+  "elapsed_seconds": 4.129642100000638,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

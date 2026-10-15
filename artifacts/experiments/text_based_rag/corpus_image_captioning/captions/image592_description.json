@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4034ce2fbcbd7436fcd582466960a3e080f6f17c5cfbae621d0c1c7a6d836948",
+  "filename": "image592.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách vẽ Vạch 1.1 (vạch phân chia hai chiều xe chạy) theo quy định tại Điều G.1 của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.1\",\n      \"visual_or_geometric_features\": \"Vạch đơn, đứt nét, màu vàng. Hình vẽ thể hiện một đoạn nét liền và một đoạn nét đứt xen kẽ nhau.\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều nhau. Xe được phép cắt qua để sử dụng làn ngược chiều từ cả hai phía. Quy cách: Bề rộng nét vẽ b = 15 cm, chiều dài đoạn nét liền L1 = 1 m - 3 m; chiều dài đoạn nét đứt L2 = 2 m - 6 m; tỷ lệ L1/L2 = 1:2.\"\n    }\n  ]\n}",
+  "generated_tokens": 231,
+  "elapsed_seconds": 7.075604400000884,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

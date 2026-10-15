@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c23b73228659ceb1aaf83462b91aaac3c85c8e45dd6535635bcda619dc7a00d6",
+  "filename": "image050.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai biển chỉ dẫn thuộc nhóm biển chỉ dẫn dịch vụ công cộng và giải trí (IE.461c và IE.461d) theo QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển số IE.461c\", \"visual_or_geometric_features\": \"Hình dạng: Biển chỉ dẫn hình mũi tên. Màu sắc: Nền xanh lá cây, chữ và viền trắng. Biểu tượng: Hình máy bay bên trái. Văn bản: 'SÂN BAY LONG THÀNH'.\", \"meaning_or_specification\": \"Chỉ dẫn hướng rẽ vào khu dịch vụ công cộng (Sân bay Long Thành).\"}, {\"identifier\": \"Biển số IE.461d\", \"visual_or_geometric_features\": \"Hình dạng: Biển chỉ dẫn hình mũi tên. Màu sắc: Nền màu nâu, chữ và viền trắng. Biểu tượng: Hình người chơi gôn bên trái. Văn bản: 'CLB GÔN LONG BÌNH'.\", \"meaning_or_specification\": \"Chỉ dẫn hướng rẽ vào khu dịch vụ giải trí (Câu lạc bộ Gôn Long Bình).\"}]}",
+  "generated_tokens": 259,
+  "elapsed_seconds": 5.9153097000016714,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

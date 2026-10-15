@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:9514bbe0a00e013db5d45303e2692aeb9ed89eeeb5b8ba526af4652013e404c3",
+  "filename": "image180.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.137 'Cấm rẽ trái, rẽ phải' theo QCVN 41:2024/BGTVT, với hình vẽ mũi tên đen bị vạch chéo đỏ đè lên, biểu thị cấm tất cả xe (trừ xe ưu tiên) rẽ trái hoặc rẽ phải tại nút giao.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.137\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có hai mũi tên đen chỉ hướng trái và phải, bị một vạch chéo đỏ từ góc trên bên trái xuống góc dưới bên phải đè lên toàn bộ hình vẽ.\",\n      \"meaning_or_specification\": \"Biển báo cấm tất cả các loại xe (trừ xe ưu tiên theo quy định) rẽ trái hoặc rẽ phải tại vị trí ngay trước nút giao của đường cấm rẽ trái, rẽ phải. Có thể bổ sung biển báo phụ về thời gian hoặc loại xe cấm nếu có quy định cụ thể.\"\n    }\n  ]\n}",
+  "generated_tokens": 245,
+  "elapsed_seconds": 4.013894699994125,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

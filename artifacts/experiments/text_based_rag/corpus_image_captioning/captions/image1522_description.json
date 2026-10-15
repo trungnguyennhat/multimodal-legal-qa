@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3ab25affd5f2baf5c73cdc5ba8282203a1b3ea37e869387b6d442ddd8d3a1de5",
+  "filename": "image1522.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo 'Bãi tắm biển, khu bơi lội' theo QCVN 41:2024/BGTVT, với các thông số A, B, C, D, E được ghi rõ trên hình.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo Bãi tắm biển, khu bơi lội\",\n      \"visual_or_geometric_features\": \"Hình vuông có khung viền, bên trong là biểu tượng người bơi và sóng nước; các kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và ký hiệu chữ cái theo chuẩn bản vẽ kỹ thuật.\",\n      \"meaning_or_specification\": \"Theo Điều 9 của QCVN 41:2024/BGTVT, biển này dùng để báo hiệu bãi tắm biển hoặc khu vực bơi lội; kích thước A, B, C, D, E quy định cho hai loại biển (Loại A và Loại B) với giá trị cụ thể như: Loại A có A=75,0 cm; B=2,0 cm; C=21,5 cm; D=32,0 cm; E=5,0 cm; Loại B có A=60,0 cm; B=1,5 cm; C=17,5 cm; D=25,0 cm; E=5,0 cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 331,
+  "elapsed_seconds": 5.4999545000027865,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

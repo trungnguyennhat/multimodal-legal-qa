@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:6d921e063ba5c946da28fa7663fcc06bf2bccdbd8fedb0267343bb5c60da4acc",
+  "filename": "image1518.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển báo sân gôn theo QCVN 41:2024/BGTVT, với các ký hiệu A, B, C, D, E chỉ các chiều kích thước.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo sân gôn (Điều 7)\",\n      \"visual_or_geometric_features\": \"Hình vuông có viền dày, bên trong là biểu tượng người chơi gôn đang vung gậy; các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và mũi tên chỉ rõ chiều dài, chiều rộng và độ dày viền.\",\n      \"meaning_or_specification\": \"Theo Điều 7 của QCVN 41:2024/BGTVT, biển báo sân gôn có hai loại kích thước: Loại A (A=75,0 cm; B=2,0 cm; C=6,0 cm; D=63,0 cm; E=5,0 cm) và Loại B (A=60,0 cm; B=1,5 cm; C=5,0 cm; D=50,0 cm; E=5,0 cm), dùng để báo hiệu khu vực sân gôn cho người tham gia giao thông.\"\n    }\n  ]\n}",
+  "generated_tokens": 313,
+  "elapsed_seconds": 5.224625800001377,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

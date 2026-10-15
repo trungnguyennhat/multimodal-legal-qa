@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:dd5d42da2af71f1a35f6ec6269664bdbfe1cfc95878ab4c2c4084547ef85aacb",
+  "filename": "image1536.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật minh họa kích thước và bố cục của biển chỉ dẫn địa điểm và phương hướng (QL.62, TP. TÂN AN) theo QCVN 41:2024/BGTVT, với các thông số L, W, b, k1, H1, a, a1 được ghi chú rõ ràng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn địa điểm và phương hướng (QL.62, TP. TÂN AN)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật chia làm hai phần: phần trên có khung trắng chứa ký hiệu quốc lộ 'QL.62' và tên địa điểm 'TP. TÂN AN'; phần dưới có nền xanh lá cây với mũi tên trắng chỉ hướng. Các kích thước được ghi chú: L (chiều rộng tổng), W (chiều cao tổng), b (khoảng cách từ mép đến tâm ký hiệu), k1 (chiều cao khung ký hiệu quốc lộ), H1 (chiều cao tên địa điểm), a, a1 (khoảng cách từ mép dưới đến đáy biển), 150 (chiều rộng khung ký hiệu quốc lộ), 230 (chiều cao phần trên), 100 (chiều cao phần dưới), 55 (chiều cao khung tên địa điểm).\",\n      \"meaning_or_specification\": \"Theo Điều P.16 của QCVN 41:2024/BGTVT, biển này dùng để chỉ địa điểm và phương hướng; các thông số kỹ thuật như L, W, b, k1, H1, a, a1 quy định kích thước chuẩn để đảm bảo tính đồng bộ và khả năng nhận diện từ xa. Ghi chú: k1 = H1; đơn vị đo là cm cho các thông số trong bảng thông số kỹ thuật yêu cầu.\"\n    }\n  ]\n}",
+  "generated_tokens": 434,
+  "elapsed_seconds": 6.862099899997702,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

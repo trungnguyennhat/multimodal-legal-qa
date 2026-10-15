@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c998d9d36bc0320ae9baa32a31531a6d8e41fa389e6c9b33504f0e2781f3bd27",
+  "filename": "image344.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa hai biển báo hiệu đường bộ R.E.11a và R.E.11b theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn hầm chui và kết thúc hầm chui.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.E.11a\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng hình hầm chui màu đen ở giữa\",\n      \"meaning_or_specification\": \"Chỉ dẫn đoạn đường qua hầm có áp dụng quy định giao thông riêng (theo Điều D.21 a)\"\n    },\n    {\n      \"identifier\": \"R.E.11b\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng hình hầm chui màu đen bị gạch chéo đỏ từ góc trên trái xuống góc dưới phải\",\n      \"meaning_or_specification\": \"Chỉ dẫn hết đoạn đường qua hầm, các quy định giao thông riêng không còn áp dụng (theo Điều D.21 b)\"\n    }\n  ]\n}",
+  "generated_tokens": 272,
+  "elapsed_seconds": 4.3928553000005195,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

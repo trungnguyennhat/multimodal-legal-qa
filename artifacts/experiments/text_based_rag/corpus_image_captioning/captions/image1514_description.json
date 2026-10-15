@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:cba32fd43cdacb69d5289671c6b04b94ac683178ff425a91008ccfa3acf6c1db",
+  "filename": "image1514.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biểu tượng khu công nghiệp theo QCVN 41:2024/BGTVT, với các ký hiệu A, B, C, D, E chỉ các chiều kích thước.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biểu tượng khu công nghiệp\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có viền bo tròn, bên trong là hình khối đen mô tả nhà máy với ống khói và các dãy nhà hình tam giác; các ký hiệu kích thước A, B, C, D, E được đánh dấu bằng đường kẻ và mũi tên chỉ rõ chiều dài, chiều rộng, chiều cao ống khói và khoảng cách viền.\",\n      \"meaning_or_specification\": \"Theo Điều P.13 mục 5 của QCVN 41:2024/BGTVT, biểu tượng này dùng để báo hiệu khu công nghiệp; kích thước A, B, C, D, E được quy định cụ thể cho hai loại biển (Loại A và Loại B) với đơn vị tính bằng cm.\"\n    }\n  ]\n}",
+  "generated_tokens": 265,
+  "elapsed_seconds": 4.527753599999414,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

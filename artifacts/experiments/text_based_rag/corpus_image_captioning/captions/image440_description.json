@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c4d9051165f3d2ab0b07e826d79e6543a59699bd732538502127c4c920018bce",
+  "filename": "image440.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biển báo chỉ dẫn địa điểm thuộc nhóm I.444 theo QCVN 41:2024/BGTVT, cụ thể là biển số I.444a (Ga tàu), I.444b (Sân bay) và I.444c (Bãi đậu xe).\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.444a\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng hình tàu hỏa màu trắng ở giữa\",\n      \"meaning_or_specification\": \"Chỉ dẫn hướng đến ga tàu; đặt ở trước nơi đường giao nhau chỉ hướng vào ga xe lửa\"\n    },\n    {\n      \"identifier\": \"Biển số I.444b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng hình máy bay màu trắng ở giữa\",\n      \"meaning_or_specification\": \"Chỉ dẫn hướng đến sân bay; đặt ở trước nơi đường giao nhau với đường vào sân bay\"\n    },\n    {\n      \"identifier\": \"Biển số I.444c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng, biểu tượng hình ô tô màu trắng ở giữa\",\n      \"meaning_or_specification\": \"Chỉ dẫn hướng đến bãi đậu xe; đặt ở trước nơi đường giao nhau với đường vào bãi đậu xe\"\n    }\n  ]\n}",
+  "generated_tokens": 359,
+  "elapsed_seconds": 5.819505100000242,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

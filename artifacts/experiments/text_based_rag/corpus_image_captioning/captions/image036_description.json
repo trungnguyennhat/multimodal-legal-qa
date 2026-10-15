@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:79e41e9e2ade556a60bc968fbf8f903faa8caa62bf11eb86c0fad13d6083a7fa",
+  "filename": "image036.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa cho Điều 47.6 của QCVN 41:2024/BGTVT về biển chỉ dẫn khoảng cách đến các lối ra tiếp theo trên đường cao tốc.\", \"items\": [{\"identifier\": \"Biển số IE.455\", \"visual_or_geometric_features\": \"Biển hình chữ nhật dọc, nền màu xanh lá cây, chữ và khung viền màu trắng. Biển bao gồm 3 dòng: dòng trên cùng là khung hình chữ nhật màu vàng có chữ 'LỐI RA EXIT'; dòng giữa là tên địa điểm (BẾN LỰC, CHỢ ĐỆM, THÂN CẦU NGHĨA, TÂN AN, BẾN LỰC); dòng dưới cùng là khoảng cách đến địa điểm đó (16 km, 27 km, 7 km, 18 km, 40 km).\", \"meaning_or_specification\": \"Biển số IE.455 chỉ dẫn khoảng cách đến các lối ra tiếp theo để báo trước khi qua khu vực phía trước có nhiều nút giao. Biển được lắp đặt ở phía trước nút giao bên lề đường để chỉ khoảng cách đến các lối ra tiếp theo. Thông thường, biển chỉ dẫn khoảng cách đến các lối ra tiếp theo chỉ thể hiện cho hai hoặc ba nút giao liên tiếp trên đường cao tốc.\"}]}",
+  "generated_tokens": 295,
+  "elapsed_seconds": 6.559829600002558,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

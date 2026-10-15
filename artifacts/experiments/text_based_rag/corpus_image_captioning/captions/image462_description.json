@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3a268040847a7a9579397eb620a84c3084aa95123fbcdfbadaec888aeb7361d7",
+  "filename": "image462.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số S.502 'Khoảng cách đến đối tượng báo hiệu' theo quy định QCVN 41:2024/BGTVT, dùng để thông báo khoảng cách thực tế từ vị trí đặt biển đến đối tượng báo hiệu phía trước.\",\n  \"items\": [\n    {\n      \"identifier\": \"S.502\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền trắng, viền đen, nội dung chữ '200 m' màu đen ở giữa\",\n      \"meaning_or_specification\": \"Biển báo dùng để thông báo khoảng cách thực tế (lấy chẵn đến hàng chục mét, đơn vị mét) từ vị trí đặt biển đến đối tượng báo hiệu (biển nguy hiểm, cấm, hiệu lệnh hoặc chỉ dẫn) khi vị trí đặt khác quy định chung.\"\n    }\n  ]\n}",
+  "generated_tokens": 212,
+  "elapsed_seconds": 3.511295500000415,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

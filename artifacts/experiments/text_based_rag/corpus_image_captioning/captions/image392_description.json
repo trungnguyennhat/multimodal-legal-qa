@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2b8b46c6251a55f58d2d56cc84097bfe23b139e1a3525ff5ec32815c5f258a9c",
+  "filename": "image392.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông số I.425 'Bệnh viện' theo quy định tại Điều E.26 của QCVN 41:2024/BGTVT, dùng để chỉ dẫn sắp đến cơ sở điều trị bệnh.\",\n  \"items\": [\n    {\n      \"identifier\": \"I.425\",\n      \"visual_or_geometric_features\": \"Biển hình vuông, nền xanh dương, có biểu tượng một chiếc giường bệnh màu trắng và dấu cộng đỏ ở góc trên bên phải.\",\n      \"meaning_or_specification\": \"Chỉ dẫn sắp đến cơ sở điều trị bệnh như bệnh viện, bệnh xá, trạm xá; người tham gia giao thông gặp biển này phải đi chậm, chú ý quan sát và không sử dụng còi.\"\n    }\n  ]\n}",
+  "generated_tokens": 196,
+  "elapsed_seconds": 3.2927761000028113,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

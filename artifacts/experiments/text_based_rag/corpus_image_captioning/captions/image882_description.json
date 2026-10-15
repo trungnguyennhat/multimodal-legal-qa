@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d3c852ae65cf48845a8403e10bd3d5acf8145df3c68f3b1b410dab7140a12adc",
+  "filename": "image882.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo nguy hiểm W.201a và W.201b thuộc nhóm biển báo nguy hiểm và cảnh báo theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201a (Chỗ ngoặt nguy hiểm vòng bên trái)\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng đen hình chữ T cong sang trái. Các kích thước được ký hiệu bằng 'z' (chiều cao cơ bản) và các tỷ lệ như 0,71z, 1,64z, 1,08z, 0,88z, 0,5z, 0,28z, 0,28z, 0,5z, 90°.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học và vị trí lắp đặt biển báo W.201a cho các loại đường khác nhau (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z tương ứng là 140mm, 126mm, 87,5mm, 70mm.\"\n    },\n    {\n      \"identifier\": \"Biển báo W.201b (Chỗ ngoặt nguy hiểm vòng bên phải)\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, viền đỏ, nền vàng, biểu tượng đen hình chữ T cong sang phải. Các kích thước được ký hiệu bằng 'z' và các tỷ lệ như 0,71z, 1,64z, 1,08z, 0,88z, 0,5z, 0,28z, 0,28z, 0,5z, 90°.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học và vị trí lắp đặt biển báo W.201b cho các loại đường khác nhau (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z tương ứng là 140mm, 126mm, 87,5mm, 70mm.\"\n    }\n  ]\n}",
+  "generated_tokens": 549,
+  "elapsed_seconds": 9.40830570000253,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

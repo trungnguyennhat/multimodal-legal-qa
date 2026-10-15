@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2be44430612076683d7d6894380bb48360a364efe3ef2c386ff7b72d87525a5a",
+  "filename": "image678.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật mô tả kích thước và bố trí chi tiết của biển báo cột kilômét dạng tấm hình chữ nhật theo QCVN 41:2024/BGTVT, với các ký hiệu kích thước A–J và chiều cao cột 600 mm.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cột kilômét dạng tấm hình chữ nhật (Hình I.3)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, chia thành 3 phần dọc theo chiều cao (700 mm, 1000 mm hoặc 1300 mm tùy số lượng con số), có các ký hiệu kích thước A=300, B=600, C=12, D=90, E=100, F=70, G=250, H=90, J=40 (đơn vị mm).\",\n      \"meaning_or_specification\": \"Quy định kích thước chuẩn cho biển báo cột kilômét dạng tấm hình chữ nhật gắn trên cột biển báo, với nền màu xanh lá cây (cao tốc) hoặc xanh lam (đường khác), viền trắng, và các con số lý trình được bố trí theo chiều đứng.\"\n    },\n    {\n      \"identifier\": \"Cột đỡ biển báo (Hình I.2)\",\n      \"visual_or_geometric_features\": \"Cột thẳng đứng cao 600 mm, có đế hình chữ nhật, không có màu sắc hay biểu tượng.\",\n      \"meaning_or_specification\": \"Chi tiết kỹ thuật của cột kilômét dạng cột cao (Hình I.2), dùng để gắn biển báo dạng tấm hình chữ nhật, chiều cao cột là 600 mm theo quy định.\"\n    }\n  ]\n}",
+  "generated_tokens": 413,
+  "elapsed_seconds": 6.569969899996067,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

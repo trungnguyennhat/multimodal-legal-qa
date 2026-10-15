@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:41e10e6fee51cccd663a926b096a6200a570fc6740c3b6fea6aa8e6b7fd54498",
+  "filename": "image1080.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển báo hiệu lệnh dành cho xe thô sơ (R.304) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.304: Đường dành cho xe thô sơ\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh dương (trong bản vẽ kỹ thuật được thể hiện bằng lưới ô vuông), có biểu tượng xe đạp và xe máy đang di chuyển theo hướng mũi tên chỉ lên trên. Kích thước chiều rộng biển là 12z, chiều cao biển là 8,2z. Khoảng cách từ mép biển đến trục đối xứng ngang là 0,2z và 0,1z. Khoảng cách từ mép biển đến trục đối xứng dọc là 0,5z và 0,2z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh chỉ đường dành riêng cho xe thô sơ (xe đạp, xe máy). Kích thước z (mm) phụ thuộc vào loại đường: 140mm (đường cao tốc), 126mm (đường đôi ngoài đô thị), 87,5mm (đường thông thường), 70mm (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 321,
+  "elapsed_seconds": 6.033584299999347,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

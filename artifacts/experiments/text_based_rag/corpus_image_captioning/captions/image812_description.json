@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:2c5d276816dab6033ba4d6f7efd3c012e8ef09d9354fe948ba1d2a6a7f5e3244",
+  "filename": "image812.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và các thông số lắp đặt cho biển báo cấm đi ngược chiều (P.102) và biển báo cấm rẽ trái (P.123a) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm đi ngược chiều (P.102)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền, bên trong có hai mũi tên đối hướng (một chỉ lên trên, một chỉ xuống dưới) nằm trong vòng tròn bị gạch chéo. Bản vẽ kèm kích thước: đường kính ngoài 600mm, đường kính trong 450mm, chiều rộng mũi tên 100mm, chiều cao mũi tên 100mm, khoảng cách giữa hai mũi tên 100mm, chiều rộng vòng tròn gạch chéo 100mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm đi ngược chiều, áp dụng cho các loại đường khác nhau với kích thước z (chiều cao lắp đặt) từ 70mm đến 140mm tùy theo loại đường.\"\n    },\n    {\n      \"identifier\": \"Biển báo cấm rẽ trái (P.123a)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền, bên trong có một mũi tên chỉ hướng rẽ trái, nằm trong vòng tròn bị gạch chéo. Bản vẽ kèm kích thước: đường kính ngoài 600mm, đường kính trong 450mm, chiều rộng mũi tên 100mm, chiều cao mũi tên 100mm, khoảng cách từ tâm đến đầu mũi tên 100mm, chiều rộng vòng tròn gạch chéo 100mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm rẽ trái, áp dụng cho các loại đường khác nhau với kích thước z (chiều cao lắp đặt) từ 70mm đến 140mm tùy theo loại đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 467,
+  "elapsed_seconds": 7.994620299999951,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

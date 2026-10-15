@@ -1,0 +1,34 @@
+{
+  "image_id": "sha256:8c3cdf18000e0395029369f77cfe7268a0045281bfe97fc86e89063035827a2c",
+  "filename": "public_test_7_12.jpg",
+  "description": "- Biển hình chữ nhật màu xanh, có hình ảnh một chiếc xe tải và một chiếc xe con, kèm số 120 và 60.\n- Biển hình tròn, nền đỏ, có một thanh ngang màu trắng.\n- Biển hình tròn, nền xanh, có một mũi tên màu trắng chỉ sang bên trái.",
+  "settings": {
+    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
+    "revision": "10d842936325905934ea24e64325d774693f166e",
+    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "max_new_tokens": 384,
+    "crop": false,
+    "do_sample": false,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "libraries": {
+      "torch": "2.7.1+cu128",
+      "transformers": "4.57.1",
+      "bitsandbytes": "0.49.0",
+      "Pillow": "12.3.0"
+    }
+  },
+  "status": "COMPLETED",
+  "token_limit_reached": false,
+  "generated_tokens": 76,
+  "size": [
+    1080,
+    611
+  ],
+  "elapsed_seconds": 6.586187699998845,
+  "peak_vram_bytes": 7600093184,
+  "peak_reserved_bytes": 7688159232,
+  "gpu_free_bytes": 8180989952
+}

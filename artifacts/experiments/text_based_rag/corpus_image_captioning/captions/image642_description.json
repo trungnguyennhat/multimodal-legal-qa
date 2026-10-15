@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:fa49e2546a6c726dfb0161db04692b48dab4a97648aa6bf9d7bbf820bbc0d283",
+  "filename": "image642.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước và hình học của vạch 9.3 (mũi tên chỉ hướng) trên mặt đường, áp dụng cho đường có tốc độ xe chạy thấp.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 9.3 - Mũi tên chỉ hướng\",\n      \"visual_or_geometric_features\": \"Hình mũi tên lớn màu vàng (trong bản vẽ là nét đen), gồm thân mũi tên và đầu mũi tên. Các kích thước được ghi rõ: chiều dài thân mũi tên 500 cm, chiều rộng thân 100 cm, chiều cao đầu mũi tên 120 cm, chiều rộng đầu mũi tên 100 cm, khoảng cách giữa các phần của mũi tên 100 cm, chiều dài đoạn thẳng nối 100 cm, chiều rộng đoạn thẳng nối 100 cm, chiều cao chữ 'HƯỚNG GIAO THÔNG' 100 cm, chiều rộng chữ 100 cm. Đơn vị: cm.\",\n      \"meaning_or_specification\": \"Vạch 9.3 là vạch mũi tên chỉ hướng trên mặt đường, dùng để chỉ hướng xe phải đi, chủ yếu ở nút giao tách nhập làn hoặc đường nhiều làn. Kích thước này áp dụng cho đường có tốc độ xe chạy thấp (theo Hình G.73 trong QCVN 41:2024/BGTVT). Màu sắc thực tế là màu trắng (theo quy định), nhưng trong bản vẽ kỹ thuật được thể hiện bằng nét đen để minh họa hình học.\"\n    }\n  ]\n}",
+  "generated_tokens": 361,
+  "elapsed_seconds": 6.137635799997952,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -10,7 +10,7 @@ from threading import Event, Thread
 import time
 
 from .corpus_normalization import ROOT
-from .image_captioning import read_lines, save
+from .corpus_image_captioning import read_lines, save
 
 MODEL = "BAAI/bge-m3"
 REVISION = "5617a9f61b028005a4858fdac845db406aefb181"
@@ -70,9 +70,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("download", "index"))
     parser.add_argument("--batch-size", type=int, default=4)
+    parser.add_argument("--overwrite", action="store_true", help="Replace corpus index after validating new embeddings.")
     args = parser.parse_args()
     if args.batch_size < 1:
         parser.error("batch-size phải >= 1")
+    if args.command == "download" and args.overwrite:
+        parser.error("--overwrite chỉ dùng với index")
+    if args.command == "index" and OUTPUT.exists() and not args.overwrite:
+        raise FileExistsError("Output corpus_embedding đã tồn tại; dùng index --overwrite để thay thế.")
     started = time.perf_counter()
     stopped = Event()
     phase, done, total = ("download", 0, 1) if args.command == "download" else ("prepare-index", 0, 0)
@@ -145,6 +150,12 @@ def main():
         source_manifest = json.loads((INPUT / "manifest.json").read_text(encoding="utf-8"))
         if source_manifest.get("status") != "COMPLETED":
             raise ValueError("Bước chia chunk chưa hoàn tất.")
+        phase = "validate-chunk-input"
+        input_hashes = {name: file_hash(INPUT / name) for name in
+                        ("chunks.jsonl", "organized_corpus.jsonl", "manifest.json")}
+        for name in ("chunks.jsonl", "organized_corpus.jsonl"):
+            if source_manifest.get("output_sha256", {}).get(name) != input_hashes[name]:
+                raise ValueError(f"Chunking output không khớp manifest: {name}; chạy lại chunking trước.")
         chunks = read_lines(INPUT / "chunks.jsonl")
         parents = read_lines(INPUT / "organized_corpus.jsonl")
         total = len(chunks)
@@ -152,14 +163,19 @@ def main():
             raise ValueError("Danh sách chunk rỗng hoặc có text không hợp lệ.")
         if len({c["chunk_id"] for c in chunks}) != total:
             raise ValueError("Trùng chunk_id.")
-        parent_keys = {p["article_key"] for p in parents}
-        if any(c["article_key"] not in parent_keys for c in chunks):
-            raise ValueError("Có chunk không tìm được mục luật đầy đủ.")
+        parent_map = {p["article_key"]: p for p in parents}
+        if len(parent_map) != len(parents):
+            raise ValueError("Trùng article_key của parent.")
+        if source_manifest.get("chunks") != total or source_manifest.get("articles") != len(parents):
+            raise ValueError("Số chunk/parent không khớp manifest chunking.")
+        for chunk in chunks:
+            parent = parent_map.get(chunk.get("parent_id"))
+            if (parent is None or chunk.get("article_key") != chunk["parent_id"]
+                    or (chunk.get("document_id"), chunk.get("id")) != (parent.get("document_id"), parent.get("id"))):
+                raise ValueError(f'Chunk không khớp parent/citation: {chunk["chunk_id"]}')
         weights = [p for p in SNAPSHOT.glob("*") if p.name in {"model.safetensors", "pytorch_model.bin"}]
         if not weights:
             raise FileNotFoundError("Chưa có weight BGE-M3. Chạy: python -m text_based_rag.corpus_embedding download")
-        if OUTPUT.exists():
-            raise FileExistsError("Output corpus_embedding đã tồn tại. Tự lưu bản cũ sang thư mục khác trước khi chạy lại.")
         phase = "load-text-encoder"
         import numpy as np
         import torch
@@ -169,16 +185,20 @@ def main():
         oversized = [c["chunk_id"] for c, length in zip(chunks, lengths) if length > maximum]
         if oversized:
             raise ValueError(f"Chunk vượt giới hạn {maximum} token; chia lại chunk: {oversized[:5]}")
-        OUTPUT.mkdir(parents=True, exist_ok=False)
+        if any(length != chunk.get("token_count") or length > source_manifest["max_tokens"]
+               for chunk, length in zip(chunks, lengths)):
+            raise ValueError("Token count/ngân sách chunk không khớp tokenizer embedding.")
+        OUTPUT.mkdir(parents=True, exist_ok=True)
         manifest = {
             "status": "IN_PROGRESS", "created_at": datetime.now(timezone.utc).isoformat(),
             "model": MODEL, "revision": REVISION, "model_path": str(SNAPSHOT),
             "pooling": "CLS", "normalize": "L2", "dimension": 1024, "stored_dtype": "float32",
             "inference_dtype": "bfloat16", "attention": "sdpa", "batch_size": args.batch_size,
             "index_type": "numpy_exact_inner_product", "similarity": "cosine", "input_prefix": "",
+            "input_field": "text", "overwrite": args.overwrite, "parents": len(parents),
+            "source_sha256": file_hash(ROOT / "src/text_based_rag/corpus_embedding.py"),
             "chunks": total, "input_max_tokens": max(lengths), "model_max_tokens": maximum,
-            "input_sha256": {name: file_hash(INPUT / name) for name in
-                             ("chunks.jsonl", "organized_corpus.jsonl", "manifest.json")},
+            "input_sha256": input_hashes,
             "model_files_sha256": {p.name: file_hash(p) for p in
                                    [*weights, SNAPSHOT / "config.json", SNAPSHOT / "tokenizer.json"]},
             "libraries": {name: version(name) for name in ("torch", "transformers", "numpy")},
@@ -196,22 +216,24 @@ def main():
             vectors.flush()
             done = start + len(batch)
             del embedded
-            report()
         del vectors
-        (OUTPUT / "vectors.npy.tmp").replace(OUTPUT / "vectors.npy")
-        phase = "save-index"
-        with (OUTPUT / "chunks.jsonl").open("x", encoding="utf-8") as stream:
+        phase = "validate-and-save-index"
+        with (OUTPUT / "chunks.jsonl.tmp").open("w", encoding="utf-8") as stream:
             for row, chunk in enumerate(chunks):
                 stream.write(json.dumps({**chunk, "vector_row": row}, ensure_ascii=False) + "\n")
-        shutil.copyfile(INPUT / "organized_corpus.jsonl", OUTPUT / "organized_corpus.jsonl")
+        shutil.copyfile(INPUT / "organized_corpus.jsonl", OUTPUT / "organized_corpus.jsonl.tmp")
         # Read back the actual index files to catch row mapping or incomplete writes.
-        stored = np.load(OUTPUT / "vectors.npy", mmap_mode="r", allow_pickle=False)
-        mapping = read_lines(OUTPUT / "chunks.jsonl")
+        stored = np.load(OUTPUT / "vectors.npy.tmp", mmap_mode="r", allow_pickle=False)
+        mapping = read_lines(OUTPUT / "chunks.jsonl.tmp")
         assert stored.shape == (total, 1024) and np.isfinite(stored).all(), "Invalid saved vectors"
         assert np.allclose(np.linalg.norm(stored, axis=1), 1, atol=1e-5), "Vectors must be normalized"
         assert len(mapping) == total and all(m["vector_row"] == i and m["chunk_id"] == chunks[i]["chunk_id"]
                                             for i, m in enumerate(mapping)), "Vector row mapping mismatch"
         del stored
+        if any(file_hash(INPUT / name) != digest for name, digest in input_hashes.items()):
+            raise ValueError("Input chunking đã thay đổi trong lúc embedding; chưa thay index cũ.")
+        for name in ("vectors.npy", "chunks.jsonl", "organized_corpus.jsonl"):
+            (OUTPUT / (name + ".tmp")).replace(OUTPUT / name)
         manifest.update(status="COMPLETED", elapsed_seconds=time.perf_counter() - started,
                         index_bytes=(OUTPUT / "vectors.npy").stat().st_size,
                         output_sha256={name: file_hash(OUTPUT / name) for name in

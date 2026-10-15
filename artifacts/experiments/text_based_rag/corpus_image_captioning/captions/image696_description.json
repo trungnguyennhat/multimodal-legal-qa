@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:329eb7e7ffe64e5ed2a113cee29a7c6b696019ca60d412bb118400c922e622dd",
+  "filename": "image696.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm P.103a (Cấm xe ôtô) và P.103b (Cấm xe ôtô rẽ phải) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo P.103a (Cấm xe ôtô)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô màu đen ở giữa. Bản vẽ kèm các kích thước: đường kính biển 600mm, chiều cao biển 600mm, khoảng cách từ mép biển đến mép biển bên cạnh 100mm, khoảng cách từ mép biển đến mép biển bên dưới 100mm, khoảng cách từ mép biển đến mép biển bên trên 100mm, khoảng cách từ mép biển đến mép biển bên trái 100mm, khoảng cách từ mép biển đến mép biển bên phải 100mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô, được lắp đặt theo quy định về kích thước và khoảng cách trong điều luật QCVN 41:2024/BGTVT.\"\n    },\n    {\n      \"identifier\": \"Biển báo P.103b (Cấm xe ôtô rẽ phải)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô rẽ phải màu đen ở giữa. Bản vẽ kèm các kích thước: đường kính biển 600mm, chiều cao biển 600mm, khoảng cách từ mép biển đến mép biển bên cạnh 100mm, khoảng cách từ mép biển đến mép biển bên dưới 100mm, khoảng cách từ mép biển đến mép biển bên trên 100mm, khoảng cách từ mép biển đến mép biển bên trái 100mm, khoảng cách từ mép biển đến mép biển bên phải 100mm.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô rẽ phải, được lắp đặt theo quy định về kích thước và khoảng cách trong điều luật QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 536,
+  "elapsed_seconds": 9.053330900002038,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

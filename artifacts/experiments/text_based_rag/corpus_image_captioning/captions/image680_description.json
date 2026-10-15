@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:487c0774257724ea841f7f69aec226a518109f3d4d7094eff22acdb71332aaac",
+  "filename": "image680.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật minh họa kích thước chi tiết của chữ cái 'E' (kiểu chữ thường gt2) theo QCVN 41:2024/BGTVT, với chiều cao chuẩn 100 mm.\",\n  \"items\": [\n    {\n      \"identifier\": \"Chữ cái 'E' (kiểu chữ thường gt2)\",\n      \"visual_or_geometric_features\": \"Hình chữ cái 'E' in hoa, được chia thành ba phần ngang bằng các đường kẻ ngang; kèm theo các ký hiệu kích thước: Lề trái = 10,02 mm; Giữa = 64,52 mm; Lề phải = 3,57 mm (tổng chiều rộng = 78,11 mm).\",\n      \"meaning_or_specification\": \"Theo Điều K.1 – K.1 của QCVN 41:2024/BGTVT, đây là thông số kỹ thuật chuẩn cho chữ cái 'E' thuộc nhóm chữ thường (gt2), dùng để thiết kế biển chỉ dẫn với mắt lưới 10x10 mm, chiều cao chữ 100 mm.\"\n    }\n  ]\n}",
+  "generated_tokens": 279,
+  "elapsed_seconds": 4.900738500000443,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

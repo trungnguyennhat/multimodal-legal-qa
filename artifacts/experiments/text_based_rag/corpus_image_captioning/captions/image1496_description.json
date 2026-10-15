@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8d04c8b18ed80fce7405a6a2153aa907927844c0187218c5af26f954a6ca52d7",
+  "filename": "image1496.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và thông số lắp đặt cho biển chỉ dẫn khu tham quan du lịch (IE.459a và IE.459b) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển IE.459a (kích thước nhỏ)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, chiều rộng 180 cm, chiều cao 100 cm; có các ký hiệu H₁=40 cm, H₁'=25 cm, H₂=40 cm chỉ khoảng cách căn giữa và chiều cao phần biểu tượng/tên khu du lịch.\",\n      \"meaning_or_specification\": \"Quy định kích thước và vị trí lắp đặt biển chỉ dẫn khu du lịch nhỏ (IE.459a), với nền xanh lá cây, chữ trắng, biểu tượng khu du lịch nền xanh lam, tuân thủ QCVN 41:2024/BGTVT Điều P.11.\"\n    },\n    {\n      \"identifier\": \"Biển IE.459b (kích thước lớn)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, chiều rộng 1800 mm, chiều cao 1000 mm; có ký hiệu H₁=400 mm chỉ chiều cao phần tên khu du lịch.\",\n      \"meaning_or_specification\": \"Quy định kích thước và vị trí lắp đặt biển chỉ dẫn khu du lịch lớn (IE.459b), với nền xanh lá cây, chữ trắng, biểu tượng khu du lịch nền xanh lam, tuân thủ QCVN 41:2024/BGTVT Điều P.11.\"\n    },\n    {\n      \"identifier\": \"Biểu tượng khu du lịch\",\n      \"visual_or_geometric_features\": \"Hình khối biểu tượng bên trong biển, nền xanh lam, chữ trắng; chiều cao H₁=33 cm (IE.459a) hoặc H₁=400 mm (IE.459b), chiều cao H₁'=25 cm (IE.459a).\",\n      \"meaning_or_specification\": \"Biểu tượng khu du lịch là thành phần bắt buộc trên biển, dùng để nhận diện khu vực tham quan du lịch, với kích thước và màu sắc được quy định chi tiết trong điều luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 557,
+  "elapsed_seconds": 8.657922099999269,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

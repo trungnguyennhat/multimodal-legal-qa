@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5475c0ae8c6bc0c7a1f522c6e0c29c033e72b49fb6b9b8938fc0caf872036476",
+  "filename": "image798.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm P.102 (Cấm đi ngược chiều) với biểu tượng mũi tên chỉ hướng ngược chiều bị gạch chéo, kèm theo bản vẽ kỹ thuật chi tiết kích thước hình học của biển.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.102\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền đỏ, nền trắng, có một mũi tên màu đen chỉ hướng ngược chiều bị gạch chéo màu đỏ. Bên trong biển có hai dải màu xanh dương và trắng xen kẽ (biểu tượng cho hướng ngược chiều).\",\n      \"meaning_or_specification\": \"Biển báo cấm xe cơ giới đi ngược chiều theo hướng quy định. Áp dụng cho tất cả loại đường với kích thước z = 140 mm (đường cao tốc), 126 mm (đường đôi ngoài đô thị), 87,5 mm (đường thông thường), 70 mm (đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Kích thước kỹ thuật biển P.102\",\n      \"visual_or_geometric_features\": \"Bản vẽ kỹ thuật đen trắng thể hiện hình tròn biển báo với các kích thước: đường kính ngoài 700 mm, đường kính vòng tròn đỏ 600 mm, chiều rộng dải xanh dương 100 mm, chiều cao mũi tên 140 mm, chiều rộng mũi tên 100 mm, và khoảng cách giữa hai mũi tên 100 mm.\",\n      \"meaning_or_specification\": \"Các thông số này quy định kích thước hình học chuẩn của biển P.102 theo QCVN 41:2024/BGTVT, đảm bảo tính đồng nhất và khả năng nhận diện từ xa.\"\n    }\n  ]\n}",
+  "generated_tokens": 413,
+  "elapsed_seconds": 7.233533099999477,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

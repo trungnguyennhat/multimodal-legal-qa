@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0753db5a253741dffe21e18f90b7c9da8419c76b39cebe87a5b5935dfac20d11",
+  "filename": "image590.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách vẽ Vạch 1.4 (vạch phân chia hai chiều xe chạy dạng vạch đôi gồm một vạch nét liền và một vạch nét đứt) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.4\",\n      \"visual_or_geometric_features\": \"Dạng vạch đôi song song, gồm một vạch nét liền và một vạch nét đứt xen kẽ. Màu sắc: Vàng. Bề rộng nét vẽ của các vạch là 15 cm. Tỷ lệ chiều dài đoạn nét liền (L1) so với chiều dài đoạn nét đứt (L2) là 1:2.\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn đường tiếp giáp với vạch đứt nét được phép cắt qua và sử dụng làn ngược chiều khi cần thiết; xe trên làn đường tiếp giáp với vạch liền nét không được lấn làn hoặc đè lên vạch.\"\n    }\n  ]\n}",
+  "generated_tokens": 243,
+  "elapsed_seconds": 7.277097900005174,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

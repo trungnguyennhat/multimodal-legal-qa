@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:3622e1d7901741349848ae36f8949af387871d5c31712d61ceaeb260558aaa2e",
+  "filename": "image026.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa các biển chỉ dẫn bắt đầu đường cao tốc (biển IE.452) theo quy định tại Điều 47.3 của QCVN 41:2024/BGTVT, bao gồm biển cho đường cao tốc đơn làn và biển cho đường cao tốc phân làn có tốc độ khác nhau.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển IE.452 (Hình 9a)\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ và biểu tượng màu trắng. Phần trên ghi tên đường cao tốc (TP. HCM TRUNG LƯƠNG EXPRESSWAY) và ký hiệu (CT.01). Phần giữa có hai vòng tròn: vòng đỏ ghi số 100 (tốc độ tối đa), vòng xanh ghi số 60 (tốc độ tối thiểu). Phần dưới có mũi tên chỉ xuống.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn bắt đầu đường cao tốc, thể hiện tên đường, ký hiệu, tốc độ tối đa (100 km/h) và tốc độ tối thiểu (60 km/h) cho toàn bộ làn đường.\"\n    },\n    {\n      \"identifier\": \"Biển IE.452 (Hình 9b)\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu xanh lá cây, chữ và biểu tượng màu trắng. Phần trên ghi tên đường cao tốc và ký hiệu. Phần giữa có hai vòng tròn: vòng đỏ ghi số 120 (tốc độ tối đa), vòng xanh ghi số 60 (tốc độ tối thiểu). Phần dưới có hai mũi tên chỉ xuống, chia làm hai cột.\",\n      \"meaning_or_specification\": \"Biển chỉ dẫn bắt đầu đường cao tốc phân làn đường có tốc độ khác nhau. Vòng đỏ 120 km/h và vòng xanh 60 km/h tương ứng với các làn đường khác nhau, được thể hiện qua hai mũi tên chỉ xuống riêng biệt ở hàng dưới cùng.\"\n    }\n  ]\n}",
+  "generated_tokens": 474,
+  "elapsed_seconds": 9.512352600002487,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

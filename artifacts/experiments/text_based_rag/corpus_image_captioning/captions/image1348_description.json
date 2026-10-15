@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d0e715b9f236cfd95ac5120f2e1bc070c2e7d23bdac283790ed908ae7dcc9bda",
+  "filename": "image1348.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật đen trắng quy định kích thước hình học và bố cục cho hai biển chỉ dẫn thuộc nhóm biển chỉ dẫn đường bộ theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.415a: Chỉ dẫn tới điểm đỗ xe dành cho taxi xe muốn sử dụng phương tiện công cộng\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình chữ nhật với mũi tên chỉ hướng ở phía bên phải. Các thông số/ký hiệu kích thước: Chiều dài tổng thể 1900mm, chiều rộng 1000mm. Kích thước mũi tên: chiều dài 1000mm, chiều rộng 500mm. Kích thước chữ 'P + METRO': chiều cao 500mm, chiều rộng 1000mm.\",\n      \"meaning_or_specification\": \"Biển báo này chỉ dẫn tới điểm đỗ xe dành cho taxi xe muốn sử dụng phương tiện công cộng. Kích thước được quy định cho đường đôi ngoài đô thị, đường thông thường và đường đô thị.\"\n    },\n    {\n      \"identifier\": \"Biển số I.415b: Biển chỉ dẫn tới tượng trưng và hướng đi cho từng làn\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình chữ nhật với ba mũi tên chỉ hướng ở phía bên phải. Các thông số/ký hiệu kích thước: Chiều dài tổng thể 1900mm, chiều rộng 1000mm. Kích thước mũi tên: chiều dài 1000mm, chiều rộng 500mm. Kích thước mũi tên cong: chiều dài 1000mm, chiều rộng 500mm.\",\n      \"meaning_or_specification\": \"Biển báo này chỉ dẫn tới tượng trưng và hướng đi cho từng làn. Kích thước được quy định cho đường đôi ngoài đô thị, đường thông thường và đường đô thị.\"\n    }\n  ]\n}",
+  "generated_tokens": 455,
+  "elapsed_seconds": 8.209849699996994,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

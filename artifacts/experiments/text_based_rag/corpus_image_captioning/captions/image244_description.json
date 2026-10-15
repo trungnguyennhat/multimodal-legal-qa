@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:08b24c6e5683ddb9c548f3616283983e7a418d6de548a1afe60775795c9f3658",
+  "filename": "image244.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.226 'Đường người đi xe đạp cắt ngang' theo QCVN 41:2024/BGTVT, dùng để cảnh báo tài xế về nguy cơ người đi xe đạp từ đường nhỏ hoặc đường dành riêng nhập vào đường ô tô.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.226\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình người đang đạp xe đạp ở trung tâm.\",\n      \"meaning_or_specification\": \"Biển báo này được đặt để báo trước vị trí thường có người đi xe đạp từ những đường nhỏ cắt ngang qua hoặc từ đường dành cho xe đạp nhập vào đường ô tô, nhằm cảnh báo người lái xe chủ động giảm tốc độ và quan sát.\"\n    }\n  ]\n}",
+  "generated_tokens": 211,
+  "elapsed_seconds": 3.48634999999922,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

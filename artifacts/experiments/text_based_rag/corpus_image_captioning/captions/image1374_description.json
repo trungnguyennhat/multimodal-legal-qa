@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a4802374b2d7af7508aecab547339674d5215b3fb9dc1d6b1d7d54c7eb0b1da0",
+  "filename": "image1374.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo hiệu đường bộ mã CT.11 theo QCVN 41:2024/BGTVT, dùng để chỉ mã hiệu đường cao tốc.\",\n  \"items\": [\n    {\n      \"identifier\": \"CT.11\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật, nền màu vàng, chữ viết màu đen, nội dung là mã hiệu 'CT.11'.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để chỉ mã hiệu của đường cao tốc Bắc - Nam phía Đông (Hà Nội - Cần Thơ), theo quy định tại Điều N của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 184,
+  "elapsed_seconds": 3.4334910000034142,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

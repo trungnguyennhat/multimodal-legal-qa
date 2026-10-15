@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e24506df3f8c314593cfc762a7c2bb4b9d6b855dd7d7da1f311b75e63754a32f",
+  "filename": "image1088.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển hiệu lệnh R.301a (Các xe chỉ được đi thẳng) và R.301b (Các xe chỉ được rẽ phải) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển hiệu lệnh R.301a (Các xe chỉ được đi thẳng)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, chiều rộng 12z, chiều cao 16z. Bên trong có hình mũi tên hướng lên trên. Có các kích thước chi tiết: chiều cao mũi tên 8z, chiều rộng mũi tên 6z, khoảng cách từ mép trên đến đỉnh mũi tên 0,2z, từ đáy mũi tên đến mép dưới 8,2z, từ mép trái đến chân mũi tên 6,2z, từ mép phải đến chân mũi tên 6,2z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được đi thẳng. Kích thước z phụ thuộc vào loại đường: Đường cao tốc (z=140mm), Đường đôi ngoài đô thị (z=126mm), Đường thông thường (z=87,5mm), Đường đô thị (z=70mm).\"\n    },\n    {\n      \"identifier\": \"Biển hiệu lệnh R.301b (Các xe chỉ được rẽ phải)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, chiều rộng 12z, chiều cao 16z. Bên trong có hình mũi tên hướng sang phải. Có các kích thước chi tiết: chiều cao mũi tên 8z, chiều rộng mũi tên 6z, khoảng cách từ mép trên đến đỉnh mũi tên 0,2z, từ đáy mũi tên đến mép dưới 8,2z, từ mép trái đến chân mũi tên 6,2z, từ mép phải đến chân mũi tên 6,2z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được rẽ phải. Kích thước z phụ thuộc vào loại đường: Đường cao tốc (z=140mm), Đường đôi ngoài đô thị (z=126mm), Đường thông thường (z=87,5mm), Đường đô thị (z=70mm).\"\n    }\n  ]\n}",
+  "generated_tokens": 558,
+  "elapsed_seconds": 9.51706600000034,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

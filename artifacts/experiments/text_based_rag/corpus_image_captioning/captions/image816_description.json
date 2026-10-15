@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:cfe48ef91a01e676e7f2800cdb6df9b4f6aa23804da9023311d01372f9d76125",
+  "filename": "image816.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm xe ôtô (P.103a) theo QCVN 41:2024/BGTVT, kèm bản vẽ kỹ thuật kích thước và tỷ lệ.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.103a\",\n      \"visual_or_geometric_features\": \"Biển hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô màu đen ở giữa, có mũi tên chéo đỏ cắt ngang từ trên trái xuống dưới phải.\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô (P.103a) – cấm tất cả loại xe ôtô lưu thông trên đoạn đường được đặt biển này.\"\n    },\n    {\n      \"identifier\": \"Biển P.103a (bản vẽ kỹ thuật)\",\n      \"visual_or_geometric_features\": \"Bản vẽ đen trắng với lưới ô vuông, hiển thị hình tròn viền đỏ, biểu tượng xe ôtô, mũi tên chéo đỏ; kèm các ký hiệu kích thước: 5,625; 6,25; 1,875; 1,25; 1,5625; 1,875; 1,25; 1,5625 (tính bằng đơn vị tỷ lệ).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học của biển P.103a theo điều luật: z(mm) = 140 (đường cao tốc), 126 (đường đôi ngoài đô thị), 87,5 (đường thông thường), 70 (đường đô thị); các tỷ lệ trong bản vẽ tương ứng với các giá trị này khi áp dụng vào thực tế.\"\n    }\n  ]\n}",
+  "generated_tokens": 408,
+  "elapsed_seconds": 7.135416600001918,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

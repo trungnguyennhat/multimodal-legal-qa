@@ -1,27 +1,21 @@
 {
+  "method": "dense_corpus_retrieval",
   "split": "dev",
-  "example_split": "train",
-  "method": "example_citation_transfer",
   "top_k": 5,
-  "neighbors": 5,
   "queries": 112,
-  "queries_with_train_image_overlap": 5,
   "macro": {
-    "precision": 0.28958333333333336,
-    "recall": 0.5818027210884354,
-    "f1": 0.36974270768913625,
-    "f2": 0.46344673363879757
+    "precision": 0.13571428571428573,
+    "recall": 0.3279124149659864,
+    "f1": 0.18504560915275198,
+    "f2": 0.245940149229051
   },
   "micro": {
-    "precision": 0.27941176470588236,
-    "recall": 0.5984251968503937,
-    "f1": 0.38095238095238093,
-    "f2": 0.48717948717948717
+    "precision": 0.1357142857142857,
+    "recall": 0.2992125984251969,
+    "f1": 0.18673218673218672,
+    "f2": 0.24111675126903553
   },
-  "hit_rate_at_5": 0.7767857142857143,
-  "candidate_recall": 0.6388818027210884,
-  "eligible_label_coverage": 0.9285714285714286,
-  "mean_predicted_count": 4.857142857142857,
+  "hit_rate_at_5": 0.5089285714285714,
   "gold_citations_missing_from_index": [
     {
       "law_id": "36/2024/QH15",

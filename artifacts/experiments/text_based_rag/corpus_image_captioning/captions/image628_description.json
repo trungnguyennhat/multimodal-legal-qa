@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:af5a91a9dd90f96f564d6972c81527343517253cd42bff21aa8fe9cdcd04f1db",
+  "filename": "image628.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa hai dạng bố trí vạch đứng 8.1 theo quy định QCVN 41:2024/BGTVT: dạng ngang (nét chéo) và dạng bẻ gập chữ V, dùng để cảnh báo chướng ngại vật cao hơn mặt đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch đứng 8.1 - Dạng ngang (nét chéo)\",\n      \"visual_or_geometric_features\": \"Dải vạch chéo vàng - đen nghiêng 45°, bề rộng và khoảng cách mỗi nét là 15 cm, hướng chéo xuống về phía đường xe chạy.\",\n      \"meaning_or_specification\": \"Sử dụng để cảnh báo người điều khiển phương tiện chú ý có chướng ngại vật cao hơn mặt đường phía trước (như trụ cầu, tường cầu vượt, đảo an toàn...). Thường dùng màu vàng - đen cho đường ngoài khu vực đô thị.\"\n    },\n    {\n      \"identifier\": \"Vạch đứng 8.1 - Dạng bẻ gập chữ V\",\n      \"visual_or_geometric_features\": \"Dải vạch chéo vàng - đen được bẻ gập thành hình chữ V, chiều rộng mỗi nét 15 cm, góc nghiêng 45° so với mặt phẳng ngang, nghiêng đều về hai phía.\",\n      \"meaning_or_specification\": \"Dùng cho đảo phân làn tại trạm thu phí để biểu thị vị trí dải phân cách làn xe, tăng tính dẫn hướng. Cách vẽ thể hiện trên Hình G.63 và Hình G.64 của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 376,
+  "elapsed_seconds": 6.350770599994576,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

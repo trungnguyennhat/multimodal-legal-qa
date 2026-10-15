@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:a0bd2416880c0ce680b268c5c9c91a9693e6588a3a4d031123283a811a409aa3",
+  "filename": "image600.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa bố trí vạch dừng xe (Vạch 7.1) và vạch người đi bộ qua đường (Vạch 7.3) tại nút giao thông có đèn tín hiệu, kèm kích thước quy chuẩn theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch dừng xe (Vạch 7.1)\",\n      \"visual_or_geometric_features\": \"Vạch liền nét màu trắng, bề rộng 20 cm hoặc 30 cm hoặc 40 cm (tùy cấp đường), kẻ ngang toàn bộ bề rộng đường hướng xe chạy. Trên vạch có chữ 'STOP' màu trắng, đỉnh chữ cách mép vạch từ 2,0 m đến 3,0 m.\",\n      \"meaning_or_specification\": \"Dùng để xác định vị trí dừng xe khi có tín hiệu đèn đỏ hoặc biển số R.122. Lái xe phải dừng lại trước vạch này.\"\n    },\n    {\n      \"identifier\": \"Vạch người đi bộ qua đường (Vạch 7.3 - Mẫu 1)\",\n      \"visual_or_geometric_features\": \"Các đường vạch đậm liền song song màu trắng (vạch ngựa vằn), bề rộng mỗi vạch 40 cm, chiều dài vạch 40 cm, cách nhau 40 cm. Tổng chiều rộng khu vực vạch là 1,8 m.\",\n      \"meaning_or_specification\": \"Xác định phạm vi phần đường dành cho người đi bộ cắt qua đường. Xe cơ giới phải dừng lại trước vạch dừng xe khi có tín hiệu đèn đỏ hoặc khi có người đi bộ qua đường.\"\n    },\n    {\n      \"identifier\": \"Khoảng cách giữa vạch dừng xe và vạch người đi bộ\",\n      \"visual_or_geometric_features\": \"Khoảng cách từ mép vạch dừng xe đến mép vạch người đi bộ qua đường được ghi là 1,5 m - 3,0 m.\",\n      \"meaning_or_specification\": \"Theo quy định, nếu trên nhánh dẫn có bố trí vạch người đi bộ, vạch dừng xe nên đặt cách mép vạch người đi bộ từ 1,5 m đến 3,0 m để đảm bảo an toàn và tầm nhìn.\"\n    }\n  ]\n}",
+  "generated_tokens": 509,
+  "elapsed_seconds": 8.792099799997231,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

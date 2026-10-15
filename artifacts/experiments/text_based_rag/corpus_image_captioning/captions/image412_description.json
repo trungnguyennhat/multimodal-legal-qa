@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0086e5275814d5180b5dbc238dbd699ffc9cb58e56c408c3a8cb3541a9adab65",
+  "filename": "image412.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biển báo giao thông số I.433b, I.433c và I.433d theo QCVN 41:2024/BGTVT, dùng để chỉ dẫn nơi cắm trại, nhà nghỉ lưu động hoặc cả hai trên các tuyến đường đối ngoại.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.433b\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng; bên trong là hình tam giác đen (mũi tên hướng lên trên) biểu tượng cho nơi cắm trại.\",\n      \"meaning_or_specification\": \"Chỉ dẫn sắp đến nơi có vị trí cắm trại, đặt trên các tuyến đường đối ngoại và tuyến đường có nhiều người nước ngoài đi lại.\"\n    },\n    {\n      \"identifier\": \"Biển số I.433c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng; bên trong là hình ảnh nhà lưu động (xe nhà) màu đen.\",\n      \"meaning_or_specification\": \"Chỉ dẫn sắp đến nơi dành cho nhà lưu động, đặt trên các tuyến đường đối ngoại và tuyến đường có nhiều người nước ngoài đi lại.\"\n    },\n    {\n      \"identifier\": \"Biển số I.433d\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, viền trắng; bên trong là hai biểu tượng xếp chồng: hình tam giác đen (nơi cắm trại) ở trên và hình nhà lưu động màu đen ở dưới.\",\n      \"meaning_or_specification\": \"Chỉ dẫn sắp đến nơi có cả vị trí cắm trại và nhà lưu động, đặt trên các tuyến đường đối ngoại và tuyến đường có nhiều người nước ngoài đi lại.\"\n    }\n  ]\n}",
+  "generated_tokens": 420,
+  "elapsed_seconds": 6.576179700001376,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

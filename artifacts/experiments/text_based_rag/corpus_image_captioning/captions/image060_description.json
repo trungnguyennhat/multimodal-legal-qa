@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:c441939e87795fdec1ddb3cbe361ef68f190a054b74c0c82f310fc900d1fc0ef",
+  "filename": "image060.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\"image_category\": \"SIGN_ILLUSTRATION\", \"summary\": \"Hình ảnh minh họa hai mẫu biển chỉ dẫn địa điểm và khoảng cách (IE.465a và IE.465b) theo Điều 47.16 của QCVN 41:2024/BGTVT.\", \"items\": [{\"identifier\": \"Biển IE.465a\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ màu trắng. Gồm 2 dòng thông tin: dòng trên là tên địa điểm gần nhất và khoảng cách, dòng dưới là tên địa điểm tiếp theo và khoảng cách.\", \"meaning_or_specification\": \"Chỉ dẫn địa điểm và khoảng cách đến các địa danh. Dòng thứ nhất xác định nút giao đến địa danh gần nhất, dòng thứ hai xác định khoảng cách đến khu du lịch/giải trí hoặc đầu mối giao thông lớn.\"}, {\"identifier\": \"Biển IE.465b\", \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh lá cây, chữ màu trắng. Gồm 3 dòng thông tin: dòng trên là tên địa điểm gần nhất và khoảng cách, dòng giữa là tên địa điểm tiếp theo và khoảng cách, dòng dưới là tên thành phố lớn và khoảng cách.\", \"meaning_or_specification\": \"Chỉ dẫn địa điểm và khoảng cách đến các địa danh. Dòng thứ nhất xác định nút giao đến địa danh gần nhất, dòng thứ hai xác định khoảng cách đến khu du lịch/giải trí hoặc đầu mối giao thông lớn, dòng thứ ba chỉ dẫn khoảng cách đến thành phố lớn (cấp cao nhất).\"}]}",
+  "generated_tokens": 347,
+  "elapsed_seconds": 7.265062800004671,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

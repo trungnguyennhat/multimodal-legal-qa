@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:80fb99cef47e7cee13a3a4baa3316545a2029c5cae656cb8f5a1d78affa63353",
+  "filename": "image242.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.225 'Trẻ em' theo quy định QCVN 41:2024/BGTVT, dùng để báo trước đoạn đường có trẻ em thường xuyên đi ngang qua hoặc tụ tập.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.225\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai em nhỏ đang chạy bên trong\",\n      \"meaning_or_specification\": \"Báo trước là gần đến đoạn đường thường có trẻ em đi ngang qua hoặc tụ tập trên đường như ở vườn trẻ, trường học, câu lạc bộ; người tham gia giao thông phải đi chậm và thận trọng đề phòng khả năng xuất hiện và di chuyển bất ngờ của trẻ em trên mặt đường.\"\n    }\n  ]\n}",
+  "generated_tokens": 206,
+  "elapsed_seconds": 3.4313263000003644,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

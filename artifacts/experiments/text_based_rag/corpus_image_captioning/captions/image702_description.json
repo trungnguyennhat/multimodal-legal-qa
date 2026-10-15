@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:60636eac035e6bd3d046fd332095f301c79d84a8a87949ddaaa1ce3e9b0daf77",
+  "filename": "image702.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo cấm xe ôtô (P.103a) và biển báo cấm xe môtô (P.104) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm xe ôtô (P.103a)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ôtô màu đen ở giữa; bản vẽ kèm kích thước: đường kính ngoài 640 mm, chiều cao biểu tượng xe 140 mm (đường cao tốc), 126 mm (đường đôi ngoài đô thị), 87,5 mm (đường thông thường), 70 mm (đường đô thị).\",\n      \"meaning_or_specification\": \"Biển báo cấm xe ôtô, áp dụng cho các loại đường khác nhau với kích thước biểu tượng xe được quy định theo bảng trong điều luật.\"\n    },\n    {\n      \"identifier\": \"Biển báo cấm xe môtô (P.104)\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe môtô màu đen ở giữa; bản vẽ kèm kích thước: chiều cao biểu tượng xe 140 mm (đường cao tốc), 126 mm (đường đôi ngoài đô thị), 87,5 mm (đường thông thường), 70 mm (đường đô thị).\",\n      \"meaning_or_specification\": \"Biển báo cấm xe môtô, áp dụng cho các loại đường khác nhau với kích thước biểu tượng xe được quy định theo bảng trong điều luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 410,
+  "elapsed_seconds": 7.153542100000777,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

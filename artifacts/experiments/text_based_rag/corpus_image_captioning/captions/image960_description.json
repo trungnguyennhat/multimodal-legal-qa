@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:88d63555f231acb828c056f657cb161fbe541c0362bdfe43c3a33d37abef8f17",
+  "filename": "image960.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và khoảng cách lắp đặt cho biển báo nguy hiểm W.201c (chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201c\",\n      \"visual_or_geometric_features\": \"Hình dạng chữ X (hai đường chéo cắt nhau) được vẽ trên lưới ô vuông, kèm các kích thước kỹ thuật: 18,2z (chiều ngang tổng), 17,2z (chiều dọc tổng), 8,2z (chiều rộng mỗi cánh), 9,4z (khoảng cách từ tâm đến đỉnh), 6,7z (khoảng cách từ tâm đến chân), 0,8z (chiều dày nét), 1,7z (khoảng cách giữa hai cánh), 0,6z (khoảng cách từ mép ngoài đến tâm), 0,4z (khoảng cách từ tâm đến mép trong).\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học chuẩn cho biển báo W.201c, trong đó z là hệ số tỷ lệ phụ thuộc vào loại đường (đường cao tốc: z=140mm; đường đôi ngoài đô thị: z=126mm; đường thông thường: z=87,5mm; đường đô thị: z=70mm). Các thông số này đảm bảo tính đồng nhất và khả năng nhận diện của biển báo trên các loại đường khác nhau.\"\n    }\n  ]\n}",
+  "generated_tokens": 384,
+  "elapsed_seconds": 6.971908100000292,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:93937b05f550f558ef8ce4471565aabe223aa557aac3ee61e9fd835d1d8919de",
+  "filename": "image1344.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học của biển chỉ dẫn địa điểm (biển số I.444) theo QCVN 41:2024/BGTVT, với các thông số chiều dài, chiều rộng và khoảng cách giữa các phần tử.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn địa điểm (biển số I.444)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật có mũi tên chỉ hướng ở bên phải. Các kích thước được ghi chú: chiều cao tổng thể 900mm, chiều rộng phần thân 780mm, chiều rộng mũi tên 180mm, chiều cao mũi tên 150mm, chiều cao phần thân 750mm, chiều rộng phần thân dưới 1125mm, chiều rộng phần thân trên 1875mm, khoảng cách từ mép dưới biển đến mặt đường 125mm.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, đây là biển báo chỉ dẫn địa điểm (mã I.444a đến I.444l, L444j, L444k, L444l). Kích thước z (chiều cao biển) phụ thuộc vào loại đường: 60mm cho đường đôi ngoài đô thị, 80mm cho đường thông thường, 40mm cho đường đô thị. Tuy nhiên, hình vẽ này thể hiện kích thước lớn hơn nhiều, phù hợp với biển báo đặt trên cao hoặc biển báo lớn dùng cho đường cao tốc hoặc đường quốc lộ, không phải kích thước tiêu chuẩn z theo bảng.\"\n    }\n  ]\n}",
+  "generated_tokens": 411,
+  "elapsed_seconds": 7.49060350000218,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

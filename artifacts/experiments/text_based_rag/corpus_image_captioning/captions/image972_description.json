@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7d2bf81109b334ffae300bdcbbb2dd3bea02f8ef6c4570935fd60abbc7a7ed76",
+  "filename": "image972.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt biển báo nguy hiểm W.205c (Đường giao nhau) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.205c\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, đỉnh hướng lên trên. Có các ký hiệu kích thước: 1,63z, 1,48z, 1,04z, 0,86z, 0,71z, 1,5z, 1,2z, 1,2z, 1,72z, 0,8z, 1,72z, 0,8z, 10z.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học và khoảng cách lắp đặt biển báo W.205c (Đường giao nhau) đối với các loại đường khác nhau (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị) dựa trên thông số z (chiều cao biển) được quy định trong điều luật.\"\n    }\n  ]\n}",
+  "generated_tokens": 297,
+  "elapsed_seconds": 5.66704220000247,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

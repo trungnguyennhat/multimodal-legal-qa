@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:59058e30e664c9f8bc6f71e53d6816e13c845ce258a99b44750173647f13cd73",
+  "filename": "image014.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa bốn loại mã hiệu đường bộ (đường cao tốc, quốc lộ, tỉnh, huyện) theo quy định tại Điều 46.6 của QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Mã hiệu đường cao tốc (CT.09)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu vàng huỳnh quang, chữ và viền màu đen, nội dung là ký hiệu viết tắt 'CT' và số hiệu '09'.\",\n      \"meaning_or_specification\": \"Theo Điều 46.6.2.a, mã hiệu đường cao tốc được thể hiện trên nền màu vàng huỳnh quang, chữ màu đen và viền màu đen.\"\n    },\n    {\n      \"identifier\": \"Mã hiệu quốc lộ (QL.91B)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu trắng, chữ và viền màu đen, nội dung là ký hiệu viết tắt 'QL' và số hiệu '91B'.\",\n      \"meaning_or_specification\": \"Theo Điều 46.6.2.b, mã hiệu quốc lộ được thể hiện trên nền màu trắng, chữ màu đen và viền màu đen.\"\n    },\n    {\n      \"identifier\": \"Mã hiệu đường tỉnh (ĐT.909)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu trắng, chữ và viền màu đen, nội dung là ký hiệu viết tắt 'ĐT' và số hiệu '909'.\",\n      \"meaning_or_specification\": \"Theo Điều 46.6.2.b, mã hiệu đường tỉnh được thể hiện trên nền màu trắng, chữ màu đen và viền màu đen.\"\n    },\n    {\n      \"identifier\": \"Mã hiệu đường huyện (ĐH.23)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu trắng, chữ và viền màu đen, nội dung là ký hiệu viết tắt 'ĐH' và số hiệu '23'.\",\n      \"meaning_or_specification\": \"Theo Điều 46.6.2.b, mã hiệu đường huyện được thể hiện trên nền màu trắng, chữ màu đen và viền màu đen.\"\n    }\n  ]\n}",
+  "generated_tokens": 515,
+  "elapsed_seconds": 9.637370900003589,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0521bb21592109e26f23477b84f0eda9ab29b90e5fb693c4596c516f912a0ef0",
+  "filename": "image1570.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và vị trí lắp đặt biển chỉ dẫn 'RÚT THE TAKE CARD' (biển IE.472d) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển chỉ dẫn RÚT THE TAKE CARD (IE.472d)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các kích thước tổng thể: chiều rộng 160 cm, chiều cao 100 cm. Các thông số chi tiết về vị trí chữ và viền: H1 = 33 cm, H1' = 25 cm, khoảng cách từ mép trên đến đỉnh chữ 'RÚT' là 5 cm, từ đáy chữ 'CARD' đến mép dưới là 6 cm.\",\n      \"meaning_or_specification\": \"Quy định kích thước và bố cục hình học cho biển báo 'Rút thẻ' (mã IE.472d) thuộc nhóm biển chỉ dẫn trạm thu phí, dùng để chỉ vị trí rút thẻ tại trạm thu phí không dừng.\"\n    }\n  ]\n}",
+  "generated_tokens": 275,
+  "elapsed_seconds": 4.601399599996512,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

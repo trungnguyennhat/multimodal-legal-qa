@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:589b8ad4bb688ca7297a9379e3e861691a6abd597527eb689accbe8574517376",
+  "filename": "image672.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình vẽ kỹ thuật minh họa kích thước và bố trí của cột kilômét dạng cột thấp (Hình I.1) và cọc mốc lộ giới (Hình I.4) theo QCVN 41:2024/BGTVT, với ghi chú đơn vị là cm và mm tương ứng.\",\n  \"items\": [\n    {\n      \"identifier\": \"Cột kilômét dạng cột thấp (Hình I.1)\",\n      \"visual_or_geometric_features\": \"Hình vẽ kỹ thuật đen trắng thể hiện cấu trúc cột kilômét dạng tấm hình chữ nhật gắn trên cột, với các kích thước được ghi chú bằng ký hiệu A, B, C, D, E, F, G, H, J (đơn vị: cm). Biển có nền đỏ, chữ trắng, ghi 'QL 10 Km 175'.\",\n      \"meaning_or_specification\": \"Theo Điều I.4 của QCVN 41:2024/BGTVT, đây là cột kilômét dạng tấm hình chữ nhật gắn trên cột biển báo, dùng để chỉ lý trình trên đường ô tô cao tốc (nền đỏ) hoặc đường ô tô khác (nền xanh lam). Kích thước biển: chiều rộng 350 mm, chiều cao 700 mm, 1000 mm hoặc 1300 mm tùy số lượng con số lý trình.\"\n    },\n    {\n      \"identifier\": \"Cọc mốc lộ giới (Hình I.4)\",\n      \"visual_or_geometric_features\": \"Hình vẽ kỹ thuật đen trắng thể hiện cọc mốc lộ giới dạng cột cao, với các kích thước được ghi chú bằng ký hiệu A, B, C, D, E, F, G, H, J (đơn vị: mm). Biển có nền đỏ, chữ trắng, ghi 'MỐC LỘ GIỚI'.\",\n      \"meaning_or_specification\": \"Theo Điều I.4 của QCVN 41:2024/BGTVT, đây là cọc mốc lộ giới dùng để đánh dấu ranh giới lộ giới của đường bộ. Kích thước và hình dạng được quy định chi tiết trong Hình I.4 và Hình I.5, với nền màu đỏ cho đường ô tô cao tốc, nền màu xanh lam cho các đường ô tô khác.\"\n    }\n  ]\n}",
+  "generated_tokens": 522,
+  "elapsed_seconds": 8.218414099996153,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

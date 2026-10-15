@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:42fb226fabd219a10c5c9c54eebf1c8524fa783e2a69eb43afdd3e72fed79e96",
+  "filename": "image1386.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo hiệu đường cao tốc với mã CT.17, thuộc nhóm biển báo hiệu đường cao tốc theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"CT.17\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu vàng, viền đen, chữ màu đen ghi mã 'CT.17'.\",\n      \"meaning_or_specification\": \"Biển báo hiệu đường cao tốc, dùng để chỉ định hoặc xác nhận tuyến đường cao tốc đang được sử dụng hoặc quy hoạch. Mã CT.17 tương ứng với một trong các tuyến đường cao tốc được liệt kê trong Điều N của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 202,
+  "elapsed_seconds": 3.688839700000244,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

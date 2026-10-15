@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:8cf47644869fa09133488e010354bc5356f293a2b001233dde63adb52d5c4439",
+  "filename": "image834.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục biểu tượng cho biển báo nguy hiểm W.201a và W.201b theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo W.201a (Chỗ ngoặt nguy hiểm vòng bên trái)\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, đỉnh hướng lên trên. Bên trong có hai vạch đen song song, cong về phía trái. Các ký hiệu kích thước bao gồm: chiều cao tam giác (130,5z), chiều rộng đáy (1,2z), chiều rộng vạch đen (0,08z), khoảng cách giữa hai vạch (0,08z), độ dày vạch (0,04z), và góc nghiêng của vạch cong (45°).\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo người tham gia giao thông về chỗ ngoặt nguy hiểm vòng bên trái. Kích thước các thành phần được quy định theo hệ số z tùy thuộc vào loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    },\n    {\n      \"identifier\": \"Biển báo W.201b (Chỗ ngoặt nguy hiểm vòng bên phải)\",\n      \"visual_or_geometric_features\": \"Hình tam giác cân, đỉnh hướng lên trên. Bên trong có hai vạch đen song song, cong về phía phải. Các ký hiệu kích thước bao gồm: chiều cao tam giác (130,5z), chiều rộng đáy (1,2z), chiều rộng vạch đen (0,08z), khoảng cách giữa hai vạch (0,08z), độ dày vạch (0,04z), và góc nghiêng của vạch cong (45°).\",\n      \"meaning_or_specification\": \"Biển báo này dùng để cảnh báo người tham gia giao thông về chỗ ngoặt nguy hiểm vòng bên phải. Kích thước các thành phần được quy định theo hệ số z tùy thuộc vào loại đường (đường cao tốc, đường đôi ngoài đô thị, đường thông thường, đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 507,
+  "elapsed_seconds": 8.805962500002352,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

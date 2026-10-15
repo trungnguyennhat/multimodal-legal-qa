@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d35902ed33b647d7cdc959771b2468ccdf80ac65e44c2519f96f9cb58f80282a",
+  "filename": "image552.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch 1.4 (vạch đôi gồm một vạch liền, một vạch đứt) màu vàng dùng để phân chia hai chiều xe chạy trên đường cong nằm hoặc đường cong đứng không đảm bảo tầm nhìn vượt xe an toàn.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch 1.4 (Vạch phân chia hai chiều xe chạy)\",\n      \"visual_or_geometric_features\": \"Vạch đôi song song, gồm một vạch nét liền và một vạch nét đứt, màu vàng. Vạch liền nét nằm ở phía có yêu cầu cấm vượt. Hình ảnh minh họa việc chuyển đổi từ vạch 1.1 (đứt nét) sang vạch 1.4 (liền/đứt) tại điểm bắt đầu vùng cấm vượt (điểm a) và từ vạch 1.4 về vạch 1.1 tại điểm kết thúc vùng cấm vượt (điểm b).\",\n      \"meaning_or_specification\": \"Dùng để phân chia hai chiều xe chạy ngược chiều. Xe trên làn đường tiếp giáp với vạch đứt nét được phép cắt qua và sử dụng làn ngược chiều khi cần thiết; xe trên làn đường tiếp giáp với vạch liền nét không được lấn làn hoặc đè lên vạch. Vạch này được sử dụng trên đường có từ 2 làn xe trở lên, không có dải phân cách giữa, ở các đoạn cần thiết phải cấm xe sử dụng làn ngược chiều theo một hướng xe chạy nhất định để đảm bảo an toàn (ví dụ: vùng cấm vượt trên đường cong). Quy cách: Bề rộng nét vẽ b = 15 cm; khoảng cách phía trong hai mép vạch đơn là 15 cm - 20 cm. Đối với vạch đứt nét, chiều dài đoạn nét liền L1 = (1 m - 3 m); chiều dài đoạn nét đứt L2 = (2 m - 6m); tỷ lệ L1/L2 = 1:2.\"\n    }\n  ]\n}",
+  "generated_tokens": 434,
+  "elapsed_seconds": 10.205042100002174,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

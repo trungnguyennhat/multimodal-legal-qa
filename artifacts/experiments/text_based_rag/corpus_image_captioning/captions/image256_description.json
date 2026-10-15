@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:d4f98d8ec651f4ffdcfac0afb8263af315cf7c0dce0c2cbc4deadecddd962df4",
+  "filename": "image256.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo giao thông W.231 'Thú rừng vượt qua đường' theo QCVN 41:2024/BGTVT, dùng để cảnh báo người tham gia giao thông về đoạn đường có thú rừng qua đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"W.231\",\n      \"visual_or_geometric_features\": \"Hình tam giác đều, viền đỏ, nền vàng, biểu tượng con nai đang chạy màu đen ở giữa\",\n      \"meaning_or_specification\": \"Biển báo hiệu cảnh báo đoạn đường thường có thú rừng qua đường (như đường đi qua rừng hay khu bảo tồn thiên nhiên cấm săn bắn); người tham gia giao thông phải đi chậm, chú ý quan sát hai bên và thận trọng đề phòng tai nạn.\"\n    }\n  ]\n}",
+  "generated_tokens": 200,
+  "elapsed_seconds": 3.3364870000004885,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

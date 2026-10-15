@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:7bdee77577b66b7717db11cdb48344f74c85ab913341e13160bf6ef583ee8b63",
+  "filename": "image1406.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước mã hiệu quốc lộ QL.91B, bao gồm các thông số chiều rộng, chiều cao và khoảng cách căn giữa theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Khung mã hiệu quốc lộ\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật với các kích thước được ghi chú: chiều rộng 120 (đơn vị cm), chiều cao 5 (cm), bán kính góc bo R2,4 (cm), và khoảng cách căn giữa a (cm) từ mép đến tâm ký tự.\",\n      \"meaning_or_specification\": \"Quy định kích thước hình học cho mã hiệu quốc lộ cỡ chữ 30 cm theo Điều O(b) của QCVN 41:2024/BGTVT, với nền trắng, chữ đen, vật liệu màng phản quang loại VIII, IX, XI cấu trúc kim cương.\"\n    }\n  ]\n}",
+  "generated_tokens": 244,
+  "elapsed_seconds": 4.108911800001806,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

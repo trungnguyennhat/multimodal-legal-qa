@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:dedbd36bac20aab9d4a067103016d2e2ff1b457cce46fe65439f4261be8431e1",
+  "filename": "image1262.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo chỉ dẫn 'Nơi đỗ xe' (I.408) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo I.408 (Nơi đỗ xe)\",\n      \"visual_or_geometric_features\": \"Hình dạng: Hình mũi tên chỉ hướng (hình tam giác cân với phần đuôi mở rộng). Các thông số kỹ thuật được ghi chú trên hình bao gồm: chiều dài tổng thể 800mm, chiều rộng phần đuôi 640mm, chiều rộng phần đầu 320mm, chiều cao tổng thể 420mm, chiều cao phần đuôi 240mm, chiều cao phần đầu 180mm, chiều cao chữ 'P' 240mm, chiều cao dòng chữ 'BÃI ĐỖ XE' 140mm, chiều cao dòng chữ 'Parking Lot' 100mm. Hình bên phải minh họa tỷ lệ lưới cho chữ 'P' với chiều cao 800mm và chiều rộng 640mm.\",\n      \"meaning_or_specification\": \"Theo Điều M.4 của QCVN 41:2024/BGTVT, đây là biển báo chỉ dẫn nơi đỗ xe (I.408). Kích thước được quy định cụ thể cho từng loại đường: Đường đôi ngoài đô thị (z=100mm), Đường thông thường (z=75mm), Đường đô thị (z=50mm). Hình vẽ này minh họa kích thước chuẩn cho biển báo dạng mũi tên lớn, thường dùng để chỉ dẫn khu vực đỗ xe rộng.\"\n    }\n  ]\n}",
+  "generated_tokens": 413,
+  "elapsed_seconds": 7.52508300000045,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:82ddd80477d248a5b6446496c4d1ff95f3594e7eaacc0340205b78d6e5536228",
+  "filename": "image100.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa ba biển báo cấm theo QCVN 41:2024/BGTVT: P.106a (cấm xe ô tô tải), P.106b (cấm xe ô tô tải có khối lượng chuyên chở vượt ngưỡng), và P.106c (cấm xe chở hàng nguy hiểm).\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số P.106a\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ô tô tải màu đen ở giữa, có dấu gạch chéo đỏ cắt ngang\",\n      \"meaning_or_specification\": \"Báo đường cấm các loại xe ô tô tải trừ các xe được ưu tiên theo quy định; có hiệu lực cấm cả máy kéo và xe máy chuyên dùng đi vào đoạn đường đặt biển.\"\n    },\n    {\n      \"identifier\": \"Biển số P.106b\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe ô tô tải màu đen với chữ số '25t' màu trắng trên thân xe, có dấu gạch chéo đỏ cắt ngang\",\n      \"meaning_or_specification\": \"Báo đường cấm các loại xe ô tô tải có khối lượng chuyên chở lớn hơn giá trị ghi trên biển (ví dụ: 25 tấn); có hiệu lực cấm cả máy kéo và xe máy chuyên dùng đi vào đoạn đường đặt biển.\"\n    },\n    {\n      \"identifier\": \"Biển số P.106c\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, biểu tượng xe tải chở thùng hàng màu cam (hoặc vàng) ở giữa, có dấu gạch chéo đỏ cắt ngang\",\n      \"meaning_or_specification\": \"Báo đường cấm các xe chở hàng nguy hiểm; áp dụng cho toàn bộ đoạn đường đặt biển.\"\n    }\n  ]\n}",
+  "generated_tokens": 439,
+  "elapsed_seconds": 6.980028699996183,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

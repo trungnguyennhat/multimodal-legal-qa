@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:1f440d753375cacafe3a6ccefd3d2cd73c0f253c468f1ee3b6da374f67b0a11d",
+  "filename": "image1318.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Bản vẽ kỹ thuật quy định kích thước hình học và bố trí các thành phần của biển báo chỉ dẫn 'ĐƯỜNG CỤT' (QL.1) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo chỉ dẫn 'ĐƯỜNG CỤT' (QL.1)\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền màu xanh dương, viền trắng. Bên trong có biểu tượng hình mũi tên cong màu trắng chỉ hướng rẽ phải, kèm chữ 'ĐƯỜNG CỤT' và 'QL.1'. Các kích thước được ghi chú bằng số và ký hiệu 'z' (ví dụ: 132, 28, 13, 6, 42, 9, 77, 3, 12, 6, 0,7, 3,5, 5,7, 1,2, 0,8, 0,2).\",\n      \"meaning_or_specification\": \"Biển báo này thuộc nhóm biển chỉ dẫn, dùng để báo hiệu đường cụt. Kích thước các thành phần (chiều rộng biển, chiều cao chữ, khoảng cách giữa các phần tử, kích thước biểu tượng) được quy định cụ thể trong điều luật cho từng loại đường (đường đôi ngoài đô thị, đường thông thường, đường đô thị) với giá trị z tương ứng là 100mm, 75mm, 50mm.\"\n    }\n  ]\n}",
+  "generated_tokens": 358,
+  "elapsed_seconds": 6.67749530000583,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

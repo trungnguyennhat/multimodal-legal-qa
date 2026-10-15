@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:e683bdb3ac63988950af034ccd5311ff7470580a10904d0a5030e04c263b560c",
+  "filename": "image160.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số DP.127c – Biển hết tốc độ tối đa cho phép theo biển ghép, với ba cột tốc độ (60, 50, 50) tương ứng với các nhóm phương tiện: ô tô, xe máy và xe đạp.\",\n  \"items\": [\n    {\n      \"identifier\": \"DP.127c\",\n      \"visual_or_geometric_features\": \"Biển hình chữ nhật dọc, nền xanh dương, viền trắng; chia thành 3 cột dọc bằng các đường kẻ trắng mảnh. Mỗi cột có: (1) biển tròn trắng viền đỏ ghi số tốc độ (60, 50, 50); (2) hình vẽ biểu tượng phương tiện tương ứng (ô tô, xe máy, xe đạp) ở dưới cùng của mỗi cột.\",\n      \"meaning_or_specification\": \"Biển báo hiệu rằng hiệu lực của các biển P.127b, P.127c (tốc độ tối đa cho từng nhóm phương tiện) đã kết thúc; kể từ biển này, tất cả phương tiện được phép chạy với tốc độ tối đa theo quy định trong Luật Đường bộ và Luật Trật tự, an toàn giao thông đường bộ.\"\n    }\n  ]\n}",
+  "generated_tokens": 289,
+  "elapsed_seconds": 4.713912300001539,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

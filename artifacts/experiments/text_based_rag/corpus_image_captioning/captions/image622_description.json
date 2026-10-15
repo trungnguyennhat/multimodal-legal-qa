@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:4291c8dcba44237e30ed97253964ed1fbf63f45c9f02db3815766e2fd2139a48",
+  "filename": "image622.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa việc sử dụng vạch đứng 8.1 (nét chéo vàng đen) trên bề mặt đứng của chướng ngại vật cố định như tường hầm hoặc đảo an toàn để cảnh báo nguy cơ va quệt phải.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch đứng 8.1 trên chướng ngại vật cố định\",\n      \"visual_or_geometric_features\": \"Hình vẽ thể hiện một công trình dạng hầm hoặc cầu vượt với hai bên tường có kẻ vạch chéo vàng và đen nghiêng 45°, hướng về phía đường xe chạy; kèm theo hình phóng to chi tiết vạch với các nét xen kẽ màu vàng và đen.\",\n      \"meaning_or_specification\": \"Theo Điều G.3.a QCVN 41:2024/BGTVT, vạch 8.1 được dùng để cảnh báo người điều khiển phương tiện chú ý đến chướng ngại vật cao hơn mặt đường (như tường hầm, trụ cầu, đảo an toàn) nhằm đề phòng va quệt phải. Vạch cấu tạo từ nét chéo vàng, đen xen kẽ, nghiêng 45°, bề rộng và khoảng cách mỗi nét là 15 cm, nét chéo xuống hướng về phía đường xe chạy.\"\n    }\n  ]\n}",
+  "generated_tokens": 287,
+  "elapsed_seconds": 5.041205800000171,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

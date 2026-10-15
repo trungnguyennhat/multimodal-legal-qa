@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:bc8cfe561e7417135e28a3127ac170a786bf129fdac6601ac34ac275b5ba5733",
+  "filename": "image1250.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo chỉ dẫn I.440a (hoặc I.440b/c) thuộc nhóm biển chỉ dẫn, dùng để báo hiệu phía trước có công trình thi công trên đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển số I.440: Đường đang thi công\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền màu xanh dương, viền trắng, có các dòng chữ trắng: 'PHÍA TRƯỚC', 'AHEAD', '100 m', 'CÔNG TRƯỜNG', 'WORKS'.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để thông báo cho người tham gia giao thông biết rằng phía trước có công trình đang thi công, và khoảng cách đến công trình là 100 mét. Biển thuộc nhóm biển chỉ dẫn, hình chữ nhật, nền xanh dương, chữ trắng.\"\n    }\n  ]\n}",
+  "generated_tokens": 222,
+  "elapsed_seconds": 4.738615299997036,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

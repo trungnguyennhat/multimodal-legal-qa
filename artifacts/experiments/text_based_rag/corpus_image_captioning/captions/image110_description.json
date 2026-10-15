@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:0e2ee6a75d6ee428db8b50c4daae71b54417d56db62c0117c5b3a4e762984111",
+  "filename": "image110.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển báo cấm xe sơ-mi rơ-moóc theo QCVN 41:2024/BGTVT, mã P.108a, với biểu tượng xe sơ-mi rơ-moóc bị gạch chéo trên nền đỏ.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.108a\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, có biểu tượng xe sơ-mi rơ-moóc màu đen ở giữa, bị một đường chéo đỏ từ góc trên bên trái xuống góc dưới bên phải cắt qua.\",\n      \"meaning_or_specification\": \"Biển báo này dùng để báo đường cấm các loại xe sơ-mi rơ-moóc và các xe kéo rơ-moóc (trừ xe được ưu tiên) theo quy định tại Điều B.8a của QCVN 41:2024/BGTVT.\"\n    }\n  ]\n}",
+  "generated_tokens": 235,
+  "elapsed_seconds": 3.916867599997204,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

@@ -1,8 +1,11 @@
 Câu hỏi:
 Biển hiệu lệnh hình tròn này có ý nghĩa và hiệu lực áp dụng thế nào? 
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền màu xanh dương, viền trắng. Trong biển có hình một mũi tên uốn cong hướng xuống, màu trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu lệnh - trung tâm
+Đặc điểm: Hình tròn, nền màu xanh dương, viền trắng, biểu tượng là mũi tên trắng uốn cong 180 độ hướng xuống dưới.
+Ý nghĩa hoặc thông số: Biển báo hiệu lệnh cho phép xe thực hiện vòng quay trái (vòng xoay) tại điểm này.
 
 ================================================================================
 
@@ -10,81 +13,52 @@ Câu hỏi:
 Biển báo phía trên báo hiệu rằng người tham gia giao thông có thể tiếp tục đi thẳng hoặc rẽ trái tại vị trí này.
 Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển trên: hình tròn, nền xanh, có một mũi tên trắng chỉ thẳng lên trên.
-
-Biển dưới: hình chữ nhật, nền xanh, có hai mũi tên trắng: một mũi tên thẳng đứng chỉ lên trên, và một mũi tên cong chỉ sang phải.
-
 ================================================================================
 
 Câu hỏi:
 Biển báo có hình mũi tên chỉ thẳng và rẽ trái đồng thời cho phép người tham gia giao thông rẽ phải nếu không có biển báo khác.
 Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển trên: hình tròn, nền xanh, có một mũi tên trắng chỉ thẳng lên trên.
-
-Biển dưới: hình chữ nhật, nền xanh, có hai mũi tên trắng: một mũi tên thẳng đứng chỉ lên trên, và một mũi tên cong chỉ sang phải.
-
 ================================================================================
 
 Câu hỏi:
 Biển báo với hình mũi tên chỉ hướng đi thẳng và rẽ trái áp dụng cho các phương tiện tham gia giao thông trong trường hợp nào?
 
-Mô tả biển báo trong ảnh:
-Biển trên: hình tròn, nền xanh, có một mũi tên trắng chỉ thẳng lên trên.
+Loại hình: SIGN_ILLUSTRATION
 
-Biển dưới: hình chữ nhật, nền xanh, có hai mũi tên trắng: một mũi tên thẳng đứng chỉ lên trên, và một mũi tên cong chỉ sang phải.
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Hình tròn, viền trắng, nền xanh dương, có một mũi tên trắng chỉ hướng đi thẳng lên trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải đi theo hướng mũi tên (đi thẳng).
+
+Đối tượng: Biển báo chỉ dẫn - phía dưới
+Đặc điểm: Hình vuông, viền trắng, nền xanh dương, có hai mũi tên trắng: một mũi tên chỉ hướng đi thẳng lên trên, một mũi tên chỉ hướng rẽ trái; giữa hai mũi tên có vạch kẻ đường nét đứt màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện có thể đi thẳng hoặc rẽ trái.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo giới hạn tốc độ "50" yêu cầu người tham gia giao thông tuân thủ như thế nào?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật màu xanh, có mũi tên chỉ hướng và chữ viết.
-- Biển hình tròn màu đỏ, có số "50" ở giữa.
-- Biển hình tròn màu đỏ, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình tròn màu đỏ, có hình xe máy bị gạch chéo.
-- Biển hình tròn màu đỏ, có hình xe tải bị gạch chéo.
-- Biển hình tròn màu đỏ, có hình xe máy bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tốc độ - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '50' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 50 km/h.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo cấm xe 3 bánh và 4 bánh thô sơ yêu cầu gì đối với người tham gia giao thông?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật màu xanh, có mũi tên chỉ hướng và chữ viết.
-- Biển hình tròn màu đỏ, có số "50" ở giữa.
-- Biển hình tròn màu đỏ, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình tròn màu đỏ, có hình xe máy bị gạch chéo.
-- Biển hình tròn màu đỏ, có hình xe tải bị gạch chéo.
-- Biển hình tròn màu đỏ, có hình xe máy bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và xe tải bị gạch chéo.
-- Biển hình chữ nhật màu xanh, có hình xe máy và
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe 3 bánh và xe 4 bánh thô sơ bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm tất cả xe 3 bánh và xe 4 bánh thô sơ đi vào.
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình chữ nhật đứng, nền đỏ, chữ và số màu trắng.
+Ý nghĩa hoặc thông số: Cấm xe 3 bánh và 4 bánh thô sơ vào giờ cấm: 05:00 - 13:00 và 16:00 - 22:00.
 
 ================================================================================
 
@@ -92,29 +66,33 @@ Câu hỏi:
 Biển báo cấm hình tròn này cấm tất cả các loại phương tiện quay đầu xe tại khu vực có biển báo này.
 Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, có viền đỏ, bên trong là hình mũi tên uốn cong hướng lên trên và sang phải, bị một đường gạch chéo đỏ đi ngang qua.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen cong hướng xuống trái bị gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm quay đầu xe
 
 ================================================================================
 
 Câu hỏi:
 Biển báo có hình trong và dấu "quay ngược lại" yêu cầu người tham gia giao thông làm gì khi gặp biển này?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, có viền đỏ, bên trong là hình mũi tên uốn cong hướng lên trên và sang phải, bị một đường gạch chéo đỏ đi ngang qua.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm quay đầu xe - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen quay ngược lại bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo này yêu cầu giới hạn tốc độ như thế nào đối với các phương tiện tham gia giao thông?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh lá cây, có viền trắng. Trên biển có:
+Loại hình: SIGN_ILLUSTRATION
 
-- Một hình chữ nhật nhỏ màu vàng với chữ "CT.01".
-- Dưới đó là dòng chữ "DIỄN CHÂU" và "BÁI VỌT" trên hai dòng.
-- Dưới dòng chữ là hình biểu tượng một cây cầu hoặc công trình giao thông.
-- Dưới cùng là hai hình tròn: một hình tròn đỏ viền trắng chứa số "90", và một hình tròn xanh chứa số "60".
+Đối tượng: Biển báo giới hạn tốc độ - phía dưới
+Đặc điểm: Hình tròn, nền màu đỏ viền trắng, chữ số '90' màu trắng ở giữa. Bên cạnh là hình tròn màu xanh dương, chữ số '60' màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 90 km/h và tối thiểu 60 km/h.
 
 ================================================================================
 
@@ -122,21 +100,22 @@ Câu hỏi:
 Biển báo này yêu cầu tất cả các phương tiện tham gia giao thông di chuyển với tốc độ tối đa 90 km/h.
 Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh lá cây, có viền trắng. Trên biển có:
+Loại hình: SIGN_ILLUSTRATION
 
-- Một hình chữ nhật nhỏ màu vàng với chữ "CT.01".
-- Dưới đó là dòng chữ "DIỄN CHÂU" và "BÁI VỌT" trên hai dòng.
-- Dưới dòng chữ là hình biểu tượng một cây cầu hoặc công trình giao thông.
-- Dưới cùng là hai hình tròn: một hình tròn đỏ viền trắng chứa số "90", và một hình tròn xanh chứa số "60".
+Đối tượng: Biển báo tốc độ tối đa - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Quy định tốc độ tối đa 90 km/h.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo hình tròn nền xanh này yêu cầu người tham gia giao thông làm gì khi gặp biển báo này?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền màu xanh dương, viền trắng. Trong biển có hình một mũi tên uốn cong hướng xuống, màu trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm
+Đặc điểm: Hình tròn, viền trắng, nền xanh dương, biểu tượng mũi tên trắng uốn cong 180 độ hướng xuống dưới.
+Ý nghĩa hoặc thông số: Biển báo hiệu yêu cầu người tham gia giao thông phải thực hiện chuyển hướng ngược lại (U-turn) tại điểm này.
 
 ================================================================================
 
@@ -144,8 +123,11 @@ Câu hỏi:
 Biển báo hình tròn nền xanh này yêu cầu các phương tiện được phép quay đầu tại vị trí có biển báo này.
 Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền màu xanh dương, viền trắng. Trong biển có hình một mũi tên uốn cong hướng xuống, màu trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chính - trung tâm
+Đặc điểm: Hình tròn, viền trắng, nền xanh dương, biểu tượng mũi tên trắng quay đầu (hình chữ U ngược với đầu mũi tên hướng xuống)
+Ý nghĩa hoặc thông số: Biển báo hiệu cho phép quay đầu xe tại vị trí có biển này
 
 ================================================================================
 
@@ -153,1162 +135,1551 @@ Câu hỏi:
 Biển báo này chỉ dẫn đường đi đến các điểm nào 
 
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền xanh, chữ trắng, có mũi tên chỉ lên trên và các khoảng cách đến các địa danh.
-- Biển hình tròn, nền đỏ, chữ số trắng bên trong.
-- Biển hình tròn, nền xanh, chữ số trắng bên trong.
-- Biển hình chữ nhật, nền xanh, chữ trắng, có mũi tên chỉ lên trên và hai mũi tên chỉ sang phải.
-- Biển hình chữ nhật, nền đỏ, chữ trắng bên trong.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - bên trái
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng. Có mũi tên hướng lên trên. Các dòng chữ: 'HÀ NỘI 145 KM', 'VĨNH YÊN 91 KM', 'VIỆT TRÌ 78 KM', 'TX PHÚ THỌ 53 KM'.
+Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến các địa điểm: Hà Nội, Vĩnh Yên, Việt Trì, TX Phú Thọ.
+
+Đối tượng: Biển báo tốc độ - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng. Có hai biển con: '100' và '60'.
+Ý nghĩa hoặc thông số: Biển báo giới hạn tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h.
+
+Đối tượng: Biển báo chỉ dẫn - bên phải
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng. Có mũi tên hướng lên trên và mũi tên rẽ phải. Các dòng chữ: 'ĐƯỜNG CAO TỐC', 'NỘI BÀI - LÀO CAI', 'EXPRESSWAY', 'YÊN BẠI', 'LỐI RA 1 CHIỀU', 'EXIT ONLY'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến đường cao tốc Nội Bài - Lào Cai và lối ra 1 chiều.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo có số 100 này yêu cầu giới hạn tốc độ tối đa cho phương tiện là bao nhiêu?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền xanh, chữ trắng, có mũi tên chỉ lên trên và các khoảng cách đến các địa danh.
-- Biển hình tròn, nền đỏ, chữ số trắng bên trong.
-- Biển hình tròn, nền xanh, chữ số trắng bên trong.
-- Biển hình chữ nhật, nền xanh, chữ trắng, có mũi tên chỉ lên trên và hai mũi tên chỉ sang phải.
-- Biển hình chữ nhật, nền đỏ, chữ trắng bên trong.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tốc độ tối đa - giữa ảnh, trên cột
+Đặc điểm: Hình tròn, nền trắng, viền đỏ, số '100' màu đen ở giữa
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa cho phương tiện là 100 km/h
 
 ================================================================================
 
 Câu hỏi:
 Biển báo "cấm rẽ trái, quay đầu" yêu cầu cấm rẽ trái hoặc rẽ phải. Câu này đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền đen, chữ vàng: có hình một chiếc xe máy và một chiếc xe hơi, kèm chữ số "2m".
-- Biển hình tròn, nền đỏ, viền trắng: có hình một đường thẳng ngang màu đỏ.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy, một chiếc xe hơi, và một người đi bộ, tất cả đều bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một người đi bộ bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
--
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - cấm rẽ trái và quay đầu - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là mũi tên cong hướng xuống trái và mũi tên cong hướng lên phải (quay đầu).
+Ý nghĩa hoặc thông số: Cấm rẽ trái và quay đầu.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo có số 2.2 này yêu cầu các phương tiện có chiều cao vượt quá 2.2m không được phép lưu thông trên đoạn đường này. Câu này đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền đen, chữ vàng: có hình một chiếc xe máy và một chiếc xe hơi, kèm chữ số "2m".
-- Biển hình tròn, nền đỏ, viền trắng: có hình một đường thẳng ngang màu đỏ.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy, một chiếc xe hơi, và một người đi bộ, tất cả đều bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một người đi bộ bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng: có hình một chiếc xe hơi bị gạch chéo.
--
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - giới hạn chiều cao (trung tâm)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '2.2m' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao tối đa là 2.2m.
+
+Đối tượng: Biển báo cấm - cấm xe tải (bên phải biển 2.2m)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe tải màu đen.
+Ý nghĩa hoặc thông số: Cấm xe tải đi vào.
+
+Đối tượng: Biển báo cấm - cấm người đi bộ (bên phải biển xe tải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng người đi bộ màu đen.
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào.
+
+Đối tượng: Biển báo cấm - cấm xe đạp (phía dưới)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe đạp màu đen.
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào.
+
+Đối tượng: Biển báo cấm - cấm rẽ trái (phía dưới)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng mũi tên rẽ trái màu đen.
+Ý nghĩa hoặc thông số: Cấm rẽ trái.
+
+Đối tượng: Biển báo cấm - cấm vào (bên trái)
+Đặc điểm: Hình tròn, viền đỏ, nền đỏ, tâm trắng.
+Ý nghĩa hoặc thông số: Cấm vào.
+
+Đối tượng: Biển báo nguy hiểm - chiều cao (bên trái biển cấm vào)
+Đặc điểm: Hình tam giác, viền đỏ, nền vàng, có chữ 'DI CHAM' và số '2.2m' màu đen.
+Ý nghĩa hoặc thông số: Cảnh báo chiều cao hạn chế.
+
+Đối tượng: Biển báo cấm - cấm xe tải (bên trái biển cấm vào)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '3t' màu đen.
+Ý nghĩa hoặc thông số: Cấm xe tải trọng trên 3 tấn.
+
+Đối tượng: Biển báo hiệu điện tử - giới hạn chiều cao (phía trên)
+Đặc điểm: Hình chữ nhật, nền đen, chữ 'GIỚI HẠN CHIỀU CAO' màu vàng, số '2.2m' màu vàng.
+Ý nghĩa hoặc thông số: Thông báo giới hạn chiều cao là 2.2m.
 
 ================================================================================
 
 Câu hỏi:
 Đây là loại biển báo nào?
 
-Mô tả biển báo trong ảnh:
-Hình ảnh có hai biển báo hình tròn, viền đỏ, có đường chéo đỏ cắt ngang từ góc trên bên trái sang góc dưới bên phải.
+Loại hình: SIGN_ILLUSTRATION
 
-Biển bên trái chứa hình ảnh một chiếc xe hơi màu đen và một chiếc xe hơi màu đỏ, cả hai đều được vẽ theo hướng nhìn từ phía trước.
+Đối tượng: Biển báo cấm - phía trái
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có đường chéo đỏ cắt từ góc trên bên trái xuống góc dưới bên phải. Bên trong có hình hai xe ô tô nhỏ (một màu đỏ, một màu đen) đang di chuyển song song.
+Ý nghĩa hoặc thông số: Cấm các loại xe ô tô (có thể hiểu là cấm tất cả xe ô tô hoặc chỉ cấm một số loại xe ô tô cụ thể tùy ngữ cảnh, nhưng từ ảnh không xác định rõ loại xe nào bị cấm ngoài hình ảnh biểu tượng).
 
-Biển bên phải chứa hình ảnh một chiếc xe tải màu đỏ và một chiếc xe hơi màu đen, cả hai đều được vẽ theo hướng nhìn từ phía trước.
+Đối tượng: Biển báo cấm - phía phải
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có đường chéo đỏ cắt từ góc trên bên trái xuống góc dưới bên phải. Bên trong có hình một xe tải lớn (màu đỏ) và một xe ô tô nhỏ (màu đen) đang di chuyển song song.
+Ý nghĩa hoặc thông số: Cấm xe tải và xe ô tô (hoặc cấm các loại xe có kích thước tương tự như biểu tượng trên biển).
 
 ================================================================================
 
 Câu hỏi:
 ội dung của biển báo cấm trong hình được quy định ở Điều mấy trong Quy chuẩn Kỹ thuật Quốc gia về Báo hiệu đường bộ ?
 
-Mô tả biển báo trong ảnh:
-Biển hình tròn, nền đỏ, có hình xe đạp màu đen ở giữa, bị một đường gạch chéo màu đen cắt ngang.  
-Dưới biển hình tròn là biển chữ nhật nền đỏ, chữ trắng, có dòng chữ “CẤM” và dòng chữ nhỏ hơn bên dưới.  
-Phía sau biển hình tròn có biển hình tam giác nền xanh, có hình mũi tên chỉ hướng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe đạp màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Biển báo cấm xe đạp (theo hình ảnh, không đọc rõ mã số hoặc tên chính xác trên biển chính).
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi rõ: 'CẤM XE ĐẠP, XE THÔ SƠ, XE MÁY'.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung nội dung cấm cho biển báo cấm phía trên.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trên thuộc bộ luật nào?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật đứng, nền xanh, có nhiều biểu tượng phương tiện giao thông (xe máy, ô tô, xe buýt, xe tải) được sắp xếp theo hàng ngang.
-- Dưới các biểu tượng đó là dãy hình tròn nền đỏ, viền trắng, bên trong có số "60".
-- Biển hình tròn, nền đỏ, viền trắng, bên trong có hình xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, bên trong có hình xe máy đang chạy theo hướng mũi tên vòng cung.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - hàng trên cùng
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, có biểu tượng xe ô tô và số '60' màu trắng.
+Ý nghĩa hoặc thông số: Biển báo giới hạn tốc độ tối đa cho xe ô tô là 60 km/h.
+
+Đối tượng: Biển báo tốc độ - hàng dưới cùng
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, có biểu tượng xe ô tô và số '60' màu trắng.
+Ý nghĩa hoặc thông số: Biển báo giới hạn tốc độ tối đa cho xe ô tô là 60 km/h.
+
+Đối tượng: Biển báo cấm dừng, đỗ xe - phía bên phải
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, có biểu tượng xe ô tô màu đen và dấu gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Biển báo cấm dừng, đỗ xe.
+
+Đối tượng: Biển báo cấm dừng, đỗ xe - phía bên phải
+Đặc điểm: Biển hình tròn, viền đỏ, nền xanh dương, có biểu tượng xe ô tô màu trắng và dấu gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Biển báo cấm dừng, đỗ xe.
 
 ================================================================================
 
 Câu hỏi:
 Biển trên có 4 loại dịch vụ được nói đến. Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo gồm hai phần:
+Loại hình: SIGN_ILLUSTRATION
 
-- Biển hình chữ nhật đứng, nền xanh lá cây, có một ô hình chữ nhật nhỏ màu xanh dương ở trên cùng. Trong ô nhỏ đó có hình ảnh biểu tượng của các dịch vụ như: nhà vệ sinh, ghế nghỉ, bàn ăn, dụng cụ sửa xe, bồn rửa tay, và biểu tượng thông tin.
-
-- Biển hình chữ nhật đứng, nền vàng, có hình mũi tên đỏ chỉ sang phải. Trong biển có hình chữ nhật nhỏ màu đỏ ở trên cùng, bên trong có hình ảnh biểu tượng của một chiếc bàn ăn và một chiếc ghế.
+Đối tượng: Biển báo chỉ dẫn dịch vụ - phía trên
+Đặc điểm: Biển hình chữ nhật đứng, nền màu xanh lá cây, viền trắng. Phần trên cùng là biển phụ hình chữ nhật nhỏ, nền xanh dương, chữ trắng 'TRẠM DỪNG NGHỈ' và 'RESTAREA'. Bên dưới biển phụ là dòng chữ 'LA SƠN' màu trắng trên nền xanh lá. Dưới cùng là 4 biểu tượng trắng trên nền xanh lá: bình xăng, bàn ăn, dao nĩa, và người đứng (biểu tượng thông tin).
+Ý nghĩa hoặc thông số: Chỉ dẫn về Trạm dừng nghỉ La Sơn, cung cấp các dịch vụ: nhiên liệu, ăn uống và thông tin. Khoảng cách còn lại là 750m.
 
 ================================================================================
 
 Câu hỏi:
 Đây là biển báo chỉ dẫn sơ đồ và khoảng cách đến nút giao với đường dẫn vào đường cao tốc. Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh, có hình biểu tượng đường cao tốc ở góc trên bên trái, và hai mũi tên chỉ hướng: một mũi tên chỉ thẳng, một mũi tên chỉ sang phải, cùng dòng chữ "500 m" ở dưới.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn chính - phía trên
+Đặc điểm: Hình chữ nhật đứng, nền màu xanh dương, viền trắng. Có biểu tượng hình chữ nhật màu xanh lá cây với hình vẽ con đường cao tốc (hai đường song song) ở góc trên bên trái. Có các dòng chữ màu trắng: 'TT. ĐỨC THỌ' ở góc trên bên phải, 'DIỄN CHÂU' ở giữa bên trái, '500 m' ở dưới cùng bên phải. Có mũi tên chỉ hướng rẽ phải và đi thẳng ở góc dưới bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến TT. Đức Thọ và Diễn Châu, với khoảng cách 500m. Mũi tên chỉ hướng rẽ phải và đi thẳng.
+
+Đối tượng: Biển phụ chỉ số hiệu đường QL.8A - góc trên bên phải
+Đặc điểm: Hình chữ nhật nhỏ, nền màu trắng, viền đen, chữ màu đen 'QL.8A'.
+Ý nghĩa hoặc thông số: Chỉ số hiệu đường QL.8A.
+
+Đối tượng: Biển phụ chỉ số hiệu đường CT.01 - giữa bên phải
+Đặc điểm: Hình chữ nhật nhỏ, nền màu vàng, viền đen, chữ màu đen 'CT.01'.
+Ý nghĩa hoặc thông số: Chỉ số hiệu đường CT.01.
 
 ================================================================================
 
 Câu hỏi:
 Đây là biển cảnh báo sắp đến khu vực dành cho người đi bộ sang đường. Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình kim cương, nền vàng, viền đen. Trong biển có hình một người đi bộ, đang bước qua các vạch kẻ ngang.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - trung tâm ảnh
+Đặc điểm: Hình thoi, nền màu vàng, viền đen, có biểu tượng người đi bộ màu đen đang bước qua hai vạch ngang màu đen.
+Ý nghĩa hoặc thông số: Cảnh báo người tham gia giao thông về khu vực có người đi bộ sang đường.
 
 ================================================================================
 
 Câu hỏi:
 Trên đoạn đường này, xe chạy với tốc độ là bao nhiêu thì bị phạm luật?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có chữ số "40" màu đen.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía bên phải đường
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 40 km/h
 
 ================================================================================
 
 Câu hỏi:
 Đi 30km nữa là đến Ninh Bình và đi 34km nữa là đến Nam Định
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ Y màu xanh, có hai mũi tên trắng hướng ra hai bên, phía trên ghi "NAM ĐỊNH" và "NINH BÌNH" kèm khoảng cách tương ứng là "30 Km" và "34 Km".
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ đường - chính giữa
+Đặc điểm: Hình chữ nhật đứng, nền xanh dương, có biểu tượng mũi tên trắng dạng Y chia làm hai nhánh: nhánh trái hướng lên trái, nhánh phải hướng lên phải.
+Ý nghĩa hoặc thông số: Chỉ hướng đi đến hai địa điểm: Nam Định (30 km) và Ninh Bình (34 km).
+
+Đối tượng: Biển phụ - phía trên bên trái
+Đặc điểm: Chữ 'NAM ĐỊNH' màu trắng, bên dưới là '30 Km' màu trắng.
+Ý nghĩa hoặc thông số: Chỉ khoảng cách đến Nam Định là 30 km theo hướng mũi tên trái.
+
+Đối tượng: Biển phụ - phía trên bên phải
+Đặc điểm: Chữ 'NINH BÌNH' màu trắng, bên dưới là '34 Km' màu trắng.
+Ý nghĩa hoặc thông số: Chỉ khoảng cách đến Ninh Bình là 34 km theo hướng mũi tên phải.
 
 ================================================================================
 
 Câu hỏi:
 Trên đoạn đường này, xe chạy với tốc độ là bao nhiêu thì không bị vi phạm luật?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có chữ số "40" màu đen.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía bên phải đường
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 40 km/h
 
 ================================================================================
 
 Câu hỏi:
 Đối với vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đôi nét liền, xe được phép lấn làn, đè lên vạch. Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có chữ số "40" màu đen.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Vạch phân chia hai chiều xe chạy - giữa đường
+Đặc điểm: Dạng vạch đôi nét liền màu vàng
+Ý nghĩa hoặc thông số: Vạch phân chia hai chiều xe chạy, cấm vượt và cấm lấn làn
 
 ================================================================================
 
 Câu hỏi:
 Biển nào không được đề cập trong hình trên?
 
-Mô tả biển báo trong ảnh:
-Có ba biển báo tam giác màu vàng nền đỏ, có hình:
+Loại hình: SIGN_ILLUSTRATION
 
-- Biển bên trái: hình một người đang làm việc với máy xúc.
-- Biển giữa: hình hai chữ "BỊ CHÀM" viết trong hình tam giác.
-- Biển bên phải: hình hai vạch dọc song song, mỗi vạch gồm hai phần, một phần màu đen, một phần màu trắng.
+Đối tượng: Biển báo hiệu - vị trí trái
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình người đang làm việc với máy xúc.
+Ý nghĩa hoặc thông số: Biển báo hiệu công trường xây dựng.
 
-Dưới ba biển tam giác là một biển hình chữ nhật màu đỏ nền trắng, có hình các mũi tên chỉ hướng sang hai bên.
+Đối tượng: Biển báo hiệu - vị trí giữa
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, chữ viết màu đen 'BỊ CHẬM'.
+Ý nghĩa hoặc thông số: Biển báo hiệu đường bị chập.
+
+Đối tượng: Biển báo hiệu - vị trí phải
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình hai vạch song song.
+Ý nghĩa hoặc thông số: Biển báo hiệu đường hẹp.
+
+Đối tượng: Biển báo hiệu - vị trí dưới cùng
+Đặc điểm: Biển hình chữ nhật, nền đỏ, có các mũi tên trắng chỉ hướng rẽ trái.
+Ý nghĩa hoặc thông số: Biển báo hiệu hướng rẽ trái.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo nào không được xuất hiện trong hình trên?
 
-Mô tả biển báo trong ảnh:
-Có ba biển báo hình tròn, nền trắng, viền đỏ, có đường chéo đỏ cắt ngang. Trong mỗi biển là hình một người đi xe máy. Biển ở trên cùng, biển ở giữa và biển ở dưới cùng đều có hình này. Ngoài ra, ở phía xa còn có thêm một cột biển với ba biển tương tự, xếp dọc theo chiều dọc.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe máy bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe máy đi vào
+
+Đối tượng: Biển báo cấm - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe đạp bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào
+
+Đối tượng: Biển báo cấm - dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng không rõ do bị che khuất.
+Ý nghĩa hoặc thông số: không xác định chắc chắn
 
 ================================================================================
 
 Câu hỏi:
 Nội dung của 2 loại biển báo trên là gì?
 
-Mô tả biển báo trong ảnh:
-Hình ảnh có hai biển báo hình tròn, viền đỏ, có đường chéo đỏ cắt ngang từ góc trên bên trái sang góc dưới bên phải.
+Loại hình: SIGN_ILLUSTRATION
 
-Biển bên trái chứa hình ảnh một chiếc xe hơi màu đen và một chiếc xe hơi màu đỏ, cả hai đều được vẽ theo hướng nhìn từ phía trước.
+Đối tượng: Biển báo cấm - phía bên trái
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có đường chéo đỏ cắt từ góc trên bên trái xuống góc dưới bên phải. Bên trong có hình hai chiếc xe ô tô nhỏ (một màu đỏ, một màu đen) đang di chuyển song song theo hướng ngược chiều nhau.
+Ý nghĩa hoặc thông số: Cấm hai chiều xe cơ giới đi lại
 
-Biển bên phải chứa hình ảnh một chiếc xe tải màu đỏ và một chiếc xe hơi màu đen, cả hai đều được vẽ theo hướng nhìn từ phía trước.
+Đối tượng: Biển báo cấm - phía bên phải
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có đường chéo đỏ cắt từ góc trên bên trái xuống góc dưới bên phải. Bên trong có hình một chiếc xe tải lớn (màu đỏ) và một chiếc xe ô tô nhỏ (màu đen) đang di chuyển song song theo hướng ngược chiều nhau.
+Ý nghĩa hoặc thông số: Cấm hai chiều xe cơ giới và xe máy chuyên dùng đi lại
 
 ================================================================================
 
 Câu hỏi:
 Loại xe không bị cấm ở hình trên là xe nào?
 
-Mô tả biển báo trong ảnh:
-Biển hình tròn, nền đỏ, có hình xe đạp màu đen ở giữa, bị một đường gạch chéo màu đen cắt ngang.  
-Dưới biển hình tròn là biển chữ nhật nền đỏ, chữ trắng, có dòng chữ “CẤM” và dòng chữ nhỏ hơn bên dưới.  
-Phía sau biển hình tròn có biển hình tam giác nền xanh, có hình mũi tên chỉ hướng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe đạp màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Biển báo cấm xe đạp đi vào.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi: 'CẤM XE ĐẠP, XE THÔ SƠ, XE MÁY'.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung nội dung cấm cho biển báo chính: cấm xe đạp, xe thô sơ và xe máy.
 
 ================================================================================
 
 Câu hỏi:
 Xe được phép dừng và đỗ xe trên đoạn đường này. Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật đứng, nền xanh, có nhiều biểu tượng phương tiện giao thông (xe máy, ô tô, xe buýt, xe tải) được sắp xếp theo hàng ngang.
-- Dưới các biểu tượng đó là dãy hình tròn nền đỏ, viền trắng, bên trong có số "60".
-- Biển hình tròn, nền đỏ, viền trắng, bên trong có hình xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, bên trong có hình xe máy đang chạy theo hướng mũi tên vòng cung.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe hơi màu đen với gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe
 
 ================================================================================
 
 Câu hỏi:
 Đây là biển báo nhiều chỗ ngoặt nguy hiểm liên tiếp. Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo có hình tam giác đều, viền đỏ, nền vàng. Trong tam giác có hình một vật thể đen, dạng khối vuông vắn, nghiêng, được chia thành các đoạn nhỏ nối tiếp nhau.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo nguy hiểm - trung tâm
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình nhiều đoạn cong nối tiếp nghiêng về bên phải
+Ý nghĩa hoặc thông số: Cảnh báo tài xế về đoạn đường có nhiều chỗ ngoặt nguy hiểm liên tiếp
 
 ================================================================================
 
 Câu hỏi:
 Đây là nhóm biển báo nguy hiểm và cảnh báo đúng không?
 
-Mô tả biển báo trong ảnh:
-Có ba biển báo tam giác màu vàng nền đỏ, có hình:
+Loại hình: SIGN_ILLUSTRATION
 
-- Biển bên trái: hình một người đang làm việc với máy xúc.
-- Biển giữa: hình hai chữ "BỊ CHÀM" viết trong hình tam giác.
-- Biển bên phải: hình hai vạch dọc song song, mỗi vạch gồm hai phần, một phần màu đen, một phần màu trắng.
+Đối tượng: Biển cảnh báo công trường - phía trên bên trái
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình người đang đào đất bằng cuốc.
+Ý nghĩa hoặc thông số: Cảnh báo có công trường xây dựng hoặc sửa chữa đường phía trước.
 
-Dưới ba biển tam giác là một biển hình chữ nhật màu đỏ nền trắng, có hình các mũi tên chỉ hướng sang hai bên.
+Đối tượng: Biển cảnh báo bị chậm - phía trên giữa
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, chữ viết tay màu đen 'BỊ CHẬM'.
+Ý nghĩa hoặc thông số: Cảnh báo tốc độ xe bị chậm lại do tình trạng đường hoặc phương tiện phía trước.
+
+Đối tượng: Biển cảnh báo đường hẹp - phía trên bên phải
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình hai đường song song cách nhau hẹp dần từ trên xuống dưới.
+Ý nghĩa hoặc thông số: Cảnh báo đường phía trước bị hẹp lại.
+
+Đối tượng: Biển chỉ dẫn hướng rẽ - phía dưới
+Đặc điểm: Hình chữ nhật, nền đỏ, có các mũi tên trắng chỉ hướng rẽ trái liên tiếp.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải rẽ trái.
 
 ================================================================================
 
 Câu hỏi:
 "Xe ô tô đang di chuyển ở làn giữa được phép di chuyển qua làn trong cùng bên phải không", đúng hay sai ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh, có đường kẻ chia dọc giữa.  
-Phía bên trái: hai hình xe ô tô nhìn mặt trước, cách nhau bởi đường kẻ chấm dứt.  
-Phía bên phải: trên cùng là hình xe máy, dưới là hình xe ba bánh (xe máy ba bánh), phía dưới có dòng chữ tiếng Việt.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu làn đường - phần trái
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, viền trắng. Có hai biểu tượng xe ô tô màu trắng nằm cạnh nhau, ngăn cách bởi một vạch kẻ đường màu trắng dạng nét đứt dọc.
+Ý nghĩa hoặc thông số: Biển báo hiệu làn đường dành riêng cho xe ô tô.
+
+Đối tượng: Biển báo hiệu làn đường - phần phải
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, viền trắng. Có biểu tượng xe máy và xe ba bánh màu trắng. Dưới biểu tượng có dòng chữ: 'XE 02 BÁNH VÀ 03 BÁNH'.
+Ý nghĩa hoặc thông số: Biển báo hiệu làn đường dành riêng cho xe máy và xe ba bánh.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trong hình thuộc loại biển báo nào ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền đỏ, có đường viền trắng, bên trong có hình mũi tên uốn cong hướng lên trên và sang phải, bị một đường gạch chéo màu đỏ cắt ngang qua.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen hướng xuống rồi quay ngược lên trên (quay đầu) bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe
 
 ================================================================================
 
 Câu hỏi:
 Nội dung của biển báo này là gì ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền đỏ, có đường viền trắng, bên trong có hình mũi tên uốn cong hướng lên trên và sang phải, bị một đường gạch chéo màu đỏ cắt ngang qua.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen hướng xuống rồi quay ngược lên trên (quay đầu) bị gạch chéo đỏ cắt ngang.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe
 
 ================================================================================
 
 Câu hỏi:
 Các biển báo trong hình thuộc loại biển báo nào ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật đứng, nền xanh lá cây, có dòng chữ trắng và hình mũi tên màu đen trên nền vàng ở góc trên bên trái. Dưới dòng chữ "NHẬP LAN" và "MERGE LANE" là số "150 m" cũng màu trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chính - phía trên
+Đặc điểm: Hình chữ nhật đứng, nền xanh lá cây, viền trắng, chữ trắng in hoa: 'NHẬP LAN' ở dòng trên, 'MERGE LANE' ở dòng dưới.
+Ý nghĩa hoặc thông số: Báo hiệu điểm nhập làn hoặc hợp lưu làn đường; chưa xác định chắc chắn điều kiện pháp lý cụ thể từ ảnh.
+
+Đối tượng: Biển phụ - ngay bên dưới biển chính
+Đặc điểm: Hình chữ nhật đứng, nền xanh lá cây, viền trắng, chữ trắng: '150 m'.
+Ý nghĩa hoặc thông số: Chỉ khoảng cách còn lại đến điểm nhập làn hoặc hợp lưu làn đường.
+
+Đối tượng: Biển phụ chỉ hướng - gắn bên trái cột biển chính
+Đặc điểm: Hình tam giác cân, nền vàng, biểu tượng mũi tên đen chỉ hướng rẽ phải.
+Ý nghĩa hoặc thông số: Chỉ hướng rẽ phải tại điểm nhập làn hoặc hợp lưu làn đường.
 
 ================================================================================
 
 Câu hỏi:
 Nội dung của biển báo hình chữ nhật có nền vàng, hình màu đen là gì ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật đứng, nền xanh lá cây, có dòng chữ trắng và hình mũi tên màu đen trên nền vàng ở góc trên bên trái. Dưới dòng chữ "NHẬP LAN" và "MERGE LANE" là số "150 m" cũng màu trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển phụ - ngay bên dưới biển chính
+Đặc điểm: Hình tam giác cân, nền vàng, viền đen, chứa biểu tượng mũi tên đen chỉ hướng rẽ phải (hình tam giác đen hướng phải).
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải rẽ phải; đây là biển báo chỉ dẫn hướng đi.
+
+Đối tượng: Biển số khoảng cách - gắn cùng cột với biển phụ
+Đặc điểm: Hình chữ nhật đứng, nền xanh lá cây, viền trắng, chữ trắng: '150 m'.
+Ý nghĩa hoặc thông số: Chỉ khoảng cách còn lại đến điểm nhập làn hoặc điểm rẽ phải được báo hiệu bởi biển phụ.
 
 ================================================================================
 
 Câu hỏi:
 Nội dung của biển báo hình chữ nhật có nền xanh lá cây, chữ màu trắng là gì ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật đứng, nền xanh lá cây, có dòng chữ trắng và hình mũi tên màu đen trên nền vàng ở góc trên bên trái. Dưới dòng chữ "NHẬP LAN" và "MERGE LANE" là số "150 m" cũng màu trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chính - phía trên
+Đặc điểm: Hình chữ nhật đứng, nền xanh lá cây, chữ màu trắng, có viền trắng mỏng. Nội dung chữ: 'NHẬP LAN' (dòng trên), 'MERGE LANE' (dòng dưới), '150 m' (dòng dưới cùng).
+Ý nghĩa hoặc thông số: Báo hiệu điểm nhập làn hoặc hợp lưu làn đường trong vòng 150 mét phía trước.
+
+Đối tượng: Biển phụ - ngay bên dưới biển chính
+Đặc điểm: Hình tam giác cân, nền vàng, có mũi tên đen chỉ hướng cong sang phải.
+Ý nghĩa hoặc thông số: Chỉ hướng rẽ hoặc hợp lưu làn đường sang phải.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trong hình có ý nghĩa gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có chữ số "13" màu đen và ký hiệu "t" nhỏ ở góc trên bên phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trước bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '13' màu đen và ký hiệu 't' màu đen ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có trọng tải vượt quá 13 tấn đi vào đoạn đường này.
 
 ================================================================================
 
 Câu hỏi:
 Muốn đi Mai Sơn phải đi theo hướng nào?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh lá cây, có mũi tên trắng chỉ hướng và một hình chữ nhật nhỏ màu vàng chứa chữ "CT.01". Phía dưới có dòng chữ "MAI SƠN QUỐC LỘ 45" và phía trên bên phải có dòng chữ "THÀNH PHỐ TAM ĐIỆP". Biển có hình mũi tên trắng chỉ lên trên và sang phải, với phần mũi tên sang phải có một hình chữ nhật đỏ nhỏ ở đầu mũi tên.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hướng dẫn - treo trên cao, phía trên xe
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có biểu tượng mũi tên trắng chỉ hướng đi thẳng và rẽ phải. Có chữ viết màu trắng và vàng.
+Ý nghĩa hoặc thông số: Chỉ dẫn: Đi thẳng để đến 'THÀNH PHỐ TAM ĐIỆP'. Rẽ phải để đến 'MAI SƠN' và 'QUỐC LỘ 45'. Biển có mã 'CT.01' ở góc trên bên trái.
 
 ================================================================================
 
 Câu hỏi:
 Nếu muốn chạy với tốc độ tối đa 90 km/h, bạn phải di chuyển vào làn nào?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật màu xanh dương, có dòng chữ "SÂN BAY NỘI BÀI", "NOI BAI AIRPORT", số "5.8 km", và hình máy bay.
-- Biển hình tròn, viền đỏ, nền trắng, có số "90" và hình xe hơi.
-- Biển hình tròn, viền đỏ, nền trắng, có số "80" và hình xe hơi.
-- Biển hình chữ nhật màu xanh dương, có hình xe hơi và mũi tên chỉ lên trên.
-- Biển hình chữ nhật màu xanh dương, có hình xe hơi và mũi tên chỉ lên trên.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn làn đường - làn trái
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng. Có biểu tượng mũi tên hướng lên trên và hình vẽ ô tô bên dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện di chuyển trong làn này (làn trái).
+
+Đối tượng: Biển báo cấm tốc độ tối đa - làn trái
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, có số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 90 km/h.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo bên phải trong hình dưới đây có ý nghĩa gì?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình một chiếc xe tải đang đổ hàng (xe ben) bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có số "40" bên trong.
-- Biển hình chữ nhật, nền trắng, viền đen, có hai dòng thời gian: "06:30 - 08:30" và "16:00 - 19:00".
-- Biển hình tròn, nền đỏ, viền trắng, có hình một chiếc xe tải đang đổ hàng (xe ben) bên trong.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải với số '2,5t' bên trong
+Ý nghĩa hoặc thông số: Cấm xe tải trọng từ 2,5 tấn trở lên đi vào
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải
+Ý nghĩa hoặc thông số: Cấm xe tải đi vào
+
+Đối tượng: Biển phụ - thời gian áp dụng
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, chữ đen ghi: '06:30 - 06:30' và '16:00 - 19:00'
+Ý nghĩa hoặc thông số: Thời gian áp dụng cho các biển cấm ở trên
+
+Đối tượng: Biển báo hiệu tốc độ tối đa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '40' màu đen ở giữa
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trong hình có ý nghĩa gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tam giác, nền vàng, có hai mũi tên đen chỉ thẳng lên trên. Dưới biển tam giác là biển chữ nhật nền xanh, có dòng chữ trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển cảnh báo - phía trên
+Đặc điểm: Hình tam giác đều, đỉnh hướng lên trên; nền màu vàng; viền màu đỏ; bên trong có hai mũi tên đen hướng xuống dưới song song, cách nhau một khoảng.
+Ý nghĩa hoặc thông số: Cảnh báo giao thông hai chiều (xe phải nhường đường cho xe đi ngược chiều hoặc lưu thông hai chiều trên đoạn đường này).
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền màu xanh dương; viền trắng; chữ viết màu trắng, in hoa, rõ ràng: 'ĐƯỜNG HAI CHIỀU'.
+Ý nghĩa hoặc thông số: Biển phụ giải thích ý nghĩa của biển cảnh báo phía trên: đoạn đường này là đường hai chiều.
 
 ================================================================================
 
 Câu hỏi:
 Chiều cao giới hạn phía trước là bao nhiêu?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe đạp bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình số "30" bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe đạp bên trong.
-- Biển hình chữ nhật, nền xanh, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - giới hạn chiều cao (trung tâm hàng biển trên)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '3,5' và đơn vị 'm' ở giữa, kèm biểu tượng hình tam giác cân (biểu tượng chiều cao) phía trên số.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao phương tiện được phép đi qua là 3,5 mét.
+
+Đối tượng: Biển phụ - CẤM CÁC LOẠI XE TẢI (phía dưới biển giới hạn chiều cao)
+Đặc điểm: Hình chữ nhật đứng, nền đỏ, chữ 'CẤM' màu trắng ở trên, chữ 'CÁC LOẠI XE TẢI' màu trắng ở dưới.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung ý nghĩa cho biển báo cấm chính, cấm tất cả các loại xe tải.
 
 ================================================================================
 
 Câu hỏi:
 Các loại phương tiện bị cấm trên đoạn đường này?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe đạp bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình số "30" bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe đạp bên trong.
-- Biển hình chữ nhật, nền xanh, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên (cấm người đi bộ)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng người đi bộ màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào.
+
+Đối tượng: Biển báo cấm - phía trên (cấm xe đạp)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe đạp màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào.
+
+Đối tượng: Biển báo cấm - phía trên (giới hạn tốc độ)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '30' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 30 km/h.
+
+Đối tượng: Biển báo cấm - phía trên (giới hạn chiều cao)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '3,5m' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao phương tiện 3,5 mét.
+
+Đối tượng: Biển báo hiệu - phía trên (làn xe)
+Đặc điểm: Hình chữ nhật, nền xanh dương, biểu tượng xe tải màu trắng và biểu tượng xe máy màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn về làn đường dành cho xe tải và xe máy.
+
+Đối tượng: Biển báo cấm - phía dưới (cấm xe tải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe tải đi vào.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm xe tải
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ 'CẤM' màu trắng ở trên, chữ 'CÁC LOẠI XE TẢI' màu trắng ở dưới.
+Ý nghĩa hoặc thông số: Biển phụ giải thích nội dung biển cấm là cấm các loại xe tải.
 
 ================================================================================
 
 Câu hỏi:
 Bạn đang điều khiển xe ô tô đến đoạn đường này với tốc độ 50km/h thì bạn nên làm gì khi đi vô đường này?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe đạp bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình số "30" bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe đạp bên trong.
-- Biển hình chữ nhật, nền xanh, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu tốc độ tối đa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '30' màu đen.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 30 km/h.
+
+Đối tượng: Biển báo hiệu chiều cao giới hạn
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '3,5m' màu đen.
+Ý nghĩa hoặc thông số: Chiều cao giới hạn là 3,5 mét.
+
+Đối tượng: Biển báo hiệu phương tiện được phép vào
+Đặc điểm: Hình chữ nhật, nền xanh dương, biểu tượng xe tải màu trắng.
+Ý nghĩa hoặc thông số: Chỉ xe tải được phép vào.
+
+Đối tượng: Biển báo hiệu phương tiện được phép vào
+Đặc điểm: Hình chữ nhật, nền xanh dương, biểu tượng xe máy màu trắng.
+Ý nghĩa hoặc thông số: Chỉ xe máy được phép vào.
+
+Đối tượng: Biển báo cấm - phía dưới (cấm xe tải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe tải vào đường.
+
+Đối tượng: Biển phụ - phía dưới biển cấm xe tải
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ 'CẤM' màu trắng, dòng chữ nhỏ hơn bên dưới không đọc rõ.
+Ý nghĩa hoặc thông số: Biển phụ giải thích nội dung biển cấm.
 
 ================================================================================
 
 Câu hỏi:
 Có bao nhiêu biển tròn nền trắng viền đỏ là biển cấm?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe đạp bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình số "30" bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe đạp bên trong.
-- Biển hình chữ nhật, nền xanh, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên, biển đầu tiên (bên trái)
+Đặc điểm: Biển tròn nền trắng viền đỏ, biểu tượng người đi bộ bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm người đi bộ
+
+Đối tượng: Biển báo cấm - phía trên, biển thứ hai
+Đặc điểm: Biển tròn nền trắng viền đỏ, biểu tượng xe máy bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm xe máy
+
+Đối tượng: Biển báo giới hạn tốc độ - phía trên
+Đặc điểm: Biển tròn nền trắng viền đỏ, số '30' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 30 km/h
+
+Đối tượng: Biển báo giới hạn chiều cao - phía trên
+Đặc điểm: Biển tròn nền trắng viền đỏ, số '3,5m' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao 3,5m
+
+Đối tượng: Biển chỉ dẫn phương tiện - phía trên
+Đặc điểm: Biển hình chữ nhật nền xanh, có biểu tượng xe tải và xe máy màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn cho xe tải và xe máy
+
+Đối tượng: Biển báo cấm - phía dưới bên phải
+Đặc điểm: Biển tròn nền trắng viền đỏ, biểu tượng xe tải bị gạch chéo màu đỏ, kèm biển phụ chữ 'CẤM CÁC LOẠI XE TẢI'.
+Ý nghĩa hoặc thông số: Cấm các loại xe tải
 
 ================================================================================
 
 Câu hỏi:
 Người đi bộ không được phép lưu thông trên đường này đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe đạp bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình số "30" bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe đạp bên trong.
-- Biển hình chữ nhật, nền xanh, có hình xe buýt bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên (cái đầu tiên từ trái sang)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng người đi bộ màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm người đi bộ
 
 ================================================================================
 
 Câu hỏi:
 Theo biển báo trong hình, xe tải có tổng trọng lượng xe và hàng hóa là 15 tấn có được phép đi vào đoạn đường này không?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có chữ số "13" màu đen và ký hiệu "t" nhỏ ở góc trên bên phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tải trọng - phía trước bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '13' màu đen và ký hiệu 't' màu đen ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có tổng trọng lượng xe và hàng hóa vượt quá 13 tấn đi vào đoạn đường này.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trong hình có ý nghĩa gì đối với các phương tiện giao thông di chuyển trên đoạn đường này?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có chữ số "13" màu đen và ký hiệu "t" nhỏ ở góc trên bên phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trước bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '13' màu đen và ký hiệu 't' màu đen ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có trọng lượng toàn bộ vượt quá 13 tấn đi vào.
 
 ================================================================================
 
 Câu hỏi:
  Một xe ô tô con chở 5 người và một ít hành lý, tổng trọng lượng xe và hàng hóa ước tính khoảng 2 tấn, có được phép đi vào đoạn đường có biển báo này không?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, có viền đỏ, nền trắng, bên trong có chữ số "13" màu đen và ký hiệu "t" nhỏ ở góc trên bên phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tải trọng - phía trước bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '13' màu đen và ký hiệu 't' màu đen ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Biển báo giới hạn tải trọng tối đa 13 tấn cho các phương tiện đi qua.
 
 ================================================================================
 
 Câu hỏi:
 Xe tải có trọng tải toàn bộ cho phép (cả xe và hàng) là 3 tấn được phép đi vào đoạn đường này vào lúc 14h00 đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình một chiếc xe tải đang đổ hàng (xe ben) bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có số "40" bên trong.
-- Biển hình chữ nhật, nền trắng, viền đen, có hai dòng thời gian: "06:30 - 08:30" và "16:00 - 19:00".
-- Biển hình tròn, nền đỏ, viền trắng, có hình một chiếc xe tải đang đổ hàng (xe ben) bên trong.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải với số '2,5t' bên trong.
+Ý nghĩa hoặc thông số: Cấm xe tải trọng toàn bộ cho phép từ 2,5 tấn trở lên đi vào trong giờ cấm (theo biển phụ bên dưới).
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có hai dòng chữ: '06.30 - 06.30' và '16.00 - 19.00'.
+Ý nghĩa hoặc thông số: Thời gian cấm xe tải trọng từ 2,5 tấn trở lên đi vào là từ 06:30 đến 06:30 và từ 16:00 đến 19:00.
+
+Đối tượng: Biển báo hiệu tốc độ tối đa - phía trên bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 40 km/h.
+
+Đối tượng: Biển báo hiệu loại xe - phía dưới biển tốc độ
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, biểu tượng đen là hình xe tải.
+Ý nghĩa hoặc thông số: Biển này thường đi kèm với biển cấm để chỉ rõ đối tượng bị cấm (xe tải), nhưng trong ảnh không có biển cấm đi kèm trực tiếp, nên ý nghĩa cụ thể chưa xác định chắc chắn.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo tròn màu đỏ có số "40" trắng bên trong cho phép tất cả các loại phương tiện (trừ xe tải) được chạy với tốc độ tối đa là 40 km/h trên đoạn đường này đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình một chiếc xe tải đang đổ hàng (xe ben) bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có số "40" bên trong.
-- Biển hình chữ nhật, nền trắng, viền đen, có hai dòng thời gian: "06:30 - 08:30" và "16:00 - 19:00".
-- Biển hình tròn, nền đỏ, viền trắng, có hình một chiếc xe tải đang đổ hàng (xe ben) bên trong.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Biển tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải với số '2,5t' bên trong.
+Ý nghĩa hoặc thông số: Cấm xe tải trọng 2,5 tấn và các loại xe có trọng lượng lớn hơn đi vào.
+
+Đối tượng: Biển báo giới hạn tốc độ - phía trên
+Đặc điểm: Biển tròn, viền đỏ, nền trắng, số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 40 km/h.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Biển hình chữ nhật, nền trắng, viền đen, có hai dòng chữ: '06:30 - 06:30' và '16:00 - 19:00'.
+Ý nghĩa hoặc thông số: Biển phụ quy định thời gian áp dụng cho biển báo cấm xe tải trọng 2,5 tấn.
+
+Đối tượng: Biển phụ - ngay bên dưới biển giới hạn tốc độ
+Đặc điểm: Biển hình chữ nhật, nền trắng, viền đen, có biểu tượng đen là hình xe tải.
+Ý nghĩa hoặc thông số: Biển phụ chỉ rõ đối tượng bị giới hạn tốc độ là xe tải.
 
 ================================================================================
 
 Câu hỏi:
 Nếu bạn đang điều khiển một xe ô tô con và muốn đi thẳng, bạn có được phép duy trì tốc độ 90 km/h trên làn đường bên trái đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật màu xanh dương, có dòng chữ "SÂN BAY NỘI BÀI", "NOI BAI AIRPORT", số "5.8 km", và hình máy bay.
-- Biển hình tròn, viền đỏ, nền trắng, có số "90" và hình xe hơi.
-- Biển hình tròn, viền đỏ, nền trắng, có số "80" và hình xe hơi.
-- Biển hình chữ nhật màu xanh dương, có hình xe hơi và mũi tên chỉ lên trên.
-- Biển hình chữ nhật màu xanh dương, có hình xe hơi và mũi tên chỉ lên trên.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ tối đa - làn đường bên trái
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 90 km/h cho xe ô tô con trên làn đường này.
+
+Đối tượng: Biển chỉ dẫn hướng đi - làn đường bên trái
+Đặc điểm: Biển hình chữ nhật, nền xanh, biểu tượng mũi tên hướng lên trên và hình xe ô tô con bên dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn xe ô tô con đi thẳng trên làn đường này.
 
 ================================================================================
 
 Câu hỏi:
 Khi gặp biển báo tam giác viền đỏ có hình vòng tròn màu vàng bên trong như trong hình, người lái xe cần hiểu điều gì?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền xanh, chữ trắng, có hình mũi tên chỉ hướng.
-- Biển hình tam giác, nền đỏ, viền trắng, có hình vòng tròn đen bên trong với một mũi tên cong quanh nó.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - trung tâm ảnh
+Đặc điểm: Biển báo hình tam giác, viền đỏ, nền vàng, biểu tượng vòng tròn xoay (vòng tròn có mũi tên xoay vòng) màu đen ở giữa.
+Ý nghĩa hoặc thông số: Biển báo cảnh báo vòng xoay giao lộ phía trước.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo chỉ dẫn màu xanh lớn cung cấp thông tin gì cho người tham gia giao thông?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền xanh, chữ trắng, có hình mũi tên chỉ hướng.
-- Biển hình tam giác, nền đỏ, viền trắng, có hình vòng tròn đen bên trong với một mũi tên cong quanh nó.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Biển hình chữ nhật đứng, nền màu xanh dương, viền trắng. Có chữ viết màu trắng: 'NGUY HIỂM GIẢM TỐC ĐỘ' trong khung hình chữ nhật nhỏ ở góc trên bên trái. Phần chính ghi: 'CẦU HẠC TRÌ 21 Km', 'THỊ XÃ PHÚ THỌ 18 Km', và mũi tên chỉ hướng lên trên. Có thêm mũi tên chỉ hướng sang trái và phải với chú thích 'ĐẾN HƯNG 0,2'.
+Ý nghĩa hoặc thông số: Biển báo chỉ dẫn cung cấp thông tin về khoảng cách đến các địa điểm: Cầu Hạc Trì (21 km), Thị xã Phú Thọ (18 km) và Hưng (0,2 km).
 
 ================================================================================
 
 Câu hỏi:
 Khoảng cách từ vị trí đặt biển báo đến Thị xã Phú Thọ là bao nhiêu theo thông tin trên biển?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền xanh, chữ trắng, có hình mũi tên chỉ hướng.
-- Biển hình tam giác, nền đỏ, viền trắng, có hình vòng tròn đen bên trong với một mũi tên cong quanh nó.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía phải
+Đặc điểm: Biển hình chữ nhật, nền xanh, chữ và mũi tên trắng. Có biển phụ hình chữ nhật nhỏ ở góc trên bên trái. Nội dung chữ: 'NGUY HIỂM GIẢM TỐC ĐỘ', 'CẦU HẠC TRÌ 21 Km', 'THỊ XÃ PHÚ THỌ 18 Km', 'ĐẾN HƯNG 0,2'. Có mũi tên chỉ hướng lên trên, sang trái và sang phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến Cầu Hạc Trì (21 km), Thị xã Phú Thọ (18 km) và Hưng (0,2 km). Cảnh báo nguy hiểm giảm tốc độ.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo nhỏ màu xanh ghi "NGUY HIỂM GIẢM TỐC ĐỘ" trên cùng của cột biển chỉ dẫn có ý nghĩa là người lái xe cần lập tức dừng lại đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền xanh, chữ trắng, có hình mũi tên chỉ hướng.
-- Biển hình tam giác, nền đỏ, viền trắng, có hình vòng tròn đen bên trong với một mũi tên cong quanh nó.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo nguy hiểm - phía trên cột biển chỉ dẫn
+Đặc điểm: Hình chữ nhật đứng, nền màu xanh, viền trắng, chữ trắng ghi 'NGUY HIỂM GIẢM TỐC ĐỘ'.
+Ý nghĩa hoặc thông số: Cảnh báo người lái xe cần giảm tốc độ do có nguy hiểm phía trước.
 
 ================================================================================
 
 Câu hỏi:
 Dựa vào biển báo chỉ dẫn, nếu muốn đến "Đến Hùng QL2", người lái xe phải rẽ phải tại ngã ba/ngã tư phía trước đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền xanh, chữ trắng, có hình mũi tên chỉ hướng.
-- Biển hình tam giác, nền đỏ, viền trắng, có hình vòng tròn đen bên trong với một mũi tên cong quanh nó.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, chữ và mũi tên trắng. Có biển phụ hình chữ nhật đứng, nền trắng, viền xanh, chữ đen ghi 'NGUY HIỂM GIẢM TỐC ĐỘ'.
+Ý nghĩa hoặc thông số: Chỉ dẫn: 'CẦU HẠC TRÌ 21 Km', 'THỊ XÃ PHÚ THỌ 18 Km'. Mũi tên chỉ hướng: thẳng tiến, rẽ trái, rẽ phải. Biển phụ cảnh báo nguy hiểm giảm tốc độ.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo chỉ dẫn màu xanh lớn bên phải cung cấp thông tin về sân bay Nội Bài, cho biết sân bay cách vị trí hiện tại 5.8 km và có ký hiệu máy bay kèm theo đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật màu xanh dương, có dòng chữ "SÂN BAY NỘI BÀI", "NOI BAI AIRPORT", số "5.8 km", và hình máy bay.
-- Biển hình tròn, viền đỏ, nền trắng, có số "90" và hình xe hơi.
-- Biển hình tròn, viền đỏ, nền trắng, có số "80" và hình xe hơi.
-- Biển hình chữ nhật màu xanh dương, có hình xe hơi và mũi tên chỉ lên trên.
-- Biển hình chữ nhật màu xanh dương, có hình xe hơi và mũi tên chỉ lên trên.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn lớn - Sân bay Nội Bài
+Đặc điểm: Biển hình chữ nhật lớn, nền xanh, viền trắng. Có dòng chữ 'SÂN BAY NỘI BÀI', 'NOI BAI AIRPORT', số '5.8 km' và biểu tượng máy bay màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến Sân bay Nội Bài, cách vị trí hiện tại 5.8 km.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo màu xanh, trắng có ý nghĩa là gì?
 
-Mô tả biển báo trong ảnh:
-Biển trên: hình tròn, có viền đỏ, bên trong là hình tròn màu trắng với một đường chéo đỏ đi từ góc trên bên trái sang góc dưới bên phải, và một mũi tên uốn cong chỉ sang trái.
+Loại hình: SIGN_ILLUSTRATION
 
-Biển dưới: hình tròn, nền xanh, có viền trắng, bên trong là hình vòng cung trắng quay theo chiều kim đồng hồ.
+Đối tượng: Biển báo hiệu - phía dưới
+Đặc điểm: Hình tròn, viền xanh, nền xanh, biểu tượng mũi tên trắng tạo thành vòng tròn xoay.
+Ý nghĩa hoặc thông số: Bắt buộc phải đi vòng xoay
 
 ================================================================================
 
 Câu hỏi:
 Xe cứu thương, xe cứu hoả nếu có bật còi, đèn tín hiệu thì được phép chạy với tốc độ trên 50 km/h. Điều này là đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có chữ số "50" màu đen ở giữa.
-- Biển hình chữ nhật đứng, nền xanh, có các hình vẽ: xe máy, xe ô tô, xe buýt, xe tải, và dòng chữ "XE 2 VA 3 BAN" bên dưới.
-- Biển hình chữ nhật đứng, nền trắng, có hình mũi tên chỉ sang phải.
-- Biển hình chữ nhật đứng, nền trắng, có hình xe buýt và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng, nền trắng, có hình xe tải và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng, nền trắng, có hình xe máy và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng, nền trắng, có hình xe ô tô và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng, nền trắng, có hình xe buýt và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng, nền trắng, có hình xe tải và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng, nền trắng, có hình xe máy và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng, nền trắng, có hình xe ô tô và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng, nền trắng, có hình xe buýt và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng, nền trắng, có hình xe tải và dòng chữ "XE 2 VA 3 BAN".
-- Biển hình chữ nhật đứng
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số 50 màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 50 km/h.
+
+Đối tượng: Biển chỉ dẫn phương tiện - phía dưới
+Đặc điểm: Hình chữ nhật đứng, nền xanh, có các biểu tượng trắng của xe máy, ô tô, xe buýt và xe tải.
+Ý nghĩa hoặc thông số: Chỉ dẫn các loại phương tiện được phép lưu thông trên tuyến đường này.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trong hình bên thuộc loại biển báo nào?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền đỏ, có một thanh ngang trắng ở giữa.  
-Dưới biển hình tròn là biển phụ hình chữ nhật, nền đỏ, có dòng chữ trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có một vạch ngang màu đỏ ở giữa.
+Ý nghĩa hoặc thông số: Biển báo cấm đi ngược chiều.
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ viết màu trắng.
+Ý nghĩa hoặc thông số: Chữ viết trên biển: 'CẤM ĐI NGƯỢC CHIỀU'.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trong hình bên là loại biển báo gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, viền đỏ, bên trong có hình một chiếc xe tải kéo theo một xe container, dưới hình xe có ghi chữ số "14 m" kèm hai mũi tên chỉ sang hai bên.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, bên trong có hình đen của một chiếc xe tải kéo rơ-moóc, phía dưới hình xe là dòng chữ '—14 m' được viết bằng chữ in hoa, số và dấu gạch ngang.
+Ý nghĩa hoặc thông số: Biển báo cấm các phương tiện có chiều cao vượt quá 14 mét đi vào khu vực này.
 
 ================================================================================
 
 Câu hỏi:
 "Biển cáo có màu xanh, trắng trong hình bên là biển báo "Nơi giao nhau chạy theo vòng xuyến", áp dụng cho các loại xe thô sơ và cơ giới". Phát biểu trên đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển trên: hình tròn, có viền đỏ, bên trong là hình tròn màu trắng với một đường chéo đỏ đi từ góc trên bên trái sang góc dưới bên phải, và một mũi tên uốn cong chỉ sang trái.
+Loại hình: SIGN_ILLUSTRATION
 
-Biển dưới: hình tròn, nền xanh, có viền trắng, bên trong là hình vòng cung trắng quay theo chiều kim đồng hồ.
+Đối tượng: Biển báo chỉ dẫn - phía dưới
+Đặc điểm: Hình tròn, viền xanh, nền xanh, biểu tượng mũi tên trắng tạo vòng tròn xoay chiều kim đồng hồ.
+Ý nghĩa hoặc thông số: Nơi giao nhau chạy theo vòng xuyến
 
 ================================================================================
 
 Câu hỏi:
 Hai biển báo xuất hiện trong hình bên có ý nghĩa là gì?
 
-Mô tả biển báo trong ảnh:
-Hình ảnh có hai biển báo hình chữ nhật màu xanh lá cây, được gắn trên cột cong.
+Loại hình: SIGN_ILLUSTRATION
 
-Biển bên trái:
-- Có hai hình tròn nằm ngang.
-- Hình tròn bên trái: viền đỏ, bên trong chữ số "120".
-- Hình tròn bên phải: viền xanh, bên trong chữ số "80".
-- Dưới hai hình tròn là hai mũi tên trắng chỉ xuống.
+Đối tượng: Biển báo tốc độ - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '120' (biển cấm vượt quá tốc độ), và một vòng tròn xanh dương chứa số '80' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là hai mũi tên trắng chỉ xuống, mỗi mũi tên nằm ở một nửa biển.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 120 km/h và tốc độ tối thiểu 80 km/h cho các làn xe tương ứng với hai mũi tên.
 
-Biển bên phải:
-- Cũng có hai hình tròn nằm ngang.
-- Hình tròn bên trái: viền đỏ, bên trong chữ số "100".
-- Hình tròn bên phải: viền xanh, bên trong chữ số "60".
-- Dưới hai hình tròn là một mũi tên trắng chỉ xuống.
-
-Biển báo bên phải có kích thước nhỏ hơn biển bên trái.
+Đối tượng: Biển báo tốc độ - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '100' (biển cấm vượt quá tốc độ), và một vòng tròn xanh dương chứa số '60' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là một mũi tên trắng chỉ xuống ở giữa biển.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h cho làn xe tương ứng với mũi tên.
 
 ================================================================================
 
 Câu hỏi:
 Theo hai biển báo trong hình bên, nếu phương tiện giao thông di chuyển ở làn bên phải ngoài cùng, tốc độ tối đa được phép di chuyển là bao nhiêu?
 
-Mô tả biển báo trong ảnh:
-Hình ảnh có hai biển báo hình chữ nhật màu xanh lá cây, được gắn trên cột cong.
+Loại hình: SIGN_ILLUSTRATION
 
-Biển bên trái:
-- Có hai hình tròn nằm ngang.
-- Hình tròn bên trái: viền đỏ, bên trong chữ số "120".
-- Hình tròn bên phải: viền xanh, bên trong chữ số "80".
-- Dưới hai hình tròn là hai mũi tên trắng chỉ xuống.
+Đối tượng: Biển báo tốc độ - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '120' (biển cấm vượt quá tốc độ), và một vòng tròn xanh dương chứa số '80' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là hai mũi tên trắng chỉ xuống, mỗi mũi tên nằm ở một nửa biển.
+Ý nghĩa hoặc thông số: Chỉ dẫn tốc độ tối đa 120 km/h và tốc độ tối thiểu 80 km/h cho các làn đường tương ứng với hai mũi tên.
 
-Biển bên phải:
-- Cũng có hai hình tròn nằm ngang.
-- Hình tròn bên trái: viền đỏ, bên trong chữ số "100".
-- Hình tròn bên phải: viền xanh, bên trong chữ số "60".
-- Dưới hai hình tròn là một mũi tên trắng chỉ xuống.
-
-Biển báo bên phải có kích thước nhỏ hơn biển bên trái.
+Đối tượng: Biển báo tốc độ - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '100' (biển cấm vượt quá tốc độ), và một vòng tròn xanh dương chứa số '60' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là một mũi tên trắng chỉ xuống, nằm ở giữa biển.
+Ý nghĩa hoặc thông số: Chỉ dẫn tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h cho làn đường tương ứng với mũi tên.
 
 ================================================================================
 
 Câu hỏi:
 Theo hình bên, nếu đi làn bên phải của đường cao tốc thì tốc độ tối đa được phép di chuyển là 100 km/h. Điều này là đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Hình ảnh có hai biển báo hình chữ nhật màu xanh lá cây, được gắn trên cột cong.
+Loại hình: SIGN_ILLUSTRATION
 
-Biển bên trái:
-- Có hai hình tròn nằm ngang.
-- Hình tròn bên trái: viền đỏ, bên trong chữ số "120".
-- Hình tròn bên phải: viền xanh, bên trong chữ số "80".
-- Dưới hai hình tròn là hai mũi tên trắng chỉ xuống.
-
-Biển bên phải:
-- Cũng có hai hình tròn nằm ngang.
-- Hình tròn bên trái: viền đỏ, bên trong chữ số "100".
-- Hình tròn bên phải: viền xanh, bên trong chữ số "60".
-- Dưới hai hình tròn là một mũi tên trắng chỉ xuống.
-
-Biển báo bên phải có kích thước nhỏ hơn biển bên trái.
+Đối tượng: Biển báo tốc độ - làn bên phải (phía trên)
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '100' (biển cấm vượt quá tốc độ), và một vòng tròn xanh chứa số '60' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là một mũi tên trắng chỉ xuống, nằm ở giữa biển.
+Ý nghĩa hoặc thông số: Chỉ giới hạn tốc độ tối đa 100 km/h và tối thiểu 60 km/h cho làn đường tương ứng với mũi tên.
 
 ================================================================================
 
 Câu hỏi:
 Theo biển báo hình chữ nhât, nền xanh dương, viền trắng, nếu muốn đến "Chùa Bắc Ngà", người điều khiển phương tiện giao thông phải đi theo hướng nào?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh, chữ trắng.  
-- Biển lớn: có hai mũi tên, một mũi tên thẳng lên trên, một mũi tên sang trái.  
-- Biển nhỏ bên dưới: hình chữ nhật, nền xanh, có hình mũi tên uốn cong sang phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Hình chữ nhật, nền xanh dương, viền trắng. Có hai dòng chữ: 'T.T LỘC BÌNH 10 KM' và 'CHÙA BẮC NGÀ 150 M'. Có hai mũi tên: mũi tên hướng thẳng lên trên và mũi tên hướng sang trái.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện đi thẳng để đến T.T Lộc Bình (10 km) hoặc rẽ trái để đến Chùa Bắc Ngà (150 m).
 
 ================================================================================
 
 Câu hỏi:
 Theo biển báo hình chữ nhật lớn, nền xanh dương, viền trắng, khoảng cách còn lại đến T.T Lộc Bình là bao nhiêu km? 
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh, chữ trắng.  
-- Biển lớn: có hai mũi tên, một mũi tên thẳng lên trên, một mũi tên sang trái.  
-- Biển nhỏ bên dưới: hình chữ nhật, nền xanh, có hình mũi tên uốn cong sang phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hướng dẫn - phía trên
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, viền trắng. Có hai dòng chữ trắng và hai mũi tên chỉ hướng: mũi tên hướng lên trên và mũi tên hướng sang trái.
+Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến T.T Lộc Bình là 10 km và đến Chùa Bắc Ngà là 150 m.
 
 ================================================================================
 
 Câu hỏi:
 Đây là biển báo có ý nghĩa gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, viền đỏ, bên trong có hình một chiếc xe tải kéo theo một xe container, dưới hình xe có ghi chữ số "14 m" kèm hai mũi tên chỉ sang hai bên.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, bên trong có hình đen của một chiếc xe tải kéo rơ-moóc, phía dưới hình xe là dòng chữ '—14 m—' được viết bằng chữ in hoa, hai dấu gạch ngang nằm ngang hai bên con số.
+Ý nghĩa hoặc thông số: Cấm các phương tiện có chiều cao vượt quá 14 mét đi vào khu vực này.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trong hình bên có ý nghĩa là cấm xe kéo rơ-moóc, đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, viền đỏ, bên trong có hình một chiếc xe tải kéo theo một xe container, dưới hình xe có ghi chữ số "14 m" kèm hai mũi tên chỉ sang hai bên.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - toàn bộ hình ảnh
+Đặc điểm: Hình tròn, viền đỏ, nền đỏ, có biểu tượng xe kéo rơ-moóc màu đen ở trung tâm, kèm dòng chữ '—14 m—' nằm ngang dưới biểu tượng xe.
+Ý nghĩa hoặc thông số: Cấm xe có chiều dài từ 14 mét trở lên đi vào khu vực này.
 
 ================================================================================
 
 Câu hỏi:
 Khi gặp biển báo như trong ảnh, người điều khiển phương tiện không cần phải nhường đường cho xe đang đi đến từ phía bên trái, đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo có hình tam giác cân, viền đỏ, nền vàng. Trong tam giác có hình ba mũi tên cong, tạo thành vòng tròn, hướng theo chiều kim đồng hồ.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - trung tâm
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng ba mũi tên đen tạo vòng tròn xoay theo chiều kim đồng hồ
+Ý nghĩa hoặc thông số: Báo hiệu trước vòng xoay (vòng tròn giao thông), yêu cầu người tham gia giao thông chuẩn bị nhường đường cho xe từ bên phải
 
 ================================================================================
 
 Câu hỏi:
 Khi gặp phải tín hiệu đèn giao thông như trong ảnh thì người điểu khiển xe phải và được làm gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo có hình tam giác, viền đỏ, nền vàng, bên trong có hình một đèn giao thông với ba đèn: trên cùng màu đỏ, giữa màu vàng, dưới màu xanh lá.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đèn giao thông - phía phải
+Đặc điểm: Biển hình tam giác đều, viền đỏ, nền vàng, biểu tượng đèn giao thông (3 đèn: đỏ, vàng, xanh) ở giữa.
+Ý nghĩa hoặc thông số: Cảnh báo trước đèn giao thông.
+
+Đối tượng: Đèn tín hiệu giao thông - phía trái
+Đặc điểm: Đèn tín hiệu treo trên cột, đèn xanh đang sáng.
+Ý nghĩa hoặc thông số: Tín hiệu cho phép phương tiện đi qua.
+
+Đối tượng: Biển báo hiệu vi phạm đèn giao thông - phía dưới đèn xanh
+Đặc điểm: Biển hình chữ nhật, nền trắng, chữ đen: 'VƯỢT ĐÈN ĐỎ LÀ VI PHẠM PHÁP LUẬT'.
+Ý nghĩa hoặc thông số: Thông báo về quy định pháp luật liên quan đến việc vượt đèn đỏ.
 
 ================================================================================
 
 Câu hỏi:
 Người lái xe mà thấy biển báo trong ảnh nếu muốn đến Khách Sạn Cầu Giấy (Cau Giay Hotel) thì phải rẽ phải, đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh, chữ trắng. Trên biển có hai mũi tên: một mũi tên thẳng đứng hướng lên, một mũi tên ngang hướng sang phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - chính giữa
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng. Có hai mũi tên chỉ hướng: mũi tên hướng lên trên và mũi tên hướng sang phải. Chữ viết màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi: 'KHÁCH SẠN CẦU GIẤY / Cau Giay Hotel' đi theo hướng mũi tên lên trên; 'KHÁCH SẠN A25 / A25 Hotel' đi theo hướng mũi tên sang phải.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trong ảnh là gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền trắng, viền xanh, có ba đường chéo màu đen chạy từ góc trên bên trái xuống góc dưới bên phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền màu xanh dương, nền trắng, có 4 vạch chéo màu đen chạy từ góc dưới trái lên góc trên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm xe cơ giới đi vào (theo quy chuẩn Việt Nam QCVN 41:2019/BGTVT), nhưng không đọc rõ chữ hoặc ký hiệu phụ đi kèm trong ảnh.
 
 ================================================================================
 
 Câu hỏi:
 Biển trong ảnh báo hiệu điều gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo có hình tam giác cân, viền đỏ, nền vàng. Trong tam giác có hình ba mũi tên cong, tạo thành vòng tròn, hướng theo chiều kim đồng hồ.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu vòng xoay - trung tâm
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng gồm ba mũi tên đen tạo vòng tròn theo chiều kim đồng hồ
+Ý nghĩa hoặc thông số: Báo hiệu trước vòng xoay giao thông; người tham gia giao thông phải nhường đường cho xe đang đi trên vòng xoay
 
 ================================================================================
 
 Câu hỏi:
 Đoạn giao nhau phía trước trong ảnh có đặc điểm gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo có hình tam giác, viền đỏ, nền vàng, bên trong có hình một đèn giao thông với ba đèn: trên cùng màu đỏ, giữa màu vàng, dưới màu xanh lá.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đèn tín hiệu - phía phải
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, biểu tượng đèn tín hiệu giao thông (3 đèn: đỏ, vàng, xanh) ở giữa.
+Ý nghĩa hoặc thông số: Cảnh báo người tham gia giao thông sắp đến đèn tín hiệu.
+
+Đối tượng: Biển phụ - phía dưới biển cảnh báo đèn tín hiệu
+Đặc điểm: Biển hình chữ nhật, nền trắng, viền đỏ, chữ đen: 'VƯỢT ĐÈN ĐỎ LÀ VI PHẠM PHÁP LUẬT'.
+Ý nghĩa hoặc thông số: Thông báo về hậu quả pháp lý khi vượt đèn đỏ.
+
+Đối tượng: Đèn tín hiệu giao thông - phía trái
+Đặc điểm: Đèn tín hiệu treo trên cột, đèn xanh đang bật sáng.
+Ý nghĩa hoặc thông số: Cho phép phương tiện được đi qua.
 
 ================================================================================
 
 Câu hỏi:
 Người lái xe mà thấy biển báo trong ảnh nếu muốn đến Khách Sạn A25 (A25 Hotel) thì phải đi hướng nào?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh, chữ trắng. Trên biển có hai mũi tên: một mũi tên thẳng đứng hướng lên, một mũi tên ngang hướng sang phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - chính giữa
+Đặc điểm: Hình chữ nhật, nền màu xanh dương, viền trắng. Có hai mũi tên chỉ hướng: mũi tên hướng lên trên và mũi tên hướng sang phải. Chữ viết màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi: đi thẳng để đến Khách sạn Cầu Giấy (Cau Gray Hotel), rẽ phải để đến Khách sạn A25 (A25 Hotel).
 
 ================================================================================
 
 Câu hỏi:
 Để đi tiếp cao tốc trong đoạn đường trên ảnh mà đang không gặp bất kỳ tình huống khẩn cấp nào thì nên đi trên là đường nào?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh lá cây, có hình mũi tên trắng chỉ lên trên và sang phải, kèm theo các ký hiệu chữ và số: "CT.01", "QL.1", "LA SON", "TUYẾN TRÁNH HUẾ".
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hướng dẫn - treo trên cao giữa đường
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có hai biển phụ nhỏ gắn trên cùng: biển trái nền vàng chữ 'CT.01', biển phải nền trắng chữ 'QL.1'. Biển chính có biểu tượng mũi tên trắng: một mũi tên thẳng hướng lên trên, một mũi tên rẽ phải. Có chữ viết: 'LA SON' bên trái mũi tên thẳng, 'TUYẾN TRÁNH HUẾ' bên phải mũi tên rẽ phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn xe đi thẳng để đến La Sơn, rẽ phải để đi tuyến tránh Huế và Quốc lộ 1.
 
 ================================================================================
 
 Câu hỏi:
 Từ 6:00 đến 22:00, tất cả các loại xe (cơ giới và thô sơ) không được phép rẽ vào đường Hồng Hà trên đoạn đường trong ảnh, đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật màu xanh, có hình mũi tên cong chỉ sang phải.
-- Biển hình tròn, nền trắng, viền đỏ, có hình mũi tên chỉ sang phải và một đường chéo ngang cắt qua mũi tên.
-- Biển hình chữ nhật, nền trắng, có hình một vùng đất màu đen bên trong.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ phải bị gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm rẽ phải
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, chữ đen, có biểu tượng xe tải nhỏ và dòng chữ '6:00 - 22:00'
+Ý nghĩa hoặc thông số: Quy định thời gian cấm rẽ phải từ 6:00 đến 22:00
 
 ================================================================================
 
 Câu hỏi:
 Tốc độ cho phép trên đoạn đường phía trước là bao nhiêu?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật màu xanh lá cây, có viền trắng, chứa dòng chữ trắng và hai hình tròn màu đỏ bên dưới.
-- Hai hình tròn màu đỏ, mỗi hình có viền trắng, bên trong có số trắng: số 90 và số 60.
-- Biển hình tròn màu đỏ, viền trắng, bên trong có số 70 màu trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển giới hạn tốc độ - gắn dưới biển chỉ dẫn
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 90 km/h.
+
+Đối tượng: Biển giới hạn tốc độ - gắn dưới biển chỉ dẫn
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '60' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 60 km/h.
+
+Đối tượng: Biển báo cấm - bên phải đường
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '70' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 70 km/h.
 
 ================================================================================
 
 Câu hỏi:
 Phương tiện nào sau đây được phép lưu thông trên đoạn đường có biển báo này lúc 7h30 sáng?
 
-Mô tả biển báo trong ảnh:
-Biển hình tròn, nền đỏ, có hình camera ghi hình bị gạch chéo.  
-Biển hình chữ nhật đứng, nền đỏ, có dòng chữ đen và hình ảnh camera ghi hình.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình chiếc xe tải đang di chuyển từ trái sang phải, có dấu gạch chéo đỏ cắt ngang từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Cấm xe tải trọng từ 3,5 tấn trở lên hoặc xe tải trọng từ 1 tấn trở lên lưu thông trong khoảng thời gian quy định.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng. Nội dung gồm hai phần: Phần trên ghi 'CẤM XE TẢI CÓ TẢI TRỌNG TỪ 3,5 TẤN TRỞ LÊN HOẶC CÓ TẢI TRỌNG TỪ 1 TẤN TRỞ LÊN LƯU THÔNG TỪ 6 GIỜ ĐẾN 24 GIỜ ĐỀU'. Phần dưới ghi 'CẤM XE TẢI CÓ TẢI TRỌNG DƯỚI 1 TẤN LƯU THÔNG TỪ 6 GIỜ ĐẾN 24 GIỜ ĐỀU'.
+Ý nghĩa hoặc thông số: Quy định thời gian cấm lưu thông cụ thể cho các loại xe tải khác nhau: xe tải trọng lớn (từ 3,5t trở lên hoặc từ 1t trở lên) bị cấm từ 6h đến 24h; xe tải trọng dưới 1t cũng bị cấm trong cùng khoảng thời gian đó.
 
 ================================================================================
 
 Câu hỏi:
 Khoảng tốc độ cho phép lưu thông trên đoạn đường cao tốc trước mắt là bao nhiêu?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật màu xanh lá cây, có hai phần: phần trên ghi "CAO BỒ MAI SON EXPRESSWAY" kèm biểu tượng người đi bộ, phần dưới có hai hình tròn: một hình tròn đỏ viền trắng chứa số "80", một hình tròn xanh chứa số "60".
+Loại hình: SIGN_ILLUSTRATION
 
-- Biển hình chữ nhật màu vàng, có dòng chữ "GIỮ KHOẢNG CÁCH AN TOÀN" và dòng chữ nhỏ bên dưới "SAFE STOPPING DISTANCE".
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Hình chữ nhật, nền màu xanh lá cây, viền trắng. Có chữ 'CT.01' trong khung cam, chữ 'CAO BỒ MAI SƠN EXPRESSWAY' màu trắng, biểu tượng hình tam giác cân (biểu tượng đường cao tốc) bên phải. Dưới cùng là hai biển tròn: biển đỏ viền trắng ghi số '80', biển xanh ghi số '60'.
+Ý nghĩa hoặc thông số: Chỉ dẫn đoạn đường cao tốc Mai Sơn, giới hạn tốc độ tối đa 80 km/h và tối thiểu 60 km/h.
 
-- Biển hình chữ nhật nhỏ màu xanh lá cây, có dòng chữ "CT.01" trong khung màu vàng.
+Đối tượng: Biển báo cảnh báo - phía dưới
+Đặc điểm: Hình chữ nhật, nền màu vàng, viền trắng. Có dòng chữ tiếng Việt 'GIỮ KHOẢNG CÁCH AN TOÀN' và dòng tiếng Anh 'SAFE STOPPING DISTANCE' màu đen.
+Ý nghĩa hoặc thông số: Cảnh báo người lái xe phải giữ khoảng cách an toàn với xe phía trước.
 
 ================================================================================
 
 Câu hỏi:
 Các biển báo trong hình cung cấp thông tin gì cho xe lưu thông trên đoạn đường này?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật, nền xanh lá cây, viền trắng, chữ trắng. Có hai dòng chữ: 'TP. HẢI PHÒNG 24 km' và 'CẢNG ĐÌNH VŨ 34 km'.
+Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến TP. Hải Phòng và Cảng Đình Vũ.
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền xanh lá cây, viền trắng. Có hai phần: phần trên là biển nhỏ hình chữ nhật với chữ 'LỐI RA EXIT', 'QL.10 2 km'; phần dưới là biển lớn hơn với chữ 'QUỐC LỘ 5 THÁI BÌNH' và mũi tên chỉ hướng lên trên bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn lối ra QL.10 sau 2 km và hướng đi đến Quốc lộ 5, Thái Bình.
+
+Đối tượng: Biển báo chỉ dẫn - phía xa bên phải
+Đặc điểm: Biển hình chữ nhật, nền xanh lá cây, viền trắng. Có hai mũi tên chỉ hướng: mũi tên trái và mũi tên phải. Chữ nhỏ bên dưới mũi tên trái là 'ĐT.239 CẦU ĐÀO VŨ', chữ nhỏ bên dưới mũi tên phải là 'QL.5 THÁI BÌNH'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến ĐT.239 Cầu Đào Vũ và QL.5 Thái Bình.
 
 ================================================================================
 
 Câu hỏi:
 Khoảng cách đến lối ra tiếp theo là bao nhiêu?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật, nền xanh lá cây, chữ trắng, có hình mũi tên chỉ hướng lên trên bên phải.
-- Biển hình chữ nhật
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên phải
+Đặc điểm: Hình chữ nhật, nền xanh lá cây, viền trắng. Có ba phần: phần trên cùng là biển phụ nhỏ hình chữ nhật với chữ 'LỐI RA EXIT' màu vàng, nền đen; phần dưới là dòng chữ 'QUỐC LỘ 5 THÁI BÌNH' và mũi tên chỉ hướng lên trên bên phải; bên phải là thông tin 'QL.10 2 km'.
+Ý nghĩa hoặc thông số: Chỉ dẫn lối ra (EXIT) đến Quốc lộ 5 đi Thái Bình, và thông tin về QL.10 cách đó 2 km.
+
+Đối tượng: Biển báo chỉ dẫn - phía dưới bên phải
+Đặc điểm: Hình chữ nhật, nền xanh lá cây, viền trắng. Có hai mũi tên: mũi tên chỉ hướng lên trên bên trái với chữ 'ĐT.239 CẦU ĐÀO VŨ', và mũi tên chỉ hướng lên trên bên phải với chữ 'QL.5 THÁI BÌNH'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến ĐT.239 qua Cầu Đào Vũ và QL.5 đi Thái Bình.
 
 ================================================================================
 
 Câu hỏi:
 Hai biển báo trong hình cho ta biết điều gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo gồm hai biển hình tròn:
+Loại hình: SIGN_ILLUSTRATION
 
-- Biển trên: hình tròn, viền đỏ, nền trắng, có số "100" màu đen ở giữa.
-- Biển dưới: hình tròn, viền xanh, nền trắng, có số "60" màu đen ở giữa.
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '100' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Biển báo hiệu giới hạn tốc độ tối đa là 100 km/h (dựa trên quy chuẩn biển báo giao thông Việt Nam).
+
+Đối tượng: Biển báo hiệu - phía dưới
+Đặc điểm: Hình tròn, viền xanh, nền xanh, có chữ số '60' màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Biển báo hiệu giới hạn tốc độ tối thiểu là 60 km/h (dựa trên quy chuẩn biển báo giao thông Việt Nam).
 
 ================================================================================
 
 Câu hỏi:
 Biển báo phía trên ở trong hình sau có ý nghĩa như thế nào?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, có một thanh ngang màu trắng đi qua giữa.
-- Biển hình tròn, nền xanh, có một mũi tên màu trắng chỉ sang bên phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có một vạch ngang màu đỏ ở giữa.
+Ý nghĩa hoặc thông số: Cấm mọi phương tiện cơ giới đi vào.
+
+Đối tượng: Biển báo chỉ dẫn - phía dưới
+Đặc điểm: Hình tròn, viền xanh, nền xanh, có mũi tên màu trắng chỉ hướng xuống bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện đi theo hướng mũi tên (hướng xuống phải).
 
 ================================================================================
 
 Câu hỏi:
 Các biển báo phía trên đèn giao thông thuộc loại biển báo chỉ dẫn. Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Các biển báo trong ảnh có hình chữ nhật, với nền màu xanh dương và chữ màu trắng. Một số biển có hình mũi tên chỉ hướng, một số có hình biểu tượng xe hơi, xe máy, và hình người đi bộ. Có biển hiển thị số km và biển có hình vòng tròn với đường gạch chéo. Một biển có hình chữ nhật nhỏ với nền đỏ và chữ số màu trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên đèn giao thông (trái)
+Đặc điểm: Biển hình chữ nhật, nền xanh, chữ và mũi tên màu trắng. Có 3 dòng chữ và mũi tên chỉ hướng lên trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến các địa điểm: 'Đ. HÀM SÔNG SÀI GÒN', 'BỆNH VIỆN NHIỆT ĐỘI', 'QUỐC LỘ 1' kèm khoảng cách.
+
+Đối tượng: Biển báo chỉ dẫn - phía trên đèn giao thông (phải)
+Đặc điểm: Biển hình chữ nhật, nền xanh, chữ và mũi tên màu trắng. Có 2 dòng chữ và mũi tên chỉ hướng lên trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến các địa điểm: 'ĐƯỜNG TRẦN NHO', 'Đ. LƯƠNG ĐÌNH CỬA', 'CẦU SÀI GÒN' kèm khoảng cách.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo trong ảnh có ý nghĩa như thế nào?
 
-Mô tả biển báo trong ảnh:
-Biển hình tròn, viền đỏ, nền trắng, có chữ số "8" và ký hiệu "t" ở giữa.  
-Dưới biển hình tròn là biển hình chữ nhật, nền xanh, chữ trắng, có dòng chữ "CẦU TÂN NGHĨA", "CHIỀU DÀI: 150m", "CHIỀU RỘNG: 4,2m".
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '8' màu đen ở giữa và ký hiệu 't' màu đen bên cạnh số 8.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có trọng tải vượt quá 8 tấn được phép đi qua.
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, chữ trắng. Nội dung: 'CẦU TÂN NGHĨA', 'CHIỀU DÀI : 150m', 'CHIỀU RỘNG : 4,2m'.
+Ý nghĩa hoặc thông số: Biển thông tin tên cầu và kích thước cầu.
 
 ================================================================================
 
 Câu hỏi:
 Xe ô tô con không được phép lưu thông trên đoạn đường này từ 6h đến 22h. Đúng hay sai? 
 
-Mô tả biển báo trong ảnh:
-Biển hình tròn, viền đỏ, nền trắng, có hình một chiếc xe tải bị gạch chéo. Dưới biển có biển phụ hình chữ nhật, nền trắng, chữ đen ghi “6:00 - 22:00”.
-
 ================================================================================
 
 Câu hỏi:
 Gặp biển báo trong chúng ta có thể rẽ phải. Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển hình tròn, nền đỏ, có đường vòng cung trắng bên trong và một đường thẳng đứng trắng đi qua giữa vòng cung.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ trái
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng quay đầu xe bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe
 
 ================================================================================
 
 Câu hỏi:
 Xe máy tham gia lưu thông trên đường này có thể dừng đỗ xe vào lúc 9 giờ sáng. Đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía dưới biển cấm xe máy
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi 'CẤM DỪNG ĐỖ', kèm biển phụ ghi thời gian '6:00 - 23:00'.
+Ý nghĩa hoặc thông số: Cấm dừng đỗ từ 6 giờ sáng đến 11 giờ đêm.
 
 ================================================================================
 
 Câu hỏi:
 Có bao nhiêu loại biển báo có ở trong ảnh?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị gạch chéo và dòng chữ "CẤM".
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe máy bị
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên cùng (cấm xe máy)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen hình xe máy bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe máy đi vào
+
+Đối tượng: Biển báo cấm - phía trên cùng (cấm dừng)
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng đen hình chữ X.
+Ý nghĩa hoặc thông số: Cấm dừng xe
+
+Đối tượng: Biển phụ - phía dưới biển cấm xe máy
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, có dòng chữ 'CẤM' và các dòng nhỏ hơn không đọc rõ.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung cho biển cấm xe máy, nội dung chi tiết không đọc rõ.
+
+Đối tượng: Biển phụ - phía dưới biển cấm dừng
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi '6:00 - 23:00'.
+Ý nghĩa hoặc thông số: Thời gian áp dụng biển cấm dừng là từ 6:00 đến 23:00.
+
+Đối tượng: Biển báo hiệu tốc độ tối đa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h.
+
+Đối tượng: Biển báo hiệu hướng đi và thời gian
+Đặc điểm: Hình chữ nhật dọc, nền xanh, chữ trắng, có biểu tượng xe buýt và dòng chữ '6:00 - 23:00'.
+Ý nghĩa hoặc thông số: Chỉ dẫn về tuyến xe buýt hoạt động trong khoảng thời gian từ 6:00 đến 23:00.
+
+Đối tượng: Biển tên đường
+Đặc điểm: Hình chữ nhật, nền xanh, chữ trắng, ghi 'ĐƯỜNG PHẠM PHỦ THỦ'.
+Ý nghĩa hoặc thông số: Tên đường là 'Đường Phạm Phú Thủ'.
 
 ================================================================================
 
 Câu hỏi:
 Trong hình này có bao nhiêu biển báo có hiệu lực với xe máy khi xe máy muốn di chuyển qua cầu ?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có một thanh ngang màu trắng ở giữa.
-- Biển tam giác, nền vàng, viền đen, có hình tam giác đen bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình hai mũi tên chỉ xuống và chữ số "2,2m" bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có chữ số "3" và ký hiệu "t" bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe tải bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe đạp bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, có hình mũi tên chỉ xuống bị gạch chéo.
-- Biển hình chữ nhật, nền đen, chữ đỏ, có dòng chữ "XE KHÁCH KHÔNG LÊN CẦU".
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm xe máy - vị trí trên cùng bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe máy bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm xe máy đi vào
 
 ================================================================================
 
 Câu hỏi:
 Khi gặp biển báo này, người điều khiển phương tiện giao thông không được phép làm điều gì ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền đỏ, có một đường chéo màu đỏ cắt ngang qua một biểu tượng mũi tên chỉ xuống dưới.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng đi thẳng và rẽ phải bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm đi thẳng và rẽ phải
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ phải bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ phải
 
 ================================================================================
 
 Câu hỏi:
 Biển báo này là biển báo gì ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, viền đỏ, có một đường chéo đỏ cắt ngang từ góc trên bên trái sang góc dưới bên phải. Trong vòng tròn, có hình vẽ một mũi tên uốn cong sang trái và một mũi tên thẳng đứng hướng xuống dưới, cả hai đều màu đen.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - chiếm toàn bộ khung hình
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng đen gồm mũi tên rẽ trái và mũi tên quay đầu, bị một đường chéo đỏ gạch từ trên trái xuống dưới phải.
+Ý nghĩa hoặc thông số: Cấm rẽ trái và quay đầu
 
 ================================================================================
 
 Câu hỏi:
 Khi tham gia giao thông, người điều khiển phương tiện xe máy không được không được phép rẽ trái nếu gặp biển báo này là đúng hay sai ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, viền đỏ, có một đường chéo đỏ cắt ngang từ góc trên bên trái sang góc dưới bên phải. Trong vòng tròn, có hình vẽ một mũi tên uốn cong sang trái và một mũi tên thẳng đứng hướng xuống dưới, cả hai đều màu đen.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - chiếm toàn bộ ảnh
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có biểu tượng mũi tên đen chỉ hướng rẽ trái và xuống dưới, bị một đường chéo đỏ cắt ngang từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Cấm xe rẽ trái
 
 ================================================================================
 
 Câu hỏi:
 Khi điều khiển các phương tiện tham gia giao thông, gặp biển báo này người điều khiển các phương tiện không được phép rẽ trái là đúng hay sai ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền đỏ, có một đường chéo màu đỏ cắt ngang qua một biểu tượng mũi tên chỉ xuống dưới.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng xuống và sang trái bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ trái
 
 ================================================================================
 
 Câu hỏi:
 Khi tham gia giao thông trên tuyến đường cao tốc, gặp biển báo hiệu này người điều khiển phương tiện xe cần lưu ý điều gì ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật đứng, nền xanh lá cây, có dòng chữ trắng và biểu tượng. Trên biển có hai ô nhỏ: một ô màu vàng với chữ "CT.03", một ô hình tam giác chỉ hướng. Dưới là hai biển tròn: một biển đỏ viền trắng có số "100", một biển xanh viền trắng có số "60".
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tên tuyến - phía trên
+Đặc điểm: Hình chữ nhật, nền xanh lá cây, viền trắng. Có chữ 'HÀ NỘI', 'BẮC GIANG', 'EXPRESSWAY' màu trắng; biển phụ 'CT.03' màu cam; biểu tượng đường cao tốc màu trắng bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn tuyến đường cao tốc Hà Nội - Bắc Giang, mã tuyến CT.03.
+
+Đối tượng: Biển báo tốc độ tối đa - phía dưới bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '100' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 100 km/h.
+
+Đối tượng: Biển báo tốc độ tối thiểu - phía dưới bên phải
+Đặc điểm: Hình tròn, viền xanh dương, nền trắng, chữ số '60' màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối thiểu cho phép là 60 km/h.
 
 ================================================================================
 
 Câu hỏi:
 Khi tham gia giao thông, tốc độ cho phép trên tuyến đường này dành cho phương tiên tham gia là bao nhiêu ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh, có hai phần:
+Loại hình: SIGN_ILLUSTRATION
 
-- Phần trên: có hình chữ nhật nhỏ màu vàng với chữ "CT.01", bên cạnh là dòng chữ "MAI SƠN QUỐC LỘ 45 EXPRESSWAY" và biểu tượng hai mũi tên chỉ hướng.
-
-- Phần dưới: có hai hình tròn, một hình tròn đỏ viền trắng chứa số "90", một hình tròn xanh chứa số "60".
+Đối tượng: Biển báo hiệu đường bộ - chính
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Biển có 2 phần: phần trên ghi chữ và biểu tượng, phần dưới có 2 vòng tròn (một vòng tròn đỏ viền trắng, một vòng tròn xanh dương viền trắng).
+Ý nghĩa hoặc thông số: Biển báo hiệu điểm đến là Mai Sơn, Quốc lộ 45, Expressway. Biển chỉ giới hạn tốc độ tối đa 90 km/h và tốc độ tối thiểu 60 km/h.
 
 ================================================================================
 
 Câu hỏi:
 Tuyến đường này không giới hạn tốc độ xe chạy là đứng hay sai ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh, có hai phần:
+Loại hình: SIGN_ILLUSTRATION
 
-- Phần trên: có hình chữ nhật nhỏ màu vàng với chữ "CT.01", bên cạnh là dòng chữ "MAI SƠN QUỐC LỘ 45 EXPRESSWAY" và biểu tượng hai mũi tên chỉ hướng.
-
-- Phần dưới: có hai hình tròn, một hình tròn đỏ viền trắng chứa số "90", một hình tròn xanh chứa số "60".
+Đối tượng: Biển báo hiệu đường bộ - chính
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có chữ viết và biểu tượng màu trắng. Phía trên có biển phụ hình chữ nhật nhỏ màu vàng.
+Ý nghĩa hoặc thông số: Biển báo hiệu tuyến đường Mai Sơn, Quốc lộ 45, Expressway. Giới hạn tốc độ tối đa 90 km/h và tối thiểu 60 km/h.
 
 ================================================================================
 
 Câu hỏi:
 Khi gặp biển báo này thì người điều khiển phương tiện giao thông không được phép làm gì ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền xanh, có một đường chéo màu đỏ cắt ngang từ góc trên bên trái sang góc dưới bên phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng gạch chéo màu trắng.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng gạch chéo màu trắng.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo này là biển báo cấm đỗ và dừng xe là đúng hay sai
 
-Mô tả biển báo trong ảnh:
-Biển báo hình tròn, nền xanh, có một đường chéo màu đỏ cắt ngang từ góc trên bên trái sang góc dưới bên phải.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm dừng và đỗ xe - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng gạch chéo màu trắng.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
+
+Đối tượng: Biển báo cấm dừng và đỗ xe - phía dưới
+Đặc điểm: Hình chữ nhật, nền đỏ, biểu tượng xe máy màu trắng.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
 
 ================================================================================
 
 Câu hỏi:
 Khi người điều khiển xe khách từ 9 chổ trở lên qua đoạn đường này được phép dừng xe vào khung giờ nào ?
 
-Mô tả biển báo trong ảnh:
-Biển hình tròn, nền đỏ, có dấu X màu đen ở giữa, bên trong là nền xanh dương.
+Loại hình: SIGN_ILLUSTRATION
 
-Dưới biển đó là biển hình chữ nhật, nền trắng, có hình một chiếc xe buýt đen ở giữa.
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có dấu X màu đỏ cắt chéo từ góc trên trái xuống góc dưới phải.
+Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe.
 
-Dưới biển chữ nhật là biển hình chữ nhật nhỏ hơn, nền trắng, có dòng chữ đen ghi giờ: "6:00 - 10:00" và "16:00 - 20:00".
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có biểu tượng xe buýt màu đen và dòng chữ 'Xe buýt' bên dưới biểu tượng.
+Ý nghĩa hoặc thông số: Biển cấm chỉ áp dụng đối với xe buýt.
+
+Đối tượng: Biển phụ - phía dưới biển xe buýt
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có hai dòng chữ: '6:00 - 10:00' và '16:00 - 20:00'.
+Ý nghĩa hoặc thông số: Biển cấm chỉ có hiệu lực trong các khung giờ: 6:00 đến 10:00 và 16:00 đến 20:00.
 
 ================================================================================
 
 Câu hỏi:
 Đoạn đường này có cho phép xe máy dừng xe là đúng hay sai?
 
-Mô tả biển báo trong ảnh:
-Biển hình tròn, nền đỏ, có dấu X màu đen ở giữa, bên trong là nền xanh dương.
+Loại hình: SIGN_ILLUSTRATION
 
-Dưới biển đó là biển hình chữ nhật, nền trắng, có hình một chiếc xe buýt đen ở giữa.
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có dấu X màu đỏ cắt chéo.
+Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe.
 
-Dưới biển chữ nhật là biển hình chữ nhật nhỏ hơn, nền trắng, có dòng chữ đen ghi giờ: "6:00 - 10:00" và "16:00 - 20:00".
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, có biểu tượng xe buýt màu đen và dòng chữ 'xe buýt'.
+Ý nghĩa hoặc thông số: Biển cấm chỉ áp dụng cho xe buýt.
+
+Đối tượng: Biển phụ - phía dưới biển xe buýt
+Đặc điểm: Hình chữ nhật, nền trắng, có hai dòng chữ: '6:00 - 10:00' và '16:00 - 20:00'.
+Ý nghĩa hoặc thông số: Biển cấm chỉ có hiệu lực trong các khung giờ nêu trên.
 
 ================================================================================
 
 Câu hỏi:
 Khi tham gia giao thông gặp những biễn báo này, những trường hợp nào được phép lưu thông qua cầu ?
 
-Mô tả biển báo trong ảnh:
-- Biển hình chữ nhật, nền đỏ, có dòng chữ "CẤM" và dòng chữ nhỏ bên dưới "CÁC LOẠI XE TẢI, XE KHÁCH".
-- Biển hình tròn, nền đỏ, có dấu gạch ngang ngang qua hình một chiếc xe tải.
-- Biển hình tròn, nền đỏ, có hình một người đi xe đạp bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một người đi bộ bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe tải bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe khách bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe tải bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe khách bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe tải bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe khách bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe máy bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe tải bị gạch chéo.
-- Biển hình tròn, nền đỏ, có hình một chiếc xe khách bị gạch chéo.
-- Biển hình tròn,
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên cùng (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có một vạch ngang màu đỏ ở giữa.
+Ý nghĩa hoặc thông số: Cấm mọi phương tiện cơ giới đi vào.
+
+Đối tượng: Biển báo cấm - giới hạn chiều cao (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ '3,5m' và hình tam giác ngược màu đen ở giữa.
+Ý nghĩa hoặc thông số: Cấm phương tiện có chiều cao vượt quá 3,5m đi vào.
+
+Đối tượng: Biển báo cấm - giới hạn tốc độ (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '30' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 30 km/h.
+
+Đối tượng: Biển báo cấm - cấm xe đạp (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình vẽ xe đạp màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào.
+
+Đối tượng: Biển báo cấm - cấm người đi bộ (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình vẽ người đi bộ màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào.
+
+Đối tượng: Biển báo cấm - cấm quay đầu (cột phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình mũi tên cong màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe.
+
+Đối tượng: Biển báo cấm - cấm xe tải và xe khách (cột phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình vẽ xe tải và xe khách màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe tải và xe khách đi vào.
+
+Đối tượng: Biển báo hiệu lệnh - phía dưới biển cấm xe tải/khách
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, nội dung: 'CẤM CÁC LOẠI XE TẢI, XE KHÁCH'.
+Ý nghĩa hoặc thông số: Biển phụ giải thích rõ nội dung cấm của biển trên.
 
 ================================================================================
 
 Câu hỏi:
 Khi gặp những biển báo giao thông này những phương tiện giao thông nào được phép lưu thông qua cầu ?
 
-Mô tả biển báo trong ảnh:
-- Biển hình tròn, nền đỏ, viền trắng, có một thanh ngang màu trắng ở giữa.
-- Biển tam giác, nền vàng, viền đen, có hình tam giác đen bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình hai mũi tên chỉ xuống và chữ số "2,2m" bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có chữ số "3" và ký hiệu "t" bên trong.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe tải bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, có hình người đi bộ bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, có hình xe đạp bị gạch chéo.
-- Biển hình tròn, nền đỏ, viền trắng, có hình mũi tên chỉ xuống bị gạch chéo.
-- Biển hình chữ nhật, nền đen, chữ đỏ, có dòng chữ "XE KHÁCH KHÔNG LÊN CẦU".
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên cùng (trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có vạch ngang đỏ ở giữa
+Ý nghĩa hoặc thông số: Cấm mọi phương tiện cơ giới đi vào
+
+Đối tượng: Biển báo nguy hiểm - phía trên cùng (trái, bên phải biển cấm)
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, chữ 'ĐI CHẬM' màu đen
+Ý nghĩa hoặc thông số: Cảnh báo đi chậm
+
+Đối tượng: Biển báo cấm - chiều cao (trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '2,2m' và mũi tên chỉ lên xuống
+Ý nghĩa hoặc thông số: Hạn chế chiều cao 2,2 mét
+
+Đối tượng: Biển báo cấm - tải trọng (giữa)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '3t'
+Ý nghĩa hoặc thông số: Hạn chế tải trọng 3 tấn
+
+Đối tượng: Biển báo cấm - xe buýt (giữa phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe buýt bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm xe buýt đi vào
+
+Đối tượng: Biển báo cấm - người đi bộ (phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng người đi bộ bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào
+
+Đối tượng: Biển báo cấm - xe đạp (phải dưới)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe đạp bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào
+
+Đối tượng: Biển báo cấm - rẽ trái (phải dưới cùng)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có mũi tên chỉ rẽ trái bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm rẽ trái
+
+Đối tượng: Biển LED thông báo (phía trên)
+Đặc điểm: Biển LED chữ đỏ, nội dung: 'XE KHÁCH KHÔNG LÊN CẦU'
+Ý nghĩa hoặc thông số: Thông báo xe khách không được lên cầu
 
 ================================================================================
 
 Câu hỏi:
 Biển báo giao thông này mang ý nghĩa là gì ?
 
-Mô tả biển báo trong ảnh:
-Biển báo có hình tam giác, viền đỏ, nền vàng, bên trong có hình một người đi bộ đang bước đi.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu - phía trước bên phải
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen là hình người đang đi bộ trên vạch kẻ ngang.
+Ý nghĩa hoặc thông số: Biển báo hiệu người đi bộ - cảnh báo tài xế có người đi bộ trên đường hoặc gần đường.
 
 ================================================================================
 
 Câu hỏi:
 Biển báo này thường được đặt tại khu vực nào ?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền màu xanh, có hình các tòa nhà cao tầng màu trắng.
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu cảnh báo - phía bên phải đường
+Đặc điểm: Hình chữ nhật đứng, nền màu xanh dương, biểu tượng màu trắng mô tả các tòa nhà cao tầng (kiểu kiến trúc đô thị), không có chữ viết hay số nào đọc được trên biển.
+Ý nghĩa hoặc thông số: Biển báo hiệu cảnh báo về khu vực đô thị, khu dân cư hoặc khu vực có nhiều công trình xây dựng; chưa xác định chắc chắn mã số hoặc quy định pháp lý cụ thể từ ảnh.
 
 ================================================================================
 
 Câu hỏi:
 Đoạn đường này người điều khiển phương tiện xe máy không được phép làm gì?
 
-Mô tả biển báo trong ảnh:
-Biển báo hình chữ nhật, nền xanh, có hai phần:
+Loại hình: SIGN_ILLUSTRATION
 
-- Phần trên: có hình chữ nhật nhỏ màu vàng với chữ "CT.01", bên cạnh là dòng chữ "MAI SƠN QUỐC LỘ 45 EXPRESSWAY" và biểu tượng hai mũi tên chỉ hướng.
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có chữ 'MAI SƠN', 'QUỐC LỘ 45', 'EXPRESSWAY' và biểu tượng đường cao tốc. Biển phụ nhỏ màu vàng ở góc trên bên trái ghi 'CT.01'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến Mai Sơn, Quốc lộ 45 và đường cao tốc.
 
-- Phần dưới: có hai hình tròn, một hình tròn đỏ viền trắng chứa số "90", một hình tròn xanh chứa số "60".
+Đối tượng: Biển báo tốc độ - phía dưới
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Chứa hai biển tròn: biển bên trái hình tròn viền đỏ, nền trắng, số '90'; biển bên phải hình tròn viền xanh, nền trắng, số '60'.
+Ý nghĩa hoặc thông số: Quy định tốc độ tối đa cho các loại phương tiện khác nhau trên đoạn đường này.

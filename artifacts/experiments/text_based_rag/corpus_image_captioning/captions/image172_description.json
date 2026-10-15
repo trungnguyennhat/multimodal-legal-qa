@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:83da01445a5fcffc053fed370691317f3c046bab80b92891968d0b2954857c35",
+  "filename": "image172.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số DP.133 'Hết cấm vượt' theo QCVN 41:2024/BGTVT, dùng để báo hiệu kết thúc lệnh cấm vượt trên đoạn đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"DP.133\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, viền xanh dương, nền trắng, có biểu tượng hai xe cơ giới đối diện nhau bị gạch chéo màu đỏ (hoặc đen trong bản vẽ mẫu) từ góc trên trái xuống góc dưới phải.\",\n      \"meaning_or_specification\": \"Biển báo hiệu đoạn đường hết cấm vượt, cho phép các xe cơ giới được phép vượt nhau nhưng phải tuân thủ quy định về điều kiện cho phép vượt.\"\n    }\n  ]\n}",
+  "generated_tokens": 193,
+  "elapsed_seconds": 3.24617120000039,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

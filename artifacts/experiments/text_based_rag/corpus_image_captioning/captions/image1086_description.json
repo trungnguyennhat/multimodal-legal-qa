@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:be92db74f2fdf4efa6418e64776ec11dc1d5e6788823f2f0f6af9db538e6f580",
+  "filename": "image1086.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"TECHNICAL_DIAGRAM\",\n  \"summary\": \"Hình ảnh là bản vẽ kỹ thuật quy định kích thước hình học và bố cục của biển báo giao thông R.301c (Các xe chỉ được rẽ trái) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo R.301c\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật đứng, nền xanh dương, có biểu tượng mũi tên hướng lên và mũi tên rẽ trái, kèm các kích thước chi tiết như 10z, 8z, 1z, 0.5z, 0.2z, 0.1z, 4.5z, 5z, 2z.\",\n      \"meaning_or_specification\": \"Biển báo hiệu lệnh cho phép các xe chỉ được rẽ trái. Kích thước z (mm) phụ thuộc vào loại đường: 140 (đường cao tốc), 126 (đường đôi ngoài đô thị), 87.5 (đường thông thường), 70 (đường đô thị).\"\n    }\n  ]\n}",
+  "generated_tokens": 268,
+  "elapsed_seconds": 5.255555399999139,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

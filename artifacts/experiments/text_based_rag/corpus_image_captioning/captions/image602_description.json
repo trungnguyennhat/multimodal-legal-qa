@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:48702a27931b3b5b8f9d4bfe2b7bee35ba107e87ea2b9f65e2a35615fdf6cf82",
+  "filename": "image602.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"MARKING_AND_SIGNAL\",\n  \"summary\": \"Hình ảnh minh họa quy cách bố trí vạch kẻ đường dạng tam giác ngược (vạch nhường đường - Mẫu 2) theo QCVN 41:2024/BGTVT.\",\n  \"items\": [\n    {\n      \"identifier\": \"Vạch nhường đường (Mẫu 2)\",\n      \"visual_or_geometric_features\": \"Các hình tam giác cân màu trắng, đỉnh hướng xuống dưới (ngược), được bố trí song song theo phương ngang đường. Các thông số kích thước trên hình: chiều rộng của đáy tam giác là 50 cm, chiều cao của tam giác là 70 cm, khoảng cách giữa hai mép kề nhau của hai tam giác liên tiếp là 30 cm.\",\n      \"meaning_or_specification\": \"Vạch 7.2 dùng để báo hiệu cho xe phải đi chậm hoặc dừng lại khi cần thiết để nhường đường cho các phương tiện hoặc người trên các hướng giao thông khác được di chuyển trước. Vạch này được sử dụng kết hợp với biển số W.208 - “Giao với đường ưu tiên”.\"\n    }\n  ]\n}",
+  "generated_tokens": 258,
+  "elapsed_seconds": 5.0892374999966705,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}

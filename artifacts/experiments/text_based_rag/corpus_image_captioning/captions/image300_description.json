@@ -1,0 +1,10 @@
+{
+  "image_id": "sha256:5c8e5d01793e67e58ca539b28c1f5e72d4f511813eb767f7b0113b7823522a9a",
+  "filename": "image300.jpg",
+  "config_fingerprint": "058a4745b471b7dae6c8cf0ce81892c06f9091817acae84dd1b517741c13ec7f",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số R.303 'Nơi giao nhau chạy theo vòng xuyến' theo quy định tại Điều D.3 của QCVN 41:2024/BGTVT, dùng để báo hiệu các loại xe phải chạy vòng theo đảo an toàn.\",\n  \"items\": [\n    {\n      \"identifier\": \"R.303\",\n      \"visual_or_geometric_features\": \"Biển hình tròn, nền màu xanh dương, viền trắng, biểu tượng gồm ba mũi tên cong màu trắng hướng theo chiều kim đồng hồ tạo thành vòng tròn.\",\n      \"meaning_or_specification\": \"Báo hiệu các loại xe (thô sơ và cơ giới) phải chạy vòng theo đảo an toàn ở nơi đường giao nhau; biển có hiệu lực bắt buộc đối với các xe muốn chuyển hướng phải tuân theo hướng mũi tên.\"\n    }\n  ]\n}",
+  "generated_tokens": 211,
+  "elapsed_seconds": 3.4996832000033464,
+  "finish_reason": "stop",
+  "status": "COMPLETED"
+}
