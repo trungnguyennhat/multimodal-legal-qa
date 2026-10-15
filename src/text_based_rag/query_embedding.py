@@ -13,9 +13,9 @@ from .corpus_image_captioning import ROOT, IMAGE_CATEGORIES, ITEM_FIELDS, read_l
 from .corpus_chunking import caption_parts
 
 INPUT = ROOT / "data/processed/splits/train.json"
-CAPTIONS = ROOT / "artifacts/experiments/text_based_rag/query_image_captioning_train"
-CORPUS = ROOT / "artifacts/experiments/text_based_rag/corpus_embedding"
-OUTPUT = ROOT / "artifacts/experiments/text_based_rag/query_embedding_train"
+CAPTIONS = ROOT / "artifacts/experiments/text_based_rag/query/query_image_captioning_train"
+CORPUS = ROOT / "artifacts/experiments/text_based_rag/corpus/corpus_embedding"
+OUTPUT = ROOT / "artifacts/experiments/text_based_rag/query/query_embedding_train"
 
 
 def query_representation(question, caption, query_id):
@@ -78,8 +78,8 @@ def main():
     args = parser.parse_args()
     INPUT = ROOT / f'data/processed/splits/{args.split}.json'
     suffix = f'_{args.split}'
-    CAPTIONS = ROOT / f'artifacts/experiments/text_based_rag/query_image_captioning{suffix}'
-    OUTPUT = ROOT / f'artifacts/experiments/text_based_rag/query_embedding{suffix}'
+    CAPTIONS = ROOT / f'artifacts/experiments/text_based_rag/query/query_image_captioning{suffix}'
+    OUTPUT = ROOT / f'artifacts/experiments/text_based_rag/query/query_embedding{suffix}'
     IMAGES = ROOT / 'data/processed/images/train'
     if args.split == 'public_test':
         INPUT = DEFAULT_SOURCE / DATA_FILES['public_test']
@@ -121,7 +121,7 @@ def main():
                     "stored_dtype": "float32", "inference_dtype": "bfloat16", "input_prefix": ""}
         if any(corpus_manifest.get(key) != value for key, value in expected.items()):
             raise ValueError("Encoder của index corpus không khớp BGE-M3 hiện tại; kiểm tra corpus_embedding/manifest.json.")
-        if corpus_manifest.get('input_sha256', {}).get('chunks.jsonl') != file_hash(ROOT / 'artifacts/experiments/text_based_rag/corpus_chunking/chunks.jsonl'):
+        if corpus_manifest.get('input_sha256', {}).get('chunks.jsonl') != file_hash(ROOT / 'artifacts/experiments/text_based_rag/corpus/corpus_chunking/chunks.jsonl'):
             raise ValueError('Corpus index chưa khớp chunking hiện tại; chạy lại corpus_embedding index trước.')
         model_hashes = corpus_manifest["model_files_sha256"]
         for name, digest in model_hashes.items():

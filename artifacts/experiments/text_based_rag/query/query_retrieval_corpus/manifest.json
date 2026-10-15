@@ -1,6 +1,6 @@
 {
   "status": "COMPLETED",
-  "created_at": "2026-10-15T11:46:26.280089+00:00",
+  "created_at": "2026-10-15T13:07:38.301276+00:00",
   "method": "dense_corpus_retrieval",
   "split": "dev",
   "queries": 112,
@@ -24,7 +24,7 @@
     "dev.json": "982a852348a358ce2aca0c1bcf84ca6f2e8c130ddeed6be71b025b8eeeda405e"
   },
   "numpy_version": "2.5.2",
-  "source_sha256": "26ac4c05cdc48e21225e318950d2186d2f22c65b735ff5fce39916ef751e1338",
+  "source_sha256": "2706fa814f8a0f57a21bb871448d20cb55d7cb1cc5f4d82a01fb977db5b0178c",
   "query_encoder": {
     "status": "COMPLETED",
     "created_at": "2026-10-15T11:37:12.206993+00:00",
@@ -269,7 +269,7 @@
     "similarity_matrix_bytes": 2445632,
     "vector_bytes": 22818816
   },
-  "elapsed_seconds": 0.47719340000185184,
+  "elapsed_seconds": 0.46959209999477025,
   "output_sha256": {
     "retrieval_results.jsonl": "d695c281e208d8c6ab2415f4518f81dcf1aa2c4879c5ef83c3db5a0f98f5f66c",
     "per_query_metrics.jsonl": "07b026045709a0a98102c8eb5e84d0b6162ee0256d2094843da9b623434d9f26",

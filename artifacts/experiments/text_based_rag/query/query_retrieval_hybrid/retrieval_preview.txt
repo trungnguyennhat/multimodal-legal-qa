@@ -1,0 +1,2356 @@
+===== train_5 =====
+Câu hỏi:
+Biển hiệu lệnh hình tròn này có ý nghĩa và hiệu lực áp dụng thế nào? 
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu lệnh - trung tâm
+Đặc điểm: Hình tròn, nền màu xanh dương, viền trắng, biểu tượng là mũi tên trắng uốn cong 180 độ hướng xuống dưới.
+Ý nghĩa hoặc thông số: Biển báo hiệu lệnh cho phép xe thực hiện vòng quay trái (vòng xoay) tại điểm này.
+F2=0.5000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '7'}]
+gate=high; s_max=0.886304; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.935510 | corpus=0.866735 | example=0.943152 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.1a | fusion=0.923902 | corpus=0.863201 | example=0.930646 | sources=['corpus', 'example']
+
+===== train_9 =====
+Câu hỏi:
+Biển báo phía trên báo hiệu rằng người tham gia giao thông có thể tiếp tục đi thẳng hoặc rẽ trái tại vị trí này.
+Đúng hay sai?
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}]
+gate=high; s_max=0.851759; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.918228 | corpus=0.849367 | example=0.925879 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.916898 | corpus=0.836062 | example=0.925879 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.3 | fusion=0.885325 | corpus=0.816119 | example=0.893014 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 26 | fusion=0.881309 | corpus=0.819319 | example=0.888196 | sources=['corpus', 'example']
+
+===== train_10 =====
+Câu hỏi:
+Biển báo có hình mũi tên chỉ thẳng và rẽ trái đồng thời cho phép người tham gia giao thông rẽ phải nếu không có biển báo khác.
+Đúng hay sai?
+F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}]
+gate=high; s_max=0.833448; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.23 | fusion=0.909178 | corpus=0.841268 | example=0.916724 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.908960 | corpus=0.839082 | example=0.916724 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.1a | fusion=0.897888 | corpus=0.849112 | example=0.903307 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.893360 | corpus=0.803835 | example=0.903307 | sources=['corpus', 'example']
+
+===== train_11 =====
+Câu hỏi:
+Biển báo với hình mũi tên chỉ hướng đi thẳng và rẽ trái áp dụng cho các phương tiện tham gia giao thông trong trường hợp nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Hình tròn, viền trắng, nền xanh dương, có một mũi tên trắng chỉ hướng đi thẳng lên trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải đi theo hướng mũi tên (đi thẳng).
+
+Đối tượng: Biển báo chỉ dẫn - phía dưới
+Đặc điểm: Hình vuông, viền trắng, nền xanh dương, có hai mũi tên trắng: một mũi tên chỉ hướng đi thẳng lên trên, một mũi tên chỉ hướng rẽ trái; giữa hai mũi tên có vạch kẻ đường nét đứt màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện có thể đi thẳng hoặc rẽ trái.
+F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}]
+gate=high; s_max=0.926638; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | D.13 | fusion=0.956396 | corpus=0.894086 | example=0.963319 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.952502 | corpus=0.855152 | example=0.963319 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.1a | fusion=0.946297 | corpus=0.897349 | example=0.951735 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 21 | fusion=0.935908 | corpus=0.837936 | example=0.946794 | sources=['corpus', 'example']
+
+===== train_12 =====
+Câu hỏi:
+Biển báo giới hạn tốc độ "50" yêu cầu người tham gia giao thông tuân thủ như thế nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tốc độ - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '50' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 50 km/h.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '21'}]
+gate=high; s_max=0.941254; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.965264 | corpus=0.916991 | example=0.970627 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.962709 | corpus=0.891443 | example=0.970627 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27c | fusion=0.949675 | corpus=0.892951 | example=0.955977 | sources=['corpus', 'example']
+
+===== train_13 =====
+Câu hỏi:
+Biển báo cấm xe 3 bánh và 4 bánh thô sơ yêu cầu gì đối với người tham gia giao thông?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe 3 bánh và xe 4 bánh thô sơ bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm tất cả xe 3 bánh và xe 4 bánh thô sơ đi vào.
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình chữ nhật đứng, nền đỏ, chữ và số màu trắng.
+Ý nghĩa hoặc thông số: Cấm xe 3 bánh và 4 bánh thô sơ vào giờ cấm: 05:00 - 13:00 và 16:00 - 22:00.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '26'}]
+gate=high; s_max=0.936570; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.958469 | corpus=0.870128 | example=0.968285 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 11 | fusion=0.957242 | corpus=0.857852 | example=0.968285 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.11 | fusion=0.956959 | corpus=0.855029 | example=0.968285 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | F.10 | fusion=0.909362 | corpus=0.819943 | example=0.919298 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.27 | fusion=0.908809 | corpus=0.814404 | example=0.919298 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 41 | fusion=0.908530 | corpus=0.811617 | example=0.919298 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.7 | fusion=0.903146 | corpus=0.835325 | example=0.910682 | sources=['corpus', 'example']
+
+===== train_18 =====
+Câu hỏi:
+Biển báo cấm hình tròn này cấm tất cả các loại phương tiện quay đầu xe tại khu vực có biển báo này.
+Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen cong hướng xuống trái bị gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm quay đầu xe
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '26'}]
+gate=high; s_max=0.946666; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.964716 | corpus=0.887159 | example=0.973333 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.962888 | corpus=0.868882 | example=0.973333 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.24 | fusion=0.943986 | corpus=0.890145 | example=0.949968 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.31 | fusion=0.932528 | corpus=0.855104 | example=0.941131 | sources=['corpus', 'example']
+
+===== train_23 =====
+Câu hỏi:
+Biển báo có hình trong và dấu "quay ngược lại" yêu cầu người tham gia giao thông làm gì khi gặp biển này?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm quay đầu xe - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen quay ngược lại bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '26'}]
+gate=high; s_max=0.930304; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.958082 | corpus=0.894450 | example=0.965152 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.955205 | corpus=0.865683 | example=0.965152 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.24 | fusion=0.950906 | corpus=0.893314 | example=0.957305 | sources=['corpus', 'example']
+
+===== train_26 =====
+Câu hỏi:
+Biển báo này yêu cầu giới hạn tốc độ như thế nào đối với các phương tiện tham gia giao thông?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tốc độ - phía dưới
+Đặc điểm: Hình tròn, nền màu đỏ viền trắng, chữ số '90' màu trắng ở giữa. Bên cạnh là hình tròn màu xanh dương, chữ số '60' màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 90 km/h và tối thiểu 60 km/h.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '21'}]
+gate=high; s_max=0.908058; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.948585 | corpus=0.899593 | example=0.954029 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.947172 | corpus=0.885458 | example=0.954029 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.947138 | corpus=0.886892 | example=0.953832 | sources=['corpus', 'example']
+
+===== train_28 =====
+Câu hỏi:
+Biển báo này yêu cầu tất cả các phương tiện tham gia giao thông di chuyển với tốc độ tối đa 90 km/h.
+Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ tối đa - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Quy định tốc độ tối đa 90 km/h.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '21'}]
+gate=high; s_max=0.902833; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.944534 | corpus=0.882588 | example=0.951417 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.27 | fusion=0.941225 | corpus=0.885543 | example=0.947412 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.940110 | corpus=0.874395 | example=0.947412 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | P.3 | fusion=0.936107 | corpus=0.873258 | example=0.943090 | sources=['corpus', 'example']
+
+===== train_31 =====
+Câu hỏi:
+Biển báo hình tròn nền xanh này yêu cầu người tham gia giao thông làm gì khi gặp biển báo này?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm
+Đặc điểm: Hình tròn, viền trắng, nền xanh dương, biểu tượng mũi tên trắng uốn cong 180 độ hướng xuống dưới.
+Ý nghĩa hoặc thông số: Biển báo hiệu yêu cầu người tham gia giao thông phải thực hiện chuyển hướng ngược lại (U-turn) tại điểm này.
+F2=0.7143; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}]
+gate=high; s_max=0.913562; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.944587 | corpus=0.834838 | example=0.956781 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.932956 | corpus=0.866375 | example=0.940354 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.929013 | corpus=0.826950 | example=0.940354 | sources=['corpus', 'example']
+
+===== train_37 =====
+Câu hỏi:
+Biển báo hình tròn nền xanh này yêu cầu các phương tiện được phép quay đầu tại vị trí có biển báo này.
+Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chính - trung tâm
+Đặc điểm: Hình tròn, viền trắng, nền xanh dương, biểu tượng mũi tên trắng quay đầu (hình chữ U ngược với đầu mũi tên hướng xuống)
+Ý nghĩa hoặc thông số: Biển báo hiệu cho phép quay đầu xe tại vị trí có biển này
+F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}]
+gate=high; s_max=0.913017; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.944471 | corpus=0.836128 | example=0.956509 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.941450 | corpus=0.875186 | example=0.948813 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.940001 | corpus=0.860696 | example=0.948813 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.24 | fusion=0.937640 | corpus=0.886686 | example=0.943301 | sources=['corpus', 'example']
+
+===== train_59 =====
+Câu hỏi:
+Biển báo này chỉ dẫn đường đi đến các điểm nào 
+
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - bên trái
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng. Có mũi tên hướng lên trên. Các dòng chữ: 'HÀ NỘI 145 KM', 'VĨNH YÊN 91 KM', 'VIỆT TRÌ 78 KM', 'TX PHÚ THỌ 53 KM'.
+Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến các địa điểm: Hà Nội, Vĩnh Yên, Việt Trì, TX Phú Thọ.
+
+Đối tượng: Biển báo tốc độ - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng. Có hai biển con: '100' và '60'.
+Ý nghĩa hoặc thông số: Biển báo giới hạn tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h.
+
+Đối tượng: Biển báo chỉ dẫn - bên phải
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng. Có mũi tên hướng lên trên và mũi tên rẽ phải. Các dòng chữ: 'ĐƯỜNG CAO TỐC', 'NỘI BÀI - LÀO CAI', 'EXPRESSWAY', 'YÊN BẠI', 'LỐI RA 1 CHIỀU', 'EXIT ONLY'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến đường cao tốc Nội Bài - Lào Cai và lối ra 1 chiều.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '46'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.17'}]
+gate=high; s_max=0.836917; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.916620 | corpus=0.900079 | example=0.918458 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 45 | fusion=0.914351 | corpus=0.877381 | example=0.918458 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.910257 | corpus=0.836446 | example=0.918458 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.27 | fusion=0.909908 | corpus=0.832959 | example=0.918458 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | D.6 | fusion=0.909874 | corpus=0.832619 | example=0.918458 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 32 | fusion=0.909490 | corpus=0.828770 | example=0.918458 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | P.3 | fusion=0.905981 | corpus=0.873417 | example=0.909599 | sources=['corpus', 'example']
+
+===== train_60 =====
+Câu hỏi:
+Biển báo có số 100 này yêu cầu giới hạn tốc độ tối đa cho phương tiện là bao nhiêu?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tốc độ tối đa - giữa ảnh, trên cột
+Đặc điểm: Hình tròn, nền trắng, viền đỏ, số '100' màu đen ở giữa
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa cho phương tiện là 100 km/h
+F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
+gate=high; s_max=0.883895; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.938236 | corpus=0.904832 | example=0.941948 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.937190 | corpus=0.894370 | example=0.941948 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27c | fusion=0.935417 | corpus=0.887330 | example=0.940760 | sources=['corpus', 'example']
+
+===== train_64 =====
+Câu hỏi:
+Biển báo "cấm rẽ trái, quay đầu" yêu cầu cấm rẽ trái hoặc rẽ phải. Câu này đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - cấm rẽ trái và quay đầu - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là mũi tên cong hướng xuống trái và mũi tên cong hướng lên phải (quay đầu).
+Ý nghĩa hoặc thông số: Cấm rẽ trái và quay đầu.
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.24'}]
+gate=high; s_max=0.908230; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.948887 | corpus=0.901834 | example=0.954115 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.947473 | corpus=0.887691 | example=0.954115 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.24 | fusion=0.941489 | corpus=0.893826 | example=0.946785 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.31 | fusion=0.929963 | corpus=0.835383 | example=0.940472 | sources=['corpus', 'example']
+
+===== train_70 =====
+Câu hỏi:
+Biển báo có số 2.2 này yêu cầu các phương tiện có chiều cao vượt quá 2.2m không được phép lưu thông trên đoạn đường này. Câu này đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - giới hạn chiều cao (trung tâm)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '2.2m' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao tối đa là 2.2m.
+
+Đối tượng: Biển báo cấm - cấm xe tải (bên phải biển 2.2m)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe tải màu đen.
+Ý nghĩa hoặc thông số: Cấm xe tải đi vào.
+
+Đối tượng: Biển báo cấm - cấm người đi bộ (bên phải biển xe tải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng người đi bộ màu đen.
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào.
+
+Đối tượng: Biển báo cấm - cấm xe đạp (phía dưới)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe đạp màu đen.
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào.
+
+Đối tượng: Biển báo cấm - cấm rẽ trái (phía dưới)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng mũi tên rẽ trái màu đen.
+Ý nghĩa hoặc thông số: Cấm rẽ trái.
+
+Đối tượng: Biển báo cấm - cấm vào (bên trái)
+Đặc điểm: Hình tròn, viền đỏ, nền đỏ, tâm trắng.
+Ý nghĩa hoặc thông số: Cấm vào.
+
+Đối tượng: Biển báo nguy hiểm - chiều cao (bên trái biển cấm vào)
+Đặc điểm: Hình tam giác, viền đỏ, nền vàng, có chữ 'DI CHAM' và số '2.2m' màu đen.
+Ý nghĩa hoặc thông số: Cảnh báo chiều cao hạn chế.
+
+Đối tượng: Biển báo cấm - cấm xe tải (bên trái biển cấm vào)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '3t' màu đen.
+Ý nghĩa hoặc thông số: Cấm xe tải trọng trên 3 tấn.
+
+Đối tượng: Biển báo hiệu điện tử - giới hạn chiều cao (phía trên)
+Đặc điểm: Hình chữ nhật, nền đen, chữ 'GIỚI HẠN CHIỀU CAO' màu vàng, số '2.2m' màu vàng.
+Ý nghĩa hoặc thông số: Thông báo giới hạn chiều cao là 2.2m.
+F2=0.3333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.17'}]
+gate=high; s_max=0.927032; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.18 | fusion=0.953472 | corpus=0.863077 | example=0.963516 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 11 | fusion=0.950640 | corpus=0.834755 | example=0.963516 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.916832 | corpus=0.864868 | example=0.922606 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 28 | fusion=0.916235 | corpus=0.858895 | example=0.922606 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.15 | fusion=0.914099 | corpus=0.837534 | example=0.922606 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.24 | fusion=0.912166 | corpus=0.818212 | example=0.922606 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | C.45 | fusion=0.910814 | corpus=0.804689 | example=0.922606 | sources=['corpus', 'example']
+
+===== train_74 =====
+Câu hỏi:
+Đây là loại biển báo nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trái
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có đường chéo đỏ cắt từ góc trên bên trái xuống góc dưới bên phải. Bên trong có hình hai xe ô tô nhỏ (một màu đỏ, một màu đen) đang di chuyển song song.
+Ý nghĩa hoặc thông số: Cấm các loại xe ô tô (có thể hiểu là cấm tất cả xe ô tô hoặc chỉ cấm một số loại xe ô tô cụ thể tùy ngữ cảnh, nhưng từ ảnh không xác định rõ loại xe nào bị cấm ngoài hình ảnh biểu tượng).
+
+Đối tượng: Biển báo cấm - phía phải
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có đường chéo đỏ cắt từ góc trên bên trái xuống góc dưới bên phải. Bên trong có hình một xe tải lớn (màu đỏ) và một xe ô tô nhỏ (màu đen) đang di chuyển song song.
+Ý nghĩa hoặc thông số: Cấm xe tải và xe ô tô (hoặc cấm các loại xe có kích thước tương tự như biểu tượng trên biển).
+F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '11'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '21'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.25'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.26'}]
+gate=high; s_max=0.948482; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.5 | fusion=0.965427 | corpus=0.886105 | example=0.974241 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.963980 | corpus=0.871626 | example=0.974241 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.948968 | corpus=0.854028 | example=0.959517 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 21 | fusion=0.946364 | corpus=0.840259 | example=0.958153 | sources=['corpus', 'example']
+
+===== train_76 =====
+Câu hỏi:
+ội dung của biển báo cấm trong hình được quy định ở Điều mấy trong Quy chuẩn Kỹ thuật Quốc gia về Báo hiệu đường bộ ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe đạp màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Biển báo cấm xe đạp (theo hình ảnh, không đọc rõ mã số hoặc tên chính xác trên biển chính).
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi rõ: 'CẤM XE ĐẠP, XE THÔ SƠ, XE MÁY'.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung nội dung cấm cho biển báo cấm phía trên.
+F2=0.7143; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.10'}]
+gate=high; s_max=0.857869; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.10 | fusion=0.925443 | corpus=0.894015 | example=0.928934 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 11 | fusion=0.924958 | corpus=0.900602 | example=0.927664 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.4 | fusion=0.924675 | corpus=0.886337 | example=0.928934 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.924432 | corpus=0.883911 | example=0.928934 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.6 | fusion=0.921492 | corpus=0.854506 | example=0.928934 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.3 | fusion=0.911563 | corpus=0.858620 | example=0.917446 | sources=['corpus', 'example']
+
+===== train_77 =====
+Câu hỏi:
+Biển báo trên thuộc bộ luật nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - hàng trên cùng
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, có biểu tượng xe ô tô và số '60' màu trắng.
+Ý nghĩa hoặc thông số: Biển báo giới hạn tốc độ tối đa cho xe ô tô là 60 km/h.
+
+Đối tượng: Biển báo tốc độ - hàng dưới cùng
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, có biểu tượng xe ô tô và số '60' màu trắng.
+Ý nghĩa hoặc thông số: Biển báo giới hạn tốc độ tối đa cho xe ô tô là 60 km/h.
+
+Đối tượng: Biển báo cấm dừng, đỗ xe - phía bên phải
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, có biểu tượng xe ô tô màu đen và dấu gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Biển báo cấm dừng, đỗ xe.
+
+Đối tượng: Biển báo cấm dừng, đỗ xe - phía bên phải
+Đặc điểm: Biển hình tròn, viền đỏ, nền xanh dương, có biểu tượng xe ô tô màu trắng và dấu gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Biển báo cấm dừng, đỗ xe.
+F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.16'}]
+gate=high; s_max=0.873863; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27c | fusion=0.931432 | corpus=0.881941 | example=0.936931 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.929972 | corpus=0.867337 | example=0.936931 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.929482 | corpus=0.887159 | example=0.934184 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | F.1 | fusion=0.926837 | corpus=0.860713 | example=0.934184 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.30 | fusion=0.925152 | corpus=0.843866 | example=0.934184 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.25 | fusion=0.924467 | corpus=0.837016 | example=0.934184 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | 41 | fusion=0.923526 | corpus=0.827606 | example=0.934184 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | 32 | fusion=0.920602 | corpus=0.864563 | example=0.926829 | sources=['corpus', 'example']
+
+===== train_85 =====
+Câu hỏi:
+Biển trên có 4 loại dịch vụ được nói đến. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn dịch vụ - phía trên
+Đặc điểm: Biển hình chữ nhật đứng, nền màu xanh lá cây, viền trắng. Phần trên cùng là biển phụ hình chữ nhật nhỏ, nền xanh dương, chữ trắng 'TRẠM DỪNG NGHỈ' và 'RESTAREA'. Bên dưới biển phụ là dòng chữ 'LA SƠN' màu trắng trên nền xanh lá. Dưới cùng là 4 biểu tượng trắng trên nền xanh lá: bình xăng, bàn ăn, dao nĩa, và người đứng (biểu tượng thông tin).
+Ý nghĩa hoặc thông số: Chỉ dẫn về Trạm dừng nghỉ La Sơn, cung cấp các dịch vụ: nhiên liệu, ăn uống và thông tin. Khoảng cách còn lại là 750m.
+F2=0.2941; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '46'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.7'}]
+gate=middle; s_max=0.804643; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.889760 | corpus=0.870918 | example=0.902322 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.16 | fusion=0.872147 | corpus=0.839049 | example=0.894212 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | E.14 | fusion=0.868570 | corpus=0.828604 | example=0.895214 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 38 | fusion=0.866940 | corpus=0.824529 | example=0.895214 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.866866 | corpus=0.824344 | example=0.895214 | sources=['corpus', 'example']
+
+===== train_93 =====
+Câu hỏi:
+Đây là biển báo chỉ dẫn sơ đồ và khoảng cách đến nút giao với đường dẫn vào đường cao tốc. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn chính - phía trên
+Đặc điểm: Hình chữ nhật đứng, nền màu xanh dương, viền trắng. Có biểu tượng hình chữ nhật màu xanh lá cây với hình vẽ con đường cao tốc (hai đường song song) ở góc trên bên trái. Có các dòng chữ màu trắng: 'TT. ĐỨC THỌ' ở góc trên bên phải, 'DIỄN CHÂU' ở giữa bên trái, '500 m' ở dưới cùng bên phải. Có mũi tên chỉ hướng rẽ phải và đi thẳng ở góc dưới bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến TT. Đức Thọ và Diễn Châu, với khoảng cách 500m. Mũi tên chỉ hướng rẽ phải và đi thẳng.
+
+Đối tượng: Biển phụ chỉ số hiệu đường QL.8A - góc trên bên phải
+Đặc điểm: Hình chữ nhật nhỏ, nền màu trắng, viền đen, chữ màu đen 'QL.8A'.
+Ý nghĩa hoặc thông số: Chỉ số hiệu đường QL.8A.
+
+Đối tượng: Biển phụ chỉ số hiệu đường CT.01 - giữa bên phải
+Đặc điểm: Hình chữ nhật nhỏ, nền màu vàng, viền đen, chữ màu đen 'CT.01'.
+Ý nghĩa hoặc thông số: Chỉ số hiệu đường CT.01.
+F2=0.3571; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.1'}]
+gate=high; s_max=0.870340; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.932333 | corpus=0.906803 | example=0.935170 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | P.3 | fusion=0.928226 | corpus=0.865726 | example=0.935170 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | E.14 | fusion=0.920866 | corpus=0.858396 | example=0.927808 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 36 | fusion=0.920515 | corpus=0.854882 | example=0.927808 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 38 | fusion=0.918086 | corpus=0.830591 | example=0.927808 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | P.2 | fusion=0.915415 | corpus=0.866908 | example=0.920805 | sources=['corpus', 'example']
+
+===== train_95 =====
+Câu hỏi:
+Đây là biển cảnh báo sắp đến khu vực dành cho người đi bộ sang đường. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - trung tâm ảnh
+Đặc điểm: Hình thoi, nền màu vàng, viền đen, có biểu tượng người đi bộ màu đen đang bước qua hai vạch ngang màu đen.
+Ý nghĩa hoặc thông số: Cảnh báo người tham gia giao thông về khu vực có người đi bộ sang đường.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.5'}]
+gate=high; s_max=0.871112; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | C.24 | fusion=0.929250 | corpus=0.872494 | example=0.935556 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.928284 | corpus=0.862831 | example=0.935556 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.12 | fusion=0.927971 | corpus=0.859702 | example=0.935556 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.925758 | corpus=0.837578 | example=0.935556 | sources=['corpus', 'example']
+
+===== train_97 =====
+Câu hỏi:
+Trên đoạn đường này, xe chạy với tốc độ là bao nhiêu thì bị phạm luật?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía bên phải đường
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 40 km/h
+F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
+gate=high; s_max=0.952113; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.967042 | corpus=0.885905 | example=0.976057 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.27 | fusion=0.959216 | corpus=0.807653 | example=0.976057 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.954479 | corpus=0.896837 | example=0.960883 | sources=['corpus', 'example']
+
+===== train_104 =====
+Câu hỏi:
+Đi 30km nữa là đến Ninh Bình và đi 34km nữa là đến Nam Định
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ đường - chính giữa
+Đặc điểm: Hình chữ nhật đứng, nền xanh dương, có biểu tượng mũi tên trắng dạng Y chia làm hai nhánh: nhánh trái hướng lên trái, nhánh phải hướng lên phải.
+Ý nghĩa hoặc thông số: Chỉ hướng đi đến hai địa điểm: Nam Định (30 km) và Ninh Bình (34 km).
+
+Đối tượng: Biển phụ - phía trên bên trái
+Đặc điểm: Chữ 'NAM ĐỊNH' màu trắng, bên dưới là '30 Km' màu trắng.
+Ý nghĩa hoặc thông số: Chỉ khoảng cách đến Nam Định là 30 km theo hướng mũi tên trái.
+
+Đối tượng: Biển phụ - phía trên bên phải
+Đặc điểm: Chữ 'NINH BÌNH' màu trắng, bên dưới là '34 Km' màu trắng.
+Ý nghĩa hoặc thông số: Chỉ khoảng cách đến Ninh Bình là 34 km theo hướng mũi tên phải.
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
+gate=middle; s_max=0.702972; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | P.17 | fusion=0.838812 | corpus=0.819801 | example=0.851486 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 26 | fusion=0.823912 | corpus=0.782551 | example=0.851486 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | E.14 | fusion=0.823858 | corpus=0.794332 | example=0.843542 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 46 | fusion=0.822231 | corpus=0.793714 | example=0.841243 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.817915 | corpus=0.779474 | example=0.843542 | sources=['corpus', 'example']
+
+===== train_112 =====
+Câu hỏi:
+Trên đoạn đường này, xe chạy với tốc độ là bao nhiêu thì không bị vi phạm luật?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía bên phải đường
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 40 km/h
+F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
+gate=high; s_max=0.946136; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.963867 | corpus=0.881061 | example=0.973068 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.27 | fusion=0.955907 | corpus=0.801457 | example=0.973068 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.951711 | corpus=0.896004 | example=0.957900 | sources=['corpus', 'example']
+
+===== train_113 =====
+Câu hỏi:
+Đối với vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đôi nét liền, xe được phép lấn làn, đè lên vạch. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Vạch phân chia hai chiều xe chạy - giữa đường
+Đặc điểm: Dạng vạch đôi nét liền màu vàng
+Ý nghĩa hoặc thông số: Vạch phân chia hai chiều xe chạy, cấm vượt và cấm lấn làn
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'G1.1'}]
+gate=high; s_max=0.821431; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.867210 | corpus=0.814741 | example=0.873040 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.25 | fusion=0.866363 | corpus=0.806269 | example=0.873040 | sources=['corpus', 'example']
+
+===== train_116 =====
+Câu hỏi:
+Biển nào không được đề cập trong hình trên?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu - vị trí trái
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình người đang làm việc với máy xúc.
+Ý nghĩa hoặc thông số: Biển báo hiệu công trường xây dựng.
+
+Đối tượng: Biển báo hiệu - vị trí giữa
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, chữ viết màu đen 'BỊ CHẬM'.
+Ý nghĩa hoặc thông số: Biển báo hiệu đường bị chập.
+
+Đối tượng: Biển báo hiệu - vị trí phải
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình hai vạch song song.
+Ý nghĩa hoặc thông số: Biển báo hiệu đường hẹp.
+
+Đối tượng: Biển báo hiệu - vị trí dưới cùng
+Đặc điểm: Biển hình chữ nhật, nền đỏ, có các mũi tên trắng chỉ hướng rẽ trái.
+Ý nghĩa hoặc thông số: Biển báo hiệu hướng rẽ trái.
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.27'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.3'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.45'}]
+gate=high; s_max=0.859069; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | D.14 | fusion=0.921412 | corpus=0.848312 | example=0.929534 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.27 | fusion=0.920410 | corpus=0.849936 | example=0.928240 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.3 | fusion=0.919067 | corpus=0.836502 | example=0.928240 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.918932 | corpus=0.823508 | example=0.929534 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 28 | fusion=0.918032 | corpus=0.826152 | example=0.928240 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | C.45 | fusion=0.917550 | corpus=0.821334 | example=0.928240 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | 22 | fusion=0.917049 | corpus=0.816330 | example=0.928240 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | B.24 | fusion=0.916702 | corpus=0.812853 | example=0.928240 | sources=['corpus', 'example']
+
+===== train_120 =====
+Câu hỏi:
+Biển báo nào không được xuất hiện trong hình trên?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe máy bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe máy đi vào
+
+Đối tượng: Biển báo cấm - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe đạp bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào
+
+Đối tượng: Biển báo cấm - dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng không rõ do bị che khuất.
+Ý nghĩa hoặc thông số: không xác định chắc chắn
+F2=0.4839; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.10'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.11'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.4'}]
+gate=high; s_max=0.893796; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.4 | fusion=0.938771 | corpus=0.886386 | example=0.944591 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.937781 | corpus=0.855730 | example=0.946898 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.10 | fusion=0.937158 | corpus=0.870259 | example=0.944591 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.24 | fusion=0.936083 | corpus=0.838744 | example=0.946898 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | C.3 | fusion=0.935063 | corpus=0.828549 | example=0.946898 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 28 | fusion=0.934824 | corpus=0.826156 | example=0.946898 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.12 | fusion=0.934392 | corpus=0.842599 | example=0.944591 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | B.1 | fusion=0.933910 | corpus=0.872015 | example=0.940787 | sources=['corpus', 'example']
+#9 | QCVN 41:2024/BGTVT | C.27 | fusion=0.933701 | corpus=0.814928 | example=0.946898 | sources=['corpus', 'example']
+#10 | QCVN 41:2024/BGTVT | C.45 | fusion=0.932958 | corpus=0.807500 | example=0.946898 | sources=['corpus', 'example']
+#11 | QCVN 41:2024/BGTVT | B.2 | fusion=0.932667 | corpus=0.859584 | example=0.940787 | sources=['corpus', 'example']
+#12 | QCVN 41:2024/BGTVT | B.3 | fusion=0.932571 | corpus=0.858622 | example=0.940787 | sources=['corpus', 'example']
+#13 | QCVN 41:2024/BGTVT | B.37 | fusion=0.932340 | corpus=0.856317 | example=0.940787 | sources=['corpus', 'example']
+#14 | QCVN 41:2024/BGTVT | B.31 | fusion=0.931258 | corpus=0.845492 | example=0.940787 | sources=['corpus', 'example']
+#15 | QCVN 41:2024/BGTVT | B.30 | fusion=0.930107 | corpus=0.833984 | example=0.940787 | sources=['corpus', 'example']
+
+===== train_122 =====
+Câu hỏi:
+Nội dung của 2 loại biển báo trên là gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía bên trái
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có đường chéo đỏ cắt từ góc trên bên trái xuống góc dưới bên phải. Bên trong có hình hai chiếc xe ô tô nhỏ (một màu đỏ, một màu đen) đang di chuyển song song theo hướng ngược chiều nhau.
+Ý nghĩa hoặc thông số: Cấm hai chiều xe cơ giới đi lại
+
+Đối tượng: Biển báo cấm - phía bên phải
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có đường chéo đỏ cắt từ góc trên bên trái xuống góc dưới bên phải. Bên trong có hình một chiếc xe tải lớn (màu đỏ) và một chiếc xe ô tô nhỏ (màu đen) đang di chuyển song song theo hướng ngược chiều nhau.
+Ý nghĩa hoặc thông số: Cấm hai chiều xe cơ giới và xe máy chuyên dùng đi lại
+F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.25'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.26'}]
+gate=high; s_max=0.913969; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.948459 | corpus=0.871729 | example=0.956985 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.25 | fusion=0.947133 | corpus=0.858467 | example=0.956985 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.929734 | corpus=0.871951 | example=0.936155 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.6 | fusion=0.929324 | corpus=0.867849 | example=0.936155 | sources=['corpus', 'example']
+
+===== train_129 =====
+Câu hỏi:
+Loại xe không bị cấm ở hình trên là xe nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe đạp màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Biển báo cấm xe đạp đi vào.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi: 'CẤM XE ĐẠP, XE THÔ SƠ, XE MÁY'.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung nội dung cấm cho biển báo chính: cấm xe đạp, xe thô sơ và xe máy.
+F2=0.7143; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.10'}]
+gate=high; s_max=0.841240; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.10 | fusion=0.916593 | corpus=0.880346 | example=0.920620 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.914409 | corpus=0.858509 | example=0.920620 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.3 | fusion=0.912622 | corpus=0.858863 | example=0.918595 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | F.11 | fusion=0.911440 | corpus=0.847037 | example=0.918595 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.23 | fusion=0.910849 | corpus=0.835806 | example=0.919187 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 41 | fusion=0.908641 | corpus=0.819052 | example=0.918595 | sources=['corpus', 'example']
+
+===== train_134 =====
+Câu hỏi:
+Xe được phép dừng và đỗ xe trên đoạn đường này. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe hơi màu đen với gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe
+F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.30'}]
+gate=high; s_max=0.928928; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.955927 | corpus=0.879097 | example=0.964464 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.30 | fusion=0.955916 | corpus=0.878978 | example=0.964464 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.954197 | corpus=0.873698 | example=0.963142 | sources=['corpus', 'example']
+
+===== train_135 =====
+Câu hỏi:
+Đây là biển báo nhiều chỗ ngoặt nguy hiểm liên tiếp. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo nguy hiểm - trung tâm
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình nhiều đoạn cong nối tiếp nghiêng về bên phải
+Ý nghĩa hoặc thông số: Cảnh báo tài xế về đoạn đường có nhiều chỗ ngoặt nguy hiểm liên tiếp
+F2=0.3571; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.2'}]
+gate=high; s_max=0.862168; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.927315 | corpus=0.893398 | example=0.931084 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.1 | fusion=0.926475 | corpus=0.884996 | example=0.931084 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.921502 | corpus=0.883633 | example=0.925709 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.918842 | corpus=0.857035 | example=0.925709 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.2 | fusion=0.917335 | corpus=0.841970 | example=0.925709 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | C.47 | fusion=0.915614 | corpus=0.823070 | example=0.925896 | sources=['corpus', 'example']
+
+===== train_136 =====
+Câu hỏi:
+Đây là nhóm biển báo nguy hiểm và cảnh báo đúng không?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển cảnh báo công trường - phía trên bên trái
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình người đang đào đất bằng cuốc.
+Ý nghĩa hoặc thông số: Cảnh báo có công trường xây dựng hoặc sửa chữa đường phía trước.
+
+Đối tượng: Biển cảnh báo bị chậm - phía trên giữa
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, chữ viết tay màu đen 'BỊ CHẬM'.
+Ý nghĩa hoặc thông số: Cảnh báo tốc độ xe bị chậm lại do tình trạng đường hoặc phương tiện phía trước.
+
+Đối tượng: Biển cảnh báo đường hẹp - phía trên bên phải
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình hai đường song song cách nhau hẹp dần từ trên xuống dưới.
+Ý nghĩa hoặc thông số: Cảnh báo đường phía trước bị hẹp lại.
+
+Đối tượng: Biển chỉ dẫn hướng rẽ - phía dưới
+Đặc điểm: Hình chữ nhật, nền đỏ, có các mũi tên trắng chỉ hướng rẽ trái liên tiếp.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải rẽ trái.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '11'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '27'}]
+gate=high; s_max=0.870802; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.926307 | corpus=0.874599 | example=0.932053 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.47 | fusion=0.925738 | corpus=0.838769 | example=0.935401 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.25 | fusion=0.922743 | corpus=0.838959 | example=0.932053 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.1 | fusion=0.921768 | corpus=0.875022 | example=0.926962 | sources=['corpus', 'example']
+
+===== train_149 =====
+Câu hỏi:
+"Xe ô tô đang di chuyển ở làn giữa được phép di chuyển qua làn trong cùng bên phải không", đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu làn đường - phần trái
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, viền trắng. Có hai biểu tượng xe ô tô màu trắng nằm cạnh nhau, ngăn cách bởi một vạch kẻ đường màu trắng dạng nét đứt dọc.
+Ý nghĩa hoặc thông số: Biển báo hiệu làn đường dành riêng cho xe ô tô.
+
+Đối tượng: Biển báo hiệu làn đường - phần phải
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, viền trắng. Có biểu tượng xe máy và xe ba bánh màu trắng. Dưới biểu tượng có dòng chữ: 'XE 02 BÁNH VÀ 03 BÁNH'.
+Ý nghĩa hoặc thông số: Biển báo hiệu làn đường dành riêng cho xe máy và xe ba bánh.
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.16'}]
+gate=high; s_max=0.870121; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.925895 | corpus=0.847230 | example=0.934635 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.16 | fusion=0.924765 | corpus=0.860903 | example=0.931861 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 28 | fusion=0.923398 | corpus=0.818435 | example=0.935061 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.27c | fusion=0.922892 | corpus=0.817198 | example=0.934635 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 32 | fusion=0.922523 | corpus=0.838485 | example=0.931861 | sources=['corpus', 'example']
+
+===== train_174 =====
+Câu hỏi:
+Biển báo trong hình thuộc loại biển báo nào ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen hướng xuống rồi quay ngược lên trên (quay đầu) bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.24'}]
+gate=high; s_max=0.909207; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 11 | fusion=0.947525 | corpus=0.887818 | example=0.954159 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.946112 | corpus=0.873688 | example=0.954159 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.24 | fusion=0.945558 | corpus=0.864146 | example=0.954604 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.944967 | corpus=0.858235 | example=0.954604 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.23 | fusion=0.943675 | corpus=0.854309 | example=0.953604 | sources=['corpus', 'example']
+
+===== train_175 =====
+Câu hỏi:
+Nội dung của biển báo này là gì ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen hướng xuống rồi quay ngược lên trên (quay đầu) bị gạch chéo đỏ cắt ngang.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.24'}]
+gate=high; s_max=0.933146; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.958661 | corpus=0.887453 | example=0.966573 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 11 | fusion=0.957553 | corpus=0.876374 | example=0.966573 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.955616 | corpus=0.857004 | example=0.966573 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.24 | fusion=0.943950 | corpus=0.881769 | example=0.950859 | sources=['corpus', 'example']
+
+===== train_197 =====
+Câu hỏi:
+Các biển báo trong hình thuộc loại biển báo nào ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chính - phía trên
+Đặc điểm: Hình chữ nhật đứng, nền xanh lá cây, viền trắng, chữ trắng in hoa: 'NHẬP LAN' ở dòng trên, 'MERGE LANE' ở dòng dưới.
+Ý nghĩa hoặc thông số: Báo hiệu điểm nhập làn hoặc hợp lưu làn đường; chưa xác định chắc chắn điều kiện pháp lý cụ thể từ ảnh.
+
+Đối tượng: Biển phụ - ngay bên dưới biển chính
+Đặc điểm: Hình chữ nhật đứng, nền xanh lá cây, viền trắng, chữ trắng: '150 m'.
+Ý nghĩa hoặc thông số: Chỉ khoảng cách còn lại đến điểm nhập làn hoặc hợp lưu làn đường.
+
+Đối tượng: Biển phụ chỉ hướng - gắn bên trái cột biển chính
+Đặc điểm: Hình tam giác cân, nền vàng, biểu tượng mũi tên đen chỉ hướng rẽ phải.
+Ý nghĩa hoặc thông số: Chỉ hướng rẽ phải tại điểm nhập làn hoặc hợp lưu làn đường.
+F2=0.2941; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '45'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '46'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
+gate=high; s_max=0.841255; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.915371 | corpus=0.874367 | example=0.919927 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.913122 | corpus=0.845572 | example=0.920628 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.16 | fusion=0.913064 | corpus=0.871197 | example=0.917716 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | D.17 | fusion=0.911311 | corpus=0.827456 | example=0.920628 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 31 | fusion=0.908669 | corpus=0.827244 | example=0.917716 | sources=['corpus', 'example']
+
+===== train_198 =====
+Câu hỏi:
+Nội dung của biển báo hình chữ nhật có nền vàng, hình màu đen là gì ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển phụ - ngay bên dưới biển chính
+Đặc điểm: Hình tam giác cân, nền vàng, viền đen, chứa biểu tượng mũi tên đen chỉ hướng rẽ phải (hình tam giác đen hướng phải).
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải rẽ phải; đây là biển báo chỉ dẫn hướng đi.
+
+Đối tượng: Biển số khoảng cách - gắn cùng cột với biển phụ
+Đặc điểm: Hình chữ nhật đứng, nền xanh lá cây, viền trắng, chữ trắng: '150 m'.
+Ý nghĩa hoặc thông số: Chỉ khoảng cách còn lại đến điểm nhập làn hoặc điểm rẽ phải được báo hiệu bởi biển phụ.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '45'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '46'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
+gate=high; s_max=0.859129; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 41 | fusion=0.925414 | corpus=0.888065 | example=0.929564 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | F.11 | fusion=0.922235 | corpus=0.856274 | example=0.929564 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.918183 | corpus=0.817846 | example=0.929331 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | F.1 | fusion=0.913375 | corpus=0.867438 | example=0.918480 | sources=['corpus', 'example']
+
+===== train_199 =====
+Câu hỏi:
+Nội dung của biển báo hình chữ nhật có nền xanh lá cây, chữ màu trắng là gì ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chính - phía trên
+Đặc điểm: Hình chữ nhật đứng, nền xanh lá cây, chữ màu trắng, có viền trắng mỏng. Nội dung chữ: 'NHẬP LAN' (dòng trên), 'MERGE LANE' (dòng dưới), '150 m' (dòng dưới cùng).
+Ý nghĩa hoặc thông số: Báo hiệu điểm nhập làn hoặc hợp lưu làn đường trong vòng 150 mét phía trước.
+
+Đối tượng: Biển phụ - ngay bên dưới biển chính
+Đặc điểm: Hình tam giác cân, nền vàng, có mũi tên đen chỉ hướng cong sang phải.
+Ý nghĩa hoặc thông số: Chỉ hướng rẽ hoặc hợp lưu làn đường sang phải.
+F2=0.3333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '45'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '46'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
+gate=high; s_max=0.825343; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.906753 | corpus=0.853485 | example=0.912671 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | P.4 | fusion=0.902237 | corpus=0.808329 | example=0.912671 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | P.2 | fusion=0.898325 | corpus=0.819586 | example=0.907074 | sources=['corpus', 'example']
+
+===== train_204 =====
+Câu hỏi:
+Biển báo trong hình có ý nghĩa gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trước bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '13' màu đen và ký hiệu 't' màu đen ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có trọng tải vượt quá 13 tấn đi vào đoạn đường này.
+F2=0.6250; gold=[{'law_id': '36/2024/QH15', 'article_id': '9.0'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.15'}]
+gate=high; s_max=0.897355; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.15 | fusion=0.940982 | corpus=0.871719 | example=0.948677 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.940467 | corpus=0.866573 | example=0.948677 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.6 | fusion=0.934122 | corpus=0.858159 | example=0.942563 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.27 | fusion=0.923761 | corpus=0.816087 | example=0.935725 | sources=['corpus', 'example']
+
+===== train_215 =====
+Câu hỏi:
+Muốn đi Mai Sơn phải đi theo hướng nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hướng dẫn - treo trên cao, phía trên xe
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có biểu tượng mũi tên trắng chỉ hướng đi thẳng và rẽ phải. Có chữ viết màu trắng và vàng.
+Ý nghĩa hoặc thông số: Chỉ dẫn: Đi thẳng để đến 'THÀNH PHỐ TAM ĐIỆP'. Rẽ phải để đến 'MAI SƠN' và 'QUỐC LỘ 45'. Biển có mã 'CT.01' ở góc trên bên trái.
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.5'}]
+gate=middle; s_max=0.785594; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.880790 | corpus=0.870160 | example=0.887877 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.13 | fusion=0.877284 | corpus=0.854014 | example=0.892797 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | E.14 | fusion=0.869632 | corpus=0.835062 | example=0.892679 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.865816 | corpus=0.825345 | example=0.892797 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.865090 | corpus=0.836953 | example=0.883848 | sources=['corpus', 'example']
+
+===== train_217 =====
+Câu hỏi:
+Nếu muốn chạy với tốc độ tối đa 90 km/h, bạn phải di chuyển vào làn nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn làn đường - làn trái
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng. Có biểu tượng mũi tên hướng lên trên và hình vẽ ô tô bên dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện di chuyển trong làn này (làn trái).
+
+Đối tượng: Biển báo cấm tốc độ tối đa - làn trái
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, có số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 90 km/h.
+F2=0.7143; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
+gate=high; s_max=0.888121; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.939115 | corpus=0.894601 | example=0.944061 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.6 | fusion=0.937942 | corpus=0.882874 | example=0.944061 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.936842 | corpus=0.871875 | example=0.944061 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.936218 | corpus=0.865633 | example=0.944061 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 46 | fusion=0.935666 | corpus=0.860110 | example=0.944061 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.30 | fusion=0.931258 | corpus=0.824502 | example=0.943119 | sources=['corpus', 'example']
+
+===== train_218 =====
+Câu hỏi:
+Biển báo bên phải trong hình dưới đây có ý nghĩa gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải với số '2,5t' bên trong
+Ý nghĩa hoặc thông số: Cấm xe tải trọng từ 2,5 tấn trở lên đi vào
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải
+Ý nghĩa hoặc thông số: Cấm xe tải đi vào
+
+Đối tượng: Biển phụ - thời gian áp dụng
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, chữ đen ghi: '06:30 - 06:30' và '16:00 - 19:00'
+Ý nghĩa hoặc thông số: Thời gian áp dụng cho các biển cấm ở trên
+
+Đối tượng: Biển báo hiệu tốc độ tối đa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '40' màu đen ở giữa
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h
+F2=0.5882; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.5'}]
+gate=high; s_max=0.916767; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.26 | fusion=0.949350 | corpus=0.868047 | example=0.958383 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.948989 | corpus=0.864439 | example=0.958383 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.935045 | corpus=0.849707 | example=0.944527 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.25 | fusion=0.932605 | corpus=0.857664 | example=0.940932 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.30 | fusion=0.930285 | corpus=0.834470 | example=0.940932 | sources=['corpus', 'example']
+
+===== train_221 =====
+Câu hỏi:
+Biển báo trong hình có ý nghĩa gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển cảnh báo - phía trên
+Đặc điểm: Hình tam giác đều, đỉnh hướng lên trên; nền màu vàng; viền màu đỏ; bên trong có hai mũi tên đen hướng xuống dưới song song, cách nhau một khoảng.
+Ý nghĩa hoặc thông số: Cảnh báo giao thông hai chiều (xe phải nhường đường cho xe đi ngược chiều hoặc lưu thông hai chiều trên đoạn đường này).
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền màu xanh dương; viền trắng; chữ viết màu trắng, in hoa, rõ ràng: 'ĐƯỜNG HAI CHIỀU'.
+Ý nghĩa hoặc thông số: Biển phụ giải thích ý nghĩa của biển cảnh báo phía trên: đoạn đường này là đường hai chiều.
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.4'}]
+gate=high; s_max=0.880144; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.932699 | corpus=0.866343 | example=0.940072 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.3 | fusion=0.930241 | corpus=0.841759 | example=0.940072 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.4 | fusion=0.929293 | corpus=0.859540 | example=0.937044 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.8 | fusion=0.924486 | corpus=0.837600 | example=0.934140 | sources=['corpus', 'example']
+
+===== train_240 =====
+Câu hỏi:
+Chiều cao giới hạn phía trước là bao nhiêu?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - giới hạn chiều cao (trung tâm hàng biển trên)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '3,5' và đơn vị 'm' ở giữa, kèm biểu tượng hình tam giác cân (biểu tượng chiều cao) phía trên số.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao phương tiện được phép đi qua là 3,5 mét.
+
+Đối tượng: Biển phụ - CẤM CÁC LOẠI XE TẢI (phía dưới biển giới hạn chiều cao)
+Đặc điểm: Hình chữ nhật đứng, nền đỏ, chữ 'CẤM' màu trắng ở trên, chữ 'CÁC LOẠI XE TẢI' màu trắng ở dưới.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung ý nghĩa cho biển báo cấm chính, cấm tất cả các loại xe tải.
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.17'}]
+gate=middle; s_max=0.813553; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | B.18 | fusion=0.889561 | corpus=0.863738 | example=0.906777 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.880755 | corpus=0.851322 | example=0.900377 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.1 | fusion=0.878529 | corpus=0.845757 | example=0.900377 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.874403 | corpus=0.835442 | example=0.900377 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 11 | fusion=0.872875 | corpus=0.822022 | example=0.906777 | sources=['corpus', 'example']
+
+===== train_241 =====
+Câu hỏi:
+Các loại phương tiện bị cấm trên đoạn đường này?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên (cấm người đi bộ)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng người đi bộ màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào.
+
+Đối tượng: Biển báo cấm - phía trên (cấm xe đạp)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe đạp màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào.
+
+Đối tượng: Biển báo cấm - phía trên (giới hạn tốc độ)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '30' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 30 km/h.
+
+Đối tượng: Biển báo cấm - phía trên (giới hạn chiều cao)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '3,5m' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao phương tiện 3,5 mét.
+
+Đối tượng: Biển báo hiệu - phía trên (làn xe)
+Đặc điểm: Hình chữ nhật, nền xanh dương, biểu tượng xe tải màu trắng và biểu tượng xe máy màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn về làn đường dành cho xe tải và xe máy.
+
+Đối tượng: Biển báo cấm - phía dưới (cấm xe tải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe tải đi vào.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm xe tải
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ 'CẤM' màu trắng ở trên, chữ 'CÁC LOẠI XE TẢI' màu trắng ở dưới.
+Ý nghĩa hoặc thông số: Biển phụ giải thích nội dung biển cấm là cấm các loại xe tải.
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.6'}]
+gate=high; s_max=0.918553; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.4 | fusion=0.951754 | corpus=0.884057 | example=0.959276 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.10 | fusion=0.951379 | corpus=0.880308 | example=0.959276 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.950171 | corpus=0.868221 | example=0.959276 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.12 | fusion=0.949881 | corpus=0.865325 | example=0.959276 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 24 | fusion=0.937348 | corpus=0.884495 | example=0.943220 | sources=['corpus', 'example']
+
+===== train_242 =====
+Câu hỏi:
+Bạn đang điều khiển xe ô tô đến đoạn đường này với tốc độ 50km/h thì bạn nên làm gì khi đi vô đường này?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu tốc độ tối đa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '30' màu đen.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 30 km/h.
+
+Đối tượng: Biển báo hiệu chiều cao giới hạn
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '3,5m' màu đen.
+Ý nghĩa hoặc thông số: Chiều cao giới hạn là 3,5 mét.
+
+Đối tượng: Biển báo hiệu phương tiện được phép vào
+Đặc điểm: Hình chữ nhật, nền xanh dương, biểu tượng xe tải màu trắng.
+Ý nghĩa hoặc thông số: Chỉ xe tải được phép vào.
+
+Đối tượng: Biển báo hiệu phương tiện được phép vào
+Đặc điểm: Hình chữ nhật, nền xanh dương, biểu tượng xe máy màu trắng.
+Ý nghĩa hoặc thông số: Chỉ xe máy được phép vào.
+
+Đối tượng: Biển báo cấm - phía dưới (cấm xe tải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe tải vào đường.
+
+Đối tượng: Biển phụ - phía dưới biển cấm xe tải
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ 'CẤM' màu trắng, dòng chữ nhỏ hơn bên dưới không đọc rõ.
+Ý nghĩa hoặc thông số: Biển phụ giải thích nội dung biển cấm.
+F2=0.5882; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
+gate=high; s_max=0.926595; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.958023 | corpus=0.910554 | example=0.963297 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | F.1 | fusion=0.955286 | corpus=0.883184 | example=0.963297 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.954753 | corpus=0.877849 | example=0.963297 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.30 | fusion=0.952982 | corpus=0.860142 | example=0.963297 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.25 | fusion=0.952429 | corpus=0.854617 | example=0.963297 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 41 | fusion=0.950322 | corpus=0.833545 | example=0.963297 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.27c | fusion=0.943087 | corpus=0.894304 | example=0.948507 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | D.6 | fusion=0.940153 | corpus=0.903123 | example=0.944268 | sources=['corpus', 'example']
+#9 | QCVN 41:2024/BGTVT | 32 | fusion=0.937739 | corpus=0.878979 | example=0.944268 | sources=['corpus', 'example']
+
+===== train_243 =====
+Câu hỏi:
+Có bao nhiêu biển tròn nền trắng viền đỏ là biển cấm?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên, biển đầu tiên (bên trái)
+Đặc điểm: Biển tròn nền trắng viền đỏ, biểu tượng người đi bộ bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm người đi bộ
+
+Đối tượng: Biển báo cấm - phía trên, biển thứ hai
+Đặc điểm: Biển tròn nền trắng viền đỏ, biểu tượng xe máy bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm xe máy
+
+Đối tượng: Biển báo giới hạn tốc độ - phía trên
+Đặc điểm: Biển tròn nền trắng viền đỏ, số '30' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 30 km/h
+
+Đối tượng: Biển báo giới hạn chiều cao - phía trên
+Đặc điểm: Biển tròn nền trắng viền đỏ, số '3,5m' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao 3,5m
+
+Đối tượng: Biển chỉ dẫn phương tiện - phía trên
+Đặc điểm: Biển hình chữ nhật nền xanh, có biểu tượng xe tải và xe máy màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn cho xe tải và xe máy
+
+Đối tượng: Biển báo cấm - phía dưới bên phải
+Đặc điểm: Biển tròn nền trắng viền đỏ, biểu tượng xe tải bị gạch chéo màu đỏ, kèm biển phụ chữ 'CẤM CÁC LOẠI XE TẢI'.
+Ý nghĩa hoặc thông số: Cấm các loại xe tải
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}]
+gate=high; s_max=0.854892; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 11 | fusion=0.920648 | corpus=0.889316 | example=0.924129 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.4 | fusion=0.920601 | corpus=0.858998 | example=0.927446 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.919873 | corpus=0.851713 | example=0.927446 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.6 | fusion=0.918580 | corpus=0.838783 | example=0.927446 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.10 | fusion=0.918478 | corpus=0.837763 | example=0.927446 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.15 | fusion=0.913581 | corpus=0.833729 | example=0.922454 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.24 | fusion=0.913398 | corpus=0.831900 | example=0.922454 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | 28 | fusion=0.912986 | corpus=0.827780 | example=0.922454 | sources=['corpus', 'example']
+#9 | QCVN 41:2024/BGTVT | C.45 | fusion=0.911147 | corpus=0.809389 | example=0.922454 | sources=['corpus', 'example']
+
+===== train_246 =====
+Câu hỏi:
+Người đi bộ không được phép lưu thông trên đường này đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên (cái đầu tiên từ trái sang)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng người đi bộ màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm người đi bộ
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.12'}]
+gate=high; s_max=0.896854; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.12 | fusion=0.943607 | corpus=0.900231 | example=0.948427 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.942214 | corpus=0.886299 | example=0.948427 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.24 | fusion=0.940707 | corpus=0.871229 | example=0.948427 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 28 | fusion=0.940069 | corpus=0.864844 | example=0.948427 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 11 | fusion=0.932925 | corpus=0.859590 | example=0.941073 | sources=['corpus', 'example']
+
+===== train_251 =====
+Câu hỏi:
+Theo biển báo trong hình, xe tải có tổng trọng lượng xe và hàng hóa là 15 tấn có được phép đi vào đoạn đường này không?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tải trọng - phía trước bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '13' màu đen và ký hiệu 't' màu đen ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có tổng trọng lượng xe và hàng hóa vượt quá 13 tấn đi vào đoạn đường này.
+F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.15'}]
+gate=high; s_max=0.902056; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.15 | fusion=0.944770 | corpus=0.888449 | example=0.951028 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.941184 | corpus=0.852594 | example=0.951028 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.6 | fusion=0.928563 | corpus=0.870414 | example=0.935023 | sources=['corpus', 'example']
+
+===== train_252 =====
+Câu hỏi:
+Biển báo trong hình có ý nghĩa gì đối với các phương tiện giao thông di chuyển trên đoạn đường này?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trước bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '13' màu đen và ký hiệu 't' màu đen ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có trọng lượng toàn bộ vượt quá 13 tấn đi vào.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22 B.15'}]
+gate=high; s_max=0.899835; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.15 | fusion=0.943245 | corpus=0.883196 | example=0.949918 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.941959 | corpus=0.870333 | example=0.949918 | sources=['corpus', 'example']
+
+===== train_253 =====
+Câu hỏi:
+ Một xe ô tô con chở 5 người và một ít hành lý, tổng trọng lượng xe và hàng hóa ước tính khoảng 2 tấn, có được phép đi vào đoạn đường có biển báo này không?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tải trọng - phía trước bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '13' màu đen và ký hiệu 't' màu đen ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Biển báo giới hạn tải trọng tối đa 13 tấn cho các phương tiện đi qua.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22 B.15'}]
+gate=high; s_max=0.835262; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.6 | fusion=0.911728 | corpus=0.864495 | example=0.916976 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.15 | fusion=0.911422 | corpus=0.855543 | example=0.917631 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.910531 | corpus=0.846635 | example=0.917631 | sources=['corpus', 'example']
+
+===== train_255 =====
+Câu hỏi:
+Xe tải có trọng tải toàn bộ cho phép (cả xe và hàng) là 3 tấn được phép đi vào đoạn đường này vào lúc 14h00 đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải với số '2,5t' bên trong.
+Ý nghĩa hoặc thông số: Cấm xe tải trọng toàn bộ cho phép từ 2,5 tấn trở lên đi vào trong giờ cấm (theo biển phụ bên dưới).
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có hai dòng chữ: '06.30 - 06.30' và '16.00 - 19.00'.
+Ý nghĩa hoặc thông số: Thời gian cấm xe tải trọng từ 2,5 tấn trở lên đi vào là từ 06:30 đến 06:30 và từ 16:00 đến 19:00.
+
+Đối tượng: Biển báo hiệu tốc độ tối đa - phía trên bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 40 km/h.
+
+Đối tượng: Biển báo hiệu loại xe - phía dưới biển tốc độ
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, biểu tượng đen là hình xe tải.
+Ý nghĩa hoặc thông số: Biển này thường đi kèm với biển cấm để chỉ rõ đối tượng bị cấm (xe tải), nhưng trong ảnh không có biển cấm đi kèm trực tiếp, nên ý nghĩa cụ thể chưa xác định chắc chắn.
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.6'}]
+gate=high; s_max=0.905290; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.941411 | corpus=0.840302 | example=0.952645 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | F.10 | fusion=0.940122 | corpus=0.827414 | example=0.952645 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.5 | fusion=0.938770 | corpus=0.813895 | example=0.952645 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.937100 | corpus=0.797200 | example=0.952645 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.6 | fusion=0.928603 | corpus=0.863303 | example=0.935858 | sources=['corpus', 'example']
+
+===== train_256 =====
+Câu hỏi:
+Biển báo tròn màu đỏ có số "40" trắng bên trong cho phép tất cả các loại phương tiện (trừ xe tải) được chạy với tốc độ tối đa là 40 km/h trên đoạn đường này đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Biển tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải với số '2,5t' bên trong.
+Ý nghĩa hoặc thông số: Cấm xe tải trọng 2,5 tấn và các loại xe có trọng lượng lớn hơn đi vào.
+
+Đối tượng: Biển báo giới hạn tốc độ - phía trên
+Đặc điểm: Biển tròn, viền đỏ, nền trắng, số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 40 km/h.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Biển hình chữ nhật, nền trắng, viền đen, có hai dòng chữ: '06:30 - 06:30' và '16:00 - 19:00'.
+Ý nghĩa hoặc thông số: Biển phụ quy định thời gian áp dụng cho biển báo cấm xe tải trọng 2,5 tấn.
+
+Đối tượng: Biển phụ - ngay bên dưới biển giới hạn tốc độ
+Đặc điểm: Biển hình chữ nhật, nền trắng, viền đen, có biểu tượng đen là hình xe tải.
+Ý nghĩa hoặc thông số: Biển phụ chỉ rõ đối tượng bị giới hạn tốc độ là xe tải.
+F2=0.5882; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.5'}]
+gate=high; s_max=0.873832; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.930294 | corpus=0.875395 | example=0.936394 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.928738 | corpus=0.855138 | example=0.936916 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.14 | fusion=0.927530 | corpus=0.843056 | example=0.936916 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.927423 | corpus=0.841992 | example=0.936916 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.11 | fusion=0.924846 | corpus=0.816217 | example=0.936916 | sources=['corpus', 'example']
+
+===== train_257 =====
+Câu hỏi:
+Nếu bạn đang điều khiển một xe ô tô con và muốn đi thẳng, bạn có được phép duy trì tốc độ 90 km/h trên làn đường bên trái đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ tối đa - làn đường bên trái
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 90 km/h cho xe ô tô con trên làn đường này.
+
+Đối tượng: Biển chỉ dẫn hướng đi - làn đường bên trái
+Đặc điểm: Biển hình chữ nhật, nền xanh, biểu tượng mũi tên hướng lên trên và hình xe ô tô con bên dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn xe ô tô con đi thẳng trên làn đường này.
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
+gate=high; s_max=0.878729; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | D.6 | fusion=0.932242 | corpus=0.868141 | example=0.939364 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.929602 | corpus=0.841738 | example=0.939364 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.927469 | corpus=0.869292 | example=0.933934 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.27c | fusion=0.926863 | corpus=0.864703 | example=0.933769 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 22 | fusion=0.924917 | corpus=0.845250 | example=0.933769 | sources=['corpus', 'example']
+
+===== train_262 =====
+Câu hỏi:
+Khi gặp biển báo tam giác viền đỏ có hình vòng tròn màu vàng bên trong như trong hình, người lái xe cần hiểu điều gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - trung tâm ảnh
+Đặc điểm: Biển báo hình tam giác, viền đỏ, nền vàng, biểu tượng vòng tròn xoay (vòng tròn có mũi tên xoay vòng) màu đen ở giữa.
+Ý nghĩa hoặc thông số: Biển báo cảnh báo vòng xoay giao lộ phía trước.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '26'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.6'}]
+gate=high; s_max=0.902154; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | C.40 | fusion=0.940966 | corpus=0.849962 | example=0.951077 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.940695 | corpus=0.847257 | example=0.951077 | sources=['corpus', 'example']
+
+===== train_263 =====
+Câu hỏi:
+Biển báo chỉ dẫn màu xanh lớn cung cấp thông tin gì cho người tham gia giao thông?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Biển hình chữ nhật đứng, nền màu xanh dương, viền trắng. Có chữ viết màu trắng: 'NGUY HIỂM GIẢM TỐC ĐỘ' trong khung hình chữ nhật nhỏ ở góc trên bên trái. Phần chính ghi: 'CẦU HẠC TRÌ 21 Km', 'THỊ XÃ PHÚ THỌ 18 Km', và mũi tên chỉ hướng lên trên. Có thêm mũi tên chỉ hướng sang trái và phải với chú thích 'ĐẾN HƯNG 0,2'.
+Ý nghĩa hoặc thông số: Biển báo chỉ dẫn cung cấp thông tin về khoảng cách đến các địa điểm: Cầu Hạc Trì (21 km), Thị xã Phú Thọ (18 km) và Hưng (0,2 km).
+F2=0.7143; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
+gate=high; s_max=0.830665; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | P.17 | fusion=0.911676 | corpus=0.878765 | example=0.915333 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 26 | fusion=0.906040 | corpus=0.822408 | example=0.915333 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 36 | fusion=0.903405 | corpus=0.854877 | example=0.908797 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | E.14 | fusion=0.902367 | corpus=0.844504 | example=0.908797 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | P.3 | fusion=0.902365 | corpus=0.851595 | example=0.908006 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 37 | fusion=0.900816 | corpus=0.836109 | example=0.908006 | sources=['corpus', 'example']
+
+===== train_264 =====
+Câu hỏi:
+Khoảng cách từ vị trí đặt biển báo đến Thị xã Phú Thọ là bao nhiêu theo thông tin trên biển?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía phải
+Đặc điểm: Biển hình chữ nhật, nền xanh, chữ và mũi tên trắng. Có biển phụ hình chữ nhật nhỏ ở góc trên bên trái. Nội dung chữ: 'NGUY HIỂM GIẢM TỐC ĐỘ', 'CẦU HẠC TRÌ 21 Km', 'THỊ XÃ PHÚ THỌ 18 Km', 'ĐẾN HƯNG 0,2'. Có mũi tên chỉ hướng lên trên, sang trái và sang phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến Cầu Hạc Trì (21 km), Thị xã Phú Thọ (18 km) và Hưng (0,2 km). Cảnh báo nguy hiểm giảm tốc độ.
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
+gate=middle; s_max=0.740379; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | P.17 | fusion=0.862551 | corpus=0.851093 | example=0.870190 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.855712 | corpus=0.848102 | example=0.860785 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 46 | fusion=0.853701 | corpus=0.831214 | example=0.868693 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | E.14 | fusion=0.845884 | corpus=0.811433 | example=0.868850 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 26 | fusion=0.844247 | corpus=0.805333 | example=0.870190 | sources=['corpus', 'example']
+
+===== train_265 =====
+Câu hỏi:
+Biển báo nhỏ màu xanh ghi "NGUY HIỂM GIẢM TỐC ĐỘ" trên cùng của cột biển chỉ dẫn có ý nghĩa là người lái xe cần lập tức dừng lại đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo nguy hiểm - phía trên cột biển chỉ dẫn
+Đặc điểm: Hình chữ nhật đứng, nền màu xanh, viền trắng, chữ trắng ghi 'NGUY HIỂM GIẢM TỐC ĐỘ'.
+Ý nghĩa hoặc thông số: Cảnh báo người lái xe cần giảm tốc độ do có nguy hiểm phía trước.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
+gate=high; s_max=0.853275; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | C.47 | fusion=0.917462 | corpus=0.834882 | example=0.926638 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.906906 | corpus=0.879073 | example=0.909999 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.905902 | corpus=0.860075 | example=0.910994 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.45 | fusion=0.905349 | corpus=0.863494 | example=0.909999 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | D.2 | fusion=0.904966 | corpus=0.850722 | example=0.910994 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | F.11 | fusion=0.904138 | corpus=0.851393 | example=0.909999 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | 41 | fusion=0.901172 | corpus=0.821729 | example=0.909999 | sources=['corpus', 'example']
+
+===== train_266 =====
+Câu hỏi:
+Dựa vào biển báo chỉ dẫn, nếu muốn đến "Đến Hùng QL2", người lái xe phải rẽ phải tại ngã ba/ngã tư phía trước đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, chữ và mũi tên trắng. Có biển phụ hình chữ nhật đứng, nền trắng, viền xanh, chữ đen ghi 'NGUY HIỂM GIẢM TỐC ĐỘ'.
+Ý nghĩa hoặc thông số: Chỉ dẫn: 'CẦU HẠC TRÌ 21 Km', 'THỊ XÃ PHÚ THỌ 18 Km'. Mũi tên chỉ hướng: thẳng tiến, rẽ trái, rẽ phải. Biển phụ cảnh báo nguy hiểm giảm tốc độ.
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
+gate=middle; s_max=0.792751; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | D.1a | fusion=0.888463 | corpus=0.876593 | example=0.896376 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.878664 | corpus=0.858346 | example=0.892209 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.872198 | corpus=0.835933 | example=0.896376 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 36 | fusion=0.868957 | corpus=0.835089 | example=0.891536 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | E.14 | fusion=0.865571 | corpus=0.826623 | example=0.891536 | sources=['corpus', 'example']
+
+===== train_267 =====
+Câu hỏi:
+Biển báo chỉ dẫn màu xanh lớn bên phải cung cấp thông tin về sân bay Nội Bài, cho biết sân bay cách vị trí hiện tại 5.8 km và có ký hiệu máy bay kèm theo đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn lớn - Sân bay Nội Bài
+Đặc điểm: Biển hình chữ nhật lớn, nền xanh, viền trắng. Có dòng chữ 'SÂN BAY NỘI BÀI', 'NOI BAI AIRPORT', số '5.8 km' và biểu tượng máy bay màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến Sân bay Nội Bài, cách vị trí hiện tại 5.8 km.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '35'}]
+gate=middle; s_max=0.761214; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.862031 | corpus=0.862133 | example=0.861963 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | E.14 | fusion=0.854510 | corpus=0.815364 | example=0.880607 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.13 | fusion=0.846920 | corpus=0.825548 | example=0.861169 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | P.2 | fusion=0.841537 | corpus=0.810897 | example=0.861963 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 32 | fusion=0.839830 | corpus=0.804441 | example=0.863422 | sources=['corpus', 'example']
+
+===== train_273 =====
+Câu hỏi:
+Biển báo màu xanh, trắng có ý nghĩa là gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu - phía dưới
+Đặc điểm: Hình tròn, viền xanh, nền xanh, biểu tượng mũi tên trắng tạo thành vòng tròn xoay.
+Ý nghĩa hoặc thông số: Bắt buộc phải đi vòng xoay
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.3'}]
+gate=high; s_max=0.867255; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.922752 | corpus=0.824868 | example=0.933627 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.2 | fusion=0.922722 | corpus=0.824569 | example=0.933627 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.919749 | corpus=0.821216 | example=0.930697 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | D.1a | fusion=0.917486 | corpus=0.819422 | example=0.928382 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.917354 | corpus=0.797267 | example=0.930697 | sources=['corpus', 'example']
+
+===== train_282 =====
+Câu hỏi:
+Xe cứu thương, xe cứu hoả nếu có bật còi, đèn tín hiệu thì được phép chạy với tốc độ trên 50 km/h. Điều này là đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số 50 màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 50 km/h.
+
+Đối tượng: Biển chỉ dẫn phương tiện - phía dưới
+Đặc điểm: Hình chữ nhật đứng, nền xanh, có các biểu tượng trắng của xe máy, ô tô, xe buýt và xe tải.
+Ý nghĩa hoặc thông số: Chỉ dẫn các loại phương tiện được phép lưu thông trên tuyến đường này.
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
+gate=high; s_max=0.844564; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.918194 | corpus=0.881399 | example=0.922282 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.914908 | corpus=0.848536 | example=0.922282 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.6 | fusion=0.908727 | corpus=0.870888 | example=0.912932 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.906016 | corpus=0.843775 | example=0.912932 | sources=['corpus', 'example']
+
+===== train_288 =====
+Câu hỏi:
+Biển báo trong hình bên thuộc loại biển báo nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có một vạch ngang màu đỏ ở giữa.
+Ý nghĩa hoặc thông số: Biển báo cấm đi ngược chiều.
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ viết màu trắng.
+Ý nghĩa hoặc thông số: Chữ viết trên biển: 'CẤM ĐI NGƯỢC CHIỀU'.
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}]
+gate=high; s_max=0.971728; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.2 | fusion=0.976446 | corpus=0.891684 | example=0.985864 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 11 | fusion=0.976423 | corpus=0.891460 | example=0.985864 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.972790 | corpus=0.855120 | example=0.985864 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.25 | fusion=0.944437 | corpus=0.850705 | example=0.954851 | sources=['corpus', 'example']
+
+===== train_297 =====
+Câu hỏi:
+Biển báo trong hình bên là loại biển báo gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, bên trong có hình đen của một chiếc xe tải kéo rơ-moóc, phía dưới hình xe là dòng chữ '—14 m' được viết bằng chữ in hoa, số và dấu gạch ngang.
+Ý nghĩa hoặc thông số: Biển báo cấm các phương tiện có chiều cao vượt quá 14 mét đi vào khu vực này.
+F2=0.4545; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.8'}]
+gate=high; s_max=0.858899; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.922508 | corpus=0.860029 | example=0.929450 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.6 | fusion=0.922507 | corpus=0.860025 | example=0.929450 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.21 | fusion=0.914118 | corpus=0.832918 | example=0.923140 | sources=['corpus', 'example']
+
+===== train_312 =====
+Câu hỏi:
+"Biển cáo có màu xanh, trắng trong hình bên là biển báo "Nơi giao nhau chạy theo vòng xuyến", áp dụng cho các loại xe thô sơ và cơ giới". Phát biểu trên đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía dưới
+Đặc điểm: Hình tròn, viền xanh, nền xanh, biểu tượng mũi tên trắng tạo vòng tròn xoay chiều kim đồng hồ.
+Ý nghĩa hoặc thông số: Nơi giao nhau chạy theo vòng xuyến
+F2=0.4545; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
+gate=high; s_max=0.854806; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.921097 | corpus=0.864344 | example=0.927403 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.900253 | corpus=0.867281 | example=0.903916 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.24 | fusion=0.894284 | corpus=0.807590 | example=0.903916 | sources=['corpus', 'example']
+
+===== train_314 =====
+Câu hỏi:
+Hai biển báo xuất hiện trong hình bên có ý nghĩa là gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '120' (biển cấm vượt quá tốc độ), và một vòng tròn xanh dương chứa số '80' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là hai mũi tên trắng chỉ xuống, mỗi mũi tên nằm ở một nửa biển.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 120 km/h và tốc độ tối thiểu 80 km/h cho các làn xe tương ứng với hai mũi tên.
+
+Đối tượng: Biển báo tốc độ - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '100' (biển cấm vượt quá tốc độ), và một vòng tròn xanh dương chứa số '60' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là một mũi tên trắng chỉ xuống ở giữa biển.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h cho làn xe tương ứng với mũi tên.
+F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.3'}]
+gate=high; s_max=0.877787; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.934162 | corpus=0.891581 | example=0.938893 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | P.3 | fusion=0.932147 | corpus=0.871435 | example=0.938893 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.930719 | corpus=0.872125 | example=0.937230 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.930171 | corpus=0.866641 | example=0.937230 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | F.1 | fusion=0.927413 | corpus=0.861447 | example=0.934743 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.25 | fusion=0.924558 | corpus=0.832892 | example=0.934743 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.30 | fusion=0.923954 | corpus=0.826855 | example=0.934743 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | 41 | fusion=0.923740 | corpus=0.824717 | example=0.934743 | sources=['corpus', 'example']
+
+===== train_318 =====
+Câu hỏi:
+Theo hai biển báo trong hình bên, nếu phương tiện giao thông di chuyển ở làn bên phải ngoài cùng, tốc độ tối đa được phép di chuyển là bao nhiêu?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '120' (biển cấm vượt quá tốc độ), và một vòng tròn xanh dương chứa số '80' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là hai mũi tên trắng chỉ xuống, mỗi mũi tên nằm ở một nửa biển.
+Ý nghĩa hoặc thông số: Chỉ dẫn tốc độ tối đa 120 km/h và tốc độ tối thiểu 80 km/h cho các làn đường tương ứng với hai mũi tên.
+
+Đối tượng: Biển báo tốc độ - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '100' (biển cấm vượt quá tốc độ), và một vòng tròn xanh dương chứa số '60' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là một mũi tên trắng chỉ xuống, nằm ở giữa biển.
+Ý nghĩa hoặc thông số: Chỉ dẫn tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h cho làn đường tương ứng với mũi tên.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.3'}]
+gate=high; s_max=0.893301; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.940866 | corpus=0.888809 | example=0.946651 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.938152 | corpus=0.861665 | example=0.946651 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.6 | fusion=0.933394 | corpus=0.895783 | example=0.937573 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.929687 | corpus=0.858719 | example=0.937573 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 46 | fusion=0.927012 | corpus=0.856970 | example=0.934795 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.30 | fusion=0.924251 | corpus=0.804356 | example=0.937573 | sources=['corpus', 'example']
+
+===== train_322 =====
+Câu hỏi:
+Theo hình bên, nếu đi làn bên phải của đường cao tốc thì tốc độ tối đa được phép di chuyển là 100 km/h. Điều này là đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - làn bên phải (phía trên)
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Trên biển có hai biểu tượng: một vòng tròn đỏ viền trắng chứa số '100' (biển cấm vượt quá tốc độ), và một vòng tròn xanh chứa số '60' (biển bắt buộc tốc độ tối thiểu). Dưới cùng là một mũi tên trắng chỉ xuống, nằm ở giữa biển.
+Ý nghĩa hoặc thông số: Chỉ giới hạn tốc độ tối đa 100 km/h và tối thiểu 60 km/h cho làn đường tương ứng với mũi tên.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.3'}]
+gate=high; s_max=0.923331; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.953175 | corpus=0.876765 | example=0.961666 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.6 | fusion=0.953127 | corpus=0.876280 | example=0.961666 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 46 | fusion=0.952566 | corpus=0.870669 | example=0.961666 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.950238 | corpus=0.847393 | example=0.961666 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 32 | fusion=0.949557 | corpus=0.840578 | example=0.961666 | sources=['corpus', 'example']
+
+===== train_327 =====
+Câu hỏi:
+Theo biển báo hình chữ nhât, nền xanh dương, viền trắng, nếu muốn đến "Chùa Bắc Ngà", người điều khiển phương tiện giao thông phải đi theo hướng nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Hình chữ nhật, nền xanh dương, viền trắng. Có hai dòng chữ: 'T.T LỘC BÌNH 10 KM' và 'CHÙA BẮC NGÀ 150 M'. Có hai mũi tên: mũi tên hướng thẳng lên trên và mũi tên hướng sang trái.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện đi thẳng để đến T.T Lộc Bình (10 km) hoặc rẽ trái để đến Chùa Bắc Ngà (150 m).
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
+gate=middle; s_max=0.734873; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.847484 | corpus=0.833722 | example=0.856659 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | P.16 | fusion=0.844681 | corpus=0.826714 | example=0.856659 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | E.14 | fusion=0.843003 | corpus=0.806352 | example=0.867436 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 36 | fusion=0.840779 | corpus=0.800792 | example=0.867436 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 38 | fusion=0.831907 | corpus=0.796478 | example=0.855526 | sources=['corpus', 'example']
+
+===== train_329 =====
+Câu hỏi:
+Theo biển báo hình chữ nhật lớn, nền xanh dương, viền trắng, khoảng cách còn lại đến T.T Lộc Bình là bao nhiêu km? 
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hướng dẫn - phía trên
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, viền trắng. Có hai dòng chữ trắng và hai mũi tên chỉ hướng: mũi tên hướng lên trên và mũi tên hướng sang trái.
+Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến T.T Lộc Bình là 10 km và đến Chùa Bắc Ngà là 150 m.
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
+gate=middle; s_max=0.723031; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | P.17 | fusion=0.850422 | corpus=0.838912 | example=0.858095 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | E.14 | fusion=0.831334 | corpus=0.786060 | example=0.861516 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 36 | fusion=0.824352 | corpus=0.775877 | example=0.856669 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 26 | fusion=0.823490 | corpus=0.771583 | example=0.858095 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 37 | fusion=0.815278 | corpus=0.745922 | example=0.861516 | sources=['corpus', 'example']
+
+===== train_334 =====
+Câu hỏi:
+Đây là biển báo có ý nghĩa gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, bên trong có hình đen của một chiếc xe tải kéo rơ-moóc, phía dưới hình xe là dòng chữ '—14 m—' được viết bằng chữ in hoa, hai dấu gạch ngang nằm ngang hai bên con số.
+Ý nghĩa hoặc thông số: Cấm các phương tiện có chiều cao vượt quá 14 mét đi vào khu vực này.
+F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.8'}]
+gate=high; s_max=0.874209; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.930273 | corpus=0.868784 | example=0.937105 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.21 | fusion=0.926316 | corpus=0.829216 | example=0.937105 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.6 | fusion=0.916077 | corpus=0.861423 | example=0.922150 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.7 | fusion=0.908868 | corpus=0.848779 | example=0.915545 | sources=['corpus', 'example']
+
+===== train_335 =====
+Câu hỏi:
+Biển báo trong hình bên có ý nghĩa là cấm xe kéo rơ-moóc, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - toàn bộ hình ảnh
+Đặc điểm: Hình tròn, viền đỏ, nền đỏ, có biểu tượng xe kéo rơ-moóc màu đen ở trung tâm, kèm dòng chữ '—14 m—' nằm ngang dưới biểu tượng xe.
+Ý nghĩa hoặc thông số: Cấm xe có chiều dài từ 14 mét trở lên đi vào khu vực này.
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.8'}]
+gate=middle; s_max=0.816149; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.900039 | corpus=0.887986 | example=0.908074 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.4 | fusion=0.887827 | corpus=0.857457 | example=0.908074 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.18 | fusion=0.882201 | corpus=0.848373 | example=0.904753 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 28 | fusion=0.878017 | corpus=0.835194 | example=0.906565 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.3 | fusion=0.877172 | corpus=0.836400 | example=0.904354 | sources=['corpus', 'example']
+
+===== train_339 =====
+Câu hỏi:
+Khi gặp biển báo như trong ảnh, người điều khiển phương tiện không cần phải nhường đường cho xe đang đi đến từ phía bên trái, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - trung tâm
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng ba mũi tên đen tạo vòng tròn xoay theo chiều kim đồng hồ
+Ý nghĩa hoặc thông số: Báo hiệu trước vòng xoay (vòng tròn giao thông), yêu cầu người tham gia giao thông chuẩn bị nhường đường cho xe từ bên phải
+F2=0.3125; gold=[{'law_id': '36/2024/QH15', 'article_id': '22.0'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.6'}]
+gate=high; s_max=0.891805; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.936113 | corpus=0.848004 | example=0.945903 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.24 | fusion=0.935266 | corpus=0.839532 | example=0.945903 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.921154 | corpus=0.847046 | example=0.929388 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | D.1a | fusion=0.916216 | corpus=0.874107 | example=0.920895 | sources=['corpus', 'example']
+
+===== train_341 =====
+Câu hỏi:
+Khi gặp phải tín hiệu đèn giao thông như trong ảnh thì người điểu khiển xe phải và được làm gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đèn giao thông - phía phải
+Đặc điểm: Biển hình tam giác đều, viền đỏ, nền vàng, biểu tượng đèn giao thông (3 đèn: đỏ, vàng, xanh) ở giữa.
+Ý nghĩa hoặc thông số: Cảnh báo trước đèn giao thông.
+
+Đối tượng: Đèn tín hiệu giao thông - phía trái
+Đặc điểm: Đèn tín hiệu treo trên cột, đèn xanh đang sáng.
+Ý nghĩa hoặc thông số: Tín hiệu cho phép phương tiện đi qua.
+
+Đối tượng: Biển báo hiệu vi phạm đèn giao thông - phía dưới đèn xanh
+Đặc điểm: Biển hình chữ nhật, nền trắng, chữ đen: 'VƯỢT ĐÈN ĐỎ LÀ VI PHẠM PHÁP LUẬT'.
+Ý nghĩa hoặc thông số: Thông báo về quy định pháp luật liên quan đến việc vượt đèn đỏ.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '6'}]
+gate=high; s_max=0.851572; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.919504 | corpus=0.862964 | example=0.925786 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.24 | fusion=0.917524 | corpus=0.843168 | example=0.925786 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.27 | fusion=0.913853 | corpus=0.841215 | example=0.921924 | sources=['corpus', 'example']
+
+===== train_349 =====
+Câu hỏi:
+Người lái xe mà thấy biển báo trong ảnh nếu muốn đến Khách Sạn Cầu Giấy (Cau Giay Hotel) thì phải rẽ phải, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - chính giữa
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng. Có hai mũi tên chỉ hướng: mũi tên hướng lên trên và mũi tên hướng sang phải. Chữ viết màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi: 'KHÁCH SẠN CẦU GIẤY / Cau Giay Hotel' đi theo hướng mũi tên lên trên; 'KHÁCH SẠN A25 / A25 Hotel' đi theo hướng mũi tên sang phải.
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
+gate=middle; s_max=0.809517; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | D.1a | fusion=0.883588 | corpus=0.851833 | example=0.904758 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.875299 | corpus=0.851071 | example=0.891451 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.13 | fusion=0.871939 | corpus=0.846954 | example=0.888595 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.871678 | corpus=0.822056 | example=0.904758 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.868741 | corpus=0.832490 | example=0.892908 | sources=['corpus', 'example']
+
+===== train_362 =====
+Câu hỏi:
+Biển báo trong ảnh là gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền màu xanh dương, nền trắng, có 4 vạch chéo màu đen chạy từ góc dưới trái lên góc trên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm xe cơ giới đi vào (theo quy chuẩn Việt Nam QCVN 41:2019/BGTVT), nhưng không đọc rõ chữ hoặc ký hiệu phụ đi kèm trong ảnh.
+F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.35'}]
+gate=high; s_max=0.919909; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.950390 | corpus=0.864311 | example=0.959954 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.949721 | corpus=0.857625 | example=0.959954 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.6 | fusion=0.949711 | corpus=0.857526 | example=0.959954 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.2 | fusion=0.945142 | corpus=0.885666 | example=0.951750 | sources=['corpus', 'example']
+
+===== train_374 =====
+Câu hỏi:
+Biển trong ảnh báo hiệu điều gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu vòng xoay - trung tâm
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng gồm ba mũi tên đen tạo vòng tròn theo chiều kim đồng hồ
+Ý nghĩa hoặc thông số: Báo hiệu trước vòng xoay giao thông; người tham gia giao thông phải nhường đường cho xe đang đi trên vòng xoay
+F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.6'}]
+gate=high; s_max=0.849661; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | D.3 | fusion=0.918870 | corpus=0.886192 | example=0.922501 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.915046 | corpus=0.826985 | example=0.924831 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.914519 | corpus=0.842685 | example=0.922501 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.24 | fusion=0.913809 | corpus=0.814614 | example=0.924831 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | C.4 | fusion=0.909078 | corpus=0.826156 | example=0.918292 | sources=['corpus', 'example']
+
+===== train_386 =====
+Câu hỏi:
+Đoạn giao nhau phía trước trong ảnh có đặc điểm gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đèn tín hiệu - phía phải
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, biểu tượng đèn tín hiệu giao thông (3 đèn: đỏ, vàng, xanh) ở giữa.
+Ý nghĩa hoặc thông số: Cảnh báo người tham gia giao thông sắp đến đèn tín hiệu.
+
+Đối tượng: Biển phụ - phía dưới biển cảnh báo đèn tín hiệu
+Đặc điểm: Biển hình chữ nhật, nền trắng, viền đỏ, chữ đen: 'VƯỢT ĐÈN ĐỎ LÀ VI PHẠM PHÁP LUẬT'.
+Ý nghĩa hoặc thông số: Thông báo về hậu quả pháp lý khi vượt đèn đỏ.
+
+Đối tượng: Đèn tín hiệu giao thông - phía trái
+Đặc điểm: Đèn tín hiệu treo trên cột, đèn xanh đang bật sáng.
+Ý nghĩa hoặc thông số: Cho phép phương tiện được đi qua.
+F2=0.3333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.9'}]
+gate=high; s_max=0.823035; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | C.8 | fusion=0.906251 | corpus=0.858856 | example=0.911518 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.904820 | corpus=0.844541 | example=0.911518 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.24 | fusion=0.896792 | corpus=0.830396 | example=0.904169 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.10 | fusion=0.890736 | corpus=0.814161 | example=0.899245 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.12 | fusion=0.889790 | corpus=0.804694 | example=0.899245 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 22 | fusion=0.889718 | corpus=0.803974 | example=0.899245 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.28 | fusion=0.887895 | corpus=0.785748 | example=0.899245 | sources=['corpus', 'example']
+
+===== train_393 =====
+Câu hỏi:
+Người lái xe mà thấy biển báo trong ảnh nếu muốn đến Khách Sạn A25 (A25 Hotel) thì phải đi hướng nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - chính giữa
+Đặc điểm: Hình chữ nhật, nền màu xanh dương, viền trắng. Có hai mũi tên chỉ hướng: mũi tên hướng lên trên và mũi tên hướng sang phải. Chữ viết màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi: đi thẳng để đến Khách sạn Cầu Giấy (Cau Gray Hotel), rẽ phải để đến Khách sạn A25 (A25 Hotel).
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
+gate=middle; s_max=0.776475; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.868735 | corpus=0.839482 | example=0.888238 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | E.14 | fusion=0.863012 | corpus=0.825172 | example=0.888238 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.1a | fusion=0.857757 | corpus=0.831441 | example=0.875300 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.850192 | corpus=0.812529 | example=0.875300 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 38 | fusion=0.839773 | corpus=0.788307 | example=0.874085 | sources=['corpus', 'example']
+
+===== train_394 =====
+Câu hỏi:
+Để đi tiếp cao tốc trong đoạn đường trên ảnh mà đang không gặp bất kỳ tình huống khẩn cấp nào thì nên đi trên là đường nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hướng dẫn - treo trên cao giữa đường
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có hai biển phụ nhỏ gắn trên cùng: biển trái nền vàng chữ 'CT.01', biển phải nền trắng chữ 'QL.1'. Biển chính có biểu tượng mũi tên trắng: một mũi tên thẳng hướng lên trên, một mũi tên rẽ phải. Có chữ viết: 'LA SON' bên trái mũi tên thẳng, 'TUYẾN TRÁNH HUẾ' bên phải mũi tên rẽ phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn xe đi thẳng để đến La Sơn, rẽ phải để đi tuyến tránh Huế và Quốc lộ 1.
+F2=0.5556; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '46'}]
+gate=middle; s_max=0.798892; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.883796 | corpus=0.860321 | example=0.899446 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | P.3 | fusion=0.873865 | corpus=0.835493 | example=0.899446 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 46 | fusion=0.867226 | corpus=0.853093 | example=0.876648 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.855129 | corpus=0.815416 | example=0.881604 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.30 | fusion=0.845549 | corpus=0.791466 | example=0.881604 | sources=['corpus', 'example']
+
+===== train_399 =====
+Câu hỏi:
+Từ 6:00 đến 22:00, tất cả các loại xe (cơ giới và thô sơ) không được phép rẽ vào đường Hồng Hà trên đoạn đường trong ảnh, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ phải bị gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm rẽ phải
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, chữ đen, có biểu tượng xe tải nhỏ và dòng chữ '6:00 - 22:00'
+Ý nghĩa hoặc thông số: Quy định thời gian cấm rẽ phải từ 6:00 đến 22:00
+F2=0.5882; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.23'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.5'}]
+gate=high; s_max=0.860519; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.3 | fusion=0.920329 | corpus=0.830960 | example=0.930259 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.920313 | corpus=0.830793 | example=0.930259 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.918270 | corpus=0.810365 | example=0.930259 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.37 | fusion=0.917946 | corpus=0.847578 | example=0.925765 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 41 | fusion=0.915461 | corpus=0.782276 | example=0.930259 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | F.5 | fusion=0.910398 | corpus=0.772099 | example=0.925765 | sources=['corpus', 'example']
+
+===== train_405 =====
+Câu hỏi:
+Tốc độ cho phép trên đoạn đường phía trước là bao nhiêu?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển giới hạn tốc độ - gắn dưới biển chỉ dẫn
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 90 km/h.
+
+Đối tượng: Biển giới hạn tốc độ - gắn dưới biển chỉ dẫn
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '60' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 60 km/h.
+
+Đối tượng: Biển báo cấm - bên phải đường
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '70' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 70 km/h.
+F2=0.7143; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
+gate=high; s_max=0.906567; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.947478 | corpus=0.895231 | example=0.953283 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.944960 | corpus=0.870045 | example=0.953283 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.937714 | corpus=0.882048 | example=0.943899 | sources=['corpus', 'example']
+
+===== train_412 =====
+Câu hỏi:
+Phương tiện nào sau đây được phép lưu thông trên đoạn đường có biển báo này lúc 7h30 sáng?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình chiếc xe tải đang di chuyển từ trái sang phải, có dấu gạch chéo đỏ cắt ngang từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Cấm xe tải trọng từ 3,5 tấn trở lên hoặc xe tải trọng từ 1 tấn trở lên lưu thông trong khoảng thời gian quy định.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng. Nội dung gồm hai phần: Phần trên ghi 'CẤM XE TẢI CÓ TẢI TRỌNG TỪ 3,5 TẤN TRỞ LÊN HOẶC CÓ TẢI TRỌNG TỪ 1 TẤN TRỞ LÊN LƯU THÔNG TỪ 6 GIỜ ĐẾN 24 GIỜ ĐỀU'. Phần dưới ghi 'CẤM XE TẢI CÓ TẢI TRỌNG DƯỚI 1 TẤN LƯU THÔNG TỪ 6 GIỜ ĐẾN 24 GIỜ ĐỀU'.
+Ý nghĩa hoặc thông số: Quy định thời gian cấm lưu thông cụ thể cho các loại xe tải khác nhau: xe tải trọng lớn (từ 3,5t trở lên hoặc từ 1t trở lên) bị cấm từ 6h đến 24h; xe tải trọng dưới 1t cũng bị cấm trong cùng khoảng thời gian đó.
+F2=0.5556; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '24'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.6'}]
+gate=high; s_max=0.908403; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.6 | fusion=0.945914 | corpus=0.871325 | example=0.954202 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.943549 | corpus=0.847677 | example=0.954202 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.3 | fusion=0.928162 | corpus=0.844358 | example=0.937473 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | F.10 | fusion=0.927155 | corpus=0.834293 | example=0.937473 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 41 | fusion=0.924451 | corpus=0.807249 | example=0.937473 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | F.5 | fusion=0.922819 | corpus=0.841115 | example=0.931897 | sources=['corpus', 'example']
+
+===== train_413 =====
+Câu hỏi:
+Khoảng tốc độ cho phép lưu thông trên đoạn đường cao tốc trước mắt là bao nhiêu?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Hình chữ nhật, nền màu xanh lá cây, viền trắng. Có chữ 'CT.01' trong khung cam, chữ 'CAO BỒ MAI SƠN EXPRESSWAY' màu trắng, biểu tượng hình tam giác cân (biểu tượng đường cao tốc) bên phải. Dưới cùng là hai biển tròn: biển đỏ viền trắng ghi số '80', biển xanh ghi số '60'.
+Ý nghĩa hoặc thông số: Chỉ dẫn đoạn đường cao tốc Mai Sơn, giới hạn tốc độ tối đa 80 km/h và tối thiểu 60 km/h.
+
+Đối tượng: Biển báo cảnh báo - phía dưới
+Đặc điểm: Hình chữ nhật, nền màu vàng, viền trắng. Có dòng chữ tiếng Việt 'GIỮ KHOẢNG CÁCH AN TOÀN' và dòng tiếng Anh 'SAFE STOPPING DISTANCE' màu đen.
+Ý nghĩa hoặc thông số: Cảnh báo người lái xe phải giữ khoảng cách an toàn với xe phía trước.
+F2=0.4545; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
+gate=high; s_max=0.944004; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.962595 | corpus=0.877936 | example=0.972002 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.6 | fusion=0.962553 | corpus=0.877510 | example=0.972002 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.961759 | corpus=0.869570 | example=0.972002 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.959035 | corpus=0.842336 | example=0.972002 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 32 | fusion=0.958601 | corpus=0.837991 | example=0.972002 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 47 | fusion=0.935273 | corpus=0.874686 | example=0.942005 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | P.3 | fusion=0.934525 | corpus=0.867209 | example=0.942005 | sources=['corpus', 'example']
+
+===== train_414 =====
+Câu hỏi:
+Các biển báo trong hình cung cấp thông tin gì cho xe lưu thông trên đoạn đường này?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật, nền xanh lá cây, viền trắng, chữ trắng. Có hai dòng chữ: 'TP. HẢI PHÒNG 24 km' và 'CẢNG ĐÌNH VŨ 34 km'.
+Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến TP. Hải Phòng và Cảng Đình Vũ.
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền xanh lá cây, viền trắng. Có hai phần: phần trên là biển nhỏ hình chữ nhật với chữ 'LỐI RA EXIT', 'QL.10 2 km'; phần dưới là biển lớn hơn với chữ 'QUỐC LỘ 5 THÁI BÌNH' và mũi tên chỉ hướng lên trên bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn lối ra QL.10 sau 2 km và hướng đi đến Quốc lộ 5, Thái Bình.
+
+Đối tượng: Biển báo chỉ dẫn - phía xa bên phải
+Đặc điểm: Biển hình chữ nhật, nền xanh lá cây, viền trắng. Có hai mũi tên chỉ hướng: mũi tên trái và mũi tên phải. Chữ nhỏ bên dưới mũi tên trái là 'ĐT.239 CẦU ĐÀO VŨ', chữ nhỏ bên dưới mũi tên phải là 'QL.5 THÁI BÌNH'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến ĐT.239 Cầu Đào Vũ và QL.5 Thái Bình.
+F2=0.5000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
+gate=high; s_max=0.912180; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.948172 | corpus=0.876911 | example=0.956090 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | P.17 | fusion=0.947826 | corpus=0.873452 | example=0.956090 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.901596 | corpus=0.878791 | example=0.904130 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | P.18 | fusion=0.899845 | corpus=0.861277 | example=0.904130 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.897588 | corpus=0.849257 | example=0.902958 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | E.14 | fusion=0.896693 | corpus=0.840303 | example=0.902958 | sources=['corpus', 'example']
+
+===== train_415 =====
+Câu hỏi:
+Khoảng cách đến lối ra tiếp theo là bao nhiêu?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên phải
+Đặc điểm: Hình chữ nhật, nền xanh lá cây, viền trắng. Có ba phần: phần trên cùng là biển phụ nhỏ hình chữ nhật với chữ 'LỐI RA EXIT' màu vàng, nền đen; phần dưới là dòng chữ 'QUỐC LỘ 5 THÁI BÌNH' và mũi tên chỉ hướng lên trên bên phải; bên phải là thông tin 'QL.10 2 km'.
+Ý nghĩa hoặc thông số: Chỉ dẫn lối ra (EXIT) đến Quốc lộ 5 đi Thái Bình, và thông tin về QL.10 cách đó 2 km.
+
+Đối tượng: Biển báo chỉ dẫn - phía dưới bên phải
+Đặc điểm: Hình chữ nhật, nền xanh lá cây, viền trắng. Có hai mũi tên: mũi tên chỉ hướng lên trên bên trái với chữ 'ĐT.239 CẦU ĐÀO VŨ', và mũi tên chỉ hướng lên trên bên phải với chữ 'QL.5 THÁI BÌNH'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến ĐT.239 qua Cầu Đào Vũ và QL.5 đi Thái Bình.
+F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
+gate=middle; s_max=0.728233; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.848936 | corpus=0.846751 | example=0.850393 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | P.17 | fusion=0.847331 | corpus=0.828897 | example=0.859621 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | E.14 | fusion=0.841043 | corpus=0.806432 | example=0.864116 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 26 | fusion=0.834682 | corpus=0.797275 | example=0.859621 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.827589 | corpus=0.793489 | example=0.850323 | sources=['corpus', 'example']
+
+===== train_418 =====
+Câu hỏi:
+Hai biển báo trong hình cho ta biết điều gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '100' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Biển báo hiệu giới hạn tốc độ tối đa là 100 km/h (dựa trên quy chuẩn biển báo giao thông Việt Nam).
+
+Đối tượng: Biển báo hiệu - phía dưới
+Đặc điểm: Hình tròn, viền xanh, nền xanh, có chữ số '60' màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Biển báo hiệu giới hạn tốc độ tối thiểu là 60 km/h (dựa trên quy chuẩn biển báo giao thông Việt Nam).
+F2=0.6522; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.6'}]
+gate=high; s_max=0.910162; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.948317 | corpus=0.887435 | example=0.955081 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.948249 | corpus=0.886760 | example=0.955081 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.1 | fusion=0.947367 | corpus=0.877942 | example=0.955081 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.945623 | corpus=0.874024 | example=0.953578 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.25 | fusion=0.945351 | corpus=0.857781 | example=0.955081 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 41 | fusion=0.943987 | corpus=0.844141 | example=0.955081 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.30 | fusion=0.943854 | corpus=0.842808 | example=0.955081 | sources=['corpus', 'example']
+
+===== train_419 =====
+Câu hỏi:
+Biển báo phía trên ở trong hình sau có ý nghĩa như thế nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có một vạch ngang màu đỏ ở giữa.
+Ý nghĩa hoặc thông số: Cấm mọi phương tiện cơ giới đi vào.
+
+Đối tượng: Biển báo chỉ dẫn - phía dưới
+Đặc điểm: Hình tròn, viền xanh, nền xanh, có mũi tên màu trắng chỉ hướng xuống bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện đi theo hướng mũi tên (hướng xuống phải).
+F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}]
+gate=high; s_max=0.917350; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.949047 | corpus=0.864413 | example=0.958451 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.948774 | corpus=0.859664 | example=0.958675 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.2 | fusion=0.948258 | corpus=0.854509 | example=0.958675 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.30 | fusion=0.948066 | corpus=0.854601 | example=0.958451 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.2 | fusion=0.947779 | corpus=0.873801 | example=0.955998 | sources=['corpus', 'example']
+
+===== train_435 =====
+Câu hỏi:
+Các biển báo phía trên đèn giao thông thuộc loại biển báo chỉ dẫn. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên đèn giao thông (trái)
+Đặc điểm: Biển hình chữ nhật, nền xanh, chữ và mũi tên màu trắng. Có 3 dòng chữ và mũi tên chỉ hướng lên trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến các địa điểm: 'Đ. HÀM SÔNG SÀI GÒN', 'BỆNH VIỆN NHIỆT ĐỘI', 'QUỐC LỘ 1' kèm khoảng cách.
+
+Đối tượng: Biển báo chỉ dẫn - phía trên đèn giao thông (phải)
+Đặc điểm: Biển hình chữ nhật, nền xanh, chữ và mũi tên màu trắng. Có 2 dòng chữ và mũi tên chỉ hướng lên trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến các địa điểm: 'ĐƯỜNG TRẦN NHO', 'Đ. LƯƠNG ĐÌNH CỬA', 'CẦU SÀI GÒN' kèm khoảng cách.
+F2=0.3571; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'I.414'}]
+gate=high; s_max=0.910209; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | D.13 | fusion=0.948353 | corpus=0.887589 | example=0.955105 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.945498 | corpus=0.859038 | example=0.955105 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | E.14 | fusion=0.933748 | corpus=0.871387 | example=0.940676 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 36 | fusion=0.933501 | corpus=0.868923 | example=0.940676 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 38 | fusion=0.933298 | corpus=0.866892 | example=0.940676 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | D.1a | fusion=0.929731 | corpus=0.877963 | example=0.935483 | sources=['corpus', 'example']
+
+===== train_441 =====
+Câu hỏi:
+Biển báo trong ảnh có ý nghĩa như thế nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '8' màu đen ở giữa và ký hiệu 't' màu đen bên cạnh số 8.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có trọng tải vượt quá 8 tấn được phép đi qua.
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, chữ trắng. Nội dung: 'CẦU TÂN NGHĨA', 'CHIỀU DÀI : 150m', 'CHIỀU RỘNG : 4,2m'.
+Ý nghĩa hoặc thông số: Biển thông tin tên cầu và kích thước cầu.
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.15'}]
+gate=high; s_max=0.857509; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.921423 | corpus=0.855438 | example=0.928754 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.26 | fusion=0.919117 | corpus=0.848576 | example=0.926955 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.917753 | corpus=0.818740 | example=0.928754 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.15 | fusion=0.916948 | corpus=0.860761 | example=0.923190 | sources=['corpus', 'example']
+
+===== train_445 =====
+Câu hỏi:
+Xe ô tô con không được phép lưu thông trên đoạn đường này từ 6h đến 22h. Đúng hay sai? 
+F2=0.7143; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.6'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}]
+gate=middle; s_max=0.758647; example_weight=0.6; corpus_weight=0.4
+#1 | QCVN 41:2024/BGTVT | B.3 | fusion=0.831733 | corpus=0.760346 | example=0.879323 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.826514 | corpus=0.747300 | example=0.879323 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.826205 | corpus=0.746527 | example=0.879323 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.822144 | corpus=0.736375 | example=0.879323 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.7b | fusion=0.807878 | corpus=0.747399 | example=0.848198 | sources=['corpus', 'example']
+
+===== train_454 =====
+Câu hỏi:
+Gặp biển báo trong chúng ta có thể rẽ phải. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ trái
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng quay đầu xe bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.23'}]
+gate=high; s_max=0.905740; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.947709 | corpus=0.901261 | example=0.952870 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.946921 | corpus=0.893381 | example=0.952870 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.24 | fusion=0.945815 | corpus=0.892638 | example=0.951724 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.6 | fusion=0.941845 | corpus=0.842622 | example=0.952870 | sources=['corpus', 'example']
+
+===== train_455 =====
+Câu hỏi:
+Xe máy tham gia lưu thông trên đường này có thể dừng đỗ xe vào lúc 9 giờ sáng. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía dưới biển cấm xe máy
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi 'CẤM DỪNG ĐỖ', kèm biển phụ ghi thời gian '6:00 - 23:00'.
+Ý nghĩa hoặc thông số: Cấm dừng đỗ từ 6 giờ sáng đến 11 giờ đêm.
+F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.30'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}]
+gate=high; s_max=0.919456; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.31 | fusion=0.947564 | corpus=0.838093 | example=0.959728 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.947534 | corpus=0.837793 | example=0.959728 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.946996 | corpus=0.832412 | example=0.959728 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.6 | fusion=0.946032 | corpus=0.822770 | example=0.959728 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 41 | fusion=0.944474 | corpus=0.807188 | example=0.959728 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.4 | fusion=0.930895 | corpus=0.827236 | example=0.942413 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.11 | fusion=0.918300 | corpus=0.819348 | example=0.929295 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | 11 | fusion=0.917413 | corpus=0.810479 | example=0.929295 | sources=['corpus', 'example']
+
+===== train_456 =====
+Câu hỏi:
+Có bao nhiêu loại biển báo có ở trong ảnh?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên cùng (cấm xe máy)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen hình xe máy bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe máy đi vào
+
+Đối tượng: Biển báo cấm - phía trên cùng (cấm dừng)
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng đen hình chữ X.
+Ý nghĩa hoặc thông số: Cấm dừng xe
+
+Đối tượng: Biển phụ - phía dưới biển cấm xe máy
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, có dòng chữ 'CẤM' và các dòng nhỏ hơn không đọc rõ.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung cho biển cấm xe máy, nội dung chi tiết không đọc rõ.
+
+Đối tượng: Biển phụ - phía dưới biển cấm dừng
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi '6:00 - 23:00'.
+Ý nghĩa hoặc thông số: Thời gian áp dụng biển cấm dừng là từ 6:00 đến 23:00.
+
+Đối tượng: Biển báo hiệu tốc độ tối đa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h.
+
+Đối tượng: Biển báo hiệu hướng đi và thời gian
+Đặc điểm: Hình chữ nhật dọc, nền xanh, chữ trắng, có biểu tượng xe buýt và dòng chữ '6:00 - 23:00'.
+Ý nghĩa hoặc thông số: Chỉ dẫn về tuyến xe buýt hoạt động trong khoảng thời gian từ 6:00 đến 23:00.
+
+Đối tượng: Biển tên đường
+Đặc điểm: Hình chữ nhật, nền xanh, chữ trắng, ghi 'ĐƯỜNG PHẠM PHỦ THỦ'.
+Ý nghĩa hoặc thông số: Tên đường là 'Đường Phạm Phú Thủ'.
+F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '11'}]
+gate=high; s_max=0.919752; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.4 | fusion=0.951797 | corpus=0.879086 | example=0.959876 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.950635 | corpus=0.867469 | example=0.959876 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.6 | fusion=0.949446 | corpus=0.855577 | example=0.959876 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.10 | fusion=0.949071 | corpus=0.851825 | example=0.959876 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | D.16 | fusion=0.944673 | corpus=0.866238 | example=0.953388 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 32 | fusion=0.942454 | corpus=0.844046 | example=0.953388 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.27 | fusion=0.942084 | corpus=0.840346 | example=0.953388 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | 11 | fusion=0.936210 | corpus=0.885874 | example=0.941803 | sources=['corpus', 'example']
+
+===== train_469 =====
+Câu hỏi:
+Trong hình này có bao nhiêu biển báo có hiệu lực với xe máy khi xe máy muốn di chuyển qua cầu ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm xe máy - vị trí trên cùng bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe máy bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm xe máy đi vào
+F2=0.2941; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.15'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.17'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.45'}]
+gate=high; s_max=0.856549; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.4 | fusion=0.925100 | corpus=0.896528 | example=0.928275 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.922182 | corpus=0.867346 | example=0.928275 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.6 | fusion=0.921226 | corpus=0.857789 | example=0.928275 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.10 | fusion=0.920557 | corpus=0.851100 | example=0.928275 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.37 | fusion=0.918740 | corpus=0.869124 | example=0.924253 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.1 | fusion=0.918084 | corpus=0.862562 | example=0.924253 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.2 | fusion=0.917854 | corpus=0.860256 | example=0.924253 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | B.3 | fusion=0.917452 | corpus=0.856244 | example=0.924253 | sources=['corpus', 'example']
+#9 | QCVN 41:2024/BGTVT | B.31 | fusion=0.915459 | corpus=0.836312 | example=0.924253 | sources=['corpus', 'example']
+#10 | QCVN 41:2024/BGTVT | B.30 | fusion=0.915179 | corpus=0.833513 | example=0.924253 | sources=['corpus', 'example']
+
+===== train_474 =====
+Câu hỏi:
+Khi gặp biển báo này, người điều khiển phương tiện giao thông không được phép làm điều gì ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng đi thẳng và rẽ phải bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm đi thẳng và rẽ phải
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ phải bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ phải
+F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.24'}]
+gate=high; s_max=0.950511; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.968415 | corpus=0.906847 | example=0.975256 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.966346 | corpus=0.886161 | example=0.975256 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.951070 | corpus=0.878247 | example=0.959161 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.6 | fusion=0.942929 | corpus=0.859670 | example=0.952180 | sources=['corpus', 'example']
+
+===== train_475 =====
+Câu hỏi:
+Biển báo này là biển báo gì ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - chiếm toàn bộ khung hình
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng đen gồm mũi tên rẽ trái và mũi tên quay đầu, bị một đường chéo đỏ gạch từ trên trái xuống dưới phải.
+Ý nghĩa hoặc thông số: Cấm rẽ trái và quay đầu
+F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.24'}]
+gate=high; s_max=0.943879; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.961490 | corpus=0.867448 | example=0.971939 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.960538 | corpus=0.857921 | example=0.971939 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.948250 | corpus=0.885343 | example=0.955240 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.31 | fusion=0.939131 | corpus=0.841442 | example=0.949986 | sources=['corpus', 'example']
+
+===== train_476 =====
+Câu hỏi:
+Khi tham gia giao thông, người điều khiển phương tiện xe máy không được không được phép rẽ trái nếu gặp biển báo này là đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - chiếm toàn bộ ảnh
+Đặc điểm: Hình tròn viền đỏ, nền trắng, có biểu tượng mũi tên đen chỉ hướng rẽ trái và xuống dưới, bị một đường chéo đỏ cắt ngang từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Cấm xe rẽ trái
+F2=0.4545; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.24'}]
+gate=high; s_max=0.904916; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.947485 | corpus=0.902724 | example=0.952458 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.946206 | corpus=0.889940 | example=0.952458 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.3 | fusion=0.938654 | corpus=0.877917 | example=0.945403 | sources=['corpus', 'example']
+
+===== train_477 =====
+Câu hỏi:
+Khi điều khiển các phương tiện tham gia giao thông, gặp biển báo này người điều khiển các phương tiện không được phép rẽ trái là đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng xuống và sang trái bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ trái
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.24'}]
+gate=high; s_max=0.929418; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.958343 | corpus=0.901047 | example=0.964709 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.957281 | corpus=0.890431 | example=0.964709 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.943074 | corpus=0.869351 | example=0.951265 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.24 | fusion=0.940170 | corpus=0.885308 | example=0.946266 | sources=['corpus', 'example']
+
+===== train_488 =====
+Câu hỏi:
+Khi tham gia giao thông trên tuyến đường cao tốc, gặp biển báo hiệu này người điều khiển phương tiện xe cần lưu ý điều gì ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tên tuyến - phía trên
+Đặc điểm: Hình chữ nhật, nền xanh lá cây, viền trắng. Có chữ 'HÀ NỘI', 'BẮC GIANG', 'EXPRESSWAY' màu trắng; biển phụ 'CT.03' màu cam; biểu tượng đường cao tốc màu trắng bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn tuyến đường cao tốc Hà Nội - Bắc Giang, mã tuyến CT.03.
+
+Đối tượng: Biển báo tốc độ tối đa - phía dưới bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '100' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 100 km/h.
+
+Đối tượng: Biển báo tốc độ tối thiểu - phía dưới bên phải
+Đặc điểm: Hình tròn, viền xanh dương, nền trắng, chữ số '60' màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối thiểu cho phép là 60 km/h.
+F2=1.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '45'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.6'}]
+gate=high; s_max=0.901363; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.933692 | corpus=0.920720 | example=0.935134 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 45 | fusion=0.930740 | corpus=0.903715 | example=0.933743 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.6 | fusion=0.927948 | corpus=0.875801 | example=0.933743 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.27 | fusion=0.927728 | corpus=0.873600 | example=0.933743 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 22 | fusion=0.926775 | corpus=0.864062 | example=0.933743 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 32 | fusion=0.926773 | corpus=0.864049 | example=0.933743 | sources=['corpus', 'example']
+
+===== train_490 =====
+Câu hỏi:
+Khi tham gia giao thông, tốc độ cho phép trên tuyến đường này dành cho phương tiên tham gia là bao nhiêu ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đường bộ - chính
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Biển có 2 phần: phần trên ghi chữ và biểu tượng, phần dưới có 2 vòng tròn (một vòng tròn đỏ viền trắng, một vòng tròn xanh dương viền trắng).
+Ý nghĩa hoặc thông số: Biển báo hiệu điểm đến là Mai Sơn, Quốc lộ 45, Expressway. Biển chỉ giới hạn tốc độ tối đa 90 km/h và tốc độ tối thiểu 60 km/h.
+F2=0.5357; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '45'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.6'}]
+gate=high; s_max=0.876340; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | P.3 | fusion=0.933321 | corpus=0.889677 | example=0.938170 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.933301 | corpus=0.889480 | example=0.938170 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.925984 | corpus=0.892864 | example=0.929664 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.922903 | corpus=0.862055 | example=0.929664 | sources=['corpus', 'example']
+
+===== train_491 =====
+Câu hỏi:
+Tuyến đường này không giới hạn tốc độ xe chạy là đứng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đường bộ - chính
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có chữ viết và biểu tượng màu trắng. Phía trên có biển phụ hình chữ nhật nhỏ màu vàng.
+Ý nghĩa hoặc thông số: Biển báo hiệu tuyến đường Mai Sơn, Quốc lộ 45, Expressway. Giới hạn tốc độ tối đa 90 km/h và tối thiểu 60 km/h.
+F2=0.8621; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '45'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.6'}]
+gate=high; s_max=0.828808; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.908932 | corpus=0.859682 | example=0.914404 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.906602 | corpus=0.836378 | example=0.914404 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.905975 | corpus=0.878084 | example=0.909074 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | D.6 | fusion=0.903322 | corpus=0.861815 | example=0.907934 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 32 | fusion=0.900890 | corpus=0.837492 | example=0.907934 | sources=['corpus', 'example']
+
+===== train_495 =====
+Câu hỏi:
+Khi gặp biển báo này thì người điều khiển phương tiện giao thông không được phép làm gì ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng gạch chéo màu trắng.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng gạch chéo màu trắng.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
+F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
+gate=high; s_max=0.901119; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.943855 | corpus=0.883513 | example=0.950560 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.942793 | corpus=0.872894 | example=0.950560 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.939821 | corpus=0.862729 | example=0.948387 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.2 | fusion=0.938949 | corpus=0.870450 | example=0.946560 | sources=['corpus', 'example']
+
+===== train_497 =====
+Câu hỏi:
+Biển báo này là biển báo cấm đỗ và dừng xe là đúng hay sai
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm dừng và đỗ xe - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng gạch chéo màu trắng.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
+
+Đối tượng: Biển báo cấm dừng và đỗ xe - phía dưới
+Đặc điểm: Hình chữ nhật, nền đỏ, biểu tượng xe máy màu trắng.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
+F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
+gate=high; s_max=0.953030; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.30 | fusion=0.967869 | corpus=0.890056 | example=0.976515 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.967435 | corpus=0.885718 | example=0.976515 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.950358 | corpus=0.878823 | example=0.958307 | sources=['corpus', 'example']
+
+===== train_505 =====
+Câu hỏi:
+Khi người điều khiển xe khách từ 9 chổ trở lên qua đoạn đường này được phép dừng xe vào khung giờ nào ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có dấu X màu đỏ cắt chéo từ góc trên trái xuống góc dưới phải.
+Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có biểu tượng xe buýt màu đen và dòng chữ 'Xe buýt' bên dưới biểu tượng.
+Ý nghĩa hoặc thông số: Biển cấm chỉ áp dụng đối với xe buýt.
+
+Đối tượng: Biển phụ - phía dưới biển xe buýt
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có hai dòng chữ: '6:00 - 10:00' và '16:00 - 20:00'.
+Ý nghĩa hoặc thông số: Biển cấm chỉ có hiệu lực trong các khung giờ: 6:00 đến 10:00 và 16:00 đến 20:00.
+F2=0.2632; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.7'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}]
+gate=high; s_max=0.885566; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.933383 | corpus=0.848779 | example=0.942783 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 26 | fusion=0.924314 | corpus=0.840392 | example=0.933639 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 14 | fusion=0.915488 | corpus=0.831190 | example=0.924854 | sources=['corpus', 'example']
+
+===== train_507 =====
+Câu hỏi:
+Đoạn đường này có cho phép xe máy dừng xe là đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có dấu X màu đỏ cắt chéo.
+Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, có biểu tượng xe buýt màu đen và dòng chữ 'xe buýt'.
+Ý nghĩa hoặc thông số: Biển cấm chỉ áp dụng cho xe buýt.
+
+Đối tượng: Biển phụ - phía dưới biển xe buýt
+Đặc điểm: Hình chữ nhật, nền trắng, có hai dòng chữ: '6:00 - 10:00' và '16:00 - 20:00'.
+Ý nghĩa hoặc thông số: Biển cấm chỉ có hiệu lực trong các khung giờ nêu trên.
+F2=0.8696; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.7'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}]
+gate=high; s_max=0.882450; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.4 | fusion=0.933803 | corpus=0.867007 | example=0.941225 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.933196 | corpus=0.860938 | example=0.941225 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.931684 | corpus=0.845815 | example=0.941225 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.31 | fusion=0.930995 | corpus=0.854236 | example=0.939524 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.6 | fusion=0.930458 | corpus=0.848863 | example=0.939524 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 41 | fusion=0.929735 | corpus=0.826328 | example=0.941225 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.7 | fusion=0.929623 | corpus=0.857370 | example=0.937651 | sources=['corpus', 'example']
+
+===== train_508 =====
+Câu hỏi:
+Khi tham gia giao thông gặp những biễn báo này, những trường hợp nào được phép lưu thông qua cầu ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên cùng (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có một vạch ngang màu đỏ ở giữa.
+Ý nghĩa hoặc thông số: Cấm mọi phương tiện cơ giới đi vào.
+
+Đối tượng: Biển báo cấm - giới hạn chiều cao (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ '3,5m' và hình tam giác ngược màu đen ở giữa.
+Ý nghĩa hoặc thông số: Cấm phương tiện có chiều cao vượt quá 3,5m đi vào.
+
+Đối tượng: Biển báo cấm - giới hạn tốc độ (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '30' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 30 km/h.
+
+Đối tượng: Biển báo cấm - cấm xe đạp (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình vẽ xe đạp màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào.
+
+Đối tượng: Biển báo cấm - cấm người đi bộ (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình vẽ người đi bộ màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào.
+
+Đối tượng: Biển báo cấm - cấm quay đầu (cột phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình mũi tên cong màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm quay đầu xe.
+
+Đối tượng: Biển báo cấm - cấm xe tải và xe khách (cột phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình vẽ xe tải và xe khách màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe tải và xe khách đi vào.
+
+Đối tượng: Biển báo hiệu lệnh - phía dưới biển cấm xe tải/khách
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, nội dung: 'CẤM CÁC LOẠI XE TẢI, XE KHÁCH'.
+Ý nghĩa hoặc thông số: Biển phụ giải thích rõ nội dung cấm của biển trên.
+F2=0.6000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.10'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.12'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.7'}]
+gate=high; s_max=0.892696; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.937208 | corpus=0.854947 | example=0.946348 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.15 | fusion=0.936562 | corpus=0.848492 | example=0.946348 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.24 | fusion=0.935744 | corpus=0.840308 | example=0.946348 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 28 | fusion=0.935621 | corpus=0.839076 | example=0.946348 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | C.45 | fusion=0.933056 | corpus=0.813425 | example=0.946348 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.4 | fusion=0.930345 | corpus=0.863261 | example=0.937799 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.12 | fusion=0.928353 | corpus=0.843345 | example=0.937799 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | B.10 | fusion=0.928283 | corpus=0.842639 | example=0.937799 | sources=['corpus', 'example']
+#9 | QCVN 41:2024/BGTVT | B.25 | fusion=0.917555 | corpus=0.868001 | example=0.923061 | sources=['corpus', 'example']
+
+===== train_509 =====
+Câu hỏi:
+Khi gặp những biển báo giao thông này những phương tiện giao thông nào được phép lưu thông qua cầu ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên cùng (trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có vạch ngang đỏ ở giữa
+Ý nghĩa hoặc thông số: Cấm mọi phương tiện cơ giới đi vào
+
+Đối tượng: Biển báo nguy hiểm - phía trên cùng (trái, bên phải biển cấm)
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, chữ 'ĐI CHẬM' màu đen
+Ý nghĩa hoặc thông số: Cảnh báo đi chậm
+
+Đối tượng: Biển báo cấm - chiều cao (trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '2,2m' và mũi tên chỉ lên xuống
+Ý nghĩa hoặc thông số: Hạn chế chiều cao 2,2 mét
+
+Đối tượng: Biển báo cấm - tải trọng (giữa)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '3t'
+Ý nghĩa hoặc thông số: Hạn chế tải trọng 3 tấn
+
+Đối tượng: Biển báo cấm - xe buýt (giữa phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe buýt bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm xe buýt đi vào
+
+Đối tượng: Biển báo cấm - người đi bộ (phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng người đi bộ bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào
+
+Đối tượng: Biển báo cấm - xe đạp (phải dưới)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe đạp bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào
+
+Đối tượng: Biển báo cấm - rẽ trái (phải dưới cùng)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có mũi tên chỉ rẽ trái bị gạch chéo
+Ý nghĩa hoặc thông số: Cấm rẽ trái
+
+Đối tượng: Biển LED thông báo (phía trên)
+Đặc điểm: Biển LED chữ đỏ, nội dung: 'XE KHÁCH KHÔNG LÊN CẦU'
+Ý nghĩa hoặc thông số: Thông báo xe khách không được lên cầu
+F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.10'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.12'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.7'}]
+gate=high; s_max=0.885821; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | B.4 | fusion=0.934469 | corpus=0.863387 | example=0.942367 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.934437 | corpus=0.858178 | example=0.942911 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.15 | fusion=0.933486 | corpus=0.848661 | example=0.942911 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 28 | fusion=0.933012 | corpus=0.843920 | example=0.942911 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.10 | fusion=0.932527 | corpus=0.843964 | example=0.942367 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.12 | fusion=0.932365 | corpus=0.842345 | example=0.942367 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.24 | fusion=0.932129 | corpus=0.835097 | example=0.942911 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | C.45 | fusion=0.930383 | corpus=0.817631 | example=0.942911 | sources=['corpus', 'example']
+
+===== train_511 =====
+Câu hỏi:
+Biển báo giao thông này mang ý nghĩa là gì ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu - phía trước bên phải
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen là hình người đang đi bộ trên vạch kẻ ngang.
+Ý nghĩa hoặc thông số: Biển báo hiệu người đi bộ - cảnh báo tài xế có người đi bộ trên đường hoặc gần đường.
+F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.24'}]
+gate=high; s_max=0.940608; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | D.5 | fusion=0.959734 | corpus=0.864606 | example=0.970304 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.959553 | corpus=0.862798 | example=0.970304 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 28 | fusion=0.950788 | corpus=0.855859 | example=0.961336 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.4 | fusion=0.949987 | corpus=0.847848 | example=0.961336 | sources=['corpus', 'example']
+
+===== train_517 =====
+Câu hỏi:
+Biển báo này thường được đặt tại khu vực nào ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu cảnh báo - phía bên phải đường
+Đặc điểm: Hình chữ nhật đứng, nền màu xanh dương, biểu tượng màu trắng mô tả các tòa nhà cao tầng (kiểu kiến trúc đô thị), không có chữ viết hay số nào đọc được trên biển.
+Ý nghĩa hoặc thông số: Biển báo hiệu cảnh báo về khu vực đô thị, khu dân cư hoặc khu vực có nhiều công trình xây dựng; chưa xác định chắc chắn mã số hoặc quy định pháp lý cụ thể từ ảnh.
+F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.17'}]
+gate=high; s_max=0.912376; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | D.17 | fusion=0.946469 | corpus=0.858995 | example=0.956188 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 36 | fusion=0.929106 | corpus=0.854253 | example=0.937423 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.927922 | corpus=0.842411 | example=0.937423 | sources=['corpus', 'example']
+
+===== train_529 =====
+Câu hỏi:
+Đoạn đường này người điều khiển phương tiện xe máy không được phép làm gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có chữ 'MAI SƠN', 'QUỐC LỘ 45', 'EXPRESSWAY' và biểu tượng đường cao tốc. Biển phụ nhỏ màu vàng ở góc trên bên trái ghi 'CT.01'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến Mai Sơn, Quốc lộ 45 và đường cao tốc.
+
+Đối tượng: Biển báo tốc độ - phía dưới
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây. Chứa hai biển tròn: biển bên trái hình tròn viền đỏ, nền trắng, số '90'; biển bên phải hình tròn viền xanh, nền trắng, số '60'.
+Ý nghĩa hoặc thông số: Quy định tốc độ tối đa cho các loại phương tiện khác nhau trên đoạn đường này.
+F2=0.5000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
+gate=high; s_max=0.856621; example_weight=0.9; corpus_weight=0.09999999999999998
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.924828 | corpus=0.893481 | example=0.928311 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.4 | fusion=0.914545 | corpus=0.866672 | example=0.919864 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.913343 | corpus=0.854661 | example=0.919864 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.10 | fusion=0.912146 | corpus=0.842689 | example=0.919864 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.12 | fusion=0.910594 | corpus=0.827170 | example=0.919864 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | P.3 | fusion=0.908989 | corpus=0.872729 | example=0.913018 | sources=['corpus', 'example']
+

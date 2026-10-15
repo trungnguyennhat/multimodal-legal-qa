@@ -1,0 +1,62 @@
+{
+  "method": "hybrid_retrieval",
+  "split": "dev",
+  "queries": 112,
+  "example_weight": 0.6,
+  "corpus_weight": 0.4,
+  "final_top_n": 5,
+  "normalization": "fixed_cosine_affine_(s+1)/2",
+  "missing_branch_score": 0.0,
+  "strategy": "confidence_gated",
+  "tau_high": 0.82,
+  "tau_low": 0.7,
+  "weight_scope": "example_weight_and_corpus_weight_apply_to_middle_gate",
+  "high_example_weight": 0.9,
+  "low_example_weight": 0.3,
+  "high_top_k_examples": 3,
+  "high_cutoff": "all_valid_top3_citations",
+  "final_top_n_applies_to": [
+    "middle",
+    "low"
+  ],
+  "gate_counts": {
+    "high": 97,
+    "middle": 15,
+    "low": 0
+  },
+  "confidence_interpretation": "similarity_not_probability",
+  "status": "COMPLETED",
+  "created_at": "2026-10-15T13:34:59.605510+00:00",
+  "input_sha256": {
+    "query_retrieval_corpus/manifest.json": "e76a72b863185d2fc3c76e20e9c4821d024bf5c1e6bf29ac11d5493a8cc864ee",
+    "query_retrieval_corpus/retrieval_results.jsonl": "d695c281e208d8c6ab2415f4518f81dcf1aa2c4879c5ef83c3db5a0f98f5f66c",
+    "query_retrieval_example/manifest.json": "beed0e7d5f45eacc8dcf791210cb80bf16dfc8052e99dda786a06caf1ba187b8",
+    "query_retrieval_example/retrieval_results.jsonl": "2a2f94d587b7aad48d72d2250f31f96fe3e7fa289361dcb8032e574756426eb8",
+    "dev.json": "982a852348a358ce2aca0c1bcf84ca6f2e8c130ddeed6be71b025b8eeeda405e",
+    "query_embedding_dev/queries.jsonl": "fa531976a1faadddb30a21667683cfd435a52bda3fdc784a389396c27d589426",
+    "query_embedding_dev/vectors.npy": "41af3031740c3269a18342d5abe46c7b737de903faa96583638d1341414f28c5",
+    "corpus_embedding/chunks.jsonl": "fd0f2303de120f50c67888948cd06cce2a9400a3b8ae14d1da79f92dec5e8dc6",
+    "corpus_embedding/manifest.json": "46778fd1854591cfe5a353260e1add32b00b8085545b4ba1f03e4fe3b09d0944",
+    "corpus_embedding/vectors.npy": "a41f272c67264b3936929fe8e48e20451aad8883e2756d993f20696d685d2059"
+  },
+  "source_sha256": "ac10b64e0bd7da47dbf20c989d79a2f7d185cdb7d017e5156dad8ad13908c898",
+  "candidate_policy": "high_top3_examples_only_else_union_saved_results",
+  "tie_break": "citation_lexicographic",
+  "same_image_policy": "allow_shared_images_as_requested",
+  "overwrite": true,
+  "resources": {
+    "device": "cpu",
+    "vector_bytes_loaded": 22818816
+  },
+  "corpus_scoring": "max_child_cosine_for_every_candidate",
+  "high_reranking": "weighted_within_locked_candidate_set_not_strict_tie_break",
+  "selection_split": "dev",
+  "independent_evaluation": false,
+  "elapsed_seconds": 0.30824359999678563,
+  "output_sha256": {
+    "retrieval_results.jsonl": "1c2e0f9eb984508dd7b192e255d127a63bd969b536a15d9662e9decf22fb1a34",
+    "per_query_metrics.jsonl": "59e792a4a6e43b27adc60eb5e928481d42934aec86031cf3955e6dc46a85a3dc",
+    "metrics.json": "f8cd69970f9e153ad33425674a630dfc79a83e4ab2bfe77484b5021d9423ed20",
+    "retrieval_preview.txt": "7cfe3d7766c276772d1d3f28a532e79b0b09526cfab175233d71c82c2f73184b"
+  }
+}

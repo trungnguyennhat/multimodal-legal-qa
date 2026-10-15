@@ -20,7 +20,7 @@ from multimodal_legal_rag.data import read_json_list
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "data/raw/VLSP2025-MLQA-TSR/dataset/law_db/vlsp2025_law.json"
 IMAGES = ROOT / "data/processed/images/law"
-OUTPUT = ROOT / "artifacts/experiments/text_based_rag/data_preprocessing"
+OUTPUT = ROOT / "artifacts/experiments/text_based_rag/corpus/data_preprocessing"
 MARKER = re.compile(r"<<(?P<kind>IMAGE|TABLE):(?P<body>.*?)/(?P=kind)>>", re.S)
 LABEL = re.compile(r"\b(Hình|Bảng)\s+([A-ZĐ]\.\d+(?:\.\d+)*|\d+(?:\.\d+)*)([a-z])?", re.I)
 VOID = {"img", "br", "hr", "input", "meta", "link", "source", "wbr", "col", "area", "base", "embed", "param"}

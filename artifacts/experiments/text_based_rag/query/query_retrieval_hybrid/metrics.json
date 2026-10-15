@@ -1,0 +1,76 @@
+{
+  "method": "hybrid_retrieval",
+  "split": "dev",
+  "queries": 112,
+  "example_weight": 0.6,
+  "corpus_weight": 0.4,
+  "final_top_n": 5,
+  "normalization": "fixed_cosine_affine_(s+1)/2",
+  "missing_branch_score": 0.0,
+  "strategy": "confidence_gated",
+  "tau_high": 0.82,
+  "tau_low": 0.7,
+  "weight_scope": "example_weight_and_corpus_weight_apply_to_middle_gate",
+  "high_example_weight": 0.9,
+  "low_example_weight": 0.3,
+  "high_top_k_examples": 3,
+  "high_cutoff": "all_valid_top3_citations",
+  "final_top_n_applies_to": [
+    "middle",
+    "low"
+  ],
+  "gate_counts": {
+    "high": 97,
+    "middle": 15,
+    "low": 0
+  },
+  "confidence_interpretation": "similarity_not_probability",
+  "macro": {
+    "precision": 0.3032312925170068,
+    "recall": 0.6277210884353741,
+    "f1": 0.39001623115814843,
+    "f2": 0.4918943282554603
+  },
+  "micro": {
+    "precision": 0.2949640287769784,
+    "recall": 0.6456692913385826,
+    "f1": 0.4049382716049383,
+    "f2": 0.5216284987277354
+  },
+  "hit_rate": 0.8125,
+  "evaluation_scope": "dev_development_not_independent_test",
+  "by_gate": {
+    "high": {
+      "queries": 97,
+      "macro": {
+        "precision": 0.30888561610211096,
+        "recall": 0.6259941089837997,
+        "f1": 0.39325880004122,
+        "f2": 0.49236056781938853
+      }
+    },
+    "middle": {
+      "queries": 15,
+      "macro": {
+        "precision": 0.26666666666666666,
+        "recall": 0.638888888888889,
+        "f1": 0.369047619047619,
+        "f2": 0.48887931240872423
+      }
+    },
+    "low": {
+      "queries": 0,
+      "macro": {
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "f2": null
+      }
+    }
+  },
+  "reference_macro_f2": {
+    "corpus_only": 0.245940149229051,
+    "example_only": 0.4777248004425611,
+    "gate_only_without_corpus_reranking": 0.49042324616320304
+  }
+}

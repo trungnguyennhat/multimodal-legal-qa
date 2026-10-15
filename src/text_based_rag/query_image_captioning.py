@@ -20,7 +20,7 @@ from .corpus_image_captioning import (ROOT, CORPUS_MODEL, PROJECTOR, SERVER, COR
 
 INPUT = ROOT / "data/processed/splits/train.json"
 IMAGES = ROOT / "data/processed/images/train"
-OUTPUT = ROOT / "artifacts/experiments/text_based_rag/query_image_captioning_train"
+OUTPUT = ROOT / "artifacts/experiments/text_based_rag/query/query_image_captioning_train"
 MAX_NEW_TOKENS = CORPUS_MAX_TOKENS
 QUERY_PROMPT = """Bạn là chuyên gia phân tích hệ thống báo hiệu đường bộ Việt Nam.
 Nhiệm vụ: Trích xuất mô tả chuẩn hóa từ HÌNH ẢNH để tìm kiếm điều luật, sau đó dùng CÂU HỎI để xác định đối tượng liên quan.
@@ -85,7 +85,7 @@ def main():
     parser.add_argument('--overwrite', action='store_true', help='Regenerate all query captions in the existing output directory.')
     args = parser.parse_args()
     INPUT = ROOT / f'data/processed/splits/{args.split}.json'
-    OUTPUT = ROOT / f'artifacts/experiments/text_based_rag/query_image_captioning_{args.split}'
+    OUTPUT = ROOT / f'artifacts/experiments/text_based_rag/query/query_image_captioning_{args.split}'
     IMAGES = ROOT / 'data/processed/images/train'
     if args.split == 'public_test':
         INPUT = DEFAULT_SOURCE / DATA_FILES['public_test']
@@ -96,7 +96,7 @@ def main():
         rows = [r for r in rows if r.get('image_id') == Path(args.image).stem]
         if not rows:
             raise ValueError(f'Không có query cho ảnh {args.image} trong {args.split}.')
-        OUTPUT = ROOT / 'artifacts/experiments/text_based_rag/query_caption_review' / (
+        OUTPUT = ROOT / 'artifacts/experiments/text_based_rag/query/query_caption_review' / (
             Path(args.image).stem + '_' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ'))
     query_ids, unique, mapping = set(), {}, []
     by_filename, caption_images = {}, set()

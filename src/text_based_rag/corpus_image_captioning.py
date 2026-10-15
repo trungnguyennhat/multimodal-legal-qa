@@ -136,9 +136,9 @@ def main():
     config["libraries"] = {"requests": importlib.metadata.version("requests")}
     config["runtime"] = "llama.cpp-b11624-win-cuda-13.4"
     fingerprint = sha256(json.dumps(config, sort_keys=True).encode()).hexdigest()
-    run = ROOT / "artifacts/experiments/text_based_rag/corpus_image_captioning"
+    run = ROOT / "artifacts/experiments/text_based_rag/corpus/corpus_image_captioning"
     if args.image:
-        run = ROOT / "artifacts/experiments/text_based_rag/corpus_caption_review" / (
+        run = ROOT / "artifacts/experiments/text_based_rag/corpus/corpus_caption_review" / (
             Path(args.image).stem + "_" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ"))
     previous = {}
     if (run / "manifest.json").exists():
