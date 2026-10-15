@@ -33,6 +33,8 @@ IMAGE_ARCHIVES = {
 }
 
 PRIVATE_SUBMISSION_ARCHIVE = Path("dataset/private_test data (post submission)/sample_submission/submission.zip")
+PRIVATE_TASK1_FILE = DEFAULT_SOURCE / "dataset/private_test data (post submission)/submission_task1_no_labels.json"
+PRIVATE_TASK2_FILE = DEFAULT_SOURCE / "dataset/private_test data (post submission)/submission_task2_no_labels.json"
 
 IMAGE_PATTERN = re.compile(r"<<IMAGE:\s*(.*?)\s*/IMAGE>>")
 

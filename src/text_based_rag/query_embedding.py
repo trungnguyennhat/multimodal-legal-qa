@@ -7,7 +7,7 @@ import json
 from threading import Event, Thread
 import time
 
-from multimodal_legal_rag.data import DATA_FILES, DEFAULT_SOURCE, read_json_list
+from multimodal_legal_rag.data import DATA_FILES, DEFAULT_SOURCE, PRIVATE_TASK1_FILE, read_json_list
 from .corpus_embedding import MODEL, REVISION, SNAPSHOT, file_hash, load_encoder, embed_batch
 from .corpus_image_captioning import ROOT, IMAGE_CATEGORIES, ITEM_FIELDS, read_lines, save
 from .corpus_chunking import caption_parts
@@ -18,13 +18,16 @@ CORPUS = ROOT / "artifacts/experiments/text_based_rag/corpus/corpus_embedding"
 OUTPUT = ROOT / "artifacts/experiments/text_based_rag/query/query_embedding_train"
 
 
-def query_representation(question, caption, query_id):
+def query_representation(question, caption, query_id, allow_incomplete=False):
     try:
         payload = json.loads(caption['description'])
     except json.JSONDecodeError as exc:
-        if not caption.get('accepted_by_user') or caption.get('original_status') != 'INCOMPLETE':
+        accepted = caption.get('accepted_by_user') and caption.get('original_status') == 'INCOMPLETE'
+        if not accepted and not (allow_incomplete and caption.get('status') == 'INCOMPLETE'):
             raise ValueError(f'Query {query_id}: JSON caption bị cắt chưa được chấp nhận.') from exc
-        category, recovered, _ = caption_parts(caption)
+        recovery_caption = caption if accepted else {
+            **caption, 'accepted_by_user': True, 'original_status': 'INCOMPLETE'}
+        category, recovered, _ = caption_parts(recovery_caption)
         items = recovered
         parse_mode = 'recovered_complete_items'
     else:
@@ -71,10 +74,10 @@ def query_representation(question, caption, query_id):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--batch-size", type=int, default=4)
-    parser.add_argument('--split', choices=('train', 'dev', 'public_test'), default='train')
+    parser.add_argument('--split', choices=('train', 'dev', 'public_test', 'private_test'), default='train')
     parser.add_argument('--overwrite', action='store_true', help='Replace query embedding output after validating new vectors.')
     parser.add_argument('--allow-incomplete-captions', action='store_true',
-                        help='Use nonempty truncated captions, retaining their INCOMPLETE status.')
+                        help='Accept INCOMPLETE captions for this run, recover complete JSON items, and retain original caption status.')
     args = parser.parse_args()
     INPUT = ROOT / f'data/processed/splits/{args.split}.json'
     suffix = f'_{args.split}'
@@ -86,6 +89,11 @@ def main():
         IMAGES = ROOT / 'data/processed/images/public_test'
         CAPTIONS = ROOT / 'artifacts/public-test/text_based_rag/query_image_captioning'
         OUTPUT = ROOT / 'artifacts/public-test/text_based_rag/query_embedding'
+    elif args.split == 'private_test':
+        INPUT = PRIVATE_TASK1_FILE
+        IMAGES = ROOT / 'data/processed/images/private_test'
+        CAPTIONS = ROOT / 'artifacts/private_test/text_based_rag/retrieval/query_image_captioning'
+        OUTPUT = ROOT / 'artifacts/private_test/text_based_rag/retrieval/query_embedding'
     if args.batch_size < 1:
         parser.error("batch-size phải >= 1")
     if OUTPUT.exists() and not args.overwrite:
@@ -113,7 +121,10 @@ def main():
         allowed_statuses = {'COMPLETED', 'INCOMPLETE'} if args.allow_incomplete_captions else {'COMPLETED'}
         if (caption_manifest.get("status") not in allowed_statuses or caption_manifest.get("split") != args.split
                 or caption_manifest.get('input_sha256') != file_hash(INPUT)):
-            raise ValueError("Caption chưa hoàn tất hoặc không khớp split/nguồn query.")
+            raise ValueError(f"Caption chưa hoàn tất hoặc không khớp split/nguồn query: "
+                             f"status={caption_manifest.get('status')}; "
+                             f"incomplete_queries={caption_manifest.get('incomplete_queries', [])}. "
+                             "Chỉ dùng --allow-incomplete-captions nếu chấp nhận phục hồi item đầy đủ từ caption bị cắt.")
         if caption_manifest.get('settings', {}).get('caption_unit') != 'query_id':
             raise ValueError('Cần caption schema query mới theo ảnh + câu hỏi và is_relevant; không dùng caption cũ theo ảnh.')
         expected = {"status": "COMPLETED", "model": MODEL, "revision": REVISION,
@@ -159,10 +170,11 @@ def main():
             caption_hashes[item["caption_file"]] = file_hash(path)
             queries.append({"query_id": row["id"], "source_image_id": row["image_id"],
                             "image_id": item["image_id"], "caption_file": item["caption_file"],
-                            "accepted_caption": caption.get("accepted_by_user", False),
+                            "accepted_caption": bool(caption.get("accepted_by_user", False) or
+                                                     (args.allow_incomplete_captions and caption['status'] == 'INCOMPLETE')),
                             "caption_status": caption['status'],
                             "original_caption_status": caption.get('original_status', caption['status']),
-                            **query_representation(question, caption, row['id']),
+                            **query_representation(question, caption, row['id'], args.allow_incomplete_captions),
                             "vector_row": len(queries)})
         phase = "load-text-encoder"
         question_only = sum(q['representation_mode'] == 'question_only' for q in queries)
@@ -170,8 +182,8 @@ def main():
               f'relevant_items={sum(q["selected_item_count"] for q in queries)}', flush=True)
         incomplete_queries = sum(q['caption_status'] == 'INCOMPLETE' for q in queries)
         if incomplete_queries:
-            print(f'[warning] Dùng caption INCOMPLETE cho {incomplete_queries}/{total} query; '
-                  'giữ nguyên trạng thái, chưa được người dùng duyệt.', flush=True)
+            print(f'[warning] Chấp nhận {incomplete_queries}/{total} caption INCOMPLETE qua CLI; '
+                  'chỉ phục hồi item đầy đủ, giữ nguyên trạng thái caption gốc.', flush=True)
         import numpy as np
         import torch
         tokenizer, model, resources = load_encoder()

@@ -1,34 +1,81 @@
 {
+  "query_id": "public_test_14",
   "image_id": "sha256:f657f113decdac270f8356be5cd7bbb5fe6c401970ebf09843e70730f01fd7d3",
   "filename": "public_test_3_8.jpg",
-  "description": "- Biển hình tròn, nền đỏ, có đường gạch chéo màu trắng, bên trong có hình một chiếc xe tải 4 bánh và dòng chữ “TỪ 18 CHỖ”.\n- Biển hình chữ nhật đứng, nền xanh, có chữ “P” màu trắng ở góc trên bên trái, bên dưới có dòng chữ “NƠI ĐỖ XE (TRONG PHẠM VỊ VẠCH SƠN)”.\n- Biển hình chữ nhật đứng, nền trắng, có hình một chiếc xe hơi và dòng chữ “LỐNG ĐƯỜNG”.\n- Biển hình chữ nhật đứng, nền trắng, có hình một chiếc xe đạp và dòng chữ “VÍA HÈ”.",
+  "question_text": "Có bao nhiêu loại biển báo khác nhau (có thể xác định được nội dung biển báo) trong hình ?",
+  "description": "{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Ảnh chụp cảnh đường phố với nhiều biển báo giao thông được lắp đặt trên cột dọc lề đường, bao gồm biển cấm xe tải, biển chỉ dẫn nơi đỗ xe và biển quy định làn đường.\",\n  \"items\": [\n    {\n      \"identifier\": \"Biển báo cấm - phía trên\",\n      \"visual_or_geometric_features\": \"Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải và xe ô tô nhỏ bị gạch chéo đỏ.\",\n      \"meaning_or_specification\": \"Cấm xe tải và xe ô tô nhỏ đi vào.\",\n      \"is_relevant\": true\n    },\n    {\n      \"identifier\": \"Biển phụ - ngay bên dưới biển cấm\",\n      \"visual_or_geometric_features\": \"Hình chữ nhật, nền xanh dương, chữ trắng, nội dung: 'XE CÔNG VỤ, XE ĐÁY TẢI, XE HỘP ĐƯỜNG, XE ĐÁY CỌC, XE TẢI, XE TẢI NHẸ, XE TẢI LỚN, XE TẢI TRỌNG TẢI TỪ 1 TẤN ĐẾN 3 TẤN, XE TẢI TRỌNG TẢI TỪ 3 TẤN ĐẾN 5 TẤN, XE TẢI TRỌNG TẢI TỪ 5 TẤN ĐẾN 7 TẤN, XE TẢI TRỌNG TẢI TỪ 7 TẤN ĐẾN 9 TẤN, XE TẢI TRỌNG TẢI TỪ 9 TẤN ĐẾN 11 TẤN, XE TẢI TRỌNG TẢI TỪ 11 TẤN ĐẾN 13 TẤN, XE TẢI TRỌNG TẢI TỪ 13 TẤN ĐẾN 15 TẤN, XE TẢI TRỌNG TẢI TỪ 15 TẤN ĐẾN 17 TẤN, XE TẢI TRỌNG TẢI TỪ 17 TẤN ĐẾN 19 TẤN, XE TẢI TRỌNG TẢI TỪ 19 TẤN ĐẾN 21 TẤN, XE TẢI TRỌNG TẢI TỪ 21 TẤN ĐẾN 23 TẤN, XE TẢI TRỌNG TẢI TỪ 23 TẤN ĐẾN 25 TẤN, XE TẢI TRỌNG TẢI TỪ 25 TẤN ĐẾN 27 TẤN, XE TẢI TRỌNG TẢI TỪ 27 TẤN ĐẾN 29 TẤN, XE TẢI TRỌNG TẢI TỪ 29 TẤN ĐẾN 31 TẤN, XE TẢI TRỌNG TẢI TỪ 31 TẤN ĐẾN 33 TẤN, XE TẢI TRỌNG TẢI TỪ 33 TẤN ĐẾN 35 TẤN, XE TẢI TRỌNG TẢI TỪ 35 TẤN ĐẾN 37 TẤN, XE TẢI TRỌNG TẢI TỪ 37 TẤN ĐẾN 39 TẤN, XE TẢI TRỌNG TẢI TỪ 39 TẤN ĐẾN 41 TẤN, XE TẢI TRỌNG TẢI TỪ 41 TẤN ĐẾN 43 TẤN, XE TẢI TRỌNG TẢI TỪ 43 TẤN ĐẾN 45 TẤN, XE TẢI TRỌNG TẢI TỪ 45 TẤN ĐẾN 47 TẤN, XE TẢI TRỌNG TẢI TỪ 47 TẤN ĐẾN 49 TẤN, XE TẢI TRỌNG TẢI TỪ 49 TẤN ĐẾN 51 TẤN, XE TẢI TRỌNG TẢI TỪ 51 TẤN ĐẾN 53 TẤN, XE TẢI TRỌNG TẢI TỪ 53 TẤN ĐẾN 55 TẤN, XE TẢI TRỌNG TẢI TỪ 55 TẤN ĐẾN 57 TẤN, XE TẢI TRỌNG TẢI TỪ 57 TẤN ĐẾN 59 TẤN, XE TẢI TRỌNG TẢI TỪ 59 TẤN ĐẾN 61 TẤN, XE TẢI TRỌNG TẢI TỪ 61 TẤN ĐẾN 63 TẤN, XE TẢI TRỌNG TẢI TỪ 63 TẤN ĐẾN 65 TẤN, XE TẢI TRỌNG TẢI TỪ 65 TẤN ĐẾN 67 TẤN, XE TẢI TRỌNG TẢI TỪ 67 TẤN ĐẾN 69 TẤN, XE TẢI TRỌNG TẢI TỪ 69 TẤN ĐẾN 71 TẤN, XE TẢI TRỌNG TẢI TỪ 71 TẤN ĐẾN 73 TẤN, XE TẢI TRỌNG TẢI TỪ 73 TẤN ĐẾN 75 TẤN, XE TẢI TRỌNG TẢI TỪ 75 TẤN ĐẾN 77 TẤN, XE TẢI TRỌNG TẢI TỪ 77 TẤN ĐẾN 79 TẤN, XE TẢI TRỌNG TẢI TỪ 79 TẤN ĐẾN 81 TẤN, XE TẢI TRỌNG TẢI TỪ 81 TẤN ĐẾN 83 TẤN, XE TẢI TRỌNG TẢI TỪ 83 TẤN ĐẾN 85 TẤN, XE TẢI TRỌNG TẢI TỪ 85 TẤN ĐẾN 87 TẤN, XE TẢI TRỌNG TẢI TỪ 87 TẤN ĐẾN 89 TẤN, XE TẢI TRỌNG TẢI TỪ 89 TẤN ĐẾN 91 TẤN, XE TẢI TRỌNG TẢI TỪ 91 TẤN ĐẾN 93 TẤN, XE TẢI TRỌNG TẢI TỪ 93 TẤN ĐẾN 95 TẤN, XE TẢI TRỌNG TẢI TỪ 95 TẤN ĐẾN 97 TẤN, XE TẢI TRỌNG TẢI TỪ 97 TẤN ĐẾN 99 TẤN, XE TẢI TRỌNG TẢI TỪ 99 TẤN ĐẾN 101 TẤN, XE TẢI TRỌNG TẢI TỪ 101 TẤN ĐẾN 103 TẤN, XE TẢI TRỌNG TẢI TỪ 103 TẤN ĐẾN 105 TẤN, XE TẢI TRỌNG TẢI TỪ 105 TẤN ĐẾN 107 TẤN, XE TẢI TRỌNG TẢI TỪ 107 TẤN ĐẾN 109 TẤN, XE TẢI TRỌNG TẢI TỪ 109 TẤN ĐẾN 111 TẤN, XE TẢI TRỌNG TẢI TỪ 111 TẤN ĐẾN 113 TẤN, XE TẢI TRỌNG TẢI TỪ 113 TẤN ĐẾN 115 TẤN, XE TẢI TRỌNG TẢI TỪ 115 TẤN ĐẾN 117 TẤN, XE TẢI TRỌNG TẢI TỪ 117 TẤN ĐẾN 119 TẤN, XE TẢI TRỌNG TẢI TỪ 119 TẤN ĐẾN 121 TẤN, XE TẢI TRỌNG TẢI TỪ 121 TẤN ĐẾN 123 TẤN, XE TẢI TRỌNG TẢI TỪ 123 TẤN ĐẾN 125 TẤN, XE TẢI TRỌNG TẢI TỪ 125 TẤN ĐẾN 127 TẤN, XE TẢI TRỌNG TẢI TỪ 127 TẤN ĐẾN 129 TẤN, XE TẢI TRỌNG TẢI TỪ 129 TẤN ĐẾN 131 TẤN, XE TẢI TRỌNG TẢI TỪ 131 TẤN ĐẾN 133 TẤN, XE TẢI TRỌNG TẢI TỪ 133 TẤN ĐẾN 135 TẤN, XE TẢI TRỌNG TẢI TỪ 135 TẤN ĐẾN 137 TẤN, XE TẢI TRỌNG TẢI TỪ 137 TẤN ĐẾN 139 TẤN, XE TẢI TRỌNG TẢI TỪ 139 TẤN ĐẾN 141 TẤN, XE TẢI TRỌNG TẢI TỪ 141 TẤN ĐẾN 143 TẤN, XE TẢI TRỌNG TẢI TỪ 143 TẤN ĐẾN 145 TẤN, XE TẢI TRỌNG TẢI TỪ 145 TẤN ĐẾN 147 TẤN, XE TẢI TRỌNG TẢI TỪ 147 TẤN ĐẾN 149 TẤN, XE TẢI TRỌNG TẢI TỪ 149 TẤN ĐẾN 151 TẤN, XE TẢI TRỌNG TẢI TỪ 151 TẤN ĐẾN 153 TẤN, XE TẢI TRỌNG TẢI TỪ 153 TẤN ĐẾN 155 TẤN, XE TẢI TRỌNG TẢI TỪ 155 TẤN ĐẾN 157 TẤN, XE TẢI TRỌNG TẢI TỪ 157 TẤN ĐẾN 159 TẤN, XE TẢI TRỌNG TẢI TỪ 159 TẤN ĐẾN 161 TẤN, XE TẢI TRỌNG TẢI TỪ 161 TẤN ĐẾN 163 TẤN, XE TẢI TRỌNG TẢI TỪ 163 TẤN ĐẾN 165 TẤN, XE TẢI TRỌNG TẢI TỪ 165 TẤN ĐẾN 167 TẤN, XE TẢI TRỌNG TẢI TỪ 167 TẤN ĐẾN 169 TẤN, XE TẢI TRỌNG TẢI TỪ 169 TẤN ĐẾN 171 TẤN, XE TẢI TRỌNG TẢI TỪ 171 TẤN ĐẾN 173 TẤN, XE TẢI TRỌNG TẢI TỪ 173 TẤN ĐẾN 175 TẤN, XE TẢI TRỌNG TẢI TỪ 175 TẤN ĐẾN 177 TẤN, XE TẢI TRỌNG TẢI TỪ 177 TẤN ĐẾN 179 TẤN, XE TẢI TRỌNG TẢI TỪ 179 TẤN ĐẾN 181 TẤN, XE TẢI TRỌNG TẢI TỪ 181 TẤN ĐẾN 183 TẤN, XE TẢI TRỌNG TẢI TỪ 183 TẤN ĐẾN 185 TẤN, XE TẢI TRỌNG TẢI TỪ 185 TẤN ĐẾN 187 TẤN, XE TẢI TRỌNG TẢI TỪ 187 TẤN ĐẾN 189 TẤN, XE TẢI TRỌNG TẢI TỪ 189 TẤN ĐẾN 191 TẤN, XE TẢI TRỌNG TẢI TỪ 191 TẤN ĐẾN 193 TẤN, XE TẢI TRỌNG TẢI TỪ 193 TẤN ĐẾN 195 TẤN, XE TẢI TRỌNG TẢI TỪ 195 TẤN ĐẾN 197 TẤN, XE TẢI TRỌNG TẢI TỪ 197 TẤN ĐẾN 199 TẤN, XE TẢI TRỌNG TẢI TỪ 199 TẤN ĐẾN 201 TẤN, XE TẢI TRỌNG TẢI TỪ 201 TẤN ĐẾN 203 TẤN, XE TẢI TRỌNG TẢI TỪ 203 TẤN ĐẾN 205 TẤN, XE TẢI TRỌNG TẢI TỪ 205 TẤN ĐẾN 207 TẤN, XE TẢI TRỌNG TẢI TỪ 207 TẤN ĐẾN 209 TẤN, XE TẢI TRỌNG TẢI TỪ 209 TẤN ĐẾN 211 TẤN, XE TẢI TRỌNG TẢI TỪ 211 TẤN ĐẾN 213 TẤN, XE TẢI TRỌNG TẢI TỪ 213 TẤN ĐẾN 215 TẤN, XE TẢI TRỌNG TẢI TỪ 215 TẤN ĐẾN 217 TẤN, XE TẢI TRỌNG TẢI TỪ 217 TẤN ĐẾN 219 TẤN, XE TẢI TRỌNG TẢI TỪ 219 TẤN ĐẾN 221 TẤN, XE TẢI TRỌNG TẢI TỪ 221 TẤN ĐẾN 223 TẤN, XE TẢI TRỌNG TẢI TỪ 223 TẤN ĐẾN 225 TẤN, XE TẢI TRỌNG TẢI TỪ 225 TẤN ĐẾN 227 TẤN, XE TẢI TRỌNG TẢI TỪ 227 TẤN ĐẾN 229 TẤN, XE TẢI TRỌNG TẢI TỪ 229 TẤN ĐẾN 231 TẤN, XE TẢI TRỌNG TẢI TỪ 231 TẤN ĐẾN 233 TẤN, XE TẢI TRỌNG TẢI TỪ 233 TẤN ĐẾN 235 TẤN, XE TẢI TRỌNG TẢI TỪ 235 TẤN ĐẾN 237 TẤN, XE TẢI TRỌNG TẢI TỪ 237 TẤN ĐẾN 239 TẤN, XE TẢI TRỌNG TẢI TỪ 239 TẤN ĐẾN 241 TẤN, XE TẢI TRỌNG TẢI TỪ 241 TẤN ĐẾN 243 TẤN, XE TẢI TRỌNG TẢI TỪ 243 TẤN ĐẾN 245 TẤN, XE TẢI TRỌNG TẢI TỪ 245 TẤN ĐẾN 247 TẤN, XE TẢI TRỌNG TẢI TỪ 247 TẤN ĐẾN 249 TẤN, XE TẢI TRỌNG TẢI TỪ 249 TẤN ĐẾN 251 TẤN, XE TẢI TRỌNG TẢI TỪ 251 TẤN ĐẾN 253 TẤN, XE TẢI TRỌNG TẢI TỪ 253 TẤN ĐẾN 255 TẤN, XE TẢI TRỌNG TẢI TỪ 255 TẤN ĐẾN 257 TẤN, XE TẢI TRỌNG TẢI TỪ 257 TẤN ĐẾN 259 TẤN, XE TẢI TRỌNG TẢI TỪ 259 TẤN ĐẾN 261 TẤN, XE TẢI TRỌNG TẢI TỪ 261 TẤN ĐẾN 263 TẤN, XE TẢI TRỌNG TẢI TỪ 263 TẤN ĐẾN 265 TẤN, XE TẢI TRỌNG TẢI TỪ 265 TẤN ĐẾN 267 TẤN, XE TẢI TRỌNG TẢI TỪ 267 TẤN ĐẾN 269 TẤN, XE TẢI TRỌNG TẢI TỪ 269 TẤN ĐẾN 271 TẤN, XE TẢI TRỌNG TẢI TỪ 271 TẤN ĐẾN 273 TẤN, XE TẢI TRỌNG TẢI TỪ 273 TẤN ĐẾN 275 TẤN, XE TẢI TRỌNG TẢI TỪ 275 TẤN ĐẾN 277 TẤN, XE TẢI TRỌNG TẢI TỪ 277 TẤN ĐẾN 279 TẤN, XE TẢI TRỌNG TẢI TỪ 279 TẤN ĐẾN 281 TẤN, XE TẢI TRỌNG TẢI TỪ 281 TẤN ĐẾN 283 TẤN, XE TẢI TRỌNG TẢI TỪ 283 TẤN ĐẾN 285 TẤN, XE TẢI TRỌNG TẢI TỪ 285 TẤN ĐẾN 287 TẤN, XE TẢI TRỌNG TẢI TỪ 287 TẤN ĐẾN 289 TẤN, XE TẢI TRỌNG TẢI TỪ 289 TẤN ĐẾN 291 TẤN, XE TẢI TRỌNG TẢI TỪ 291 TẤN ĐẾN 293 TẤN, XE TẢI TRỌNG TẢI TỪ 293 TẤN ĐẾN 295 TẤN, XE TẢI TRỌNG TẢI TỪ 295 TẤN ĐẾN 297 TẤN, XE TẢI TRỌNG TẢI TỪ 297 TẤN ĐẾN 299 TẤN, XE TẢI TRỌNG TẢI TỪ 299 TẤN ĐẾN 301 TẤN, XE TẢI TRỌNG TẢI TỪ 301 TẤN ĐẾN 303 TẤN, XE TẢI TRỌNG TẢI TỪ 303 TẤN ĐẾN 305 TẤN, XE TẢI TRỌNG TẢI T",
   "settings": {
-    "model": "unsloth/Qwen3-VL-8B-Instruct-bnb-4bit",
-    "revision": "10d842936325905934ea24e64325d774693f166e",
-    "prompt": "Mô tả biển báo trong ảnh. Không cần mô tả quá chi tiết. Chỉ mô tả hình dạng của các biển, và chỉ mô tả hình có trong biển. Không cần giải thích tên gọi hay ý nghĩa của biển đó là gì.",
-    "min_pixels": 131072,
-    "max_pixels": 786432,
-    "max_new_tokens": 384,
+    "model": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\huggingface\\Qwen3.5-9B-GGUF\\Qwen3.5-9B-Q4_K_M.gguf",
+    "projector": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\huggingface\\Qwen3.5-9B-GGUF\\mmproj-F16.gguf",
+    "prompt": "Bạn là chuyên gia phân tích hệ thống báo hiệu đường bộ Việt Nam.\nNhiệm vụ: Trích xuất mô tả chuẩn hóa từ HÌNH ẢNH để tìm kiếm điều luật, sau đó dùng CÂU HỎI để xác định đối tượng liên quan.\n\nNGUYÊN TẮC ƯU TIÊN BẰNG CHỨNG:\n- Quan sát ảnh trước khi xét câu hỏi. Hình dạng, màu sắc, chữ viết, biểu tượng và vị trí phải lấy từ ảnh; không lấy từ lời mô tả hay giả định trong câu hỏi.\n- Câu hỏi có thể chứa phát biểu sai hoặc yêu cầu đánh giá đúng/sai. Không coi phát biểu đó là sự thật, không chép nó vào mô tả hoặc ý nghĩa của biển. Không trả lời câu hỏi đúng/sai trong lần trích xuất này.\n- Không suy ngược hình dạng hoặc màu sắc từ tên, ý nghĩa hay chữ trên biển; kiểm tra riêng đường viền ngoài, nền, chữ và biểu tượng theo những gì nhìn thấy.\n- Nếu chi tiết bị mờ, che khuất hoặc quá nhỏ, ghi \"không đọc rõ\" hoặc \"không xác định từ ảnh\" cho chi tiết đó; không tự điền chi tiết quen thuộc.\n- Chỉ xuất nội dung tiếng Việt, giữ nguyên chữ/số đọc được trên biển.\n\nBƯỚC 1 - PHÂN LOẠI HÌNH ẢNH (`image_category`):\nXác định hình ảnh thuộc đúng 1 trong 3 loại sau (đồng bộ với cơ sở dữ liệu luật):\n- \"SIGN_ILLUSTRATION\": Ảnh chụp giao thông thực tế hoặc hình minh họa có chứa biển báo hiệu đường bộ.\n- \"TECHNICAL_DIAGRAM\": Bản vẽ kỹ thuật đen trắng quy định kích thước hình học, thông số ký hiệu, hoặc sơ đồ khoảng cách/chiều cao lắp đặt.\n- \"MARKING_AND_SIGNAL\": Ảnh chụp hoặc hình vẽ tập trung vào vạch kẻ đường, đèn tín hiệu, cọc tiêu, rào chắn hoặc người điều khiển giao thông.\n\nBƯỚC 2 - QUY TẮC TRÍCH XUẤT & LỌC NHIỄU:\n1. KHÔNG ĐOÁN MÃ BIỂN: Tuyệt đối không tự suy đoán mã số kỹ thuật của biển báo trừ khi mã số đó được viết rõ bằng chữ trong ảnh hoặc trong câu hỏi.\n2. NẾU LÀ \"SIGN_ILLUSTRATION\":\n   - Sử dụng từ vựng chuẩn về Nhóm biển, Hình dạng và Màu sắc.\n   - Chép đúng chữ viết, con số, đơn vị (tấn, t, m, km, giờ...) thực sự đọc được trên mặt biển chính và biển phụ; phần không đọc được ghi \"không đọc rõ\".\n   - Mỗi biển là một item. Ghi vị trí trong ảnh và quan hệ giữa các biển chỉ khi quan sát được. Hai biển ở gần nhau trong ảnh chưa chắc gắn cùng cột; nếu không rõ, không khẳng định cùng cột.\n   - Ý nghĩa chỉ mô tả ở mức nhận diện được, không thêm điều kiện pháp lý hoặc ví dụ tình huống không có bằng chứng; nếu chưa đủ căn cứ, ghi \"chưa xác định chắc chắn\".\n3. NẾU LÀ \"TECHNICAL_DIAGRAM\":\n   - Không mô tả màu đen/trắng của nét vẽ kỹ thuật thành màu sắc thực tế của biển báo.\n   - Liệt kê đúng tên hình khối hình học và các chữ cái ký hiệu kích thước/góc độ (như D, L, A, B, C, R, 45°...) xuất hiện trong hình.\n4. NẾU LÀ \"MARKING_AND_SIGNAL\":\n   - Mô tả rõ loại vạch kẻ (nét liền/nét đứt, đơn/đôi, màu trắng/vàng), màu đèn tín hiệu hoặc tư thế người điều khiển giao thông.\n5. ĐÁNH GIÁ ĐỘ LIÊN QUAN (`is_relevant`):\n   - Chỉ sau khi mô tả xong bằng chứng thị giác, đối chiếu câu hỏi để gán `is_relevant`; không sửa mô tả thị giác để khớp câu hỏi.\n   - Đặt `true` cho đối tượng được hỏi trực tiếp hoặc quan sát rõ là điều khiển hướng đi/làn đường đang xét; bao gồm biển phụ thực sự đi kèm đối tượng đó.\n   - Không coi mọi biển trong cùng cảnh là liên quan. Đặt `false` cho biển phía xa không được hỏi trực tiếp, biển thuộc hướng/làn khác, hoặc khi chưa đủ căn cứ xác định liên quan.\n\nCâu hỏi của người dùng (chỉ dùng để xác định đối tượng liên quan, không dùng làm bằng chứng thị giác):\n\"{question_text}\"\n\nTrước khi xuất JSON, kiểm tra lại từng item có khớp đường viền, màu nền, chữ và vị trí thực sự trong ảnh không. Không đưa các bước phân tích vào output.\n\nHãy trả về kết quả duy nhất dưới định dạng JSON theo cấu trúc sau:\n{\n  \"image_category\": \"SIGN_ILLUSTRATION | TECHNICAL_DIAGRAM | MARKING_AND_SIGNAL\",\n  \"summary\": \"Tóm tắt 1 câu về bối cảnh giao thông hoặc nội dung kỹ thuật trong ảnh gắn với câu hỏi\",\n  \"items\": [\n    {\n      \"identifier\": \"Nhóm biển + Vị trí (ví dụ: 'Biển báo cấm - phía trên', 'Biển phụ - ngay bên dưới') HOẶC Tên hình khối kỹ thuật\",\n      \"visual_or_geometric_features\": \"Nếu là biển báo cụ thể: ghi Hình dạng + Màu sắc + Biểu tượng. Nếu là bản vẽ kỹ thuật: ghi Hình dạng hình học + Các thông số/ký hiệu kích thước đi kèm trên hình\",\n      \"meaning_or_specification\": \"Ý nghĩa báo hiệu giao thông\",\n      \"is_relevant\": true\n    }\n  ]\n}",
+    "max_new_tokens": 4096,
     "crop": false,
-    "do_sample": false,
-    "dtype": "bfloat16",
-    "attention": "sdpa",
+    "temperature": 0,
+    "seed": 2025,
+    "context_size": 16384,
+    "enable_thinking": false,
+    "response_schema": {
+      "type": "object",
+      "required": [
+        "image_category",
+        "summary",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "image_category": {
+          "type": "string",
+          "enum": [
+            "SIGN_ILLUSTRATION",
+            "TECHNICAL_DIAGRAM",
+            "MARKING_AND_SIGNAL"
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "identifier",
+              "visual_or_geometric_features",
+              "meaning_or_specification",
+              "is_relevant"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "identifier": {
+                "type": "string"
+              },
+              "visual_or_geometric_features": {
+                "type": "string"
+              },
+              "meaning_or_specification": {
+                "type": "string"
+              },
+              "is_relevant": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "input_fields": [
+      "image",
+      "question"
+    ],
+    "caption_unit": "query_id",
+    "runtime": "llama.cpp-b11624-win-cuda-13.4",
     "libraries": {
-      "torch": "2.7.1+cu128",
-      "transformers": "4.57.1",
-      "bitsandbytes": "0.49.0",
-      "Pillow": "12.3.0"
+      "requests": "2.34.2"
     }
   },
-  "status": "COMPLETED",
-  "token_limit_reached": false,
-  "generated_tokens": 156,
-  "size": [
-    800,
-    450
-  ],
-  "elapsed_seconds": 12.897734899997886,
-  "peak_vram_bytes": 7451973120,
-  "peak_reserved_bytes": 7509901312,
-  "gpu_free_bytes": 8359247872
+  "status": "INCOMPLETE",
+  "finish_reason": "length",
+  "generated_tokens": 4096,
+  "elapsed_seconds": 66.09426470000471,
+  "validation_error": "Unterminated string starting at: line 13 column 39 (char 619)"
 }

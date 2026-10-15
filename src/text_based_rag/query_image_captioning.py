@@ -1,4 +1,4 @@
-"""Caption images referenced by train/dev/public test without using labels."""
+"""Caption each train/dev/public-test image + question without using gold labels."""
 
 import argparse
 import base64
@@ -14,7 +14,7 @@ from pathlib import Path
 from threading import Event, Thread
 import time
 
-from multimodal_legal_rag.data import DATA_FILES, DEFAULT_SOURCE, read_json_list
+from multimodal_legal_rag.data import DATA_FILES, DEFAULT_SOURCE, PRIVATE_TASK1_FILE, read_json_list
 from .corpus_image_captioning import (ROOT, CORPUS_MODEL, PROJECTOR, SERVER, CORPUS_MAX_TOKENS,
                                      DESCRIPTION_SCHEMA, IMAGE_CATEGORIES, ITEM_FIELDS, save)
 
@@ -80,9 +80,10 @@ QUERY_SCHEMA["properties"]["items"]["items"]["properties"]["is_relevant"] = {"ty
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--split', choices=('train', 'dev', 'public_test'), default='train')
+    parser.add_argument('--split', choices=('train', 'dev', 'public_test', 'private_test'), default='train')
     parser.add_argument('--image', help='Run only this image ID or filename, saving a separate review run.')
-    parser.add_argument('--overwrite', action='store_true', help='Regenerate all query captions in the existing output directory.')
+    parser.add_argument('--overwrite', action='store_true',
+                        help='Regenerate every image + question caption and replace mapping/JSONL in the existing split directory.')
     args = parser.parse_args()
     INPUT = ROOT / f'data/processed/splits/{args.split}.json'
     OUTPUT = ROOT / f'artifacts/experiments/text_based_rag/query/query_image_captioning_{args.split}'
@@ -91,12 +92,17 @@ def main():
         INPUT = DEFAULT_SOURCE / DATA_FILES['public_test']
         IMAGES = ROOT / 'data/processed/images/public_test'
         OUTPUT = ROOT / 'artifacts/public-test/text_based_rag/query_image_captioning'
+    elif args.split == 'private_test':
+        INPUT = PRIVATE_TASK1_FILE
+        IMAGES = ROOT / 'data/processed/images/private_test'
+        OUTPUT = ROOT / 'artifacts/private_test/text_based_rag/retrieval/query_image_captioning'
     rows = read_json_list(INPUT)
     if args.image:
         rows = [r for r in rows if r.get('image_id') == Path(args.image).stem]
         if not rows:
             raise ValueError(f'Không có query cho ảnh {args.image} trong {args.split}.')
-        OUTPUT = ROOT / 'artifacts/experiments/text_based_rag/query/query_caption_review' / (
+        review = OUTPUT.parent / 'query_caption_review' if args.split == 'private_test' else ROOT / 'artifacts/experiments/text_based_rag/query/query_caption_review'
+        OUTPUT = review / (
             Path(args.image).stem + '_' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ'))
     query_ids, unique, mapping = set(), {}, []
     by_filename, caption_images = {}, set()
@@ -149,6 +155,10 @@ def main():
     (OUTPUT / "captions").mkdir(parents=True, exist_ok=True)
     paths = {item['query_id']: OUTPUT / item['caption_file'] for item in mapping}
     assert len({str(path).casefold() for path in paths.values()}) == len(unique), "Trùng tên checkpoint"
+    print(f'[input] split={args.split}; queries={len(rows)}; image_files={len(by_filename)}; '
+          f'unique_image_hashes={len(set(by_filename.values()))}; source={INPUT}', flush=True)
+    print(f'[output] {OUTPUT}; mode={"overwrite-all-queries" if args.overwrite else "resume"}; '
+          f'max_new_tokens={MAX_NEW_TOKENS}', flush=True)
     results, incomplete = {}, []
     legacy_captions = 0
     for query_id, path in paths.items():

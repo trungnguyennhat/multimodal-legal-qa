@@ -19,6 +19,12 @@ Project nghiên cứu VLSP 2025 MLQA-TSR, không phải công cụ tư vấn ph�
 | Hybrid corpus + example retrieval dev | `AWAITING_USER_TEST` |
 | Tổ chức thư mục experiments thành corpus/query | `AWAITING_USER_TEST` |
 | Text-based retrieval public test | `AWAITING_USER_TEST` |
+| Caption public test ảnh + câu hỏi, ghi đè bằng prompt đã duyệt | `AWAITING_USER_TEST` |
+| Query embedding public test strict-relevant, ghi đè | `AWAITING_USER_TEST` |
+| Hybrid public test, example bank toàn bộ train + dev | `AWAITING_USER_TEST` |
+| Subtask 2 gold-citation inference public test | `AWAITING_USER_TEST` |
+| Subtask 1 private test và submission | `AWAITING_USER_TEST` |
+| Subtask 2 private test inference và submission | `AWAITING_USER_TEST` |
 | Prompt corpus ảnh + điều luật, JSON phân loại hình với Qwen3.5: thử image002 | `COMPLETED` |
 | Chạy lại toàn bộ caption corpus, ghi đè corpus_image_captioning | `COMPLETED` |
 | Prompt query ảnh + câu hỏi, thử train_1_1 với Qwen3.5 | `AWAITING_USER_TEST` |
@@ -35,6 +41,171 @@ Get-Content .\artifacts\experiments\text_based_rag\query\query_image_captioning_
 ```
 
 Caption corpus hiện sẵn sàng cho chunker đọc và ghép theo image_id; chưa xuất lại corpus tổng hợp hoặc chạy chunking/embedding trong lượt chấp nhận này. Caption bị cắt có thể là JSON chưa đóng và thiếu một phần mô tả; code chunking hiện coi description là chuỗi nên không yêu cầu parse JSON. Nếu chuyển sang chunk theo item JSON thì phải xử lý riêng các caption đã chấp nhận bị cắt này, không tự bỏ nội dung hoặc sửa nghĩa.
+
+## Subtask 2 private test inference và submission — AWAITING_USER_TEST
+
+Theo yêu cầu mới, lỗi JSON/output bị cắt không để answer=None và không chặn xuất submission. Code ưu tiên final_answer hợp lệ đã có trong raw JSON; nếu thiếu thì gọi lại cùng luật/caption/câu hỏi với schema chỉ có final_answer (64 token). Nếu lần gọi này cũng lỗi, dùng nhãn dự phòng cố định A (Multiple choice) hoặc Đúng (Yes/No), ghi answer_source=default_label và recovery_error; đây không phải đáp án model suy luận. Giữ FAILED cho bản giải thích lỗi để lần sau resume thử lại; submission vẫn chứa đáp án của câu đó. Nguồn đáp án được lưu trong checkpoint/JSONL, không thêm trường vào submission chính thức. Không thêm cờ retry hoặc giới hạn ký tự giải thích. Bản sửa này chưa chạy code/test/inference và chưa sửa artifact; file submission146 câu hiện có giữ nguyên. Trạng thái AWAITING_USER_TEST.
+
+Đã mở rộng `src/text_based_rag/inference.py` và thêm `PRIVATE_TASK2_FILE` trong `src/multimodal_legal_rag/data.py`, không thêm module/dependency. Input: data/raw/VLSP2025-MLQA-TSR/dataset/private_test data (post submission)/submission_task2_no_labels.json, dùng relevant_articles do ban tổ chức cung cấp, không đọc citation từ retrieval/submission_task1. Kiểm tra read-only: 146 query (74 Multiple choice, 72 Yes/No), đủ146 ID unique/citation, không có answer; toàn bộ citation lookup exact được trong corpus preprocessing hiện tại.
+
+146 query có cùng id/image_id/question với input Subtask1 private. Caption hiện tại tại artifacts/private_test/text_based_rag/retrieval/query_image_captioning/ đã COMPLETED 146/146; tái dùng caption đó, không sinh lại. Vì caption gắn với nguồn task1 không nhãn, inference phải kiểm tra hash nguồn caption/task1 riêng và so sánh từng id/ảnh/câu hỏi với task2, không so caption_manifest.input_sha256 trực tiếp với hash JSON task2 (khác schema/citation/options). Nếu câu hỏi/ảnh thay đổi, báo mismatch thay vì dùng caption sai. Không đọc embedding hoặc prediction của Subtask1.
+
+Dùng `--split private_test` với cùng prompt bốn key, full gold-law rendering, query_representation lọc is_relevant=true, xử lý numeric choices, grouping multi-record cùng citation, alias/embedded-section đã xác minh và preflight token/context từ public. Text-only Qwen3.5-9B Q4_K_M, seed2025/temperature0/thinking off, context mặc định16384/output2048; không fine-tune hoặc tuning trên private. Citation chưa lookup được thì dừng trước model, không tìm thay thế bằng cosine. Không triển khai visual retrieval hoặc stage khác.
+
+Output riêng artifacts/private_test/text_based_rag/inference/: answers/{query_id}.json checkpoint/prompt/JSON/provenance, inference_results.jsonl, manifest.json, llama-server.log và submission_task2.json. Không sinh accuracy/F1/metrics giả hoặc correct/gold_answer vì private không có đáp án. Manifest ghi completed/failed, token/context/latency, hashes/config/runtime và evaluation_available=false. Tái dùng resume/fingerprint, --overwrite chỉ ghi lại output inference private.
+
+Sau khi xử lý hết input, export atomically submission_task2.json kể cả còn FAILED. Theo sample chính thức, mỗi record có đúng id/image_id/question/question_type/relevant_articles/answer; relevant_articles giữ nguyên input task2, không thay bằng citation đã resolve hoặc retrieval output; choices dùng trong prompt, không đưa vào file nộp. Answer MCQ chỉ A-D, YesNo Đúng/Sai; giữ thứ tự/ID/ảnh/câu hỏi, đủ146 record, không trùng/thiếu/answer rỗng. Các câu lỗi có đáp án được phục hồi hoặc nhãn dự phòng như trên, không tự đánh dấu giải thích là thành công. Không xuất submission_task1 ở bước này.
+
+Điều kiện: `.venv`, model Qwen3.5-9B Q4_K_M và llama.cpp local đã dùng cho public, corpus preprocessing COMPLETED, caption private ở trên COMPLETED146/146. Dừng tác vụ GPU/server khác để đủ VRAM. Không cần chạy lại caption/embedding/corpus/example/hybrid. Chạy từ root project:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+.\.venv\Scripts\python.exe -u -m text_based_rag.inference --split private_test --context-size 32768 --overwrite
+
+Get-Content .\artifacts\private_test\text_based_rag\inference\manifest.json
+```
+
+CLI tự validate nguồn task2/caption/gold-law, đếm token trước khi sinh đáp án, inference từng query rồi export. Mong đợi `evaluation_available=false`, `submission_exported=true` và file nộp `artifacts/private_test/text_based_rag/inference/submission_task2.json` có146 record đúng schema, kể cả manifest INCOMPLETE vì bản giải thích bị lỗi. run_summary ghi recovered_answers/default_label_answers. Có log tiến trình khoảng30s/lần. Private không tạo metrics.json; số lượng/token/thời gian nằm trong manifest. Nhánh public cũng dùng recovery và đánh giá mọi đáp án xuất ra, kể cả nhãn dự phòng; số lượng dự phòng được báo riêng.
+
+Resume khi ngắt hoặc còn FAILED: dùng lệnh trên bỏ `--overwrite`, giữ checkpoint COMPLETED và thử lại câu lỗi. Khi code/input/prompt/model thay đổi, fingerprint yêu cầu `--overwrite`, áp dụng cả public. Nếu caption thật sự INCOMPLETE và muốn dùng các item đã đóng đầy đủ, thêm `--allow-incomplete-captions`; cờ không bỏ qua caption FAILED hoặc mismatch nguồn. Lỗi chuẩn bị dữ liệu, thiếu model, server không khởi động, thiếu VRAM hoặc prompt vượt context vẫn có thể dừng pipeline trước inference; không có cam kết xuất file trong những trường hợp này. Khi đã xử lý hết từng câu, trạng thái FAILED không chặn export. Chờ người dùng chạy và xác nhận.
+
+## Subtask 1 private test và submission — AWAITING_USER_TEST
+
+Đã triển khai trong các file hiện có: `src/multimodal_legal_rag/data.py`, `src/text_based_rag/query_image_captioning.py`, `query_embedding.py`, `query_retrieval.py`. Không thêm module/dependency, không sửa inference.py/Subtask2. Theo yêu cầu người dùng, agent chưa chạy code/test/pipeline và chưa tạo/ghi artifact private. Nhánh public/dev giữ logic hiện tại, chỉ private xuất submission_task1.json.
+
+Input đúng `data/raw/VLSP2025-MLQA-TSR/dataset/private_test data (post submission)/submission_task1_no_labels.json`, qua constant PRIVATE_TASK1_FILE riêng; không dùng load_private_submission/sample prediction làm đầu vào. Kiểm tra read-only hiện có: 146 query/146 ID duy nhất, 104 filename ảnh, đủ ảnh tại data/processed/images/private_test/. Toàn bộ input chỉ có id/image_id/question; không có gold. Giữ nguyên ID như private_test_private_test_1. Không đưa public/private hoặc sample citation vào example bank.
+
+```text
+artifacts/private_test/text_based_rag/retrieval/
+├── query_image_captioning/
+├── query_embedding/
+├── query_retrieval_corpus/
+├── query_retrieval_example/
+├── query_retrieval_hybrid/
+└── submission_task1.json
+```
+
+Điều kiện: GPU cho caption/embedding, .venv và model/runtime local như public, corpus chunk/index COMPLETED hiện tại, query_embedding_train (418) và query_embedding_dev (112) hoàn tất và cùng representation/encoder. Corpus/train/dev vectors được tái sử dụng, không tạo bank/index mới. Đóng tác vụ GPU inference/server khác trước caption. Dùng đúng thứ tự từ root project; chỉ sang bước sau khi bước trước thành công.
+
+**1. Caption private: ảnh + câu hỏi, cùng prompt Qwen3.5 đã duyệt.**
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+$env:HF_HUB_OFFLINE="1"
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_image_captioning --split private_test --overwrite
+Get-Content .\artifacts\private_test\text_based_rag\retrieval\query_image_captioning\manifest.json
+```
+
+Mong đợi 146 caption độc lập theo query và manifest COMPLETED. Resume caption sau ngắt: cùng lệnh bỏ --overwrite. JSON lỗi/bị cắt giữ INCOMPLETE, không tự đánh dấu thành công. Nếu muốn chấp nhận các item đã đóng đầy đủ của caption bị cắt, chủ động thêm --allow-incomplete-captions ở bước embedding; parser chung như public, không sửa caption gốc. Caption FAILED chưa hoàn tất không được embedding chấp nhận.
+
+**2. Embed private: câu hỏi + item is_relevant=true.**
+
+```powershell
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_embedding --split private_test --overwrite
+```
+
+Mong đợi shape (146,1024), float32 L2, representation=question_relevant_items_v1, manifest COMPLETED. Cùng BGE-M3/weights/revision/CLS/normalization với train/dev/corpus; bỏ summary/item false, dedup, question_only nếu không còn item true. Kiểm tra status/hash/mapping/ảnh/nguồn, không truncate input vượt token. OOM: thêm --batch-size 1. Embedding không resume; bị ngắt chạy lại --overwrite.
+
+**3. Corpus retrieval private.**
+
+```powershell
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_retrieval --split private_test --method corpus --overwrite
+```
+
+Ghi riêng query_retrieval_corpus/{retrieval_results.jsonl,retrieval_preview.txt,manifest.json}; 146 query, mỗi query top5 citation unique theo max child cosine. Dùng corpus index đã có, không re-embed corpus. Hàm chuẩn bị nguồn dùng chung held-out validation/scoring với example/public; chỉ ghi nhánh yêu cầu, không xuất intermediate của nhánh kia ở bước này.
+
+**4. Example retrieval private.**
+
+```powershell
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_retrieval --split private_test --method examples --overwrite
+```
+
+Ghi riêng query_retrieval_example/ cùng ba file. Bank = 530 query train gốc, nối 418 train + 112 dev; xác minh IDs/split hashes/image IDs/gold labels phủ đúng train gốc. Cosine chọn top5 examples trước khi gán gold train/dev; union citation, score max example hỗ trợ citation, provenance source_query_ids. Ảnh trùng vẫn được phép. Citation ID không có trong index bị loại như public/dev; không áp alias của Subtask2 sang retrieval. Manifest báo excluded_example_citations. Không cắt example union còn 5 và không tính metric private.
+
+**5. Hybrid và xuất submission.**
+
+```powershell
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_retrieval --split private_test --method hybrid --hybrid-strategy gated --example-weight 0.6 --final-top-n 5 --overwrite
+```
+
+Hybrid bắt buộc hai nhánh riêng đã COMPLETED; kiểm tra output hash, query ID/text, input hash, bank size/nguồn khớp hiện tại. Tái tính corpus score cho mọi candidate từ vectors hiện có bằng CPU, kể cả candidate example ngoài corpus top5, rồi đọc prediction hai nhánh để fusion. Không tuning private, CLI chỉ nhận cấu hình chốt trên dev/public:
+
+| Gate | Candidate/kết quả | Example / Corpus |
+| --- | --- | --- |
+| s_max >= 0,82 | Chỉ citation hợp lệ từ top3 examples, trả toàn bộ union | 0,90 / 0,10 |
+| 0,70 <= s_max < 0,82 | Union top5 examples và top5 corpus, trả top5 citation | 0,60 / 0,40 |
+| s_max < 0,70 | Candidate như middle, trả top5 citation | 0,30 / 0,70 |
+
+Chuẩn hóa (s+1)/2, điểm example vắng =0, max child score corpus, hòa điểm theo citation ID. High không cho corpus thêm candidate; số citation cuối high có thể khác 5. Không lấy đáp án/private sample để quyết định gate.
+
+query_retrieval_hybrid/ chỉ có prediction, preview, manifest. Private không gọi evaluator và không xuất metrics.json/per_query_metrics.jsonl, không gắn correct/gold private. Manifest vẫn lưu counts/gate/hashes/encoder/bank/runtime/resources và evaluation_available=false. Có log khoảng 30s nếu tác vụ còn chạy, gồm phase/processed/total/%/elapsed/ETA. Retrieval CPU là inference, không training.
+
+File benchmark cuối: `artifacts/private_test/text_based_rag/retrieval/submission_task1.json`. JSON array giữ thứ tự input, nguyên id/image_id/question, thêm relevant_articles=[{law_id:string,article_id:string},...]; không chứa score/rank/caption/gate. Validation phải đủ146 query như input, không thiếu/trùng ID, mapping ảnh khớp, citation unique/nonempty/tồn tại trong index. Nếu prediction rỗng hoặc branch không khớp thì dừng export, không bịa citation. Ghi tạm rồi replace atomically; hash submission lưu trong hybrid manifest. Không xuất submission ở public/dev hoặc tạo submission_task2.
+
+Kiểm tra sau bước 5 bằng PowerShell chỉ đọc file thật:
+
+```powershell
+Get-Content .\artifacts\private_test\text_based_rag\retrieval\query_retrieval_hybrid\manifest.json
+Get-Content .\artifacts\private_test\text_based_rag\retrieval\submission_task1.json -TotalCount 22
+```
+
+Mong đợi các manifest COMPLETED, hybrid queries=146, example_bank_queries=530, JSON benchmark đủ146 row. --overwrite chỉ ghi lại output đúng bước/split đang chạy; sau khi caption/embedding thay đổi phải chạy lại cả hai nhánh trước hybrid. Thiếu file branch thì chạy bước3/4; hash/encoder mismatch thì kiểm tra đúng nguồn được báo lỗi, không bỏ validation. Chưa có metric benchmark private ở local vì không có gold. Chưa chạy pipeline/test theo yêu cầu; dừng chờ người dùng tự chạy/xác nhận.
+
+## Subtask 2 inference public test — AWAITING_USER_TEST
+
+Đã sửa tiếp lỗi `Phương án không hợp lệ: public_test_14`: option trong dataset có thể là số, không chỉ chuỗi. Kiểm kê read-only đủ 100 public query thấy public_test_14/15/21/49/56 có option A-D dạng số nguyên; 65 câu Multiple choice, 35 Yes/No. Code chấp nhận chuỗi/số hữu hạn và render giá trị thành text trong prompt, giữ nguyên key/answer A-D; vẫn từ chối null/bool/object/list hoặc option thiếu. Không sửa dataset/caption. Lỗi xảy ra ở prepare trước checkpoint/model; dùng lại nguyên lệnh, không cần --overwrite. Chưa chạy pipeline/test sau sửa; giữ AWAITING_USER_TEST.
+
+Đã sửa lỗi preflight `Corpus preprocessing trùng citation hoặc sai số article`: corpus thực tế có 402 record/398 citation unique, do K.1 và K.2 mỗi ID dùng cho ba record với title/article_key khác nhau. Lookup hiện group theo (document_id,id) và đưa đầy đủ các record của citation vào context, giữ provenance riêng theo article_key; không ghi đè/bỏ record và không sửa corpus. Validation vẫn kiểm tra số record khớp manifest và article_key duy nhất. Lỗi trước xảy ra trước khi tải model/tạo checkpoint; sau sửa dùng lại nguyên lệnh dưới, không cần --overwrite. Agent chưa chạy lại pipeline/test; giữ AWAITING_USER_TEST, chờ người dùng chạy lại.
+
+Đã tạo duy nhất module mới `src/text_based_rag/inference.py` theo yêu cầu chuyển phạm vi từ train gốc sang public test. Chưa chạy code/test/model, chưa tạo hoặc ghi artifact inference. Input là gold relevant_articles của JSON public QA, luật preprocessing và caption query đã có; không đọc prediction/citation/cosine/gating của Subtask 1, không cần vector index hoặc embedding. Output public `artifacts/public-test/text_based_rag/inference/`; private dùng nhánh riêng đã mô tả ở trên, chưa triển khai train inference.
+
+Model Qwen3.5-9B Q4_K_M chạy local qua llama.cpp b11624, text-only: toàn bộ luật được gold citation chỉ định + mô tả thị giác đã render + câu hỏi/phương án. Không gửi ảnh gốc, không load projector hoặc fine-tune model. Prompt yêu cầu giải thích/bằng chứng ngắn trong visual_matching/legal_rule_extraction/option_evaluation và nhãn final_answer; mô tả tự động có thể sai, không phải nguồn quy định pháp lý. Model không nhận gold answer. Caption chỉ lấy item is_relevant=true, dedup và phục hồi item đầy đủ bằng cùng query_representation/caption_parts như embedding; không đưa summary hoặc JSON fragment thô vào input.
+
+Nguồn luật: `artifacts/experiments/text_based_rag/corpus/data_preprocessing/structured_corpus.jsonl`. Render đầy đủ paragraph, ô bảng (hàng/cột/rowspan/colspan) và chú thích hình gốc, không dùng child chunk retrieval hay tự bổ sung điều không được gold chỉ định. Lookup exact trước; theo yêu cầu người dùng tự động ánh xạ, đã xác minh bằng corpus/raw law và triển khai các trường hợp:
+
+| Query hiện tại | Gold citation | Nguồn nội dung thực tế |
+| --- | --- | --- |
+| public_test_6 | 36/2024/QH15 / 11.0 | 36/2024/QH15 / 11, alias định dạng |
+| public_test_34 | QCVN 41:2024/BGTVT / F5 | QCVN 41:2024/BGTVT / F.5, alias định dạng |
+| public_test_5 | QCVN 41:2024/BGTVT / D.11 | Mục D.11 nằm trong article D.10, bắt đầu đúng tiêu đề D. 11 Biển số R.403a... |
+
+D.11 không có record riêng nhưng nội dung không mất: code chỉ lấy phần block từ tiêu đề D.11 đến hết mục trong D.10, loại phần R.310/D.10 đứng trước. Không ánh xạ nhầm sang D.9 chỉ vì có Hình D.11, không dùng câu hỏi/gold answer để chọn điều thay thế. Không sửa corpus hoặc gold citation gốc. Output lưu gold/source law/article ID, article_key, method và source_block_ids; prompt nêu nguồn ánh xạ. Citation chưa xác minh được sẽ dừng ở preflight trước model, không bỏ query/luật hoặc dùng cosine fallback.
+
+Điều kiện: .venv có requests, Qwen GGUF tại models/huggingface/Qwen3.5-9B-GGUF/Qwen3.5-9B-Q4_K_M.gguf, runtime .venv/tools/llama.cpp-b11624/llama-server.exe, GPU đủ VRAM. Corpus preprocessing COMPLETED/khớp nguồn; caption public theo query tại `artifacts/public-test/text_based_rag/query_image_captioning/` khớp ảnh/câu hỏi. Đóng server/tác vụ GPU đang chạy trước khi bắt đầu.
+
+Chạy từ root project, không tạo thư mục timestamp:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+.\.venv\Scripts\python.exe -u -m text_based_rag.inference --split public_test --allow-incomplete-captions
+```
+
+Cờ --allow-incomplete-captions chấp nhận các item hoàn chỉnh của 3 caption public bị cắt đã biết (public_test_14/51/65); không sửa caption gốc. Khi không có item true thì chỉ dùng câu hỏi/luật, ghi fallback. Bỏ cờ nếu caption đã hoàn tất toàn bộ hoặc không chấp nhận phục hồi phần bị cắt. Không tự coi output inference bị cắt là đáp án hợp lệ.
+
+Context mặc định 16384, max-new-tokens 2048, temperature=0, seed=2025, thinking off, một slot GPU. Code dùng [/apply-template và /tokenize của runtime chính thức](https://github.com/ggml-org/llama.cpp/blob/b11624/tools/server/README.md) để đếm toàn bộ prompt/template trước khi sinh bất kỳ câu trả lời nào; dự trù output + 128 token an toàn. Tắt context shift. Nếu vượt, code ghi ID/token và dừng, không truncate luật/câu hỏi/phương án. Nếu GPU cho phép, chạy lại với --context-size 32768 --overwrite; thay đổi context/prompt/model/code/input cần --overwrite để không trộn checkpoint khác cấu hình. Chưa đo token/runtime bằng model trong lượt bàn giao, chưa xác nhận context 16384 đủ mọi query.
+
+Checkpoint atomically tại `answers/{query_id}.json` gồm prompt thực tế, JSON model, answer, trạng thái, citation resolution, caption provenance, input/output tokens và latency. Mặc định resume checkpoint COMPLETED có fingerprint/hash/ID/prompt/schema hợp lệ; FAILED được thử lại. Lỗi HTTP có response body; JSON/enum/finish_reason không hợp lệ ghi FAILED, không đoán đáp án. Dữ liệu input thay đổi trong lúc chạy thì từ chối xuất tổng hợp mới. Log tiến trình khoảng 30 giây có phase/processed/total/%/elapsed/ETA. Khi dừng, code dừng server do chính nó mở.
+
+Để tiếp tục sau khi ngắt, chạy lại nguyên lệnh, không dùng --overwrite. Để sinh lại toàn bộ:
+
+```powershell
+.\.venv\Scripts\python.exe -u -m text_based_rag.inference --split public_test --allow-incomplete-captions --overwrite
+```
+
+File cuối trong inference/: `inference_results.jsonl`, `metrics.json`, `manifest.json`, `llama-server.log` và folder answers/ để resume/đọc prompt. Không tạo submission. Kết quả tổng hợp giữ 100 query theo thứ tự input, response có đúng bốn trường prompt đã duyệt, answer chuẩn hóa Unicode NFC+strip; gold_answer/correct chỉ thêm lúc đánh giá sau generation. Accuracy tính trên toàn bộ 100 query, FAILED tính sai; có breakdown Multiple choice/YesNo, invalid output/HTTP errors, caption recovery/fallback, latency/tokens. Manifest COMPLETED khi đủ 100 đáp án hợp lệ, INCOMPLETE nếu còn FAILED, FAILED nếu lỗi toàn tác vụ/preflight; không đánh dấu thành công bằng cách loại query lỗi.
+
+Kiểm tra sau khi lệnh chạy xong:
+
+```powershell
+Get-Content .\artifacts\public-test\text_based_rag\inference\metrics.json
+Get-Content .\artifacts\public-test\text_based_rag\inference\manifest.json
+Get-Content .\artifacts\public-test\text_based_rag\inference\answers\public_test_5.json
+```
+
+Nếu model load/OOM xem llama-server.log và đóng tác vụ GPU khác; không giảm context bằng cách cắt luật. Nếu context quá dài, tăng context chỉ khi GPU cho phép và dùng --overwrite. Nếu lỗi citation chưa ánh xạ, kiểm tra nội dung nguồn; không tự đưa luật ngoài gold vào. Đây là accuracy trả lời trên gold citations + caption cố định, không phải accuracy của retrieval hoặc đánh giá pháp lý production. Trạng thái AWAITING_USER_TEST, chờ người dùng tự chạy/xác nhận.
 
 ## Tổ chức thư mục corpus/query — AWAITING_USER_TEST
 
@@ -152,7 +323,7 @@ Lệnh corpus dev cho lần chạy sau (không cần chạy lại lúc này):
 
 ## Thiết kế cosine retrieval và đánh giá sau embedding mới — chưa triển khai
 
-Phạm vi thực hiện đã được người dùng thu hẹp: chỉ dev, giữ nguyên schema/file output cũ, chưa làm train retrieval. Luồng cosine/max child score/top 5 hiện có dùng được với embedding mới; chỉ sửa `query_retrieval.py` để `submission_task1.json` chỉ được xuất cho public_test, không tạo thêm file khi chạy dev. Không triển khai metadata evidence/metric mới hoặc đề xuất train bên dưới. Agent chưa chạy retrieval/metric trong lượt bàn giao này. Để tự ghi đè 5 file dev hiện có:
+Phạm vi thực hiện đã được người dùng thu hẹp: chỉ dev, giữ nguyên schema/file output cũ, chưa làm train retrieval. Luồng cosine/max child score/top 5 hiện có dùng được với embedding mới; retrieval hiện chỉ xuất prediction, metric, preview và manifest; đã bỏ phần xuất submission theo yêu cầu người dùng. Không triển khai metadata evidence/metric mới hoặc đề xuất train bên dưới. Agent chưa chạy retrieval/metric trong lượt bàn giao này. Để tự ghi đè 5 file dev hiện có:
 
 ```powershell
 $env:PYTHONPATH="src"
@@ -174,7 +345,7 @@ Thay đổi code tối thiểu dự kiến trong `query_retrieval.py`:
 3. Prediction giữ các key đang dùng và thêm evidence metadata của child thắng: parent_id, chunk_type, image_id/image_category, item_index, part_index, source_block_ids và provenance caption bị cắt nếu có. Query result giữ representation_mode/fallback/selected_item_count để đọc lỗi. Không copy toàn parent dài vào mỗi prediction; parent lookup qua parent_id và file parent đã hash. Không đưa nhãn gold vào bước ranking.
 4. Đánh giá chính trên dev 112 query. Nếu chạy train 418 query thì thêm --split train, đọc đúng query_embedding_train/train.json, báo đây là diagnostic; train query không trở thành retrieval corpus hoặc dữ liệu cập nhật model. Thiết kế cũ từng giữ output dev `query_retrieval/`; hiện output corpus đã đổi thành `query_retrieval_corpus/`. Đề xuất train riêng `query_retrieval_train/`, không để hai split ghi đè nhau. Public-test không chạy hoặc tinh chỉnh trong bước này; caption/vector public cũ phải được nâng schema riêng nếu muốn dùng representation mới.
 5. Primary metric là macro F2@5 theo đúng công thức eval_retrieval chính thức: mean(5*precision*recall/(4*precision+recall+1e-9)). Có thể giữ macro/micro P/R/F1/F2 conventional như diagnostic, nhưng phân biệt official F2 với biểu thức TP tương đương chỉ khác epsilon. Báo HitRate@5 đúng tên, không gọi là QA Accuracy. Gold citation thiếu trong corpus vẫn giữ mẫu số recall và được báo riêng; không tự sửa ID/nhãn hoặc loại query.
-6. Giữ prediction JSONL, per-query metrics, metrics JSON, preview, submission_task1.json và manifest với hashes/config/runtime/resources. Per-query metric có TP/FP/FN và representation/fallback; metric chính vẫn trên toàn dev, không loại 3 question_only hoặc 2 recovered. Có thể báo thêm count/F2 cho question_only và recovered để quan sát, không dùng nhóm nhỏ này chọn threshold/model. Output ghi đè chỉ qua --overwrite và sau kiểm tra dữ liệu; không sinh self-check/demo script.
+6. Giữ prediction JSONL, per-query metrics, metrics JSON, preview và manifest với hashes/config/runtime/resources. Per-query metric có TP/FP/FN và representation/fallback; metric chính vẫn trên toàn dev, không loại 3 question_only hoặc 2 recovered. Có thể báo thêm count/F2 cho question_only và recovered để quan sát, không dùng nhóm nhỏ này chọn threshold/model. Output ghi đè chỉ qua --overwrite và sau kiểm tra dữ liệu; không sinh self-check/demo script.
 
 Các phần không cần đổi: `corpus_embedding.py`, `query_embedding.py`, encoder, cách chuẩn hóa, số chiều, cosine và max child aggregation. Chưa thêm reranker, fusion, category filtering, multi-vector query hoặc chọn k theo nhãn; giữ top_k=5 để so với baseline. Index parent–child đã được code max_chunk_score hiện tại hỗ trợ ở mức scoring, nên không viết thêm retriever riêng.
 
@@ -461,7 +632,89 @@ Get-Content .\artifacts\experiments\text_based_rag\query\query_retrieval_corpus\
 
 Mong đợi 112 dòng prediction và 112 dòng metric, mỗi prediction có đúng 5 citation khác nhau tồn tại trong index, manifest `COMPLETED`. Metric được tính lại từ embedding đang có; số liệu baseline phía trên là lịch sử trước khi đổi caption/chunk/query representation. Tác vụ dài in phase, processed/total, %, elapsed và ETA khoảng mỗi 30 giây. Đây là inference, không phải training.
 
-## Chạy text-based retrieval trên public test
+## Hybrid retrieval public test, kho example train + dev — AWAITING_USER_TEST
+
+Đã mở rộng duy nhất module hiện có `src/text_based_rag/query_retrieval.py`, dùng chung vòng fusion/gating và evaluator với dev. Theo yêu cầu thực hiện retrieval, đã chạy một lần public test với cấu hình chốt từ dev, không tìm trọng số/ngưỡng/cutoff bằng public gold. Không thêm module/dependency, không chạy lại caption/embedding hoặc sửa kết quả train/dev. Các nhánh corpus/example public được tính trong bộ nhớ, không tạo thư mục/index/kết quả trung gian riêng.
+
+Input: public query_embedding COMPLETED tại `artifacts/public-test/text_based_rag/query_embedding/`; corpus vectors/mapping tại `artifacts/experiments/text_based_rag/corpus/corpus_embedding/`; query_embedding_train và query_embedding_dev tại `artifacts/experiments/text_based_rag/query/`. Kho example nối 418 train + 112 dev thành 530 query, dùng gold relevant_articles của hai split. Code kiểm tra hash/file/status, encoder/representation strict-relevant/L2/float32/1024 chiều, vector_row/ID unique, split hash, ảnh và gold của từng example khớp train gốc chính thức. Train + dev phải phủ đúng toàn bộ ID train gốc; query public không được lẫn ID vào bank. Không gộp citation toàn train thành một prediction: cosine chọn top 5 examples trong 530 query, sau đó mới lấy citation của các examples đó. Giữ ảnh trùng theo logic dev đã duyệt.
+
+Corpus branch lấy top 5 citation unique theo max child cosine. Các bước sau dùng đúng logic dev:
+
+- s_max >= 0,82: chỉ cho phép citation hợp lệ từ top 3 examples; trọng số example/corpus 0,90/0,10; trả toàn bộ union hợp lệ này, corpus không được đưa thêm citation.
+- 0,70 <= s_max < 0,82: union citation top 5 examples và top 5 corpus; trọng số 0,60/0,40; trả top 5 citation.
+- s_max < 0,70: candidate như middle, trọng số 0,30/0,70; trả top 5 citation.
+- Tính max child cosine corpus cho mọi citation candidate, kể cả citation example ngoài corpus top 5. Điểm example là max cosine của ví dụ hỗ trợ citation. Chuẩn hóa cố định (s+1)/2, đóng góp example bằng 0 khi không có ví dụ hỗ trợ. Hòa điểm theo citation ID. Cosine không phải xác suất đúng.
+- Chỉ đọc public gold để đánh giá sau khi prediction đã tạo xong. CLI public hybrid chỉ nhận strategy=gated, example-weight=0.6, final-top-n=5 để giữ cấu hình từ dev. Không tự chuẩn hóa/sửa raw citation ID; 20 ID trong bank train+dev không tồn tại trong index bị loại theo cùng chính sách dev, danh sách nằm trong manifest.excluded_example_citations.
+
+PowerShell từ root project để chạy lại; đây là inference/evaluation CPU, không cần tải model hay GPU:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_retrieval --method hybrid --split public_test --hybrid-strategy gated --example-weight 0.6 --final-top-n 5 --overwrite
+if ($LASTEXITCODE -eq 0) {
+    Get-Content .\artifacts\public-test\text_based_rag\query_retrieval_hybrid\metrics.json
+}
+```
+
+Output đúng `artifacts/public-test/text_based_rag/query_retrieval_hybrid/`: retrieval_results.jsonl, per_query_metrics.jsonl, metrics.json, retrieval_preview.txt, manifest.json. Theo yêu cầu mới nhất, đã xóa file submission vừa xuất và bỏ code sinh submission ở cả nhánh hybrid/corpus; không chạy lại retrieval, giữ nguyên prediction và metrics. Manifest đã bỏ hash của file bị xóa. --overwrite chỉ thay output hybrid public; không thay caption/embedding, corpus hoặc các kết quả dev. Manifest lưu hash, bank split/count/encoder, cấu hình, runtime/resources và output hashes. Có log khoảng 30 giây khi tác vụ còn chạy. Nếu nguồn/hash/encoder/ID không khớp, sửa/chạy lại đúng nguồn được báo lỗi, không bỏ validation. Nếu output tồn tại thì dùng --overwrite. Không chạy dev với kho train+dev vì sẽ truy hồi chính query dev đó; dev giữ bank train-only như trước.
+
+Đã chạy thành công: 100 prediction/metric, bank 530 examples, manifest COMPLETED; 88 high, 12 middle, 0 low. Macro precision=0,3987777778; recall=0,7289285714; F1=0,4978861694; F2=0,6042771409; hit_rate=0,85. Evaluator chính thức đã kiểm tra prediction và trả F2=0,6042771406648081, khớp local trong epsilon. Đối chiếu cùng public predictions tính trong bộ nhớ: corpus-only F2=0,2628467656; example-only F2=0,5634537953; gate-only không corpus reranking F2=0,6026551138. Không tiếp tục chọn cấu hình theo các kết quả này. Low gate chưa có mẫu public/dev để đánh giá. Giữ AWAITING_USER_TEST chờ người dùng xem/xác nhận.
+
+## Query embedding public test — AWAITING_USER_TEST
+
+Public test dùng đúng hàm query_representation/load_encoder/embed_batch của train/dev, không có nhánh chọn item hay model riêng. Input embedding gồm câu hỏi + image_category khi có item được chọn + identifier/visual_or_geometric_features/meaning_or_specification của item có is_relevant là boolean true. Không lấy summary, item false, gold citation/answer/choices; dedup ba trường mô tả sau strip. Nếu không có item hợp lệ liên quan thì dùng question_only. BGE-M3 cùng weights/revision corpus/train/dev, CLS, 1024 chiều, float32 L2; token vượt 8192 thì báo lỗi, không truncate.
+
+Đã sửa file hiện có `src/text_based_rag/query_embedding.py` để cờ --allow-incomplete-captions thực sự cho phép parser chung phục hồi các item JSON đã đóng đầy đủ từ caption INCOMPLETE, giống cơ chế dùng caption bị cắt đã chấp nhận ở train/dev. Áp dụng chung mọi split, không tự chấp nhận khi không có cờ/metadata chấp nhận. Không sửa description/status/manifest caption gốc. Metadata accepted_caption trong mapping embedding phản ánh việc người dùng cho phép qua CLI; manifest lưu allow_incomplete_captions và số caption phục hồi. Caption JSON đầy đủ sai schema vẫn báo lỗi. Đây là sửa quyền sử dụng caption bị cắt, không thay cách render/chọn item hay encoder.
+
+Kiểm tra read-only hiện tại: caption public mới có 97/100 query COMPLETED; public_test_14, public_test_51, public_test_65 INCOMPLETE, finish_reason=length ở 4096 token và JSON chưa đóng. Lệnh dưới chủ động chấp nhận phần item hoàn chỉnh của 3 caption này, bỏ phần cuối chưa hoàn chỉnh; nếu không còn item true dùng riêng câu hỏi. Không bảo đảm phần mô tả bị mất không ảnh hưởng retrieval. Nếu chưa chấp nhận caption bị cắt, không dùng cờ này và cần hoàn thiện caption trước.
+
+Điều kiện: GPU CUDA/BF16, .venv và model BGE-M3 local như train/dev; corpus index COMPLETED tại artifacts/experiments/text_based_rag/corpus/corpus_embedding/, khớp chunking hiện tại; caption/mapping/ảnh public đúng nguồn. Đóng tác vụ caption/llama-server đang chiếm GPU. PowerShell từ root project:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+$env:HF_HUB_OFFLINE="1"
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_embedding --split public_test --overwrite --allow-incomplete-captions
+```
+
+Output ghi đè tại `artifacts/public-test/text_based_rag/query_embedding/`: vectors.npy, queries.jsonl, query_text_preview.txt, manifest.json. Không tạo folder mới, không sửa corpus/train/dev. Mong đợi 100 vector (100,1024), float32 L2, representation=question_relevant_items_v1, manifest COMPLETED; incomplete_caption_queries dự kiến 3 nếu input giữ nguyên. Số item phục hồi/question_only phụ thuộc nội dung thực tế, chưa chạy để kết luận. File vector/mapping/preview được viết tạm, kiểm tra trước thay thế; manifest IN_PROGRESS/FAILED ngăn dùng output chưa hoàn tất. Không hỗ trợ resume embedding; khi bị ngắt chạy lại nguyên lệnh --overwrite.
+
+Kiểm tra sau khi chạy:
+
+```powershell
+Get-Content .\artifacts\public-test\text_based_rag\query_embedding\manifest.json
+Get-Content .\artifacts\public-test\text_based_rag\query_embedding\query_text_preview.txt -TotalCount 45
+```
+
+OOM: thêm --batch-size 1. Hash/split/encoder mismatch: kiểm tra nguồn được báo lỗi, không bỏ validation. Caption JSON không thể phục hồi đúng schema: xử lý lại caption đó, không giữ JSON thô làm embedding. Log tiến trình khoảng 30 giây gồm bước, processed/total, %, elapsed/ETA; đây là inference, không training. Agent chỉ đọc input/sửa code và README, chưa chạy embedding/test, không ghi đè artifact; dừng chờ người dùng kiểm tra.
+
+## Chạy lại image captioning public test — AWAITING_USER_TEST
+
+Phạm vi hiện tại chỉ caption public test. Đã kiểm tra/sửa file hiện có `src/text_based_rag/query_image_captioning.py`: nhánh --split public_test đọc JSON/ảnh public đúng vị trí, dùng cùng prompt ưu tiên bằng chứng ảnh + câu hỏi đã duyệt trên train/dev, Qwen3.5-9B Q4_K_M qua llama.cpp, max output 4096 token, schema image_category/summary/items có is_relevant boolean. Bổ sung log đầu vào/đầu ra và chế độ overwrite/resume để kiểm tra đúng split trước inference. Không đổi prompt dựa trên public test, không dùng relevant_articles/choices/answer làm input model. Không sửa hoặc chạy stage embedding/retrieval trong lượt này; agent chưa chạy captioning hoặc ghi artifact.
+
+Output giữ tại `artifacts/public-test/text_based_rag/query_image_captioning/`. Dữ liệu hiện tại có 100 query, 90 filename ảnh, 89 hash ảnh. Caption cũ có 89 checkpoint dùng chung theo ảnh; code mới cần 100 caption ảnh + câu hỏi độc lập: ghi đè 89 checkpoint cũ và thêm 11 checkpoint theo query ID trong cùng captions/, không tạo thư mục experiment/timestamp mới. `image_captions.jsonl`, `query_image_mapping.jsonl`, `manifest.json` được ghi đè; llama-server.log ghi log runtime trong cùng thư mục. Các file kết quả caption mới giữ description là chuỗi JSON để tương thích query embedding.
+
+Điều kiện: `.venv` có requests/Pillow, GPU đủ VRAM, model/projector/runtime local tại `models/huggingface/Qwen3.5-9B-GGUF/` và `.venv/tools/llama.cpp-b11624/`; ảnh ở `data/processed/images/public_test/`, nguồn JSON tại `data/raw/VLSP2025-MLQA-TSR/dataset/public_test data/vlsp_2025_public_test.json`. Đóng tác vụ GPU khác trước khi chạy. PowerShell từ root project, chỉ chạy captioning:
+
+```powershell
+$env:PYTHONPATH="src"
+$env:PYTHONUTF8="1"
+.\.venv\Scripts\python.exe -u -m text_based_rag.query_image_captioning --split public_test --overwrite
+```
+
+Mong đợi log split=public_test, queries=100, output đúng query_image_captioning/ và mode=overwrite-all-queries; tiến trình tới 100/100, 100 dòng mapping/caption tổng hợp. Manifest COMPLETED nếu mọi caption JSON hợp lệ và finish_reason=stop; nếu có JSON lỗi/bị cắt thì INCOMPLETE, không tự chấp nhận. Chỉ trạng thái này không chứng minh caption đúng thị giác. Có log khoảng 30 giây gồm bước, số lượng/tổng, %, elapsed/ETA; đây là inference GPU, không training.
+
+Kiểm tra output sau khi lệnh hoàn tất:
+
+```powershell
+Get-Content .\artifacts\public-test\text_based_rag\query_image_captioning\manifest.json
+Get-Content .\artifacts\public-test\text_based_rag\query_image_captioning\image_captions.jsonl -TotalCount 1
+```
+
+Nếu ngắt hoặc gặp HTTP error, chạy lại cùng lệnh nhưng bỏ --overwrite để giữ checkpoint mới đã hoàn tất và thử lại phần còn lại. Checkpoint theo ảnh cũ còn sót sau overwrite bị ngắt được nhận diện để sinh lại. Nếu prompt/model/nguồn đã thay đổi thực sự, dùng --overwrite để chạy lại từ đầu. Lỗi HTTP kèm query ID, filename và response body; lỗi load/OOM xem llama-server.log, đóng tiến trình GPU đang chiếm bộ nhớ rồi resume. Không tự đánh dấu caption lỗi thành COMPLETED. Sau khi caption thay đổi, embedding public cũ là kết quả của caption cũ; chưa chạy hoặc cập nhật nó ở stage này. Dừng chờ người dùng kiểm tra.
+
+## Chạy text-based retrieval trên public test — lịch sử, chưa chạy lại pipeline mới
 
 Đã mở rộng ba module hiện có `query_image_captioning.py`, `query_embedding.py`, `query_retrieval.py` với `--split public_test`; không thêm file code. Giữ nguyên Qwen caption 384 token, BGE-M3, cosine, max chunk score và top 5 như dev; không chọn cấu hình bằng nhãn public test. Đây là inference, không fine-tune. Nhãn chỉ dùng đánh giá sau ranking.
 
@@ -476,7 +729,7 @@ $env:HF_HUB_OFFLINE="1"
 .\.venv\Scripts\python.exe -u -m text_based_rag.query_retrieval --split public_test
 ```
 
-Tất cả output public test nằm trong `artifacts/public-test/text_based_rag/`: caption trong `query_image_captioning/`, vector/mapping trong `query_embedding/`; retrieval chạy lần sau lưu trong `query_retrieval_corpus/` với `retrieval_results.jsonl`, `retrieval_preview.txt`, `per_query_metrics.jsonl`, `metrics.json`, `manifest.json` và `submission_task1.json` (JSON array theo định dạng evaluator chính thức).
+Tất cả output public test nằm trong `artifacts/public-test/text_based_rag/`: caption trong `query_image_captioning/`, vector/mapping trong `query_embedding/`; retrieval chạy lần sau lưu trong `query_retrieval_corpus/` với `retrieval_results.jsonl`, `retrieval_preview.txt`, `per_query_metrics.jsonl`, `metrics.json`, `manifest.json`; không xuất submission.
 
 Đã chạy ngày 15/10/2026: 100 query, 89 ảnh; embedding và retrieval `COMPLETED`. Macro precision@5 = **0,064**, recall@5 = **0,1433333333**, F1@5 = **0,0857647908**, F2@5 = **0,1115579034**; hit rate@5 = **26%**. Hàm `eval_retrieval` chính thức trả F2 = `0.11155790337054611`, khớp local trong sai số epsilon. Có 6 caption bị cắt ở 384 token, ảnh hưởng 6 query, giữ `INCOMPLETE`; 3 gold citation thiếu trong index (`36/2024/QH15` / `11.0`, `QCVN 41:2024/BGTVT` / `D.11`, `QCVN 41:2024/BGTVT` / `F5`) vẫn tính vào recall. Không tự sửa nhãn hoặc tinh chỉnh cấu hình theo kết quả test.
 

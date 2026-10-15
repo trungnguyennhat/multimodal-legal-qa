@@ -1,0 +1,25 @@
+{
+  "subtask": 2,
+  "split": "public_test",
+  "queries": 100,
+  "accuracy": 0.71,
+  "completed": 100,
+  "failed": 0,
+  "invalid_output": 0,
+  "http_or_transport_errors": 0,
+  "recovered_caption_queries": 3,
+  "question_only_queries": 6,
+  "answer_normalization": "Unicode NFC + strip",
+  "by_question_type": {
+    "Multiple choice": {
+      "queries": 65,
+      "accuracy": 0.6615384615384615
+    },
+    "Yes/No": {
+      "queries": 35,
+      "accuracy": 0.8
+    }
+  },
+  "mean_inference_seconds": 5.133531506998697,
+  "completion_tokens": 27742
+}

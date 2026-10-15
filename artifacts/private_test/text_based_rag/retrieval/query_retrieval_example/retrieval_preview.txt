@@ -1,0 +1,3739 @@
+===== private_test_private_test_1 =====
+Câu hỏi:
+Trong trường hợp gặp biển báo hình tròn, viền đỏ, nền trắng như hình, xe mô tô 3 bánh chở người khuyết tật có được phép lưu thông qua khu vực này không?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe mô tô hai bánh đang di chuyển ở giữa.
+Ý nghĩa hoặc thông số: Cấm xe mô tô hai bánh đi vào khu vực này.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi rõ: 'CẤM XE 2 VÀ 3 BÁNH'.
+Ý nghĩa hoặc thông số: Cấm cả xe hai bánh và xe ba bánh lưu thông.
+Example #1 | train_46 | cosine=0.832996
+Example #2 | train_494 | cosine=0.828629
+Example #3 | train_100 | cosine=0.823504
+Example #4 | train_269 | cosine=0.821385
+Example #5 | train_27 | cosine=0.820487
+#1 | QCVN 41:2024/BGTVT | 11 | cosine=0.832996
+#2 | QCVN 41:2024/BGTVT | B.7 | cosine=0.832996
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.828629
+#4 | QCVN 41:2024/BGTVT | B.30 | cosine=0.828629
+#5 | QCVN 41:2024/BGTVT | B.11 | cosine=0.823504
+#6 | QCVN 41:2024/BGTVT | 26 | cosine=0.820487
+
+===== private_test_private_test_2 =====
+Câu hỏi:
+Khi gặp biển hình tròn, viền đỏ, nền trắng, có đường chéo màu đỏ kèm theo biển báo phụ như trong hình như trong hình trong khung giờ 6:00–8:00 và 16:00–18:00 như hình, trường hợp nào dưới đây được phép lưu thông qua đoạn đường đó vào lúc 16:30?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có đường chéo đỏ cắt ngang, biểu tượng xe ô tô màu đen ở giữa.
+Ý nghĩa hoặc thông số: Cấm xe cơ giới lưu thông trong các khung giờ được chỉ định trên biển phụ.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, chữ đen, ghi rõ hai khung giờ: '6:00 - 8:00' và '16:00 - 18:00'.
+Ý nghĩa hoặc thông số: Chỉ định thời gian áp dụng cho biển báo cấm phía trên.
+Example #1 | train_40 | cosine=0.893410
+Example #2 | train_180 | cosine=0.856497
+Example #3 | train_193 | cosine=0.855627
+Example #4 | train_286 | cosine=0.853183
+Example #5 | train_203 | cosine=0.851818
+#1 | QCVN 41:2024/BGTVT | 11 | cosine=0.893410
+#2 | QCVN 41:2024/BGTVT | B.3 | cosine=0.893410
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.856497
+#4 | QCVN 41:2024/BGTVT | B.4 | cosine=0.853183
+
+===== private_test_private_test_3 =====
+Câu hỏi:
+Xe taxi chở khách có được phép dừng lại trong thời gian ngắn để đón khách tại khu vực có biển báo hình tròn, viền đỏ nền xanh này không?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng hình chữ X màu đỏ ở giữa.
+Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe tại khu vực này.
+
+Đối tượng: Biển báo hiệu camera - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng, biểu tượng hình camera màu trắng ở góc trên bên trái, chữ viết màu trắng: 'TUYẾN ĐƯỜNG CÓ GIÁM SÁT, XỬ PHẠT BẰNG CAMERA'.
+Ý nghĩa hoặc thông số: Khu vực này có camera giám sát và xử phạt vi phạm giao thông.
+Example #1 | train_16 | cosine=0.844858
+Example #2 | train_21 | cosine=0.829306
+Example #3 | train_504 | cosine=0.826896
+Example #4 | train_370 | cosine=0.826813
+Example #5 | train_351 | cosine=0.822753
+#1 | QCVN 41:2024/BGTVT | 26 | cosine=0.844858
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.826896
+#3 | QCVN 41:2024/BGTVT | 41 | cosine=0.826896
+#4 | QCVN 41:2024/BGTVT | B.7 | cosine=0.826896
+#5 | QCVN 41:2024/BGTVT | F.10 | cosine=0.826896
+#6 | QCVN 41:2024/BGTVT | B.31 | cosine=0.826813
+#7 | QCVN 41:2024/BGTVT | B.30 | cosine=0.822753
+#8 | QCVN 41:2024/BGTVT | F.1 | cosine=0.822753
+
+===== private_test_private_test_4 =====
+Câu hỏi:
+Nếu người điều khiển phương tiện rẽ trái tại ngã ba có đặt biển hình tròn, viền đỏ, nền trắng như hình, hành vi đó có vi phạm quy định giao thông không?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ trái.
+Example #1 | train_477 | cosine=0.904214
+Example #2 | train_454 | cosine=0.880124
+Example #3 | train_474 | cosine=0.876145
+Example #4 | train_476 | cosine=0.873483
+Example #5 | train_437 | cosine=0.869003
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.904214
+#2 | QCVN 41:2024/BGTVT | B.24 | cosine=0.904214
+#3 | QCVN 41:2024/BGTVT | B.23 | cosine=0.880124
+#4 | QCVN 41:2024/BGTVT | B.6 | cosine=0.869003
+
+===== private_test_private_test_5 =====
+Câu hỏi:
+Khi gặp biển báo hình tròn có chữ "5t", phương tiện nào sau đây được phép lưu thông qua?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '5' màu đen ở giữa và ký hiệu 't' màu đen ngay dưới số 5.
+Ý nghĩa hoặc thông số: Biển báo cấm phương tiện có trọng tải từ 5 tấn trở lên đi vào.
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền xanh dương, chữ viết màu trắng. Nội dung đọc được: 'CẦU TRẦU' ở dòng trên, và dòng dưới ghi '6m / 200' (chi tiết nhỏ, có thể không đọc rõ hoàn toàn nhưng cấu trúc là biển tên cầu).
+Ý nghĩa hoặc thông số: Biển tên cầu, bổ sung cho biển báo cấm phía trên.
+Example #1 | train_501 | cosine=0.875592
+Example #2 | train_509 | cosine=0.844139
+Example #3 | train_508 | cosine=0.834749
+Example #4 | train_196 | cosine=0.831990
+Example #5 | train_218 | cosine=0.830008
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.875592
+#2 | QCVN 41:2024/BGTVT | B.6 | cosine=0.875592
+#3 | QCVN 41:2024/BGTVT | B.10 | cosine=0.844139
+#4 | QCVN 41:2024/BGTVT | B.12 | cosine=0.844139
+#5 | QCVN 41:2024/BGTVT | B.7 | cosine=0.844139
+#6 | QCVN 41:2024/BGTVT | B.15 | cosine=0.831990
+#7 | QCVN 41:2024/BGTVT | B.27 | cosine=0.830008
+#8 | QCVN 41:2024/BGTVT | F.5 | cosine=0.830008
+
+===== private_test_private_test_6 =====
+Câu hỏi:
+Biển báo hình tròn nền trắng viền đỏ như hình có ý nghĩa gì đối với xe ô tô khi lưu thông trên đoạn đường này?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, nền trắng, viền đỏ, bên trong có biểu tượng hai xe: một xe ô tô màu đỏ và một xe gắn máy màu đen, cả hai đều hướng về phía người xem.
+Ý nghĩa hoặc thông số: Biển báo cấm xe ô tô và xe gắn máy đi vào khu vực này (theo biểu tượng trên biển).
+
+Đối tượng: Biển phụ - ngay bên dưới biển báo cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, nội dung: 'CẤM XE MÔ TÔ, XE GẮN MÁY XE THÔ SƠ ĐI LÊN CẦU'.
+Ý nghĩa hoặc thông số: Biển phụ làm rõ đối tượng bị cấm: xe mô tô, xe gắn máy và xe thô sơ không được đi lên cầu.
+Example #1 | train_420 | cosine=0.939131
+Example #2 | train_22 | cosine=0.905885
+Example #3 | train_410 | cosine=0.893679
+Example #4 | train_419 | cosine=0.883752
+Example #5 | train_16 | cosine=0.881545
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.939131
+#2 | QCVN 41:2024/BGTVT | B.25 | cosine=0.939131
+#3 | QCVN 41:2024/BGTVT | 26 | cosine=0.905885
+#4 | QCVN 41:2024/BGTVT | B.26 | cosine=0.893679
+#5 | QCVN 41:2024/BGTVT | B.2 | cosine=0.883752
+
+===== private_test_private_test_7 =====
+Câu hỏi:
+Biển báo nền xanh dương này có ý nghĩa như thế nào đối với người điều khiển phương tiện khi đến gần ngã tư có đặt biển?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu lệnh rẽ phải - phía bên phải
+Đặc điểm: Biển tròn, nền xanh dương, biểu tượng mũi tên trắng chỉ hướng rẽ phải.
+Ý nghĩa hoặc thông số: Biển báo hiệu lệnh bắt buộc phải rẽ phải tại điểm này.
+Example #1 | train_30 | cosine=0.909518
+Example #2 | train_29 | cosine=0.895594
+Example #3 | train_125 | cosine=0.887623
+Example #4 | train_295 | cosine=0.885423
+Example #5 | train_5 | cosine=0.871825
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.909518
+#2 | QCVN 41:2024/BGTVT | D.1a | cosine=0.887623
+#3 | QCVN 41:2024/BGTVT | 7 | cosine=0.871825
+
+===== private_test_private_test_8 =====
+Câu hỏi:
+Biển chỉ dẫn vào đường cao tốc CT.01 như trong hình cho biết điều gì về giới hạn tốc độ áp dụng trên tuyến đường này?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển chỉ dẫn đường cao tốc - chính
+Đặc điểm: Hình chữ nhật đứng, nền màu xanh lá cây, viền trắng. Có chữ 'CT.01' màu vàng trên nền cam ở góc trên bên trái. Các dòng chữ 'NGHỊ SƠN', 'DIỄN CHÂU', 'EXPRESSWAY' màu trắng. Biểu tượng xe tải màu trắng ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn tuyến đường cao tốc Nghi Sơn - Diễn Châu.
+
+Đối tượng: Biển báo tốc độ - bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '80' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 80 km/h.
+
+Đối tượng: Biển báo tốc độ - bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '60' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 60 km/h.
+Example #1 | train_326 | cosine=0.919951
+Example #2 | train_330 | cosine=0.864215
+Example #3 | train_340 | cosine=0.858177
+Example #4 | train_366 | cosine=0.856137
+Example #5 | train_331 | cosine=0.854348
+#1 | QCVN 41:2024/BGTVT | 47 | cosine=0.919951
+#2 | QCVN 41:2024/BGTVT | P.3 | cosine=0.919951
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.856137
+#4 | QCVN 41:2024/BGTVT | 46 | cosine=0.856137
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.856137
+
+===== private_test_private_test_9 =====
+Câu hỏi:
+Biển báo hình tròn, có hình chiếc ô tô trong hình có hiệu lực như thế nào đối với các phương tiện tham gia giao thông?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ giới hạn - phía trên, bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '60' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 60 km/h cho các phương tiện tham gia giao thông trên đoạn đường này.
+
+Đối tượng: Biển báo tốc độ giới hạn - phía trên, giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '60' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 60 km/h cho các phương tiện tham gia giao thông trên đoạn đường này.
+
+Đối tượng: Biển báo tốc độ giới hạn - phía trên, bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '50' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 50 km/h cho các phương tiện tham gia giao thông trên đoạn đường này.
+
+Đối tượng: Biển báo hướng dẫn - phía trên, bên trái
+Đặc điểm: Hình chữ nhật dọc, nền xanh dương, biểu tượng ô tô màu trắng và mũi tên hướng lên trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn cho ô tô đi theo làn đường này.
+
+Đối tượng: Biển báo hướng dẫn - phía trên, giữa
+Đặc điểm: Hình chữ nhật dọc, nền xanh dương, biểu tượng ô tô màu trắng và mũi tên hướng lên trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn cho ô tô đi theo làn đường này.
+
+Đối tượng: Biển báo hướng dẫn - phía trên, bên phải
+Đặc điểm: Hình chữ nhật dọc, nền xanh dương, biểu tượng xe đạp và xe máy màu trắng và mũi tên hướng lên trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn cho xe đạp và xe máy đi theo làn đường này.
+Example #1 | train_430 | cosine=0.911182
+Example #2 | train_26 | cosine=0.909406
+Example #3 | train_345 | cosine=0.903994
+Example #4 | train_432 | cosine=0.898361
+Example #5 | train_77 | cosine=0.897670
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.911182
+#2 | QCVN 41:2024/BGTVT | B.27c | cosine=0.911182
+#3 | QCVN 41:2024/BGTVT | 21 | cosine=0.909406
+#4 | QCVN 41:2024/BGTVT | 41 | cosine=0.903994
+#5 | QCVN 41:2024/BGTVT | B.25 | cosine=0.903994
+#6 | QCVN 41:2024/BGTVT | B.27 | cosine=0.903994
+#7 | QCVN 41:2024/BGTVT | B.30 | cosine=0.903994
+#8 | QCVN 41:2024/BGTVT | F.1 | cosine=0.903994
+#9 | QCVN 41:2024/BGTVT | 32 | cosine=0.898361
+#10 | QCVN 41:2024/BGTVT | D.16 | cosine=0.897670
+
+===== private_test_private_test_10 =====
+Câu hỏi:
+Biển hình chữ nhật nền xanh có hình xe máy, xe đạp có ý nghĩa gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đặc biệt - phía bên phải
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng. Có dòng chữ 'ĐOẠN ĐƯỜNG MÁP MÔ' và 'CÁC XE CHÚ Ý' ở phần trên. Phần dưới có các dòng chữ hướng dẫn: 'GIỮ TỐC ĐỘ AN TOÀN', 'GIỮ KHOẢNG CÁCH AN TOÀN GIỮA CÁC XE', 'ĐI ĐÚNG LÀN ĐƯỜNG QUY ĐỊNH'.
+Ý nghĩa hoặc thông số: Báo hiệu về đoạn đường mấp mô, yêu cầu các xe chú ý giữ tốc độ và khoảng cách an toàn, đi đúng làn đường quy định.
+Example #1 | train_35 | cosine=0.825474
+Example #2 | train_33 | cosine=0.819734
+Example #3 | train_20 | cosine=0.817755
+Example #4 | train_61 | cosine=0.816432
+Example #5 | train_239 | cosine=0.811177
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.825474
+#2 | QCVN 41:2024/BGTVT | 26 | cosine=0.817755
+#3 | QCVN 41:2024/BGTVT | D.13 | cosine=0.816432
+#4 | QCVN 41:2024/BGTVT | 22 | cosine=0.811177
+#5 | QCVN 41:2024/BGTVT | B.30 | cosine=0.811177
+
+===== private_test_private_test_11 =====
+Câu hỏi:
+Biển báo hình tròn, viền đỏ, nền trắng trong hình chỉ áp dụng cho xe máy có dung tích xilanh trên 175cc. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe máy màu đen ở giữa.
+Ý nghĩa hoặc thông số: Biển báo cấm xe máy đi vào. Không có ghi chú dung tích xilanh trên biển.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi rõ: 'CẤM XE 2 VÀ 3 BÁNH'.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung ý nghĩa cho biển cấm, xác định đối tượng bị cấm là xe hai bánh và xe ba bánh.
+Example #1 | train_27 | cosine=0.889208
+Example #2 | train_332 | cosine=0.845951
+Example #3 | train_19 | cosine=0.833838
+Example #4 | train_500 | cosine=0.832210
+Example #5 | train_256 | cosine=0.832053
+#1 | QCVN 41:2024/BGTVT | 26 | cosine=0.889208
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.845951
+#3 | QCVN 41:2024/BGTVT | 28 | cosine=0.845951
+#4 | QCVN 41:2024/BGTVT | B.4 | cosine=0.832210
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.832053
+#6 | QCVN 41:2024/BGTVT | F.5 | cosine=0.832053
+
+===== private_test_private_test_12 =====
+Câu hỏi:
+Trong các khung giờ 6:00–8:00 và 16:00–18:00, trên đoạn đường có biển báo hình tròn, viền đỏ, nền trắng, có hình ô tô màu đen như trong hình chỉ cấm xe ô tô con, không cấm các loại xe tải và xe khách lưu thông.Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng ô tô màu đen ở giữa có đường chéo đỏ cắt qua.
+Ý nghĩa hoặc thông số: Cấm xe ô tô con lưu thông trong các khung giờ được chỉ định trên biển phụ.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, chữ đen, ghi rõ hai khung giờ: '6:00 - 8:00' và '16:00 - 18:00'.
+Ý nghĩa hoặc thông số: Chỉ định thời gian cấm xe ô tô con lưu thông theo quy định của biển báo cấm phía trên.
+Example #1 | train_181 | cosine=0.902855
+Example #2 | train_182 | cosine=0.889681
+Example #3 | train_463 | cosine=0.884816
+Example #4 | train_192 | cosine=0.869367
+Example #5 | train_408 | cosine=0.867710
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.902855
+#2 | QCVN 41:2024/BGTVT | 41 | cosine=0.902855
+#3 | QCVN 41:2024/BGTVT | B.3 | cosine=0.902855
+#4 | QCVN 41:2024/BGTVT | F.10 | cosine=0.902855
+#5 | QCVN 41:2024/BGTVT | F.11 | cosine=0.869367
+#6 | QCVN 41:2024/BGTVT | B.37 | cosine=0.867710
+#7 | QCVN 41:2024/BGTVT | F.5 | cosine=0.867710
+
+===== private_test_private_test_13 =====
+Câu hỏi:
+Biển báo hình tròn, viền đỏ, nền xanh này chỉ cấm đỗ xe, nhưng vẫn cho phép dừng xe trong thời gian ngắn để lên xuống hàng hoặc người. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có dấu X màu đỏ ở giữa.
+Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe.
+
+Đối tượng: Biển báo hiệu camera - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật đứng, nền xanh, viền trắng, có biểu tượng camera màu trắng và dòng chữ: 'TUYẾN ĐƯỜNG CÓ GIÁM SÁT, XỬ PHẠT BẰNG CAMERA'.
+Ý nghĩa hoặc thông số: Thông báo tuyến đường có camera giám sát và xử phạt vi phạm.
+Example #1 | train_27 | cosine=0.909187
+Example #2 | train_154 | cosine=0.891775
+Example #3 | train_16 | cosine=0.885805
+Example #4 | train_497 | cosine=0.880195
+Example #5 | train_464 | cosine=0.873696
+#1 | QCVN 41:2024/BGTVT | 26 | cosine=0.909187
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.891775
+#3 | QCVN 41:2024/BGTVT | B.30 | cosine=0.891775
+#4 | QCVN 41:2024/BGTVT | B.31 | cosine=0.880195
+
+===== private_test_private_test_14 =====
+Câu hỏi:
+Biển hình tròn, viền đỏ nền trắng  trong hình cấm hành vi rẽ trái tại ngã ba hoặc ngã tư.Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ trái tại ngã ba hoặc ngã tư.
+Example #1 | train_454 | cosine=0.887374
+Example #2 | train_18 | cosine=0.885889
+Example #3 | train_64 | cosine=0.882628
+Example #4 | train_477 | cosine=0.880697
+Example #5 | train_476 | cosine=0.865819
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.887374
+#2 | QCVN 41:2024/BGTVT | B.23 | cosine=0.887374
+#3 | QCVN 41:2024/BGTVT | 26 | cosine=0.885889
+#4 | QCVN 41:2024/BGTVT | B.24 | cosine=0.882628
+
+===== private_test_private_test_15 =====
+Câu hỏi:
+Xe tải có khối lượng người và hàng hóa xếp trên xe là 3.5 tấn và trọng tải bản thân xe là 2.0 tấn vẫn được phép đi qua đoạn đường có biển báo hình tròn, có chữ "5t" như trong hình vì biển báo chỉ giới hạn khối lượng tối đa của người và hàng hóa xếp trên xe. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '5' màu đen ở giữa và ký hiệu 't' màu đen bên dưới số 5.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có tổng khối lượng người và hàng hóa xếp trên xe vượt quá 5 tấn đi vào.
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, chữ trắng, ghi rõ 'CẦU TRẦU' và các thông số kỹ thuật nhỏ hơn bên dưới (không đọc rõ).
+Ý nghĩa hoặc thông số: Biển phụ chỉ tên cầu là 'CẦU TRẦU', xác định vị trí áp dụng của biển báo cấm phía trên.
+Example #1 | train_501 | cosine=0.847422
+Example #2 | train_434 | cosine=0.844512
+Example #3 | train_253 | cosine=0.844475
+Example #4 | train_403 | cosine=0.837220
+Example #5 | train_251 | cosine=0.834048
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.847422
+#2 | QCVN 41:2024/BGTVT | B.6 | cosine=0.847422
+#3 | QCVN 41:2024/BGTVT | B.15 | cosine=0.844512
+#4 | QCVN 41:2024/BGTVT | 41 | cosine=0.837220
+#5 | QCVN 41:2024/BGTVT | F.10 | cosine=0.837220
+
+===== private_test_private_test_16 =====
+Câu hỏi:
+Biển báo hình tròn, viền đỏ nền trắng này cấm xe máy vượt các phương tiện khác trên đoạn đường có đặt biển. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng hai xe: một xe ô tô màu đỏ và một xe gắn máy màu đen.
+Ý nghĩa hoặc thông số: Biển báo cấm các phương tiện được biểu thị (xe ô tô và xe gắn máy) đi vào khu vực này.
+
+Đối tượng: Biển phụ - ngay bên dưới biển báo cấm
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, ghi: 'CẤM XE MÔ TÔ, XE GẮN MÁY XE THÔ SƠ ĐI LÊN CẦU'.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung nội dung cấm cụ thể cho các loại xe: xe mô tô, xe gắn máy, xe thô sơ không được đi lên cầu.
+Example #1 | train_27 | cosine=0.907271
+Example #2 | train_17 | cosine=0.904275
+Example #3 | train_425 | cosine=0.898544
+Example #4 | train_420 | cosine=0.887309
+Example #5 | train_19 | cosine=0.881417
+#1 | QCVN 41:2024/BGTVT | 26 | cosine=0.907271
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.904275
+#3 | QCVN 41:2024/BGTVT | B.25 | cosine=0.898544
+
+===== private_test_private_test_17 =====
+Câu hỏi:
+Người điều khiển phương tiện gặp biển hiệu lệnh xanh dương này bắt buộc phải rẽ phải theo hướng mũi tên chỉ dẫn (trừ xe được ưu tiên theo quy định). Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển hiệu lệnh - phía bên phải
+Đặc điểm: Hình tròn, nền xanh dương, viền trắng, biểu tượng mũi tên chỉ hướng rẽ phải màu trắng.
+Ý nghĩa hoặc thông số: Biển hiệu lệnh bắt buộc rẽ phải.
+Example #1 | train_125 | cosine=0.894499
+Example #2 | train_360 | cosine=0.890527
+Example #3 | train_29 | cosine=0.872329
+Example #4 | train_477 | cosine=0.855937
+Example #5 | train_454 | cosine=0.851298
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.894499
+#2 | QCVN 41:2024/BGTVT | D.1a | cosine=0.894499
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.855937
+#4 | QCVN 41:2024/BGTVT | B.24 | cosine=0.855937
+#5 | QCVN 41:2024/BGTVT | B.23 | cosine=0.851298
+
+===== private_test_private_test_18 =====
+Câu hỏi:
+Phương tiện lưu thông trên tuyến đường cao tốc như trong hình phải đảm bảo chạy với tốc độ tối thiểu 60 km/h và không được vượt quá 80 km/h. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ tối đa - phía trên bên trái
+Đặc điểm: Biển tròn, nền trắng, viền đỏ, số 80 màu đen ở giữa, đơn vị km/h không ghi rõ trên biển.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 80 km/h cho phương tiện lưu thông trên tuyến đường này.
+
+Đối tượng: Biển báo tốc độ tối thiểu - phía trên bên phải
+Đặc điểm: Biển tròn, nền xanh dương, số 60 màu trắng ở giữa, đơn vị km/h không ghi rõ trên biển.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối thiểu 60 km/h cho phương tiện lưu thông trên tuyến đường này.
+Example #1 | train_359 | cosine=0.918484
+Example #2 | train_123 | cosine=0.904309
+Example #3 | train_322 | cosine=0.903445
+Example #4 | train_466 | cosine=0.899671
+Example #5 | train_423 | cosine=0.886289
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.918484
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.918484
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.918484
+#4 | QCVN 41:2024/BGTVT | D.6 | cosine=0.918484
+#5 | QCVN 41:2024/BGTVT | 47 | cosine=0.904309
+#6 | QCVN 41:2024/BGTVT | P.2 | cosine=0.904309
+#7 | QCVN 41:2024/BGTVT | P.3 | cosine=0.903445
+
+===== private_test_private_test_19 =====
+Câu hỏi:
+Biển báo hình tròn có hình chiếc ô tô này cấm tất cả các loại ô tô, bao gồm cả xe tải và xe khách, trừ các xe được quyền ưu tiên theo luật định. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình chiếc xe tải đang vượt qua một xe khác (biểu tượng cấm vượt).
+Ý nghĩa hoặc thông số: Cấm vượt xe khác. Không đọc rõ các biển phụ đi kèm (nếu có) do khoảng cách và góc chụp.
+Example #1 | train_18 | cosine=0.889267
+Example #2 | train_17 | cosine=0.888632
+Example #3 | train_27 | cosine=0.875351
+Example #4 | train_133 | cosine=0.871044
+Example #5 | train_19 | cosine=0.870242
+#1 | QCVN 41:2024/BGTVT | 26 | cosine=0.889267
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.888632
+#3 | QCVN 41:2024/BGTVT | B.25 | cosine=0.871044
+
+===== private_test_private_test_20 =====
+Câu hỏi:
+Biển báo hình chữ nhật có hình xe máy, xe đạp này yêu cầu người điều khiển xe đạp và xe gắn máy phải đi thẳng trên làn đường có biển báo này theo hướng mũi tên; các loại phương tiện khác không được phép đi vào làn đường có biển báo này. Đúng hay sai
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên, bên phải
+Đặc điểm: Hình chữ nhật đứng, nền xanh dương, có mũi tên hướng lên trên và hình vẽ xe máy, xe đạp màu trắng ở dưới mũi tên.
+Ý nghĩa hoặc thông số: Chỉ dẫn xe máy và xe đạp đi thẳng.
+Example #1 | train_515 | cosine=0.855915
+Example #2 | train_451 | cosine=0.854786
+Example #3 | train_29 | cosine=0.844780
+Example #4 | train_435 | cosine=0.840316
+Example #5 | train_461 | cosine=0.839513
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.855915
+#2 | QCVN 41:2024/BGTVT | D.13 | cosine=0.855915
+#3 | QCVN 41:2024/BGTVT | 36 | cosine=0.840316
+#4 | QCVN 41:2024/BGTVT | D.14 | cosine=0.839513
+
+===== private_test_private_test_21 =====
+Câu hỏi:
+Biển báo trên có hiệu lực đối với phương tiện nào sau đây?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có dấu gạch chéo đỏ từ góc trên bên trái xuống góc dưới bên phải; bên trong là hình vẽ đen của một chiếc xe ba bánh (có hai bánh sau, một bánh trước, và yên xe).
+Ý nghĩa hoặc thông số: Cấm xe ba bánh đi vào đường này hoặc khu vực này.
+Example #1 | train_100 | cosine=0.914538
+Example #2 | train_108 | cosine=0.893916
+Example #3 | train_46 | cosine=0.880349
+Example #4 | train_428 | cosine=0.836962
+Example #5 | train_319 | cosine=0.836678
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.914538
+#2 | QCVN 41:2024/BGTVT | B.11 | cosine=0.914538
+#3 | QCVN 41:2024/BGTVT | 11 | cosine=0.880349
+#4 | QCVN 41:2024/BGTVT | B.7 | cosine=0.880349
+#5 | QCVN 41:2024/BGTVT | B.6 | cosine=0.836962
+#6 | QCVN 41:2024/BGTVT | B.5 | cosine=0.836678
+
+===== private_test_private_test_22 =====
+Câu hỏi:
+Quan sát biển báo trong hình, phương tiện xe đạp được phép di chuyển trên làn đường nào trong các lựa chọn sau?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển chỉ dẫn R.415 - toàn bộ
+Đặc điểm: Hình chữ nhật, nền xanh dương, viền trắng. Nội dung gồm ba cột dọc ngăn cách bằng vạch kẻ trắng đứt đoạn. Cột trái: hình ô tô. Cột giữa: hình ô tô và hình xe máy. Cột phải: hình xe máy, hình xe ba bánh, hình xe đạp.
+Ý nghĩa hoặc thông số: Biển chỉ dẫn các làn đường dành riêng cho các loại phương tiện khác nhau: ô tô, xe máy và xe đạp, xe ba bánh.
+Example #1 | train_121 | cosine=0.876390
+Example #2 | train_115 | cosine=0.851243
+Example #3 | train_421 | cosine=0.841668
+Example #4 | train_35 | cosine=0.837511
+Example #5 | train_73 | cosine=0.826326
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.876390
+#2 | QCVN 41:2024/BGTVT | D.16 | cosine=0.876390
+#3 | QCVN 41:2024/BGTVT | D.14 | cosine=0.851243
+#4 | QCVN 41:2024/BGTVT | 28 | cosine=0.837511
+#5 | QCVN 41:2024/BGTVT | 31 | cosine=0.826326
+
+===== private_test_private_test_23 =====
+Câu hỏi:
+Biển hình tròn có viền đỏ và dấu gạch trên là biển gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng người đi bộ màu đen bị gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm người đi bộ
+Example #1 | train_75 | cosine=1.000000
+Example #2 | train_156 | cosine=0.854568
+Example #3 | train_130 | cosine=0.843746
+Example #4 | train_475 | cosine=0.835876
+Example #5 | train_120 | cosine=0.832903
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=1.000000
+#2 | QCVN 41:2024/BGTVT | B.12 | cosine=1.000000
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.843746
+#4 | QCVN 41:2024/BGTVT | B.24 | cosine=0.835876
+#5 | QCVN 41:2024/BGTVT | B.10 | cosine=0.832903
+#6 | QCVN 41:2024/BGTVT | B.11 | cosine=0.832903
+#7 | QCVN 41:2024/BGTVT | B.4 | cosine=0.832903
+
+===== private_test_private_test_24 =====
+Câu hỏi:
+Tại đoạn đường có đặt biển hình tròn màu xanh viền đỏ có 2 gạch chéo, trường hợp nào sau đây không vi phạm quy định giao thông?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có hai gạch chéo màu đỏ cắt nhau ở giữa.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe (biển báo cấm số 206 theo quy định Việt Nam).
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền xanh, chữ trắng, nội dung: 'HÃM MẤT' (phần dưới bị che một phần nhưng vẫn đọc được rõ).
+Ý nghĩa hoặc thông số: Biển phụ bổ sung thông tin về thời gian cấm (có thể là 'Hãm mất' hoặc 'Hãm mất' - cần kiểm tra lại chính xác từ ngữ trên biển).
+Example #1 | train_373 | cosine=0.859041
+Example #2 | train_503 | cosine=0.842613
+Example #3 | train_437 | cosine=0.837458
+Example #4 | train_27 | cosine=0.835499
+Example #5 | train_495 | cosine=0.833439
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.859041
+#2 | QCVN 41:2024/BGTVT | B.31 | cosine=0.859041
+#3 | QCVN 41:2024/BGTVT | B.7 | cosine=0.842613
+#4 | QCVN 41:2024/BGTVT | B.23 | cosine=0.837458
+#5 | QCVN 41:2024/BGTVT | B.6 | cosine=0.837458
+#6 | QCVN 41:2024/BGTVT | 26 | cosine=0.835499
+
+===== private_test_private_test_25 =====
+Câu hỏi:
+Theo biển báo hình chữ nhật, màu xanh trong hình, xe tải có trọng tải 3,4 tấn được phép đi vào làn đường nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu phân làn - bên trái
+Đặc điểm: Biển hình chữ nhật, nền xanh, có 3 biểu tượng trắng xếp dọc: ô tô, xe buýt có ghi '<30 CHỖ', xe tải có ghi '<3,5T'.
+Ý nghĩa hoặc thông số: Chỉ dẫn các loại xe được phép đi trong làn đường này: ô tô, xe buýt dưới 30 chỗ, xe tải dưới 3,5 tấn.
+
+Đối tượng: Biển báo hiệu phân làn - giữa
+Đặc điểm: Biển hình chữ nhật, nền xanh, có biểu tượng ô tô màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho ô tô.
+
+Đối tượng: Biển báo hiệu phân làn - bên phải
+Đặc điểm: Biển hình chữ nhật, nền xanh, có 3 biểu tượng trắng xếp dọc: xe máy, xe ba bánh, xe đạp.
+Ý nghĩa hoặc thông số: Chỉ dẫn các loại xe được phép đi trong làn đường này: xe máy, xe ba bánh, xe đạp.
+Example #1 | train_132 | cosine=0.877634
+Example #2 | train_36 | cosine=0.853007
+Example #3 | train_493 | cosine=0.845772
+Example #4 | train_33 | cosine=0.841228
+Example #5 | train_35 | cosine=0.836360
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.877634
+#2 | QCVN 41:2024/BGTVT | D.16 | cosine=0.877634
+#3 | QCVN 41:2024/BGTVT | 28 | cosine=0.853007
+#4 | QCVN 41:2024/BGTVT | 22 | cosine=0.845772
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.845772
+#6 | QCVN 41:2024/BGTVT | B.30 | cosine=0.845772
+
+===== private_test_private_test_26 =====
+Câu hỏi:
+Khi tham gia giao thông trên đoạn đường cao tốc này, xe ô tô con phải di chuyển trong khoảng tốc độ nào dưới đây là đúng quy định?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đường bộ - phía trên
+Đặc điểm: Hình chữ nhật, nền xanh lá cây, viền trắng. Có chữ 'ĐÀ NẴNG', 'QUẢNG NGÃI', 'EXPRESSWAY' màu trắng; biển phụ hình chữ nhật màu vàng với chữ 'CT.01'; biểu tượng hình học màu trắng mô tả đường cao tốc hai làn.
+Ý nghĩa hoặc thông số: Chỉ hướng đi đến Đà Nẵng và Quảng Ngãi trên đường cao tốc CT.01.
+
+Đối tượng: Biển báo tốc độ - phía dưới
+Đặc điểm: Hai biển tròn: biển bên trái có viền đỏ, nền trắng, chữ '120' màu đen; biển bên phải có viền xanh dương, chữ '60' màu trắng.
+Ý nghĩa hoặc thông số: Quy định tốc độ tối đa 120 km/h và tốc độ tối thiểu 60 km/h cho xe ô tô con trên đoạn đường cao tốc này.
+Example #1 | train_413 | cosine=0.841018
+Example #2 | train_396 | cosine=0.838281
+Example #3 | train_385 | cosine=0.836417
+Example #4 | train_423 | cosine=0.834205
+Example #5 | train_488 | cosine=0.833945
+#1 | QCVN 41:2024/BGTVT | 47 | cosine=0.841018
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.838281
+#3 | QCVN 41:2024/BGTVT | 32 | cosine=0.838281
+#4 | QCVN 41:2024/BGTVT | 46 | cosine=0.838281
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.838281
+#6 | QCVN 41:2024/BGTVT | D.6 | cosine=0.838281
+#7 | QCVN 41:2024/BGTVT | 45 | cosine=0.833945
+
+===== private_test_private_test_27 =====
+Câu hỏi:
+Biển nào dưới đây không có giá trị cấm đối với người dắt xe?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Biển tròn, viền đỏ, nền trắng, biểu tượng người đi xe đạp bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm người đi xe đạp
+
+Đối tượng: Biển báo cấm - giữa
+Đặc điểm: Biển tròn, viền đỏ, nền trắng, biểu tượng người đi xe máy bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm người đi xe máy
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Biển tròn, viền đỏ, nền trắng, biểu tượng không rõ do bị che khuất.
+Ý nghĩa hoặc thông số: chưa xác định chắc chắn
+Example #1 | train_120 | cosine=0.895479
+Example #2 | train_129 | cosine=0.838783
+Example #3 | train_328 | cosine=0.838559
+Example #4 | train_459 | cosine=0.835865
+Example #5 | train_44 | cosine=0.835530
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.895479
+#2 | QCVN 41:2024/BGTVT | B.10 | cosine=0.895479
+#3 | QCVN 41:2024/BGTVT | B.11 | cosine=0.895479
+#4 | QCVN 41:2024/BGTVT | B.4 | cosine=0.895479
+#5 | QCVN 41:2024/BGTVT | B.12 | cosine=0.838559
+#6 | QCVN 41:2024/BGTVT | B.25 | cosine=0.835865
+#7 | QCVN 41:2024/BGTVT | B.30 | cosine=0.835865
+#8 | QCVN 41:2024/BGTVT | 11 | cosine=0.835530
+
+===== private_test_private_test_28 =====
+Câu hỏi:
+Trường hợp nào sau đây không vi phạm khi lưu thông trên đoạn đường có đặt biển P.111b – “Cấm xe ba bánh loại có động cơ”?
+Example #1 | train_492 | cosine=0.620845
+Example #2 | train_129 | cosine=0.620447
+Example #3 | train_400 | cosine=0.617605
+Example #4 | train_494 | cosine=0.598408
+Example #5 | train_100 | cosine=0.591781
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.620845
+#2 | QCVN 41:2024/BGTVT | 41 | cosine=0.620845
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.620845
+#4 | QCVN 41:2024/BGTVT | F.10 | cosine=0.620845
+#5 | QCVN 41:2024/BGTVT | B.10 | cosine=0.620447
+#6 | QCVN 41:2024/BGTVT | 32 | cosine=0.617605
+#7 | QCVN 41:2024/BGTVT | B.11 | cosine=0.617605
+#8 | QCVN 41:2024/BGTVT | B.31 | cosine=0.617605
+#9 | QCVN 41:2024/BGTVT | D.16 | cosine=0.617605
+#10 | QCVN 41:2024/BGTVT | B.30 | cosine=0.598408
+
+===== private_test_private_test_29 =====
+Câu hỏi:
+Trong trường hợp đường cong có bán kính lớn hơn 100m ở vùng đồng bằng, thì có được phép lắp đặt biển tam giác màu vàng (chỗ ngoặt nguy hiểm vòng bên trái) như trong ảnh không?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo nguy hiểm - phía trước
+Đặc điểm: Hình tam giác đều, viền màu đỏ, nền màu vàng, biểu tượng đen là một đường cong ngoặt sang trái.
+Ý nghĩa hoặc thông số: Biển báo nguy hiểm: Đường cong ngoặt sang trái.
+Example #1 | train_289 | cosine=0.772283
+Example #2 | train_262 | cosine=0.767523
+Example #3 | train_68 | cosine=0.765668
+Example #4 | train_127 | cosine=0.762173
+Example #5 | train_38 | cosine=0.758769
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.772283
+#2 | QCVN 41:2024/BGTVT | C.40 | cosine=0.772283
+#3 | QCVN 41:2024/BGTVT | 26 | cosine=0.767523
+#4 | QCVN 41:2024/BGTVT | C.6 | cosine=0.767523
+#5 | QCVN 41:2024/BGTVT | C.47 | cosine=0.765668
+#6 | QCVN 41:2024/BGTVT | 22 | cosine=0.762173
+#7 | QCVN 41:2024/BGTVT | B.24 | cosine=0.762173
+#8 | QCVN 41:2024/BGTVT | C.27 | cosine=0.762173
+#9 | QCVN 41:2024/BGTVT | C.3 | cosine=0.762173
+#10 | QCVN 41:2024/BGTVT | C.45 | cosine=0.762173
+
+===== private_test_private_test_30 =====
+Câu hỏi:
+Khi gặp biển báo trên, phương tiện rẽ phải ngay tại vòng xuyến mà không đi theo hướng mũi tên vòng tròn thì được phép. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đường bộ - trung tâm ảnh
+Đặc điểm: Hình tròn, nền màu xanh dương, có ba mũi tên màu trắng cong tạo thành vòng tròn xoay theo chiều kim đồng hồ, không có chữ viết hay số nào trên biển.
+Ý nghĩa hoặc thông số: Biển báo hiệu bắt buộc phải đi vòng xuyến theo hướng mũi tên quy định (trong trường hợp này là chiều kim đồng hồ).
+Example #1 | train_29 | cosine=0.896286
+Example #2 | train_512 | cosine=0.868899
+Example #3 | train_37 | cosine=0.863796
+Example #4 | train_339 | cosine=0.861121
+Example #5 | train_125 | cosine=0.855873
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.896286
+#2 | QCVN 41:2024/BGTVT | 28 | cosine=0.868899
+#3 | QCVN 41:2024/BGTVT | C.24 | cosine=0.868899
+#4 | QCVN 41:2024/BGTVT | C.6 | cosine=0.861121
+#5 | QCVN 41:2024/BGTVT | D.1a | cosine=0.855873
+
+===== private_test_private_test_31 =====
+Câu hỏi:
+Nếu biển báo trên được đặt sau nơi đường giao nhau, thì người điều khiển phương tiện bắt buộc phải rẽ phải ngay tại vị trí có biển, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - trung tâm ảnh
+Đặc điểm: Hình tròn, nền màu xanh dương, viền trắng mỏng, biểu tượng là mũi tên trắng chỉ hướng sang phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải rẽ phải tại vị trí này; nếu đặt sau giao lộ, có thể hiểu là bắt buộc rẽ phải ngay tại đó.
+Example #1 | train_125 | cosine=0.893584
+Example #2 | train_29 | cosine=0.888440
+Example #3 | train_360 | cosine=0.875783
+Example #4 | train_11 | cosine=0.855115
+Example #5 | train_451 | cosine=0.852173
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.893584
+#2 | QCVN 41:2024/BGTVT | D.1a | cosine=0.893584
+#3 | QCVN 41:2024/BGTVT | D.13 | cosine=0.852173
+
+===== private_test_private_test_32 =====
+Câu hỏi:
+Biển hình tròn màu xanh ở hình trên được đặt tại một đoạn đường nội đô, vào ngày 17/5/2025, một ô tô đỗ tại vị trí có đặt biển báo trên từ 7h00 đến 9h00 sáng. Hành vi này có vi phạm quy định giao thông không?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trước (gần nhất)
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng hai vạch trắng dọc song song bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe.
+
+Đối tượng: Biển báo cấm - phía sau (xa hơn)
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng hai vạch trắng dọc song song bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe.
+Example #1 | train_503 | cosine=0.860274
+Example #2 | train_118 | cosine=0.846641
+Example #3 | train_497 | cosine=0.845220
+Example #4 | train_84 | cosine=0.844256
+Example #5 | train_138 | cosine=0.843212
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.860274
+#2 | QCVN 41:2024/BGTVT | B.7 | cosine=0.860274
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.846641
+
+===== private_test_private_test_33 =====
+Câu hỏi:
+Biển báo này cho phép xe cơ giới được chạy tối đa 45 km/h trên đoạn đường phía trước.
+Đúng hay Sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía bên phải đường
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số 40 màu đen ở giữa.
+Ý nghĩa hoặc thông số: Biển báo cấm tốc độ tối đa 40 km/h.
+Example #1 | train_388 | cosine=0.919976
+Example #2 | train_483 | cosine=0.911695
+Example #3 | train_423 | cosine=0.889752
+Example #4 | train_28 | cosine=0.883303
+Example #5 | train_256 | cosine=0.872869
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.919976
+#2 | QCVN 41:2024/BGTVT | B.27 | cosine=0.919976
+#3 | QCVN 41:2024/BGTVT | 32 | cosine=0.889752
+#4 | QCVN 41:2024/BGTVT | D.6 | cosine=0.889752
+#5 | QCVN 41:2024/BGTVT | 21 | cosine=0.883303
+#6 | QCVN 41:2024/BGTVT | F.5 | cosine=0.872869
+
+===== private_test_private_test_34 =====
+Câu hỏi:
+Các biển báo trong hình cảnh báo rằng:
+Phía trước đang thi công, đường bị thu hẹp về bên trái và phương tiện phải giảm tốc độ.
+Đúng hay Sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu - bên trái
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình người đang đào đất.
+Ý nghĩa hoặc thông số: Cảnh báo khu vực có công trình xây dựng hoặc thi công đường bộ.
+
+Đối tượng: Biển báo hiệu - giữa
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình hai vạch dọc song song.
+Ý nghĩa hoặc thông số: Cảnh báo đường bị thu hẹp hoặc có chướng ngại vật ở giữa đường.
+
+Đối tượng: Biển báo hiệu - bên phải
+Đặc điểm: Biển tam giác đều, viền đỏ, nền vàng, chữ đen 'ĐI CHẬM'.
+Ý nghĩa hoặc thông số: Cảnh báo phương tiện phải giảm tốc độ khi qua khu vực.
+
+Đối tượng: Biển chỉ dẫn hướng - phía dưới
+Đặc điểm: Biển hình chữ nhật ngang, nền đỏ, ba mũi tên trắng chỉ hướng rẽ phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải rẽ phải hoặc đi theo hướng bên phải.
+
+Đối tượng: Biển văn bản - phía trên
+Đặc điểm: Biển hình chữ nhật ngang, nền xanh dương, chữ trắng 'XIN LỖI ĐÃ LÀM PHIỀN QUÝ VỊ'.
+Ý nghĩa hoặc thông số: Biển văn bản thông báo xin lỗi người tham gia giao thông do sự cố hoặc thi công.
+Example #1 | train_136 | cosine=0.857175
+Example #2 | train_68 | cosine=0.840672
+Example #3 | train_332 | cosine=0.831876
+Example #4 | train_19 | cosine=0.831693
+Example #5 | train_500 | cosine=0.830501
+#1 | QCVN 41:2024/BGTVT | 11 | cosine=0.857175
+#2 | QCVN 41:2024/BGTVT | 27 | cosine=0.857175
+#3 | QCVN 41:2024/BGTVT | C.47 | cosine=0.840672
+#4 | QCVN 41:2024/BGTVT | 22 | cosine=0.831876
+#5 | QCVN 41:2024/BGTVT | 28 | cosine=0.831876
+#6 | QCVN 41:2024/BGTVT | 26 | cosine=0.831693
+#7 | QCVN 41:2024/BGTVT | B.4 | cosine=0.830501
+
+===== private_test_private_test_35 =====
+Câu hỏi:
+Biển báo hình tròn màu xanh viền đỏ có gạch chéo trên có ý nghĩa:
+Cấm đỗ xe tại khu vực đặt biển.
+Đúng hay Sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, nền xanh, viền đỏ, có một đường chéo đỏ từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Cấm đỗ xe tại khu vực đặt biển.
+Example #1 | train_96 | cosine=0.884910
+Example #2 | train_84 | cosine=0.884355
+Example #3 | train_119 | cosine=0.870382
+Example #4 | train_497 | cosine=0.867801
+Example #5 | train_154 | cosine=0.867643
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.884910
+#2 | QCVN 41:2024/BGTVT | B.31 | cosine=0.884910
+#3 | QCVN 41:2024/BGTVT | B.30 | cosine=0.867643
+
+===== private_test_private_test_36 =====
+Câu hỏi:
+Biển báo trên có ý nghĩa:
+Bắt đầu khu vực đông dân cư (nội thành, nội thị)
+Đúng hay Sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đường bộ - phía bên phải đường
+Đặc điểm: Biển hình chữ nhật đứng, nền màu xanh dương, có biểu tượng trắng mô tả các tòa nhà cao tầng (kiểu thành phố) và một biểu tượng cây xanh ở góc phải.
+Ý nghĩa hoặc thông số: Biển báo bắt đầu khu vực đông dân cư (nội thành, nội thị).
+Example #1 | train_517 | cosine=0.837170
+Example #2 | train_53 | cosine=0.817085
+Example #3 | train_19 | cosine=0.805046
+Example #4 | train_285 | cosine=0.801274
+Example #5 | train_291 | cosine=0.794947
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.837170
+#2 | QCVN 41:2024/BGTVT | D.17 | cosine=0.837170
+#3 | QCVN 41:2024/BGTVT | 26 | cosine=0.805046
+#4 | QCVN 41:2024/BGTVT | D.16 | cosine=0.801274
+#5 | QCVN 41:2024/BGTVT | 36 | cosine=0.794947
+
+===== private_test_private_test_37 =====
+Câu hỏi:
+Biển báo trên cho biết nếu rẽ trái sẽ đến Nam Định (cách 30 km), còn rẽ phải sẽ đến Ninh Bình (cách 34 km).
+Đúng hay Sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ đường - hình chữ Y
+Đặc điểm: Hình chữ Y, nền màu xanh dương, có hai mũi tên trắng chỉ hướng trái và phải, kèm chữ 'NAM ĐỊNH 30 Km' ở hướng trái và 'NINH BÌNH 34 Km' ở hướng phải.
+Ý nghĩa hoặc thông số: Chỉ đường rẽ trái đến Nam Định (30 km) và rẽ phải đến Ninh Bình (34 km).
+Example #1 | train_104 | cosine=0.859638
+Example #2 | train_358 | cosine=0.732120
+Example #3 | train_125 | cosine=0.722344
+Example #4 | train_454 | cosine=0.720415
+Example #5 | train_332 | cosine=0.718854
+#1 | QCVN 41:2024/BGTVT | 36 | cosine=0.859638
+#2 | QCVN 41:2024/BGTVT | E.14 | cosine=0.859638
+#3 | QCVN 41:2024/BGTVT | 32 | cosine=0.722344
+#4 | QCVN 41:2024/BGTVT | D.1a | cosine=0.722344
+#5 | QCVN 41:2024/BGTVT | 22 | cosine=0.720415
+#6 | QCVN 41:2024/BGTVT | B.23 | cosine=0.720415
+#7 | QCVN 41:2024/BGTVT | 28 | cosine=0.718854
+
+===== private_test_private_test_38 =====
+Câu hỏi:
+Biển báo ở phía bên phải có ý nghĩa cảnh báo điện cao áp phía trên và giới hạn chiều cao an toàn là 8.3 mét.
+Đúng hay Sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển cảnh báo điện cao áp - phía trên
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng sấm sét màu đen ở giữa.
+Ý nghĩa hoặc thông số: Cảnh báo nguy hiểm điện cao áp.
+
+Đối tượng: Biển giới hạn chiều cao an toàn - ngay bên dưới
+Đặc điểm: Hình chữ nhật đứng, nền xanh dương, chữ và số màu trắng.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao an toàn 8.3 M.
+Example #1 | train_332 | cosine=0.842903
+Example #2 | train_302 | cosine=0.838695
+Example #3 | train_402 | cosine=0.824208
+Example #4 | train_49 | cosine=0.802543
+Example #5 | train_164 | cosine=0.800592
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.842903
+#2 | QCVN 41:2024/BGTVT | 28 | cosine=0.842903
+#3 | QCVN 41:2024/BGTVT | B.17 | cosine=0.838695
+#4 | QCVN 41:2024/BGTVT | 41 | cosine=0.824208
+#5 | QCVN 41:2024/BGTVT | C.39 | cosine=0.824208
+#6 | QCVN 41:2024/BGTVT | F.11 | cosine=0.824208
+#7 | QCVN 41:2024/BGTVT | 11 | cosine=0.802543
+#8 | QCVN 41:2024/BGTVT | B.18 | cosine=0.802543
+
+===== private_test_private_test_39 =====
+Câu hỏi:
+Biển báo hiệu lệnh trong hình không áp dụng cho đối tượng nào ? 
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu lệnh chia làn - phía trên xe tải
+Đặc điểm: Biển hình chữ nhật, nền xanh, viền trắng. Có 3 biểu tượng trắng: xe ô tô (làn trái), xe ô tô (làn giữa), xe máy và xe đạp (làn phải).
+Ý nghĩa hoặc thông số: Biển báo hiệu lệnh chia làn đường: xe ô tô đi làn trái và làn giữa, xe máy và xe đạp đi làn phải.
+Example #1 | train_39 | cosine=0.822011
+Example #2 | train_148 | cosine=0.821946
+Example #3 | train_33 | cosine=0.820309
+Example #4 | train_35 | cosine=0.810501
+Example #5 | train_461 | cosine=0.809890
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.822011
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.821946
+#3 | QCVN 41:2024/BGTVT | D.16 | cosine=0.821946
+#4 | QCVN 41:2024/BGTVT | D.14 | cosine=0.809890
+
+===== private_test_private_test_40 =====
+Câu hỏi:
+Loại phương tiện giao thông nào được phép đỗ xe ở khu vực vạch chéo màu vàng sát lề bên phải?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Vạch chéo màu vàng - sát lề bên phải
+Đặc điểm: Vạch kẻ đường hình chéo (hình tam giác hoặc hình thoi), màu vàng, nằm sát lề đường bên phải, giữa phần đường và vỉa hè.
+Ý nghĩa hoặc thông số: Khu vực cấm đỗ xe, cấm dừng xe và cấm đỗ xe theo quy định của Luật Giao thông đường bộ Việt Nam.
+Example #1 | train_134 | cosine=0.792632
+Example #2 | train_447 | cosine=0.778723
+Example #3 | train_154 | cosine=0.755069
+Example #4 | train_448 | cosine=0.752478
+Example #5 | train_497 | cosine=0.752009
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.792632
+#2 | QCVN 41:2024/BGTVT | B.30 | cosine=0.792632
+#3 | QCVN 41:2024/BGTVT | 36 | cosine=0.778723
+#4 | QCVN 41:2024/BGTVT | 41 | cosine=0.778723
+#5 | QCVN 41:2024/BGTVT | E.8 | cosine=0.778723
+#6 | QCVN 41:2024/BGTVT | F.5 | cosine=0.778723
+#7 | QCVN 41:2024/BGTVT | 24 | cosine=0.752478
+#8 | QCVN 41:2024/BGTVT | B.31 | cosine=0.752009
+
+===== private_test_private_test_41 =====
+Câu hỏi:
+Theo nội dung của biển báo chỉ dẫn trong hình, làm thế nào để đi tới sân bay Nội Bài ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn chính - trung tâm ảnh
+Đặc điểm: Hình chữ nhật, nền xanh lá cây, viền trắng, có biểu tượng máy bay và mũi tên chỉ hướng. Có biển phụ CT.20 màu vàng ở góc trên bên trái.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi: đi thẳng tới sân bay Nội Bài (biểu tượng máy bay), rẽ phải tới CV.H.Bình, Cổ Nhuế, Xuân Đình.
+Example #1 | train_267 | cosine=0.803934
+Example #2 | train_51 | cosine=0.754537
+Example #3 | train_348 | cosine=0.724566
+Example #4 | train_397 | cosine=0.718801
+Example #5 | train_526 | cosine=0.717131
+#1 | QCVN 41:2024/BGTVT | 35 | cosine=0.803934
+#2 | QCVN 41:2024/BGTVT | E.14 | cosine=0.754537
+#3 | QCVN 41:2024/BGTVT | 36 | cosine=0.724566
+#4 | QCVN 41:2024/BGTVT | E.50 | cosine=0.717131
+
+===== private_test_private_test_42 =====
+Câu hỏi:
+Khi đi qua đoạn đường như trong hình và gặp biển báo chỉ dẫn như trong hình, người đi bộ được phép đi qua đường tại vị trí nào sau đây?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trước người đi bộ
+Đặc điểm: Hình tam giác đều, nền xanh dương, viền trắng, biểu tượng người đi bộ màu đen đang bước trên vạch kẻ ngang trắng.
+Ý nghĩa hoặc thông số: Biển báo chỉ dẫn vị trí đường dành cho người đi bộ (vạch kẻ đường dành cho người đi bộ).
+
+Đối tượng: Vạch kẻ đường - phía trước biển báo
+Đặc điểm: Vạch kẻ ngang màu trắng trên mặt đường nhựa, song song với nhau, tạo thành vạch kẻ đường dành cho người đi bộ.
+Ý nghĩa hoặc thông số: Vạch kẻ đường dành cho người đi bộ, cho phép người đi bộ qua đường tại vị trí này.
+Example #1 | train_214 | cosine=0.860520
+Example #2 | train_224 | cosine=0.850565
+Example #3 | train_142 | cosine=0.843710
+Example #4 | train_510 | cosine=0.837646
+Example #5 | train_511 | cosine=0.820923
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.860520
+#2 | QCVN 41:2024/BGTVT | C.24 | cosine=0.860520
+#3 | QCVN 41:2024/BGTVT | 32 | cosine=0.850565
+#4 | QCVN 41:2024/BGTVT | D.5 | cosine=0.850565
+#5 | QCVN 41:2024/BGTVT | 36 | cosine=0.843710
+#6 | QCVN 41:2024/BGTVT | E.23a | cosine=0.843710
+
+===== private_test_private_test_43 =====
+Câu hỏi:
+Phương tiện giao thông có đặc điểm nào sau đây được phép di chuyển trên đoạn đường có biển báo cấm này ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ đen '10T' ở giữa
+Ý nghĩa hoặc thông số: Cấm các phương tiện có trọng tải từ 10 tấn trở lên đi vào đoạn đường này
+Example #1 | train_196 | cosine=0.967949
+Example #2 | train_195 | cosine=0.902999
+Example #3 | train_42 | cosine=0.885238
+Example #4 | train_143 | cosine=0.874066
+Example #5 | train_194 | cosine=0.855732
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.967949
+#2 | QCVN 41:2024/BGTVT | B.15 | cosine=0.967949
+#3 | QCVN 41:2024/BGTVT | 11 | cosine=0.885238
+
+===== private_test_private_test_44 =====
+Câu hỏi:
+Các phương tiện giao thông khi đi trên đoạn đường này không được được phép đỗ xe (tuân thủ các quy định về dừng và đỗ xe) vào các ngày nào sau đây ?  
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trước (trung tâm ảnh)
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có 2 vạch trắng dọc song song và một đường chéo đỏ cắt từ trên trái xuống dưới phải.
+Ý nghĩa hoặc thông số: Cấm dừng xe (không đỗ xe) trên đoạn đường này.
+
+Đối tượng: Biển báo cấm - phía xa bên phải (trên cột)
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có 2 vạch trắng dọc song song và một đường chéo đỏ cắt từ trên trái xuống dưới phải.
+Ý nghĩa hoặc thông số: Cấm dừng xe (không đỗ xe) trên đoạn đường này.
+
+Đối tượng: Biển báo cấm - phía xa bên phải (trên cột, gần biển trước)
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có 2 vạch trắng dọc song song và một đường chéo đỏ cắt từ trên trái xuống dưới phải.
+Ý nghĩa hoặc thông số: Cấm dừng xe (không đỗ xe) trên đoạn đường này.
+
+Đối tượng: Biển báo cấm - phía xa bên phải (trên cột, xa nhất)
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có 2 vạch trắng dọc song song và một đường chéo đỏ cắt từ trên trái xuống dưới phải.
+Ý nghĩa hoặc thông số: Cấm dừng xe (không đỗ xe) trên đoạn đường này.
+Example #1 | train_244 | cosine=0.914088
+Example #2 | train_247 | cosine=0.885415
+Example #3 | train_495 | cosine=0.855492
+Example #4 | train_370 | cosine=0.848652
+Example #5 | train_84 | cosine=0.845968
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.914088
+#2 | QCVN 41:2024/BGTVT | B.31 | cosine=0.914088
+
+===== private_test_private_test_45 =====
+Câu hỏi:
+Xe máy được phép di chuyển vào phần đường lưu thông về công viên nóc hầm thủ thiêm với tốc độ nào sao đây ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên, giữa
+Đặc điểm: Biển hình chữ nhật, nền xanh, chữ trắng. Có dòng chữ 'CHÚ Ý' ở trên cùng, tiếp theo là dòng chữ màu cam 'PHÍA TRƯỚC CẤM XE Ô TÔ', và dòng chữ trắng 'LƯU THÔNG VÀO LÀN XE MÁY' ở dưới cùng.
+Ý nghĩa hoặc thông số: Cảnh báo phía trước cấm xe ô tô lưu thông và chỉ dành cho xe máy.
+
+Đối tượng: Biển báo chỉ dẫn - phía dưới, giữa
+Đặc điểm: Biển hình chữ nhật, nền xanh, chữ trắng. Có biểu tượng xe máy và dòng chữ 'PHẦN ĐƯỜNG DÀNH CHO XE MÁY', cùng dòng chữ 'LƯU THÔNG VÀO ĐƯỜNG HẦM SÔNG SÀI GÒN'.
+Ý nghĩa hoặc thông số: Chỉ dẫn phần đường dành cho xe máy lưu thông vào đường hầm sông Sài Gòn.
+
+Đối tượng: Biển báo cấm - phía dưới, giữa
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, có biểu tượng xe ô tô bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe ô tô đi vào.
+
+Đối tượng: Biển báo cấm - phía dưới, bên trái
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, có biểu tượng xe ô tô bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe ô tô đi vào.
+
+Đối tượng: Biển báo cấm - phía dưới, bên phải
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, có biểu tượng xe ô tô bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe ô tô đi vào.
+Example #1 | train_152 | cosine=0.804803
+Example #2 | train_499 | cosine=0.793178
+Example #3 | train_516 | cosine=0.789185
+Example #4 | train_528 | cosine=0.780790
+Example #5 | train_353 | cosine=0.771868
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.804803
+#2 | QCVN 41:2024/BGTVT | B.10 | cosine=0.804803
+#3 | QCVN 41:2024/BGTVT | B.4 | cosine=0.793178
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.789185
+#5 | QCVN 41:2024/BGTVT | D.16 | cosine=0.789185
+#6 | QCVN 41:2024/BGTVT | 47 | cosine=0.780790
+#7 | QCVN 41:2024/BGTVT | B.12 | cosine=0.771868
+
+===== private_test_private_test_46 =====
+Câu hỏi:
+Phương tiện giao thông nào sau đây được phép di chuyển trên đoạn đường có biển báo như trong hình trong khung giờ từ 6:00 đến 22:00?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen gồm hình xe tải và xe khách bị gạch chéo đỏ từ góc trên trái xuống góc dưới phải.
+Ý nghĩa hoặc thông số: Cấm xe tải và xe khách đi vào trong khung giờ quy định.
+
+Đối tượng: Biển phụ thời gian - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, chữ đen ghi rõ '6:00 - 22:00'.
+Ý nghĩa hoặc thông số: Chỉ rõ khung giờ áp dụng cho biển cấm phía trên.
+Example #1 | train_176 | cosine=0.950419
+Example #2 | train_180 | cosine=0.884938
+Example #3 | train_412 | cosine=0.881721
+Example #4 | train_506 | cosine=0.875284
+Example #5 | train_181 | cosine=0.873472
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.950419
+#2 | QCVN 41:2024/BGTVT | 41 | cosine=0.950419
+#3 | QCVN 41:2024/BGTVT | B.3 | cosine=0.950419
+#4 | QCVN 41:2024/BGTVT | F.10 | cosine=0.950419
+#5 | QCVN 41:2024/BGTVT | 11 | cosine=0.884938
+#6 | QCVN 41:2024/BGTVT | 24 | cosine=0.881721
+#7 | QCVN 41:2024/BGTVT | B.6 | cosine=0.881721
+#8 | QCVN 41:2024/BGTVT | B.7 | cosine=0.875284
+
+===== private_test_private_test_47 =====
+Câu hỏi:
+Loại phương tiện giao thông nào sau đây được phép đỗ xe dưới lòng đường, ở vị trí có biển báo chỉ dẫn nơi đỗ xe, phạm vi trong vạch sơn ? 
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển chỉ dẫn nơi đỗ xe - phía trên
+Đặc điểm: Hình chữ nhật, nền xanh dương, chữ trắng, có ký hiệu 'P' lớn và dòng chữ 'NƠI ĐỖ XE (TRONG PHẠM VI VẠCH SƠN)'
+Ý nghĩa hoặc thông số: Chỉ dẫn nơi được phép đỗ xe trong phạm vi vạch sơn.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền xanh dương, chữ trắng, nội dung: 'XE CÔNG DỤNG, XE ĐẨY, XE HÚT BÔNG, HỒN, DÂN CƯNG, XE SINH SẢN, XE LỰC LƯỢNG VŨ TRANG, PHỤC VỤ TẠNG LỰC, ĐƯỢC CẤU PHÉP ĐỖ'
+Ý nghĩa hoặc thông số: Liệt kê các loại xe được phép đỗ xe trong khu vực này.
+
+Đối tượng: Biển chỉ dẫn làn đường - phía dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có biểu tượng ô tô và xe đạp, dòng chữ 'LÒNG ĐƯỜNG' và 'VIA HẺ'
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho ô tô và xe đạp.
+Example #1 | train_447 | cosine=0.868590
+Example #2 | train_166 | cosine=0.868551
+Example #3 | train_448 | cosine=0.808852
+Example #4 | train_162 | cosine=0.797379
+Example #5 | train_377 | cosine=0.788004
+#1 | QCVN 41:2024/BGTVT | 36 | cosine=0.868590
+#2 | QCVN 41:2024/BGTVT | 41 | cosine=0.868590
+#3 | QCVN 41:2024/BGTVT | E.8 | cosine=0.868590
+#4 | QCVN 41:2024/BGTVT | F.5 | cosine=0.868590
+#5 | QCVN 41:2024/BGTVT | 24 | cosine=0.808852
+#6 | QCVN 41:2024/BGTVT | F.11 | cosine=0.797379
+#7 | QCVN 41:2024/BGTVT | 22 | cosine=0.788004
+#8 | QCVN 41:2024/BGTVT | B.3 | cosine=0.788004
+
+===== private_test_private_test_48 =====
+Câu hỏi:
+Theo nội dung của biển báo hiệu lệnh trong hình, xe tải ở làn trong cùng bên phải vi phạm luật giao thông, đúng hay sai? 
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu lệnh chia làn - phía trên xe tải
+Đặc điểm: Biển hình chữ nhật, nền xanh, viền trắng. Biển có 3 ô chia cách nhau bởi vạch trắng đứt dọc. Ô trái có biểu tượng xe ô tô con. Ô giữa có biểu tượng xe ô tô tải. Ô phải có biểu tượng xe máy và xe đạp.
+Ý nghĩa hoặc thông số: Biển báo hiệu lệnh chia làn đường: Làn trái dành cho ô tô con, làn giữa dành cho ô tô tải, làn phải dành cho xe máy và xe đạp.
+Example #1 | train_226 | cosine=0.878250
+Example #2 | train_149 | cosine=0.866777
+Example #3 | train_39 | cosine=0.844772
+Example #4 | train_148 | cosine=0.841937
+Example #5 | train_285 | cosine=0.839101
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.878250
+#2 | QCVN 41:2024/BGTVT | D.16 | cosine=0.878250
+#3 | QCVN 41:2024/BGTVT | 28 | cosine=0.844772
+
+===== private_test_private_test_49 =====
+Câu hỏi:
+Xe taxi được phép đỗ xe ở khu vực vạch chéo màu vàng ở sát lề bên phải, đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Vạch chéo màu vàng - sát lề bên phải
+Đặc điểm: Vạch kẻ đường hình chéo, màu vàng, nằm ở khu vực sát lề đường bên phải, tạo thành khu vực cấm dừng đỗ.
+Ý nghĩa hoặc thông số: Khu vực cấm dừng đỗ xe (theo quy định về vạch kẻ đường màu vàng chéo).
+Example #1 | train_134 | cosine=0.796901
+Example #2 | train_370 | cosine=0.768609
+Example #3 | train_247 | cosine=0.762751
+Example #4 | train_154 | cosine=0.762371
+Example #5 | train_464 | cosine=0.760315
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.796901
+#2 | QCVN 41:2024/BGTVT | B.30 | cosine=0.796901
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.768609
+
+===== private_test_private_test_50 =====
+Câu hỏi:
+Xe máy được phép di chuyển giữa các làn đường cùng chiều khi đi trên đoạn đường này trong điều kiện an toàn, đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - chính giữa
+Đặc điểm: Hình chữ nhật, nền màu xanh lá cây, viền trắng. Có các biểu tượng và chữ viết: mũi tên trắng chỉ hướng thẳng và rẽ phải, hình tam giác đỏ (biển báo nguy hiểm), chữ 'CT.20' trong khung vàng, chữ 'NỘI BÀI' kèm biểu tượng máy bay, chữ 'CV.H.BÌNH', 'CỔ NHUẾ', 'XUÂN ĐÌNH'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi: đi thẳng hoặc rẽ phải để đến các địa điểm như Nội Bài, Cổ Nhuế, Xuân Đình; có tuyến CT.20 và điểm báo nguy hiểm.
+Example #1 | train_461 | cosine=0.821561
+Example #2 | train_149 | cosine=0.813179
+Example #3 | train_515 | cosine=0.806270
+Example #4 | train_233 | cosine=0.800530
+Example #5 | train_500 | cosine=0.799602
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.821561
+#2 | QCVN 41:2024/BGTVT | D.14 | cosine=0.821561
+#3 | QCVN 41:2024/BGTVT | D.16 | cosine=0.813179
+#4 | QCVN 41:2024/BGTVT | D.13 | cosine=0.806270
+#5 | QCVN 41:2024/BGTVT | 23 | cosine=0.800530
+#6 | QCVN 41:2024/BGTVT | 22 | cosine=0.799602
+#7 | QCVN 41:2024/BGTVT | B.4 | cosine=0.799602
+
+===== private_test_private_test_51 =====
+Câu hỏi:
+Xe ô tô trong hình đang đỗ xe trái quy định, đúng hay sai
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn khẩn cấp - phía trên
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có dòng chữ 'DẢI DỪNG XE' ở dòng trên và 'KHẨN CẤP' ở dòng dưới, cùng một mũi tên chỉ xuống bên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn vị trí dải dừng xe khẩn cấp theo hướng mũi tên.
+Example #1 | train_464 | cosine=0.895498
+Example #2 | train_134 | cosine=0.858830
+Example #3 | train_370 | cosine=0.852279
+Example #4 | train_154 | cosine=0.852196
+Example #5 | train_497 | cosine=0.847422
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.895498
+#2 | QCVN 41:2024/BGTVT | B.31 | cosine=0.895498
+#3 | QCVN 41:2024/BGTVT | B.30 | cosine=0.858830
+
+===== private_test_private_test_52 =====
+Câu hỏi:
+Xe tải có trọng lượng xe không tải là 5 tấn, đang chở hàng hóa có khối lượng 6 tấn, được phép đi qua đoạn đường có biển báo giao thông này, đúng hay sai ? 
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '10' và ký hiệu 'T' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Biển báo cấm xe có trọng lượng toàn bộ từ 10 tấn trở lên đi vào. Ký hiệu 'T' chỉ trọng lượng tính bằng tấn.
+Example #1 | train_434 | cosine=0.877496
+Example #2 | train_251 | cosine=0.873316
+Example #3 | train_195 | cosine=0.845358
+Example #4 | train_196 | cosine=0.844533
+Example #5 | train_403 | cosine=0.842572
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.877496
+#2 | QCVN 41:2024/BGTVT | B.15 | cosine=0.877496
+#3 | QCVN 41:2024/BGTVT | 41 | cosine=0.842572
+#4 | QCVN 41:2024/BGTVT | B.6 | cosine=0.842572
+#5 | QCVN 41:2024/BGTVT | F.10 | cosine=0.842572
+
+===== private_test_private_test_53 =====
+Câu hỏi:
+Các phương tiện giao thông khi đi trên đoạn đường này được phép đè lên vạch màu vàng trên đường để di chuyển qua làn đường khác, đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Vạch kẻ đường - trên mặt đường
+Đặc điểm: Vạch kẻ đường màu vàng, dạng nét liền kép (hoặc nét liền đơn, không xác định chắc chắn do độ phân giải và khoảng cách).
+Ý nghĩa hoặc thông số: Vạch kẻ đường phân chia làn đường hoặc ranh giới làn đường (không xác định chắc chắn chức năng cụ thể do không đọc rõ quy định đi kèm).
+Example #1 | train_94 | cosine=0.843722
+Example #2 | train_113 | cosine=0.829581
+Example #3 | train_133 | cosine=0.789697
+Example #4 | train_360 | cosine=0.758082
+Example #5 | train_149 | cosine=0.747222
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.789697
+#2 | QCVN 41:2024/BGTVT | B.25 | cosine=0.789697
+#3 | QCVN 41:2024/BGTVT | 32 | cosine=0.758082
+#4 | QCVN 41:2024/BGTVT | D.1a | cosine=0.758082
+#5 | QCVN 41:2024/BGTVT | D.16 | cosine=0.747222
+
+===== private_test_private_test_54 =====
+Câu hỏi:
+Biển báo này có nội dung "Cự ly tối đa giữa hai xe là 8 mét.", đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ '8m' màu đen ở giữa, hai bên là biểu tượng xe tải và xe con cách nhau
+Ý nghĩa hoặc thông số: Biển báo cấm phương tiện có chiều cao vượt quá 8 mét hoặc cấm hai xe cách nhau dưới 8 mét (tùy ngữ cảnh), chưa xác định chắc chắn do thiếu thông tin bổ sung
+Example #1 | train_470 | cosine=0.858568
+Example #2 | train_141 | cosine=0.842379
+Example #3 | train_70 | cosine=0.833055
+Example #4 | train_49 | cosine=0.828779
+Example #5 | train_332 | cosine=0.817828
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.858568
+#2 | QCVN 41:2024/BGTVT | 41 | cosine=0.858568
+#3 | QCVN 41:2024/BGTVT | B.21 | cosine=0.858568
+#4 | QCVN 41:2024/BGTVT | F.1 | cosine=0.858568
+#5 | QCVN 41:2024/BGTVT | B.17 | cosine=0.833055
+#6 | QCVN 41:2024/BGTVT | 11 | cosine=0.828779
+#7 | QCVN 41:2024/BGTVT | B.18 | cosine=0.828779
+#8 | QCVN 41:2024/BGTVT | 28 | cosine=0.817828
+
+===== private_test_private_test_55 =====
+Câu hỏi:
+Các phương tiện giao thông khi đi trên đoạn đường này được phép đỗ xe (tuân thủ các quy định về dừng và đỗ xe) vào các ngày mùng 3 của tháng, đúng hay sai ?  
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trước
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, có hai vạch trắng dọc song song và một đường chéo đỏ cắt ngang.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
+Example #1 | train_247 | cosine=0.903944
+Example #2 | train_134 | cosine=0.885240
+Example #3 | train_370 | cosine=0.869368
+Example #4 | train_84 | cosine=0.866771
+Example #5 | train_497 | cosine=0.863860
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.903944
+#2 | QCVN 41:2024/BGTVT | B.31 | cosine=0.903944
+#3 | QCVN 41:2024/BGTVT | B.30 | cosine=0.885240
+
+===== private_test_private_test_56 =====
+Câu hỏi:
+Xe buýt được phép di chuyển trên đoạn đường này với tốc độ 60 km/h, đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm tốc độ 40 - cột 1
+Đặc điểm: Biển tròn viền đỏ, nền trắng, số '40' màu đen ở giữa; nằm ở hàng trên cùng, cột bên trái của bảng biển.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h cho các phương tiện đi qua.
+
+Đối tượng: Biển báo cấm tốc độ 40 - cột 2
+Đặc điểm: Biển tròn viền đỏ, nền trắng, số '40' màu đen ở giữa; nằm ở hàng trên cùng, cột giữa của bảng biển.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h cho các phương tiện đi qua.
+
+Đối tượng: Biển báo cấm tốc độ 40 - cột 3
+Đặc điểm: Biển tròn viền đỏ, nền trắng, số '40' màu đen ở giữa; nằm ở hàng trên cùng, cột bên phải của bảng biển.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h cho các phương tiện đi qua.
+
+Đối tượng: Biển phụ - xe ô tô con
+Đặc điểm: Biểu tượng hình vẽ xe ô tô con màu trắng trên nền xanh dương; nằm ngay dưới biển số 40 cột 1.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe ô tô con.
+
+Đối tượng: Biển phụ - xe ô tô con
+Đặc điểm: Biểu tượng hình vẽ xe ô tô con màu trắng trên nền xanh dương; nằm ngay dưới biển số 40 cột 2.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe ô tô con.
+
+Đối tượng: Biển phụ - xe máy
+Đặc điểm: Biểu tượng hình vẽ xe máy màu trắng trên nền xanh dương; nằm ngay dưới biển số 40 cột 3.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe máy.
+
+Đối tượng: Biển phụ - xe buýt
+Đặc điểm: Biểu tượng hình vẽ xe buýt màu trắng trên nền xanh dương; nằm ở hàng thứ hai, cột 1.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe buýt.
+
+Đối tượng: Biển phụ - xe buýt
+Đặc điểm: Biểu tượng hình vẽ xe buýt màu trắng trên nền xanh dương; nằm ở hàng thứ hai, cột 2.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe buýt.
+
+Đối tượng: Biển phụ - xe tải
+Đặc điểm: Biểu tượng hình vẽ xe tải màu trắng trên nền xanh dương; nằm ở hàng thứ ba, cột 1.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe tải.
+
+Đối tượng: Biển phụ - xe tải
+Đặc điểm: Biểu tượng hình vẽ xe tải màu trắng trên nền xanh dương; nằm ở hàng thứ ba, cột 2.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe tải.
+
+Đối tượng: Biển phụ - xe ô tô con
+Đặc điểm: Biểu tượng hình vẽ xe ô tô con màu trắng trên nền xanh dương; nằm ở hàng thứ tư, cột 3.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe ô tô con.
+
+Đối tượng: Biển phụ - tải trọng
+Đặc điểm: Biểu tượng hình vẽ xe tải màu trắng trên nền xanh dương kèm chữ '≤ 5T'; nằm ở hàng thứ tư, cột 1.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe tải có tải trọng ≤ 5 tấn.
+
+Đối tượng: Biển phụ - xe 2 bánh
+Đặc điểm: Biểu tượng hình vẽ xe máy màu trắng trên nền xanh dương kèm chữ 'XE 2 VÁ'; nằm ở hàng thứ tư, cột 3.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe 2 bánh.
+
+Đối tượng: Biển phụ - xe 3 bánh
+Đặc điểm: Biểu tượng hình vẽ xe 3 bánh màu trắng trên nền xanh dương kèm chữ '3 BÁNH'; nằm ở hàng thứ năm, cột 3.
+Ý nghĩa hoặc thông số: Quy định tốc độ 40 km/h áp dụng cho xe 3 bánh.
+Example #1 | train_256 | cosine=0.868895
+Example #2 | train_483 | cosine=0.868244
+Example #3 | train_485 | cosine=0.862014
+Example #4 | train_423 | cosine=0.859895
+Example #5 | train_430 | cosine=0.852878
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.868895
+#2 | QCVN 41:2024/BGTVT | B.27 | cosine=0.868895
+#3 | QCVN 41:2024/BGTVT | F.5 | cosine=0.868895
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.862014
+#5 | QCVN 41:2024/BGTVT | D.6 | cosine=0.862014
+#6 | QCVN 41:2024/BGTVT | B.27c | cosine=0.852878
+
+===== private_test_private_test_57 =====
+Câu hỏi:
+Biển báo bên trái góc trên ngoài cùng có nền màu đỏ và dấu gạch ngang màu trắng có ý nghĩa là gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu lệnh cấm đi vào - phía dưới
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có chữ '6h00 - 9h00' và '16h30 - 19h30' màu đen.
+Ý nghĩa hoặc thông số: Cấm đi vào trong khung giờ 6h00 - 9h00 và 16h30 - 19h30
+Example #1 | train_180 | cosine=0.843448
+Example #2 | train_177 | cosine=0.841752
+Example #3 | train_229 | cosine=0.839200
+Example #4 | train_286 | cosine=0.831920
+Example #5 | train_178 | cosine=0.825631
+#1 | QCVN 41:2024/BGTVT | 11 | cosine=0.843448
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.843448
+#3 | QCVN 41:2024/BGTVT | B.3 | cosine=0.843448
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.841752
+#5 | QCVN 41:2024/BGTVT | D.21 | cosine=0.841752
+#6 | QCVN 41:2024/BGTVT | B.4 | cosine=0.839200
+#7 | QCVN 41:2024/BGTVT | F.10 | cosine=0.839200
+
+===== private_test_private_test_58 =====
+Câu hỏi:
+Biển có viền đỏ trên cùng góc phải có hiệu lực như thế nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Biển báo cấm tốc độ tối đa 40 km/h.
+
+Đối tượng: Biển báo nguy hiểm - ngay bên dưới
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai mũi tên hướng ngược nhau (biểu thị chia làn đường).
+Ý nghĩa hoặc thông số: Biển báo nguy hiểm chia làn đường.
+Example #1 | train_432 | cosine=0.856339
+Example #2 | train_130 | cosine=0.855235
+Example #3 | train_205 | cosine=0.854828
+Example #4 | train_418 | cosine=0.852809
+Example #5 | train_345 | cosine=0.848059
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.856339
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.855235
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.855235
+#4 | QCVN 41:2024/BGTVT | D.6 | cosine=0.852809
+#5 | QCVN 41:2024/BGTVT | 41 | cosine=0.848059
+#6 | QCVN 41:2024/BGTVT | B.25 | cosine=0.848059
+#7 | QCVN 41:2024/BGTVT | B.30 | cosine=0.848059
+#8 | QCVN 41:2024/BGTVT | F.1 | cosine=0.848059
+
+===== private_test_private_test_59 =====
+Câu hỏi:
+Biển báo hình tam giác trong hình cảnh báo người lái xe điều gì và người lái xe cần làm gì khi gặp biển này?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo nguy hiểm - phía dưới
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai đường thẳng song song nghiêng hướng vào nhau.
+Ý nghĩa hoặc thông số: Biển báo nguy hiểm: đường hẹp hai bên, người lái xe cần giảm tốc độ và nhường đường cho xe đi ngược chiều.
+Example #1 | train_513 | cosine=0.890823
+Example #2 | train_289 | cosine=0.887227
+Example #3 | train_416 | cosine=0.885246
+Example #4 | train_68 | cosine=0.875456
+Example #5 | train_268 | cosine=0.872960
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.890823
+#2 | QCVN 41:2024/BGTVT | C.25 | cosine=0.890823
+#3 | QCVN 41:2024/BGTVT | C.40 | cosine=0.887227
+#4 | QCVN 41:2024/BGTVT | C.47 | cosine=0.875456
+#5 | QCVN 41:2024/BGTVT | C.27 | cosine=0.872960
+
+===== private_test_private_test_60 =====
+Câu hỏi:
+Trong tình huống trên hình ảnh, một xe tải đang đi tới đoạn đường có các biển báo như trong hình. Giả sử xe tải đó được phép chạy với tốc độ tối đa 60 km/h trên đoạn đường bình thường. Khi gặp biển báo tốc độ tối đa 40 km/h và biển báo đường bị thu hẹp bên phải như hình, xe tải đó phải tuân thủ quy định nào sau đây là đúng nhất?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Biển báo tốc độ tối đa 40 km/h.
+
+Đối tượng: Biển báo nguy hiểm - ngay bên dưới
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hai đường song song nghiêng hướng vào nhau.
+Ý nghĩa hoặc thông số: Biển báo đường bị thu hẹp bên phải.
+Example #1 | train_388 | cosine=0.874382
+Example #2 | train_483 | cosine=0.874020
+Example #3 | train_432 | cosine=0.868890
+Example #4 | train_439 | cosine=0.865934
+Example #5 | train_218 | cosine=0.865742
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.874382
+#2 | QCVN 41:2024/BGTVT | B.27 | cosine=0.874382
+#3 | QCVN 41:2024/BGTVT | 32 | cosine=0.868890
+#4 | QCVN 41:2024/BGTVT | 41 | cosine=0.865934
+#5 | QCVN 41:2024/BGTVT | F.5 | cosine=0.865934
+
+===== private_test_private_test_61 =====
+Câu hỏi:
+Khi di chuyển trên tuyến đường cao tốc Nội Bài - Lào Cai (CT.05) và bắt gặp biển báo bên trái ngoài cùng, người lái xe ô tô con phải tuân thủ quy định nào sau đây là đúng nhất?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu chính - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật dọc, nền màu xanh lá cây, viền trắng. Có biểu tượng hình chữ nhật chứa hình hai mũi tên hướng lên trên (biểu tượng đường cao tốc).
+Ý nghĩa hoặc thông số: Chỉ dẫn tuyến đường cao tốc Nội Bài - Lào Cai (CT.05).
+
+Đối tượng: Biển phụ - ngay bên dưới biển chính
+Đặc điểm: Biển hình chữ nhật dọc, nền màu xanh lá cây, viền trắng. Chứa hai biển tròn: biển tròn nền trắng viền đỏ có số 100; biển tròn nền xanh dương có số 60.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h.
+Example #1 | train_486 | cosine=0.867615
+Example #2 | train_488 | cosine=0.857131
+Example #3 | train_340 | cosine=0.853102
+Example #4 | train_326 | cosine=0.841486
+Example #5 | train_345 | cosine=0.833827
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.867615
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.867615
+#3 | QCVN 41:2024/BGTVT | 45 | cosine=0.867615
+#4 | QCVN 41:2024/BGTVT | 47 | cosine=0.867615
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.867615
+#6 | QCVN 41:2024/BGTVT | D.6 | cosine=0.867615
+#7 | QCVN 41:2024/BGTVT | P.3 | cosine=0.841486
+#8 | QCVN 41:2024/BGTVT | 41 | cosine=0.833827
+#9 | QCVN 41:2024/BGTVT | B.25 | cosine=0.833827
+#10 | QCVN 41:2024/BGTVT | B.30 | cosine=0.833827
+#11 | QCVN 41:2024/BGTVT | F.1 | cosine=0.833827
+
+===== private_test_private_test_62 =====
+Câu hỏi:
+Biển báo nằm ở góc dưới bên phải hình ảnh có ý nghĩa chính xác là gì theo Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ của Việt Nam?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - góc dưới bên phải
+Đặc điểm: Biển hình tròn, viền đỏ, nền xanh dương, có dấu chéo màu đỏ cắt ngang từ góc trên trái xuống góc dưới phải.
+Ý nghĩa hoặc thông số: Biển báo cấm dừng xe và đỗ xe tại khu vực này.
+Example #1 | train_118 | cosine=0.885419
+Example #2 | train_336 | cosine=0.868740
+Example #3 | train_96 | cosine=0.864707
+Example #4 | train_138 | cosine=0.863483
+Example #5 | train_239 | cosine=0.854483
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.885419
+#2 | QCVN 41:2024/BGTVT | B.31 | cosine=0.885419
+#3 | QCVN 41:2024/BGTVT | B.30 | cosine=0.854483
+
+===== private_test_private_test_63 =====
+Câu hỏi:
+Biển báo có mã là "CT.05" trên biển chỉ dẫn phía trên bên trái thì hình ảnh này có ý nghĩa gì và mang lại thông tin gì cho người tham gia giao thông?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển chỉ dẫn - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật dọc, nền xanh lá cây, viền trắng. Có biển phụ hình chữ nhật nhỏ màu vàng ở góc trên bên trái ghi 'CT.05'. Trên biển có chữ 'NỘI BÀI', 'LÀO CAI', 'EXPRESSWAY' và biểu tượng đường cao tốc. Phía dưới là hai biển tròn: biển đỏ viền trắng ghi '100' và biển xanh ghi '60'.
+Ý nghĩa hoặc thông số: Chỉ dẫn tuyến đường cao tốc Nội Bài - Lào Cai (CT.05), tốc độ tối đa 100 km/h, tốc độ tối thiểu 60 km/h.
+Example #1 | train_486 | cosine=0.857106
+Example #2 | train_326 | cosine=0.846194
+Example #3 | train_59 | cosine=0.832806
+Example #4 | train_320 | cosine=0.830107
+Example #5 | train_488 | cosine=0.828575
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.857106
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.857106
+#3 | QCVN 41:2024/BGTVT | 45 | cosine=0.857106
+#4 | QCVN 41:2024/BGTVT | 47 | cosine=0.857106
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.857106
+#6 | QCVN 41:2024/BGTVT | D.6 | cosine=0.857106
+#7 | QCVN 41:2024/BGTVT | P.3 | cosine=0.846194
+#8 | QCVN 41:2024/BGTVT | 46 | cosine=0.832806
+#9 | QCVN 41:2024/BGTVT | P.17 | cosine=0.832806
+
+===== private_test_private_test_64 =====
+Câu hỏi:
+Giả sử một tài xế xe buýt đang điều khiển xe trên tuyến đường trong hình. Khi xe buýt gặp biển báo ở dưới bên phải hình ảnh, trong tình huống có hành khách yêu cầu xuống xe ngay tại vị trí biển báo đó, tài xế phải xử lý như thế nào để tuân thủ luật giao thông?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm dừng đỗ - phía dưới bên phải
+Đặc điểm: Biển hình tròn, viền đỏ, nền xanh, có dấu chéo màu đỏ cắt ngang từ góc trên trái xuống góc dưới phải.
+Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe tại vị trí này.
+Example #1 | train_209 | cosine=0.810544
+Example #2 | train_495 | cosine=0.805858
+Example #3 | train_370 | cosine=0.801921
+Example #4 | train_361 | cosine=0.801699
+Example #5 | train_507 | cosine=0.800019
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.810544
+#2 | QCVN 41:2024/BGTVT | B.7 | cosine=0.810544
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.805858
+#4 | QCVN 41:2024/BGTVT | 36 | cosine=0.801699
+#5 | QCVN 41:2024/BGTVT | E.36 | cosine=0.801699
+#6 | QCVN 41:2024/BGTVT | 41 | cosine=0.800019
+#7 | QCVN 41:2024/BGTVT | F.10 | cosine=0.800019
+
+===== private_test_private_test_65 =====
+Câu hỏi:
+Trong trường hợp có sương mù dày đặc hoặc điều kiện thời tiết xấu làm giảm tầm nhìn nghiêm trọng trên tuyến đường cao tốc này, người lái xe cần phải làm gì để đảm bảo an toàn giao thông, đặc biệt khi có các biển báo tốc độ tối đa 100 km/h và tối thiểu 60 km/h?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn tuyến đường - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật dọc, nền xanh lá cây, viền trắng. Có chữ 'CT.05' trong khung vàng ở góc trên bên trái. Nội dung chính: 'NỘI BÀI', 'LÀO CAI', 'EXPRESSWAY'. Biểu tượng hình hai mũi tên song song hướng lên trên ở góc phải. Biển có hai phần: phần trên là tên tuyến, phần dưới là biển tốc độ.
+Ý nghĩa hoặc thông số: Chỉ dẫn tuyến đường cao tốc CT.05 đi từ Nội Bài đến Lào Cai.
+
+Đối tượng: Biển báo tốc độ - ngay dưới biển chỉ dẫn tuyến đường
+Đặc điểm: Hai biển tròn nằm cạnh nhau trên cùng một tấm biển lớn. Biển bên trái: hình tròn, viền đỏ, nền trắng, chữ số '100' màu đen. Biển bên phải: hình tròn, viền xanh dương, nền trắng, chữ số '60' màu trắng.
+Ý nghĩa hoặc thông số: Quy định tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h trên tuyến đường này.
+
+Đối tượng: Biển báo thông tin khoảng cách - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật ngang, nền xanh lá cây, viền trắng. Nội dung gồm ba dòng: 'TX.PHÚ THỌ 35 km', 'YÊN BÁI 72 km', 'LÀO CAI 216 km'.
+Ý nghĩa hoặc thông số: Thông báo khoảng cách còn lại đến các địa điểm: Thị xã Phú Thọ (35 km), Yên Bái (72 km), Lào Cai (216 km).
+Example #1 | train_488 | cosine=0.830922
+Example #2 | train_486 | cosine=0.830247
+Example #3 | train_340 | cosine=0.824971
+Example #4 | train_254 | cosine=0.814201
+Example #5 | train_366 | cosine=0.804792
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.830922
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.830922
+#3 | QCVN 41:2024/BGTVT | 45 | cosine=0.830922
+#4 | QCVN 41:2024/BGTVT | 47 | cosine=0.830922
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.830922
+#6 | QCVN 41:2024/BGTVT | D.6 | cosine=0.830922
+#7 | QCVN 41:2024/BGTVT | P.3 | cosine=0.814201
+#8 | QCVN 41:2024/BGTVT | 46 | cosine=0.804792
+
+===== private_test_private_test_66 =====
+Câu hỏi:
+Có phải tất cả các làn đường được hiển thị trên biển báo hình tròn trong hình đều áp dụng cùng một mức tốc độ tối đa cho phép là 90 km/h đúng hay sai?
+
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - làn 1 (phía trái)
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '90' màu đen ở giữa, bên trái là biển hình chữ nhật xanh có biểu tượng xe ô tô và mũi tên hướng lên trên
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 90 km/h cho xe ô tô trên làn đường này
+
+Đối tượng: Biển báo tốc độ - làn 2 (phía giữa)
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '80' màu đen ở giữa, bên trái là biển hình chữ nhật xanh có biểu tượng xe ô tô
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 80 km/h cho xe ô tô trên làn đường này
+
+Đối tượng: Biển báo tốc độ - làn 3 (phía phải)
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '80' màu đen ở giữa, bên trái là biển hình chữ nhật xanh có biểu tượng xe ô tô
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 80 km/h cho xe ô tô trên làn đường này
+Example #1 | train_28 | cosine=0.898680
+Example #2 | train_14 | cosine=0.892464
+Example #3 | train_217 | cosine=0.891247
+Example #4 | train_257 | cosine=0.890293
+Example #5 | train_485 | cosine=0.883459
+#1 | QCVN 41:2024/BGTVT | 21 | cosine=0.898680
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.891247
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.891247
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.883459
+#5 | QCVN 41:2024/BGTVT | D.6 | cosine=0.883459
+
+===== private_test_private_test_67 =====
+Câu hỏi:
+Làn đường ngoài cùng bên trái (có biển báo tốc độ 90 km/h) được dành riêng cho xe ô tô con theo Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ của Việt Nam đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn làn đường - làn trái
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng; biểu tượng mũi tên hướng lên trên và hình xe ô tô con bên dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho xe ô tô con đi thẳng.
+
+Đối tượng: Biển báo tốc độ - làn trái
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 90 km/h cho làn đường này.
+
+Đối tượng: Biển báo chỉ dẫn làn đường - làn giữa
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng; biểu tượng mũi tên hướng lên trên và hình xe ô tô con bên dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho xe ô tô con đi thẳng.
+
+Đối tượng: Biển báo tốc độ - làn giữa
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '80' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 80 km/h cho làn đường này.
+
+Đối tượng: Biển báo chỉ dẫn làn đường - làn phải
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng; biểu tượng mũi tên hướng lên trên và hình xe ô tô con bên dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho xe ô tô con đi thẳng.
+
+Đối tượng: Biển báo tốc độ - làn phải
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '80' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 80 km/h cho làn đường này.
+Example #1 | train_257 | cosine=0.909497
+Example #2 | train_433 | cosine=0.893382
+Example #3 | train_423 | cosine=0.867995
+Example #4 | train_217 | cosine=0.862532
+Example #5 | train_485 | cosine=0.862231
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.909497
+#2 | QCVN 41:2024/BGTVT | B.27 | cosine=0.909497
+#3 | QCVN 41:2024/BGTVT | B.27c | cosine=0.893382
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.867995
+#5 | QCVN 41:2024/BGTVT | D.6 | cosine=0.867995
+
+===== private_test_private_test_68 =====
+Câu hỏi:
+Trong tình huống trên hình ảnh, một xe ô tô tải có được phép di chuyển trong làn đường ngoài cùng bên trái có biển báo tốc độ tối đa 90 km/h đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - làn trái
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '90' màu đen ở giữa; bên trái biển là biển hình chữ nhật xanh có biểu tượng xe ô tô và mũi tên hướng lên trên.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho xe ô tô trong làn này là 90 km/h.
+Example #1 | train_257 | cosine=0.916870
+Example #2 | train_217 | cosine=0.897236
+Example #3 | train_322 | cosine=0.884052
+Example #4 | train_28 | cosine=0.874045
+Example #5 | train_318 | cosine=0.868828
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.916870
+#2 | QCVN 41:2024/BGTVT | B.27 | cosine=0.916870
+#3 | QCVN 41:2024/BGTVT | 47 | cosine=0.884052
+#4 | QCVN 41:2024/BGTVT | P.3 | cosine=0.884052
+#5 | QCVN 41:2024/BGTVT | 21 | cosine=0.874045
+
+===== private_test_private_test_69 =====
+Câu hỏi:
+Biển báo trong hình cấm cả việc dừng xe và đỗ xe tại vị trí này từ 6:30 đến 7:30 đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền màu đỏ (mờ do gỉ sét), nền màu xanh dương, có đường chéo màu đỏ cắt từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm dừng và đỗ xe (theo quy chuẩn Việt Nam QCVN 41:2019/BGTVT).
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền trắng, chữ đen, ghi rõ hai khoảng thời gian: '06:00 - 08:00' và '16:00 - 18:00'.
+Ý nghĩa hoặc thông số: Chỉ rõ thời gian áp dụng của biển báo cấm dừng và đỗ xe.
+Example #1 | train_444 | cosine=0.892375
+Example #2 | train_455 | cosine=0.874316
+Example #3 | train_497 | cosine=0.873326
+Example #4 | train_181 | cosine=0.868236
+Example #5 | train_84 | cosine=0.867315
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.892375
+#2 | QCVN 41:2024/BGTVT | 41 | cosine=0.892375
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.892375
+#4 | QCVN 41:2024/BGTVT | B.6 | cosine=0.892375
+#5 | QCVN 41:2024/BGTVT | F.10 | cosine=0.892375
+#6 | QCVN 41:2024/BGTVT | B.30 | cosine=0.874316
+#7 | QCVN 41:2024/BGTVT | B.3 | cosine=0.868236
+
+===== private_test_private_test_70 =====
+Câu hỏi:
+Việc đỗ xe được cho phép tại vị trí có biển báo này vào lúc 10:30 sáng trong ngày đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền màu đỏ (mờ do gỉ sét), nền màu xanh dương, có một đường chéo màu đỏ từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm dừng xe và đỗ xe.
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền màu trắng, chữ và số màu đen.
+Ý nghĩa hoặc thông số: Chỉ thời gian cấm dừng xe và đỗ xe: 06:00 - 08:00 và 16:00 - 18:00.
+Example #1 | train_455 | cosine=0.900854
+Example #2 | train_444 | cosine=0.894989
+Example #3 | train_247 | cosine=0.890902
+Example #4 | train_463 | cosine=0.881328
+Example #5 | train_497 | cosine=0.878750
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.900854
+#2 | QCVN 41:2024/BGTVT | 41 | cosine=0.900854
+#3 | QCVN 41:2024/BGTVT | B.30 | cosine=0.900854
+#4 | QCVN 41:2024/BGTVT | F.10 | cosine=0.900854
+#5 | QCVN 41:2024/BGTVT | B.31 | cosine=0.894989
+#6 | QCVN 41:2024/BGTVT | B.6 | cosine=0.894989
+#7 | QCVN 41:2024/BGTVT | B.3 | cosine=0.881328
+
+===== private_test_private_test_71 =====
+Câu hỏi:
+Một tài xế được phép dừng xe trong 2 phút để nhanh chóng trả một hành khách tại vị trí có biển báo này vào lúc 17:00 chiều đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền ngoài màu đỏ (có dấu hiệu gỉ sét), nền màu xanh dương, biểu tượng là đường chéo màu đỏ cắt ngang từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm dừng xe và đỗ xe.
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền màu trắng, chữ và số màu đen. Nội dung ghi: '06:00 - 08:00' ở dòng trên và '16:00 - 18:00' ở dòng dưới.
+Ý nghĩa hoặc thông số: Chỉ rõ thời gian cấm dừng xe và đỗ xe là từ 06:00 đến 08:00 và từ 16:00 đến 18:00.
+Example #1 | train_444 | cosine=0.864910
+Example #2 | train_455 | cosine=0.852435
+Example #3 | train_507 | cosine=0.844779
+Example #4 | train_181 | cosine=0.839726
+Example #5 | train_463 | cosine=0.839415
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.864910
+#2 | QCVN 41:2024/BGTVT | 41 | cosine=0.864910
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.864910
+#4 | QCVN 41:2024/BGTVT | B.6 | cosine=0.864910
+#5 | QCVN 41:2024/BGTVT | F.10 | cosine=0.864910
+#6 | QCVN 41:2024/BGTVT | B.30 | cosine=0.852435
+#7 | QCVN 41:2024/BGTVT | B.7 | cosine=0.844779
+#8 | QCVN 41:2024/BGTVT | B.3 | cosine=0.839726
+
+===== private_test_private_test_72 =====
+Câu hỏi:
+Ttrên đoạn đường này, cả người đi bộ và xe đạp đều bị cấm di chuyển, đồng thời tốc độ tối đa cho phép cho các phương tiện khác là 30 km/h đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - người đi bộ - phía trên bên trái
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng người đi bộ màu đen bị gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm người đi bộ
+
+Đối tượng: Biển báo cấm - xe đạp - phía trên giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe đạp màu đen bị gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm xe đạp
+
+Đối tượng: Biển báo giới hạn tốc độ - phía trên giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '30' màu đen
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 30 km/h
+Example #1 | train_241 | cosine=0.879173
+Example #2 | train_388 | cosine=0.869265
+Example #3 | train_423 | cosine=0.868272
+Example #4 | train_528 | cosine=0.865129
+Example #5 | train_483 | cosine=0.855992
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.879173
+#2 | QCVN 41:2024/BGTVT | B.6 | cosine=0.879173
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.869265
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.868272
+#5 | QCVN 41:2024/BGTVT | D.6 | cosine=0.868272
+#6 | QCVN 41:2024/BGTVT | 47 | cosine=0.865129
+
+===== private_test_private_test_73 =====
+Câu hỏi:
+Trên đoạn đường này, tất cả các loại xe tải (bao gồm cả xe tải nhẹ có chiều cao dưới 3,5 mét) đều bị cấm di chuyển theo quy định của các biển báo trong hình đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chiều cao giới hạn
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '3,5m' màu đen.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao 3,5 mét
+
+Đối tượng: Biển báo cấm - phía dưới (cấm xe tải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải màu đen bị gạch chéo, kèm biển phụ chữ 'CẤM CÁC LOẠI XE TẢI'.
+Ý nghĩa hoặc thông số: Cấm các loại xe tải
+Example #1 | train_501 | cosine=0.856809
+Example #2 | train_302 | cosine=0.845913
+Example #3 | train_241 | cosine=0.838178
+Example #4 | train_317 | cosine=0.835477
+Example #5 | train_49 | cosine=0.833807
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.856809
+#2 | QCVN 41:2024/BGTVT | B.6 | cosine=0.856809
+#3 | QCVN 41:2024/BGTVT | B.17 | cosine=0.845913
+#4 | QCVN 41:2024/BGTVT | B.10 | cosine=0.835477
+#5 | QCVN 41:2024/BGTVT | 11 | cosine=0.833807
+#6 | QCVN 41:2024/BGTVT | B.18 | cosine=0.833807
+
+===== private_test_private_test_74 =====
+Câu hỏi:
+Một xe tải có khối lượng chuyên chở (theo giấy đăng ký xe) là 3 tấn được phép đi vào đoạn đường này vào lúc 10:00 sáng đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải với số '2,5t' bên trong.
+Ý nghĩa hoặc thông số: Cấm xe tải có khối lượng chuyên chở từ 2,5 tấn trở lên đi vào đoạn đường này.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, ghi hai dòng thời gian: '06:30 - 06:30' và '16:00 - 19:00'.
+Ý nghĩa hoặc thông số: Thời gian cấm xe tải trọng 2,5t trở lên đi vào là từ 06:30 đến 06:30 và từ 16:00 đến 19:00.
+
+Đối tượng: Biển báo hiệu tốc độ - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 40 km/h.
+
+Đối tượng: Biển phụ - ngay bên dưới biển tốc độ
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, biểu tượng đen là hình xe tải.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ 40 km/h áp dụng cho xe tải.
+Example #1 | train_255 | cosine=0.948208
+Example #2 | train_411 | cosine=0.919063
+Example #3 | train_355 | cosine=0.885330
+Example #4 | train_403 | cosine=0.875954
+Example #5 | train_452 | cosine=0.863860
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.948208
+#2 | QCVN 41:2024/BGTVT | B.6 | cosine=0.948208
+#3 | QCVN 41:2024/BGTVT | 41 | cosine=0.919063
+#4 | QCVN 41:2024/BGTVT | F.10 | cosine=0.919063
+#5 | QCVN 41:2024/BGTVT | F.5 | cosine=0.919063
+
+===== private_test_private_test_75 =====
+Câu hỏi:
+Một xe tải có khối lượng chuyên chở (theo giấy đăng ký xe) là 2 tấn phải luôn tuân thủ tốc độ tối đa 40 km/h khi di chuyển trên đoạn đường này vào bất kỳ thời điểm nào trong ngày đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải với số '2,5t' bên trong.
+Ý nghĩa hoặc thông số: Cấm xe tải có khối lượng chuyên chở từ 2,5 tấn trở lên đi vào.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, ghi hai dòng thời gian: '06:30 - 06:30' và '16:00 - 19:00'.
+Ý nghĩa hoặc thông số: Biển phụ chỉ thời gian áp dụng cho biển báo cấm phía trên.
+
+Đối tượng: Biển báo hiệu tốc độ tối đa - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h.
+
+Đối tượng: Biển phụ - ngay bên dưới biển tốc độ
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, biểu tượng đen là hình xe tải.
+Ý nghĩa hoặc thông số: Biển phụ chỉ đối tượng áp dụng cho biển tốc độ phía trên (xe tải).
+Example #1 | train_256 | cosine=0.892768
+Example #2 | train_255 | cosine=0.875837
+Example #3 | train_218 | cosine=0.855170
+Example #4 | train_440 | cosine=0.846854
+Example #5 | train_126 | cosine=0.839764
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.892768
+#2 | QCVN 41:2024/BGTVT | B.27 | cosine=0.892768
+#3 | QCVN 41:2024/BGTVT | F.5 | cosine=0.892768
+#4 | QCVN 41:2024/BGTVT | B.6 | cosine=0.875837
+#5 | QCVN 41:2024/BGTVT | 41 | cosine=0.846854
+
+===== private_test_private_test_76 =====
+Câu hỏi:
+Dựa trên các biển báo trong hình bên, các phương tiện được phép đỗ xe trong khoảng thời gian nào dưới đây?
+Example #1 | train_200 | cosine=0.726715
+Example #2 | train_244 | cosine=0.722466
+Example #3 | train_498 | cosine=0.706227
+Example #4 | train_245 | cosine=0.674654
+Example #5 | train_171 | cosine=0.669004
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.726715
+#2 | QCVN 41:2024/BGTVT | B.2 | cosine=0.726715
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.722466
+#4 | QCVN 41:2024/BGTVT | B.30 | cosine=0.674654
+#5 | QCVN 41:2024/BGTVT | 32 | cosine=0.669004
+
+===== private_test_private_test_77 =====
+Câu hỏi:
+Theo hình bên, giả sử phương tiện A di chuyển với vận tốc 80 km/h, trong khi phương tiện B di chuyển với vận tốc 120 km/h, thì phương tiện nào vi phạm luật giao thông đường bộ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tốc độ tối đa - phía dưới bên trái
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 90 km/h.
+
+Đối tượng: Biển báo giới hạn tốc độ tối thiểu - phía dưới bên phải
+Đặc điểm: Biển hình tròn, viền xanh dương, nền xanh dương, số '60' màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối thiểu là 60 km/h.
+Example #1 | train_123 | cosine=0.892104
+Example #2 | train_26 | cosine=0.891700
+Example #3 | train_347 | cosine=0.887047
+Example #4 | train_418 | cosine=0.873961
+Example #5 | train_318 | cosine=0.871644
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.892104
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.892104
+#3 | QCVN 41:2024/BGTVT | 47 | cosine=0.892104
+#4 | QCVN 41:2024/BGTVT | B.27 | cosine=0.892104
+#5 | QCVN 41:2024/BGTVT | D.6 | cosine=0.892104
+#6 | QCVN 41:2024/BGTVT | P.2 | cosine=0.892104
+#7 | QCVN 41:2024/BGTVT | 21 | cosine=0.891700
+#8 | QCVN 41:2024/BGTVT | B.30 | cosine=0.887047
+#9 | QCVN 41:2024/BGTVT | P.3 | cosine=0.871644
+
+===== private_test_private_test_78 =====
+Câu hỏi:
+Tại một thời điểm, giả sử xe máy A di chuyển ở làn đường thứ 3, xe đạp B di chuyển ở làn đường thứ 2, và xe ô tô C đang di chuyển ở làn đường thứ 4 (tính từ phải sang trái). Phương tiện giao thông nào đang vi phạm luật an toàn giao thông đường bộ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn làn đường - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền màu xanh dương, có 4 ô vuông ngăn cách nhau bằng vạch trắng dọc. Trong mỗi ô có biểu tượng trắng: ô 1 (phía trái) là xe ô tô, ô 2 là xe ô tô, ô 3 là xe máy, ô 4 (phía phải) là xe đạp.
+Ý nghĩa hoặc thông số: Chỉ dẫn các làn đường dành riêng cho từng loại phương tiện: 2 làn cho ô tô, 1 làn cho xe máy, 1 làn cho xe đạp.
+Example #1 | train_233 | cosine=0.810469
+Example #2 | train_461 | cosine=0.807529
+Example #3 | train_285 | cosine=0.801077
+Example #4 | train_421 | cosine=0.796269
+Example #5 | train_371 | cosine=0.794502
+#1 | QCVN 41:2024/BGTVT | 23 | cosine=0.810469
+#2 | QCVN 41:2024/BGTVT | D.13 | cosine=0.810469
+#3 | QCVN 41:2024/BGTVT | 32 | cosine=0.807529
+#4 | QCVN 41:2024/BGTVT | D.14 | cosine=0.807529
+#5 | QCVN 41:2024/BGTVT | D.16 | cosine=0.801077
+
+===== private_test_private_test_79 =====
+Câu hỏi:
+Dựa theo hình bên, giả sử một xe tải có khối lượng toàn bộ là 4,9 tấn đang lưu thông trên đường này. Nhận xét nào dưới đây là đúng? 
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải màu đen với gạch chéo đỏ cắt ngang, số '5T' màu đen ở giữa biểu tượng.
+Ý nghĩa hoặc thông số: Cấm xe tải có khối lượng toàn bộ từ 5 tấn trở lên đi vào đường này.
+
+Đối tượng: Biển phụ - phía dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đỏ, biểu tượng xe tải màu đen với gạch chéo đỏ cắt ngang, số '5T' màu đen ở giữa biểu tượng.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung thông tin về biển cấm xe tải trọng từ 5 tấn trở lên.
+Example #1 | train_501 | cosine=0.897103
+Example #2 | train_126 | cosine=0.865865
+Example #3 | train_168 | cosine=0.862959
+Example #4 | train_459 | cosine=0.855007
+Example #5 | train_218 | cosine=0.853729
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.897103
+#2 | QCVN 41:2024/BGTVT | B.6 | cosine=0.897103
+#3 | QCVN 41:2024/BGTVT | B.25 | cosine=0.855007
+#4 | QCVN 41:2024/BGTVT | B.30 | cosine=0.855007
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.853729
+#6 | QCVN 41:2024/BGTVT | F.5 | cosine=0.853729
+
+===== private_test_private_test_80 =====
+Câu hỏi:
+Dựa trên hình bên, phương tiện giao thông nào được phép dừng xe hoặc đỗ xe bên đường?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm dừng và đỗ xe
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe ô tô màu đen bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
+
+Đối tượng: Biển báo chỉ dẫn - phía trên
+Đặc điểm: Hình chữ nhật, nền xanh, biểu tượng xe máy màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn xe máy được phép đi.
+
+Đối tượng: Biển báo chỉ dẫn - phía dưới
+Đặc điểm: Hình chữ nhật, nền xanh, biểu tượng xe ô tô màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn xe ô tô được phép đi.
+Example #1 | train_497 | cosine=0.891865
+Example #2 | train_134 | cosine=0.880236
+Example #3 | train_118 | cosine=0.878878
+Example #4 | train_448 | cosine=0.877566
+Example #5 | train_447 | cosine=0.875822
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.891865
+#2 | QCVN 41:2024/BGTVT | B.31 | cosine=0.891865
+#3 | QCVN 41:2024/BGTVT | B.30 | cosine=0.880236
+#4 | QCVN 41:2024/BGTVT | 24 | cosine=0.877566
+#5 | QCVN 41:2024/BGTVT | 36 | cosine=0.875822
+#6 | QCVN 41:2024/BGTVT | 41 | cosine=0.875822
+#7 | QCVN 41:2024/BGTVT | E.8 | cosine=0.875822
+#8 | QCVN 41:2024/BGTVT | F.5 | cosine=0.875822
+
+===== private_test_private_test_81 =====
+Câu hỏi:
+Theo hình bên, phương tiện nào luôn được phép lưu thông trong đoạn đường trên?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên (trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có dấu gạch chéo đỏ cắt ngang. Bên trong có biểu tượng xe buýt và xe tải nhỏ.
+Ý nghĩa hoặc thông số: Cấm xe buýt và xe tải nhỏ lưu thông trong khu vực được quy định.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm (trái)
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen. Có biểu tượng xe buýt và xe tải kèm chữ: 'TRÊN 20 CHỖ (TRỪ XE HỢP ĐỒNG, XE DU LỊCH)', 'TẢI TRỌNG TOÀN BỘ XE CHO PHÉP TỪ 10 TẤN TRỞ LÊN'.
+Ý nghĩa hoặc thông số: Chỉ rõ đối tượng bị cấm: xe buýt trên 20 chỗ (trừ xe hợp đồng, xe du lịch) và xe tải trọng toàn bộ từ 10 tấn trở lên.
+
+Đối tượng: Biển báo cấm - phía trên (phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có dấu gạch chéo đỏ cắt ngang. Bên trong có biểu tượng xe buýt và xe tải lớn.
+Ý nghĩa hoặc thông số: Cấm xe buýt và xe tải lớn lưu thông trong khu vực được quy định.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm (phải)
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen. Có ba dòng thời gian: '6:30 - 7:30', '10:45 - 11:45', '16:30 - 17:30'.
+Ý nghĩa hoặc thông số: Chỉ rõ thời gian cấm lưu thông của xe buýt và xe tải lớn trong ngày.
+Example #1 | train_323 | cosine=0.905383
+Example #2 | train_2 | cosine=0.868960
+Example #3 | train_213 | cosine=0.847561
+Example #4 | train_448 | cosine=0.843272
+Example #5 | train_241 | cosine=0.839197
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.905383
+#2 | QCVN 41:2024/BGTVT | B.7 | cosine=0.905383
+#3 | QCVN 41:2024/BGTVT | 14 | cosine=0.868960
+#4 | QCVN 41:2024/BGTVT | 26 | cosine=0.868960
+#5 | QCVN 41:2024/BGTVT | 24 | cosine=0.843272
+#6 | QCVN 41:2024/BGTVT | B.6 | cosine=0.839197
+
+===== private_test_private_test_82 =====
+Câu hỏi:
+Biển báo cảnh báo nào không xuất hiện trong hình bên?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo xin lỗi - phía trên bên trái
+Đặc điểm: Hình chữ nhật, nền xanh dương, viền trắng, chữ trắng viết hoa: 'XIN LỖI ĐÃ LÀM PHIỀN QUÝ VỊ'
+Ý nghĩa hoặc thông số: Biển báo xin lỗi người tham gia giao thông do sự cố hoặc công trình
+
+Đối tượng: Biển cảnh báo công trường - vị trí 1 (bên trái)
+Đặc điểm: Hình tam giác, viền đỏ, nền vàng, biểu tượng đen: người đang đào đất bằng cuốc
+Ý nghĩa hoặc thông số: Cảnh báo có công trường xây dựng hoặc sửa chữa đường
+
+Đối tượng: Biển cảnh báo chia làn - vị trí 2 (giữa trái)
+Đặc điểm: Hình tam giác, viền đỏ, nền vàng, biểu tượng đen: hai vạch dọc song song
+Ý nghĩa hoặc thông số: Cảnh báo đường sẽ chia làm hai làn xe
+
+Đối tượng: Biển cảnh báo đi chậm - vị trí 3 (giữa phải)
+Đặc điểm: Hình tam giác, viền đỏ, nền vàng, chữ đen viết hoa: 'ĐI CHẬM'
+Ý nghĩa hoặc thông số: Cảnh báo người tham gia giao thông cần giảm tốc độ
+
+Đối tượng: Biển cảnh báo chia làn - vị trí 4 (bên phải)
+Đặc điểm: Hình tam giác, viền đỏ, nền vàng, biểu tượng đen: hai vạch dọc song song
+Ý nghĩa hoặc thông số: Cảnh báo đường sẽ chia làm hai làn xe
+
+Đối tượng: Biển chỉ dẫn rẽ phải - vị trí dưới cùng
+Đặc điểm: Hình chữ nhật, nền đỏ, mũi tên trắng chỉ hướng rẽ phải
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải rẽ phải
+Example #1 | train_278 | cosine=0.958340
+Example #2 | train_82 | cosine=0.940375
+Example #3 | train_116 | cosine=0.857921
+Example #4 | train_127 | cosine=0.836646
+Example #5 | train_291 | cosine=0.828943
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.958340
+#2 | QCVN 41:2024/BGTVT | C.27 | cosine=0.958340
+#3 | QCVN 41:2024/BGTVT | C.3 | cosine=0.958340
+#4 | QCVN 41:2024/BGTVT | C.45 | cosine=0.958340
+#5 | QCVN 41:2024/BGTVT | 22 | cosine=0.836646
+#6 | QCVN 41:2024/BGTVT | B.24 | cosine=0.836646
+#7 | QCVN 41:2024/BGTVT | 32 | cosine=0.828943
+#8 | QCVN 41:2024/BGTVT | 36 | cosine=0.828943
+
+===== private_test_private_test_83 =====
+Câu hỏi:
+Theo biển báo nền xanh, chữ trắng trong hình bên, khoảng cách đến lối vào cao tốc Bến Lức - Long Thành là bao nhiêu?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo nền xanh chữ trắng - trung tâm ảnh
+Đặc điểm: Hình chữ nhật đứng, nền xanh, chữ trắng. Có dòng chữ 'CT.01' trong khung vàng. Nội dung: 'BẾN LỨC LONG THÀNH EXPRESSWAY', 'LỐI VÀO ENTRANCE', '800m'. Có biểu tượng cao tốc màu trắng ở góc phải trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn lối vào cao tốc Bến Lức - Long Thành (CT.01) trong vòng 800m.
+
+Đối tượng: Biển báo cấm - bên phải ảnh
+Đặc điểm: Hình chữ nhật đứng, nền trắng, viền đỏ. Chứa 8 biểu tượng cấm (mỗi biểu tượng là hình tròn đỏ viền trắng, bên trong là hình đen bị gạch chéo). Các biểu tượng lần lượt là: xe máy, xe đạp, xe gắn máy, xe đạp điện, xe tải, xe máy chở người, xe máy chở hàng, xe máy chở vật cồng kềnh. Có mũi tên đỏ hướng lên trên ở góc phải.
+Ý nghĩa hoặc thông số: Cấm các loại phương tiện và hành vi được biểu thị (xe máy, xe đạp, xe tải, xe chở hàng...) đi vào. Mũi tên chỉ hướng đi của làn đường.
+Example #1 | train_296 | cosine=0.949684
+Example #2 | train_300 | cosine=0.815888
+Example #3 | train_301 | cosine=0.810208
+Example #4 | train_354 | cosine=0.763558
+Example #5 | train_326 | cosine=0.739345
+#1 | QCVN 41:2024/BGTVT | 47 | cosine=0.949684
+#2 | QCVN 41:2024/BGTVT | P.2 | cosine=0.949684
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.763558
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.763558
+#5 | QCVN 41:2024/BGTVT | 46 | cosine=0.763558
+#6 | QCVN 41:2024/BGTVT | B.27 | cosine=0.763558
+#7 | QCVN 41:2024/BGTVT | D.6 | cosine=0.763558
+#8 | QCVN 41:2024/BGTVT | P.3 | cosine=0.739345
+
+===== private_test_private_test_84 =====
+Câu hỏi:
+Theo hình bên, biển báo hình chữ nhât, có nền xanh, ký hiệu trắng và nằm bên phải không áp dụng cho phương tiện giao thông nào? 
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn làn đường - phía trên bên phải
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng, có 4 ô chia dọc, mỗi ô chứa ký hiệu trắng: ô 1 là xe ô tô, ô 2 là xe ô tô, ô 3 là xe máy, ô 4 là xe đạp.
+Ý nghĩa hoặc thông số: Chỉ dẫn các làn đường dành cho từng loại phương tiện: ô tô, xe máy, xe đạp.
+Example #1 | train_35 | cosine=0.876704
+Example #2 | train_33 | cosine=0.866147
+Example #3 | train_36 | cosine=0.864082
+Example #4 | train_285 | cosine=0.851486
+Example #5 | train_34 | cosine=0.848683
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.876704
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.851486
+#3 | QCVN 41:2024/BGTVT | D.16 | cosine=0.851486
+
+===== private_test_private_test_85 =====
+Câu hỏi:
+Theo biển báo trong hình bên, tốc độ tối thiểu là 50 km/h. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu đường bộ chính - phía trên
+Đặc điểm: Hình chữ nhật, nền màu xanh lá cây, viền trắng, chữ trắng và vàng. Có dòng chữ 'NGHI SƠN', 'DIỄN CHÂU', 'EXPRESSWAY', biểu tượng mũi tên chỉ hướng, biển phụ hình tròn đỏ viền trắng ghi '90', biển phụ hình tròn xanh ghi '60', và biển phụ hình chữ nhật vàng ghi 'CT.01'.
+Ý nghĩa hoặc thông số: Biển báo tên tuyến đường cao tốc Nghi Sơn - Diễn Châu, với tốc độ tối đa 90 km/h và tốc độ tối thiểu 60 km/h.
+
+Đối tượng: Biển phụ tốc độ tối đa - bên trái biển chính
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '90' màu đen.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 90 km/h.
+
+Đối tượng: Biển phụ tốc độ tối thiểu - bên phải biển chính
+Đặc điểm: Hình tròn, viền xanh, nền xanh, chữ số '60' màu trắng.
+Ý nghĩa hoặc thông số: Tốc độ tối thiểu cho phép là 60 km/h.
+
+Đối tượng: Biển phụ mã tuyến - góc trên bên trái biển chính
+Đặc điểm: Hình chữ nhật, nền vàng, chữ 'CT.01' màu đen.
+Ý nghĩa hoặc thông số: Mã tuyến đường CT.01.
+Example #1 | train_331 | cosine=0.971810
+Example #2 | train_359 | cosine=0.879125
+Example #3 | train_466 | cosine=0.867439
+Example #4 | train_388 | cosine=0.867392
+Example #5 | train_485 | cosine=0.860320
+#1 | QCVN 41:2024/BGTVT | 47 | cosine=0.971810
+#2 | QCVN 41:2024/BGTVT | P.3 | cosine=0.971810
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.879125
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.879125
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.879125
+#6 | QCVN 41:2024/BGTVT | D.6 | cosine=0.879125
+
+===== private_test_private_test_86 =====
+Câu hỏi:
+Trong số ba biển báo tam giác, nền vàng và viền đỏ có chứa biển báo mang ý nghĩa cảnh báo đoạn đường hay xảy ra tai nạn. Điều đó là đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - phía trước bên phải
+Đặc điểm: Tam giác, nền vàng, viền đỏ, biểu tượng xe tải lật và xe con va chạm
+Ý nghĩa hoặc thông số: Cảnh báo đoạn đường hay xảy ra tai nạn
+
+Đối tượng: Biển báo phụ - ngay bên dưới biển cảnh báo
+Đặc điểm: Tam giác, nền vàng, viền đỏ, chữ 'ĐI CHẬM'
+Ý nghĩa hoặc thông số: Yêu cầu đi chậm
+Example #1 | train_68 | cosine=0.912082
+Example #2 | train_38 | cosine=0.901847
+Example #3 | train_289 | cosine=0.865319
+Example #4 | train_262 | cosine=0.850788
+Example #5 | train_32 | cosine=0.833453
+#1 | QCVN 41:2024/BGTVT | C.47 | cosine=0.912082
+#2 | QCVN 41:2024/BGTVT | 28 | cosine=0.901847
+#3 | QCVN 41:2024/BGTVT | C.40 | cosine=0.865319
+#4 | QCVN 41:2024/BGTVT | 26 | cosine=0.850788
+#5 | QCVN 41:2024/BGTVT | C.6 | cosine=0.850788
+
+===== private_test_private_test_87 =====
+Câu hỏi:
+Dựa trên hình bên, xe ô tô màu trắng nếu liên tục di chuyển tại làn đường như hình bên, thì xe ô tô đó đang vi phạm luật giao thông. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền xanh dương, có 4 ô chia cách nhau bởi các đường kẻ trắng dọc. Trong mỗi ô có biểu tượng trắng: ô 1 là xe ô tô, ô 2 là xe ô tô, ô 3 là xe máy, ô 4 là xe đạp.
+Ý nghĩa hoặc thông số: Chỉ dẫn các làn đường dành riêng cho xe ô tô, xe máy và xe đạp; xe ô tô được phép lưu hành trong các làn được chỉ định.
+Example #1 | train_285 | cosine=0.885055
+Example #2 | train_149 | cosine=0.867096
+Example #3 | train_433 | cosine=0.844775
+Example #4 | train_313 | cosine=0.841491
+Example #5 | train_39 | cosine=0.841059
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.885055
+#2 | QCVN 41:2024/BGTVT | D.16 | cosine=0.885055
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.844775
+#4 | QCVN 41:2024/BGTVT | B.27c | cosine=0.844775
+#5 | QCVN 41:2024/BGTVT | D.3 | cosine=0.841491
+#6 | QCVN 41:2024/BGTVT | 28 | cosine=0.841059
+
+===== private_test_private_test_88 =====
+Câu hỏi:
+Dựa vào biển báo nền đỏ trong hình bên, nếu xe máy di chuyển ngược chiều thì vi phạm giao thông, còn xe đạp di chuyển ngược chiều thì không vi phạm giao thông. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trước (tiền cảnh)
+Đặc điểm: Hình tròn, nền đỏ, viền trắng, biểu tượng mũi tên đỏ hướng lên trên bị gạch chéo ngang màu trắng.
+Ý nghĩa hoặc thông số: Cấm đi ngược chiều
+Example #1 | train_274 | cosine=0.867178
+Example #2 | train_202 | cosine=0.856290
+Example #3 | train_476 | cosine=0.851392
+Example #4 | train_477 | cosine=0.849174
+Example #5 | train_500 | cosine=0.838363
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.867178
+#2 | QCVN 41:2024/BGTVT | B.31 | cosine=0.867178
+#3 | QCVN 41:2024/BGTVT | B.2 | cosine=0.856290
+#4 | QCVN 41:2024/BGTVT | B.24 | cosine=0.851392
+#5 | QCVN 41:2024/BGTVT | B.4 | cosine=0.838363
+
+===== private_test_private_test_89 =====
+Câu hỏi:
+Theo biển báo trong hình bên, một xe khách chạy với tốc độ 50 km/h thì không vi phạm luật giao thông. Phát biểu trên là đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ tối đa - phía dưới bên trái
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 90 km/h.
+
+Đối tượng: Biển báo tốc độ tối thiểu - phía dưới bên phải
+Đặc điểm: Biển hình tròn, viền xanh dương, nền xanh dương, số '60' màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối thiểu cho phép là 60 km/h.
+Example #1 | train_123 | cosine=0.906116
+Example #2 | train_28 | cosine=0.905834
+Example #3 | train_466 | cosine=0.902468
+Example #4 | train_388 | cosine=0.897939
+Example #5 | train_331 | cosine=0.886605
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.906116
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.906116
+#3 | QCVN 41:2024/BGTVT | 47 | cosine=0.906116
+#4 | QCVN 41:2024/BGTVT | B.27 | cosine=0.906116
+#5 | QCVN 41:2024/BGTVT | D.6 | cosine=0.906116
+#6 | QCVN 41:2024/BGTVT | P.2 | cosine=0.906116
+#7 | QCVN 41:2024/BGTVT | 21 | cosine=0.905834
+#8 | QCVN 41:2024/BGTVT | P.3 | cosine=0.886605
+
+===== private_test_private_test_90 =====
+Câu hỏi:
+Tại thời điểm chụp hình trên, khi có sự xuất hiện của cảnh sát giao thông, người điều khiển phương tiện giao thông cần tuân theo sự điều phối của cảnh sát giao thông trước, rồi tới biển báo. Điều đó là đúng hay sai? 
+
+Loại hình: MARKING_AND_SIGNAL
+
+Đối tượng: Người điều khiển giao thông - trung tâm ảnh
+Đặc điểm: Người mặc đồng phục màu vàng cam, đội mũ, đeo khẩu trang, tay giơ cờ hiệu điều khiển giao thông.
+Ý nghĩa hoặc thông số: Điều phối giao thông tại hiện trường, ưu tiên điều khiển bằng tay trước biển báo.
+
+Đối tượng: Biển báo chỉ dẫn - phía trên người điều khiển
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng, biểu tượng xe hơi màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn xe ô tô.
+Example #1 | train_339 | cosine=0.825071
+Example #2 | train_189 | cosine=0.807419
+Example #3 | train_219 | cosine=0.801476
+Example #4 | train_512 | cosine=0.798580
+Example #5 | train_19 | cosine=0.797272
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.825071
+#2 | QCVN 41:2024/BGTVT | C.6 | cosine=0.825071
+#3 | QCVN 41:2024/BGTVT | C.27 | cosine=0.801476
+#4 | QCVN 41:2024/BGTVT | C.24 | cosine=0.798580
+#5 | QCVN 41:2024/BGTVT | 26 | cosine=0.797272
+
+===== private_test_private_test_91 =====
+Câu hỏi:
+Trong đoạn đường trong ảnh, xe tải được rẽ vào đường Hồng Hà vào thời điểm nào sau đây?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - phía trên bên trái
+Đặc điểm: Hình chữ nhật ngang, nền xanh dương, chữ trắng, có mũi tên chỉ hướng rẽ phải
+Ý nghĩa hoặc thông số: Chỉ dẫn đường Hồng Hà, hướng rẽ phải
+
+Đối tượng: Biển báo cấm - phía trên bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái bị gạch chéo đỏ
+Ý nghĩa hoặc thông số: Cấm rẽ trái
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, chữ đen, có biểu tượng xe tải và thời gian '6:00 - 22:00'
+Ý nghĩa hoặc thông số: Biển phụ quy định thời gian cấm rẽ trái cho xe tải từ 6:00 đến 22:00
+Example #1 | train_399 | cosine=0.893699
+Example #2 | train_180 | cosine=0.827647
+Example #3 | train_463 | cosine=0.822684
+Example #4 | train_176 | cosine=0.822462
+Example #5 | train_408 | cosine=0.808204
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.893699
+#2 | QCVN 41:2024/BGTVT | 36 | cosine=0.893699
+#3 | QCVN 41:2024/BGTVT | 41 | cosine=0.893699
+#4 | QCVN 41:2024/BGTVT | B.23 | cosine=0.893699
+#5 | QCVN 41:2024/BGTVT | E.14 | cosine=0.893699
+#6 | QCVN 41:2024/BGTVT | F.10 | cosine=0.893699
+#7 | QCVN 41:2024/BGTVT | F.5 | cosine=0.893699
+#8 | QCVN 41:2024/BGTVT | 11 | cosine=0.827647
+#9 | QCVN 41:2024/BGTVT | B.3 | cosine=0.827647
+#10 | QCVN 41:2024/BGTVT | B.37 | cosine=0.808204
+
+===== private_test_private_test_92 =====
+Câu hỏi:
+Nếu chỉ xét thông tin trên ảnh và không tính việc đi một tuyến đường vòng khác không được mô tả trong ảnh thì nếu muốn đi đến La Sơn thì nên đi hướng nào trong ảnh?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - treo trên cao giữa đường
+Đặc điểm: Hình chữ nhật, nền màu xanh lá cây, viền trắng. Có hai biển phụ nhỏ gắn trên cùng: biển trái nền vàng chữ 'CT.01', biển phải nền trắng chữ 'QL.1'. Trên mặt biển có hai mũi tên trắng: mũi tên thẳng hướng lên trên và mũi tên rẽ phải. Có chữ viết: 'LA SON' bên dưới mũi tên thẳng, 'TUYẾN TRÁNH HUẾ' bên dưới mũi tên rẽ phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện đi thẳng để đến La Sơn, hoặc rẽ phải để đi Tuyến tránh Huế.
+Example #1 | train_394 | cosine=0.883121
+Example #2 | train_215 | cosine=0.785236
+Example #3 | train_527 | cosine=0.736827
+Example #4 | train_372 | cosine=0.735084
+Example #5 | train_521 | cosine=0.730385
+#1 | QCVN 41:2024/BGTVT | 46 | cosine=0.883121
+#2 | QCVN 41:2024/BGTVT | 47 | cosine=0.785236
+#3 | QCVN 41:2024/BGTVT | P.5 | cosine=0.785236
+#4 | QCVN 41:2024/BGTVT | 36 | cosine=0.735084
+#5 | QCVN 41:2024/BGTVT | E.14 | cosine=0.735084
+
+===== private_test_private_test_93 =====
+Câu hỏi:
+Trên đoạn đường trong ảnh, 1 xe ô tô đi với tốc độ 85 km/h có thể đi trên làn đường thứ mấy từ trái sang phải (không tính làn đường ưu tiên)?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ - làn trái
+Đặc điểm: Biển hình chữ nhật, nền xanh, có 2 ô tròn: ô trái nền đỏ viền trắng chứa số '120', ô phải nền xanh chứa số '80', dưới mỗi ô có mũi tên hướng xuống.
+Ý nghĩa hoặc thông số: Biển báo tốc độ tối đa 120 km/h và tốc độ tối thiểu 80 km/h cho làn đường tương ứng.
+
+Đối tượng: Biển báo tốc độ - làn phải
+Đặc điểm: Biển hình chữ nhật, nền xanh, có 2 ô tròn: ô trái nền đỏ viền trắng chứa số '100', ô phải nền xanh chứa số '60', dưới mỗi ô có mũi tên hướng xuống.
+Ý nghĩa hoặc thông số: Biển báo tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h cho làn đường tương ứng.
+Example #1 | train_396 | cosine=0.879970
+Example #2 | train_217 | cosine=0.870733
+Example #3 | train_318 | cosine=0.865283
+Example #4 | train_347 | cosine=0.864189
+Example #5 | train_257 | cosine=0.848741
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.879970
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.879970
+#3 | QCVN 41:2024/BGTVT | 46 | cosine=0.879970
+#4 | QCVN 41:2024/BGTVT | B.27 | cosine=0.879970
+#5 | QCVN 41:2024/BGTVT | D.6 | cosine=0.879970
+#6 | QCVN 41:2024/BGTVT | 47 | cosine=0.865283
+#7 | QCVN 41:2024/BGTVT | P.3 | cosine=0.865283
+#8 | QCVN 41:2024/BGTVT | B.30 | cosine=0.864189
+
+===== private_test_private_test_94 =====
+Câu hỏi:
+Khi gặp 1 đoạn đường có gắn biển trong ảnh xe nào không được phép đi vào đoạn đường đó?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe ô tô màu đen ở giữa, có đường chéo đỏ từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Cấm xe ô tô đi vào đoạn đường này.
+Example #1 | train_369 | cosine=0.895640
+Example #2 | train_280 | cosine=0.888223
+Example #3 | train_377 | cosine=0.880573
+Example #4 | train_502 | cosine=0.877268
+Example #5 | train_319 | cosine=0.866152
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.895640
+#2 | QCVN 41:2024/BGTVT | B.3 | cosine=0.895640
+#3 | QCVN 41:2024/BGTVT | B.5 | cosine=0.888223
+#4 | QCVN 41:2024/BGTVT | 41 | cosine=0.880573
+#5 | QCVN 41:2024/BGTVT | F.11 | cosine=0.880573
+#6 | QCVN 41:2024/BGTVT | B.7 | cosine=0.877268
+
+===== private_test_private_test_95 =====
+Câu hỏi:
+Theo thông tin từ các biển báo trên cao cho đường cao tốc trên ảnh thì phải đi thêm bao xa để đến Thái Nguyên?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - biển chính giữa (Đường cao tốc Quốc lộ 3 mới)
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có biểu tượng hình chữ nhật với hai mũi tên hướng lên trên (biểu tượng đường cao tốc). Có dòng chữ: 'ĐƯỜNG CAO TỐC', 'QUỐC LỘ 3 MỚI', 'FREEWAY'.
+Ý nghĩa hoặc thông số: Chỉ dẫn cho biết đang trên đường cao tốc Quốc lộ 3 mới.
+
+Đối tượng: Biển báo tốc độ - biển nhỏ bên trái biển chính
+Đặc điểm: Biển hình chữ nhật, nền trắng, viền xanh lá cây. Có hai vòng tròn: vòng tròn đỏ viền trắng ghi số '100' (tốc độ tối đa), vòng tròn xanh viền trắng ghi số '60' (tốc độ tối thiểu).
+Ý nghĩa hoặc thông số: Quy định tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h.
+
+Đối tượng: Biển báo chỉ dẫn địa điểm - biển bên phải
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có dòng chữ: 'THÁI', 'NGUYỄN 61 KM'.
+Ý nghĩa hoặc thông số: Chỉ dẫn địa điểm Thái Nguyên còn 61 km.
+Example #1 | train_366 | cosine=0.856875
+Example #2 | train_59 | cosine=0.790699
+Example #3 | train_326 | cosine=0.754990
+Example #4 | train_340 | cosine=0.750893
+Example #5 | train_296 | cosine=0.740881
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.856875
+#2 | QCVN 41:2024/BGTVT | 46 | cosine=0.856875
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.856875
+#4 | QCVN 41:2024/BGTVT | P.17 | cosine=0.790699
+#5 | QCVN 41:2024/BGTVT | 47 | cosine=0.754990
+#6 | QCVN 41:2024/BGTVT | P.3 | cosine=0.754990
+#7 | QCVN 41:2024/BGTVT | P.2 | cosine=0.740881
+
+===== private_test_private_test_96 =====
+Câu hỏi:
+Biển báo trong ảnh có tên là gì?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng người đi bộ màu đen ở giữa và một đường chéo đỏ từ góc trên bên trái xuống góc dưới bên phải.
+Ý nghĩa hoặc thông số: Cấm người đi bộ
+Example #1 | train_156 | cosine=0.909126
+Example #2 | train_336 | cosine=0.899656
+Example #3 | train_368 | cosine=0.878460
+Example #4 | train_382 | cosine=0.878415
+Example #5 | train_384 | cosine=0.870985
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.909126
+#2 | QCVN 41:2024/BGTVT | B.12 | cosine=0.909126
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.899656
+#4 | QCVN 41:2024/BGTVT | 28 | cosine=0.878460
+#5 | QCVN 41:2024/BGTVT | C.24 | cosine=0.878460
+#6 | QCVN 41:2024/BGTVT | B.6 | cosine=0.878415
+#7 | QCVN 41:2024/BGTVT | B.23 | cosine=0.870985
+
+===== private_test_private_test_97 =====
+Câu hỏi:
+Từ thông tin từ các biển trong ảnh thì nếu muốn đi đến chợ Bến Thành thì phải đi hướng nào?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển chỉ dẫn - phía trên cùng, gắn trên cột cao
+Đặc điểm: Hình chữ nhật đứng, nền xanh dương, chữ và mũi tên màu trắng. Có mũi tên chỉ hướng lên trên và sang phải. Văn bản: 'HUYỆN BÌNH CHÁNH', 'CHỢ BÌNH TÂY', 'CẦU ÔNG LÀNH', 'CHỢ BẾN THÀNH', '100M'.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến các địa điểm: Huyện Bình Chánh, Chợ Bình Tây, Cầu Ông Lành, Chợ Bến Thành (cách 100m theo hướng mũi tên).
+Example #1 | train_348 | cosine=0.767035
+Example #2 | train_52 | cosine=0.756576
+Example #3 | train_451 | cosine=0.755044
+Example #4 | train_207 | cosine=0.752847
+Example #5 | train_206 | cosine=0.750387
+#1 | QCVN 41:2024/BGTVT | 36 | cosine=0.767035
+#2 | QCVN 41:2024/BGTVT | E.14 | cosine=0.767035
+#3 | QCVN 41:2024/BGTVT | 32 | cosine=0.755044
+#4 | QCVN 41:2024/BGTVT | D.13 | cosine=0.755044
+#5 | QCVN 41:2024/BGTVT | 21 | cosine=0.752847
+#6 | QCVN 41:2024/BGTVT | 35 | cosine=0.750387
+
+===== private_test_private_test_98 =====
+Câu hỏi:
+Trong đoạn đường trong ảnh, xe ô tô đi với tốc độ 65 km/h không được đi vào làn đường thứ mấy từ trái sang phải?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tốc độ tối đa - phía dưới
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, có 3 vòng tròn đỏ viền trắng chứa số 90, 70, 50 theo thứ tự từ trái sang phải.
+Ý nghĩa hoặc thông số: Biển báo tốc độ tối đa cho các loại xe: xe tải nặng (90 km/h), xe tải nhẹ (70 km/h), xe máy (50 km/h).
+
+Đối tượng: Biển chỉ dẫn tuyến đường - phía trên
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, có chữ 'HÀ NỘI', 'BẮC GIANG', 'EXPRESSWAY', mã 'CT.03' và biểu tượng đường cao tốc.
+Ý nghĩa hoặc thông số: Biển chỉ dẫn tuyến đường Hà Nội - Bắc Giang Expressway.
+Example #1 | train_365 | cosine=0.873765
+Example #2 | train_217 | cosine=0.859840
+Example #3 | train_81 | cosine=0.857676
+Example #4 | train_396 | cosine=0.855047
+Example #5 | train_347 | cosine=0.852717
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.873765
+#2 | QCVN 41:2024/BGTVT | 46 | cosine=0.873765
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.873765
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.855047
+#5 | QCVN 41:2024/BGTVT | D.6 | cosine=0.855047
+#6 | QCVN 41:2024/BGTVT | B.30 | cosine=0.852717
+
+===== private_test_private_test_99 =====
+Câu hỏi:
+Từ thông tin từ các biển báo trong ảnh thì còn bao xa đến trạm dừng nghỉ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển chỉ dẫn trạm dừng nghỉ - phía xa
+Đặc điểm: Biển hình chữ nhật, nền xanh lá cây, viền trắng. Có biểu tượng trạm dừng nghỉ (xe buýt), chữ 'CAO BỒ MAI SƠN', và số '750 m'.
+Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến trạm dừng nghỉ là 750 mét.
+
+Đối tượng: Biển chỉ khoảng cách - phía xa bên phải
+Đặc điểm: Một dãy các biển hình chữ nhật nhỏ, nền xanh lá cây, viền trắng, ghi các số '200m', '150m', '100m', '50m', '0m'.
+Ý nghĩa hoặc thông số: Chỉ khoảng cách còn lại đến một điểm tham chiếu (có thể là trạm dừng nghỉ hoặc điểm đặc biệt).
+Example #1 | train_146 | cosine=0.803678
+Example #2 | train_258 | cosine=0.783625
+Example #3 | train_363 | cosine=0.773123
+Example #4 | train_4 | cosine=0.770363
+Example #5 | train_361 | cosine=0.764645
+#1 | QCVN 41:2024/BGTVT | 46 | cosine=0.803678
+#2 | QCVN 41:2024/BGTVT | 26 | cosine=0.783625
+#3 | QCVN 41:2024/BGTVT | P.17 | cosine=0.783625
+#4 | QCVN 41:2024/BGTVT | 36 | cosine=0.764645
+#5 | QCVN 41:2024/BGTVT | E.36 | cosine=0.764645
+
+===== private_test_private_test_100 =====
+Câu hỏi:
+Trên đường cao tốc, sau khi đi qua trạm thu phí nơi có biển tốc độ tối đa 60 km/h phải đợi đến khi đi qua biển báo trong ảnh mới được tăng tốc lên trên 60 km/h, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - trung tâm ảnh
+Đặc điểm: Hình tròn, viền màu xanh dương, nền trắng, có ba vạch chéo màu đen song song chạy từ góc dưới bên trái lên góc trên bên phải.
+Ý nghĩa hoặc thông số: Biển báo cấm vượt (cấm vượt xe khác), thường được sử dụng trên đường cao tốc hoặc đoạn đường có hạn chế vượt xe. Ý nghĩa cụ thể cần tham khảo điều luật liên quan.
+Example #1 | train_105 | cosine=0.858901
+Example #2 | train_483 | cosine=0.851017
+Example #3 | train_388 | cosine=0.848028
+Example #4 | train_396 | cosine=0.843085
+Example #5 | train_438 | cosine=0.842615
+#1 | QCVN 41:2024/BGTVT | 47 | cosine=0.858901
+#2 | QCVN 41:2024/BGTVT | P.3 | cosine=0.858901
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.851017
+#4 | QCVN 41:2024/BGTVT | B.27 | cosine=0.851017
+#5 | QCVN 41:2024/BGTVT | 32 | cosine=0.843085
+#6 | QCVN 41:2024/BGTVT | 46 | cosine=0.843085
+#7 | QCVN 41:2024/BGTVT | D.6 | cosine=0.843085
+#8 | QCVN 41:2024/BGTVT | B.11 | cosine=0.842615
+#9 | QCVN 41:2024/BGTVT | D.14 | cosine=0.842615
+
+===== private_test_private_test_101 =====
+Câu hỏi:
+Trạm đừng nghỉ trong ảnh có 3 dịch vụ theo biển báo, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn dịch vụ nghỉ ngơi - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền màu xanh lá cây, viền trắng. Có 2 phần: Phần trên chia làm 2 ô, ô trái nền xanh dương chữ trắng 'TRẠM DỪNG NGHỈ REST AREA', ô phải nền xanh lá cây chữ trắng 'CAO BỒ MAI SƠN'. Phần dưới có 4 biểu tượng trắng trên nền xanh lá cây: vòi xăng, dao nĩa, chữ 'i', và biểu tượng nhà vệ sinh.
+Ý nghĩa hoặc thông số: Chỉ dẫn trạm dừng nghỉ Cao Bồ Mai Sơn, cung cấp các dịch vụ: nhiên liệu, ăn uống, thông tin và nhà vệ sinh.
+Example #1 | train_363 | cosine=0.939623
+Example #2 | train_85 | cosine=0.856414
+Example #3 | train_146 | cosine=0.802898
+Example #4 | train_285 | cosine=0.751941
+Example #5 | train_464 | cosine=0.750226
+#1 | QCVN 41:2024/BGTVT | 46 | cosine=0.939623
+#2 | QCVN 41:2024/BGTVT | 47 | cosine=0.856414
+#3 | QCVN 41:2024/BGTVT | P.7 | cosine=0.856414
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.751941
+#5 | QCVN 41:2024/BGTVT | D.16 | cosine=0.751941
+#6 | QCVN 41:2024/BGTVT | 22 | cosine=0.750226
+#7 | QCVN 41:2024/BGTVT | B.31 | cosine=0.750226
+
+===== private_test_private_test_102 =====
+Câu hỏi:
+Các xe khi gặp biển báo trong ảnh phải giảm tốc độ, nhường ưu tiên cho người đi bộ và chỉ được chạy xe khi không gây nguy hiểm cho người đi bộ, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - trung tâm ảnh
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen là hình người đang đi bộ trên hai vạch ngang song song.
+Ý nghĩa hoặc thông số: Biển báo hiệu cảnh báo trước khu vực có người đi bộ qua đường (vạch kẻ đường dành cho người đi bộ).
+Example #1 | train_214 | cosine=0.887433
+Example #2 | train_512 | cosine=0.877406
+Example #3 | train_513 | cosine=0.873663
+Example #4 | train_511 | cosine=0.872025
+Example #5 | train_510 | cosine=0.862688
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.887433
+#2 | QCVN 41:2024/BGTVT | C.24 | cosine=0.887433
+#3 | QCVN 41:2024/BGTVT | C.25 | cosine=0.873663
+
+===== private_test_private_test_103 =====
+Câu hỏi:
+Từ thông tin từ các biển báo trong ảnh thì vào lúc 5:00 AM các xe không được đỗ ở đoạn đường trong ảnh. đúng hay sai?
+Example #1 | train_200 | cosine=0.806839
+Example #2 | train_498 | cosine=0.790295
+Example #3 | train_445 | cosine=0.769235
+Example #4 | train_444 | cosine=0.751762
+Example #5 | train_181 | cosine=0.745333
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.806839
+#2 | QCVN 41:2024/BGTVT | B.2 | cosine=0.806839
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.790295
+#4 | QCVN 41:2024/BGTVT | 41 | cosine=0.769235
+#5 | QCVN 41:2024/BGTVT | B.6 | cosine=0.769235
+#6 | QCVN 41:2024/BGTVT | F.10 | cosine=0.769235
+#7 | QCVN 41:2024/BGTVT | B.3 | cosine=0.745333
+
+===== private_test_private_test_104 =====
+Câu hỏi:
+Trong ảnh có 3 biển báo nguy hiểm và cảnh báo, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải màu đen bị gạch chéo đỏ, chữ '≥5t' màu đen bên trong biểu tượng.
+Ý nghĩa hoặc thông số: Cấm xe tải trọng từ 5 tấn trở lên đi vào trong giờ quy định.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, chữ '6:00 - 22:00' màu đen.
+Ý nghĩa hoặc thông số: Thời gian cấm xe tải trọng từ 5 tấn trở lên đi vào là từ 6 giờ sáng đến 22 giờ tối.
+Example #1 | train_403 | cosine=0.872238
+Example #2 | train_255 | cosine=0.865127
+Example #3 | train_183 | cosine=0.862968
+Example #4 | train_218 | cosine=0.848595
+Example #5 | train_172 | cosine=0.847976
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.872238
+#2 | QCVN 41:2024/BGTVT | 41 | cosine=0.872238
+#3 | QCVN 41:2024/BGTVT | B.6 | cosine=0.872238
+#4 | QCVN 41:2024/BGTVT | F.10 | cosine=0.872238
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.848595
+#6 | QCVN 41:2024/BGTVT | F.5 | cosine=0.848595
+#7 | QCVN 41:2024/BGTVT | B.10 | cosine=0.847976
+#8 | QCVN 41:2024/BGTVT | B.4 | cosine=0.847976
+
+===== private_test_private_test_105 =====
+Câu hỏi:
+Khi gặp phải biền trong ảnh thì phải nhường dường cho xe đi từ nút giao bên phải, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo nguy hiểm - hình chữ Y
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng hình chữ Y đen ở trung tâm.
+Ý nghĩa hoặc thông số: Biển báo trước nút giao lộ dạng chữ Y (giao lộ hình Y), cảnh báo người lái xe chuẩn bị đến nút giao có ba nhánh đường hợp thành hình Y.
+Example #1 | train_339 | cosine=0.867684
+Example #2 | train_378 | cosine=0.832266
+Example #3 | train_344 | cosine=0.811253
+Example #4 | train_512 | cosine=0.805613
+Example #5 | train_135 | cosine=0.792794
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.867684
+#2 | QCVN 41:2024/BGTVT | C.6 | cosine=0.867684
+#3 | QCVN 41:2024/BGTVT | C.5 | cosine=0.832266
+#4 | QCVN 41:2024/BGTVT | C.24 | cosine=0.805613
+#5 | QCVN 41:2024/BGTVT | C.2 | cosine=0.792794
+
+===== private_test_private_test_106 =====
+Câu hỏi:
+Biển báo trong ảnh để cảnh báo xe phải đi chậm trước khi qua những điểm có gồ giảm tốc phía trước hoặc những vị trí tiếp giáp với đầu cầu, cống bị lún, võng, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - trung tâm
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình gồ giảm tốc (hình cong lõm ở giữa) nằm ở trung tâm.
+Ý nghĩa hoặc thông số: Biển báo cảnh báo trước gồ giảm tốc hoặc các vị trí tiếp giáp với đầu cầu, cống bị lún, võng.
+Example #1 | train_380 | cosine=0.898641
+Example #2 | train_68 | cosine=0.814737
+Example #3 | train_265 | cosine=0.801489
+Example #4 | train_38 | cosine=0.800772
+Example #5 | train_136 | cosine=0.798476
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.898641
+#2 | QCVN 41:2024/BGTVT | C.21 | cosine=0.898641
+#3 | QCVN 41:2024/BGTVT | C.47 | cosine=0.814737
+#4 | QCVN 41:2024/BGTVT | 36 | cosine=0.801489
+#5 | QCVN 41:2024/BGTVT | E.14 | cosine=0.801489
+#6 | QCVN 41:2024/BGTVT | 11 | cosine=0.798476
+#7 | QCVN 41:2024/BGTVT | 27 | cosine=0.798476
+
+===== private_test_private_test_107 =====
+Câu hỏi:
+Nếu không có thêm biển báo khác thì xe ô tô không được vượt nhau kể cả khi đi lên cầu và dưới cầu, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng hai xe ô tô đang vượt nhau (xe sau vượt xe trước).
+Ý nghĩa hoặc thông số: Cấm xe ô tô vượt nhau.
+Example #1 | train_346 | cosine=0.918290
+Example #2 | train_425 | cosine=0.906141
+Example #3 | train_17 | cosine=0.898528
+Example #4 | train_453 | cosine=0.892967
+Example #5 | train_133 | cosine=0.877500
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.918290
+#2 | QCVN 41:2024/BGTVT | B.25 | cosine=0.918290
+#3 | QCVN 41:2024/BGTVT | B.33 | cosine=0.918290
+#4 | QCVN 41:2024/BGTVT | B.35 | cosine=0.918290
+
+===== private_test_private_test_108 =====
+Câu hỏi:
+Đoạn đường trong ảnh giao với đường không ưu tiên bên trái, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm rẽ trái - giữa cột
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe rẽ trái tại vị trí này.
+
+Đối tượng: Biển báo cấm xe cơ giới và xe thô sơ - giữa cột
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe máy và xe đạp đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe cơ giới và xe thô sơ đi vào.
+
+Đối tượng: Biển báo giới hạn tốc độ - bên phải cột
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, chữ số '40' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h.
+
+Đối tượng: Biển báo cấm quay vòng - trên cùng cột
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen quay vòng bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm quay vòng tại vị trí này.
+
+Đối tượng: Biển báo hiệu đường trước mặt - dưới biển cấm quay vòng
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng mũi tên đen chỉ hướng đi thẳng.
+Ý nghĩa hoặc thông số: Cảnh báo hiệu đường trước mặt.
+
+Đối tượng: Biển chỉ dẫn hướng đi - trên cùng
+Đặc điểm: Hình chữ nhật, nền xanh dương, biểu tượng mũi tên trắng chỉ hướng rẽ phải, chữ '300M' màu trắng ở dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi rẽ phải trong vòng 300m.
+
+Đối tượng: Biển phụ cấm xe máy và xe thô sơ - dưới biển cấm quay vòng
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ trắng, nội dung: 'CẤM CÁC LOẠI XE 3 BÁNG VÀ XE THÔ SỞ 4 BÁNG'.
+Ý nghĩa hoặc thông số: Cấm các loại xe 3 bánh và xe thô sơ 4 bánh.
+Example #1 | train_476 | cosine=0.880912
+Example #2 | train_356 | cosine=0.879774
+Example #3 | train_477 | cosine=0.870274
+Example #4 | train_500 | cosine=0.868850
+Example #5 | train_528 | cosine=0.866928
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.880912
+#2 | QCVN 41:2024/BGTVT | B.24 | cosine=0.880912
+#3 | QCVN 41:2024/BGTVT | B.23 | cosine=0.879774
+#4 | QCVN 41:2024/BGTVT | B.4 | cosine=0.868850
+#5 | QCVN 41:2024/BGTVT | 47 | cosine=0.866928
+
+===== private_test_private_test_109 =====
+Câu hỏi:
+Khi gặp biển báo viền đỏ nền xanh kèm biển báo phụ như trong hình, phương tiện giao thông thực hiện hành động nào sau đây là hợp lệ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng vòng chéo màu trắng cắt ngang từ trên xuống dưới
+Ý nghĩa hoặc thông số: Cấm dừng xe (biểu tượng vòng chéo trên nền xanh thường dùng cho biển cấm dừng hoặc cấm đỗ tùy ngữ cảnh; ở đây kết hợp với biển phụ thời gian nên là cấm dừng trong khung giờ quy định)
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có chữ và số: '6.30 - 8.00' và '16.20 - 18.00'
+Ý nghĩa hoặc thông số: Chỉ rõ khung giờ áp dụng cho biển báo cấm dừng xe phía trên
+Example #1 | train_20 | cosine=0.849281
+Example #2 | train_203 | cosine=0.846467
+Example #3 | train_495 | cosine=0.846284
+Example #4 | train_222 | cosine=0.845368
+Example #5 | train_193 | cosine=0.843571
+#1 | QCVN 41:2024/BGTVT | 26 | cosine=0.849281
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.846284
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.846284
+#4 | QCVN 41:2024/BGTVT | 28 | cosine=0.845368
+#5 | QCVN 41:2024/BGTVT | C.24 | cosine=0.845368
+#6 | QCVN 41:2024/BGTVT | B.3 | cosine=0.843571
+
+===== private_test_private_test_110 =====
+Câu hỏi:
+Hành động nào sau đây là đúng khi tham gia giao thông trên đoạn đường có cột biển báo ở bên phải trong hình?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên (cấm xe tải trọng từ 2,5t)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải màu đen bị gạch chéo đỏ, chữ '2,5t' màu đen nằm trong biểu tượng.
+Ý nghĩa hoặc thông số: Cấm xe tải có trọng tải từ 2,5 tấn trở lên đi vào đoạn đường này.
+
+Đối tượng: Biển báo cấm - phía trên (cấm dừng đỗ)
+Đặc điểm: Hình tròn, viền đỏ, nền xanh dương, biểu tượng xe ô tô màu trắng bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm dừng, đỗ xe trên đoạn đường này.
+
+Đối tượng: Biển phụ - khung giờ cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, chữ đen ghi rõ '06:00 - 22:00'.
+Ý nghĩa hoặc thông số: Chỉ áp dụng trong khung giờ từ 6 giờ sáng đến 10 giờ tối.
+Example #1 | train_218 | cosine=0.894131
+Example #2 | train_412 | cosine=0.890048
+Example #3 | train_459 | cosine=0.873173
+Example #4 | train_501 | cosine=0.866174
+Example #5 | train_126 | cosine=0.863814
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.894131
+#2 | QCVN 41:2024/BGTVT | B.27 | cosine=0.894131
+#3 | QCVN 41:2024/BGTVT | F.5 | cosine=0.894131
+#4 | QCVN 41:2024/BGTVT | 24 | cosine=0.890048
+#5 | QCVN 41:2024/BGTVT | B.6 | cosine=0.890048
+#6 | QCVN 41:2024/BGTVT | B.25 | cosine=0.873173
+#7 | QCVN 41:2024/BGTVT | B.30 | cosine=0.873173
+
+===== private_test_private_test_111 =====
+Câu hỏi:
+Xe ô tô con đang lưu thông trên đường có biển báo nền xanh, chữ trắng kèm biển báo phụ ở bên phải trong ảnh chọn vị trí đỗ xe như thế nào cho phù hợp?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - nền xanh
+Đặc điểm: Hình chữ nhật, nền xanh, chữ trắng, có ký hiệu chữ 'P' lớn ở góc trên bên phải.
+Ý nghĩa hoặc thông số: Nơi đỗ xe (trong phạm vi vạch sơn).
+Example #1 | train_86 | cosine=0.862838
+Example #2 | train_166 | cosine=0.858422
+Example #3 | train_447 | cosine=0.844315
+Example #4 | train_446 | cosine=0.785706
+Example #5 | train_464 | cosine=0.785072
+#1 | QCVN 41:2024/BGTVT | 36 | cosine=0.862838
+#2 | QCVN 41:2024/BGTVT | E.8 | cosine=0.862838
+#3 | QCVN 41:2024/BGTVT | 41 | cosine=0.858422
+#4 | QCVN 41:2024/BGTVT | F.5 | cosine=0.858422
+#5 | QCVN 41:2024/BGTVT | 32 | cosine=0.785706
+#6 | QCVN 41:2024/BGTVT | D.2 | cosine=0.785706
+#7 | QCVN 41:2024/BGTVT | 22 | cosine=0.785072
+#8 | QCVN 41:2024/BGTVT | B.31 | cosine=0.785072
+
+===== private_test_private_test_112 =====
+Câu hỏi:
+Phương tiện nào sau đây đi đúng làn đường và tuân thủ tốc độ tối đa cho phép trên làn đường đó khi gặp biển báo nền xanh trong ảnh?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - làn 1 (ô tô)
+Đặc điểm: Biển hình chữ nhật, nền xanh, có 2 biểu tượng trắng: ô tô (trên) và xe buýt (dưới), kèm biển phụ hình tròn viền đỏ, nền trắng, chữ số '50' màu đen.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành riêng cho ô tô và xe buýt; tốc độ tối đa cho phép là 50 km/h.
+
+Đối tượng: Biển báo chỉ dẫn - làn 2 (xe buýt)
+Đặc điểm: Biển hình chữ nhật, nền xanh, có 2 biểu tượng trắng: ô tô (trên) và xe buýt (dưới), kèm biển phụ hình tròn viền đỏ, nền trắng, chữ số '50' màu đen.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành riêng cho ô tô và xe buýt; tốc độ tối đa cho phép là 50 km/h.
+
+Đối tượng: Biển báo chỉ dẫn - làn 3 (xe máy)
+Đặc điểm: Biển hình chữ nhật, nền xanh, có 2 biểu tượng trắng: xe máy (trên) và xe tải (dưới), kèm biển phụ hình tròn viền đỏ, nền trắng, chữ số '40' màu đen.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành riêng cho xe máy và xe tải; tốc độ tối đa cho phép là 40 km/h.
+
+Đối tượng: Biển báo chỉ dẫn - làn 4 (xe tải)
+Đặc điểm: Biển hình chữ nhật, nền xanh, có 2 biểu tượng trắng: xe máy (trên) và xe tải (dưới), kèm biển phụ hình tròn viền đỏ, nền trắng, chữ số '40' màu đen.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành riêng cho xe máy và xe tải; tốc độ tối đa cho phép là 40 km/h.
+
+Đối tượng: Xe buýt màu xanh
+Đặc điểm: Xe buýt màu xanh, đang di chuyển trên làn đường bên trái của ảnh, gần biển báo.
+Ý nghĩa hoặc thông số: Phương tiện đang di chuyển trên làn đường dành cho ô tô và xe buýt.
+Example #1 | train_429 | cosine=0.892220
+Example #2 | train_33 | cosine=0.846483
+Example #3 | train_430 | cosine=0.836686
+Example #4 | train_433 | cosine=0.833609
+Example #5 | train_345 | cosine=0.827722
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.892220
+#2 | QCVN 41:2024/BGTVT | B.27c | cosine=0.892220
+#3 | QCVN 41:2024/BGTVT | 28 | cosine=0.846483
+#4 | QCVN 41:2024/BGTVT | 41 | cosine=0.827722
+#5 | QCVN 41:2024/BGTVT | B.25 | cosine=0.827722
+#6 | QCVN 41:2024/BGTVT | B.27 | cosine=0.827722
+#7 | QCVN 41:2024/BGTVT | B.30 | cosine=0.827722
+#8 | QCVN 41:2024/BGTVT | F.1 | cosine=0.827722
+
+===== private_test_private_test_113 =====
+Câu hỏi:
+Trong các loại phương tiện sau, loại nào không bị cấm lưu thông trên đoạn đường có biển báo viền đỏ, nền trắng kèm biển báo phụ ở bên trái trong hình?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải và xe khách bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm xe tải và xe khách lưu thông.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền xanh dương, chữ trắng, biểu tượng xe tải và xe khách.
+Ý nghĩa hoặc thông số: Chỉ định nơi đỗ xe (trong phạm vi vạch sơn).
+
+Đối tượng: Biển phụ - bên phải biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, chữ đen, biểu tượng xe máy và xe đạp.
+Ý nghĩa hoặc thông số: Chỉ định đường dành cho xe máy và xe đạp.
+Example #1 | train_448 | cosine=0.890595
+Example #2 | train_459 | cosine=0.880820
+Example #3 | train_494 | cosine=0.878588
+Example #4 | train_16 | cosine=0.876981
+Example #5 | train_129 | cosine=0.874796
+#1 | QCVN 41:2024/BGTVT | 24 | cosine=0.890595
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.880820
+#3 | QCVN 41:2024/BGTVT | B.25 | cosine=0.880820
+#4 | QCVN 41:2024/BGTVT | B.30 | cosine=0.880820
+#5 | QCVN 41:2024/BGTVT | 26 | cosine=0.876981
+#6 | QCVN 41:2024/BGTVT | B.10 | cosine=0.874796
+
+===== private_test_private_test_114 =====
+Câu hỏi:
+Hành vi nào sau đây là hành vi vi phạm trên đoạn đường có cột biển báo nằm bên phải trong hình?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe ô tô và xe máy bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm xe cơ giới và xe máy đi vào trong giờ quy định.
+
+Đối tượng: Biển phụ - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có chữ số '18:00-23:00' màu đen.
+Ý nghĩa hoặc thông số: Chỉ thời gian áp dụng của biển báo cấm phía trên.
+
+Đối tượng: Biển báo cấm - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền xanh dương, có hai vạch trắng song song bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm hai làn xe đi ngược chiều.
+Example #1 | train_503 | cosine=0.879646
+Example #2 | train_122 | cosine=0.872154
+Example #3 | train_280 | cosine=0.871336
+Example #4 | train_502 | cosine=0.870879
+Example #5 | train_193 | cosine=0.870293
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.879646
+#2 | QCVN 41:2024/BGTVT | B.7 | cosine=0.879646
+#3 | QCVN 41:2024/BGTVT | B.25 | cosine=0.872154
+#4 | QCVN 41:2024/BGTVT | B.26 | cosine=0.872154
+#5 | QCVN 41:2024/BGTVT | B.5 | cosine=0.871336
+#6 | QCVN 41:2024/BGTVT | B.3 | cosine=0.870293
+
+===== private_test_private_test_115 =====
+Câu hỏi:
+Khi gặp các biển báo có dạng hình tròn viền đỏ trong hình, trong những hành động sau đây hành động nào là hợp lệ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên cùng
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng là hình chiếc xe máy bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm xe máy đi vào
+
+Đối tượng: Biển báo cấm - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng là hình người đi bộ bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào
+
+Đối tượng: Biển báo cấm - phía dưới cùng
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng là hình chiếc xe tải bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm xe tải đi vào
+Example #1 | train_120 | cosine=0.902355
+Example #2 | train_459 | cosine=0.893732
+Example #3 | train_280 | cosine=0.890142
+Example #4 | train_503 | cosine=0.888471
+Example #5 | train_437 | cosine=0.882165
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.902355
+#2 | QCVN 41:2024/BGTVT | B.10 | cosine=0.902355
+#3 | QCVN 41:2024/BGTVT | B.11 | cosine=0.902355
+#4 | QCVN 41:2024/BGTVT | B.4 | cosine=0.902355
+#5 | QCVN 41:2024/BGTVT | B.25 | cosine=0.893732
+#6 | QCVN 41:2024/BGTVT | B.30 | cosine=0.893732
+#7 | QCVN 41:2024/BGTVT | B.5 | cosine=0.890142
+#8 | QCVN 41:2024/BGTVT | B.7 | cosine=0.888471
+#9 | QCVN 41:2024/BGTVT | B.23 | cosine=0.882165
+#10 | QCVN 41:2024/BGTVT | B.6 | cosine=0.882165
+
+===== private_test_private_test_116 =====
+Câu hỏi:
+Với biển báo có nền xanh lá treo trên giá long môn trong ảnh trên đường, vận tốc của phương tiện giao thông trên đường nào sau đây là hợp lệ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo tên đường - treo trên giá long môn, phía trên
+Đặc điểm: Hình chữ nhật, nền xanh lá cây, viền trắng. Có chữ 'TRUNG LƯƠNG', 'MỸ THUẬN', 'EXPRESSWAY'. Có biển phụ hình chữ nhật màu cam với chữ 'CT01' ở góc trái trên. Có biểu tượng mũi tên chỉ hướng đi thẳng ở góc phải trên.
+Ý nghĩa hoặc thông số: Chỉ dẫn tên đường cao tốc Trung Lương - Mỹ Thuận và số hiệu tuyến CT01.
+
+Đối tượng: Biển báo giới hạn tốc độ tối đa - treo trên giá long môn, ngay bên dưới biển tên đường
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '90' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 90 km/h.
+
+Đối tượng: Biển báo chỉ dẫn tốc độ tối thiểu - treo trên giá long môn, ngay bên dưới biển tên đường, bên phải biển giới hạn tốc độ
+Đặc điểm: Hình chữ nhật, nền xanh dương, có số '60' màu trắng ở giữa.
+Ý nghĩa hoặc thông số: Chỉ dẫn tốc độ tối thiểu là 60 km/h.
+Example #1 | train_333 | cosine=0.813214
+Example #2 | train_326 | cosine=0.807980
+Example #3 | train_340 | cosine=0.807967
+Example #4 | train_352 | cosine=0.807510
+Example #5 | train_26 | cosine=0.802254
+#1 | QCVN 41:2024/BGTVT | 45 | cosine=0.813214
+#2 | QCVN 41:2024/BGTVT | P.3 | cosine=0.813214
+#3 | QCVN 41:2024/BGTVT | 47 | cosine=0.807980
+#4 | QCVN 41:2024/BGTVT | 22 | cosine=0.807510
+#5 | QCVN 41:2024/BGTVT | 32 | cosine=0.807510
+#6 | QCVN 41:2024/BGTVT | 46 | cosine=0.807510
+#7 | QCVN 41:2024/BGTVT | B.27 | cosine=0.807510
+#8 | QCVN 41:2024/BGTVT | D.6 | cosine=0.807510
+#9 | QCVN 41:2024/BGTVT | 21 | cosine=0.802254
+
+===== private_test_private_test_117 =====
+Câu hỏi:
+Các biển báo có dạng hình tròn viền đỏ, nền trắng và có số trong hình cho ta biết điều gì đúng trong các điều sau?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo giới hạn tốc độ tối đa - biển số 1 (trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '80' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 80 km/h
+
+Đối tượng: Biển báo giới hạn tốc độ tối đa - biển số 2 (giữa)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '60' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 60 km/h
+
+Đối tượng: Biển báo cấm quay đầu - biển số 3 (phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng mũi tên cong màu đỏ (quay đầu) bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm quay đầu
+
+Đối tượng: Biển báo cấm quay đầu - biển số 4 (dưới biển số 3)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng mũi tên cong màu đỏ (quay đầu) bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm quay đầu
+
+Đối tượng: Biển báo cấm quay đầu - biển số 5 (dưới biển số 4)
+Đặc điểm: Hình chữ nhật đứng, nền đỏ, chữ 'CẤM' màu trắng.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung ý nghĩa cấm cho biển báo trên
+Example #1 | train_418 | cosine=0.889576
+Example #2 | train_345 | cosine=0.887237
+Example #3 | train_432 | cosine=0.885711
+Example #4 | train_205 | cosine=0.881273
+Example #5 | train_426 | cosine=0.880536
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.889576
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.889576
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.889576
+#4 | QCVN 41:2024/BGTVT | D.6 | cosine=0.889576
+#5 | QCVN 41:2024/BGTVT | 41 | cosine=0.887237
+#6 | QCVN 41:2024/BGTVT | B.25 | cosine=0.887237
+#7 | QCVN 41:2024/BGTVT | B.30 | cosine=0.887237
+#8 | QCVN 41:2024/BGTVT | F.1 | cosine=0.887237
+#9 | QCVN 41:2024/BGTVT | 24 | cosine=0.880536
+
+===== private_test_private_test_118 =====
+Câu hỏi:
+Điều nào sau đây là sai khi nói về những điểm cần lưu ý về các biển báo có nền xanh trong ảnh?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hướng dẫn - CT.03 (trái)
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng, chữ và số màu trắng. Trên biển có ô vàng chữ 'CT.03', dòng chữ 'HÀ NỘI' và mũi tên hướng xuống dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn điểm đến 'HÀ NỘI' qua điểm kiểm soát 'CT.03', xe đi theo hướng mũi tên xuống.
+
+Đối tượng: Biển báo hướng dẫn - CT.03 (giữa)
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng, chữ và số màu trắng. Trên biển có ô vàng chữ 'CT.03', dòng chữ 'HÀ NỘI' và mũi tên hướng xuống dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn điểm đến 'HÀ NỘI' qua điểm kiểm soát 'CT.03', xe đi theo hướng mũi tên xuống.
+
+Đối tượng: Biển báo hướng dẫn - CT.07 (phải)
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng, chữ và số màu trắng. Trên biển có ô vàng chữ 'CT.07', dòng chữ 'THÁI NGUYÊN' và mũi tên hướng chéo lên phải.
+Ý nghĩa hoặc thông số: Chỉ dẫn điểm đến 'THÁI NGUYÊN' qua điểm kiểm soát 'CT.07', xe đi theo hướng mũi tên chéo phải.
+Example #1 | train_435 | cosine=0.817026
+Example #2 | train_451 | cosine=0.812381
+Example #3 | train_460 | cosine=0.811958
+Example #4 | train_61 | cosine=0.807656
+Example #5 | train_29 | cosine=0.803656
+#1 | QCVN 41:2024/BGTVT | 36 | cosine=0.817026
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.812381
+#3 | QCVN 41:2024/BGTVT | D.13 | cosine=0.812381
+#4 | QCVN 41:2024/BGTVT | D.14 | cosine=0.811958
+
+===== private_test_private_test_119 =====
+Câu hỏi:
+Xe ô tô tải có chiều cao xe là 4m di chuyển với vận tốc 40 km/h được phép vào đường hầm có các biển báo viền đỏ, nền trắng như trong hình. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '50' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 50 km/h.
+
+Đối tượng: Biển báo cấm - bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, số '4,5m' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn chiều cao tối đa 4,5m.
+Example #1 | train_164 | cosine=0.886970
+Example #2 | train_423 | cosine=0.856922
+Example #3 | train_256 | cosine=0.852783
+Example #4 | train_242 | cosine=0.838854
+Example #5 | train_388 | cosine=0.838083
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.886970
+#2 | QCVN 41:2024/BGTVT | B.17 | cosine=0.886970
+#3 | QCVN 41:2024/BGTVT | 32 | cosine=0.856922
+#4 | QCVN 41:2024/BGTVT | D.6 | cosine=0.856922
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.852783
+#6 | QCVN 41:2024/BGTVT | F.5 | cosine=0.852783
+
+===== private_test_private_test_120 =====
+Câu hỏi:
+Xe ô tô con di chuyển vào nút giao của đường có biển báo viền đỏ nền trắng kèm biển báo phụ như trong hình không được phép rẽ trái hay rẽ phải vào lúc 7 giờ sáng. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm rẽ trái - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ trái bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ trái vào thời gian quy định trên biển phụ.
+
+Đối tượng: Biển báo cấm rẽ phải - ngay bên dưới
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng mũi tên đen chỉ hướng rẽ phải bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm rẽ phải vào thời gian quy định trên biển phụ.
+
+Đối tượng: Biển phụ chỉ thời gian - ngay bên dưới
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, chữ '6:00 - 22:00' màu đen.
+Ý nghĩa hoặc thông số: Thời gian áp dụng cho các biển cấm trên.
+Example #1 | train_463 | cosine=0.932876
+Example #2 | train_408 | cosine=0.913217
+Example #3 | train_203 | cosine=0.871267
+Example #4 | train_192 | cosine=0.859562
+Example #5 | train_181 | cosine=0.856555
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.932876
+#2 | QCVN 41:2024/BGTVT | B.3 | cosine=0.932876
+#3 | QCVN 41:2024/BGTVT | 41 | cosine=0.913217
+#4 | QCVN 41:2024/BGTVT | B.37 | cosine=0.913217
+#5 | QCVN 41:2024/BGTVT | F.10 | cosine=0.913217
+#6 | QCVN 41:2024/BGTVT | F.5 | cosine=0.913217
+#7 | QCVN 41:2024/BGTVT | F.11 | cosine=0.859562
+
+===== private_test_private_test_121 =====
+Câu hỏi:
+Trên đoạn đường có biển báo viền đỏ, nền trắng ở trên cùng trong hình, xe ô tô tải được phép vượt xe máy 2 bánh và xe gắn máy cũng như xe ô tô con. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên cùng
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình chiếc xe tải.
+Ý nghĩa hoặc thông số: Cấm xe tải đi vào đường này.
+
+Đối tượng: Biển báo cấm - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng trắng là hình chiếc xe máy đang di chuyển theo chiều kim đồng hồ.
+Ý nghĩa hoặc thông số: Cấm xe máy đi vào đường này.
+
+Đối tượng: Biển báo cấm - bên phải
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình chiếc xe tải với số '2,5t' bên cạnh.
+Ý nghĩa hoặc thông số: Cấm xe tải có trọng tải từ 2,5 tấn trở lên đi vào đường này.
+
+Đối tượng: Biển phụ - ghi thời gian
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có biểu tượng xe tải bên trái và các dòng chữ ghi thời gian bên phải.
+Ý nghĩa hoặc thông số: Thời gian cấm xe tải đi vào đường này là: 06:30 - 08:00, 11:00 - 13:00, 16:30 - 18:00.
+Example #1 | train_133 | cosine=0.897481
+Example #2 | train_183 | cosine=0.884482
+Example #3 | train_256 | cosine=0.867408
+Example #4 | train_410 | cosine=0.865175
+Example #5 | train_323 | cosine=0.860482
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.897481
+#2 | QCVN 41:2024/BGTVT | B.25 | cosine=0.897481
+#3 | QCVN 41:2024/BGTVT | 41 | cosine=0.884482
+#4 | QCVN 41:2024/BGTVT | F.10 | cosine=0.884482
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.867408
+#6 | QCVN 41:2024/BGTVT | F.5 | cosine=0.867408
+#7 | QCVN 41:2024/BGTVT | B.26 | cosine=0.865175
+#8 | QCVN 41:2024/BGTVT | B.7 | cosine=0.860482
+
+===== private_test_private_test_122 =====
+Câu hỏi:
+Trên đoạn đường có các biển báo nền xanh quy định làn đường được sắp xếp như trong hình, xe ô tô tải chỉ được phép di chuyển ở làn đường chính giữa. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - làn ô tô tải (trái nhất)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng. Có biểu tượng mũi tên hướng lên trên và hình vẽ hai chiếc ô tô (một lớn, một nhỏ) xếp chồng lên nhau.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho ô tô tải và ô tô khác (không phải xe máy, xe đạp).
+
+Đối tượng: Biển báo chỉ dẫn - làn ô tô tải (giữa)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng. Có biểu tượng mũi tên hướng lên trên và hình vẽ một chiếc xe tải.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho ô tô tải.
+
+Đối tượng: Biển báo chỉ dẫn - làn xe máy và xe đạp (phải)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng. Có biểu tượng mũi tên hướng lên trên và hình vẽ một chiếc xe máy và một chiếc xe đạp xếp chồng lên nhau.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho xe máy và xe đạp.
+Example #1 | train_39 | cosine=0.890189
+Example #2 | train_433 | cosine=0.870703
+Example #3 | train_285 | cosine=0.861915
+Example #4 | train_149 | cosine=0.858775
+Example #5 | train_460 | cosine=0.858422
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.890189
+#2 | QCVN 41:2024/BGTVT | 22 | cosine=0.870703
+#3 | QCVN 41:2024/BGTVT | B.27c | cosine=0.870703
+#4 | QCVN 41:2024/BGTVT | 32 | cosine=0.861915
+#5 | QCVN 41:2024/BGTVT | D.16 | cosine=0.861915
+#6 | QCVN 41:2024/BGTVT | D.14 | cosine=0.858422
+
+===== private_test_private_test_123 =====
+Câu hỏi:
+Xe ô tô tải có trọng tải xe là 3 tấn được phép di chuyển vào đoạn đường có biển báo viền đỏ, nền trắng kèm biển phụ ở trong hình vào lúc 7 giờ sáng. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe tải màu đen với dòng chữ '3,5T' bên trong.
+Ý nghĩa hoặc thông số: Cấm xe tải có trọng tải từ 3,5 tấn trở lên đi vào đoạn đường này.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, ghi các khung giờ: '6:00 - 8:00', '11:00 - 13:00', '16:00 - 18:00'.
+Ý nghĩa hoặc thông số: Biển báo cấm chỉ có hiệu lực trong các khung giờ được ghi trên biển.
+Example #1 | train_255 | cosine=0.913465
+Example #2 | train_403 | cosine=0.889626
+Example #3 | train_411 | cosine=0.889264
+Example #4 | train_412 | cosine=0.881431
+Example #5 | train_126 | cosine=0.868696
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.913465
+#2 | QCVN 41:2024/BGTVT | B.6 | cosine=0.913465
+#3 | QCVN 41:2024/BGTVT | 41 | cosine=0.889626
+#4 | QCVN 41:2024/BGTVT | F.10 | cosine=0.889626
+#5 | QCVN 41:2024/BGTVT | F.5 | cosine=0.889264
+#6 | QCVN 41:2024/BGTVT | 24 | cosine=0.881431
+
+===== private_test_private_test_124 =====
+Câu hỏi:
+Dựa vào các biển báo hình chữ nhật có nền xanh trong hình ta có thể rút ra được xe máy chỉ được phép di chuyển ở làn trong cùng bên phải. Đúng hay sai?
+Example #1 | train_39 | cosine=0.798247
+Example #2 | train_9 | cosine=0.779293
+Example #3 | train_472 | cosine=0.775907
+Example #4 | train_10 | cosine=0.774212
+Example #5 | train_149 | cosine=0.772183
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.798247
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.779293
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.775907
+#4 | QCVN 41:2024/BGTVT | B.23 | cosine=0.775907
+#5 | QCVN 41:2024/BGTVT | D.16 | cosine=0.772183
+
+===== private_test_private_test_125 =====
+Câu hỏi:
+Trên đoạn đường có biển báo nền xanh như trong ảnh, xe lam được phép đi ở hai làn đường bên phỉ và tốc độ tối đa cho phép là 50 km/h. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn - làn xe ô tô (cột 1)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, có 2 biểu tượng trắng: ô tô (trên) và xe buýt (dưới), kèm biển phụ hình tròn viền đỏ, nền trắng, số '50' ở dưới cùng.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho ô tô và xe buýt; tốc độ tối đa 50 km/h.
+
+Đối tượng: Biển báo chỉ dẫn - làn xe ô tô (cột 2)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, có 2 biểu tượng trắng: ô tô (trên) và xe tải (dưới), kèm biển phụ hình tròn viền đỏ, nền trắng, số '50' ở dưới cùng.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho ô tô và xe tải; tốc độ tối đa 50 km/h.
+
+Đối tượng: Biển báo chỉ dẫn - làn xe máy (cột 3)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, có 2 biểu tượng trắng: xe máy (trên) và xe ba bánh (dưới), kèm biển phụ hình tròn viền đỏ, nền trắng, số '40' ở dưới cùng.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho xe máy và xe ba bánh; tốc độ tối đa 40 km/h.
+
+Đối tượng: Biển báo chỉ dẫn - làn xe tải (cột 4)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, có 2 biểu tượng trắng: xe tải (trên) và xe tải lớn (dưới), kèm biển phụ hình tròn viền đỏ, nền trắng, số '40' ở dưới cùng.
+Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho xe tải; tốc độ tối đa 40 km/h.
+Example #1 | train_485 | cosine=0.886744
+Example #2 | train_433 | cosine=0.877659
+Example #3 | train_423 | cosine=0.846478
+Example #4 | train_105 | cosine=0.845282
+Example #5 | train_217 | cosine=0.837410
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.886744
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.886744
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.886744
+#4 | QCVN 41:2024/BGTVT | D.6 | cosine=0.886744
+#5 | QCVN 41:2024/BGTVT | B.27c | cosine=0.877659
+#6 | QCVN 41:2024/BGTVT | 47 | cosine=0.845282
+#7 | QCVN 41:2024/BGTVT | P.3 | cosine=0.845282
+
+===== private_test_private_test_126 =====
+Câu hỏi:
+Trên đoạn đường có biển báo ghép ở góc phải bên dưới trong ảnh, xe ô tô con di chuyển ở làn đường ngoài cùng bên phải có thể di chuyển với tốc độ tối đa là 80 km/h. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo ghép - góc phải bên dưới
+Đặc điểm: Biển hình chữ nhật, nền xanh, chữ trắng; gồm 5 ô nhỏ, mỗi ô có số tốc độ (80, 80, 80, 50, 50) và biểu tượng xe tương ứng (xe ô tô con, xe tải nhỏ, xe buýt, xe khách, xe tải lớn)
+Ý nghĩa hoặc thông số: Chỉ dẫn tốc độ tối đa cho từng loại phương tiện: 80 km/h cho xe ô tô con, xe tải nhỏ, xe buýt; 50 km/h cho xe khách, xe tải lớn
+Example #1 | train_423 | cosine=0.871337
+Example #2 | train_257 | cosine=0.853124
+Example #3 | train_443 | cosine=0.852682
+Example #4 | train_318 | cosine=0.846884
+Example #5 | train_322 | cosine=0.846800
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.871337
+#2 | QCVN 41:2024/BGTVT | D.6 | cosine=0.871337
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.853124
+#4 | QCVN 41:2024/BGTVT | B.27 | cosine=0.853124
+#5 | QCVN 41:2024/BGTVT | D.14 | cosine=0.852682
+#6 | QCVN 41:2024/BGTVT | 47 | cosine=0.846884
+#7 | QCVN 41:2024/BGTVT | P.3 | cosine=0.846884
+
+===== private_test_private_test_127 =====
+Câu hỏi:
+Vào lúc 8 giờ ngày 2 tháng 9 năm 2025, xe ô tô con lưu thông trên đoạn đường có các biển báo như trong hình được phép rẽ trái. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng xe ô tô đang rẽ trái bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm xe ô tô rẽ trái.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, chữ đen. Nội dung: '6:00 - 9:00', '16:00 - 19:30', '(TRỪ NGÀY LỄ THỨ 7, CHỦ NẠT).'
+Ý nghĩa hoặc thông số: Quy định thời gian cấm xe ô tô rẽ trái: từ 6:00 đến 9:00 và từ 16:00 đến 19:30, trừ ngày lễ thứ 7 và chủ nhật.
+Example #1 | train_463 | cosine=0.944889
+Example #2 | train_408 | cosine=0.909428
+Example #3 | train_181 | cosine=0.856092
+Example #4 | train_182 | cosine=0.846649
+Example #5 | train_187 | cosine=0.846117
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.944889
+#2 | QCVN 41:2024/BGTVT | B.3 | cosine=0.944889
+#3 | QCVN 41:2024/BGTVT | 41 | cosine=0.909428
+#4 | QCVN 41:2024/BGTVT | B.37 | cosine=0.909428
+#5 | QCVN 41:2024/BGTVT | F.10 | cosine=0.909428
+#6 | QCVN 41:2024/BGTVT | F.5 | cosine=0.909428
+#7 | QCVN 41:2024/BGTVT | F.11 | cosine=0.846117
+
+===== private_test_private_test_128 =====
+Câu hỏi:
+Các phương tiện di chuyển trên đoạn đường có biển báo viền đỏ nền xanh như trong hình chỉ được phép dừng và đỗ xe vào những ngày lẻ. Đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm dừng đỗ xe - phía dưới
+Đặc điểm: Hình tròn, viền đỏ, nền xanh dương, có hai vạch trắng song song bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm dừng và đỗ xe.
+Example #1 | train_154 | cosine=0.915954
+Example #2 | train_497 | cosine=0.913987
+Example #3 | train_370 | cosine=0.913913
+Example #4 | train_134 | cosine=0.911648
+Example #5 | train_247 | cosine=0.910276
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.915954
+#2 | QCVN 41:2024/BGTVT | B.30 | cosine=0.915954
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.913987
+
+===== private_test_private_test_129 =====
+Câu hỏi:
+Khi điều khiển phương tiện giao thông gặp biển báo giao thông này người điều khiển cần làm gì để thể hiện văn hóa giao thông ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - phía trước bên phải
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình người đang đi bộ trên vạch kẻ ngang.
+Ý nghĩa hoặc thông số: Biển báo hiệu cảnh báo người đi bộ, yêu cầu người điều khiển phương tiện phải chú ý và nhường đường cho người đi bộ khi qua đường.
+Example #1 | train_510 | cosine=0.895599
+Example #2 | train_511 | cosine=0.891158
+Example #3 | train_214 | cosine=0.878266
+Example #4 | train_482 | cosine=0.872162
+Example #5 | train_341 | cosine=0.867419
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.895599
+#2 | QCVN 41:2024/BGTVT | C.24 | cosine=0.895599
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.872162
+#4 | QCVN 41:2024/BGTVT | B.27 | cosine=0.872162
+#5 | QCVN 41:2024/BGTVT | 6 | cosine=0.867419
+
+===== private_test_private_test_130 =====
+Câu hỏi:
+Khi tham gia giao thông, gặp biển báo này thì người điều khiển phương tiện xe tải sẽ bị vi phạm luật nếu thực hiện hành vi nào sau đây?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình vẽ xe tải có mũi tên chỉ chiều dài và ký hiệu '≥5m' bên cạnh.
+Ý nghĩa hoặc thông số: Cấm xe tải có chiều dài từ 5m trở lên đi vào.
+Example #1 | train_501 | cosine=0.941869
+Example #2 | train_459 | cosine=0.859164
+Example #3 | train_494 | cosine=0.836928
+Example #4 | train_448 | cosine=0.836766
+Example #5 | train_218 | cosine=0.836737
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.941869
+#2 | QCVN 41:2024/BGTVT | B.6 | cosine=0.941869
+#3 | QCVN 41:2024/BGTVT | B.25 | cosine=0.859164
+#4 | QCVN 41:2024/BGTVT | B.30 | cosine=0.859164
+#5 | QCVN 41:2024/BGTVT | 24 | cosine=0.836766
+#6 | QCVN 41:2024/BGTVT | B.27 | cosine=0.836737
+#7 | QCVN 41:2024/BGTVT | F.5 | cosine=0.836737
+
+===== private_test_private_test_131 =====
+Câu hỏi:
+Khi tham gia giao thông, gặp các biển báo này thì người điều khiển phương tiện tham gia giao thông muốn đi qua cầu trong các trường hợp sau trường hợp nào là đúng luật ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên cùng (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có một vạch ngang màu đỏ ở giữa.
+Ý nghĩa hoặc thông số: Cấm mọi phương tiện cơ giới đi vào.
+
+Đối tượng: Biển báo cấm - chiều cao (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '3,5m' và hình tam giác ngược màu đen ở giữa.
+Ý nghĩa hoặc thông số: Cấm phương tiện có chiều cao vượt quá 3,5m đi vào.
+
+Đối tượng: Biển báo cấm - tốc độ (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có chữ số '30' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 30 km/h.
+
+Đối tượng: Biển báo cấm - xe đạp (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình vẽ xe đạp màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào.
+
+Đối tượng: Biển báo cấm - người đi bộ (cột trái)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình vẽ người đi bộ màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm người đi bộ đi vào.
+
+Đối tượng: Biển báo cấm - rẽ trái (cột phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có mũi tên chỉ hướng rẽ trái bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm rẽ trái.
+
+Đối tượng: Biển báo cấm - xe buýt và xe tải (cột phải)
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có hình vẽ xe buýt và xe tải màu đen bị gạch chéo.
+Ý nghĩa hoặc thông số: Cấm xe buýt và xe tải đi vào.
+
+Đối tượng: Biển báo hiệu chữ (cột phải)
+Đặc điểm: Hình chữ nhật, nền đỏ, chữ viết màu trắng.
+Ý nghĩa hoặc thông số: CẤM CÁC LOẠI XE TẢI, XE KHÁCH
+Example #1 | train_508 | cosine=0.940293
+Example #2 | train_509 | cosine=0.912674
+Example #3 | train_467 | cosine=0.909875
+Example #4 | train_328 | cosine=0.885758
+Example #5 | train_241 | cosine=0.882806
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.940293
+#2 | QCVN 41:2024/BGTVT | B.10 | cosine=0.940293
+#3 | QCVN 41:2024/BGTVT | B.12 | cosine=0.940293
+#4 | QCVN 41:2024/BGTVT | B.7 | cosine=0.940293
+#5 | QCVN 41:2024/BGTVT | 28 | cosine=0.909875
+#6 | QCVN 41:2024/BGTVT | B.15 | cosine=0.909875
+#7 | QCVN 41:2024/BGTVT | B.24 | cosine=0.909875
+#8 | QCVN 41:2024/BGTVT | C.45 | cosine=0.909875
+#9 | QCVN 41:2024/BGTVT | B.4 | cosine=0.885758
+#10 | QCVN 41:2024/BGTVT | B.6 | cosine=0.882806
+
+===== private_test_private_test_132 =====
+Câu hỏi:
+Phạm vi tốc độ cho phép khi tham gia trên đoạn đường cao tốc này là bao nhiêu ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '100' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa là 100 km/h.
+
+Đối tượng: Biển báo cấm - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '60' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối thiểu là 60 km/h.
+Example #1 | train_60 | cosine=0.903973
+Example #2 | train_79 | cosine=0.894783
+Example #3 | train_26 | cosine=0.891999
+Example #4 | train_391 | cosine=0.891484
+Example #5 | train_405 | cosine=0.884902
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.903973
+#2 | QCVN 41:2024/BGTVT | B.27 | cosine=0.903973
+#3 | QCVN 41:2024/BGTVT | 21 | cosine=0.891999
+#4 | QCVN 41:2024/BGTVT | 47 | cosine=0.884902
+
+===== private_test_private_test_133 =====
+Câu hỏi:
+Khi lưu thông trên đoạn đường này, 3 làn đường được đánh dấu từ phải sang trái theo thứ tự làn đường thứ 1 là bên phải trong cùng, làn đường thứ 2 là làn đường giữa, làn đường thứ 3 là làn đường bên trái đường làn thứ 2. Khi người điều khiển xe ô tô muốn đi chuyển từ làn đường thứ 2 đang chạy với tốc độ 70km/h sang làn thứ 1 thì cần phải thực hiện như thế nào ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn làn đường - làn 1 (phía trái nhất)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng. Có biểu tượng mũi tên hướng lên trên và hình xe ô tô bên dưới.
+Ý nghĩa hoặc thông số: Chỉ dẫn cho xe ô tô đi thẳng trong làn đường này.
+
+Đối tượng: Biển báo cấm tốc độ - làn 1
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '80' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 80 km/h.
+
+Đối tượng: Biển báo chỉ dẫn làn đường - làn 2 (làn giữa)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng. Có biểu tượng hình xe ô tô.
+Ý nghĩa hoặc thông số: Chỉ dẫn cho xe ô tô đi trong làn đường này.
+
+Đối tượng: Biển báo cấm tốc độ - làn 2
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '80' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 80 km/h.
+
+Đối tượng: Biển báo chỉ dẫn làn đường - làn 3 (phía phải)
+Đặc điểm: Biển hình chữ nhật đứng, nền xanh, viền trắng. Có biểu tượng hình xe ô tô.
+Ý nghĩa hoặc thông số: Chỉ dẫn cho xe ô tô đi trong làn đường này.
+
+Đối tượng: Biển báo cấm tốc độ - làn 3
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '60' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 60 km/h.
+Example #1 | train_485 | cosine=0.882412
+Example #2 | train_217 | cosine=0.875663
+Example #3 | train_516 | cosine=0.856322
+Example #4 | train_396 | cosine=0.848451
+Example #5 | train_489 | cosine=0.848013
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.882412
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.882412
+#3 | QCVN 41:2024/BGTVT | B.27 | cosine=0.882412
+#4 | QCVN 41:2024/BGTVT | D.6 | cosine=0.882412
+#5 | QCVN 41:2024/BGTVT | D.16 | cosine=0.856322
+#6 | QCVN 41:2024/BGTVT | 46 | cosine=0.848451
+#7 | QCVN 41:2024/BGTVT | 45 | cosine=0.848013
+#8 | QCVN 41:2024/BGTVT | 47 | cosine=0.848013
+
+===== private_test_private_test_134 =====
+Câu hỏi:
+Khi tham gia giao thông trên tuyến đường cao tốc, gặp biển báo hiệu này người điều khiển phương tiện xe được phép chạy với tốc độ cho phép là bao nhiêu km/h thì được coi là không vi phạm luật ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu tốc độ - phía dưới
+Đặc điểm: Biển hình chữ nhật, nền xanh lá cây, có hai vòng tròn: vòng tròn đỏ viền trắng ghi số '100' (tốc độ tối đa), vòng tròn xanh dương ghi số '60' (tốc độ tối thiểu).
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 100 km/h, tốc độ tối thiểu là 60 km/h.
+Example #1 | train_79 | cosine=0.896739
+Example #2 | train_391 | cosine=0.894736
+Example #3 | train_60 | cosine=0.894241
+Example #4 | train_117 | cosine=0.891744
+Example #5 | train_26 | cosine=0.883437
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.896739
+#2 | QCVN 41:2024/BGTVT | B.27 | cosine=0.896739
+#3 | QCVN 41:2024/BGTVT | C.27 | cosine=0.891744
+#4 | QCVN 41:2024/BGTVT | 21 | cosine=0.883437
+
+===== private_test_private_test_135 =====
+Câu hỏi:
+Trong hình trên có bao nhiêu phương tiện xe ô tô tham gia giao thông vi phạm luật giao thông đường bộ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng ô tô màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm ô tô đi vào
+
+Đối tượng: Xe ô tô màu đen - phía dưới
+Đặc điểm: Xe ô tô màu đen, biển số 30A 285.18, đang di chuyển trên đường.
+Ý nghĩa hoặc thông số: Phương tiện tham gia giao thông
+Example #1 | train_502 | cosine=0.869091
+Example #2 | train_468 | cosine=0.847466
+Example #3 | train_280 | cosine=0.839549
+Example #4 | train_503 | cosine=0.836385
+Example #5 | train_17 | cosine=0.826494
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.869091
+#2 | QCVN 41:2024/BGTVT | B.7 | cosine=0.869091
+#3 | QCVN 41:2024/BGTVT | B.2 | cosine=0.847466
+#4 | QCVN 41:2024/BGTVT | B.5 | cosine=0.839549
+
+===== private_test_private_test_136 =====
+Câu hỏi:
+Khi tham gia giao thông, nếu gặp biển báo cấm như trong hình, hành động nào sau đây được coi là vi phạm luật?
+Example #1 | train_200 | cosine=0.770005
+Example #2 | train_498 | cosine=0.751254
+Example #3 | train_472 | cosine=0.742980
+Example #4 | train_468 | cosine=0.730539
+Example #5 | train_471 | cosine=0.727148
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.770005
+#2 | QCVN 41:2024/BGTVT | B.2 | cosine=0.770005
+#3 | QCVN 41:2024/BGTVT | B.31 | cosine=0.751254
+#4 | QCVN 41:2024/BGTVT | B.23 | cosine=0.742980
+
+===== private_test_private_test_137 =====
+Câu hỏi:
+Khi lưu thông trên tuyến đường có những biển báo như thế này, người tham gia giao thông trong mọi khung giờ trong ngày từ thứ 2 đến chủ nhật không được phép làm gì ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải đang di chuyển theo chiều ngang.
+Ý nghĩa hoặc thông số: Cấm xe tải đi vào hoặc lưu thông trên tuyến đường này.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm xe tải
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, có dòng chữ: 'CẤM XE 3 TRỤC' và các dòng nhỏ hơn không đọc rõ.
+Ý nghĩa hoặc thông số: Biển phụ bổ sung quy định cấm đối với xe có 3 trục.
+
+Đối tượng: Biển báo cấm dừng đỗ - bên phải biển cấm xe tải
+Đặc điểm: Hình tròn, viền đỏ, nền xanh, biểu tượng đỏ là hình chữ X chéo qua hình tròn.
+Ý nghĩa hoặc thông số: Cấm dừng đỗ xe trên tuyến đường này.
+Example #1 | train_494 | cosine=0.905939
+Example #2 | train_16 | cosine=0.850451
+Example #3 | train_459 | cosine=0.843604
+Example #4 | train_180 | cosine=0.840784
+Example #5 | train_193 | cosine=0.839969
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.905939
+#2 | QCVN 41:2024/BGTVT | B.30 | cosine=0.905939
+#3 | QCVN 41:2024/BGTVT | 26 | cosine=0.850451
+#4 | QCVN 41:2024/BGTVT | B.25 | cosine=0.843604
+#5 | QCVN 41:2024/BGTVT | 11 | cosine=0.840784
+#6 | QCVN 41:2024/BGTVT | B.3 | cosine=0.840784
+
+===== private_test_private_test_138 =====
+Câu hỏi:
+Khi điều khiển phương tiện giao thông gặp biển báo giao thông này người điều khiển cần làm gì để thể hiện văn hóa giao thông ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cảnh báo - trung tâm ảnh
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng đen hình hai người đang chạy (một người lớn và một người nhỏ hơn, có thể là trẻ em).
+Ý nghĩa hoặc thông số: Cảnh báo người điều khiển phương tiện có thể gặp phải trẻ em hoặc người đi bộ trên đường, cần giảm tốc độ và chú ý quan sát.
+Example #1 | train_513 | cosine=0.910594
+Example #2 | train_482 | cosine=0.880511
+Example #3 | train_214 | cosine=0.866125
+Example #4 | train_344 | cosine=0.862458
+Example #5 | train_510 | cosine=0.858194
+#1 | QCVN 41:2024/BGTVT | 28 | cosine=0.910594
+#2 | QCVN 41:2024/BGTVT | C.25 | cosine=0.910594
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.880511
+#4 | QCVN 41:2024/BGTVT | B.27 | cosine=0.880511
+#5 | QCVN 41:2024/BGTVT | C.24 | cosine=0.866125
+#6 | QCVN 41:2024/BGTVT | C.5 | cosine=0.862458
+
+===== private_test_private_test_139 =====
+Câu hỏi:
+Khi tham gia giao thông trên đoạn đường này người điều khiển phương tiện ô tô được phép chạy tất cả làn đường là đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo chỉ dẫn làn đường - phía trên bên trái
+Đặc điểm: Biển hình chữ nhật, nền xanh, viền trắng. Có 3 ô ngăn cách bằng vạch trắng đứt dọc. Mỗi ô có biểu tượng hình chiếc xe ô tô màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn các làn đường dành cho xe ô tô.
+
+Đối tượng: Biển báo chỉ dẫn làn đường - phía trên bên phải
+Đặc điểm: Biển hình chữ nhật, nền xanh, viền trắng. Chia thành 3 ô. Ô trái có biểu tượng xe ô tô. Ô giữa và phải có biểu tượng xe máy và dòng chữ 'XE 2 BÁNH' màu trắng.
+Ý nghĩa hoặc thông số: Chỉ dẫn các làn đường dành cho xe ô tô và xe hai bánh.
+
+Đối tượng: Biển báo cấm - phía dưới cột biển trên
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, biểu tượng xe máy màu đen bị gạch chéo đỏ.
+Ý nghĩa hoặc thông số: Cấm xe máy đi vào.
+
+Đối tượng: Biển báo cấm dừng đỗ - phía dưới cột biển trên
+Đặc điểm: Biển hình tròn, viền đỏ, nền xanh, có dấu X màu đỏ.
+Ý nghĩa hoặc thông số: Cấm dừng đỗ xe.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm xe máy
+Đặc điểm: Biển hình chữ nhật, nền đỏ, chữ trắng. Nội dung: 'CẤM XE 02 BÁNH'.
+Ý nghĩa hoặc thông số: Giải thích ý nghĩa biển cấm xe máy.
+
+Đối tượng: Biển báo hiệu tốc độ - phía dưới cột biển trên
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '60' màu đen.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 60 km/h.
+
+Đối tượng: Biển báo hiệu tốc độ - phía dưới cột biển trên
+Đặc điểm: Biển hình tròn, viền đỏ, nền trắng, số '80' màu đen.
+Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 80 km/h.
+
+Đối tượng: Biển báo hiệu phương tiện - phía dưới cột biển trên
+Đặc điểm: Biển hình chữ nhật, nền trắng, viền đen. Có biểu tượng xe tải và xe buýt màu đen.
+Ý nghĩa hoặc thông số: Chỉ dẫn hoặc quy định về phương tiện tải trọng lớn (xe tải, xe buýt).
+
+Đối tượng: Biển báo hiệu phương tiện - phía dưới cột biển trên
+Đặc điểm: Biển hình chữ nhật, nền trắng, viền đen. Có biểu tượng xe ô tô và xe buýt màu đen.
+Ý nghĩa hoặc thông số: Chỉ dẫn hoặc quy định về phương tiện ô tô và xe buýt.
+Example #1 | train_516 | cosine=0.899485
+Example #2 | train_433 | cosine=0.885649
+Example #3 | train_485 | cosine=0.882915
+Example #4 | train_149 | cosine=0.874392
+Example #5 | train_39 | cosine=0.864644
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.899485
+#2 | QCVN 41:2024/BGTVT | D.16 | cosine=0.899485
+#3 | QCVN 41:2024/BGTVT | 22 | cosine=0.885649
+#4 | QCVN 41:2024/BGTVT | B.27c | cosine=0.885649
+#5 | QCVN 41:2024/BGTVT | B.27 | cosine=0.882915
+#6 | QCVN 41:2024/BGTVT | D.6 | cosine=0.882915
+#7 | QCVN 41:2024/BGTVT | 28 | cosine=0.864644
+
+===== private_test_private_test_140 =====
+Câu hỏi:
+Biển báo giao thông này là cấm người đi bộ là đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo - trung tâm
+Đặc điểm: Hình tròn, nền màu xanh dương, biểu tượng người đi bộ màu trắng ở giữa, không có viền hoặc chữ viết nào khác.
+Ý nghĩa hoặc thông số: Biển báo này thường dùng để chỉ khu vực dành riêng cho người đi bộ hoặc cảnh báo về sự hiện diện của người đi bộ; ý nghĩa cụ thể chưa xác định chắc chắn từ hình ảnh đơn thuần.
+Example #1 | train_368 | cosine=0.916602
+Example #2 | train_48 | cosine=0.909574
+Example #3 | train_246 | cosine=0.899435
+Example #4 | train_223 | cosine=0.892887
+Example #5 | train_519 | cosine=0.891537
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.916602
+#2 | QCVN 41:2024/BGTVT | 28 | cosine=0.916602
+#3 | QCVN 41:2024/BGTVT | B.12 | cosine=0.916602
+#4 | QCVN 41:2024/BGTVT | C.24 | cosine=0.916602
+#5 | QCVN 41:2024/BGTVT | 11 | cosine=0.909574
+#6 | QCVN 41:2024/BGTVT | 32 | cosine=0.892887
+#7 | QCVN 41:2024/BGTVT | D.5 | cosine=0.892887
+
+===== private_test_private_test_141 =====
+Câu hỏi:
+Khi gặp biển báo này người tham gia giao thông được chạy nhanh, khi gặp người đi bộ bóp còi để nhường đường là đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo hiệu cảnh báo người đi bộ - phía trước bên phải
+Đặc điểm: Hình tam giác đều, viền đỏ, nền vàng, biểu tượng người đi bộ màu đen ở giữa, không có chữ viết hoặc số nào trên biển.
+Ý nghĩa hoặc thông số: Biển báo hiệu cảnh báo người tham gia giao thông có thể gặp người đi bộ trên đường; người tham gia giao thông cần chú ý và sẵn sàng giảm tốc độ hoặc dừng lại để nhường đường cho người đi bộ.
+Example #1 | train_95 | cosine=0.866703
+Example #2 | train_512 | cosine=0.866447
+Example #3 | train_510 | cosine=0.861398
+Example #4 | train_511 | cosine=0.857899
+Example #5 | train_339 | cosine=0.857697
+#1 | QCVN 41:2024/BGTVT | 32 | cosine=0.866703
+#2 | QCVN 41:2024/BGTVT | D.5 | cosine=0.866703
+#3 | QCVN 41:2024/BGTVT | 28 | cosine=0.866447
+#4 | QCVN 41:2024/BGTVT | C.24 | cosine=0.866447
+#5 | QCVN 41:2024/BGTVT | C.6 | cosine=0.857697
+
+===== private_test_private_test_142 =====
+Câu hỏi:
+Khi tham gia giao thông, gặp biển báo này thì người điều khiển phương tiện xe tải trên 5 tấn không được phép đi vào đường này, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng đen là hình xe tải và ký hiệu '≥5t' bên trong.
+Ý nghĩa hoặc thông số: Cấm phương tiện có trọng tải từ 5 tấn trở lên đi vào đường này.
+
+Đối tượng: Biển phụ - ngay bên dưới biển cấm
+Đặc điểm: Hình chữ nhật, nền trắng, viền đen, nội dung ghi '≥5t' (phần chữ bị mờ nhưng có thể đọc được là '≥5t').
+Ý nghĩa hoặc thông số: Biển phụ bổ sung thông số trọng tải tối thiểu bị cấm là 5 tấn.
+Example #1 | train_501 | cosine=0.903668
+Example #2 | train_434 | cosine=0.874281
+Example #3 | train_403 | cosine=0.866124
+Example #4 | train_168 | cosine=0.863068
+Example #5 | train_251 | cosine=0.852250
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.903668
+#2 | QCVN 41:2024/BGTVT | B.6 | cosine=0.903668
+#3 | QCVN 41:2024/BGTVT | B.15 | cosine=0.874281
+#4 | QCVN 41:2024/BGTVT | 41 | cosine=0.866124
+#5 | QCVN 41:2024/BGTVT | F.10 | cosine=0.866124
+
+===== private_test_private_test_143 =====
+Câu hỏi:
+Khi tham gia giao thông gặp những biển báo này, người điều khiển xe có chiều cao hơn 3.5m qua cầu là vi phạm luật là đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - chiều cao xe (phía trên, thứ 2 từ trái)
+Đặc điểm: Biển tròn, viền đỏ, nền trắng, có hình chữ X màu đỏ, bên trong ghi số '3,5m'.
+Ý nghĩa hoặc thông số: Cấm các phương tiện có chiều cao vượt quá 3,5m đi qua.
+Example #1 | train_302 | cosine=0.860785
+Example #2 | train_49 | cosine=0.851299
+Example #3 | train_45 | cosine=0.841389
+Example #4 | train_508 | cosine=0.836882
+Example #5 | train_332 | cosine=0.836175
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.860785
+#2 | QCVN 41:2024/BGTVT | B.17 | cosine=0.860785
+#3 | QCVN 41:2024/BGTVT | 11 | cosine=0.851299
+#4 | QCVN 41:2024/BGTVT | B.18 | cosine=0.851299
+#5 | QCVN 41:2024/BGTVT | B.10 | cosine=0.836882
+#6 | QCVN 41:2024/BGTVT | B.12 | cosine=0.836882
+#7 | QCVN 41:2024/BGTVT | B.7 | cosine=0.836882
+#8 | QCVN 41:2024/BGTVT | 28 | cosine=0.836175
+
+===== private_test_private_test_144 =====
+Câu hỏi:
+Người điều khiển phương tiện giao thông khi lưu thông trên đoạn đường này nếu tốc độ vượt quá 100 km/h là vi phạm luật, đúng hay sai?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - giữa
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có số '100' màu đen ở giữa.
+Ý nghĩa hoặc thông số: Cấm vượt quá tốc độ 100 km/h.
+
+Đối tượng: Biển báo tốc độ tối đa - giữa
+Đặc điểm: Hình chữ nhật, nền xanh, viền trắng, có số '60' màu trắng.
+Ý nghĩa hoặc thông số: Tốc độ tối đa cho phép là 60 km/h.
+Example #1 | train_123 | cosine=0.913723
+Example #2 | train_388 | cosine=0.912913
+Example #3 | train_483 | cosine=0.906422
+Example #4 | train_438 | cosine=0.902713
+Example #5 | train_466 | cosine=0.901962
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.913723
+#2 | QCVN 41:2024/BGTVT | 32 | cosine=0.913723
+#3 | QCVN 41:2024/BGTVT | 47 | cosine=0.913723
+#4 | QCVN 41:2024/BGTVT | B.27 | cosine=0.913723
+#5 | QCVN 41:2024/BGTVT | D.6 | cosine=0.913723
+#6 | QCVN 41:2024/BGTVT | P.2 | cosine=0.913723
+#7 | QCVN 41:2024/BGTVT | B.11 | cosine=0.902713
+#8 | QCVN 41:2024/BGTVT | D.14 | cosine=0.902713
+
+===== private_test_private_test_145 =====
+Câu hỏi:
+Khi điều khiển phương tiện giao thông qua cầu gặp những biển báo như hình thì xe đạp điện được phép lưu thông qua cầu, đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - xe đạp
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, có biểu tượng xe đạp bị gạch chéo màu đỏ
+Ý nghĩa hoặc thông số: Cấm xe đạp đi vào
+Example #1 | train_163 | cosine=0.837342
+Example #2 | train_509 | cosine=0.818537
+Example #3 | train_508 | cosine=0.816288
+Example #4 | train_44 | cosine=0.815204
+Example #5 | train_115 | cosine=0.812032
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.837342
+#2 | QCVN 41:2024/BGTVT | B.10 | cosine=0.837342
+#3 | QCVN 41:2024/BGTVT | B.12 | cosine=0.818537
+#4 | QCVN 41:2024/BGTVT | B.7 | cosine=0.818537
+#5 | QCVN 41:2024/BGTVT | 11 | cosine=0.815204
+#6 | QCVN 41:2024/BGTVT | 32 | cosine=0.812032
+#7 | QCVN 41:2024/BGTVT | D.14 | cosine=0.812032
+
+===== private_test_private_test_146 =====
+Câu hỏi:
+Trong hình trên không phát hiện hành vi vi phạm luật giao thông đường bộ là đúng hay sai ?
+
+Loại hình: SIGN_ILLUSTRATION
+
+Đối tượng: Biển báo cấm - phía trên
+Đặc điểm: Hình tròn, viền đỏ, nền trắng, biểu tượng một chiếc xe ô tô màu đen bị gạch chéo màu đỏ.
+Ý nghĩa hoặc thông số: Cấm xe cơ giới đi vào
+Example #1 | train_503 | cosine=0.913046
+Example #2 | train_17 | cosine=0.896931
+Example #3 | train_502 | cosine=0.896278
+Example #4 | train_280 | cosine=0.893641
+Example #5 | train_500 | cosine=0.891823
+#1 | QCVN 41:2024/BGTVT | 22 | cosine=0.913046
+#2 | QCVN 41:2024/BGTVT | B.7 | cosine=0.913046
+#3 | QCVN 41:2024/BGTVT | B.5 | cosine=0.893641
+#4 | QCVN 41:2024/BGTVT | B.4 | cosine=0.891823
+
