@@ -11,7 +11,7 @@ Xây dựng Multimodal Legal RAG cho bộ dữ liệu VLSP 2025 MLQA-TSR theo t�
 3. Với tác vụ chạy lâu như training, captioning, embedding hoặc inference, cung cấp lệnh để người dùng tự chạy. Chỉ tự chạy khi người dùng yêu cầu rõ ràng.
 4. Giữ `README.md` ngắn gọn và phản ánh tiến trình hiện tại: cách thực hiện, điều kiện tiên quyết, lệnh chạy và kết quả từng bước. Cập nhật phần liên quan khi có thay đổi để phiên làm việc mới biết project đang ở đâu; không biến README thành nhật ký mọi thao tác.
 5. Sau khi thay đổi, giải thích ngắn gọn đã làm gì. Khi người dùng báo lỗi, phân tích và sửa trong phạm vi đó; cập nhật lỗi và cách xử lý vào phần liên quan của README nếu cần để chạy lại.
-6. Không tự ý xóa file, thay đổi pipeline hoặc làm thêm việc ngoài yêu cầu.
+6. Không tự ý xóa file, thay đổi pipeline hoặc làm thêm việc ngoài yêu cầu. Không tự ý thay đổi nội dung .gitignore
 7. Không tạo command `self-check`, demo hoặc test riêng chỉ để kiểm tra nội bộ. Hướng dẫn kiểm tra bằng CLI/pipeline thực tế và evaluator của bước đó; chỉ thêm test riêng khi người dùng yêu cầu rõ ràng.
 8. Tác vụ chạy lâu phải in log khoảng mỗi 30 giây: bước hiện tại, số đã xử lý/tổng số, phần trăm, thời gian đã chạy và ETA.
 
