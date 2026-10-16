@@ -11,17 +11,18 @@ Pipeline nghiên cứu VLSP 2025 MLQA-TSR: chuyển ảnh thành mô tả văn b
 | Caption và embedding query train | `COMPLETED` | 418 query; cùng encoder với corpus |
 | Retrieval dev/public và inference public | `AWAITING_USER_TEST` | Metrics trong bảng dưới |
 | Private retrieval và inference: file đã nộp benchmark | `COMPLETED` | Hai submission, mỗi file 146 câu |
-| Bản sửa recovery đáp án inference mới nhất | `AWAITING_USER_TEST` | Chưa chạy kiểm tra bản sửa này |
+| Inference bổ sung caption hình trong luật và recovery | `AWAITING_USER_TEST` | Public đã có metrics: 99 câu COMPLETED, 1 câu phục hồi đáp án; private chưa xác nhận bản mới |
+| Few-shot QA public/private | `AWAITING_USER_TEST` | Public đạt 0.76; private đã kiểm tra ghép context, chưa chạy model |
 
 | Split / phương pháp | F2 retrieval | Accuracy QA | Nguồn kết quả |
 | --- | ---: | ---: | --- |
 | Dev — corpus | 0.245940149229051 | — | `query_retrieval_corpus/metrics.json` |
 | Dev — example | 0.4777248004425611 | — | `query_retrieval_example/metrics.json` |
 | Dev — gated hybrid | 0.4918943282554603 | — | `query_retrieval_hybrid/metrics.json` |
-| Public — gated hybrid / gold-citation QA | 0.6042771408924155 | 0.71 | Metrics local |
+| Public — gated hybrid / gold-citation QA kèm caption corpus + few-shot | 0.6042771408924155 | 0.76 | Metrics local; 100 COMPLETED, không recovery/default label |
 | **Private — submission đã nộp** | **0.5994742019171495** | **0.7054794520547946** | **Log benchmark do người dùng cung cấp** |
 
-Subtask 2 dùng `relevant_articles` được cung cấp trong input QA, độc lập với citation dự đoán ở Subtask 1. Accuracy trên đây không phải accuracy của chuỗi retrieval → QA. Điểm private thuộc file đã nộp, không xác nhận chất lượng bản sửa recovery chưa chạy.
+Subtask 2 dùng `relevant_articles` được cung cấp trong input QA, độc lập với citation dự đoán ở Subtask 1. Accuracy trên đây không phải accuracy của chuỗi retrieval → QA. Điểm private thuộc file đã nộp, không xác nhận chất lượng code mới. Public: trước khi bổ sung caption corpus 0.71; có caption corpus 0.73; thêm few-shot 0.76.
 
 ## Chuẩn bị
 
@@ -120,16 +121,18 @@ Kết quả từng nhánh dev và hybrid public/private nằm trong bảng đầ
 
 ## 4. Subtask 2: inference từ citation được cung cấp
 
-Input gồm toàn văn luật preprocessing theo `relevant_articles`, mô tả query đã lọc relevance và câu hỏi/options. Qwen chạy text-only, temperature 0, seed 2025, thinking off; output gồm `visual_matching`, `legal_rule_extraction`, `option_evaluation`, `final_answer`.
+Input gồm toàn văn luật kèm caption VLM của các hình theo `relevant_articles`, mô tả query đã lọc relevance và câu hỏi/options. Cả public/private đọc `corpus/data_preprocessing/structured_corpus.jsonl` rồi ghép các file `corpus/corpus_image_captioning/captions/*_description.json` theo `image_id` (đường dẫn dưới `artifacts/experiments/text_based_rag/`). Caption được đưa vào ngay tại block hình, kể cả hình trong bảng. Giữ chú thích gốc và tách nhãn mô tả do model sinh khỏi văn bản luật. Qwen chạy text-only, temperature 0, seed 2025, thinking off; output gồm `visual_matching`, `legal_rule_extraction`, `option_evaluation`, `final_answer`.
+
+Bản cũ của cả public/private đọc corpus `data_preprocessing` và chỉ render chú thích gốc/tham chiếu hình, nên bỏ sót caption VLM dù retrieval đã dùng caption. Bản sửa yêu cầu corpus captioning `COMPLETED`, khớp hash corpus preprocessing và có caption cho từng hình được đưa vào context. Không cần chạy lại caption/embedding/retrieval nếu các artifact hiện có vẫn hợp lệ; chạy lại inference với `--overwrite`. Context dài hơn; chương trình kiểm tra đủ token trước khi inference và không tự cắt luật.
 
 Private đọc `submission_task2_no_labels.json`, tái dùng caption Task 1 sau khi đối chiếu ID/ảnh/câu hỏi. Submission có đúng `id`, `image_id`, `question`, `question_type`, `relevant_articles`, `answer`; giữ citation và thứ tự input. Choices chỉ dùng trong prompt.
 
 ```powershell
 # Public: inference và accuracy local.
-.\.venv\Scripts\python.exe -u -m text_based_rag.inference --split public_test --context-size 32768 --allow-incomplete-captions --overwrite
+.\.venv\Scripts\python.exe -u -m text_based_rag.inference --split public_test --few-shot-count 2 --context-size 32768 --allow-incomplete-captions --overwrite
 
 # Private: inference và xuất submission.
-.\.venv\Scripts\python.exe -u -m text_based_rag.inference --split private_test --context-size 32768 --overwrite
+.\.venv\Scripts\python.exe -u -m text_based_rag.inference --split private_test --few-shot-count 2 --context-size 65536 --overwrite
 ```
 
 Output public: `artifacts/public-test/text_based_rag/inference/`; private: `artifacts/private_test/text_based_rag/inference/`. Các file chính là `answers/`, `inference_results.jsonl`, `manifest.json`, log server; public thêm `metrics.json`, private xuất:
@@ -138,7 +141,21 @@ Output public: `artifacts/public-test/text_based_rag/inference/`; private: `arti
 artifacts/private_test/text_based_rag/inference/submission_task2.json
 ```
 
-Logic hiện tại: JSON lỗi/bị cắt sẽ lấy `final_answer` hợp lệ trong output hoặc gọi model chỉ lấy đáp án. Nếu cả hai cách lỗi, dùng nhãn dự phòng A/Đúng và ghi `answer_source=default_label`. Status giữ lại để chạy lại câu lỗi, không chặn export khi đã xử lý hết input. Nhãn dự phòng không phải đáp án model suy luận; số lượng được báo trong metrics/manifest. Bản sửa recovery này chưa được chạy kiểm tra; điểm benchmark đã nộp được ghi riêng phía trên.
+Để kiểm tra lần chạy mới, `manifest.json` có `config.input_mode=gold_law_with_corpus_captions_and_query_caption_text_only`; mỗi citation trong `inference_results.jsonl` có `corpus_caption_block_ids` ghi các hình đã đưa caption vào prompt (rỗng nếu citation không có hình).
+
+Đã kiểm tra bước chuẩn bị context bằng `prepare()` thực tế, không chạy model: private 146 câu, 143 câu có caption luật, 1.142 lượt hình; public 100 câu, 94 câu có caption luật, 380 lượt hình. Private dùng context 65.536 để có thêm chỗ cho caption; chưa xác nhận số token tối đa hoặc VRAM, preflight khi chạy sẽ kiểm tra chính xác.
+
+Logic hiện tại: JSON lỗi/bị cắt sẽ lấy `final_answer` hợp lệ trong output hoặc gọi model chỉ lấy đáp án. Nếu cả hai cách lỗi, dùng nhãn dự phòng A/Đúng và ghi `answer_source=default_label`. Status giữ lại để chạy lại câu lỗi, không chặn export khi đã xử lý hết input. Nhãn dự phòng không phải đáp án model suy luận; số lượng được báo trong metrics/manifest. Public few-shot hiện có accuracy 0.76, 100 COMPLETED, không recovery/default label; điểm private đã nộp được ghi riêng phía trên.
+
+### Few-shot QA — public/private
+
+Toàn bộ code few-shot nằm trong `src/text_based_rag/inference.py`. Tái sử dụng BGE-M3 embedding đã có của split đang chạy và 530 câu train gốc (418 train + 112 dev). Private lấy query embedding/caption từ nhánh `retrieval/`, đối chiếu với input Task 2 trước khi chọn ví dụ. Lọc cùng `question_type` và có ít nhất một citation chung, xếp cosine giảm dần rồi lấy tối đa 1 hoặc 2 ví dụ khác ảnh và không trùng câu hỏi/choices. Cho phép ảnh trùng giữa query và example bank theo chính sách hiện tại. Mỗi ví dụ gồm câu hỏi, caption đã lọc relevance, choices, citation và đáp án chuẩn (NFC); không sinh lời giải hay thêm luật của ví dụ vào context câu hiện tại. Chỉ dùng đáp án train gốc cho ví dụ, không dùng đáp án test.
+
+Chạy các lệnh ở trên với `--few-shot-count 2`; `1` dùng tối đa một ví dụ, mặc định `0` không dùng ví dụ. Mọi cấu hình đều ghi vào thư mục `inference/` hiện có của split, ghi đè khi dùng `--overwrite`, không tạo thư mục kết quả riêng. Kết quả few-shot public 0.76 đã được chuyển nguyên vẹn vào `artifacts/public-test/text_based_rag/inference/` và thay kết quả 0.73. Manifest giữ thông tin/hash của lần chạy đã tạo kết quả; sau khi gộp code, cần `--overwrite` nếu chạy lại. Bỏ `--overwrite` để resume các lần chạy bằng code mới khi cấu hình/code/input giữ nguyên. Không cần chạy lại caption/embedding/retrieval nếu artifact còn khớp manifest.
+
+Preflight đếm token bằng runtime thực tế, bỏ ví dụ cosine thấp nhất khi thiếu context; không có ví dụ phù hợp hoặc bỏ hết thì dùng zero-shot. Nếu riêng context câu hiện tại quá dài vẫn dừng, không cắt luật/caption. Prediction lưu `few_shot_examples` (ID, cosine, citation chung, đáp án, nội dung), `few_shot_dropped_ids`, `few_shot_fallback`; metrics báo số ví dụ thực dùng và số bỏ do context. Manifest lưu cấu hình và hash nguồn. Vẫn có heartbeat 30 giây khi chạy.
+
+Public đã chạy với 2 ví dụ: 94 câu có 2, 1 câu có 1, 5 câu không có ví dụ phù hợp; không bỏ ví dụ do context. Accuracy 0.76 (Multiple choice 50/65, Yes/No 26/35). Private đã kiểm tra chuẩn bị context với 2 ví dụ: 139 câu có 2, 1 câu có 1, 6 câu không có ví dụ phù hợp (trước preflight token runtime); chưa chạy model hoặc đánh giá trên dev.
 
 ## Chạy lại và xử lý lỗi
 

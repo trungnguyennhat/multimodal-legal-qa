@@ -73,7 +73,7 @@
         "article_id": "B.24"
       }
     ],
-    "answer": "A"
+    "answer": "C"
   },
   {
     "id": "private_test_private_test_5",
@@ -107,7 +107,7 @@
         "article_id": "B.25"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": "private_test_private_test_7",
@@ -217,7 +217,7 @@
         "article_id": "F.10"
       }
     ],
-    "answer": "Đúng"
+    "answer": "Sai"
   },
   {
     "id": "private_test_private_test_13",
@@ -876,7 +876,7 @@
         "article_id": "F.5"
       }
     ],
-    "answer": "C"
+    "answer": "A"
   },
   {
     "id": "private_test_private_test_48",
@@ -927,7 +927,7 @@
         "article_id": "G.1"
       }
     ],
-    "answer": "Đúng"
+    "answer": "Sai"
   },
   {
     "id": "private_test_private_test_51",
@@ -952,7 +952,7 @@
         "article_id": "47"
       }
     ],
-    "answer": "Đúng"
+    "answer": "Sai"
   },
   {
     "id": "private_test_private_test_52",
@@ -1020,7 +1020,7 @@
         "article_id": "B.31"
       }
     ],
-    "answer": "Sai"
+    "answer": "Đúng"
   },
   {
     "id": "private_test_private_test_56",
@@ -1054,7 +1054,7 @@
         "article_id": "B.2"
       }
     ],
-    "answer": "B"
+    "answer": "D"
   },
   {
     "id": "private_test_private_test_58",
@@ -1075,7 +1075,7 @@
         "article_id": "B.27"
       }
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": "private_test_private_test_59",
@@ -1277,7 +1277,7 @@
         "article_id": "D.14"
       }
     ],
-    "answer": "Đúng"
+    "answer": "Sai"
   },
   {
     "id": "private_test_private_test_69",
@@ -1432,7 +1432,7 @@
         "article_id": "B.27"
       }
     ],
-    "answer": "Sai"
+    "answer": "Đúng"
   },
   {
     "id": "private_test_private_test_76",
@@ -1487,7 +1487,7 @@
         "article_id": "D.16"
       }
     ],
-    "answer": "B"
+    "answer": "D"
   },
   {
     "id": "private_test_private_test_79",
@@ -1546,7 +1546,7 @@
         "article_id": "F.10"
       }
     ],
-    "answer": "D"
+    "answer": "C"
   },
   {
     "id": "private_test_private_test_82",
@@ -1757,7 +1757,7 @@
         "article_id": "P.18"
       }
     ],
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": "private_test_private_test_93",
@@ -1786,7 +1786,7 @@
         "article_id": "D.6"
       }
     ],
-    "answer": "D"
+    "answer": "A"
   },
   {
     "id": "private_test_private_test_94",
@@ -2141,7 +2141,7 @@
         "article_id": "B.27c"
       }
     ],
-    "answer": "C"
+    "answer": "B"
   },
   {
     "id": "private_test_private_test_113",
@@ -2166,7 +2166,7 @@
         "article_id": "42"
       }
     ],
-    "answer": "D"
+    "answer": "C"
   },
   {
     "id": "private_test_private_test_114",
@@ -2195,7 +2195,7 @@
         "article_id": "F.10"
       }
     ],
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": "private_test_private_test_115",
@@ -2228,7 +2228,7 @@
         "article_id": "B.17"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": "private_test_private_test_116",
@@ -2398,7 +2398,7 @@
         "article_id": "B.26"
       }
     ],
-    "answer": "Đúng"
+    "answer": "Sai"
   },
   {
     "id": "private_test_private_test_122",
@@ -2440,7 +2440,7 @@
         "article_id": "F.10"
       }
     ],
-    "answer": "Sai"
+    "answer": "Đúng"
   },
   {
     "id": "private_test_private_test_124",
@@ -2491,7 +2491,7 @@
         "article_id": "B.27c"
       }
     ],
-    "answer": "Đúng"
+    "answer": "Sai"
   },
   {
     "id": "private_test_private_test_127",
@@ -2662,7 +2662,7 @@
         "article_id": "D.14"
       }
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": "private_test_private_test_134",
@@ -2695,7 +2695,7 @@
         "article_id": "47"
       }
     ],
-    "answer": "D"
+    "answer": "C"
   },
   {
     "id": "private_test_private_test_135",
@@ -2784,7 +2784,7 @@
         "article_id": "D.16"
       }
     ],
-    "answer": "Đúng"
+    "answer": "Sai"
   },
   {
     "id": "private_test_private_test_140",
@@ -2885,7 +2885,7 @@
         "article_id": "47"
       }
     ],
-    "answer": "Sai"
+    "answer": "Đúng"
   },
   {
     "id": "private_test_private_test_145",
@@ -2927,6 +2927,6 @@
         "article_id": "B.3"
       }
     ],
-    "answer": "Đúng"
+    "answer": "Sai"
   }
 ]

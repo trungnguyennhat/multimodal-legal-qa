@@ -14,17 +14,20 @@ from threading import Event, Thread
 import time
 import unicodedata
 
+import numpy as np
 import requests
 
 from multimodal_legal_rag.data import DATA_FILES, DEFAULT_SOURCE, PRIVATE_TASK1_FILE, PRIVATE_TASK2_FILE, read_json_list
 from .corpus_embedding import file_hash
-from .corpus_image_captioning import ROOT, CORPUS_MODEL, SERVER, read_lines, save
+from .corpus_image_captioning import ROOT, CORPUS_MODEL, SERVER, blocks, read_lines, save
 from .corpus_normalization import SOURCE as LAW_SOURCE
 from .query_embedding import query_representation
 
 PUBLIC = ROOT / 'artifacts/public-test/text_based_rag'
 PRIVATE = ROOT / 'artifacts/private_test/text_based_rag'
-CORPUS = ROOT / 'artifacts/experiments/text_based_rag/corpus/data_preprocessing'
+QUERY_BASE = ROOT / 'artifacts/experiments/text_based_rag/query'
+PREPROCESSING = ROOT / 'artifacts/experiments/text_based_rag/corpus/data_preprocessing'
+CORPUS = ROOT / 'artifacts/experiments/text_based_rag/corpus/corpus_image_captioning'
 FIELDS = ('visual_matching', 'legal_rule_extraction', 'option_evaluation', 'final_answer')
 ALIASES = {('36/2024/QH15', '11.0'): ('36/2024/QH15', '11'),
            ('QCVN 41:2024/BGTVT', 'F5'): ('QCVN 41:2024/BGTVT', 'F.5')}
@@ -47,7 +50,8 @@ không coi phát biểu trong câu hỏi là bằng chứng quan sát. Không t�
 con số hoặc điều luật không có trong dữ liệu được cung cấp.
 2. visual_matching: Nêu ngắn gọn đối tượng/mã biển hoặc thông số có căn cứ từ mô tả
 và luật. Nếu thiếu bằng chứng, ghi rõ chưa xác định chắc chắn.
-3. legal_rule_extraction: Nêu ngắn gọn quy định áp dụng, giới hạn, phạm vi, ngoại lệ
+3. Mô tả VLM của hình trong luật cũng do model sinh, chỉ dùng để đối chiếu thị giác;
+không coi mô tả đó là quy định pháp lý. legal_rule_extraction: Nêu ngắn gọn quy định áp dụng, giới hạn, phạm vi, ngoại lệ
 và mã điều luật hỗ trợ. Mô tả tự động không phải nguồn quy định pháp lý.
 4. option_evaluation: Đánh giá ngắn từng lựa chọn A/B/C/D hoặc phát biểu đúng/sai,
 chú ý từ phủ định, biển phụ, thời gian và đơn vị. Chỉ đưa giải thích và bằng chứng
@@ -61,6 +65,140 @@ Chỉ trả về một JSON object với đúng bốn trường chuỗi:
 """
 
 
+FEW_SHOT_INSTRUCTIONS = """=== VÍ DỤ THAM KHẢO ĐÃ CÓ ĐÁP ÁN CHUẨN ===
+Các ví dụ thuộc câu hỏi khác, chỉ minh họa cách trả lời. Caption có thể sai.
+Không chuyển đặc điểm ảnh, điều kiện áp dụng hoặc nhãn đáp án từ ví dụ sang câu hiện tại.
+Citation của ví dụ không bổ sung vào điều luật của câu hiện tại. Đánh giá lại từng lựa chọn.
+"""
+
+
+def example_prompt(base_prompt, examples):
+    if not examples:
+        return base_prompt
+    return FEW_SHOT_INSTRUCTIONS + '\n\n' + '\n\n'.join(e['text'] for e in examples) + '\n\n=== NHIỆM VỤ HIỆN TẠI ===\n' + base_prompt
+
+
+def select_qa_examples(rows, hashes, count, query_split):
+    def track(path):
+        digest = file_hash(path)
+        hashes[str(path.relative_to(ROOT)).replace('\\', '/')] = digest
+        return digest
+
+    def load(split):
+        root = PRIVATE / 'retrieval' if split == 'private_test' else PUBLIC if split == 'public_test' else QUERY_BASE
+        suffix = '_' + split if split in ('train', 'dev') else ''
+        folder, captions = root / ('query_embedding' + suffix), root / ('query_image_captioning' + suffix)
+        source = (PRIVATE_TASK1_FILE if split == 'private_test' else DEFAULT_SOURCE / DATA_FILES[split]
+                  if split == 'public_test' else ROOT / f'data/processed/splits/{split}.json')
+        track(folder / 'manifest.json')
+        meta = json.loads((folder / 'manifest.json').read_text(encoding='utf-8-sig'))
+        if (meta.get('status') != 'COMPLETED' or meta.get('split') != split
+                or meta.get('input_sha256', {}).get(split + '.json') != track(source)):
+            raise ValueError(f'Embedding few-shot không khớp nguồn {split}.')
+        for name in ('queries.jsonl', 'vectors.npy'):
+            if meta.get('output_sha256', {}).get(name) != track(folder / name):
+                raise ValueError(f'Embedding few-shot đã thay đổi: {folder / name}')
+        for name, path in (('caption_manifest.json', captions / 'manifest.json'),
+                           ('query_image_mapping.jsonl', captions / 'query_image_mapping.jsonl')):
+            if meta.get('input_sha256', {}).get(name) != track(path):
+                raise ValueError(f'Nguồn caption few-shot đã thay đổi: {path}')
+        for name, digest in meta.get('caption_files_sha256', {}).items():
+            path = (captions / name).resolve()
+            if path.parent != (captions / 'captions').resolve() or track(path) != digest:
+                raise ValueError(f'Caption few-shot không khớp embedding: {name}')
+        mapping = read_lines(folder / 'queries.jsonl')
+        vectors = np.load(folder / 'vectors.npy', mmap_mode='r', allow_pickle=False)
+        if (not mapping or vectors.shape != (len(mapping), 1024) or vectors.dtype != np.float32
+                or meta.get('queries') != len(mapping) or not np.isfinite(vectors).all()
+                or not np.allclose(np.linalg.norm(vectors, axis=1), 1, atol=1e-5)
+                or len({r['query_id'] for r in mapping}) != len(mapping)
+                or any(r['vector_row'] != i for i, r in enumerate(mapping))):
+            raise ValueError(f'Vector/mapping few-shot không hợp lệ: {split}')
+        labels = read_json_list(source)
+        by_id = {r['id']: r for r in labels}
+        if (len(by_id) != len(labels) or set(by_id) != {r['query_id'] for r in mapping}
+                or any(r['caption_file'] not in meta.get('caption_files_sha256', {}) for r in mapping)
+                or any(by_id[r['query_id']]['image_id'] != r['source_image_id']
+                       or not r['text'].startswith('Câu hỏi:\n' + by_id[r['query_id']]['question']) for r in mapping)):
+            raise ValueError(f'Nhãn và mapping few-shot không khớp: {split}')
+        return mapping, vectors, meta, by_id
+
+    queries, qv, qm, _ = load(query_split)
+    bank, vectors, labels = [], [], {}
+    keys = ('model', 'revision', 'model_files_sha256', 'pooling', 'normalize', 'dimension',
+            'input_prefix', 'representation', 'relevance_filter', 'include_summary', 'deduplication')
+    if qm.get('representation') != 'question_relevant_items_v1' or qm.get('normalize') != 'L2':
+        raise ValueError('Few-shot yêu cầu query representation hiện tại và vector chuẩn hóa L2.')
+    for split in ('train', 'dev'):
+        mapping, ev, meta, split_labels = load(split)
+        if any(key not in qm or meta.get(key) != qm[key] for key in keys):
+            raise ValueError(f'Encoder/representation few-shot {split} không khớp query.')
+        if set(labels) & set(split_labels):
+            raise ValueError('Example bank bị trùng ID giữa train và dev.')
+        bank.extend(mapping)
+        vectors.append(ev)
+        labels.update(split_labels)
+    original_path = DEFAULT_SOURCE / DATA_FILES['train']
+    track(original_path)
+    original_rows = read_json_list(original_path)
+    original = {r['id']: r for r in original_rows}
+    fields = ('image_id', 'question', 'question_type', 'choices', 'answer', 'relevant_articles')
+    if (len(original) != len(original_rows) or set(labels) != set(original)
+            or set(labels) & {r['id'] for r in rows}
+            or any(any(row.get(k) != original[qid].get(k) for k in fields) for qid, row in labels.items())):
+        raise ValueError('Example bank không khớp train gốc hoặc lẫn ID query.')
+    def citations(row):
+        return {(str(c['law_id']), str(c['article_id'])) for c in row['relevant_articles']}
+
+    for qid, row in labels.items():
+        if not isinstance(row.get('answer'), str):
+            raise ValueError(f'Example QA thiếu đáp án chuỗi: {qid}')
+        row['answer'] = unicodedata.normalize('NFC', row['answer']).strip()
+        if row['question_type'] == 'Multiple choice':
+            choices = row.get('choices')
+            valid = (isinstance(choices, dict) and set(choices) == set('ABCD')
+                     and row['answer'] in choices
+                     and all(type(v) in (str, int, float) and str(v).strip()
+                             and (type(v) is not float or math.isfinite(v)) for v in choices.values()))
+        else:
+            valid = row['question_type'] == 'Yes/No' and row['answer'] in ('Đúng', 'Sai')
+        if not valid or not citations(row):
+            raise ValueError(f'Example QA thiếu lựa chọn/đáp án/citation hợp lệ: {qid}')
+    similarity = qv @ np.concatenate(vectors).T
+    query_indices = {r['query_id']: i for i, r in enumerate(queries)}
+    selected = {}
+    for row in rows:
+        values = similarity[query_indices[row['id']]]
+        eligible = [i for i, item in enumerate(bank)
+                    if labels[item['query_id']]['question_type'] == row['question_type']
+                    and citations(labels[item['query_id']]) & citations(row)]
+        ranked = sorted(eligible, key=lambda i: (-float(values[i]), bank[i]['query_id']))
+        picks, used_images, used_content = [], set(), set()
+        for i in ranked:
+            item, example = bank[i], labels[bank[i]['query_id']]
+            content = (example['question'], json.dumps(example.get('choices'), ensure_ascii=False, sort_keys=True))
+            if item['image_id'] in used_images or content in used_content:
+                continue
+            answer = example['answer']
+            choices = example.get('choices', {}) if example['question_type'] == 'Multiple choice' else {}
+            citation_text = ', '.join(f'{law} / {article}' for law, article in sorted(citations(example)))
+            text = (item['text'] + '\nCác lựa chọn:\n' +
+                    ('\n'.join(f'{k}. {choices[k]}' for k in 'ABCD') if choices else 'Đúng hoặc Sai') +
+                    '\nCitation của ví dụ: ' + citation_text + '\nĐáp án chuẩn: ' + answer +
+                    (f' — {choices[answer]}' if choices else ''))
+            picks.append({'id': item['query_id'], 'image_id': item['image_id'], 'cosine': float(values[i]),
+                          'shared_citations': [list(c) for c in sorted(citations(example) & citations(row))],
+                          'answer': answer, 'text': text})
+            used_images.add(item['image_id'])
+            used_content.add(content)
+            if len(picks) == count:
+                break
+        selected[row['id']] = picks
+    print(f'[few-shot-selection] {query_split}={len(rows)}; bank={len(bank)}; '
+          f'with_examples={sum(bool(v) for v in selected.values())}; max_examples={count}', flush=True)
+    return selected
+
+
 def normalized(value):
     return unicodedata.normalize('NFC', value).strip()
 
@@ -72,6 +210,10 @@ def render_blocks(sequence):
             parts.append(block['text'])
         elif block['type'] == 'figure':
             parts.append('Hình minh họa: ' + (block.get('caption_original') or block['source_reference']))
+            description = block.get('description_vlm')
+            if not isinstance(description, str) or not description.strip():
+                raise ValueError(f"Hình trong luật thiếu caption VLM: {block['block_id']}")
+            parts.append('Mô tả VLM của hình (do model sinh):\n' + description)
         elif block['type'] == 'table':
             parts.append(block.get('caption_original') or 'Bảng quy định')
             for cell in block['cells']:
@@ -117,7 +259,9 @@ def resolve_citation(citation, registry):
         traces.append({'gold_law_id': original[0], 'gold_article_id': original[1],
                        'source_law_id': target[0], 'source_article_id': target[1],
                        'article_key': record['article_key'], 'resolution': method,
-                       'source_block_ids': [block['block_id'] for block in selected]})
+                       'source_block_ids': [block['block_id'] for block in selected],
+                       'corpus_caption_block_ids': [block['block_id'] for block in blocks(selected)
+                                                    if block['type'] == 'figure']})
         heading = f"[{original[0]} / {original[1]}] {title}"
         if method != 'exact':
             heading += f'\nNguồn corpus: {target[0]} / {target[1]}; ánh xạ: {method}.'
@@ -127,6 +271,9 @@ def resolve_citation(citation, registry):
 
 def prepare(args):
     private = args.split == 'private_test'
+    few_shot_count = getattr(args, 'few_shot_count', 0)
+    if few_shot_count not in (0, 1, 2):
+        raise ValueError('Few-shot hỗ trợ 0, 1 hoặc 2 ví dụ.')
     source = PRIVATE_TASK2_FILE if private else DEFAULT_SOURCE / DATA_FILES['public_test']
     caption_source = PRIVATE_TASK1_FILE if private else source
     rows = read_json_list(source)
@@ -136,12 +283,34 @@ def prepare(args):
         if (len(caption_queries) != len(caption_rows) or len(rows) != len(caption_rows)
                 or {r['id']: (r['image_id'], r['question']) for r in rows} != caption_queries):
             raise ValueError('Task 2 và nguồn caption Task 1 không khớp ID/ảnh/câu hỏi.')
-    records = read_lines(CORPUS / 'structured_corpus.jsonl')
-    corpus_meta = json.loads((CORPUS / 'manifest.json').read_text(encoding='utf-8-sig'))
+    records = read_lines(PREPROCESSING / 'structured_corpus.jsonl')
+    corpus_meta = json.loads((PREPROCESSING / 'manifest.json').read_text(encoding='utf-8-sig'))
     if corpus_meta.get('status') != 'COMPLETED' or corpus_meta.get('source_sha256') != file_hash(LAW_SOURCE):
         raise ValueError('Corpus preprocessing chưa hoàn tất hoặc không khớp nguồn luật.')
     if corpus_meta.get('articles') != len(records):
         raise ValueError(f"Số record corpus không khớp manifest: {len(records)} != {corpus_meta.get('articles')}")
+    corpus_caption_meta = json.loads((CORPUS / 'manifest.json').read_text(encoding='utf-8-sig'))
+    if (corpus_caption_meta.get('status') != 'COMPLETED'
+            or corpus_caption_meta.get('config', {}).get('corpus_sha256')
+            != file_hash(PREPROCESSING / 'structured_corpus.jsonl')
+            or corpus_caption_meta.get('config', {}).get('images_sha256')
+            != file_hash(PREPROCESSING / 'image_manifest.jsonl')):
+        raise ValueError('Caption corpus chưa hoàn tất hoặc không khớp corpus preprocessing hiện tại.')
+    corpus_captions, corpus_caption_hashes = {}, {}
+    for path in sorted((CORPUS / 'captions').glob('*_description.json')):
+        caption = json.loads(path.read_text(encoding='utf-8-sig'))
+        image_id, description = caption.get('image_id'), caption.get('description')
+        if (caption.get('status') != 'COMPLETED' or not isinstance(image_id, str) or not image_id
+                or image_id in corpus_captions or not isinstance(description, str) or not description.strip()):
+            raise ValueError(f'Caption corpus không hợp lệ hoặc trùng image_id: {path.name}')
+        corpus_captions[image_id] = description
+        corpus_caption_hashes[str(path.relative_to(ROOT)).replace('\\', '/')] = file_hash(path)
+    for record in records:
+        for block in blocks(record['blocks']):
+            if block['type'] == 'figure':
+                if block.get('image_id') not in corpus_captions:
+                    raise ValueError(f"Thiếu caption corpus cho hình: {block['block_id']}")
+                block['description_vlm'] = corpus_captions[block['image_id']]
     if len({r['article_key'] for r in records}) != len(records):
         raise ValueError('Corpus preprocessing trùng article_key; không thể xác định nguồn record.')
     registry = {}
@@ -160,8 +329,11 @@ def prepare(args):
             or set(mapping) != {r['id'] for r in rows}):
         raise ValueError('ID query và caption mapping không khớp.')
     hashes = {str(path.relative_to(ROOT)).replace('\\', '/'): file_hash(path) for path in
-              (source, caption_source, LAW_SOURCE, CORPUS / 'manifest.json', CORPUS / 'structured_corpus.jsonl',
+              (source, caption_source, LAW_SOURCE, PREPROCESSING / 'manifest.json',
+               PREPROCESSING / 'structured_corpus.jsonl', PREPROCESSING / 'image_manifest.jsonl',
+               CORPUS / 'manifest.json',
                captions / 'manifest.json', captions / 'query_image_mapping.jsonl')}
+    hashes.update(corpus_caption_hashes)
     prepared, missing = [], []
     for row in rows:
         qid = row['id']
@@ -219,6 +391,15 @@ def prepare(args):
                          'prompt_sha256': sha256(prompt.encode('utf-8')).hexdigest()})
     if missing:
         raise ValueError('Preflight thiếu gold context; chưa chạy model:\n' + '\n'.join(missing))
+    if few_shot_count:
+        selected = select_qa_examples(rows, hashes, few_shot_count, args.split)
+        for item in prepared:
+            item['few_shot_base_prompt'] = item['prompt']
+            item['few_shot_examples'] = selected[item['id']]
+            item['few_shot_dropped_ids'] = []
+            item['few_shot_fallback'] = None if item['few_shot_examples'] else 'no_eligible_example'
+            item['prompt'] = example_prompt(item['few_shot_base_prompt'], item['few_shot_examples'])
+            item['prompt_sha256'] = sha256(item['prompt'].encode('utf-8')).hexdigest()
     return rows, prepared, hashes
 
 
@@ -229,6 +410,8 @@ def main():
     parser.add_argument('--allow-incomplete-captions', action='store_true', help='Recover complete relevant items from truncated captions.')
     parser.add_argument('--context-size', type=int, default=16384)
     parser.add_argument('--max-new-tokens', type=int, default=2048)
+    parser.add_argument('--few-shot-count', type=int, choices=(0, 1, 2), default=0,
+                        help='Add up to this many QA examples from the original train set (public/private).')
     args = parser.parse_args()
     private = args.split == 'private_test'
     output = (PRIVATE if private else PUBLIC) / 'inference'
@@ -259,7 +442,7 @@ def main():
             if not path.is_file():
                 raise FileNotFoundError(f'Thiếu model/runtime local: {path}')
         model_hashes = {str(path.relative_to(ROOT)).replace('\\', '/'): file_hash(path) for path in (CORPUS_MODEL, SERVER)}
-        config = {'split': args.split, 'subtask': 2, 'input_mode': 'gold_law_and_query_caption_text_only',
+        config = {'split': args.split, 'subtask': 2, 'input_mode': 'gold_law_with_corpus_captions_and_query_caption_text_only',
                   'model': str(CORPUS_MODEL), 'runtime': str(SERVER), 'prompt': PROMPT, 'seed': 2025,
                   'temperature': 0, 'enable_thinking': False, 'context_size': args.context_size,
                   'max_new_tokens': args.max_new_tokens, 'token_safety_margin': 128,
@@ -268,6 +451,13 @@ def main():
                   'citation_aliases': [{'gold': list(k), 'source': list(v)} for k, v in ALIASES.items()],
                   'embedded_citation': 'D.11 section inside QCVN D.10; verified heading R.403a',
                   'answer_normalization': 'Unicode NFC + strip', 'requests_version': version('requests')}
+        if args.few_shot_count:
+            config['few_shot'] = {'max_examples': args.few_shot_count, 'bank_splits': ['train', 'dev'],
+                                  'selection': 'same_question_type_and_shared_citation_then_cosine',
+                                  'deduplication': 'distinct_image_hash_and_question_choices',
+                                  'same_image_policy': 'allow_shared_images_between_query_and_bank',
+                                  'overflow_policy': 'drop_lowest_cosine_example_first_then_zero_shot',
+                                  'instructions': FEW_SHOT_INSTRUCTIONS}
         fingerprint = sha256(json.dumps({'config': config, 'input_sha256': hashes, 'model_sha256': model_hashes,
                                         'source_sha256': file_hash(Path(__file__))}, sort_keys=True).encode()).hexdigest()
         previous_path = output / 'manifest.json'
@@ -283,6 +473,18 @@ def main():
             path = answers / (item['id'] + '.json')
             if path.exists() and not args.overwrite:
                 saved = json.loads(path.read_text(encoding='utf-8-sig'))
+                if args.few_shot_count:
+                    kept = saved.get('few_shot_examples')
+                    candidates = item['few_shot_examples']
+                    if (not isinstance(kept, list) or kept != candidates[:len(kept)]
+                            or saved.get('few_shot_dropped_ids') != [e['id'] for e in candidates[len(kept):]][::-1]):
+                        raise ValueError(f"Checkpoint few-shot không khớp examples: {item['id']}")
+                    item['few_shot_examples'] = kept
+                    item['few_shot_dropped_ids'] = saved['few_shot_dropped_ids']
+                    item['few_shot_fallback'] = ('context_budget' if candidates and not kept
+                                                 else 'no_eligible_example' if not candidates else None)
+                    item['prompt'] = example_prompt(item['few_shot_base_prompt'], kept)
+                    item['prompt_sha256'] = sha256(item['prompt'].encode('utf-8')).hexdigest()
                 if saved.get('fingerprint') != fingerprint or saved.get('id') != item['id'] or saved.get('prompt_sha256') != item['prompt_sha256']:
                     raise ValueError(f"Checkpoint không khớp input: {item['id']}; dùng --overwrite.")
                 if saved.get('status') == 'COMPLETED':
@@ -345,10 +547,21 @@ def main():
             phase, done = 'preflight-prompt-tokens', 0
             oversized = []
             for item in prepared:
-                messages = [{'role': 'user', 'content': item['prompt']}]
-                rendered = post('/apply-template', {'messages': messages, 'chat_template_kwargs': {'enable_thinking': False}})
-                tokens = post('/tokenize', {'content': rendered['prompt'], 'add_special': True, 'parse_special': True})
-                item['input_tokens'] = len(tokens['tokens'])
+                while True:
+                    messages = [{'role': 'user', 'content': item['prompt']}]
+                    rendered = post('/apply-template', {'messages': messages, 'chat_template_kwargs': {'enable_thinking': False}})
+                    tokens = post('/tokenize', {'content': rendered['prompt'], 'add_special': True, 'parse_special': True})
+                    item['input_tokens'] = len(tokens['tokens'])
+                    if (item['input_tokens'] + args.max_new_tokens + 128 <= args.context_size
+                            or not item.get('few_shot_examples') or item['id'] in results):
+                        break
+                    dropped = item['few_shot_examples'].pop()
+                    item['few_shot_dropped_ids'].append(dropped['id'])
+                    item['few_shot_fallback'] = None if item['few_shot_examples'] else 'context_budget'
+                    item['prompt'] = example_prompt(item['few_shot_base_prompt'], item['few_shot_examples'])
+                    item['prompt_sha256'] = sha256(item['prompt'].encode('utf-8')).hexdigest()
+                    print(f"[few-shot-budget] {item['id']}; dropped={dropped['id']}; "
+                          f"kept={len(item['few_shot_examples'])}", flush=True)
                 if item['input_tokens'] + args.max_new_tokens + 128 > args.context_size:
                     oversized.append({'id': item['id'], 'input_tokens': item['input_tokens']})
                 done += 1
@@ -365,7 +578,8 @@ def main():
                 if qid in results:
                     continue
                 query_started = time.perf_counter()
-                record = {**item, 'fingerprint': fingerprint, 'status': 'FAILED',
+                record = {**{k: v for k, v in item.items() if k != 'few_shot_base_prompt'},
+                          'fingerprint': fingerprint, 'status': 'FAILED',
                           'answer': item['answer_labels'][0], 'answer_source': 'default_label'}
                 schema = {'type': 'object', 'additionalProperties': False, 'required': list(FIELDS),
                           'properties': {key: {'type': 'string', 'minLength': 1} for key in FIELDS}}
@@ -441,6 +655,13 @@ def main():
                    'recovered_caption_queries': sum(r['caption_parse_mode'] == 'recovered_complete_items' for r in exported),
                    'question_only_queries': sum(r['selected_item_count'] == 0 for r in exported),
                    'answer_normalization': 'Unicode NFC + strip', 'by_question_type': {}}
+        if args.few_shot_count:
+            metrics['few_shot'] = {'max_examples': args.few_shot_count,
+                                   'queries_with_examples': sum(bool(r['few_shot_examples']) for r in exported),
+                                   'examples_used': sum(len(r['few_shot_examples']) for r in exported),
+                                   'examples_dropped_for_context': sum(len(r['few_shot_dropped_ids']) for r in exported),
+                                   'fallback_counts': {reason: sum(r['few_shot_fallback'] == reason for r in exported)
+                                                       for reason in ('no_eligible_example', 'context_budget')}}
         if not private:
             metrics['accuracy'] = sum(r['correct'] for r in exported) / total
         for kind in ('Multiple choice', 'Yes/No'):
