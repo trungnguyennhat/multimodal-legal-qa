@@ -154,7 +154,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
   "input_tokens": 4352,
-  "fingerprint": "8eb0d27895f80292e7581d20ed14521f801cd699912a1268951bfa987c6ad3ce",
+  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
   "status": "COMPLETED",
   "answer": "B",
   "answer_source": "model",
@@ -174,5 +174,5 @@
     "option_evaluation": "A. Xe ô tô: Không được phép vì biển chỉ dành cho xe tải lớn. B. Xe tải: Cụ thể là xe tải lớn mới được phép, xe tải nhỏ không được phép. C. Xe máy: Không được phép vì biển chỉ dành cho xe tải lớn. D. Xe buýt: Không được phép vì biển chỉ dành cho xe tải lớn.",
     "final_answer": "B"
   },
-  "elapsed_seconds": 6.042040799999086
+  "elapsed_seconds": 6.056845600000088
 }

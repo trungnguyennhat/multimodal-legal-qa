@@ -143,7 +143,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
   "input_tokens": 2538,
-  "fingerprint": "8eb0d27895f80292e7581d20ed14521f801cd699912a1268951bfa987c6ad3ce",
+  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
   "status": "COMPLETED",
   "answer": "Sai",
   "answer_source": "model",
@@ -163,5 +163,5 @@
     "option_evaluation": "Câu hỏi khẳng định biển báo là 'cấm chạy ngược chiều'. Tuy nhiên, dựa trên mô tả thị giác (vạch ngang đỏ) và quy định luật (P.136 là cấm đi thẳng, P.102 mới là cấm ngược chiều), phát biểu này không chính xác. Biển báo này cấm đi thẳng chứ không phải cấm đi ngược chiều.",
     "final_answer": "Sai"
   },
-  "elapsed_seconds": 4.07744719999755
+  "elapsed_seconds": 4.1715059999999085
 }

@@ -146,7 +146,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
   "input_tokens": 2669,
-  "fingerprint": "8eb0d27895f80292e7581d20ed14521f801cd699912a1268951bfa987c6ad3ce",
+  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
   "status": "COMPLETED",
   "answer": "Sai",
   "answer_source": "model",
@@ -166,5 +166,5 @@
     "option_evaluation": "Câu hỏi khẳng định các phương tiện được phép dừng xe tại đoạn đường này. Tuy nhiên, biển báo P.130 hiện diện báo hiệu việc cấm dừng và đỗ xe (trừ ngoại lệ xe ưu tiên/xuất hành). Do đó, phát biểu cho rằng được phép dừng xe là sai.",
     "final_answer": "Sai"
   },
-  "elapsed_seconds": 4.419904000002134
+  "elapsed_seconds": 4.408733999999868
 }

@@ -272,8 +272,8 @@ def resolve_citation(citation, registry):
 def prepare(args):
     private = args.split == 'private_test'
     few_shot_count = getattr(args, 'few_shot_count', 0)
-    if few_shot_count not in (0, 1, 2):
-        raise ValueError('Few-shot hỗ trợ 0, 1 hoặc 2 ví dụ.')
+    if few_shot_count not in (0, 1, 2, 3):
+        raise ValueError('Few-shot hỗ trợ 0, 1, 2 hoặc 3 ví dụ.')
     source = PRIVATE_TASK2_FILE if private else DEFAULT_SOURCE / DATA_FILES['public_test']
     caption_source = PRIVATE_TASK1_FILE if private else source
     rows = read_json_list(source)
@@ -410,7 +410,7 @@ def main():
     parser.add_argument('--allow-incomplete-captions', action='store_true', help='Recover complete relevant items from truncated captions.')
     parser.add_argument('--context-size', type=int, default=16384)
     parser.add_argument('--max-new-tokens', type=int, default=2048)
-    parser.add_argument('--few-shot-count', type=int, choices=(0, 1, 2), default=0,
+    parser.add_argument('--few-shot-count', type=int, choices=(0, 1, 2, 3), default=0,
                         help='Add up to this many QA examples from the original train set (public/private).')
     args = parser.parse_args()
     private = args.split == 'private_test'

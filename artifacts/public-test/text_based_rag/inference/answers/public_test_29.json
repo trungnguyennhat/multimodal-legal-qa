@@ -88,7 +88,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
   "input_tokens": 2143,
-  "fingerprint": "8eb0d27895f80292e7581d20ed14521f801cd699912a1268951bfa987c6ad3ce",
+  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
   "status": "COMPLETED",
   "answer": "D",
   "answer_source": "model",
@@ -108,5 +108,5 @@
     "option_evaluation": "A: Sai, không khớp với khung giờ cấm. B: Sai, đây là khung giờ cấm. C: Sai, đây là khung giờ cấm. D: Đúng, đây là khung giờ còn lại sau khi trừ đi khung giờ cấm 6h00-21h00.",
     "final_answer": "D"
   },
-  "elapsed_seconds": 3.8950244000006933
+  "elapsed_seconds": 3.927840500000002
 }

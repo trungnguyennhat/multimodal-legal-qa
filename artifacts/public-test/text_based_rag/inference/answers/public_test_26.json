@@ -143,7 +143,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
   "input_tokens": 3274,
-  "fingerprint": "8eb0d27895f80292e7581d20ed14521f801cd699912a1268951bfa987c6ad3ce",
+  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
   "status": "COMPLETED",
   "answer": "Sai",
   "answer_source": "model",
@@ -163,5 +163,5 @@
     "option_evaluation": "Câu hỏi khẳng định chỉ cấm xe tải có trọng tải lớn hơn 1,25 tấn. Điều này sai vì biển phụ bổ sung lệnh cấm cho 'tất cả các loại xe tải', bao gồm cả những xe có trọng tải nhỏ hơn hoặc bằng 1,25 tấn.",
     "final_answer": "Sai"
   },
-  "elapsed_seconds": 4.094239799997013
+  "elapsed_seconds": 4.283546600000136
 }

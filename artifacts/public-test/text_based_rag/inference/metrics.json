@@ -32,6 +32,6 @@
     }
   },
   "accuracy": 0.76,
-  "mean_inference_seconds": 5.748541931000655,
+  "mean_inference_seconds": 5.949237860999998,
   "completion_tokens": 26807
 }

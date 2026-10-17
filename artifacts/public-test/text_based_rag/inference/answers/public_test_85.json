@@ -117,7 +117,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
   "input_tokens": 2381,
-  "fingerprint": "8eb0d27895f80292e7581d20ed14521f801cd699912a1268951bfa987c6ad3ce",
+  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
   "status": "COMPLETED",
   "answer": "Sai",
   "answer_source": "model",
@@ -137,5 +137,5 @@
     "option_evaluation": "Câu hỏi khẳng định xe máy được phép rẽ phải khi gặp biển báo này. Tuy nhiên, mô tả thị giác chỉ nêu rõ được phép đi thẳng và không đề cập đến việc được phép rẽ phải. Do đó, phát biểu trong câu hỏi không khớp với thông tin trên biển báo.",
     "final_answer": "Sai"
   },
-  "elapsed_seconds": 3.430070499998692
+  "elapsed_seconds": 3.469326899999942
 }

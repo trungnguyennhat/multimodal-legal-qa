@@ -56,7 +56,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": "no_eligible_example",
   "input_tokens": 2893,
-  "fingerprint": "8eb0d27895f80292e7581d20ed14521f801cd699912a1268951bfa987c6ad3ce",
+  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
   "status": "COMPLETED",
   "answer": "Sai",
   "answer_source": "model",
@@ -76,5 +76,5 @@
     "option_evaluation": "Phát biểu 'Biển Giữ khoảng cách an toàn có thể sử dụng chữ màu vàng nền đen' là sai vì vi phạm quy định về màu sắc chữ tại khoản 13.1.9 của QCVN 41:2024/BGTVT, vốn chỉ cho phép chữ vàng trên nền xanh, không cho phép chữ vàng trên nền đen.",
     "final_answer": "Sai"
   },
-  "elapsed_seconds": 4.61897350000072
+  "elapsed_seconds": 4.866175399999975
 }

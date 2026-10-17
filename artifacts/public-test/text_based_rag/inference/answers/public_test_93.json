@@ -146,7 +146,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
   "input_tokens": 3492,
-  "fingerprint": "8eb0d27895f80292e7581d20ed14521f801cd699912a1268951bfa987c6ad3ce",
+  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
   "status": "COMPLETED",
   "answer": "C",
   "answer_source": "model",
@@ -166,5 +166,5 @@
     "option_evaluation": "A: Biển tốc độ tối đa (P.127) áp dụng cho tất cả phương tiện cơ giới bao gồm xe máy. B: Biển cấm đỗ xe (P.130) áp dụng cho tất cả phương tiện trừ khi có biển phụ loại trừ. C: Biển cấm xe 3 bánh và 4 bánh (xe tải, ô tô) không có hiệu lực với xe máy (xe 2 bánh). D: Biển chỉ dẫn làn đường có biểu tượng xe máy nên có hiệu lực với xe máy.",
     "final_answer": "C"
   },
-  "elapsed_seconds": 6.067765699997835
+  "elapsed_seconds": 6.140922199999977
 }

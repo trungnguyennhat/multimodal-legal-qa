@@ -129,7 +129,7 @@ Private đọc `submission_task2_no_labels.json`, tái dùng caption Task 1 sau 
 
 ```powershell
 # Public: inference và accuracy local.
-.\.venv\Scripts\python.exe -u -m text_based_rag.inference --split public_test --few-shot-count 2 --context-size 32768 --allow-incomplete-captions --overwrite
+.\.venv\Scripts\python.exe -u -m text_based_rag.inference --split public_test --few-shot-count 3 --context-size 32768 --allow-incomplete-captions --overwrite
 
 # Private: inference và xuất submission.
 .\.venv\Scripts\python.exe -u -m text_based_rag.inference --split private_test --few-shot-count 2 --context-size 65536 --overwrite
@@ -149,9 +149,9 @@ Logic hiện tại: JSON lỗi/bị cắt sẽ lấy `final_answer` hợp lệ t
 
 ### Few-shot QA — public/private
 
-Toàn bộ code few-shot nằm trong `src/text_based_rag/inference.py`. Tái sử dụng BGE-M3 embedding đã có của split đang chạy và 530 câu train gốc (418 train + 112 dev). Private lấy query embedding/caption từ nhánh `retrieval/`, đối chiếu với input Task 2 trước khi chọn ví dụ. Lọc cùng `question_type` và có ít nhất một citation chung, xếp cosine giảm dần rồi lấy tối đa 1 hoặc 2 ví dụ khác ảnh và không trùng câu hỏi/choices. Cho phép ảnh trùng giữa query và example bank theo chính sách hiện tại. Mỗi ví dụ gồm câu hỏi, caption đã lọc relevance, choices, citation và đáp án chuẩn (NFC); không sinh lời giải hay thêm luật của ví dụ vào context câu hiện tại. Chỉ dùng đáp án train gốc cho ví dụ, không dùng đáp án test.
+Toàn bộ code few-shot nằm trong `src/text_based_rag/inference.py`. Tái sử dụng BGE-M3 embedding đã có của split đang chạy và 530 câu train gốc (418 train + 112 dev). Private lấy query embedding/caption từ nhánh `retrieval/`, đối chiếu với input Task 2 trước khi chọn ví dụ. Lọc cùng `question_type` và có ít nhất một citation chung, xếp cosine giảm dần rồi lấy tối đa 1, 2 hoặc 3 ví dụ khác ảnh và không trùng câu hỏi/choices. Cho phép ảnh trùng giữa query và example bank theo chính sách hiện tại. Mỗi ví dụ gồm câu hỏi, caption đã lọc relevance, choices, citation và đáp án chuẩn (NFC); không sinh lời giải hay thêm luật của ví dụ vào context câu hiện tại. Chỉ dùng đáp án train gốc cho ví dụ, không dùng đáp án test.
 
-Chạy các lệnh ở trên với `--few-shot-count 2`; `1` dùng tối đa một ví dụ, mặc định `0` không dùng ví dụ. Mọi cấu hình đều ghi vào thư mục `inference/` hiện có của split, ghi đè khi dùng `--overwrite`, không tạo thư mục kết quả riêng. Kết quả few-shot public 0.76 đã được chuyển nguyên vẹn vào `artifacts/public-test/text_based_rag/inference/` và thay kết quả 0.73. Manifest giữ thông tin/hash của lần chạy đã tạo kết quả; sau khi gộp code, cần `--overwrite` nếu chạy lại. Bỏ `--overwrite` để resume các lần chạy bằng code mới khi cấu hình/code/input giữ nguyên. Không cần chạy lại caption/embedding/retrieval nếu artifact còn khớp manifest.
+Public đang có lệnh thử 3-shot; đã kiểm tra chuẩn bị 100 câu: 93 câu có 3 ví dụ, 1 câu có 2, 1 câu có 1, 5 câu không có ví dụ (trước preflight token runtime), chưa chạy model 3-shot. Chạy các lệnh ở trên với `--few-shot-count 2`; `1` dùng tối đa một ví dụ, mặc định `0` không dùng ví dụ. Mọi cấu hình đều ghi vào thư mục `inference/` hiện có của split, ghi đè khi dùng `--overwrite`, không tạo thư mục kết quả riêng. Kết quả few-shot public 0.76 đã được chuyển nguyên vẹn vào `artifacts/public-test/text_based_rag/inference/` và thay kết quả 0.73. Manifest giữ thông tin/hash của lần chạy đã tạo kết quả; sau khi gộp code, cần `--overwrite` nếu chạy lại. Bỏ `--overwrite` để resume các lần chạy bằng code mới khi cấu hình/code/input giữ nguyên. Không cần chạy lại caption/embedding/retrieval nếu artifact còn khớp manifest.
 
 Preflight đếm token bằng runtime thực tế, bỏ ví dụ cosine thấp nhất khi thiếu context; không có ví dụ phù hợp hoặc bỏ hết thì dùng zero-shot. Nếu riêng context câu hiện tại quá dài vẫn dừng, không cắt luật/caption. Prediction lưu `few_shot_examples` (ID, cosine, citation chung, đáp án, nội dung), `few_shot_dropped_ids`, `few_shot_fallback`; metrics báo số ví dụ thực dùng và số bỏ do context. Manifest lưu cấu hình và hash nguồn. Vẫn có heartbeat 30 giây khi chạy.
 

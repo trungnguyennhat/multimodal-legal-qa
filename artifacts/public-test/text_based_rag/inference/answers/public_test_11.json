@@ -144,7 +144,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
   "input_tokens": 2721,
-  "fingerprint": "8eb0d27895f80292e7581d20ed14521f801cd699912a1268951bfa987c6ad3ce",
+  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
   "status": "COMPLETED",
   "answer": "Sai",
   "answer_source": "model",
@@ -164,5 +164,5 @@
     "option_evaluation": "Câu hỏi khẳng định các xe cơ giới không thể vượt nhau trên đoạn đường này. Tuy nhiên, hình ảnh chỉ cho thấy lệnh cấm phương tiện đi vào khu vực, không có biển báo cấm vượt (P.125). Do đó, không có cơ sở pháp lý từ hình ảnh để khẳng định lệnh cấm vượt đang có hiệu lực. Phát biểu trong câu hỏi là sai.",
     "final_answer": "Sai"
   },
-  "elapsed_seconds": 4.998711699998239
+  "elapsed_seconds": 5.425313999999958
 }
