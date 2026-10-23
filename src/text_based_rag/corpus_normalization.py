@@ -22,7 +22,6 @@ SOURCE = ROOT / "data/raw/VLSP2025-MLQA-TSR/dataset/law_db/vlsp2025_law.json"
 IMAGES = ROOT / "data/processed/images/law"
 OUTPUT = ROOT / "artifacts/experiments/text_based_rag/corpus/data_preprocessing"
 MARKER = re.compile(r"<<(?P<kind>IMAGE|TABLE):(?P<body>.*?)/(?P=kind)>>", re.S)
-LABEL = re.compile(r"\b(Hình|Bảng)\s+([A-ZĐ]\.\d+(?:\.\d+)*|\d+(?:\.\d+)*)([a-z])?", re.I)
 VOID = {"img", "br", "hr", "input", "meta", "link", "source", "wbr", "col", "area", "base", "embed", "param"}
 BREAKS = {"p", "div", "li", "h1", "h2", "h3", "h4", "h5", "h6", "br", "hr"}
 
@@ -127,7 +126,7 @@ class Normalizer:
         figure["filename"] = name
         return figure
 
-    def html(self, fragment):
+    def html(self, fragment, result=None):
         fragment = re.sub(r"<<IMAGE:\s*(.*?)\s*/IMAGE>>",
                           lambda m: f'<img src="{escape(m.group(1), quote=True)}">', fragment, flags=re.S)
         parser = FragmentParser(html_whitespace=bool(re.search(r"<[a-zA-Z][^>]*>", fragment)))
@@ -137,19 +136,20 @@ class Normalizer:
             parser.repairs.append("unclosed tags at end of fragment")
         for detail in sorted(set(parser.repairs)):
             self.issue("html_repair", detail)
-        return self.content(parser.root)
+        return self.content(parser.root, result)
 
-    def content(self, root):
-        result, buffer = [], []
+    def content(self, root, result=None):
+        result = [] if result is None else result
+        buffer = []
 
         def flush():
-            for line in clean("".join(buffer)).splitlines():
-                if line:
-                    block = self.block("paragraph", text=line, references=[])
-                    clause = re.match(r"^(\d+(?:\.\d+)*\.?|[a-zđ]\))\s+", line, re.I)
-                    if clause:
-                        block["clause_label"] = clause.group(1)
-                    result.append(block)
+            text = clean("".join(buffer))
+            if text:
+                if result and result[-1]["type"] == "paragraph":
+                    result[-1]["text"] += "\n" + text
+                    result[-1]["source_span"][1] = self.span[1]
+                else:
+                    result.append(self.block("paragraph", text=text))
             buffer.clear()
 
         def walk(node):
@@ -234,9 +234,31 @@ class Normalizer:
         for child in root.children:
             if isinstance(child, str):
                 if child.strip():
-                    table.setdefault("other_blocks", []).extend(self.content(Element("root", children=[child])))
+                    self.content(Element("root", children=[child]), table.setdefault("other_blocks", []))
             elif child.tag not in {"tr", "thead", "tbody", "tfoot", "col", "colgroup"}:
-                table.setdefault("other_blocks", []).extend(self.content(child))
+                self.content(child, table.setdefault("other_blocks", []))
+
+        resources, row_text = [], {}
+
+        def render(sequence):
+            parts = []
+            for block in sequence:
+                if block["type"] == "paragraph":
+                    parts.append(block["text"])
+                else:
+                    resources.append(block)
+                    parts.append(f'<<BLOCK:{block["block_id"]}>>')
+            return "\n".join(parts)
+
+        for cell in table["cells"]:
+            span = f'; span={cell["rowspan"]}x{cell["colspan"]}' if cell["rowspan"] > 1 or cell["colspan"] > 1 else ""
+            header = "; header" if cell["is_header"] else ""
+            value = render(cell.pop("blocks"))
+            row_text.setdefault(cell["row"], []).append(f'Cột {cell["column"] + 1}{span}{header}: {value}'.rstrip())
+        lines = [f'Hàng {row + 1}: ' + " | ".join(values) for row, values in row_text.items()]
+        lines.append(render(table.pop("other_blocks", [])))
+        paragraph = self.block("paragraph", text="\n".join(line for line in lines if line) or "Bảng không có ô dữ liệu.")
+        table["blocks"] = [paragraph, *resources]
         return table
 
     def normalize(self, doc, article, key):
@@ -247,82 +269,28 @@ class Normalizer:
         cursor = 0
         for marker in MARKER.finditer(article["text"]):
             self.span = (cursor, marker.start())
-            top.extend(self.html(article["text"][cursor:marker.start()]))
+            self.html(article["text"][cursor:marker.start()], top)
             self.span = marker.span()
             if marker.group("kind") == "IMAGE":
                 top.append(self.figure(marker.group("body").strip()))
             else:
-                top.extend(self.html(marker.group("body")))
+                self.html(marker.group("body"), top)
             cursor = marker.end()
         self.span = (cursor, len(article["text"]))
-        top.extend(self.html(article["text"][cursor:]))
+        self.html(article["text"][cursor:], top)
         if re.search(r"<<(?:IMAGE|TABLE):|/(?:IMAGE|TABLE)>>", MARKER.sub("", article["text"])):
             self.issue("unparsed_marker", "Malformed marker retained in source text")
 
-        def attach(sequence):
-            for i, block in enumerate(sequence):
-                if block["type"] == "figure" and i + 1 < len(sequence):
-                    following = sequence[i + 1]
-                    match = LABEL.match(following.get("text", ""))
-                    if match and match.group(1).casefold() == "hình":
-                        block["label"] = match.group(0)
-                        block["caption_original"] = following["text"]
-                        block["caption_block_id"] = following["block_id"]
-                if block["type"] == "table":
-                    for prior in reversed(sequence[max(0, i - 3):i]):
-                        if prior["type"] != "paragraph":
-                            break
-                        if re.match(r"^Đơn vị", prior["text"], re.I):
-                            block["unit_original"] = prior["text"]
-                        match = LABEL.match(prior["text"])
-                        if match and match.group(1).casefold() == "bảng":
-                            block["label"] = match.group(0)
-                            block["caption_original"] = prior["text"]
-                            block["caption_block_id"] = prior["block_id"]
-                            break
-                    for cell in block["cells"]:
-                        attach(cell["blocks"])
-                    attach(block.get("other_blocks", []))
-            # Labels are only attached by explicit adjacent captions, not guessed from filenames.
-
-        attach(top)
-        for block in self.blocks:
-            if block["type"] in {"figure", "table"} and "label" not in block:
-                self.issue("unlabelled_resource", "No unambiguous adjacent figure/table caption", block["block_id"])
         self.article["blocks"] = top
+        def reachable(sequence):
+            for block in sequence:
+                yield block["block_id"]
+                yield from reachable(block.get("blocks", []))
+
+        kept = set(reachable(top))
+        self.blocks = [block for block in self.blocks if block["block_id"] in kept]
         self.article["all_block_ids"] = [b["block_id"] for b in self.blocks]
         return self.article, list(self.blocks)
-
-
-def label_key(match):
-    return (match.group(1).casefold(), (match.group(2) + (match.group(3) or "")).casefold())
-
-
-def resolve_links(records, flat_blocks, normalizer):
-    labels = {}
-    caption_ids = set()
-    for record, blocks in zip(records, flat_blocks):
-        for block in blocks:
-            if "label" in block:
-                caption_ids.add(block["caption_block_id"])
-                key = (record["document_id"], *label_key(LABEL.match(block["label"])))
-                labels.setdefault(key, []).append((record["article_key"], block["block_id"]))
-    for record, blocks in zip(records, flat_blocks):
-        normalizer.article = record
-        for block in blocks:
-            if block["type"] != "paragraph" or block["block_id"] in caption_ids:
-                continue
-            for match in LABEL.finditer(block["text"]):
-                candidates = labels.get((record["document_id"], *label_key(match)), [])
-                local = [item for item in candidates if item[0] == record["article_key"]]
-                candidates = local or candidates
-                link = {"mention": match.group(0), "target_block_id": None,
-                        "status": "resolved" if len(candidates) == 1 else "ambiguous" if candidates else "unresolved"}
-                if len(candidates) == 1:
-                    link["target_block_id"] = candidates[0][1]
-                else:
-                    normalizer.issue("reference_" + link["status"], match.group(0), block["block_id"])
-                block["references"].append(link)
 
 
 def preview(blocks, stream, depth=0):
@@ -331,18 +299,12 @@ def preview(blocks, stream, depth=0):
         stream.write(f'\n{prefix}[{block["block_id"]}] {block["type"]}\n\n')
         if block["type"] == "paragraph":
             stream.write(prefix + block["text"] + "\n")
-            for link in block["references"]:
-                stream.write(f'{prefix}→ {link["mention"]}: {link["target_block_id"] or link["status"]}\n')
         elif block["type"] == "figure":
-            stream.write(f'{prefix}Ảnh: {block["source_reference"]}\n{prefix}Chú thích gốc: {block.get("caption_original", "chưa xác định")}\n')
+            stream.write(f'{prefix}Ảnh: {block["source_reference"]}\n')
             if block.get("description_vlm"):
                 stream.write(f'{prefix}Mô tả VLM: {block["description_vlm"]}\n')
         else:
-            stream.write(f'{prefix}{block.get("caption_original", "Bảng chưa có nhãn")}\n')
-            for cell in block["cells"]:
-                stream.write(f'\n{prefix}Ô hàng {cell["row"] + 1}, cột {cell["column"] + 1}; span={cell["rowspan"]}×{cell["colspan"]}\n')
-                preview(cell["blocks"], stream, depth + 1)
-            preview(block.get("other_blocks", []), stream, depth + 1)
+            preview(block["blocks"], stream, depth + 1)
 
 
 def main():
@@ -361,8 +323,8 @@ def main():
                 raise ValueError(f'Invalid article in {doc["id"]}: requires string id/title/text')
     total = sum(len(d["articles"]) for d in docs)
     run = OUTPUT
-    run.mkdir(parents=True, exist_ok=False)
-    manifest = {"status": "IN_PROGRESS", "schema_version": 2, "source": str(args.source.resolve()),
+    run.mkdir(parents=True, exist_ok=True)
+    manifest = {"status": "IN_PROGRESS", "schema_version": 4, "source": str(args.source.resolve()),
                 "source_sha256": sha256(args.source.read_bytes()).hexdigest(),
                 "image_directory": str(args.image_dir.resolve()), "documents": len(docs), "articles": total,
                 "created_at": datetime.now(timezone.utc).isoformat(), "vlm_run": False}
@@ -391,20 +353,19 @@ def main():
                 record, blocks = normalizer.normalize(doc, article, f"d{di + 1:02d}/a{ai + 1:04d}")
                 records.append(record)
                 flat.append(blocks)
-        resolve_links(records, flat, normalizer)
         # Runtime integrity checks protect provenance before publishing normalized records.
         ids = [b["block_id"] for blocks in flat for b in blocks]
         assert len(ids) == len(set(ids)), "Duplicate block identifiers"
         assert all("text" not in record for record in records), "Original article text must not be exported"
         assert all("attributes" not in b and all("attributes" not in c for c in b.get("cells", []))
                    for blocks in flat for b in blocks), "Raw HTML attributes must not be exported"
-        known = set(ids)
-        assert all(link["target_block_id"] in known for blocks in flat for b in blocks
-                   for link in b.get("references", []) if link["status"] == "resolved"), "Dangling reference"
+        assert all("text" not in b and sum(child["type"] == "paragraph" for child in b["blocks"]) == 1
+                   and all("blocks" not in cell for cell in b["cells"])
+                   for blocks in flat for b in blocks if b["type"] == "table"), "Table must have one shared paragraph"
         for filename, values in (("structured_corpus.jsonl", records),
                                  ("image_manifest.jsonl", normalizer.images.values()),
                                  ("issues.jsonl", normalizer.issues)):
-            with (run / filename).open("x", encoding="utf-8") as stream:
+            with (run / filename).open("w", encoding="utf-8") as stream:
                 for value in values:
                     stream.write(json.dumps(value, ensure_ascii=False) + "\n")
         dump(run / "corpus_inventory.json", {
@@ -414,7 +375,7 @@ def main():
             "issue_codes": dict(Counter(i["code"] for i in normalizer.issues)),
             "per_document": [{"id": d["id"], "title": d["title"], "articles": len(d["articles"])} for d in docs],
         })
-        with (run / "corpus_preview.md").open("x", encoding="utf-8") as stream:
+        with (run / "corpus_preview.md").open("w", encoding="utf-8") as stream:
             for record in records:
                 stream.write(f'\n# {record["document_id"]} / {record["id"]} — {record["title"]}\n')
                 preview(record["blocks"], stream)

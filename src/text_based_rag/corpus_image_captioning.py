@@ -83,8 +83,9 @@ def save(path, value):
 def blocks(sequence):
     for block in sequence:
         yield block
+        yield from blocks(block.get("blocks", []))
         for cell in block.get("cells", []):
-            yield from blocks(cell["blocks"])
+            yield from blocks(cell.get("blocks", []))
         yield from blocks(block.get("other_blocks", []))
 
 
@@ -95,8 +96,8 @@ def main():
                         help="Regenerate every selected caption and replace existing caption output.")
     args = parser.parse_args()
     preprocessing = json.loads((INPUT / "manifest.json").read_text(encoding="utf-8"))
-    if preprocessing["status"] != "COMPLETED" or preprocessing["schema_version"] != 2:
-        raise ValueError("Cần corpus chuẩn hóa schema 2 với manifest COMPLETED.")
+    if preprocessing["status"] != "COMPLETED" or preprocessing["schema_version"] != 4:
+        raise ValueError("Cần corpus chuẩn hóa schema 4 với manifest COMPLETED.")
     records = read_lines(INPUT / "structured_corpus.jsonl")
     images = read_lines(INPUT / "image_manifest.jsonl")
     unique = {}

@@ -184,8 +184,11 @@ def main():
         maximum = min(8192, model.config.max_position_embeddings - 2)
         oversized = [c["chunk_id"] for c, length in zip(chunks, lengths) if length > maximum]
         if oversized:
-            raise ValueError(f"Chunk vượt giới hạn {maximum} token; chia lại chunk: {oversized[:5]}")
-        if any(length != chunk.get("token_count") or length > source_manifest["max_tokens"]
+            raise ValueError(f"Chunk vượt giới hạn encoder {maximum} token; không tự cắt ảnh/bảng: {oversized[:5]}")
+        if any(length != chunk.get("token_count") or
+               (length > source_manifest["max_tokens"] and not
+                (source_manifest.get("method") == "ordered_text_atomic_resources" and
+                 chunk.get("chunk_type") in {"image", "table"}))
                for chunk, length in zip(chunks, lengths)):
             raise ValueError("Token count/ngân sách chunk không khớp tokenizer embedding.")
         OUTPUT.mkdir(parents=True, exist_ok=True)

@@ -13,9 +13,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe.
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
 gate=high; s_max=1.000000; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.987899 | corpus=0.878989 | example=1.000000 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.987660 | corpus=0.876604 | example=1.000000 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.966952 | corpus=0.882364 | example=0.976351 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.987116 | corpus=0.871163 | example=1.000000 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.984736 | corpus=0.847357 | example=1.000000 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.963678 | corpus=0.849621 | example=0.976351 | sources=['corpus', 'example']
 
 ===== public_test_2 =====
 Câu hỏi:
@@ -28,9 +28,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo cấm dừng và đỗ xe.
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
 gate=high; s_max=1.000000; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.984719 | corpus=0.847194 | example=1.000000 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.984192 | corpus=0.841922 | example=1.000000 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 26 | fusion=0.934999 | corpus=0.834921 | example=0.946119 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.982696 | corpus=0.826958 | example=1.000000 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.981310 | corpus=0.813103 | example=1.000000 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 26 | fusion=0.932915 | corpus=0.814073 | example=0.946119 | sources=['corpus', 'example']
 
 ===== public_test_3 =====
 Câu hỏi:
@@ -47,10 +47,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm xe đạp đi vào
 F2=0.5000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.10'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.11'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.4'}]
 gate=high; s_max=0.924494; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 24 | fusion=0.952136 | corpus=0.861135 | example=0.962247 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.5 | fusion=0.940943 | corpus=0.886663 | example=0.946974 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.939398 | corpus=0.871220 | example=0.946974 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.4 | fusion=0.939182 | corpus=0.893935 | example=0.944209 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 24 | fusion=0.952008 | corpus=0.859858 | example=0.962247 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.5 | fusion=0.939015 | corpus=0.867387 | example=0.946974 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.936764 | corpus=0.844875 | example=0.946974 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.4 | fusion=0.936242 | corpus=0.864540 | example=0.944209 | sources=['corpus', 'example']
 
 ===== public_test_4 =====
 Câu hỏi:
@@ -63,12 +63,12 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo giới hạn tốc độ tối đa 80 km/h và tốc độ tối thiểu 60 km/h trên đoạn đường cao tốc Quảng Ninh - Hải Phòng.
 F2=1.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.6'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.3'}]
 gate=high; s_max=0.903742; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | D.6 | fusion=0.946250 | corpus=0.895658 | example=0.951871 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.27 | fusion=0.944932 | corpus=0.882480 | example=0.951871 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.941951 | corpus=0.852675 | example=0.951871 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.941944 | corpus=0.852601 | example=0.951871 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 47 | fusion=0.932774 | corpus=0.893566 | example=0.937131 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | P.3 | fusion=0.931986 | corpus=0.885685 | example=0.937131 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | D.6 | fusion=0.945175 | corpus=0.884914 | example=0.951871 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.27 | fusion=0.943651 | corpus=0.869672 | example=0.951871 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.940363 | corpus=0.836790 | example=0.951871 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.939339 | corpus=0.826550 | example=0.951871 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 47 | fusion=0.931714 | corpus=0.882965 | example=0.937131 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | P.3 | fusion=0.929089 | corpus=0.856709 | example=0.937131 | sources=['corpus', 'example']
 
 ===== public_test_5 =====
 Câu hỏi:
@@ -113,21 +113,21 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 50 km/h.
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.11'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.16'}]
 gate=high; s_max=0.827294; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.906123 | corpus=0.838407 | example=0.913647 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.27c | fusion=0.904105 | corpus=0.818225 | example=0.913647 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.896344 | corpus=0.860051 | example=0.900376 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | P.3 | fusion=0.894272 | corpus=0.839331 | example=0.900376 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.890325 | corpus=0.845330 | example=0.895324 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.907749 | corpus=0.854669 | example=0.913647 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.27c | fusion=0.904589 | corpus=0.823067 | example=0.913647 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.896815 | corpus=0.864760 | example=0.900376 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | P.3 | fusion=0.894161 | corpus=0.838220 | example=0.900376 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.891936 | corpus=0.861442 | example=0.895324 | sources=['corpus', 'example']
 
 ===== public_test_6 =====
 Câu hỏi:
 Có biển báo chỉ dẫn ở trong hình trên không?
 F2=0.0000; gold=[{'law_id': '36/2024/QH15', 'article_id': '11.0'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '35'}]
 gate=high; s_max=0.932067; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.950577 | corpus=0.811467 | example=0.966034 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.868984 | corpus=0.811867 | example=0.875330 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.868169 | corpus=0.803719 | example=0.875330 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.23 | fusion=0.861668 | corpus=0.807352 | example=0.867703 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.950926 | corpus=0.814960 | example=0.966034 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.868640 | corpus=0.808430 | example=0.875330 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.868302 | corpus=0.805053 | example=0.875330 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.23 | fusion=0.861059 | corpus=0.801261 | example=0.867703 | sources=['corpus', 'example']
 
 ===== public_test_7 =====
 Câu hỏi:
@@ -144,13 +144,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển phụ bổ sung thông tin về biển cấm
 F2=0.6667; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.6'}]
 gate=high; s_max=0.914112; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.950278 | corpus=0.889272 | example=0.957056 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.6 | fusion=0.949602 | corpus=0.882512 | example=0.957056 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.25 | fusion=0.942537 | corpus=0.868545 | example=0.950759 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 11 | fusion=0.941904 | corpus=0.893248 | example=0.947310 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.30 | fusion=0.940479 | corpus=0.847959 | example=0.950759 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | 21 | fusion=0.938645 | corpus=0.860662 | example=0.947310 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | P.26 | fusion=0.934077 | corpus=0.814980 | example=0.947310 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.6 | fusion=0.947690 | corpus=0.863393 | example=0.957056 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.946705 | corpus=0.853548 | example=0.957056 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.25 | fusion=0.940682 | corpus=0.849997 | example=0.950759 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 11 | fusion=0.939418 | corpus=0.868392 | example=0.947310 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 21 | fusion=0.938645 | corpus=0.860662 | example=0.947310 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.30 | fusion=0.938130 | corpus=0.824476 | example=0.950759 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | P.26 | fusion=0.930445 | corpus=0.778659 | example=0.947310 | sources=['corpus', 'example']
 
 ===== public_test_8 =====
 Câu hỏi:
@@ -163,13 +163,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm xe tải rẽ trái
 F2=0.3333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.24'}]
 gate=high; s_max=0.900447; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.939714 | corpus=0.845132 | example=0.950223 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.12 | fusion=0.936167 | corpus=0.809657 | example=0.950223 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.934358 | corpus=0.862802 | example=0.942309 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.30 | fusion=0.930314 | corpus=0.830512 | example=0.941403 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 32 | fusion=0.929980 | corpus=0.819022 | example=0.942309 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | B.25 | fusion=0.929880 | corpus=0.826175 | example=0.941403 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | D.21 | fusion=0.928298 | corpus=0.802203 | example=0.942309 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.938222 | corpus=0.830209 | example=0.950223 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.12 | fusion=0.934278 | corpus=0.790770 | example=0.950223 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.931402 | corpus=0.833247 | example=0.942309 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.929741 | corpus=0.816636 | example=0.942309 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.25 | fusion=0.928600 | corpus=0.813372 | example=0.941403 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.30 | fusion=0.927528 | corpus=0.802651 | example=0.941403 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | D.21 | fusion=0.925991 | corpus=0.779133 | example=0.942309 | sources=['corpus', 'example']
 
 ===== public_test_9 =====
 Câu hỏi:
@@ -182,8 +182,8 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Giới hạn tốc độ tối đa 60 km/h
 F2=1.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
 gate=high; s_max=1.000000; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.984764 | corpus=0.847637 | example=1.000000 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.27 | fusion=0.984178 | corpus=0.841780 | example=1.000000 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.982996 | corpus=0.829957 | example=1.000000 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.982787 | corpus=0.827866 | example=1.000000 | sources=['corpus', 'example']
 
 ===== public_test_10 =====
 Câu hỏi:
@@ -196,10 +196,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn phương tiện phải đi theo hướng mũi tên (sang phải).
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.1a'}]
 gate=high; s_max=0.914273; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.947835 | corpus=0.864119 | example=0.957136 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | D.1a | fusion=0.947006 | corpus=0.855832 | example=0.957136 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 36 | fusion=0.945915 | corpus=0.872707 | example=0.954049 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | E.9 | fusion=0.944014 | corpus=0.853706 | example=0.954049 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | D.1a | fusion=0.945387 | corpus=0.839646 | example=0.957136 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.945117 | corpus=0.836941 | example=0.957136 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 36 | fusion=0.944038 | corpus=0.853944 | example=0.954049 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | E.9 | fusion=0.940992 | corpus=0.823485 | example=0.954049 | sources=['corpus', 'example']
 
 ===== public_test_11 =====
 Câu hỏi:
@@ -216,10 +216,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm xe tải đi vào.
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.25'}]
 gate=high; s_max=0.907215; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.25 | fusion=0.946409 | corpus=0.881621 | example=0.953607 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.944904 | corpus=0.866569 | example=0.953607 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 41 | fusion=0.928539 | corpus=0.826718 | example=0.939853 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | F.1 | fusion=0.927582 | corpus=0.817145 | example=0.939853 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.25 | fusion=0.945802 | corpus=0.875554 | example=0.953607 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.944454 | corpus=0.862073 | example=0.953607 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 41 | fusion=0.926749 | corpus=0.808813 | example=0.939853 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | F.1 | fusion=0.926300 | corpus=0.804322 | example=0.939853 | sources=['corpus', 'example']
 
 ===== public_test_12 =====
 Câu hỏi:
@@ -232,9 +232,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn các loại phương tiện được phép lưu thông trên làn đường tương ứng: xe con, xe buýt dưới 30 chỗ, xe tải dưới 3,5 tấn, xe máy, xe ba bánh và xe đạp.
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.16'}]
 gate=high; s_max=0.873815; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | D.14 | fusion=0.929081 | corpus=0.858641 | example=0.936908 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.927391 | corpus=0.841740 | example=0.936908 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | D.16 | fusion=0.912423 | corpus=0.857718 | example=0.918501 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | D.14 | fusion=0.928768 | corpus=0.855516 | example=0.936908 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.926904 | corpus=0.836877 | example=0.936908 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.16 | fusion=0.910992 | corpus=0.843409 | example=0.918501 | sources=['corpus', 'example']
 
 ===== public_test_13 =====
 Câu hỏi:
@@ -247,10 +247,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm rẽ phải
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.23'}]
 gate=high; s_max=0.945790; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.962000 | corpus=0.863942 | example=0.972895 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.24 | fusion=0.960463 | corpus=0.848578 | example=0.972895 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.958371 | corpus=0.886744 | example=0.966329 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.23 | fusion=0.956304 | corpus=0.866079 | example=0.966329 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.959003 | corpus=0.833977 | example=0.972895 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.24 | fusion=0.958955 | corpus=0.833494 | example=0.972895 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.954563 | corpus=0.848666 | example=0.966329 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.23 | fusion=0.953632 | corpus=0.839354 | example=0.966329 | sources=['corpus', 'example']
 
 ===== public_test_14 =====
 Câu hỏi:
@@ -263,13 +263,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm xe tải và xe ô tô nhỏ đi vào.
 F2=0.1429; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.7'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.8'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.11'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.5'}]
 gate=high; s_max=0.906243; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 11 | fusion=0.947189 | corpus=0.893796 | example=0.953122 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.945175 | corpus=0.873653 | example=0.953122 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.25 | fusion=0.943637 | corpus=0.858277 | example=0.953122 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 21 | fusion=0.942476 | corpus=0.846663 | example=0.953122 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.5 | fusion=0.940997 | corpus=0.877671 | example=0.948033 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | P.26 | fusion=0.940621 | corpus=0.828110 | example=0.953122 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | B.31 | fusion=0.936588 | corpus=0.845203 | example=0.946742 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 11 | fusion=0.945365 | corpus=0.875551 | example=0.953122 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 21 | fusion=0.942476 | corpus=0.846663 | example=0.953122 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.941599 | corpus=0.837898 | example=0.953122 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.25 | fusion=0.940597 | corpus=0.827872 | example=0.953122 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.5 | fusion=0.938240 | corpus=0.850104 | example=0.948033 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | P.26 | fusion=0.937422 | corpus=0.796121 | example=0.953122 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.31 | fusion=0.933496 | corpus=0.814284 | example=0.946742 | sources=['corpus', 'example']
 
 ===== public_test_15 =====
 Câu hỏi:
@@ -322,13 +322,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Làn dành cho xe 3 bánh
 F2=0.6667; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
 gate=high; s_max=0.888293; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | D.6 | fusion=0.936801 | corpus=0.870695 | example=0.944147 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.27 | fusion=0.936503 | corpus=0.867711 | example=0.944147 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 45 | fusion=0.936100 | corpus=0.863679 | example=0.944147 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 47 | fusion=0.935794 | corpus=0.860624 | example=0.944147 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 22 | fusion=0.934957 | corpus=0.852247 | example=0.944147 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | 32 | fusion=0.934402 | corpus=0.846703 | example=0.944147 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | P.3 | fusion=0.919261 | corpus=0.864578 | example=0.925336 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.935964 | corpus=0.862321 | example=0.944147 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.6 | fusion=0.935872 | corpus=0.861398 | example=0.944147 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 45 | fusion=0.934821 | corpus=0.850891 | example=0.944147 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 47 | fusion=0.933893 | corpus=0.841607 | example=0.944147 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 22 | fusion=0.932840 | corpus=0.831082 | example=0.944147 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 32 | fusion=0.932343 | corpus=0.826111 | example=0.944147 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | P.3 | fusion=0.917360 | corpus=0.845574 | example=0.925336 | sources=['corpus', 'example']
 
 ===== public_test_16 =====
 Câu hỏi:
@@ -349,9 +349,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ hướng rẽ phải tại điểm nhập làn.
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '45'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
 gate=high; s_max=0.959184; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.970598 | corpus=0.889649 | example=0.979592 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 46 | fusion=0.970101 | corpus=0.884682 | example=0.979592 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 45 | fusion=0.966897 | corpus=0.852644 | example=0.979592 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.968522 | corpus=0.868889 | example=0.979592 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 46 | fusion=0.966565 | corpus=0.849318 | example=0.979592 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 45 | fusion=0.964318 | corpus=0.826856 | example=0.979592 | sources=['corpus', 'example']
 
 ===== public_test_17 =====
 Câu hỏi:
@@ -368,10 +368,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ định mã số kỹ thuật của biển báo theo quy định Việt Nam
 F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.26'}]
 gate=high; s_max=0.891411; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.6 | fusion=0.941337 | corpus=0.902023 | example=0.945705 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.941167 | corpus=0.900322 | example=0.945705 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.934620 | corpus=0.878338 | example=0.940874 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.25 | fusion=0.932612 | corpus=0.875444 | example=0.938964 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.938092 | corpus=0.869572 | example=0.945705 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.6 | fusion=0.937694 | corpus=0.865593 | example=0.945705 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.930122 | corpus=0.833359 | example=0.940874 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.25 | fusion=0.929057 | corpus=0.839893 | example=0.938964 | sources=['corpus', 'example']
 
 ===== public_test_18 =====
 Câu hỏi:
@@ -384,11 +384,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cảnh báo người tham gia giao thông về đoạn đường có lồi lõm (ổ gà, lồi lõm)
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.21'}]
 gate=middle; s_max=0.802425; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.880704 | corpus=0.849942 | example=0.901213 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | C.21 | fusion=0.877820 | corpus=0.842858 | example=0.901129 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | C.5 | fusion=0.860198 | corpus=0.817956 | example=0.888358 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | C.2 | fusion=0.859656 | corpus=0.797321 | example=0.901213 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | C.10 | fusion=0.856684 | corpus=0.816843 | example=0.883245 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | C.21 | fusion=0.870887 | corpus=0.825525 | example=0.901129 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.863185 | corpus=0.806144 | example=0.901213 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.5 | fusion=0.851687 | corpus=0.796681 | example=0.888358 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.2 | fusion=0.849775 | corpus=0.772618 | example=0.901213 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | C.10 | fusion=0.848693 | corpus=0.796865 | example=0.883245 | sources=['corpus', 'example']
 
 ===== public_test_19 =====
 Câu hỏi:
@@ -401,8 +401,8 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm dừng và cấm đỗ xe.
 F2=1.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
 gate=high; s_max=0.909712; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.947027 | corpus=0.876563 | example=0.954856 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.946799 | corpus=0.874291 | example=0.954856 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.946447 | corpus=0.870772 | example=0.954856 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.945514 | corpus=0.861434 | example=0.954856 | sources=['corpus', 'example']
 
 ===== public_test_20 =====
 Câu hỏi:
@@ -415,10 +415,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ cho người tham gia giao thông biết số lượng làn đường trên mặt đường và hướng đi trên mỗi làn đường theo vạch kẻ đường.
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.13'}]
 gate=high; s_max=0.894626; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.938315 | corpus=0.857334 | example=0.947313 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | D.16 | fusion=0.937862 | corpus=0.852802 | example=0.947313 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | D.1a | fusion=0.926815 | corpus=0.865722 | example=0.933603 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | D.13 | fusion=0.924594 | corpus=0.889279 | example=0.928518 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 32 | fusion=0.938144 | corpus=0.855630 | example=0.947313 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.16 | fusion=0.936217 | corpus=0.836356 | example=0.947313 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.1a | fusion=0.925513 | corpus=0.852702 | example=0.933603 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | D.13 | fusion=0.924047 | corpus=0.883812 | example=0.928518 | sources=['corpus', 'example']
 
 ===== public_test_21 =====
 Câu hỏi:
@@ -435,13 +435,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm xe ô tô đi vào
 F2=0.5263; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.6'}]
 gate=high; s_max=0.898978; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.6 | fusion=0.943418 | corpus=0.888777 | example=0.949489 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.942012 | corpus=0.874716 | example=0.949489 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.4 | fusion=0.940758 | corpus=0.862179 | example=0.949489 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.10 | fusion=0.938458 | corpus=0.839183 | example=0.949489 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | F.5 | fusion=0.929856 | corpus=0.850986 | example=0.938619 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | B.27 | fusion=0.926682 | corpus=0.819243 | example=0.938619 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | 11 | fusion=0.924359 | corpus=0.872660 | example=0.930104 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.6 | fusion=0.941032 | corpus=0.864917 | example=0.949489 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.939653 | corpus=0.851136 | example=0.949489 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.4 | fusion=0.939016 | corpus=0.844765 | example=0.949489 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.10 | fusion=0.936304 | corpus=0.817640 | example=0.949489 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | F.5 | fusion=0.929212 | corpus=0.844552 | example=0.938619 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.27 | fusion=0.926751 | corpus=0.819939 | example=0.938619 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | 11 | fusion=0.923023 | corpus=0.859295 | example=0.930104 | sources=['corpus', 'example']
 
 ===== public_test_22 =====
 Câu hỏi:
@@ -454,10 +454,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu người đi bộ qua đường (biển báo hiệu đường bộ dành cho người đi bộ).
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.23a'}]
 gate=high; s_max=0.911038; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | D.5 | fusion=0.947003 | corpus=0.870360 | example=0.955519 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.944565 | corpus=0.845974 | example=0.955519 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 28 | fusion=0.936670 | corpus=0.839434 | example=0.947474 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | C.4 | fusion=0.936017 | corpus=0.832905 | example=0.947474 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | D.5 | fusion=0.943816 | corpus=0.838484 | example=0.955519 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.941247 | corpus=0.812797 | example=0.955519 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.4 | fusion=0.932430 | corpus=0.797036 | example=0.947474 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 28 | fusion=0.932358 | corpus=0.796314 | example=0.947474 | sources=['corpus', 'example']
 
 ===== public_test_23 =====
 Câu hỏi:
@@ -470,9 +470,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo cấm dừng và đỗ xe
 F2=0.6667; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '11'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.30'}]
 gate=high; s_max=0.924211; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.30 | fusion=0.951896 | corpus=0.860009 | example=0.962105 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.949912 | corpus=0.840173 | example=0.962105 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 26 | fusion=0.937026 | corpus=0.820978 | example=0.949921 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.948452 | corpus=0.825568 | example=0.962105 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.30 | fusion=0.947101 | corpus=0.812065 | example=0.962105 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 26 | fusion=0.935005 | corpus=0.800765 | example=0.949921 | sources=['corpus', 'example']
 
 ===== public_test_24 =====
 Câu hỏi:
@@ -489,9 +489,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm dừng đỗ xe
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.30'}]
 gate=high; s_max=0.928046; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.30 | fusion=0.955406 | corpus=0.877849 | example=0.964023 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.952975 | corpus=0.853538 | example=0.964023 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 26 | fusion=0.948580 | corpus=0.823013 | example=0.962532 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.951221 | corpus=0.836001 | example=0.964023 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.30 | fusion=0.950545 | corpus=0.829247 | example=0.964023 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 26 | fusion=0.947695 | corpus=0.814163 | example=0.962532 | sources=['corpus', 'example']
 
 ===== public_test_25 =====
 Câu hỏi:
@@ -504,10 +504,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cảnh báo đường sập
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.40'}]
 gate=high; s_max=0.870991; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.928874 | corpus=0.869283 | example=0.935495 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | C.1 | fusion=0.928461 | corpus=0.866861 | example=0.935305 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | C.45 | fusion=0.925103 | corpus=0.831571 | example=0.935495 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | C.40 | fusion=0.923536 | corpus=0.859162 | example=0.930688 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.927246 | corpus=0.852996 | example=0.935495 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.1 | fusion=0.924666 | corpus=0.828916 | example=0.935305 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.45 | fusion=0.920710 | corpus=0.787645 | example=0.935495 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.40 | fusion=0.920706 | corpus=0.830869 | example=0.930688 | sources=['corpus', 'example']
 
 ===== public_test_26 =====
 Câu hỏi:
@@ -524,9 +524,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển phụ bổ sung ý nghĩa cấm tất cả các loại xe tải
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.6'}]
 gate=high; s_max=0.884713; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.15 | fusion=0.936521 | corpus=0.883999 | example=0.942357 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.935251 | corpus=0.871305 | example=0.942357 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.6 | fusion=0.930110 | corpus=0.887232 | example=0.934874 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.15 | fusion=0.935488 | corpus=0.873671 | example=0.942357 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.932664 | corpus=0.845429 | example=0.942357 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.6 | fusion=0.928519 | corpus=0.871319 | example=0.934874 | sources=['corpus', 'example']
 
 ===== public_test_27 =====
 Câu hỏi:
@@ -543,11 +543,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn xe ô tô và xe đạp được phép đi
 F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.10'}]
 gate=high; s_max=0.878539; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | D.14 | fusion=0.931601 | corpus=0.862589 | example=0.939269 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.930302 | corpus=0.849596 | example=0.939269 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.928007 | corpus=0.850493 | example=0.936620 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.25 | fusion=0.925674 | corpus=0.827159 | example=0.936620 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.30 | fusion=0.919303 | corpus=0.824523 | example=0.929834 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | D.14 | fusion=0.929523 | corpus=0.841808 | example=0.939269 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.929300 | corpus=0.839577 | example=0.939269 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.926810 | corpus=0.838521 | example=0.936620 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.25 | fusion=0.923505 | corpus=0.805469 | example=0.936620 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.30 | fusion=0.917507 | corpus=0.806563 | example=0.929834 | sources=['corpus', 'example']
 
 ===== public_test_28 =====
 Câu hỏi:
@@ -560,9 +560,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu đường hẹp phía trước, hai chiều xe đi lại.
 F2=0.4545; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.3'}]
 gate=high; s_max=0.898695; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.940259 | corpus=0.858466 | example=0.949348 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | C.40 | fusion=0.938509 | corpus=0.840957 | example=0.949348 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | C.4 | fusion=0.925694 | corpus=0.858522 | example=0.933158 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.938619 | corpus=0.842064 | example=0.949348 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.40 | fusion=0.936032 | corpus=0.816188 | example=0.949348 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.4 | fusion=0.923974 | corpus=0.841316 | example=0.933158 | sources=['corpus', 'example']
 
 ===== public_test_29 =====
 Câu hỏi:
@@ -579,11 +579,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Quy định chi tiết về các loại xe được phép hoạt động và khung giờ cấm. Cụ thể: '3. CẤM HOẠT ĐỘNG TỪ 6H00 - 21H00: - XE TẢI CÓ TRỌNG TẢI TOÀN BỘ CHO PHÉP > 1,5T.'
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '35'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.11'}]
 gate=high; s_max=0.847953; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.7 | fusion=0.914835 | corpus=0.832559 | example=0.923977 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.6 | fusion=0.914531 | corpus=0.847473 | example=0.921982 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.914235 | corpus=0.826563 | example=0.923977 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | F.10 | fusion=0.910363 | corpus=0.817586 | example=0.920672 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 41 | fusion=0.906235 | corpus=0.776304 | example=0.920672 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.7 | fusion=0.914214 | corpus=0.826353 | example=0.923977 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.6 | fusion=0.914025 | corpus=0.842406 | example=0.921982 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.911065 | corpus=0.794864 | example=0.923977 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | F.10 | fusion=0.909371 | corpus=0.807667 | example=0.920672 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 41 | fusion=0.905151 | corpus=0.765461 | example=0.920672 | sources=['corpus', 'example']
 
 ===== public_test_30 =====
 Câu hỏi:
@@ -600,10 +600,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển phụ đi kèm biển báo cấm, ghi chú thêm thông tin hoặc vị trí áp dụng
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.24'}]
 gate=high; s_max=0.918136; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.952672 | corpus=0.895112 | example=0.959068 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.950687 | corpus=0.875258 | example=0.959068 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.24 | fusion=0.944176 | corpus=0.874701 | example=0.951896 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.30 | fusion=0.939188 | corpus=0.860649 | example=0.947914 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.950902 | corpus=0.877409 | example=0.959068 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.947778 | corpus=0.846172 | example=0.959068 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.24 | fusion=0.943121 | corpus=0.864145 | example=0.951896 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.30 | fusion=0.936127 | corpus=0.830046 | example=0.947914 | sources=['corpus', 'example']
 
 ===== public_test_31 =====
 Câu hỏi:
@@ -616,10 +616,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo trước khu vực có trẻ em đi bộ hoặc chạy nhảy trên đường; người lái xe cần giảm tốc độ và chú ý quan sát.
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.25'}]
 gate=high; s_max=0.833340; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | C.25 | fusion=0.912254 | corpus=0.872514 | example=0.916670 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.907910 | corpus=0.829066 | example=0.916670 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | C.6 | fusion=0.904561 | corpus=0.856452 | example=0.909906 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 26 | fusion=0.899867 | corpus=0.809517 | example=0.909906 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | C.25 | fusion=0.910919 | corpus=0.859159 | example=0.916670 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.906423 | corpus=0.814200 | example=0.916670 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.6 | fusion=0.903384 | corpus=0.844679 | example=0.909906 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 26 | fusion=0.897959 | corpus=0.790436 | example=0.909906 | sources=['corpus', 'example']
 
 ===== public_test_32 =====
 Câu hỏi:
@@ -636,13 +636,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển phụ chỉ số tuyến hoặc điểm kiểm tra (CT.01), có thể liên quan đến trạm kiểm soát hoặc điểm đặc biệt trên tuyến.
 F2=0.6667; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.3'}]
 gate=high; s_max=0.836811; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.915605 | corpus=0.890397 | example=0.918406 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | P.3 | fusion=0.905045 | corpus=0.893686 | example=0.906307 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 45 | fusion=0.899596 | corpus=0.859587 | example=0.904042 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | D.6 | fusion=0.897694 | corpus=0.840568 | example=0.904042 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 22 | fusion=0.896680 | corpus=0.830427 | example=0.904042 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | B.27 | fusion=0.896652 | corpus=0.830149 | example=0.904042 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | 32 | fusion=0.896375 | corpus=0.827372 | example=0.904042 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.913312 | corpus=0.867468 | example=0.918406 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | P.3 | fusion=0.901825 | corpus=0.861484 | example=0.906307 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 45 | fusion=0.899614 | corpus=0.859762 | example=0.904042 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.897944 | corpus=0.843066 | example=0.904042 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 22 | fusion=0.896242 | corpus=0.826048 | example=0.904042 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | D.6 | fusion=0.896163 | corpus=0.825251 | example=0.904042 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.27 | fusion=0.896149 | corpus=0.825110 | example=0.904042 | sources=['corpus', 'example']
 
 ===== public_test_33 =====
 Câu hỏi:
@@ -655,11 +655,11 @@ Loại hình: MARKING_AND_SIGNAL
 Ý nghĩa hoặc thông số: Đang thực hiện hiệu lệnh điều khiển giao thông.
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '4'}]
 gate=middle; s_max=0.769682; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.845410 | corpus=0.808921 | example=0.869737 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.845315 | corpus=0.801136 | example=0.874767 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | C.24 | fusion=0.840383 | corpus=0.797832 | example=0.868751 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | C.6 | fusion=0.834988 | corpus=0.782864 | example=0.869737 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.27 | fusion=0.833900 | corpus=0.772599 | example=0.874767 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.844864 | corpus=0.800008 | example=0.874767 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.24 | fusion=0.836209 | corpus=0.787397 | example=0.868751 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 28 | fusion=0.833379 | corpus=0.778842 | example=0.869737 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.6 | fusion=0.831565 | corpus=0.774307 | example=0.869737 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.27 | fusion=0.824576 | corpus=0.749289 | example=0.874767 | sources=['corpus', 'example']
 
 ===== public_test_34 =====
 Câu hỏi:
@@ -676,10 +676,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Áp dụng cho xe ô tô có số chỗ ngồi trên 25 chỗ, trong khung giờ từ 6:00 đến 22:00.
 F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F5'}]
 gate=high; s_max=0.859411; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.3 | fusion=0.919670 | corpus=0.829349 | example=0.929706 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.919605 | corpus=0.828694 | example=0.929706 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.918941 | corpus=0.822060 | example=0.929706 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.915505 | corpus=0.787701 | example=0.929706 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.919762 | corpus=0.830264 | example=0.929706 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.3 | fusion=0.919322 | corpus=0.825869 | example=0.929706 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.917523 | corpus=0.807874 | example=0.929706 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.915109 | corpus=0.783738 | example=0.929706 | sources=['corpus', 'example']
 
 ===== public_test_35 =====
 Câu hỏi:
@@ -700,11 +700,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Trên 25 chỗ ngồi, 6:00 - 22:00.
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.23'}]
 gate=high; s_max=0.866956; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.23 | fusion=0.925300 | corpus=0.886339 | example=0.929628 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.924284 | corpus=0.876180 | example=0.929628 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.7 | fusion=0.920729 | corpus=0.856083 | example=0.927912 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.918290 | corpus=0.831689 | example=0.927912 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | F.10 | fusion=0.916011 | corpus=0.808902 | example=0.927912 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.23 | fusion=0.925106 | corpus=0.884399 | example=0.929628 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.922919 | corpus=0.862530 | example=0.929628 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.7 | fusion=0.919378 | corpus=0.842572 | example=0.927912 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.918237 | corpus=0.831162 | example=0.927912 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | F.10 | fusion=0.915825 | corpus=0.807040 | example=0.927912 | sources=['corpus', 'example']
 
 ===== public_test_36 =====
 Câu hỏi:
@@ -721,10 +721,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm dừng xe
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '26'}]
 gate=high; s_max=0.892479; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.938490 | corpus=0.868743 | example=0.946239 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.937578 | corpus=0.859626 | example=0.946239 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.933908 | corpus=0.867484 | example=0.941289 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.31 | fusion=0.930588 | corpus=0.855375 | example=0.938945 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.938000 | corpus=0.863845 | example=0.946239 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.935140 | corpus=0.835248 | example=0.946239 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.933223 | corpus=0.860633 | example=0.941289 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.31 | fusion=0.930173 | corpus=0.851233 | example=0.938945 | sources=['corpus', 'example']
 
 ===== public_test_37 =====
 Câu hỏi:
@@ -741,8 +741,8 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm dừng xe và cấm đỗ xe.
 F2=1.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
 gate=high; s_max=0.923221; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.31 | fusion=0.954354 | corpus=0.889049 | example=0.961610 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.954035 | corpus=0.885861 | example=0.961610 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.31 | fusion=0.952770 | corpus=0.873207 | example=0.961610 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.951014 | corpus=0.855650 | example=0.961610 | sources=['corpus', 'example']
 
 ===== public_test_38 =====
 Câu hỏi:
@@ -759,9 +759,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm dừng và cấm đỗ
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
 gate=high; s_max=0.921107; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.950872 | corpus=0.863738 | example=0.960553 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.950338 | corpus=0.858400 | example=0.960553 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.948913 | corpus=0.863538 | example=0.958399 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.949730 | corpus=0.852324 | example=0.960553 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.947081 | corpus=0.825833 | example=0.960553 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.944935 | corpus=0.823760 | example=0.958399 | sources=['corpus', 'example']
 
 ===== public_test_39 =====
 Câu hỏi:
@@ -774,12 +774,12 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu có xăng dầu (biển báo hiệu dịch vụ).
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '38'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.30'}]
 gate=high; s_max=0.852374; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.916882 | corpus=0.845319 | example=0.924834 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.915763 | corpus=0.834125 | example=0.924834 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.915507 | corpus=0.819384 | example=0.926187 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.2 | fusion=0.914697 | corpus=0.811286 | example=0.926187 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 28 | fusion=0.912655 | corpus=0.838082 | example=0.920941 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | C.4 | fusion=0.910149 | corpus=0.813020 | example=0.920941 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.915125 | corpus=0.815565 | example=0.926187 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 36 | fusion=0.914786 | corpus=0.824357 | example=0.924834 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.914264 | corpus=0.819142 | example=0.924834 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.2 | fusion=0.911138 | corpus=0.775697 | example=0.926187 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 28 | fusion=0.909972 | corpus=0.811257 | example=0.920941 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | C.4 | fusion=0.907575 | corpus=0.787283 | example=0.920941 | sources=['corpus', 'example']
 
 ===== public_test_40 =====
 Câu hỏi:
@@ -792,21 +792,21 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cảnh báo người lái xe phải giữ khoảng cách an toàn với xe phía trước.
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '13'}]
 gate=high; s_max=0.858902; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.921316 | corpus=0.848095 | example=0.929451 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.896254 | corpus=0.887960 | example=0.897175 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 45 | fusion=0.891613 | corpus=0.841553 | example=0.897175 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | C.47 | fusion=0.886588 | corpus=0.807722 | example=0.895351 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.921273 | corpus=0.847673 | example=0.929451 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.893097 | corpus=0.856387 | example=0.897175 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 45 | fusion=0.888436 | corpus=0.809786 | example=0.897175 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.47 | fusion=0.886220 | corpus=0.804044 | example=0.895351 | sources=['corpus', 'example']
 
 ===== public_test_41 =====
 Câu hỏi:
 Xe máy được đỗ trên con đường này đúng hay sai?
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
 gate=middle; s_max=0.789787; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.843158 | corpus=0.765554 | example=0.894893 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.7 | fusion=0.841123 | corpus=0.760468 | example=0.894893 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.840565 | corpus=0.778926 | example=0.881658 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.6 | fusion=0.839934 | corpus=0.757496 | example=0.894893 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.839929 | corpus=0.785123 | example=0.876465 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.846391 | corpus=0.773638 | example=0.894893 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.844149 | corpus=0.795675 | example=0.876465 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.842996 | corpus=0.785002 | example=0.881658 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.7 | fusion=0.842229 | corpus=0.763233 | example=0.894893 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.6 | fusion=0.837102 | corpus=0.750414 | example=0.894893 | sources=['corpus', 'example']
 
 ===== public_test_42 =====
 Câu hỏi:
@@ -823,13 +823,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ rõ thời gian áp dụng cho biển cấm dừng và đỗ xe.
 F2=0.6667; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
 gate=high; s_max=0.871038; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.30 | fusion=0.928304 | corpus=0.863371 | example=0.935519 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.927306 | corpus=0.853389 | example=0.935519 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.926304 | corpus=0.843364 | example=0.935519 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.924404 | corpus=0.824369 | example=0.935519 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.920313 | corpus=0.853830 | example=0.927700 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | B.6 | fusion=0.918531 | corpus=0.836007 | example=0.927700 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | B.3 | fusion=0.917812 | corpus=0.832709 | example=0.927267 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.30 | fusion=0.928113 | corpus=0.861457 | example=0.935519 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.926347 | corpus=0.843798 | example=0.935519 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.925123 | corpus=0.831557 | example=0.935519 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.924131 | corpus=0.821632 | example=0.935519 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.920825 | corpus=0.858946 | example=0.927700 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.6 | fusion=0.917081 | corpus=0.821504 | example=0.927700 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.3 | fusion=0.916901 | corpus=0.823605 | example=0.927267 | sources=['corpus', 'example']
 
 ===== public_test_43 =====
 Câu hỏi:
@@ -854,10 +854,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển này quy định thời gian cấm xe ô tô khách và xe ô tô tải đi vào khu vực này là trong các khoảng: 6:30 - 7:30, 10:45 - 11:45 và 16:30 - 17:30.
 F2=0.9375; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.7'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}]
 gate=high; s_max=0.859583; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.7 | fusion=0.924126 | corpus=0.873135 | example=0.929791 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.921997 | corpus=0.851852 | example=0.929791 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.920631 | corpus=0.844285 | example=0.929114 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.914952 | corpus=0.787494 | example=0.929114 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.7 | fusion=0.923545 | corpus=0.867329 | example=0.929791 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | F.10 | fusion=0.920396 | corpus=0.841942 | example=0.929114 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.918648 | corpus=0.818359 | example=0.929791 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.914724 | corpus=0.785222 | example=0.929114 | sources=['corpus', 'example']
 
 ===== public_test_44 =====
 Câu hỏi:
@@ -874,12 +874,12 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn khoảng cách đến KCN Bình Xuyên 11 km.
 F2=0.7143; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'P.17'}]
 gate=high; s_max=0.851660; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.921052 | corpus=0.878047 | example=0.925830 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | P.17 | fusion=0.920998 | corpus=0.877513 | example=0.925830 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.918329 | corpus=0.887110 | example=0.921797 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | P.18 | fusion=0.914494 | corpus=0.848766 | example=0.921797 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | D.1a | fusion=0.911610 | corpus=0.845470 | example=0.918959 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | 32 | fusion=0.909088 | corpus=0.820245 | example=0.918959 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | P.17 | fusion=0.917352 | corpus=0.841055 | example=0.925830 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 46 | fusion=0.917057 | corpus=0.838103 | example=0.925830 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.915976 | corpus=0.863588 | example=0.921797 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | P.18 | fusion=0.912627 | corpus=0.830095 | example=0.921797 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | D.1a | fusion=0.910420 | corpus=0.833561 | example=0.918959 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 32 | fusion=0.908509 | corpus=0.814453 | example=0.918959 | sources=['corpus', 'example']
 
 ===== public_test_45 =====
 Câu hỏi:
@@ -892,9 +892,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm các loại xe cơ giới khác nhau (xe ô tô) đi vào hoặc đi qua khu vực này.
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.25'}]
 gate=high; s_max=0.943161; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.2 | fusion=0.961984 | corpus=0.875616 | example=0.971581 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.961152 | corpus=0.867299 | example=0.971581 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.25 | fusion=0.942768 | corpus=0.853636 | example=0.952671 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.959206 | corpus=0.847831 | example=0.971581 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.958746 | corpus=0.843238 | example=0.971581 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.25 | fusion=0.940294 | corpus=0.828898 | example=0.952671 | sources=['corpus', 'example']
 
 ===== public_test_46 =====
 Câu hỏi:
@@ -911,9 +911,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ các phương tiện được biểu thị trên biển (xe máy, ô tô, xe buýt, xe tải dưới 2 tấn) được phép đi qua khu vực này
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
 gate=high; s_max=0.880529; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.27c | fusion=0.934300 | corpus=0.880619 | example=0.940264 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.929867 | corpus=0.836286 | example=0.940264 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.928847 | corpus=0.896499 | example=0.932441 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.27c | fusion=0.932546 | corpus=0.863084 | example=0.940264 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.928613 | corpus=0.823746 | example=0.940264 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.27 | fusion=0.925852 | corpus=0.866547 | example=0.932441 | sources=['corpus', 'example']
 #4 | QCVN 41:2024/BGTVT | 21 | fusion=0.916557 | corpus=0.796591 | example=0.929886 | sources=['corpus', 'example']
 
 ===== public_test_47 =====
@@ -931,10 +931,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu lệnh: Yêu cầu người tham gia giao thông phải đi chậm.
 F2=0.3125; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.44'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.45'}]
 gate=high; s_max=0.888764; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 11 | fusion=0.937802 | corpus=0.914425 | example=0.940399 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | C.1 | fusion=0.936347 | corpus=0.864028 | example=0.944382 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 28 | fusion=0.936157 | corpus=0.862128 | example=0.944382 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 27 | fusion=0.933719 | corpus=0.873600 | example=0.940399 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.935552 | corpus=0.856087 | example=0.944382 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 11 | fusion=0.934126 | corpus=0.877662 | example=0.940399 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 27 | fusion=0.933714 | corpus=0.873546 | example=0.940399 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.1 | fusion=0.932570 | corpus=0.826259 | example=0.944382 | sources=['corpus', 'example']
 
 ===== public_test_48 =====
 Câu hỏi:
@@ -951,10 +951,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo thời gian áp dụng cho các biển báo cấm đặt trên cùng cột.
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.6'}]
 gate=high; s_max=0.884093; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.6 | fusion=0.937999 | corpus=0.901565 | example=0.942047 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.934873 | corpus=0.870313 | example=0.942047 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.929622 | corpus=0.817804 | example=0.942047 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.928282 | corpus=0.804400 | example=0.942047 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.6 | fusion=0.937681 | corpus=0.898388 | example=0.942047 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.932163 | corpus=0.843215 | example=0.942047 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.929505 | corpus=0.816631 | example=0.942047 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.928819 | corpus=0.809769 | example=0.942047 | sources=['corpus', 'example']
 
 ===== public_test_49 =====
 Câu hỏi:
@@ -967,9 +967,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn các làn đường dành cho xe ô tô, xe máy và xe đạp.
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.16'}]
 gate=high; s_max=0.860821; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | D.16 | fusion=0.925727 | corpus=0.883574 | example=0.930411 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.922896 | corpus=0.855258 | example=0.930411 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 28 | fusion=0.917144 | corpus=0.802901 | example=0.929838 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | D.16 | fusion=0.923429 | corpus=0.860594 | example=0.930411 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.921760 | corpus=0.843907 | example=0.930411 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 28 | fusion=0.916504 | corpus=0.796504 | example=0.929838 | sources=['corpus', 'example']
 
 ===== public_test_50 =====
 Câu hỏi:
@@ -982,22 +982,22 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm đi thẳng
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}]
 gate=high; s_max=0.950105; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.2 | fusion=0.964736 | corpus=0.871891 | example=0.975052 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.964386 | corpus=0.868391 | example=0.975052 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | D.1a | fusion=0.935087 | corpus=0.853320 | example=0.944172 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.31 | fusion=0.934206 | corpus=0.840223 | example=0.944649 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 32 | fusion=0.933510 | corpus=0.837545 | example=0.944172 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.962523 | corpus=0.849757 | example=0.975052 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.961559 | corpus=0.840120 | example=0.975052 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.1a | fusion=0.934565 | corpus=0.848101 | example=0.944172 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.932040 | corpus=0.822851 | example=0.944172 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.930776 | corpus=0.805923 | example=0.944649 | sources=['corpus', 'example']
 
 ===== public_test_51 =====
 Câu hỏi:
 Trong tất cả biển báo trong hình bên, hãy cho biết xe gắn máy bị cấm đi thẳng trong khoảng thời gian nào?
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.4'}]
 gate=middle; s_max=0.730680; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.838107 | corpus=0.797257 | example=0.865340 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.24 | fusion=0.830821 | corpus=0.779042 | example=0.865340 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.828372 | corpus=0.791573 | example=0.852905 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.4 | fusion=0.828339 | corpus=0.801665 | example=0.846121 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.23 | fusion=0.826062 | corpus=0.788536 | example=0.851079 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.844048 | corpus=0.812110 | example=0.865340 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.24 | fusion=0.834944 | corpus=0.789350 | example=0.865340 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.830874 | corpus=0.797828 | example=0.852905 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.4 | fusion=0.827047 | corpus=0.798435 | example=0.846121 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.827014 | corpus=0.795241 | example=0.848196 | sources=['corpus', 'example']
 
 ===== public_test_52 =====
 Câu hỏi:
@@ -1018,11 +1018,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu khu vực có người đi bộ.
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}]
 gate=high; s_max=0.948418; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.963724 | corpus=0.869353 | example=0.974209 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.961533 | corpus=0.847448 | example=0.974209 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | D.17 | fusion=0.936302 | corpus=0.845771 | example=0.946361 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.30 | fusion=0.933486 | corpus=0.847635 | example=0.943025 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 22 | fusion=0.932168 | corpus=0.834454 | example=0.943025 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.962795 | corpus=0.860067 | example=0.974209 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.961186 | corpus=0.843973 | example=0.974209 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.17 | fusion=0.932331 | corpus=0.806054 | example=0.946361 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.932144 | corpus=0.834213 | example=0.943025 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.30 | fusion=0.929883 | corpus=0.811605 | example=0.943025 | sources=['corpus', 'example']
 
 ===== public_test_53 =====
 Câu hỏi:
@@ -1035,17 +1035,17 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm vượt
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.25'}]
 gate=high; s_max=0.923888; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.952822 | corpus=0.870727 | example=0.961944 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.25 | fusion=0.942962 | corpus=0.885765 | example=0.949317 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.7 | fusion=0.930720 | corpus=0.848406 | example=0.939866 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.951291 | corpus=0.855408 | example=0.961944 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.25 | fusion=0.940275 | corpus=0.858899 | example=0.949317 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.7 | fusion=0.928970 | corpus=0.830915 | example=0.939866 | sources=['corpus', 'example']
 
 ===== public_test_54 =====
 Câu hỏi:
 "Biển có viền đỏ, nền trắng, hình vẽ màu đen trong hình bên là biển báo cấm rẽ phải". Đúng hay sai?
 F2=1.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.23'}]
 gate=high; s_max=0.903781; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.940142 | corpus=0.834410 | example=0.951890 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.939271 | corpus=0.825695 | example=0.951890 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.23 | fusion=0.941705 | corpus=0.850042 | example=0.951890 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.939189 | corpus=0.824880 | example=0.951890 | sources=['corpus', 'example']
 
 ===== public_test_55 =====
 Câu hỏi:
@@ -1058,11 +1058,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ hướng đi đến huyện Hoàng Hoa (sang trái) và thành phố Vinh (thẳng).
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
 gate=middle; s_max=0.774204; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | D.13 | fusion=0.864558 | corpus=0.830743 | example=0.887102 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | D.1a | fusion=0.862111 | corpus=0.839820 | example=0.876972 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.854448 | corpus=0.805466 | example=0.887102 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | E.14 | fusion=0.848121 | corpus=0.816591 | example=0.869141 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.846057 | corpus=0.811429 | example=0.869141 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | D.1a | fusion=0.854507 | corpus=0.820808 | example=0.876972 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.13 | fusion=0.852897 | corpus=0.801590 | example=0.887102 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.840634 | corpus=0.770931 | example=0.887102 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | E.14 | fusion=0.836251 | corpus=0.786916 | example=0.869141 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 38 | fusion=0.832232 | corpus=0.776867 | example=0.869141 | sources=['corpus', 'example']
 
 ===== public_test_56 =====
 Câu hỏi:
@@ -1075,10 +1075,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Quy định tốc độ tối đa 100 km/h và tốc độ tối thiểu 60 km/h cho xe cơ giới trên đoạn đường này.
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '46'}]
 gate=high; s_max=0.874546; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.933233 | corpus=0.896868 | example=0.937273 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | D.6 | fusion=0.932592 | corpus=0.904397 | example=0.935725 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.929623 | corpus=0.860777 | example=0.937273 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.928697 | corpus=0.865446 | example=0.935725 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.931396 | corpus=0.878502 | example=0.937273 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.6 | fusion=0.930982 | corpus=0.888287 | example=0.935725 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.926869 | corpus=0.833228 | example=0.937273 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.925064 | corpus=0.829115 | example=0.935725 | sources=['corpus', 'example']
 #5 | QCVN 41:2024/BGTVT | 21 | fusion=0.919120 | corpus=0.798191 | example=0.932556 | sources=['corpus', 'example']
 
 ===== public_test_57 =====
@@ -1092,10 +1092,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm xe rẽ phải
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.23'}]
 gate=high; s_max=0.971111; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.974238 | corpus=0.872382 | example=0.985556 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.972772 | corpus=0.857723 | example=0.985556 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.953226 | corpus=0.869238 | example=0.962558 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.24 | fusion=0.946356 | corpus=0.847040 | example=0.957391 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.972238 | corpus=0.852381 | example=0.985556 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.23 | fusion=0.970680 | corpus=0.836801 | example=0.985556 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.949756 | corpus=0.834535 | example=0.962558 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.24 | fusion=0.944740 | corpus=0.830882 | example=0.957391 | sources=['corpus', 'example']
 
 ===== public_test_58 =====
 Câu hỏi:
@@ -1108,9 +1108,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm người đi bộ đi lại
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.12'}]
 gate=high; s_max=0.891941; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.12 | fusion=0.941465 | corpus=0.900913 | example=0.945970 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.939560 | corpus=0.881868 | example=0.945970 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.927942 | corpus=0.866410 | example=0.934778 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.12 | fusion=0.939462 | corpus=0.880890 | example=0.945970 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.934482 | corpus=0.831085 | example=0.945970 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.925526 | corpus=0.842256 | example=0.934778 | sources=['corpus', 'example']
 
 ===== public_test_59 =====
 Câu hỏi:
@@ -1123,10 +1123,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cảnh báo người tham gia giao thông về chướng ngại vật trên đường (ví dụ: đá, hố, vật cản)
 F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.21'}]
 gate=high; s_max=0.907179; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.945331 | corpus=0.871002 | example=0.953589 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | C.4 | fusion=0.941756 | corpus=0.835257 | example=0.953589 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | C.24 | fusion=0.929530 | corpus=0.825364 | example=0.941104 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | C.2 | fusion=0.928322 | corpus=0.824118 | example=0.939900 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.942343 | corpus=0.841130 | example=0.953589 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.4 | fusion=0.938734 | corpus=0.805036 | example=0.953589 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.24 | fusion=0.928248 | corpus=0.812548 | example=0.941104 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.2 | fusion=0.924417 | corpus=0.785067 | example=0.939900 | sources=['corpus', 'example']
 
 ===== public_test_60 =====
 Câu hỏi:
@@ -1167,13 +1167,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm rẽ trái
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '25'}]
 gate=high; s_max=0.922850; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 11 | fusion=0.953686 | corpus=0.899944 | example=0.959658 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.951434 | corpus=0.861513 | example=0.961425 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.951062 | corpus=0.857800 | example=0.961425 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 21 | fusion=0.949149 | corpus=0.854570 | example=0.959658 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.948924 | corpus=0.859054 | example=0.958910 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | B.25 | fusion=0.948737 | corpus=0.850449 | example=0.959658 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | P.26 | fusion=0.946181 | corpus=0.824894 | example=0.959658 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.951839 | corpus=0.865569 | example=0.961425 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 11 | fusion=0.951501 | corpus=0.878087 | example=0.959658 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 21 | fusion=0.949149 | corpus=0.854570 | example=0.959658 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.30 | fusion=0.947616 | corpus=0.823336 | example=0.961425 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.25 | fusion=0.946568 | corpus=0.828760 | example=0.959658 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.31 | fusion=0.946196 | corpus=0.831769 | example=0.958910 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | P.26 | fusion=0.943170 | corpus=0.794781 | example=0.959658 | sources=['corpus', 'example']
 
 ===== public_test_61 =====
 Câu hỏi:
@@ -1190,9 +1190,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm đỗ xe (hai chiều hoặc toàn bộ đường)
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
 gate=high; s_max=0.941548; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.31 | fusion=0.962808 | corpus=0.891116 | example=0.970774 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.962773 | corpus=0.890762 | example=0.970774 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.938495 | corpus=0.861435 | example=0.947057 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.31 | fusion=0.961528 | corpus=0.878311 | example=0.970774 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.961424 | corpus=0.877275 | example=0.970774 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.937243 | corpus=0.848915 | example=0.947057 | sources=['corpus', 'example']
 
 ===== public_test_62 =====
 Câu hỏi:
@@ -1205,8 +1205,8 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo chỉ dẫn các địa điểm và hướng đi: Cảng cá Tiến Sơn (hướng lên), Hồng Quỳnh (hướng trái), Nhà tưởng niệm Nguyễn Đức Cảnh (hướng phải).
 F2=1.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
 gate=high; s_max=0.875431; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | E.14 | fusion=0.928274 | corpus=0.843305 | example=0.937715 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 36 | fusion=0.927811 | corpus=0.838673 | example=0.937715 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.925816 | corpus=0.818723 | example=0.937715 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | E.14 | fusion=0.924424 | corpus=0.804799 | example=0.937715 | sources=['corpus', 'example']
 
 ===== public_test_63 =====
 Câu hỏi:
@@ -1219,11 +1219,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi tại nút giao Đại Lộc: đi Đà Nẵng, Huế, Quảng Ngãi qua đường cao tốc.
 F2=0.7143; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.6'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
 gate=middle; s_max=0.788687; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.878022 | corpus=0.878768 | example=0.877525 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | C.6 | fusion=0.870392 | corpus=0.834466 | example=0.894343 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | P.1 | fusion=0.870229 | corpus=0.869564 | example=0.870673 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 36 | fusion=0.868763 | corpus=0.830392 | example=0.894343 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | E.14 | fusion=0.868751 | corpus=0.830363 | example=0.894343 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.873155 | corpus=0.841372 | example=0.894343 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.870627 | corpus=0.860281 | example=0.877525 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | E.14 | fusion=0.867925 | corpus=0.828297 | example=0.894343 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.6 | fusion=0.867804 | corpus=0.827994 | example=0.894343 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | P.1 | fusion=0.867029 | corpus=0.861564 | example=0.870673 | sources=['corpus', 'example']
 
 ===== public_test_64 =====
 Câu hỏi:
@@ -1236,10 +1236,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cảnh báo đoạn đường phía trước có đường cong
 F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.3'}]
 gate=high; s_max=0.870325; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.926758 | corpus=0.851119 | example=0.935162 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | C.24 | fusion=0.924876 | corpus=0.832296 | example=0.935162 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | C.1 | fusion=0.920263 | corpus=0.855847 | example=0.927420 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | C.40 | fusion=0.918510 | corpus=0.852328 | example=0.925863 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.925928 | corpus=0.842817 | example=0.935162 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.24 | fusion=0.924202 | corpus=0.825562 | example=0.935162 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.1 | fusion=0.917583 | corpus=0.829049 | example=0.927420 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.40 | fusion=0.915506 | corpus=0.822289 | example=0.925863 | sources=['corpus', 'example']
 
 ===== public_test_65 =====
 Câu hỏi:
@@ -1436,11 +1436,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm dừng xe.
 F2=0.2381; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.3'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}]
 gate=middle; s_max=0.819462; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.882433 | corpus=0.845922 | example=0.906773 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | D.16 | fusion=0.882189 | corpus=0.840876 | example=0.909731 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.4 | fusion=0.881552 | corpus=0.843720 | example=0.906773 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.27c | fusion=0.878463 | corpus=0.840780 | example=0.903585 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.7 | fusion=0.877047 | corpus=0.834083 | example=0.905689 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.889875 | corpus=0.864528 | example=0.906773 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.16 | fusion=0.886221 | corpus=0.850955 | example=0.909731 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.883478 | corpus=0.844098 | example=0.909731 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.27c | fusion=0.880567 | corpus=0.846038 | example=0.903585 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.4 | fusion=0.876172 | corpus=0.830270 | example=0.906773 | sources=['corpus', 'example']
 
 ===== public_test_66 =====
 Câu hỏi:
@@ -1461,11 +1461,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi vào đường cao tốc
 F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.30'}]
 gate=high; s_max=0.886148; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.934965 | corpus=0.861990 | example=0.943074 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.934330 | corpus=0.855630 | example=0.943074 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | D.6 | fusion=0.931404 | corpus=0.857846 | example=0.939577 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.930600 | corpus=0.849808 | example=0.939577 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.27c | fusion=0.925071 | corpus=0.832369 | example=0.935372 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.934918 | corpus=0.861512 | example=0.943074 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.933597 | corpus=0.848304 | example=0.943074 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.932306 | corpus=0.866862 | example=0.939577 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | D.6 | fusion=0.929892 | corpus=0.842721 | example=0.939577 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.27c | fusion=0.925059 | corpus=0.832248 | example=0.935372 | sources=['corpus', 'example']
 
 ===== public_test_67 =====
 Câu hỏi:
@@ -1486,14 +1486,14 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Thông báo về công trường phía trước khoảng 150m, yêu cầu người tham gia giao thông chú ý và tuân thủ các quy định liên quan.
 F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.45'}]
 gate=high; s_max=0.889534; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | C.45 | fusion=0.938608 | corpus=0.883174 | example=0.944767 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.937646 | corpus=0.873559 | example=0.944767 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | F.11 | fusion=0.934595 | corpus=0.843049 | example=0.944767 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.933140 | corpus=0.828499 | example=0.944767 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 27 | fusion=0.918804 | corpus=0.876004 | example=0.923559 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | 11 | fusion=0.917361 | corpus=0.861576 | example=0.923559 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | B.27 | fusion=0.917035 | corpus=0.853018 | example=0.924148 | sources=['corpus', 'example']
-#8 | QCVN 41:2024/BGTVT | 22 | fusion=0.916869 | corpus=0.851364 | example=0.924148 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | C.45 | fusion=0.937482 | corpus=0.871915 | example=0.944767 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.935787 | corpus=0.854964 | example=0.944767 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 41 | fusion=0.934257 | corpus=0.839665 | example=0.944767 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | F.11 | fusion=0.933055 | corpus=0.827647 | example=0.944767 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 27 | fusion=0.918759 | corpus=0.875558 | example=0.923559 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 22 | fusion=0.918414 | corpus=0.866810 | example=0.924148 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | 11 | fusion=0.917029 | corpus=0.858257 | example=0.923559 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | B.27 | fusion=0.916137 | corpus=0.844036 | example=0.924148 | sources=['corpus', 'example']
 
 ===== public_test_68 =====
 Câu hỏi:
@@ -1514,26 +1514,26 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Quy định thời gian cấm rẽ trái từ 6 giờ sáng đến 22 giờ
 F2=0.8000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.23'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}]
 gate=high; s_max=0.899978; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.939173 | corpus=0.841828 | example=0.949989 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.3 | fusion=0.938046 | corpus=0.830556 | example=0.949989 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.934768 | corpus=0.848423 | example=0.944362 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | F.10 | fusion=0.931772 | corpus=0.818463 | example=0.944362 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 36 | fusion=0.929920 | corpus=0.799942 | example=0.944362 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | E.14 | fusion=0.929568 | corpus=0.796415 | example=0.944362 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | 41 | fusion=0.928449 | corpus=0.785226 | example=0.944362 | sources=['corpus', 'example']
-#8 | QCVN 41:2024/BGTVT | F.5 | fusion=0.927434 | corpus=0.775077 | example=0.944362 | sources=['corpus', 'example']
-#9 | QCVN 41:2024/BGTVT | B.37 | fusion=0.920880 | corpus=0.850471 | example=0.928703 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.937999 | corpus=0.830091 | example=0.949989 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.3 | fusion=0.937496 | corpus=0.825056 | example=0.949989 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.934867 | corpus=0.849406 | example=0.944362 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 36 | fusion=0.930333 | corpus=0.804066 | example=0.944362 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | F.10 | fusion=0.930156 | corpus=0.802302 | example=0.944362 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 41 | fusion=0.928317 | corpus=0.783905 | example=0.944362 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | E.14 | fusion=0.927910 | corpus=0.779839 | example=0.944362 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | F.5 | fusion=0.927214 | corpus=0.772883 | example=0.944362 | sources=['corpus', 'example']
+#9 | QCVN 41:2024/BGTVT | B.37 | fusion=0.919750 | corpus=0.839173 | example=0.928703 | sources=['corpus', 'example']
 
 ===== public_test_69 =====
 Câu hỏi:
 Xe ô tô tải với tải trọng  <3,5 t chỉ được phép đi ở làn nào và giới hạn tốc độ tối đa là bao nhiêu?
 F2=0.4762; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27c'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.14'}]
 gate=middle; s_max=0.720687; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.828270 | corpus=0.782479 | example=0.858798 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | D.16 | fusion=0.822059 | corpus=0.766951 | example=0.858798 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.6 | fusion=0.818120 | corpus=0.790804 | example=0.836330 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.817504 | corpus=0.753245 | example=0.860344 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 22 | fusion=0.815306 | corpus=0.750068 | example=0.858798 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.830473 | corpus=0.787987 | example=0.858798 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | D.16 | fusion=0.824353 | corpus=0.772685 | example=0.858798 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.815617 | corpus=0.748527 | example=0.860344 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.6 | fusion=0.815435 | corpus=0.784091 | example=0.836330 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 22 | fusion=0.815130 | corpus=0.749629 | example=0.858798 | sources=['corpus', 'example']
 
 ===== public_test_70 =====
 Câu hỏi:
@@ -1546,10 +1546,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn xe đi thẳng hoặc rẽ phải để vào tuyến tránh Huế và đi về La Sơn.
 F2=0.6250; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '46'}]
 gate=high; s_max=0.841033; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.915243 | corpus=0.867781 | example=0.920516 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.896613 | corpus=0.878694 | example=0.898604 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | P.3 | fusion=0.893196 | corpus=0.844519 | example=0.898604 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | P.1 | fusion=0.892055 | corpus=0.859370 | example=0.895686 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.914010 | corpus=0.855451 | example=0.920516 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.897245 | corpus=0.885010 | example=0.898604 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | P.3 | fusion=0.891718 | corpus=0.829741 | example=0.898604 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | P.1 | fusion=0.891018 | corpus=0.849002 | example=0.895686 | sources=['corpus', 'example']
 
 ===== public_test_71 =====
 Câu hỏi:
@@ -1562,10 +1562,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm người khuyết tật sử dụng xe lăn đi vào khu vực này.
 F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.13'}]
 gate=high; s_max=0.886051; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.934094 | corpus=0.853710 | example=0.943025 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.6 | fusion=0.932809 | corpus=0.840857 | example=0.943025 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.925178 | corpus=0.834517 | example=0.935251 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.35 | fusion=0.924039 | corpus=0.817902 | example=0.935832 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.932528 | corpus=0.838049 | example=0.943025 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.6 | fusion=0.930047 | corpus=0.813244 | example=0.943025 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.922509 | corpus=0.807827 | example=0.935251 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.35 | fusion=0.920170 | corpus=0.779209 | example=0.935832 | sources=['corpus', 'example']
 
 ===== public_test_72 =====
 Câu hỏi:
@@ -1582,10 +1582,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Báo hiệu đường cong sang phải.
 F2=0.3125; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '28'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.1'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'C.45'}]
 gate=high; s_max=0.866570; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | C.4 | fusion=0.927653 | corpus=0.876963 | example=0.933285 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.926276 | corpus=0.863192 | example=0.933285 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | C.25 | fusion=0.923726 | corpus=0.851644 | example=0.931735 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | C.3 | fusion=0.922939 | corpus=0.853904 | example=0.930610 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | C.4 | fusion=0.925284 | corpus=0.853281 | example=0.933285 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 28 | fusion=0.924702 | corpus=0.847452 | example=0.933285 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.25 | fusion=0.921744 | corpus=0.831830 | example=0.931735 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.3 | fusion=0.921490 | corpus=0.839414 | example=0.930610 | sources=['corpus', 'example']
 
 ===== public_test_73 =====
 Câu hỏi:
@@ -1598,11 +1598,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cảnh báo tài xế về đoạn đường có nguy cơ cao xảy ra tai nạn giao thông, cần giảm tốc độ và tăng sự cảnh giác.
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.48'}]
 gate=middle; s_max=0.816086; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.888390 | corpus=0.858912 | example=0.908043 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | C.5 | fusion=0.882810 | corpus=0.848631 | example=0.905596 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | C.8 | fusion=0.879236 | corpus=0.843494 | example=0.903064 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | C.25 | fusion=0.878232 | corpus=0.833517 | example=0.908043 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | C.27 | fusion=0.875639 | corpus=0.834055 | example=0.903361 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 28 | fusion=0.881924 | corpus=0.842746 | example=0.908043 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | C.5 | fusion=0.877528 | corpus=0.835426 | example=0.905596 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | C.24 | fusion=0.874458 | corpus=0.825540 | example=0.907071 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | C.25 | fusion=0.874374 | corpus=0.823870 | example=0.908043 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | C.27 | fusion=0.872980 | corpus=0.827408 | example=0.903361 | sources=['corpus', 'example']
 
 ===== public_test_74 =====
 Câu hỏi:
@@ -1615,12 +1615,12 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo tên cầu và vị trí (kilomet) trên tuyến đường.
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.42'}]
 gate=high; s_max=0.832209; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.15 | fusion=0.906568 | corpus=0.820738 | example=0.916104 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.906392 | corpus=0.818985 | example=0.916104 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.905517 | corpus=0.868919 | example=0.909583 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 28 | fusion=0.902346 | corpus=0.836595 | example=0.909652 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | P.3 | fusion=0.901441 | corpus=0.828166 | example=0.909583 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | C.4 | fusion=0.901225 | corpus=0.825381 | example=0.909652 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.906080 | corpus=0.815856 | example=0.916104 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.15 | fusion=0.904475 | corpus=0.799807 | example=0.916104 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.902848 | corpus=0.842233 | example=0.909583 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 28 | fusion=0.900862 | corpus=0.821749 | example=0.909652 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | C.4 | fusion=0.899058 | corpus=0.803712 | example=0.909652 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | P.3 | fusion=0.898717 | corpus=0.800926 | example=0.909583 | sources=['corpus', 'example']
 
 ===== public_test_75 =====
 Câu hỏi:
@@ -1633,10 +1633,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo cấm chiều cao xe vượt quá 4 mét được phép đi qua cầu vượt này.
 F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.17'}]
 gate=high; s_max=0.891276; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.937900 | corpus=0.868253 | example=0.945638 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.15 | fusion=0.935840 | corpus=0.847660 | example=0.945638 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.8 | fusion=0.927999 | corpus=0.827705 | example=0.939143 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.27 | fusion=0.924336 | corpus=0.824650 | example=0.935412 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.936049 | corpus=0.849753 | example=0.945638 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.15 | fusion=0.934087 | corpus=0.830129 | example=0.945638 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.8 | fusion=0.926297 | corpus=0.810679 | example=0.939143 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.27 | fusion=0.924180 | corpus=0.823093 | example=0.935412 | sources=['corpus', 'example']
 
 ===== public_test_76 =====
 Câu hỏi:
@@ -1649,9 +1649,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm dừng xe và đỗ xe.
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.30'}]
 gate=high; s_max=0.940010; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.30 | fusion=0.962553 | corpus=0.895482 | example=0.970005 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.960494 | corpus=0.874895 | example=0.970005 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.945374 | corpus=0.868129 | example=0.953957 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.30 | fusion=0.959381 | corpus=0.863761 | example=0.970005 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.958842 | corpus=0.858371 | example=0.970005 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.943545 | corpus=0.849840 | example=0.953957 | sources=['corpus', 'example']
 
 ===== public_test_77 =====
 Câu hỏi:
@@ -1680,10 +1680,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm phương tiện có chiều cao vượt quá 4,5m
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.27'}]
 gate=high; s_max=0.850527; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.919482 | corpus=0.867447 | example=0.925263 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.27c | fusion=0.918783 | corpus=0.880979 | example=0.922984 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.917848 | corpus=0.851114 | example=0.925263 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.6 | fusion=0.917811 | corpus=0.863007 | example=0.923900 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.27 | fusion=0.918949 | corpus=0.862121 | example=0.925263 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.27c | fusion=0.917877 | corpus=0.871920 | example=0.922984 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.917813 | corpus=0.850759 | example=0.925263 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.6 | fusion=0.916399 | corpus=0.848885 | example=0.923900 | sources=['corpus', 'example']
 
 ===== public_test_78 =====
 Câu hỏi:
@@ -1696,11 +1696,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi đến Cần Thơ, Chánh An, TX Vĩnh Long và Bến Phà.
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.14'}]
 gate=middle; s_max=0.781940; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | E.14 | fusion=0.864245 | corpus=0.824158 | example=0.890970 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | D.13 | fusion=0.861920 | corpus=0.831962 | example=0.881892 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 36 | fusion=0.861726 | corpus=0.817859 | example=0.890970 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.857066 | corpus=0.819828 | example=0.881892 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 47 | fusion=0.344108 | corpus=0.860269 | example=0.000000 | sources=['corpus']
+#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.856878 | corpus=0.805740 | example=0.890970 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | E.14 | fusion=0.855971 | corpus=0.803472 | example=0.890970 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | D.13 | fusion=0.850497 | corpus=0.803405 | example=0.881892 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 32 | fusion=0.846929 | corpus=0.794485 | example=0.881892 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 42 | fusion=0.331606 | corpus=0.829016 | example=0.000000 | sources=['corpus']
 
 ===== public_test_79 =====
 Câu hỏi:
@@ -1717,13 +1717,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo tốc độ tối đa cho phép là 70 km/h.
 F2=0.4545; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
 gate=high; s_max=0.881775; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.935669 | corpus=0.907691 | example=0.938778 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 46 | fusion=0.935554 | corpus=0.887551 | example=0.940888 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | P.3 | fusion=0.934939 | corpus=0.900388 | example=0.938778 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | D.6 | fusion=0.934374 | corpus=0.875748 | example=0.940888 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.27 | fusion=0.933349 | corpus=0.865504 | example=0.940888 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | 22 | fusion=0.933306 | corpus=0.865077 | example=0.940888 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | 32 | fusion=0.932668 | corpus=0.858697 | example=0.940888 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 46 | fusion=0.932482 | corpus=0.856829 | example=0.940888 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.27 | fusion=0.932432 | corpus=0.856329 | example=0.940888 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 47 | fusion=0.931999 | corpus=0.870993 | example=0.938778 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | D.6 | fusion=0.931526 | corpus=0.847276 | example=0.940888 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | P.3 | fusion=0.931364 | corpus=0.864638 | example=0.938778 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 32 | fusion=0.931258 | corpus=0.844592 | example=0.940888 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | 22 | fusion=0.930956 | corpus=0.841572 | example=0.940888 | sources=['corpus', 'example']
 
 ===== public_test_80 =====
 Câu hỏi:
@@ -1736,11 +1736,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo chỉ dẫn địa phận thành phố Hồ Chí Minh, với ký hiệu kilômét (KM) cụ thể là 1924 + 815.
 F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '36'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'E.19'}]
 gate=middle; s_max=0.813461; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.884329 | corpus=0.865099 | example=0.897149 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 36 | fusion=0.884290 | corpus=0.850628 | example=0.906731 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | P.18 | fusion=0.881312 | corpus=0.857557 | example=0.897149 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | E.50 | fusion=0.875585 | corpus=0.828868 | example=0.906731 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | D.3 | fusion=0.871533 | corpus=0.823703 | example=0.903421 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.872087 | corpus=0.820122 | example=0.906731 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.869732 | corpus=0.828607 | example=0.897149 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | E.50 | fusion=0.868113 | corpus=0.810186 | example=0.906731 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | P.18 | fusion=0.867744 | corpus=0.823637 | example=0.897149 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 32 | fusion=0.867734 | corpus=0.814203 | example=0.903421 | sources=['corpus', 'example']
 
 ===== public_test_81 =====
 Câu hỏi:
@@ -1753,20 +1753,20 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu cảnh báo hoặc chỉ dẫn về khu vực đô thị, khu dân cư hoặc trung tâm thành phố (chưa xác định chắc chắn mã số hoặc tên chính xác từ ảnh).
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '32'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'D.17'}]
 gate=high; s_max=0.902643; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | D.17 | fusion=0.940363 | corpus=0.841738 | example=0.951322 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.936404 | corpus=0.835654 | example=0.947599 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 36 | fusion=0.930572 | corpus=0.862386 | example=0.938149 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | D.17 | fusion=0.937051 | corpus=0.808612 | example=0.951322 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 32 | fusion=0.935709 | corpus=0.828701 | example=0.947599 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 36 | fusion=0.928624 | corpus=0.842898 | example=0.938149 | sources=['corpus', 'example']
 
 ===== public_test_82 =====
 Câu hỏi:
 Xe máy được phép lưu thông với tốc độ 100 km/h trên đoạn đường phía trước. Đúng hay sai?
 F2=0.5556; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
 gate=middle; s_max=0.733720; example_weight=0.6; corpus_weight=0.4
-#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.825998 | corpus=0.772383 | example=0.861742 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.824744 | corpus=0.761571 | example=0.866860 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.818276 | corpus=0.756595 | example=0.859397 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | D.18 | fusion=0.800667 | corpus=0.701377 | example=0.866860 | sources=['corpus', 'example']
-#5 | 36/2024/QH15 | 12 | fusion=0.324696 | corpus=0.811740 | example=0.000000 | sources=['corpus']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.837358 | corpus=0.793104 | example=0.866860 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 47 | fusion=0.829350 | corpus=0.780764 | example=0.861742 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 32 | fusion=0.821731 | corpus=0.765231 | example=0.859397 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | D.18 | fusion=0.804603 | corpus=0.711218 | example=0.866860 | sources=['corpus', 'example']
+#5 | 36/2024/QH15 | 12 | fusion=0.324568 | corpus=0.811420 | example=0.000000 | sources=['corpus']
 
 ===== public_test_83 =====
 Câu hỏi:
@@ -1783,13 +1783,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Thời gian cấm: 6:30 - 8:00 và 16:20 - 18:00
 F2=0.6667; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.31'}]
 gate=high; s_max=0.913062; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.947836 | corpus=0.869578 | example=0.956531 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | F.10 | fusion=0.947456 | corpus=0.865775 | example=0.956531 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.946511 | corpus=0.872492 | example=0.954736 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.7 | fusion=0.945461 | corpus=0.845825 | example=0.956531 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.945225 | corpus=0.862479 | example=0.954419 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | 41 | fusion=0.944515 | corpus=0.836372 | example=0.956531 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | B.6 | fusion=0.944513 | corpus=0.855355 | example=0.954419 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.946809 | corpus=0.859305 | example=0.956531 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | F.10 | fusion=0.946290 | corpus=0.854121 | example=0.956531 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.30 | fusion=0.945376 | corpus=0.861138 | example=0.954736 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.31 | fusion=0.944322 | corpus=0.853441 | example=0.954419 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.7 | fusion=0.944075 | corpus=0.831969 | example=0.956531 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | 41 | fusion=0.943692 | corpus=0.828141 | example=0.956531 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.6 | fusion=0.941916 | corpus=0.829389 | example=0.954419 | sources=['corpus', 'example']
 
 ===== public_test_84 =====
 Câu hỏi:
@@ -1806,10 +1806,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn hướng đi cho phép (theo mũi tên)
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}]
 gate=high; s_max=0.913707; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.950206 | corpus=0.890381 | example=0.956854 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.949100 | corpus=0.892807 | example=0.955354 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.945636 | corpus=0.844676 | example=0.956854 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.23 | fusion=0.938503 | corpus=0.872142 | example=0.945876 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.949697 | corpus=0.885288 | example=0.956854 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.2 | fusion=0.948892 | corpus=0.890735 | example=0.955354 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.944259 | corpus=0.830907 | example=0.956854 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.23 | fusion=0.938868 | corpus=0.875800 | example=0.945876 | sources=['corpus', 'example']
 
 ===== public_test_85 =====
 Câu hỏi:
@@ -1822,9 +1822,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu quy định rằng khi gặp đèn đỏ, xe được phép đi thẳng (không cấm rẽ phải hoặc rẽ trái).
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.11'}]
 gate=high; s_max=0.877079; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.932567 | corpus=0.878819 | example=0.938539 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.24 | fusion=0.930422 | corpus=0.857368 | example=0.938539 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.926096 | corpus=0.871406 | example=0.932173 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.930545 | corpus=0.858599 | example=0.938539 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.24 | fusion=0.929339 | corpus=0.846531 | example=0.938539 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.23 | fusion=0.926633 | corpus=0.876773 | example=0.932173 | sources=['corpus', 'example']
 
 ===== public_test_86 =====
 Câu hỏi:
@@ -1849,11 +1849,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu hướng dẫn xe đi theo hướng chỉ dẫn (lên phải hoặc xuống phải).
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '38'}]
 gate=high; s_max=0.851907; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.919267 | corpus=0.859088 | example=0.925954 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.10 | fusion=0.914108 | corpus=0.846799 | example=0.921587 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.7 | fusion=0.914104 | corpus=0.846765 | example=0.921587 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.913485 | corpus=0.840573 | example=0.921587 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.12 | fusion=0.911333 | corpus=0.819049 | example=0.921587 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 36 | fusion=0.920407 | corpus=0.870489 | example=0.925954 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.914843 | corpus=0.854155 | example=0.921587 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.10 | fusion=0.913485 | corpus=0.840566 | example=0.921587 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.7 | fusion=0.912777 | corpus=0.833486 | example=0.921587 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.12 | fusion=0.910501 | corpus=0.810728 | example=0.921587 | sources=['corpus', 'example']
 
 ===== public_test_87 =====
 Câu hỏi:
@@ -1870,12 +1870,12 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Yêu cầu người tham gia giao thông giảm tốc độ khi đến gần cầu vượt.
 F2=0.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
 gate=high; s_max=0.874094; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.929737 | corpus=0.863947 | example=0.937047 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.27 | fusion=0.929644 | corpus=0.863021 | example=0.937047 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | F.1 | fusion=0.925779 | corpus=0.868958 | example=0.932093 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.25 | fusion=0.924607 | corpus=0.857237 | example=0.932093 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.30 | fusion=0.922808 | corpus=0.839246 | example=0.932093 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | 41 | fusion=0.921905 | corpus=0.830218 | example=0.932093 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.929250 | corpus=0.859081 | example=0.937047 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.27 | fusion=0.928758 | corpus=0.854155 | example=0.937047 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.1 | fusion=0.923796 | corpus=0.849126 | example=0.932093 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.25 | fusion=0.923503 | corpus=0.846199 | example=0.932093 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 41 | fusion=0.922623 | corpus=0.837397 | example=0.932093 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.30 | fusion=0.921765 | corpus=0.828816 | example=0.932093 | sources=['corpus', 'example']
 
 ===== public_test_88 =====
 Câu hỏi:
@@ -1888,8 +1888,8 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Báo hiệu tuyến đường cao tốc Cam Lâm - Vĩnh Hảo, giới hạn tốc độ tối đa 90 km/h và tối thiểu 60 km/h.
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '47'}]
 gate=high; s_max=0.840294; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.915846 | corpus=0.877137 | example=0.920147 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | P.3 | fusion=0.913867 | corpus=0.857349 | example=0.920147 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 47 | fusion=0.915089 | corpus=0.869563 | example=0.920147 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | P.3 | fusion=0.911529 | corpus=0.833964 | example=0.920147 | sources=['corpus', 'example']
 
 ===== public_test_89 =====
 Câu hỏi:
@@ -1906,13 +1906,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm vượt hoặc đi qua đoạn đường có khoảng cách tối thiểu giữa hai xe là 8m, bắt đầu từ 200m trước điểm cần thiết.
 F2=0.6522; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.21'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.2'}]
 gate=high; s_max=0.935250; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.21 | fusion=0.962924 | corpus=0.920620 | example=0.967625 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | F.1 | fusion=0.958620 | corpus=0.877575 | example=0.967625 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.958529 | corpus=0.876670 | example=0.967625 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.955818 | corpus=0.849562 | example=0.967625 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.25 | fusion=0.907347 | corpus=0.851271 | example=0.913577 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | B.27 | fusion=0.906041 | corpus=0.838216 | example=0.913577 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | B.30 | fusion=0.905370 | corpus=0.831499 | example=0.913577 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.21 | fusion=0.961658 | corpus=0.907958 | example=0.967625 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | F.1 | fusion=0.957196 | corpus=0.863338 | example=0.967625 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.956535 | corpus=0.856723 | example=0.967625 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 41 | fusion=0.955704 | corpus=0.848422 | example=0.967625 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.25 | fusion=0.907827 | corpus=0.856074 | example=0.913577 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.27 | fusion=0.905672 | corpus=0.834520 | example=0.913577 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.30 | fusion=0.905463 | corpus=0.832431 | example=0.913577 | sources=['corpus', 'example']
 
 ===== public_test_90 =====
 Câu hỏi:
@@ -1929,10 +1929,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm đi ngược chiều.
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}]
 gate=high; s_max=0.918909; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.2 | fusion=0.953653 | corpus=0.901442 | example=0.959455 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.951966 | corpus=0.884571 | example=0.959455 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.946944 | corpus=0.835611 | example=0.959315 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 11 | fusion=0.936954 | corpus=0.867065 | example=0.944720 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.2 | fusion=0.953254 | corpus=0.897449 | example=0.959455 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.952763 | corpus=0.892541 | example=0.959455 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.946241 | corpus=0.828575 | example=0.959315 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 11 | fusion=0.934931 | corpus=0.846831 | example=0.944720 | sources=['corpus', 'example']
 
 ===== public_test_91 =====
 Câu hỏi:
@@ -1945,9 +1945,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm ô tô đi vào
 F2=0.9091; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.7'}]
 gate=high; s_max=0.964900; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.7 | fusion=0.970516 | corpus=0.863111 | example=0.982450 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.969907 | corpus=0.857018 | example=0.982450 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.949269 | corpus=0.858908 | example=0.959309 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.7 | fusion=0.968912 | corpus=0.847072 | example=0.982450 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.967502 | corpus=0.832974 | example=0.982450 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.946830 | corpus=0.834522 | example=0.959309 | sources=['corpus', 'example']
 
 ===== public_test_92 =====
 Câu hỏi:
@@ -1964,13 +1964,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm xe ba bánh và xe bốn bánh đi vào trong các khung giờ: 05:00 - 13:00 và 16:00 - 22:00.
 F2=0.3333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.11'}]
 gate=high; s_max=0.906878; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.945925 | corpus=0.878298 | example=0.953439 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | F.10 | fusion=0.940818 | corpus=0.827224 | example=0.953439 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 41 | fusion=0.940555 | corpus=0.824598 | example=0.953439 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.27 | fusion=0.940145 | corpus=0.820501 | example=0.953439 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.6 | fusion=0.920209 | corpus=0.854751 | example=0.927482 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | 11 | fusion=0.919849 | corpus=0.866407 | example=0.925787 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | B.10 | fusion=0.919717 | corpus=0.865084 | example=0.925787 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.943977 | corpus=0.858821 | example=0.953439 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 41 | fusion=0.941273 | corpus=0.831777 | example=0.953439 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | F.10 | fusion=0.940560 | corpus=0.824646 | example=0.953439 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.27 | fusion=0.939474 | corpus=0.813790 | example=0.953439 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 11 | fusion=0.920281 | corpus=0.870721 | example=0.925787 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.6 | fusion=0.919397 | corpus=0.846636 | example=0.927482 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | B.10 | fusion=0.918743 | corpus=0.855341 | example=0.925787 | sources=['corpus', 'example']
 
 ===== public_test_93 =====
 Câu hỏi:
@@ -2003,13 +2003,13 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Chỉ dẫn làn đường dành cho xe máy, xe ô tô, xe tải
 F2=0.6667; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.11'}]
 gate=high; s_max=0.852596; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.4 | fusion=0.923131 | corpus=0.894630 | example=0.926298 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.921174 | corpus=0.875056 | example=0.926298 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.11 | fusion=0.920435 | corpus=0.867664 | example=0.926298 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.10 | fusion=0.920221 | corpus=0.865532 | example=0.926298 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.6 | fusion=0.917961 | corpus=0.863124 | example=0.924054 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | F.10 | fusion=0.917745 | corpus=0.850161 | example=0.925254 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | 41 | fusion=0.915309 | corpus=0.825803 | example=0.925254 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.4 | fusion=0.922451 | corpus=0.887831 | example=0.926298 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.11 | fusion=0.921179 | corpus=0.875105 | example=0.926298 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.920985 | corpus=0.873171 | example=0.926298 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.10 | fusion=0.919028 | corpus=0.853598 | example=0.926298 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | F.10 | fusion=0.918370 | corpus=0.856408 | example=0.925254 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.6 | fusion=0.917346 | corpus=0.856977 | example=0.924054 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | 41 | fusion=0.916830 | corpus=0.841010 | example=0.925254 | sources=['corpus', 'example']
 
 ===== public_test_94 =====
 Câu hỏi:
@@ -2022,16 +2022,16 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm xe 3 bánh và 4 bánh thô sơ lưu thông trong các khung giờ: 05:00 - 13:00 và 16:00 - 22:00.
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '41'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.11'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'F.10'}]
 gate=high; s_max=0.925330; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.950191 | corpus=0.837925 | example=0.962665 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.11 | fusion=0.949484 | corpus=0.830854 | example=0.962665 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.946712 | corpus=0.803140 | example=0.962665 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 26 | fusion=0.924173 | corpus=0.814506 | example=0.936358 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.904501 | corpus=0.823114 | example=0.913544 | sources=['corpus', 'example']
-#6 | QCVN 41:2024/BGTVT | 32 | fusion=0.904415 | corpus=0.822253 | example=0.913544 | sources=['corpus', 'example']
-#7 | QCVN 41:2024/BGTVT | D.16 | fusion=0.904011 | corpus=0.818208 | example=0.913544 | sources=['corpus', 'example']
-#8 | QCVN 41:2024/BGTVT | F.10 | fusion=0.903497 | corpus=0.813074 | example=0.913544 | sources=['corpus', 'example']
-#9 | QCVN 41:2024/BGTVT | B.27 | fusion=0.902971 | corpus=0.807814 | example=0.913544 | sources=['corpus', 'example']
-#10 | QCVN 41:2024/BGTVT | 41 | fusion=0.902399 | corpus=0.802088 | example=0.913544 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.11 | fusion=0.948826 | corpus=0.824275 | example=0.962665 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.948456 | corpus=0.820573 | example=0.962665 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.947252 | corpus=0.808541 | example=0.962665 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 26 | fusion=0.922685 | corpus=0.799623 | example=0.936358 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | D.16 | fusion=0.904080 | corpus=0.818899 | example=0.913544 | sources=['corpus', 'example']
+#6 | QCVN 41:2024/BGTVT | B.31 | fusion=0.904018 | corpus=0.818282 | example=0.913544 | sources=['corpus', 'example']
+#7 | QCVN 41:2024/BGTVT | 32 | fusion=0.903708 | corpus=0.815182 | example=0.913544 | sources=['corpus', 'example']
+#8 | QCVN 41:2024/BGTVT | B.27 | fusion=0.902568 | corpus=0.803782 | example=0.913544 | sources=['corpus', 'example']
+#9 | QCVN 41:2024/BGTVT | F.10 | fusion=0.902532 | corpus=0.803419 | example=0.913544 | sources=['corpus', 'example']
+#10 | QCVN 41:2024/BGTVT | 41 | fusion=0.900213 | corpus=0.780229 | example=0.913544 | sources=['corpus', 'example']
 
 ===== public_test_95 =====
 Câu hỏi:
@@ -2044,8 +2044,8 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo cấm xe có tải trọng từ 10 tấn trở lên đi vào khu vực này.
 F2=1.0000; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.15'}]
 gate=high; s_max=0.938652; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.15 | fusion=0.961751 | corpus=0.893574 | example=0.969326 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.960032 | corpus=0.876382 | example=0.969326 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.15 | fusion=0.958988 | corpus=0.865945 | example=0.969326 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.958100 | corpus=0.857067 | example=0.969326 | sources=['corpus', 'example']
 
 ===== public_test_96 =====
 Câu hỏi:
@@ -2058,11 +2058,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm xe có chiều dài vượt quá 9m đi vào khu vực này.
 F2=0.3846; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.19'}]
 gate=high; s_max=0.843794; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.18 | fusion=0.916022 | corpus=0.863148 | example=0.921897 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.17 | fusion=0.913415 | corpus=0.871229 | example=0.918103 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | 22 | fusion=0.912388 | corpus=0.860958 | example=0.918103 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 11 | fusion=0.911396 | corpus=0.816883 | example=0.921897 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.8 | fusion=0.907137 | corpus=0.825252 | example=0.916235 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.18 | fusion=0.913598 | corpus=0.838910 | example=0.921897 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.17 | fusion=0.911571 | corpus=0.852787 | example=0.918103 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | 11 | fusion=0.910801 | corpus=0.810933 | example=0.921897 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 22 | fusion=0.909553 | corpus=0.832609 | example=0.918103 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.8 | fusion=0.906357 | corpus=0.817456 | example=0.916235 | sources=['corpus', 'example']
 
 ===== public_test_97 =====
 Câu hỏi:
@@ -2075,10 +2075,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Cấm mọi phương tiện đi vào (cấm ngược chiều hoặc cấm vào khu vực này).
 F2=0.8333; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}]
 gate=high; s_max=0.934140; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.959836 | corpus=0.894732 | example=0.967070 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.954701 | corpus=0.843380 | example=0.967070 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.952142 | corpus=0.905648 | example=0.957308 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | 11 | fusion=0.942291 | corpus=0.888520 | example=0.948266 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.958925 | corpus=0.885624 | example=0.967070 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | B.31 | fusion=0.952977 | corpus=0.826140 | example=0.967070 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.2 | fusion=0.950956 | corpus=0.893790 | example=0.957308 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | 11 | fusion=0.939220 | corpus=0.857810 | example=0.948266 | sources=['corpus', 'example']
 
 ===== public_test_98 =====
 Câu hỏi:
@@ -2099,10 +2099,10 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu đường bộ (thường dùng để báo hiệu vị trí của biển báo hoặc cột đèn giao thông).
 F2=0.4167; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}]
 gate=high; s_max=0.928467; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | 26 | fusion=0.954935 | corpus=0.871254 | example=0.964233 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.953934 | corpus=0.883654 | example=0.961743 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.951941 | corpus=0.863723 | example=0.961743 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.23 | fusion=0.944596 | corpus=0.869103 | example=0.952984 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | 22 | fusion=0.953788 | corpus=0.882187 | example=0.961743 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 26 | fusion=0.953521 | corpus=0.857111 | example=0.964233 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.949871 | corpus=0.843015 | example=0.961743 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.23 | fusion=0.943919 | corpus=0.862338 | example=0.952984 | sources=['corpus', 'example']
 
 ===== public_test_99 =====
 Câu hỏi:
@@ -2123,11 +2123,11 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo hiệu đường bộ phụ, thường dùng để bổ sung thông tin hoặc cảnh báo cho biển chính phía trên.
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}]
 gate=high; s_max=0.900778; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.2 | fusion=0.945194 | corpus=0.898438 | example=0.950389 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.943253 | corpus=0.879033 | example=0.950389 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.927284 | corpus=0.839445 | example=0.937044 | sources=['corpus', 'example']
-#4 | QCVN 41:2024/BGTVT | B.1 | fusion=0.924737 | corpus=0.872570 | example=0.930533 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | 11 | fusion=0.923192 | corpus=0.857121 | example=0.930533 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.2 | fusion=0.945765 | corpus=0.904153 | example=0.950389 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.944925 | corpus=0.895744 | example=0.950389 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.31 | fusion=0.927230 | corpus=0.838912 | example=0.937044 | sources=['corpus', 'example']
+#4 | QCVN 41:2024/BGTVT | B.1 | fusion=0.925671 | corpus=0.881912 | example=0.930533 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | 11 | fusion=0.922621 | corpus=0.851409 | example=0.930533 | sources=['corpus', 'example']
 
 ===== public_test_100 =====
 Câu hỏi:
@@ -2140,9 +2140,9 @@ Loại hình: SIGN_ILLUSTRATION
 Ý nghĩa hoặc thông số: Biển báo cấm: Cấm mọi phương tiện cơ giới đi vào.
 F2=0.7692; gold=[{'law_id': 'QCVN 41:2024/BGTVT', 'article_id': '22'}, {'law_id': 'QCVN 41:2024/BGTVT', 'article_id': 'B.2'}]
 gate=high; s_max=0.954241; example_weight=0.9; corpus_weight=0.09999999999999998
-#1 | QCVN 41:2024/BGTVT | B.2 | fusion=0.967105 | corpus=0.876962 | example=0.977120 | sources=['corpus', 'example']
-#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.965093 | corpus=0.856850 | example=0.977120 | sources=['corpus', 'example']
-#3 | QCVN 41:2024/BGTVT | B.5 | fusion=0.962011 | corpus=0.867752 | example=0.972484 | sources=['corpus', 'example']
+#1 | QCVN 41:2024/BGTVT | B.2 | fusion=0.963546 | corpus=0.841377 | example=0.977120 | sources=['corpus', 'example']
+#2 | QCVN 41:2024/BGTVT | 22 | fusion=0.963308 | corpus=0.838994 | example=0.977120 | sources=['corpus', 'example']
+#3 | QCVN 41:2024/BGTVT | B.5 | fusion=0.959644 | corpus=0.844081 | example=0.972484 | sources=['corpus', 'example']
 #4 | QCVN 41:2024/BGTVT | 21 | fusion=0.956233 | corpus=0.859339 | example=0.966999 | sources=['corpus', 'example']
-#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.954812 | corpus=0.845127 | example=0.966999 | sources=['corpus', 'example']
+#5 | QCVN 41:2024/BGTVT | B.31 | fusion=0.950860 | corpus=0.805607 | example=0.966999 | sources=['corpus', 'example']
 

@@ -1,0 +1,19 @@
+{
+  "split": "val",
+  "metrics": {
+    "metrics/precision(B)": 0.9378679389113478,
+    "metrics/recall(B)": 0.9365356480278941,
+    "metrics/mAP50(B)": 0.9634307185269867,
+    "metrics/mAP50-95(B)": 0.7658452204220266,
+    "fitness": 0.7658452204220266
+  },
+  "speed_ms_per_image": {
+    "preprocess": 0.33814945810026,
+    "inference": 1.782891625620762,
+    "loss": 0.000736847324319771,
+    "postprocess": 0.9546954679607386
+  },
+  "confidence_threshold": 0.001,
+  "nms_iou": 0.7,
+  "note": "AP evaluation uses a low confidence threshold; P/R follow Ultralytics best-F1 operating point, not necessarily conf."
+}

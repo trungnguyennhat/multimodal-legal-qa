@@ -1,0 +1,19 @@
+{
+  "settings_version": "0.0.8",
+  "datasets_dir": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\datasets",
+  "weights_dir": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\yolo_train",
+  "runs_dir": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\artifacts\\experiments\\hybrid_rag\\yolo_train",
+  "uuid": "82b38e8c78cb03d26a315ba45c76b90e8977cc3256672e6fa4424e2a25071731",
+  "sync": false,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": false,
+  "comet": false,
+  "dvc": false,
+  "mlflow": false,
+  "raytune": false,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

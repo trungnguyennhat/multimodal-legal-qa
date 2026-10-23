@@ -1,6 +1,6 @@
 {
   "status": "COMPLETED",
-  "created_at": "2026-10-15T14:56:41.379885+00:00",
+  "created_at": "2026-10-23T21:31:40.127852+00:00",
   "split": "public_test",
   "queries": 100,
   "model": "BAAI/bge-m3",
@@ -27,8 +27,8 @@
   "selected_items": 226,
   "recovered_caption_queries": 3,
   "source_sha256": {
-    "query_embedding.py": "3371127b573ac0846bb6ae92ca43e816403a89f2bbea7c70c1fc592853b58fdf",
-    "corpus_chunking.py": "a0536c3936155ed2d024dde5d8ad1f3e668188585eab982dfbbd204f42a6fe57"
+    "query_embedding.py": "70f8c24869261ba87424a592ff4dded97d74058b2255abca8247a5d1a927eed9",
+    "corpus_chunking.py": "80cf03a08ea588316cd14f0830d3a56878e667eed962efc2872705ed4996511b"
   },
   "batch_size": 4,
   "model_max_tokens": 8192,
@@ -39,7 +39,7 @@
     "public_test.json": "aa12580eab507e209d75e304f24dc9a0609023b1edc0ecb5498c07cfc55a1354",
     "query_image_mapping.jsonl": "717dbcbfd9e8ddda3031ddd56a11fd7bc09cebf9843ad907448cf6ec37dfd0a5",
     "caption_manifest.json": "1077677143ea1563b41cb33a6a1d48e5d097e7fb1a23428b5a1653684e812a24",
-    "corpus_manifest.json": "46778fd1854591cfe5a353260e1add32b00b8085545b4ba1f03e4fe3b09d0944"
+    "corpus_manifest.json": "394b95800237b114b50fc42dd3b574d98d0d3c501011636306737de652e219c8"
   },
   "caption_files_sha256": {
     "captions/public_test_2_2_description.json": "412a347aafe32a3d171bbf33844ef4f4dafa13497c05e8fb1507d17906726116",
@@ -162,7 +162,7 @@
     "peak_reserved_bytes": 1730150400,
     "free_vram_after_inference": 14141095936
   },
-  "elapsed_seconds": 19.24526589999732,
+  "elapsed_seconds": 12.365520399995148,
   "output_sha256": {
     "vectors.npy": "aaa586ed3ab9bed0f5c82da8e8a5c1c852ad2156f820cb58e09ad39816e0b32f",
     "queries.jsonl": "d7a7246d5917cf34d596a8be92bd1dba6c9bafb811e663063047a287eec96f3a",

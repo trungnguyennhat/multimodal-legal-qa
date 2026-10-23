@@ -2,16 +2,12 @@
   "documents": 2,
   "articles": 402,
   "block_types": {
-    "paragraph": 6866,
+    "paragraph": 1347,
     "figure": 790,
     "table": 212
   },
   "image_occurrences": 790,
-  "issue_codes": {
-    "unlabelled_resource": 691,
-    "reference_unresolved": 56,
-    "reference_ambiguous": 3
-  },
+  "issue_codes": {},
   "per_document": [
     {
       "id": "QCVN 41:2024/BGTVT",

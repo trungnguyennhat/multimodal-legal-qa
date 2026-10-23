@@ -1,0 +1,82 @@
+{
+  "status": "FAILED",
+  "command": "train",
+  "arguments": {
+    "command": "train",
+    "name": "yolo11n_signs",
+    "weights": null,
+    "imgsz": 640,
+    "batch": 8,
+    "device": "0",
+    "resume": true,
+    "epochs": 100,
+    "patience": 8
+  },
+  "script_sha256": "77d92e67576d66b2fb1e17bebbc807ad4da9d6592ecb835c7b673f0182d5dfb2",
+  "dataset_manifest_sha256": "4e6a0075e85be04b3544007f8bd95985cb199eed11809c7c633a05da8eb79e2e",
+  "weights": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\artifacts\\experiments\\hybrid_rag\\yolo_train\\train\\yolo11n_signs\\weights\\last.pt",
+  "weights_sha256": "da170fe99e300b5f4266530e2d8f6999fb34ccfce07b65706508751419c1c5c6",
+  "python": "3.12.0",
+  "packages": {
+    "ultralytics": "8.4.182",
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "numpy": "2.5.2",
+    "pillow": "12.3.0"
+  },
+  "device": "0",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "external_detection_data": true,
+  "resume_history": [
+    {
+      "status": "FAILED",
+      "command": "train",
+      "arguments": {
+        "command": "train",
+        "name": "yolo11n_signs",
+        "weights": null,
+        "imgsz": 640,
+        "batch": 8,
+        "device": "0",
+        "epochs": 100,
+        "patience": 20
+      },
+      "script_sha256": "64659698c59deee97eec584b092e063bcf2cb0c8d6b04c7c602433a6e36d9a5f",
+      "dataset_manifest_sha256": "4e6a0075e85be04b3544007f8bd95985cb199eed11809c7c633a05da8eb79e2e",
+      "weights": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\model\\yolo_train\\yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "python": "3.12.0",
+      "packages": {
+        "ultralytics": "8.4.182",
+        "torch": "2.7.1+cu128",
+        "torchvision": "0.22.1+cu128",
+        "numpy": "2.5.2",
+        "pillow": "12.3.0"
+      },
+      "device": "0",
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "external_detection_data": true,
+      "error": "KeyboardInterrupt: ",
+      "elapsed_seconds": 1211.061999999998,
+      "peak_cuda_allocated_bytes": 2110177280
+    }
+  ],
+  "effective_training": {
+    "epochs": 100,
+    "patience": 8,
+    "imgsz": 640,
+    "batch": 8,
+    "device": "0",
+    "workers": 0,
+    "optimizer": "AdamW",
+    "lr0": 0.001,
+    "amp": false,
+    "seed": 2025,
+    "save_dir": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\artifacts\\experiments\\hybrid_rag\\yolo_train\\train\\yolo11n_signs"
+  },
+  "start_epoch": 9,
+  "early_stopping_best_epoch": 8,
+  "error": "KeyboardInterrupt: ",
+  "elapsed_seconds": 1079.8430000000008,
+  "peak_cuda_allocated_bytes": 2106179584
+}

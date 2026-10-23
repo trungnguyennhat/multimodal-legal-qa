@@ -1,0 +1,328 @@
+{
+  "dataset": "star092304/Traffic-sign-detection-VietNam",
+  "revision": "bd948a572cefbea92a1c523a2784c1ea9cf1dbe1",
+  "archive_sha256": "d8c8a777c691c15c15d72b1b2c9b0b2abd55090d1505dd3974f5fbab9ca2bbca",
+  "classes": {
+    "0": "No Entry",
+    "1": "Turn Right Only",
+    "2": "Speed limit 40hm/h",
+    "3": "No Trucks and Bus",
+    "4": "No Trucks",
+    "5": "Low Clearance",
+    "6": "No Cars",
+    "7": "Danger",
+    "8": "Slown Down",
+    "9": "Double curve first to right",
+    "10": "Obstacle on the Road",
+    "11": "Road with Surveillance Camera",
+    "12": "Speed limit 60hm/h",
+    "13": "No Moto",
+    "14": "Lane Allocation",
+    "15": "Height Limit",
+    "16": "No Horns",
+    "17": "No Left Turn",
+    "18": "No Right Turn",
+    "19": "No U-Turn",
+    "20": "No U-Turn and No Left Turn",
+    "21": "No U-Turn and No Right Turn",
+    "22": "Traffic light ahead",
+    "23": "No Stopping & No Parking",
+    "24": "No Parking",
+    "25": "No Straight and Right Turn",
+    "26": "No Left or Right Turn",
+    "27": "Sharp Left Turn",
+    "28": "Sharp Right Turn",
+    "29": "Intersection with a Minor Road",
+    "30": "Intersection with Equal Roads",
+    "31": "No Moto Turn Left",
+    "32": "Intersection with a Priority Road",
+    "33": "Pedestrian Lane",
+    "34": "Narrow Road Left Side",
+    "35": "Narrow Road Right Side",
+    "36": "Narrow road both sides",
+    "37": "No Two or Three-wheeled Vehicles",
+    "38": "Speed Bump",
+    "39": "Speed limit 50hm/h",
+    "40": "Speed limit 70hm/h",
+    "41": "Speed limit 80hm/h",
+    "42": "Level Crossing with Barriers",
+    "43": "No U-Turn for Cars",
+    "44": "No bus",
+    "45": "No Overtaking",
+    "46": "Children Crossing",
+    "47": "Pedestrian Crossing",
+    "48": "End of all prohibition",
+    "49": "Keep left",
+    "50": "Road Work Ahead",
+    "51": "One way street",
+    "52": "Turn Left",
+    "53": "Turn Right",
+    "54": "Green Light",
+    "55": "Red Light",
+    "56": "Roundabout",
+    "57": "Speed limit 10km/h",
+    "58": "Speed limit 100km/h",
+    "59": "Speed limit 110km/h",
+    "60": "Speed limit 120km/h",
+    "61": "Speed limit 20km/h",
+    "62": "Speed limit 30km/h",
+    "63": "Speed limit 90km/h",
+    "64": "Stop",
+    "65": "U-Turn Area",
+    "66": "No Parking on Odd Days",
+    "67": "No Parking on Even Days",
+    "68": "Parking",
+    "69": "Bus Stop",
+    "70": "Hospital",
+    "71": "No U-Turn and Left Turn for Cars",
+    "72": "Accident area",
+    "73": "Dual carriageway",
+    "74": "No left turn for cars",
+    "75": "Steep ascent",
+    "76": "Narrow bridge",
+    "77": "Uneven road",
+    "78": "End of 50km/h speed limit",
+    "79": "Residential area",
+    "80": "sparsely populated area",
+    "81": "Slippery Road"
+  },
+  "excluded": {
+    "54": "Green Light",
+    "55": "Red Light"
+  },
+  "source_box_counts": {
+    "0": 572,
+    "1": 524,
+    "2": 360,
+    "3": 127,
+    "4": 543,
+    "5": 161,
+    "6": 279,
+    "7": 78,
+    "8": 486,
+    "9": 322,
+    "10": 103,
+    "11": 35,
+    "12": 748,
+    "13": 160,
+    "14": 343,
+    "15": 293,
+    "16": 109,
+    "17": 202,
+    "18": 247,
+    "19": 208,
+    "20": 244,
+    "21": 153,
+    "22": 120,
+    "23": 1446,
+    "24": 914,
+    "25": 75,
+    "26": 241,
+    "27": 306,
+    "28": 230,
+    "29": 741,
+    "30": 273,
+    "31": 46,
+    "32": 153,
+    "33": 220,
+    "34": 96,
+    "35": 173,
+    "36": 148,
+    "37": 504,
+    "38": 128,
+    "39": 399,
+    "40": 105,
+    "41": 441,
+    "42": 251,
+    "43": 88,
+    "44": 142,
+    "45": 123,
+    "46": 273,
+    "47": 546,
+    "48": 190,
+    "49": 95,
+    "50": 65,
+    "51": 362,
+    "52": 71,
+    "53": 60,
+    "54": 511,
+    "55": 408,
+    "56": 281,
+    "57": 124,
+    "58": 103,
+    "59": 98,
+    "60": 102,
+    "61": 107,
+    "62": 114,
+    "63": 101,
+    "64": 127,
+    "65": 212,
+    "66": 67,
+    "67": 93,
+    "68": 78,
+    "69": 301,
+    "70": 107,
+    "71": 72,
+    "72": 197,
+    "73": 142,
+    "74": 217,
+    "75": 151,
+    "76": 121,
+    "77": 32,
+    "78": 141,
+    "79": 164,
+    "80": 117,
+    "81": 99
+  },
+  "splits": {
+    "train": {
+      "images": 8097,
+      "boxes": 14995,
+      "removed_lights": 694,
+      "background_images": 168
+    },
+    "val": {
+      "images": 1015,
+      "boxes": 1918,
+      "removed_lights": 135,
+      "background_images": 28
+    },
+    "test": {
+      "images": 1016,
+      "boxes": 1877,
+      "removed_lights": 90,
+      "background_images": 16
+    }
+  },
+  "exact_cross_split_duplicates": [
+    {
+      "first": "dataset/test/images/9299.jpg",
+      "second": "dataset/val/images/9272.jpg"
+    },
+    {
+      "first": "dataset/test/images/3330.jpg",
+      "second": "dataset/train/images/3318.jpg"
+    },
+    {
+      "first": "dataset/val/images/3757.jpg",
+      "second": "dataset/train/images/3646.jpg"
+    },
+    {
+      "first": "dataset/test/images/3658.jpg",
+      "second": "dataset/train/images/3647.jpg"
+    },
+    {
+      "first": "dataset/test/images/3724.jpg",
+      "second": "dataset/train/images/3713.jpg"
+    },
+    {
+      "first": "dataset/val/images/3924.jpg",
+      "second": "dataset/train/images/3913.jpg"
+    },
+    {
+      "first": "dataset/val/images/3991.jpg",
+      "second": "dataset/train/images/4002.jpg"
+    },
+    {
+      "first": "dataset/val/images/4053.jpg",
+      "second": "dataset/train/images/4042.jpg"
+    },
+    {
+      "first": "dataset/test/images/4460.jpg",
+      "second": "dataset/train/images/4459.jpg"
+    },
+    {
+      "first": "dataset/val/images/4469.jpg",
+      "second": "dataset/train/images/4470.jpg"
+    },
+    {
+      "first": "dataset/test/images/4527.jpg",
+      "second": "dataset/train/images/4528.jpg"
+    },
+    {
+      "first": "dataset/val/images/4559.jpg",
+      "second": "dataset/train/images/4560.jpg"
+    },
+    {
+      "first": "dataset/test/images/4569.jpg",
+      "second": "dataset/train/images/4568.jpg"
+    },
+    {
+      "first": "dataset/val/images/4574.jpg",
+      "second": "dataset/train/images/4573.jpg"
+    },
+    {
+      "first": "dataset/test/images/9264.jpg",
+      "second": "dataset/train/images/8862.jpg"
+    },
+    {
+      "first": "dataset/val/images/9277.jpg",
+      "second": "dataset/train/images/9050.jpg"
+    },
+    {
+      "first": "dataset/val/images/9281.jpg",
+      "second": "dataset/train/images/9094.jpg"
+    },
+    {
+      "first": "dataset/val/images/9289.jpg",
+      "second": "dataset/train/images/9172.jpg"
+    },
+    {
+      "first": "dataset/val/images/9295.jpg",
+      "second": "dataset/train/images/9227.jpg"
+    },
+    {
+      "first": "dataset/val/images/9349.jpg",
+      "second": "dataset/train/images/9267.jpg"
+    },
+    {
+      "first": "dataset/test/images/9039.jpg",
+      "second": "dataset/train/images/9276.jpg"
+    },
+    {
+      "first": "dataset/test/images/9128.jpg",
+      "second": "dataset/train/images/9285.jpg"
+    },
+    {
+      "first": "dataset/val/images/9139.jpg",
+      "second": "dataset/train/images/9286.jpg"
+    },
+    {
+      "first": "dataset/val/images/9194.jpg",
+      "second": "dataset/train/images/9291.jpg"
+    },
+    {
+      "first": "dataset/test/images/9369.jpg",
+      "second": "dataset/train/images/9309.jpg"
+    },
+    {
+      "first": "dataset/val/images/9308.jpg",
+      "second": "dataset/train/images/9361.jpg"
+    },
+    {
+      "first": "dataset/val/images/9268.jpg",
+      "second": "dataset/train/images/9457.jpg"
+    },
+    {
+      "first": "dataset/val/images/9270.jpg",
+      "second": "dataset/train/images/9679.jpg"
+    }
+  ],
+  "invalid_images": [
+    {
+      "image": "dataset/train/images/8380.jpg",
+      "label": "dataset/train/labels/8380.txt",
+      "errors": [
+        {
+          "line": 4,
+          "text": "12 0 0.63125 0.53984375 0.025 0.0455078125",
+          "reason": "cần class cx cy w h"
+        }
+      ]
+    }
+  ],
+  "skip_invalid_images": true,
+  "deduplicate_splits": true,
+  "duplicate_policy": "keep test > val > train; drop lower-priority copies",
+  "near_duplicate_check": "not performed"
+}

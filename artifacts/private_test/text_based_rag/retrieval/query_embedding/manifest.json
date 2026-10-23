@@ -1,6 +1,6 @@
 {
   "status": "COMPLETED",
-  "created_at": "2026-10-15T18:52:50.165228+00:00",
+  "created_at": "2026-10-23T21:34:09.892227+00:00",
   "split": "private_test",
   "queries": 146,
   "model": "BAAI/bge-m3",
@@ -28,7 +28,7 @@
   "recovered_caption_queries": 0,
   "source_sha256": {
     "query_embedding.py": "70f8c24869261ba87424a592ff4dded97d74058b2255abca8247a5d1a927eed9",
-    "corpus_chunking.py": "a0536c3936155ed2d024dde5d8ad1f3e668188585eab982dfbbd204f42a6fe57"
+    "corpus_chunking.py": "80cf03a08ea588316cd14f0830d3a56878e667eed962efc2872705ed4996511b"
   },
   "batch_size": 4,
   "model_max_tokens": 8192,
@@ -39,7 +39,7 @@
     "private_test.json": "9905c4550535b683fb69bea0b5c83d9eb1d3b7c9e83655ec72462399bce0438a",
     "query_image_mapping.jsonl": "46d13942e56f936f9ce5af94980723f6444f3715b98ca98add00ed0029730730",
     "caption_manifest.json": "d6e1d972ed10703f81a550700b7fde034e4961018e52df607553cbc9261f16e0",
-    "corpus_manifest.json": "46778fd1854591cfe5a353260e1add32b00b8085545b4ba1f03e4fe3b09d0944"
+    "corpus_manifest.json": "394b95800237b114b50fc42dd3b574d98d0d3c501011636306737de652e219c8"
   },
   "caption_files_sha256": {
     "captions/private_test_1_1_description.json": "e0af048ef2f2f1ff245bbc3c632b38b9071c7371720201d57c13371ae16bb195",
@@ -208,7 +208,7 @@
     "peak_reserved_bytes": 1277165568,
     "free_vram_after_inference": 14594080768
   },
-  "elapsed_seconds": 15.469189899988123,
+  "elapsed_seconds": 13.116461199999321,
   "output_sha256": {
     "vectors.npy": "52835d00440f2bb5565792e8ec53612da201c6ba01333b2a28ed9966c79e362f",
     "queries.jsonl": "ba8454b65a848817f8ced58587d81bbf2102fa5cf3f13a73348a9a4721999d62",

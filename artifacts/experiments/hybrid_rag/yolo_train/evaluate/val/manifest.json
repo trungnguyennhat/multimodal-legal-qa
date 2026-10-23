@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETED",
+  "command": "evaluate",
+  "arguments": {
+    "command": "evaluate",
+    "name": "yolo11n_signs_val_stopped",
+    "weights": "artifacts\\experiments\\hybrid_rag\\yolo_train\\train\\yolo11n_signs\\weights\\best.pt",
+    "imgsz": 640,
+    "batch": 8,
+    "device": "0",
+    "split": "val",
+    "conf": 0.001,
+    "iou": 0.7
+  },
+  "script_sha256": "77d92e67576d66b2fb1e17bebbc807ad4da9d6592ecb835c7b673f0182d5dfb2",
+  "dataset_manifest_sha256": "4e6a0075e85be04b3544007f8bd95985cb199eed11809c7c633a05da8eb79e2e",
+  "weights": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\artifacts\\experiments\\hybrid_rag\\yolo_train\\train\\yolo11n_signs\\weights\\best.pt",
+  "weights_sha256": "bb11c3327c5f5780e94ed370dd883d86887cf16127cb91c89ff585c85c26c05e",
+  "python": "3.12.0",
+  "packages": {
+    "ultralytics": "8.4.182",
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "numpy": "2.5.2",
+    "pillow": "12.3.0"
+  },
+  "device": "0",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "external_detection_data": true,
+  "elapsed_seconds": 14.656999999999243,
+  "peak_cuda_allocated_bytes": 263142912
+}

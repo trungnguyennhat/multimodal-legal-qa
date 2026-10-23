@@ -1,6 +1,6 @@
 {
   "status": "COMPLETED",
-  "created_at": "2026-10-15T11:21:29.090891+00:00",
+  "created_at": "2026-10-23T21:23:24.496056+00:00",
   "model": "BAAI/bge-m3",
   "revision": "5617a9f61b028005a4858fdac845db406aefb181",
   "model_path": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181",
@@ -10,21 +10,21 @@
   "stored_dtype": "float32",
   "inference_dtype": "bfloat16",
   "attention": "sdpa",
-  "batch_size": 4,
+  "batch_size": 1,
   "index_type": "numpy_exact_inner_product",
   "similarity": "cosine",
   "input_prefix": "",
   "input_field": "text",
   "overwrite": true,
   "parents": 402,
-  "source_sha256": "ff510eadc7d37aab5313ba054b12145d5ee2c8f9667487362881bb05afc15096",
-  "chunks": 5459,
-  "input_max_tokens": 503,
+  "source_sha256": "1d7a7e1c04d0880d93175a5548e9f82cd0c763bca306c8ec2c8044d58c8c5c6c",
+  "chunks": 830,
+  "input_max_tokens": 7076,
   "model_max_tokens": 8192,
   "input_sha256": {
-    "chunks.jsonl": "0f01fa299218791b60bf81817350115d7714ce5ca1b3e794d25e166d01614b8f",
-    "organized_corpus.jsonl": "1a68ee07da36d61184230b9b9a7515a0e09271b84c52ba8ce26bb291d05f9a38",
-    "manifest.json": "8d7f6140f17ade0f0e6eb6bbf76b2707282c93503c08d8ab48d59ee60992008c"
+    "chunks.jsonl": "496aba0f65180be41f17e7f82f24239efd0f458bc7b2da536cff3ca008da817e",
+    "organized_corpus.jsonl": "eae926265b0af58c70f207088d19fea668b6eac2d3c96ea7c50cdb0c48a716f8",
+    "manifest.json": "8b494edebc1f4f7fc26e9afa1c3ce7b90eeccc4f17947000ed85077052c7417f"
   },
   "model_files_sha256": {
     "pytorch_model.bin": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
@@ -41,15 +41,15 @@
     "total_vram_bytes": 17102864384,
     "free_vram_before_load": 15908995072,
     "pytorch_budget_bytes": 8589934592,
-    "peak_vram_bytes": 1192224768,
-    "peak_reserved_bytes": 1224736768,
-    "free_vram_after_inference": 14646509568
+    "peak_vram_bytes": 1305190400,
+    "peak_reserved_bytes": 1574961152,
+    "free_vram_after_inference": 14296285184
   },
-  "elapsed_seconds": 36.95466139999917,
-  "index_bytes": 22360192,
+  "elapsed_seconds": 34.02152190000197,
+  "index_bytes": 3399808,
   "output_sha256": {
-    "vectors.npy": "a41f272c67264b3936929fe8e48e20451aad8883e2756d993f20696d685d2059",
-    "chunks.jsonl": "fd0f2303de120f50c67888948cd06cce2a9400a3b8ae14d1da79f92dec5e8dc6",
-    "organized_corpus.jsonl": "1a68ee07da36d61184230b9b9a7515a0e09271b84c52ba8ce26bb291d05f9a38"
+    "vectors.npy": "47cf804760fc9d4080129144a2782a53424a59c5e631babcc4f16c310eea6b8e",
+    "chunks.jsonl": "46346cf07919eae4504f9f0ed2d5e60046e5b68117212602bbaddea6b3c7e113",
+    "organized_corpus.jsonl": "eae926265b0af58c70f207088d19fea668b6eac2d3c96ea7c50cdb0c48a716f8"
   }
 }

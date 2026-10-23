@@ -1,16 +1,16 @@
 {
   "status": "COMPLETED",
-  "schema_version": 2,
+  "schema_version": 4,
   "source": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\data\\raw\\VLSP2025-MLQA-TSR\\dataset\\law_db\\vlsp2025_law.json",
   "source_sha256": "3fc352b5b46c15b21ebeaa6c3385bc1e56ae89a13140bbfe4b2e19d1e23fa683",
   "image_directory": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\data\\processed\\images\\law",
   "documents": 2,
   "articles": 402,
-  "created_at": "2026-10-10T19:22:50.191468+00:00",
+  "created_at": "2026-10-23T21:14:46.720358+00:00",
   "vlm_run": false,
-  "blocks": 7868,
+  "blocks": 2349,
   "image_files": 787,
   "unique_image_hashes": 787,
-  "issues": 750,
-  "elapsed_seconds": 0.655675699999847
+  "issues": 0,
+  "elapsed_seconds": 0.6355647000018507
 }

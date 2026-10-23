@@ -69,7 +69,7 @@
     }
   },
   "reference_macro_f2": {
-    "corpus_only": 0.26284676558510234,
+    "corpus_only": 0.23443297743500582,
     "example_only": 0.5634537953004604,
     "gate_only_without_corpus_reranking": 0.6026551137649536
   }

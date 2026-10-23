@@ -1,6 +1,6 @@
 {
   "status": "COMPLETED",
-  "created_at": "2026-10-15T13:06:01.933019+00:00",
+  "created_at": "2026-10-23T21:28:04.493849+00:00",
   "method": "example_retrieval",
   "split": "dev",
   "queries": 112,
@@ -21,11 +21,11 @@
     "query_embedding_train/manifest.json": "c25b5b888765652b8e2137c31d2df1a13f1233c4d26cea4793743ae1180d167c",
     "dev.json": "982a852348a358ce2aca0c1bcf84ca6f2e8c130ddeed6be71b025b8eeeda405e",
     "train.json": "74d2107e1198b542cf50a0efb0b76748701bf5d381c447e6abe1526bfec11635",
-    "corpus_embedding/manifest.json": "46778fd1854591cfe5a353260e1add32b00b8085545b4ba1f03e4fe3b09d0944",
-    "corpus_embedding/chunks.jsonl": "fd0f2303de120f50c67888948cd06cce2a9400a3b8ae14d1da79f92dec5e8dc6"
+    "corpus_embedding/manifest.json": "394b95800237b114b50fc42dd3b574d98d0d3c501011636306737de652e219c8",
+    "corpus_embedding/chunks.jsonl": "46346cf07919eae4504f9f0ed2d5e60046e5b68117212602bbaddea6b3c7e113"
   },
   "numpy_version": "2.5.2",
-  "source_sha256": "2706fa814f8a0f57a21bb871448d20cb55d7cb1cc5f4d82a01fb977db5b0178c",
+  "source_sha256": "428f34f0d257e7fabe771fc1d45447d46f3ac626b8e5abf48499a86309acf791",
   "query_encoder": {
     "status": "COMPLETED",
     "created_at": "2026-10-15T11:37:12.206993+00:00",
@@ -770,7 +770,7 @@
       "article_id": "G1.2"
     }
   ],
-  "elapsed_seconds": 0.17557799999485724,
+  "elapsed_seconds": 0.13836360000277637,
   "output_sha256": {
     "retrieval_results.jsonl": "2a2f94d587b7aad48d72d2250f31f96fe3e7fa289361dcb8032e574756426eb8",
     "per_query_metrics.jsonl": "3ddf76ebd583f9b1296bf8020d933b96e1fc9eb098b8fa00bb7d0503e83ec34e",

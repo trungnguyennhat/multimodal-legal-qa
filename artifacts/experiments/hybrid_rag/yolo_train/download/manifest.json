@@ -1,0 +1,21 @@
+{
+  "dataset_revision": "bd948a572cefbea92a1c523a2784c1ea9cf1dbe1",
+  "files": {
+    "traffic-sign-detection-vietnam.zip": {
+      "path": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\data\\yolo_train\\traffic-sign-detection-vietnam.zip",
+      "url": "https://huggingface.co/datasets/star092304/Traffic-sign-detection-VietNam/resolve/bd948a572cefbea92a1c523a2784c1ea9cf1dbe1/traffic-sign-detection-vietnam.zip",
+      "sha256": "d8c8a777c691c15c15d72b1b2c9b0b2abd55090d1505dd3974f5fbab9ca2bbca"
+    },
+    "classid.csv": {
+      "path": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\data\\yolo_train\\classid.csv",
+      "url": "https://huggingface.co/datasets/star092304/Traffic-sign-detection-VietNam/resolve/bd948a572cefbea92a1c523a2784c1ea9cf1dbe1/classid.csv",
+      "sha256": "ced10d0a01925525d96b25306db64ad61cca602cad461fcce3d137501840d1ca"
+    },
+    "yolo11n.pt": {
+      "path": "C:\\Users\\ADMIN\\Documents\\code\\Personal Project\\multimodal-legal-qa\\models\\yolo_train\\yolo11n.pt",
+      "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "integrity": "local SHA256; upstream release không công bố checksum"
+    }
+  }
+}

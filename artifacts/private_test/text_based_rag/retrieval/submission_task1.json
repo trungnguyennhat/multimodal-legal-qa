@@ -6,11 +6,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "11"
+        "article_id": "B.7"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.7"
+        "article_id": "11"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -64,11 +64,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.10"
+        "article_id": "41"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "41"
+        "article_id": "F.10"
       }
     ]
   },
@@ -79,11 +79,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.24"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.24"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -190,11 +190,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "21"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "F.1"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "21"
+        "article_id": "41"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -203,10 +207,6 @@
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.30"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "41"
       }
     ]
   },
@@ -251,7 +251,7 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.10"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -259,7 +259,7 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "F.10"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -278,11 +278,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.30"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.30"
       }
     ]
   },
@@ -434,11 +434,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.11"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.11"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -495,11 +495,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.31"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.31"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -507,11 +507,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.6"
+        "article_id": "B.23"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.23"
+        "article_id": "B.6"
       }
     ]
   },
@@ -534,11 +534,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.30"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.30"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -557,11 +557,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "46"
+        "article_id": "D.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
+        "article_id": "46"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -615,10 +615,6 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.10"
       },
       {
@@ -627,7 +623,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "32"
+        "article_id": "22"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "D.16"
       }
     ]
   },
@@ -646,15 +646,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "C.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "26"
+        "article_id": "22"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "B.24"
       }
     ]
   },
@@ -699,11 +699,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.7"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.7"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -741,15 +741,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "11"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "28"
+        "article_id": "11"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -758,6 +754,10 @@
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "22"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "28"
       }
     ]
   },
@@ -856,11 +856,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.16"
+        "article_id": "32"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "32"
+        "article_id": "D.16"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -875,11 +875,15 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "E.8"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.30"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "E.8"
+        "article_id": "F.5"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -888,10 +892,6 @@
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.31"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.5"
       }
     ]
   },
@@ -918,7 +918,7 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "47"
+        "article_id": "E.47"
       }
     ]
   },
@@ -933,11 +933,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "D.5"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "28"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.5"
+        "article_id": "E.23a"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -946,10 +950,6 @@
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "36"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "E.23a"
       }
     ]
   },
@@ -994,10 +994,6 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.4"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "22"
       },
       {
@@ -1006,11 +1002,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.10"
+        "article_id": "B.4"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "32"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "B.10"
       }
     ]
   },
@@ -1021,10 +1021,6 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "F.10"
       },
       {
@@ -1033,15 +1029,19 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "22"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "41"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.6"
+        "article_id": "11"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "11"
+        "article_id": "B.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1056,11 +1056,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "E.8"
+        "article_id": "36"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "36"
+        "article_id": "E.8"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1205,11 +1205,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "F.1"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.1"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1251,11 +1251,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "D.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1290,11 +1290,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.4"
+        "article_id": "B.3"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.3"
+        "article_id": "B.4"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1374,19 +1374,19 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "32"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "D.6"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "B.27"
       }
     ]
   },
@@ -1420,11 +1420,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
+        "article_id": "B.27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27"
+        "article_id": "D.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1482,19 +1482,19 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "47"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "45"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27"
+        "article_id": "47"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "D.6"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "B.27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1532,11 +1532,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1594,11 +1594,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.6"
+        "article_id": "41"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "41"
+        "article_id": "B.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1621,11 +1621,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.10"
+        "article_id": "B.31"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.31"
+        "article_id": "F.10"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1648,11 +1648,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.31"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.31"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1691,11 +1691,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27"
+        "article_id": "32"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "32"
+        "article_id": "B.27"
       }
     ]
   },
@@ -1779,11 +1779,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.2"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.2"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1826,11 +1826,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.30"
+        "article_id": "21"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "21"
+        "article_id": "B.30"
       }
     ]
   },
@@ -1841,11 +1841,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.16"
+        "article_id": "D.14"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.14"
+        "article_id": "D.16"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -1925,19 +1925,19 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "C.27"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "28"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "C.45"
+        "article_id": "C.27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "C.3"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "C.45"
       }
     ]
   },
@@ -2070,11 +2070,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27"
+        "article_id": "D.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
+        "article_id": "B.27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2132,7 +2132,7 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.10"
+        "article_id": "F.5"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2140,15 +2140,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.5"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "E.14"
+        "article_id": "F.10"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "41"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "E.14"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2186,15 +2186,15 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "46"
+        "article_id": "D.6"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "32"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2202,7 +2202,7 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "32"
+        "article_id": "46"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2233,11 +2233,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.11"
+        "article_id": "41"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "41"
+        "article_id": "F.11"
       }
     ]
   },
@@ -2306,19 +2306,19 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "36"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "E.14"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.13"
+        "article_id": "36"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "35"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "D.13"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2337,11 +2337,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "46"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "46"
       }
     ]
   },
@@ -2356,15 +2356,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "E.36"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "P.17"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "36"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "E.36"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2387,11 +2387,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27"
+        "article_id": "22"
       }
     ]
   },
@@ -2440,15 +2440,15 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.31"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.2"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2559,15 +2559,15 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "B.23"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.24"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "22"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.23"
       }
     ]
   },
@@ -2582,11 +2582,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.31"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "B.31"
       }
     ]
   },
@@ -2597,15 +2597,15 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "F.5"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "22"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.5"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2728,15 +2728,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.10"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "B.11"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "B.10"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2767,15 +2767,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "46"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
+        "article_id": "B.27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "45"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "D.6"
       }
     ]
   },
@@ -2786,10 +2786,6 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "22"
       },
       {
@@ -2798,11 +2794,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.1"
+        "article_id": "D.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "32"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "F.1"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2825,15 +2825,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.13"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "36"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.14"
+        "article_id": "D.13"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2841,7 +2837,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "N"
+        "article_id": "D.14"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "M.4"
       }
     ]
   },
@@ -2860,11 +2860,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
+        "article_id": "B.27"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27"
+        "article_id": "D.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2895,11 +2895,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.10"
+        "article_id": "41"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "41"
+        "article_id": "F.10"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2953,11 +2953,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.16"
+        "article_id": "B.27c"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27c"
+        "article_id": "D.16"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2980,11 +2980,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.10"
+        "article_id": "F.5"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.5"
+        "article_id": "F.10"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -2999,11 +2999,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.16"
+        "article_id": "B.23"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.23"
+        "article_id": "32"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -3011,11 +3011,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "28"
+        "article_id": "D.16"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "32"
+        "article_id": "28"
       }
     ]
   },
@@ -3034,11 +3034,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "22"
+        "article_id": "32"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "32"
+        "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -3096,11 +3096,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "41"
+        "article_id": "F.5"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "F.5"
+        "article_id": "41"
       }
     ]
   },
@@ -3172,11 +3172,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.7"
+        "article_id": "B.10"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.10"
+        "article_id": "B.7"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -3184,7 +3184,7 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.15"
+        "article_id": "B.24"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -3192,7 +3192,7 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.24"
+        "article_id": "B.15"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -3230,15 +3230,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "32"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "D.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "22"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "32"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -3307,7 +3307,7 @@
       },
       {
         "law_id": "36/2024/QH15",
-        "article_id": "11"
+        "article_id": "9"
       }
     ]
   },
@@ -3384,11 +3384,11 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "B.27"
+        "article_id": "D.6"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.6"
+        "article_id": "B.27"
       }
     ]
   },
@@ -3403,15 +3403,15 @@
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
+        "article_id": "C.24"
+      },
+      {
+        "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "22"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
         "article_id": "28"
-      },
-      {
-        "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "C.24"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
@@ -3426,11 +3426,11 @@
     "relevant_articles": [
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "D.5"
+        "article_id": "C.24"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",
-        "article_id": "C.24"
+        "article_id": "D.5"
       },
       {
         "law_id": "QCVN 41:2024/BGTVT",

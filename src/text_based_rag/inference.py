@@ -215,6 +215,12 @@ def render_blocks(sequence):
                 raise ValueError(f"Hình trong luật thiếu caption VLM: {block['block_id']}")
             parts.append('Mô tả VLM của hình (do model sinh):\n' + description)
         elif block['type'] == 'table':
+            if 'blocks' in block:
+                text = block['blocks'][0]['text']
+                for child in block['blocks'][1:]:
+                    text = text.replace(f"<<BLOCK:{child['block_id']}>>", render_blocks([child]))
+                parts.append(text)
+                continue
             parts.append(block.get('caption_original') or 'Bảng quy định')
             for cell in block['cells']:
                 parts.append(f"Ô hàng {cell['row'] + 1}, cột {cell['column'] + 1}; "
