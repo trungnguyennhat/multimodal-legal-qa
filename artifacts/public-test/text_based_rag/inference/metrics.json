@@ -2,11 +2,11 @@
   "subtask": 2,
   "split": "public_test",
   "queries": 100,
-  "completed": 100,
-  "failed": 0,
+  "completed": 99,
+  "failed": 1,
   "default_label_answers": 0,
-  "recovered_answers": 0,
-  "invalid_output": 0,
+  "recovered_answers": 1,
+  "invalid_output": 1,
   "http_or_transport_errors": 0,
   "recovered_caption_queries": 3,
   "question_only_queries": 6,
@@ -14,17 +14,17 @@
   "by_question_type": {
     "Multiple choice": {
       "queries": 65,
-      "accuracy": 0.7692307692307693
+      "accuracy": 0.7538461538461538
     },
     "Yes/No": {
       "queries": 35,
-      "accuracy": 0.7428571428571429
+      "accuracy": 0.7714285714285715
     }
   },
   "few_shot": {
-    "max_examples": 2,
+    "max_examples": 3,
     "queries_with_examples": 95,
-    "examples_used": 189,
+    "examples_used": 282,
     "examples_dropped_for_context": 0,
     "fallback_counts": {
       "no_eligible_example": 5,
@@ -32,6 +32,6 @@
     }
   },
   "accuracy": 0.76,
-  "mean_inference_seconds": 5.949237860999998,
-  "completion_tokens": 26807
+  "mean_inference_seconds": 6.488298260000302,
+  "completion_tokens": 31452
 }

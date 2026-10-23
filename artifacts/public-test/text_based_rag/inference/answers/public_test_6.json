@@ -21,37 +21,7 @@
       "article_key": "d02/a0011",
       "resolution": "verified_format_alias",
       "source_block_ids": [
-        "d02/a0011/b0001",
-        "d02/a0011/b0002",
-        "d02/a0011/b0003",
-        "d02/a0011/b0004",
-        "d02/a0011/b0005",
-        "d02/a0011/b0006",
-        "d02/a0011/b0007",
-        "d02/a0011/b0008",
-        "d02/a0011/b0009",
-        "d02/a0011/b0010",
-        "d02/a0011/b0011",
-        "d02/a0011/b0012",
-        "d02/a0011/b0013",
-        "d02/a0011/b0014",
-        "d02/a0011/b0015",
-        "d02/a0011/b0016",
-        "d02/a0011/b0017",
-        "d02/a0011/b0018",
-        "d02/a0011/b0019",
-        "d02/a0011/b0020",
-        "d02/a0011/b0021",
-        "d02/a0011/b0022",
-        "d02/a0011/b0023",
-        "d02/a0011/b0024",
-        "d02/a0011/b0025",
-        "d02/a0011/b0026",
-        "d02/a0011/b0027",
-        "d02/a0011/b0028",
-        "d02/a0011/b0029",
-        "d02/a0011/b0030",
-        "d02/a0011/b0031"
+        "d02/a0011/b0001"
       ],
       "corpus_caption_block_ids": []
     },
@@ -110,7 +80,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
   "input_tokens": 2308,
-  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
+  "fingerprint": "11f84543d1c7f314b44662d71ce4320cad9b084d67a6f5604afde6cf7aea8fde",
   "status": "COMPLETED",
   "answer": "Sai",
   "answer_source": "model",
@@ -130,5 +100,5 @@
     "option_evaluation": "Câu hỏi yêu cầu xác định sự hiện diện của biển báo chỉ dẫn trong hình. Vì phần mô tả thị giác không cung cấp bất kỳ thông tin nào về biển báo (không có item thị giác liên quan), nên không thể khẳng định câu trả lời là Đúng. Do đó, phát biểu 'Có biển báo chỉ dẫn ở trong hình trên không?' không thể được xác nhận là đúng dựa trên dữ liệu hiện có.",
     "final_answer": "Sai"
   },
-  "elapsed_seconds": 4.627139499999998
+  "elapsed_seconds": 4.429142500004673
 }

@@ -17,14 +17,7 @@
       "article_key": "d01/a0004",
       "resolution": "exact",
       "source_block_ids": [
-        "d01/a0004/b0001",
-        "d01/a0004/b0002",
-        "d01/a0004/b0003",
-        "d01/a0004/b0004",
-        "d01/a0004/b0005",
-        "d01/a0004/b0006",
-        "d01/a0004/b0007",
-        "d01/a0004/b0008"
+        "d01/a0004/b0001"
       ],
       "corpus_caption_block_ids": []
     }
@@ -44,7 +37,7 @@
   "few_shot_dropped_ids": [],
   "few_shot_fallback": "no_eligible_example",
   "input_tokens": 797,
-  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
+  "fingerprint": "11f84543d1c7f314b44662d71ce4320cad9b084d67a6f5604afde6cf7aea8fde",
   "status": "COMPLETED",
   "answer": "Đúng",
   "answer_source": "model",
@@ -64,5 +57,5 @@
     "option_evaluation": "Phát biểu 'Hiệu lệnh của người điều khiển giao thông phải được ưu tiên trước' là đúng vì Điều 4.1.1 quy định đây là hình thức báo hiệu có ý nghĩa cao nhất trong hệ thống.",
     "final_answer": "Đúng"
   },
-  "elapsed_seconds": 3.5022919999998976
+  "elapsed_seconds": 3.6218127999964054
 }

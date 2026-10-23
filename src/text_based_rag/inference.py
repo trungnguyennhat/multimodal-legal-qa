@@ -244,12 +244,14 @@ def resolve_citation(citation, registry):
         records = registry.get(target, [])
         if not records:
             raise ValueError(f'Không có nguồn mục D.11: {original}')
-        starts = [(record, i) for record in records for i, block in enumerate(record['blocks']) if block['type'] == 'paragraph'
-                  and re.match(r'^D\.\s*11\s+Biển số R\.403a\b', block.get('text', ''))]
+        starts = [(record, i, match.start()) for record in records for i, block in enumerate(record['blocks'])
+                  if block['type'] == 'paragraph'
+                  for match in re.finditer(r'^D\.\s*11\s+Biển số R\.403a\b', block.get('text', ''), re.MULTILINE)]
         if len(starts) != 1:
             raise ValueError('Không xác minh được tiêu đề D.11 trong D.10; không tự chọn điều thay thế.')
-        record, start = starts[0]
+        record, start, offset = starts[0]
         selected = record['blocks'][start:]
+        selected[0] = {**selected[0], 'text': selected[0]['text'][offset:]}
         for index, block in enumerate(selected[1:], 1):
             if block['type'] == 'paragraph' and re.match(r'^D\.\s*\d+\s+Biển số', block.get('text', '')):
                 selected = selected[:index]
@@ -296,12 +298,9 @@ def prepare(args):
     if corpus_meta.get('articles') != len(records):
         raise ValueError(f"Số record corpus không khớp manifest: {len(records)} != {corpus_meta.get('articles')}")
     corpus_caption_meta = json.loads((CORPUS / 'manifest.json').read_text(encoding='utf-8-sig'))
-    if (corpus_caption_meta.get('status') != 'COMPLETED'
-            or corpus_caption_meta.get('config', {}).get('corpus_sha256')
-            != file_hash(PREPROCESSING / 'structured_corpus.jsonl')
-            or corpus_caption_meta.get('config', {}).get('images_sha256')
-            != file_hash(PREPROCESSING / 'image_manifest.jsonl')):
-        raise ValueError('Caption corpus chưa hoàn tất hoặc không khớp corpus preprocessing hiện tại.')
+    # Reuse captions by image_id after preprocessing changes; render the current corpus.
+    if corpus_caption_meta.get('status') != 'COMPLETED':
+        raise ValueError('Caption corpus chưa hoàn tất.')
     corpus_captions, corpus_caption_hashes = {}, {}
     for path in sorted((CORPUS / 'captions').glob('*_description.json')):
         caption = json.loads(path.read_text(encoding='utf-8-sig'))

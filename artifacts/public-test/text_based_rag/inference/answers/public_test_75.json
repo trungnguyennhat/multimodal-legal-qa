@@ -21,61 +21,7 @@
       "article_key": "d01/a0022",
       "resolution": "exact",
       "source_block_ids": [
-        "d01/a0022/b0001",
-        "d01/a0022/b0002",
-        "d01/a0022/b0003",
-        "d01/a0022/b0004",
-        "d01/a0022/b0005",
-        "d01/a0022/b0006",
-        "d01/a0022/b0007",
-        "d01/a0022/b0008",
-        "d01/a0022/b0009",
-        "d01/a0022/b0010",
-        "d01/a0022/b0011",
-        "d01/a0022/b0012",
-        "d01/a0022/b0013",
-        "d01/a0022/b0014",
-        "d01/a0022/b0015",
-        "d01/a0022/b0016",
-        "d01/a0022/b0017",
-        "d01/a0022/b0018",
-        "d01/a0022/b0019",
-        "d01/a0022/b0020",
-        "d01/a0022/b0021",
-        "d01/a0022/b0022",
-        "d01/a0022/b0023",
-        "d01/a0022/b0024",
-        "d01/a0022/b0025",
-        "d01/a0022/b0026",
-        "d01/a0022/b0027",
-        "d01/a0022/b0028",
-        "d01/a0022/b0029",
-        "d01/a0022/b0030",
-        "d01/a0022/b0031",
-        "d01/a0022/b0032",
-        "d01/a0022/b0033",
-        "d01/a0022/b0034",
-        "d01/a0022/b0035",
-        "d01/a0022/b0036",
-        "d01/a0022/b0037",
-        "d01/a0022/b0038",
-        "d01/a0022/b0039",
-        "d01/a0022/b0040",
-        "d01/a0022/b0041",
-        "d01/a0022/b0042",
-        "d01/a0022/b0043",
-        "d01/a0022/b0044",
-        "d01/a0022/b0045",
-        "d01/a0022/b0046",
-        "d01/a0022/b0047",
-        "d01/a0022/b0048",
-        "d01/a0022/b0049",
-        "d01/a0022/b0050",
-        "d01/a0022/b0051",
-        "d01/a0022/b0052",
-        "d01/a0022/b0053",
-        "d01/a0022/b0054",
-        "d01/a0022/b0055"
+        "d01/a0022/b0001"
       ],
       "corpus_caption_block_ids": []
     },
@@ -89,13 +35,10 @@
       "source_block_ids": [
         "d01/a0106/b0001",
         "d01/a0106/b0002",
-        "d01/a0106/b0003",
-        "d01/a0106/b0004",
-        "d01/a0106/b0005",
-        "d01/a0106/b0006"
+        "d01/a0106/b0003"
       ],
       "corpus_caption_block_ids": [
-        "d01/a0106/b0005"
+        "d01/a0106/b0002"
       ]
     }
   ],
@@ -110,8 +53,8 @@
     "C",
     "D"
   ],
-  "prompt": "=== VÍ DỤ THAM KHẢO ĐÃ CÓ ĐÁP ÁN CHUẨN ===\nCác ví dụ thuộc câu hỏi khác, chỉ minh họa cách trả lời. Caption có thể sai.\nKhông chuyển đặc điểm ảnh, điều kiện áp dụng hoặc nhãn đáp án từ ví dụ sang câu hiện tại.\nCitation của ví dụ không bổ sung vào điều luật của câu hiện tại. Đánh giá lại từng lựa chọn.\n\n\nCâu hỏi:\nBiển báo trong ảnh có ý nghĩa như thế nào?\n\nLoại hình: SIGN_ILLUSTRATION\n\nĐối tượng: Biển báo cấm - phía trên\nĐặc điểm: Hình tròn, viền đỏ, nền trắng, có số '8' màu đen ở giữa và ký hiệu 't' màu đen bên cạnh số 8.\nÝ nghĩa hoặc thông số: Biển báo cấm xe có trọng tải vượt quá 8 tấn được phép đi qua.\n\nĐối tượng: Biển phụ - ngay bên dưới\nĐặc điểm: Biển hình chữ nhật, nền xanh dương, chữ trắng. Nội dung: 'CẦU TÂN NGHĨA', 'CHIỀU DÀI : 150m', 'CHIỀU RỘNG : 4,2m'.\nÝ nghĩa hoặc thông số: Biển thông tin tên cầu và kích thước cầu.\nCác lựa chọn:\nA. Hạn chế trọng tải toàn bộ xe\nB. Hạn chế tải trọng trên trục xe\nC. Hạn chế chiều ngang xe\nD. Hạn chế chiều dài xe\nCitation của ví dụ: QCVN 41:2024/BGTVT / 22, QCVN 41:2024/BGTVT / B.15\nĐáp án chuẩn: A — Hạn chế trọng tải toàn bộ xe\n\nCâu hỏi:\nĐây là biển báo có ý nghĩa gì?\n\nLoại hình: SIGN_ILLUSTRATION\n\nĐối tượng: Biển báo cấm - trung tâm ảnh\nĐặc điểm: Hình tròn, viền đỏ, nền trắng, bên trong có hình đen của một chiếc xe tải kéo rơ-moóc, phía dưới hình xe là dòng chữ '—14 m—' được viết bằng chữ in hoa, hai dấu gạch ngang nằm ngang hai bên con số.\nÝ nghĩa hoặc thông số: Cấm các phương tiện có chiều cao vượt quá 14 mét đi vào khu vực này.\nCác lựa chọn:\nA. Cấm xe kéo rơ-moóc\nB. Cấm xe sơ-mi rơ-moóc\nC. Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc\nD. Cấm máy kéo\nCitation của ví dụ: QCVN 41:2024/BGTVT / 22, QCVN 41:2024/BGTVT / B.8\nĐáp án chuẩn: C — Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc\n\n=== NHIỆM VỤ HIỆN TẠI ===\nBạn là chuyên gia phân tích luật giao thông đường bộ Việt Nam.\nHãy trả lời câu hỏi dựa trên CÁC ĐIỀU LUẬT ĐƯỢC CUNG CẤP và MÔ TẢ THỊ GIÁC sau đây.\nĐây là đầu vào văn bản; bạn không được cung cấp ảnh gốc trong lần trả lời này.\n\n=== CÁC ĐIỀU LUẬT THAM CHIẾU ===\n[QCVN 41:2024/BGTVT / 22] Ý nghĩa sử dụng các biển báo cấm\n22.1. Biển báo cấm có mã P (cấm) và DP (hết cấm) với tên các biển như sau:\n- Biển số P.101: Đường cấm;\n- Biển số P.102: Cấm đi ngược chiều;\n- Biển số P.103a: Cấm xe ô tô;\n- Biển số P.103(b,c): Cấm xe ô tô rẽ trái; Cấm xe ôtô rẽ phải;\n- Biển số P.104: Cấm xe máy;\n- Biển số P.105: Cấm xe ô tô và xe máy;\n- Biển số P.106(a,b): Cấm xe ô tô tải;\n- Biển số P.106c: Cấm các xe chở hàng nguy hiểm;\n- Biển số P.107: Cấm xe ô tô khách và xe ô tô tải;\n- Biển số P.107a: Cấm xe ô tô khách;\n- Biển số P.107b: Cấm xe ô tô taxi;\n- Biển số P.108: Cấm xe kéo rơ-moóc;\n- Biển số P.108a: Cấm xe sơ-mi rơ-moóc;\n- Biển số P.109: Cấm máy kéo;\n- Biển số P.110a: Cấm xe đạp;\n- Biển số P.110b: Cấm xe đạp thồ;\n- Biển số P.111a: Cấm xe gắn máy;\n- Biển số P.111(b) hoặc (c): Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy);\n- Biển số P.111d: Cấm xe ba bánh loại không có động cơ (xích lô);\n- Biển số P.112: Cấm người đi bộ;\n- Biển số P.113: Cấm xe người kéo, đẩy;\n- Biển số P.114: Cấm xe vật nuôi kéo;\n- Biển số P.115: Hạn chế trọng tải toàn bộ xe;\n- Biển số P.116: Hạn chế tải trọng trên trục xe;\n- Biển số P.117: Hạn chế chiều cao;\n- Biển số P.118: Hạn chế chiều ngang xe;\n- Biển số P.119: Hạn chế chiều dài xe;\n- Biển số P.120: Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ - moóc;\n- Biển số P.121: Cự ly tối thiểu giữa hai xe;\n- Biển số P.123(a,b): Cấm rẽ trái; Cấm rẽ phải;\n- Biển số P.124(a,b): Cấm quay đầu xe; cấm ôtô quay đầu xe;\n- Biển số P.124(c,d): Cấm rẽ trái và quay đầu xe; Cấm rẽ phải và quay đầu xe;\n- Biển số P.124(e,f): Cấm ô tô rẽ trái và quay đầu xe; Cấm ô tô rẽ phải và quay đầu xe;\n- Biển số P.125: Cấm vượt;\n- Biển số P.126: Cấm xe ôtô tải vượt;\n- Biển số P.127: Tốc độ tối đa cho phép;\n- Biển số P.127a: Tốc độ tối đa cho phép về ban đêm;\n- Biển số P.127b: Biển ghép tốc độ tối đa cho phép trên từng làn đường;\n- Biển số P.127c: Biển ghép tốc độ tối đa cho phép theo phương tiện, trên từng làn đường;\n- Biển số DP.127: Biển hết tốc độ tối đa cho phép theo biển ghép;\n- Biển số P.128: Cấm sử dụng còi;\n- Biển số P.129: Kiểm tra;\n- Biển số P.130: Cấm dừng xe và đỗ xe;\n- Biển số P.131(a,b,c): Cấm đỗ xe;\n- Biển số P.132: Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp;\n- Biển số DP.133: Hết cấm vượt;\n- Biển số DP.134: Hết tốc độ tối đa cho phép;\n- Biển số DP.135: Hết tất cả các lệnh cấm;\n- Biển số P.136: Cấm đi thẳng;\n- Biển số P.137: Cấm rẽ trái, rẽ phải;\n- Biển số P.138: Cấm đi thẳng, rẽ trái;\n- Biển số P.139: Cấm đi thẳng, rẽ phải;\n- Biển số P.140: Cấm xe công nông và các loại xe tương tự.\n22.2. Ý nghĩa sử dụng của từng biển được giải thích chi tiết ở Phụ lục B.\n\n[QCVN 41:2024/BGTVT / B.17] B.17  Biển số P.117 \"Hạn chế chiều cao\"\na) Để báo hạn chế chiều cao của xe, đặt biển số P.117 \"Hạn chế chiều cao\".\nb) Biển số P.117 có hiệu lực cấm các xe (cơ giới và thô sơ) có chiều cao vượt quá trị số ghi trên biển đi qua, kể cả các xe được ưu tiên theo quy định (chiều cao tính từ mặt đường, mặt cầu đến điểm cao nhất của xe hoặc hàng).\nc) Trị số ghi trên biển là khoảng cách từ điểm cao nhất của mặt đường đến điểm thấp nhất của chướng ngại vật vượt trên đường (chiều cao tĩnh không) trừ đi 0,5 m. Cho phép làm tròn số đến 0,1 m theo hướng điều chỉnh tăng (ví dụ: chiều cao thực là 4,65 m; trị số ghi trên biển là: 4,65 - 0,5 = 4,15 làm tròn = 4,2 m).\nd) Tất cả những vị trí trên đường có chiều cao tĩnh không dưới 4,75 m, đặt biển số P.117 và biển số W.239b. Trường hợp các vị trí có chiều cao tĩnh không từ 4,75 m đến 5,5 m và các vị trí tĩnh không giới hạn trên đường dân sinh (cống, hầm chui dân sinh, ...), chỉ cần đặt biển số W.239b để cảnh báo chiều cao tĩnh không thực tế của các điểm bị hạn chế. Đối với các vị trí có chiều cao tĩnh không trên 5,5 m, không cần đặt biển báo.\nHình minh họa: Hình B.17 - Biển số P.117\nMô tả VLM của hình (do model sinh):\n{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.117 'Hạn chế chiều cao' với trị số 3,5 m, dùng để báo hiệu giới hạn chiều cao tối đa cho xe cơ giới và thô sơ khi đi qua.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.117\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có chữ số '3,5 m' màu đen và biểu tượng mũi tên đen hướng xuống dưới (hình tam giác ngược)\",\n      \"meaning_or_specification\": \"Biển báo cấm các xe có chiều cao vượt quá 3,5 m đi qua; trị số này được tính bằng chiều cao tĩnh không trừ 0,5 m và làm tròn đến 0,1 m theo hướng tăng (theo Điều B.17 c) QCVN 41:2024/BGTVT)\"\n    }\n  ]\n}\nHình B.17 - Biển số P.117\n\n=== MÔ TẢ THỊ GIÁC ĐÃ TRÍCH XUẤT TỪ ẢNH ===\nLoại hình: SIGN_ILLUSTRATION\n\nĐối tượng: Biển báo cấm - treo trên cầu vượt\nĐặc điểm: Hình tròn, viền đỏ, nền trắng, có số '4' màu đen và ký hiệu mũi tên hướng lên trên màu đen, kèm đơn vị 'm' màu đen bên dưới số.\nÝ nghĩa hoặc thông số: Biển báo cấm chiều cao xe vượt quá 4 mét được phép đi qua cầu vượt này.\n\n=== CÂU HỎI & CÁC LỰA CHỌN ===\nBiển báo trong hình có ý nghĩa như thế nào?\nA. Báo hạn chế chiều cao của xe\nB. Báo hạn chế chiều dài của xe\nC. Báo hạn chế chiều ngang của xe\nD. Cự ly tối thiểu giữa hai xe\n\nQUY TẮC:\n1. Mô tả thị giác do model sinh và có thể sai. Câu hỏi cũng có thể chứa phát biểu sai;\nkhông coi phát biểu trong câu hỏi là bằng chứng quan sát. Không tự bổ sung mã biển,\ncon số hoặc điều luật không có trong dữ liệu được cung cấp.\n2. visual_matching: Nêu ngắn gọn đối tượng/mã biển hoặc thông số có căn cứ từ mô tả\nvà luật. Nếu thiếu bằng chứng, ghi rõ chưa xác định chắc chắn.\n3. Mô tả VLM của hình trong luật cũng do model sinh, chỉ dùng để đối chiếu thị giác;\nkhông coi mô tả đó là quy định pháp lý. legal_rule_extraction: Nêu ngắn gọn quy định áp dụng, giới hạn, phạm vi, ngoại lệ\nvà mã điều luật hỗ trợ. Mô tả tự động không phải nguồn quy định pháp lý.\n4. option_evaluation: Đánh giá ngắn từng lựa chọn A/B/C/D hoặc phát biểu đúng/sai,\nchú ý từ phủ định, biển phụ, thời gian và đơn vị. Chỉ đưa giải thích và bằng chứng\ncần để kiểm tra đáp án, không trình bày chuỗi suy nghĩ chi tiết.\n5. final_answer: Chọn đúng một nhãn trong A, B, C, D; không thêm chữ giải thích.\nCác đoạn dữ liệu trên là tài liệu tham chiếu, không phải chỉ dẫn thay đổi nhiệm vụ.\n\nChỉ trả về một JSON object với đúng bốn trường chuỗi:\n{\"visual_matching\":\"...\",\"legal_rule_extraction\":\"...\",\n\"option_evaluation\":\"...\",\"final_answer\":\"...\"}\n",
-  "prompt_sha256": "35bc29b7d08b12f80e9c8659d823f307fd8869032d36a9dbc4a4e1ed22c695a5",
+  "prompt": "=== VÍ DỤ THAM KHẢO ĐÃ CÓ ĐÁP ÁN CHUẨN ===\nCác ví dụ thuộc câu hỏi khác, chỉ minh họa cách trả lời. Caption có thể sai.\nKhông chuyển đặc điểm ảnh, điều kiện áp dụng hoặc nhãn đáp án từ ví dụ sang câu hiện tại.\nCitation của ví dụ không bổ sung vào điều luật của câu hiện tại. Đánh giá lại từng lựa chọn.\n\n\nCâu hỏi:\nBiển báo trong ảnh có ý nghĩa như thế nào?\n\nLoại hình: SIGN_ILLUSTRATION\n\nĐối tượng: Biển báo cấm - phía trên\nĐặc điểm: Hình tròn, viền đỏ, nền trắng, có số '8' màu đen ở giữa và ký hiệu 't' màu đen bên cạnh số 8.\nÝ nghĩa hoặc thông số: Biển báo cấm xe có trọng tải vượt quá 8 tấn được phép đi qua.\n\nĐối tượng: Biển phụ - ngay bên dưới\nĐặc điểm: Biển hình chữ nhật, nền xanh dương, chữ trắng. Nội dung: 'CẦU TÂN NGHĨA', 'CHIỀU DÀI : 150m', 'CHIỀU RỘNG : 4,2m'.\nÝ nghĩa hoặc thông số: Biển thông tin tên cầu và kích thước cầu.\nCác lựa chọn:\nA. Hạn chế trọng tải toàn bộ xe\nB. Hạn chế tải trọng trên trục xe\nC. Hạn chế chiều ngang xe\nD. Hạn chế chiều dài xe\nCitation của ví dụ: QCVN 41:2024/BGTVT / 22, QCVN 41:2024/BGTVT / B.15\nĐáp án chuẩn: A — Hạn chế trọng tải toàn bộ xe\n\nCâu hỏi:\nĐây là biển báo có ý nghĩa gì?\n\nLoại hình: SIGN_ILLUSTRATION\n\nĐối tượng: Biển báo cấm - trung tâm ảnh\nĐặc điểm: Hình tròn, viền đỏ, nền trắng, bên trong có hình đen của một chiếc xe tải kéo rơ-moóc, phía dưới hình xe là dòng chữ '—14 m—' được viết bằng chữ in hoa, hai dấu gạch ngang nằm ngang hai bên con số.\nÝ nghĩa hoặc thông số: Cấm các phương tiện có chiều cao vượt quá 14 mét đi vào khu vực này.\nCác lựa chọn:\nA. Cấm xe kéo rơ-moóc\nB. Cấm xe sơ-mi rơ-moóc\nC. Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc\nD. Cấm máy kéo\nCitation của ví dụ: QCVN 41:2024/BGTVT / 22, QCVN 41:2024/BGTVT / B.8\nĐáp án chuẩn: C — Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc\n\nCâu hỏi:\nBiển báo trong hình có ý nghĩa gì?\n\nLoại hình: SIGN_ILLUSTRATION\n\nĐối tượng: Biển báo cấm - phía trước\nĐặc điểm: Hình tròn, viền đỏ, nền trắng, số 40 màu đen ở giữa\nÝ nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h\n\nĐối tượng: Biển báo hiệu - phía sau\nĐặc điểm: Hình chữ nhật, nền xanh, chữ trắng: 'CHÚ Ý' ở dòng trên, 'GIẢM TỐC ĐỘ' ở dòng dưới\nÝ nghĩa hoặc thông số: Cảnh báo người tham gia giao thông cần giảm tốc độ\nCác lựa chọn:\nA. Tốc độ tối thiểu lưu thông trên đường là 40 km/h\nB. Tốc độ tối đa lưu thông trên đường là 40 km/h\nC. Cấm các xe có trọng tải toàn bộ xe lớn hớn 40 tấn lưu thông trên đường \nD. Cấm các loại xe có trục xe lớn hơn 40 cm\nCitation của ví dụ: QCVN 41:2024/BGTVT / 22, QCVN 41:2024/BGTVT / B.27\nĐáp án chuẩn: B — Tốc độ tối đa lưu thông trên đường là 40 km/h\n\n=== NHIỆM VỤ HIỆN TẠI ===\nBạn là chuyên gia phân tích luật giao thông đường bộ Việt Nam.\nHãy trả lời câu hỏi dựa trên CÁC ĐIỀU LUẬT ĐƯỢC CUNG CẤP và MÔ TẢ THỊ GIÁC sau đây.\nĐây là đầu vào văn bản; bạn không được cung cấp ảnh gốc trong lần trả lời này.\n\n=== CÁC ĐIỀU LUẬT THAM CHIẾU ===\n[QCVN 41:2024/BGTVT / 22] Ý nghĩa sử dụng các biển báo cấm\n22.1. Biển báo cấm có mã P (cấm) và DP (hết cấm) với tên các biển như sau:\n- Biển số P.101: Đường cấm;\n- Biển số P.102: Cấm đi ngược chiều;\n- Biển số P.103a: Cấm xe ô tô;\n- Biển số P.103(b,c): Cấm xe ô tô rẽ trái; Cấm xe ôtô rẽ phải;\n- Biển số P.104: Cấm xe máy;\n- Biển số P.105: Cấm xe ô tô và xe máy;\n- Biển số P.106(a,b): Cấm xe ô tô tải;\n- Biển số P.106c: Cấm các xe chở hàng nguy hiểm;\n- Biển số P.107: Cấm xe ô tô khách và xe ô tô tải;\n- Biển số P.107a: Cấm xe ô tô khách;\n- Biển số P.107b: Cấm xe ô tô taxi;\n- Biển số P.108: Cấm xe kéo rơ-moóc;\n- Biển số P.108a: Cấm xe sơ-mi rơ-moóc;\n- Biển số P.109: Cấm máy kéo;\n- Biển số P.110a: Cấm xe đạp;\n- Biển số P.110b: Cấm xe đạp thồ;\n- Biển số P.111a: Cấm xe gắn máy;\n- Biển số P.111(b) hoặc (c): Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy);\n- Biển số P.111d: Cấm xe ba bánh loại không có động cơ (xích lô);\n- Biển số P.112: Cấm người đi bộ;\n- Biển số P.113: Cấm xe người kéo, đẩy;\n- Biển số P.114: Cấm xe vật nuôi kéo;\n- Biển số P.115: Hạn chế trọng tải toàn bộ xe;\n- Biển số P.116: Hạn chế tải trọng trên trục xe;\n- Biển số P.117: Hạn chế chiều cao;\n- Biển số P.118: Hạn chế chiều ngang xe;\n- Biển số P.119: Hạn chế chiều dài xe;\n- Biển số P.120: Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ - moóc;\n- Biển số P.121: Cự ly tối thiểu giữa hai xe;\n- Biển số P.123(a,b): Cấm rẽ trái; Cấm rẽ phải;\n- Biển số P.124(a,b): Cấm quay đầu xe; cấm ôtô quay đầu xe;\n- Biển số P.124(c,d): Cấm rẽ trái và quay đầu xe; Cấm rẽ phải và quay đầu xe;\n- Biển số P.124(e,f): Cấm ô tô rẽ trái và quay đầu xe; Cấm ô tô rẽ phải và quay đầu xe;\n- Biển số P.125: Cấm vượt;\n- Biển số P.126: Cấm xe ôtô tải vượt;\n- Biển số P.127: Tốc độ tối đa cho phép;\n- Biển số P.127a: Tốc độ tối đa cho phép về ban đêm;\n- Biển số P.127b: Biển ghép tốc độ tối đa cho phép trên từng làn đường;\n- Biển số P.127c: Biển ghép tốc độ tối đa cho phép theo phương tiện, trên từng làn đường;\n- Biển số DP.127: Biển hết tốc độ tối đa cho phép theo biển ghép;\n- Biển số P.128: Cấm sử dụng còi;\n- Biển số P.129: Kiểm tra;\n- Biển số P.130: Cấm dừng xe và đỗ xe;\n- Biển số P.131(a,b,c): Cấm đỗ xe;\n- Biển số P.132: Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp;\n- Biển số DP.133: Hết cấm vượt;\n- Biển số DP.134: Hết tốc độ tối đa cho phép;\n- Biển số DP.135: Hết tất cả các lệnh cấm;\n- Biển số P.136: Cấm đi thẳng;\n- Biển số P.137: Cấm rẽ trái, rẽ phải;\n- Biển số P.138: Cấm đi thẳng, rẽ trái;\n- Biển số P.139: Cấm đi thẳng, rẽ phải;\n- Biển số P.140: Cấm xe công nông và các loại xe tương tự.\n22.2. Ý nghĩa sử dụng của từng biển được giải thích chi tiết ở Phụ lục B.\n\n[QCVN 41:2024/BGTVT / B.17] B.17  Biển số P.117 \"Hạn chế chiều cao\"\na) Để báo hạn chế chiều cao của xe, đặt biển số P.117 \"Hạn chế chiều cao\".\nb) Biển số P.117 có hiệu lực cấm các xe (cơ giới và thô sơ) có chiều cao vượt quá trị số ghi trên biển đi qua, kể cả các xe được ưu tiên theo quy định (chiều cao tính từ mặt đường, mặt cầu đến điểm cao nhất của xe hoặc hàng).\nc) Trị số ghi trên biển là khoảng cách từ điểm cao nhất của mặt đường đến điểm thấp nhất của chướng ngại vật vượt trên đường (chiều cao tĩnh không) trừ đi 0,5 m. Cho phép làm tròn số đến 0,1 m theo hướng điều chỉnh tăng (ví dụ: chiều cao thực là 4,65 m; trị số ghi trên biển là: 4,65 - 0,5 = 4,15 làm tròn = 4,2 m).\nd) Tất cả những vị trí trên đường có chiều cao tĩnh không dưới 4,75 m, đặt biển số P.117 và biển số W.239b. Trường hợp các vị trí có chiều cao tĩnh không từ 4,75 m đến 5,5 m và các vị trí tĩnh không giới hạn trên đường dân sinh (cống, hầm chui dân sinh, ...), chỉ cần đặt biển số W.239b để cảnh báo chiều cao tĩnh không thực tế của các điểm bị hạn chế. Đối với các vị trí có chiều cao tĩnh không trên 5,5 m, không cần đặt biển báo.\nHình minh họa: image130.jpg\nMô tả VLM của hình (do model sinh):\n{\n  \"image_category\": \"SIGN_ILLUSTRATION\",\n  \"summary\": \"Hình ảnh minh họa biển số P.117 'Hạn chế chiều cao' với trị số 3,5 m, dùng để báo hiệu giới hạn chiều cao tối đa cho xe cơ giới và thô sơ khi đi qua.\",\n  \"items\": [\n    {\n      \"identifier\": \"P.117\",\n      \"visual_or_geometric_features\": \"Hình tròn viền đỏ, nền trắng, bên trong có chữ số '3,5 m' màu đen và biểu tượng mũi tên đen hướng xuống dưới (hình tam giác ngược)\",\n      \"meaning_or_specification\": \"Biển báo cấm các xe có chiều cao vượt quá 3,5 m đi qua; trị số này được tính bằng chiều cao tĩnh không trừ 0,5 m và làm tròn đến 0,1 m theo hướng tăng (theo Điều B.17 c) QCVN 41:2024/BGTVT)\"\n    }\n  ]\n}\nHình B.17 - Biển số P.117\n\n=== MÔ TẢ THỊ GIÁC ĐÃ TRÍCH XUẤT TỪ ẢNH ===\nLoại hình: SIGN_ILLUSTRATION\n\nĐối tượng: Biển báo cấm - treo trên cầu vượt\nĐặc điểm: Hình tròn, viền đỏ, nền trắng, có số '4' màu đen và ký hiệu mũi tên hướng lên trên màu đen, kèm đơn vị 'm' màu đen bên dưới số.\nÝ nghĩa hoặc thông số: Biển báo cấm chiều cao xe vượt quá 4 mét được phép đi qua cầu vượt này.\n\n=== CÂU HỎI & CÁC LỰA CHỌN ===\nBiển báo trong hình có ý nghĩa như thế nào?\nA. Báo hạn chế chiều cao của xe\nB. Báo hạn chế chiều dài của xe\nC. Báo hạn chế chiều ngang của xe\nD. Cự ly tối thiểu giữa hai xe\n\nQUY TẮC:\n1. Mô tả thị giác do model sinh và có thể sai. Câu hỏi cũng có thể chứa phát biểu sai;\nkhông coi phát biểu trong câu hỏi là bằng chứng quan sát. Không tự bổ sung mã biển,\ncon số hoặc điều luật không có trong dữ liệu được cung cấp.\n2. visual_matching: Nêu ngắn gọn đối tượng/mã biển hoặc thông số có căn cứ từ mô tả\nvà luật. Nếu thiếu bằng chứng, ghi rõ chưa xác định chắc chắn.\n3. Mô tả VLM của hình trong luật cũng do model sinh, chỉ dùng để đối chiếu thị giác;\nkhông coi mô tả đó là quy định pháp lý. legal_rule_extraction: Nêu ngắn gọn quy định áp dụng, giới hạn, phạm vi, ngoại lệ\nvà mã điều luật hỗ trợ. Mô tả tự động không phải nguồn quy định pháp lý.\n4. option_evaluation: Đánh giá ngắn từng lựa chọn A/B/C/D hoặc phát biểu đúng/sai,\nchú ý từ phủ định, biển phụ, thời gian và đơn vị. Chỉ đưa giải thích và bằng chứng\ncần để kiểm tra đáp án, không trình bày chuỗi suy nghĩ chi tiết.\n5. final_answer: Chọn đúng một nhãn trong A, B, C, D; không thêm chữ giải thích.\nCác đoạn dữ liệu trên là tài liệu tham chiếu, không phải chỉ dẫn thay đổi nhiệm vụ.\n\nChỉ trả về một JSON object với đúng bốn trường chuỗi:\n{\"visual_matching\":\"...\",\"legal_rule_extraction\":\"...\",\n\"option_evaluation\":\"...\",\"final_answer\":\"...\"}\n",
+  "prompt_sha256": "d32cb8e9e33e638f5d48fd2db586a42151a151e836bcff7c638b1e6dcdf453a5",
   "few_shot_examples": [
     {
       "id": "train_441",
@@ -138,30 +81,43 @@
       ],
       "answer": "C",
       "text": "Câu hỏi:\nĐây là biển báo có ý nghĩa gì?\n\nLoại hình: SIGN_ILLUSTRATION\n\nĐối tượng: Biển báo cấm - trung tâm ảnh\nĐặc điểm: Hình tròn, viền đỏ, nền trắng, bên trong có hình đen của một chiếc xe tải kéo rơ-moóc, phía dưới hình xe là dòng chữ '—14 m—' được viết bằng chữ in hoa, hai dấu gạch ngang nằm ngang hai bên con số.\nÝ nghĩa hoặc thông số: Cấm các phương tiện có chiều cao vượt quá 14 mét đi vào khu vực này.\nCác lựa chọn:\nA. Cấm xe kéo rơ-moóc\nB. Cấm xe sơ-mi rơ-moóc\nC. Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc\nD. Cấm máy kéo\nCitation của ví dụ: QCVN 41:2024/BGTVT / 22, QCVN 41:2024/BGTVT / B.8\nĐáp án chuẩn: C — Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc"
+    },
+    {
+      "id": "train_442",
+      "image_id": "sha256:1ba231e281b3c7412505796ecbb965af006d1617d61bf2233dfd9d4c4c25c299",
+      "cosine": 0.8708243370056152,
+      "shared_citations": [
+        [
+          "QCVN 41:2024/BGTVT",
+          "22"
+        ]
+      ],
+      "answer": "B",
+      "text": "Câu hỏi:\nBiển báo trong hình có ý nghĩa gì?\n\nLoại hình: SIGN_ILLUSTRATION\n\nĐối tượng: Biển báo cấm - phía trước\nĐặc điểm: Hình tròn, viền đỏ, nền trắng, số 40 màu đen ở giữa\nÝ nghĩa hoặc thông số: Giới hạn tốc độ tối đa 40 km/h\n\nĐối tượng: Biển báo hiệu - phía sau\nĐặc điểm: Hình chữ nhật, nền xanh, chữ trắng: 'CHÚ Ý' ở dòng trên, 'GIẢM TỐC ĐỘ' ở dòng dưới\nÝ nghĩa hoặc thông số: Cảnh báo người tham gia giao thông cần giảm tốc độ\nCác lựa chọn:\nA. Tốc độ tối thiểu lưu thông trên đường là 40 km/h\nB. Tốc độ tối đa lưu thông trên đường là 40 km/h\nC. Cấm các xe có trọng tải toàn bộ xe lớn hớn 40 tấn lưu thông trên đường \nD. Cấm các loại xe có trục xe lớn hơn 40 cm\nCitation của ví dụ: QCVN 41:2024/BGTVT / 22, QCVN 41:2024/BGTVT / B.27\nĐáp án chuẩn: B — Tốc độ tối đa lưu thông trên đường là 40 km/h"
     }
   ],
   "few_shot_dropped_ids": [],
   "few_shot_fallback": null,
-  "input_tokens": 3054,
-  "fingerprint": "b440e7cc7baa1e7f8d0e7984ceb1aad1097be7f98a72c7a11a9862500893f053",
+  "input_tokens": 3332,
+  "fingerprint": "11f84543d1c7f314b44662d71ce4320cad9b084d67a6f5604afde6cf7aea8fde",
   "status": "COMPLETED",
   "answer": "A",
   "answer_source": "model",
-  "raw_response": "{\"visual_matching\":\"Biển báo có hình tròn viền đỏ, nền trắng, chứa số '4' kèm ký hiệu mũi tên hướng lên trên và đơn vị 'm', phù hợp với đặc điểm của biển hạn chế chiều cao (mũi tên lên) theo mô tả thị giác.\",\"legal_rule_extraction\":\"Theo QCVN 41:2024/BGTVT Điều 22.1, biển số P.117 là 'Hạn chế chiều cao'. Điều B.17 quy định biển này báo hiệu giới hạn chiều cao tối đa cho xe cơ giới và thô sơ đi qua, trị số ghi trên biển là chiều cao tĩnh không trừ 0,5m và làm tròn.\",\"option_evaluation\":\"A: Đúng, biển có mũi tên lên và đơn vị mét báo hiệu giới hạn chiều cao. B: Sai, biển hạn chế chiều dài có mũi tên ngang. C: Sai, biển hạn chế chiều ngang có mũi tên ngang. D: Sai, biển cự ly tối thiểu có hình tam giác hoặc hình chữ nhật với số liệu khoảng cách, không phải biển cấm hình tròn này.\",\"final_answer\":\"A\"}",
+  "raw_response": "{\"visual_matching\":\"Biển báo có hình tròn viền đỏ, nền trắng, chứa số '4' kèm ký hiệu mũi tên hướng lên và đơn vị 'm', phù hợp với đặc điểm của biển hạn chế chiều cao (mũi tên lên) theo mô tả thị giác.\",\"legal_rule_extraction\":\"Theo QCVN 41:2024/BGTVT Điều 22.1, biển số P.117 là 'Hạn chế chiều cao'. Điều B.17 quy định biển này báo hiệu giới hạn chiều cao tối đa cho xe cơ giới và thô sơ đi qua, trị số ghi trên biển là chiều cao tĩnh không trừ 0,5m và làm tròn.\",\"option_evaluation\":\"A: Đúng, biển có mũi tên lên và đơn vị mét báo hiệu giới hạn chiều cao. B: Sai, biển hạn chế chiều dài có mũi tên ngang. C: Sai, biển hạn chế chiều ngang có mũi tên ngang. D: Sai, biển cự ly tối thiểu có hình tam giác hoặc hình chữ nhật với số liệu khoảng cách, không phải biển cấm hình tròn này.\",\"final_answer\":\"A\"}",
   "finish_reason": "stop",
   "usage": {
-    "completion_tokens": 239,
-    "prompt_tokens": 3054,
-    "total_tokens": 3293,
+    "completion_tokens": 238,
+    "prompt_tokens": 3332,
+    "total_tokens": 3570,
     "prompt_tokens_details": {
       "cached_tokens": 0
     }
   },
   "response": {
-    "visual_matching": "Biển báo có hình tròn viền đỏ, nền trắng, chứa số '4' kèm ký hiệu mũi tên hướng lên trên và đơn vị 'm', phù hợp với đặc điểm của biển hạn chế chiều cao (mũi tên lên) theo mô tả thị giác.",
+    "visual_matching": "Biển báo có hình tròn viền đỏ, nền trắng, chứa số '4' kèm ký hiệu mũi tên hướng lên và đơn vị 'm', phù hợp với đặc điểm của biển hạn chế chiều cao (mũi tên lên) theo mô tả thị giác.",
     "legal_rule_extraction": "Theo QCVN 41:2024/BGTVT Điều 22.1, biển số P.117 là 'Hạn chế chiều cao'. Điều B.17 quy định biển này báo hiệu giới hạn chiều cao tối đa cho xe cơ giới và thô sơ đi qua, trị số ghi trên biển là chiều cao tĩnh không trừ 0,5m và làm tròn.",
     "option_evaluation": "A: Đúng, biển có mũi tên lên và đơn vị mét báo hiệu giới hạn chiều cao. B: Sai, biển hạn chế chiều dài có mũi tên ngang. C: Sai, biển hạn chế chiều ngang có mũi tên ngang. D: Sai, biển cự ly tối thiểu có hình tam giác hoặc hình chữ nhật với số liệu khoảng cách, không phải biển cấm hình tròn này.",
     "final_answer": "A"
   },
-  "elapsed_seconds": 4.820997100000113
+  "elapsed_seconds": 4.693705999998201
 }
