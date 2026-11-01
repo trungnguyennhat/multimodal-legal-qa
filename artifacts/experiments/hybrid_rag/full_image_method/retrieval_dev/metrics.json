@@ -1,0 +1,262 @@
+{
+  "method": "full_image_dinov2",
+  "split": "dev",
+  "queries": 112,
+  "unique_query_images": 61,
+  "corpus_images": 787,
+  "citations_with_images": 228,
+  "primary_metric": "macro_f2_at_5",
+  "macro_f2_at_5": 0.05945680659531717,
+  "at_k": {
+    "1": {
+      "macro": {
+        "precision": 0.026785714285714284,
+        "recall": 0.009672619047619046,
+        "f1": 0.013988095238095235,
+        "f2": 0.011020433814551462
+      },
+      "micro": {
+        "precision": 0.026785714285714284,
+        "recall": 0.011811023622047244,
+        "f1": 0.01639344262295082,
+        "f2": 0.013297872340425532
+      },
+      "hit_rate": 0.026785714285714284
+    },
+    "3": {
+      "macro": {
+        "precision": 0.023809523809523808,
+        "recall": 0.02976190476190476,
+        "f1": 0.02593537414965987,
+        "f2": 0.027967646388699023
+      },
+      "micro": {
+        "precision": 0.023809523809523808,
+        "recall": 0.031496062992125984,
+        "f1": 0.02711864406779661,
+        "f2": 0.029585798816568046
+      },
+      "hit_rate": 0.07142857142857142
+    },
+    "5": {
+      "macro": {
+        "precision": 0.03214285714285715,
+        "recall": 0.0818452380952381,
+        "f1": 0.04417581426509998,
+        "f2": 0.05945680659531717
+      },
+      "micro": {
+        "precision": 0.03214285714285714,
+        "recall": 0.07086614173228346,
+        "f1": 0.044226044226044224,
+        "f2": 0.05710659898477157
+      },
+      "hit_rate": 0.16071428571428573
+    },
+    "10": {
+      "macro": {
+        "precision": 0.03125,
+        "recall": 0.1476190476190476,
+        "f1": 0.049612664121592695,
+        "f2": 0.07947266902098836
+      },
+      "micro": {
+        "precision": 0.03125,
+        "recall": 0.1377952755905512,
+        "f1": 0.050946142649199416,
+        "f2": 0.08192883895131087
+      },
+      "hit_rate": 0.29464285714285715
+    }
+  },
+  "coverage": {
+    "gold_citation_occurrences": 254,
+    "covered_gold_occurrences": 132,
+    "gold_image_coverage": 0.5196850393700787,
+    "queries_with_uncovered_gold": 99,
+    "query_ids_with_uncovered_gold": [
+      "train_10",
+      "train_104",
+      "train_11",
+      "train_112",
+      "train_113",
+      "train_116",
+      "train_12",
+      "train_120",
+      "train_122",
+      "train_129",
+      "train_13",
+      "train_134",
+      "train_135",
+      "train_136",
+      "train_149",
+      "train_174",
+      "train_175",
+      "train_18",
+      "train_197",
+      "train_198",
+      "train_199",
+      "train_204",
+      "train_217",
+      "train_218",
+      "train_221",
+      "train_23",
+      "train_240",
+      "train_241",
+      "train_242",
+      "train_243",
+      "train_246",
+      "train_251",
+      "train_252",
+      "train_253",
+      "train_255",
+      "train_256",
+      "train_257",
+      "train_26",
+      "train_262",
+      "train_263",
+      "train_264",
+      "train_265",
+      "train_266",
+      "train_267",
+      "train_273",
+      "train_28",
+      "train_282",
+      "train_288",
+      "train_297",
+      "train_31",
+      "train_312",
+      "train_327",
+      "train_329",
+      "train_334",
+      "train_335",
+      "train_339",
+      "train_341",
+      "train_349",
+      "train_362",
+      "train_37",
+      "train_374",
+      "train_386",
+      "train_393",
+      "train_399",
+      "train_412",
+      "train_418",
+      "train_419",
+      "train_435",
+      "train_441",
+      "train_445",
+      "train_454",
+      "train_455",
+      "train_456",
+      "train_469",
+      "train_474",
+      "train_475",
+      "train_476",
+      "train_477",
+      "train_488",
+      "train_490",
+      "train_491",
+      "train_495",
+      "train_497",
+      "train_5",
+      "train_505",
+      "train_507",
+      "train_508",
+      "train_509",
+      "train_511",
+      "train_517",
+      "train_60",
+      "train_64",
+      "train_70",
+      "train_74",
+      "train_76",
+      "train_77",
+      "train_9",
+      "train_95",
+      "train_97"
+    ],
+    "gold_citations_outside_registry": [
+      [
+        "36/2024/QH15",
+        "22.0"
+      ],
+      [
+        "36/2024/QH15",
+        "9.0"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "22 B.15"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "G1.1"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "I.414"
+      ]
+    ],
+    "gold_registry_citations_without_images": [
+      [
+        "QCVN 41:2024/BGTVT",
+        "11"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "21"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "22"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "24"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "26"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "27"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "28"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "32"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "35"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "36"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "41"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "45"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "6"
+      ],
+      [
+        "QCVN 41:2024/BGTVT",
+        "7"
+      ]
+    ],
+    "query_images_in_corpus": 0,
+    "queries_with_image_in_corpus": []
+  },
+  "evaluation_scope": "dev_development_not_independent_test; gold_unchanged"
+}

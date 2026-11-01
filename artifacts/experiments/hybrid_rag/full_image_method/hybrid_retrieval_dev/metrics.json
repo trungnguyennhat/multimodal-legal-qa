@@ -1,0 +1,124 @@
+{
+  "method": "weighted_rrf_pure_text_full_image",
+  "split": "dev",
+  "queries": 112,
+  "text_weight": 0.5,
+  "image_weight": 0.5,
+  "rrf_k": 60,
+  "final_top_n": 5,
+  "primary_metric": "macro_f2_at_5",
+  "macro_f2_at_5": 0.14010798837660618,
+  "at_k": {
+    "1": {
+      "macro": {
+        "precision": 0.08035714285714286,
+        "recall": 0.040922619047619055,
+        "f1": 0.05076530612244897,
+        "f2": 0.04401799181210946
+      },
+      "micro": {
+        "precision": 0.08035714285714286,
+        "recall": 0.03543307086614173,
+        "f1": 0.04918032786885246,
+        "f2": 0.0398936170212766
+      },
+      "hit_rate": 0.08035714285714286
+    },
+    "3": {
+      "macro": {
+        "precision": 0.07440476190476189,
+        "recall": 0.1086309523809524,
+        "f1": 0.08436791383219955,
+        "f2": 0.09586172321134726
+      },
+      "micro": {
+        "precision": 0.0744047619047619,
+        "recall": 0.0984251968503937,
+        "f1": 0.0847457627118644,
+        "f2": 0.09245562130177515
+      },
+      "hit_rate": 0.19642857142857142
+    },
+    "5": {
+      "macro": {
+        "precision": 0.07499999999999998,
+        "recall": 0.18973214285714285,
+        "f1": 0.10411835188620902,
+        "f2": 0.14010798837660618
+      },
+      "micro": {
+        "precision": 0.075,
+        "recall": 0.16535433070866143,
+        "f1": 0.10319410319410319,
+        "f2": 0.13324873096446702
+      },
+      "hit_rate": 0.32142857142857145
+    },
+    "10": {
+      "macro": {
+        "precision": 0.05803571428571429,
+        "recall": 0.29047619047619044,
+        "f1": 0.09460784750963322,
+        "f2": 0.15546810215927861
+      },
+      "micro": {
+        "precision": 0.05803571428571429,
+        "recall": 0.2559055118110236,
+        "f1": 0.09461426491994178,
+        "f2": 0.15215355805243447
+      },
+      "hit_rate": 0.5
+    }
+  },
+  "final_citation_metrics": {
+    "macro": {
+      "precision": 0.07499999999999998,
+      "recall": 0.18973214285714285,
+      "f1": 0.10411835188620902,
+      "f2": 0.14010798837660618
+    },
+    "micro": {
+      "precision": 0.075,
+      "recall": 0.16535433070866143,
+      "f1": 0.10319410319410319,
+      "f2": 0.13324873096446702
+    },
+    "hit_rate": 0.32142857142857145
+  },
+  "comparison_macro_f2_at_5": {
+    "text": 0.1681801898478224,
+    "image": 0.05945680659531717,
+    "hybrid": 0.14010798837660618
+  },
+  "delta_f2_at_5_vs_text": -0.028072201471216224,
+  "query_changes_vs_text_at_5": {
+    "improved": 7,
+    "worsened": 15,
+    "unchanged": 90
+  },
+  "union_candidate_recall_micro": 0.421259842519685,
+  "image_additional_gold_occurrences_in_top10": 28,
+  "gold_citations_outside_registry": [
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "22.0"
+    },
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "9.0"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "22 B.15"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "G1.1"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "I.414"
+    }
+  ],
+  "evaluation_scope": "dev_development_not_independent_test; gold_unchanged; fixed_weights"
+}

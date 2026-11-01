@@ -1,0 +1,60 @@
+{
+  "status": "COMPLETED",
+  "step": "query_retrieval_dev",
+  "created_at": "2026-11-01T17:12:02.506260+00:00",
+  "arguments": {
+    "split": "dev",
+    "overwrite": false
+  },
+  "code_sha256": {
+    "src\\hybrid_rag\\text_only\\corpus_embedding.py": "bd8896277938bf18c36abb655b7fb55cdc9968d8d10af156c3fbd8a6582141fa",
+    "src\\hybrid_rag\\text_only\\corpus_preprocessing.py": "cbfc8cdd67c68b2514621a4ef2369675e22e2e2adf82b6932f6c1ce63ed9fa79",
+    "src\\hybrid_rag\\text_only\\query_embedding.py": "ffc66e3d15cdff9d3b491092403f6d386a96cad7c27b46944738c3ca7aa09e06",
+    "src\\hybrid_rag\\text_only\\query_retrieval.py": "26bdacd8ac44179559a2b46a0dfccd70e64e64459634e8f757f960603af7c09a",
+    "src\\text_based_rag\\corpus_embedding.py": "1d7a7e1c04d0880d93175a5548e9f82cd0c763bca306c8ec2c8044d58c8c5c6c",
+    "src\\text_based_rag\\query_retrieval.py": "428f34f0d257e7fabe771fc1d45447d46f3ac626b8e5abf48499a86309acf791"
+  },
+  "input_sha256": {
+    "artifacts\\experiments\\text_based_rag\\corpus\\data_preprocessing\\manifest.json": "c076c6d8f58c4a4c376a7ed194f5bd860d9a4d5e82ea554e1a534bc125a16309",
+    "artifacts\\experiments\\text_based_rag\\corpus\\data_preprocessing\\structured_corpus.jsonl": "eca0f74b73d658d7429f8232fb842ef49442ab9754438b04e13500b11ac2640e",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\data_preprocessing\\structured_corpus.jsonl": "82fc02649d11d54f33d98e9d7490f059731f8c427c38a22ccdb4d6e77eeda145",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\data_preprocessing\\corpus_preview.txt": "ca9d622316a7138a1a897bed66ceb2ca0ef9e3f6295f63df7a98c8b5e6359e23",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\data_preprocessing\\manifest.json": "95f3c486254131dde88f8fd1be83e7dc3e7ace9e2c9b85532e961589b1421b87",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\config.json": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\tokenizer.json": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\tokenizer_config.json": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\special_tokens_map.json": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_chunking\\chunks.jsonl": "ded5daa7907828650e6bac3301b84ea6796cddc90c9f37652db65e3945348a06",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_chunking\\embedding_text_preview.txt": "9d4fbdbcaabfcd86fd4c24ed23d822f8f1739cb5b58cf33c04c0522621458966",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_chunking\\manifest.json": "2de22f64ade03a792472d2f3a4080fd284156e633c142fd64ed34c87a55adf22",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\pytorch_model.bin": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_embedding\\vectors.npy": "de410ebc6dad6330192fdab71dd015126b191a8316f9b1fb047870501b68fcdd",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_embedding\\chunks.jsonl": "ded5daa7907828650e6bac3301b84ea6796cddc90c9f37652db65e3945348a06",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_embedding\\manifest.json": "50f5042f9aad9508b89d2ecb4144f3cf7b080e610029818c00ed7093ad9b8330",
+    "data\\processed\\splits\\dev.json": "982a852348a358ce2aca0c1bcf84ca6f2e8c130ddeed6be71b025b8eeeda405e",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\vectors.npy": "9c9c227aa597f6f7b72cf5600d44f3831470cbee534ab4e0c82720a868df49c2",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\queries.jsonl": "2fd5c003232b1e9ab348cd5d5bd76d177cbdfb7cc0121c62f2d45f1ad133fa9a",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\manifest.json": "e2261effd3020c750bd4f22224dc51f61e613a8b1b9471e7878a8563967e9f85"
+  },
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.57.1",
+    "numpy": "2.5.2"
+  },
+  "split": "dev",
+  "representation": "question_and_original_legal_text_only",
+  "similarity": "cosine",
+  "aggregation": "max_child_chunk_score",
+  "tie_break": "citation_lexicographic; chunk_id_lexicographic",
+  "queries": 112,
+  "chunks": 458,
+  "citations": 398,
+  "macro_f2_at_5": 0.1681801898478224,
+  "output_sha256": {
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_dev\\predictions.jsonl": "a5b32e3c030b2310d13c88b3874c15626cad5d89522914fb98b56a9ed6dc063e",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_dev\\per_query_metrics.jsonl": "1d7c3466e6082058d53d8b720014bf22a4144ade28a388a091015aa5f02cf4a3",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_dev\\metrics.json": "fb992870d6289b4423c71bc22b33dca712bb86d27e25ab31d2a57ceeaf51daaa"
+  },
+  "elapsed_seconds": 6.156999999999243
+}

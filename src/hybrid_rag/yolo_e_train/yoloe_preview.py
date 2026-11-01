@@ -1,6 +1,7 @@
 """Download YOLOE and preview baseline images or a selected set of real query photos."""
 
 import argparse
+import hashlib
 import importlib.metadata
 import importlib.util
 import json
@@ -9,11 +10,12 @@ import os
 from pathlib import Path
 import sys
 import time
+import threading
+import urllib.request
 
 
 ROOT = Path(__file__).resolve().parents[3]
-sys.path.insert(0, str(ROOT / "src"))
-from hybrid_rag.yolo_train.detector_training import Progress, VERSION, digest, download_file, save
+VERSION = "8.4.182"
 
 
 MODELS = ROOT / "models/yolo_e_train"
@@ -35,6 +37,102 @@ PROMPTS = [
     "traffic sign with time restrictions",
     "highway direction sign",
 ]
+
+
+def digest(path):
+    h = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def save(path, value):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(path.name + ".tmp")
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
+    temporary.replace(path)
+
+
+class Progress:
+    """Heartbeat remains visible while downloads or a model batch are blocking."""
+
+    def __init__(self, stage):
+        self.started = self.stage_started = time.monotonic()
+        self.stage, self.done, self.total = stage, 0, 0
+        self.stop = threading.Event()
+        self.thread = threading.Thread(target=self.heartbeat, daemon=True)
+
+    def __enter__(self):
+        self.thread.start()
+        return self
+
+    def set(self, stage, done=0, total=0):
+        if stage != self.stage:
+            self.stage_started = time.monotonic()
+        self.stage, self.done, self.total = stage, done, total
+
+    def log(self):
+        now = time.monotonic()
+        done, total = self.done, self.total
+        percent = f"{100 * done / total:.1f}%" if total else "N/A"
+        eta = (now - self.stage_started) * (total - done) / done if total and done else None
+        remaining = f"{max(0, eta):.0f}s" if eta is not None else "chưa đủ dữ liệu"
+        print(f"[{self.stage}] {done}/{total or '?'} ({percent}); "
+              f"elapsed={now - self.started:.0f}s; ETA bước hiện tại={remaining}", flush=True)
+
+    def heartbeat(self):
+        while not self.stop.wait(30):
+            self.log()
+
+    def __exit__(self, *_):
+        self.stop.set()
+        self.thread.join()
+        self.log()
+
+
+def download_file(url, path, progress, size=None, sha256=None):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists():
+        if size is not None and path.stat().st_size != size:
+            raise ValueError(f"File đã có nhưng sai kích thước: {path}. Không tự ghi đè.")
+        actual = digest(path)
+        if sha256 is not None and actual != sha256:
+            raise ValueError(f"File đã có nhưng sai SHA256: {path}. Không tự ghi đè.")
+        print(f"Tái sử dụng: {path}", flush=True)
+        return actual
+    part = path.with_name(path.name + ".part")
+    offset = part.stat().st_size if part.exists() else 0
+    if size is not None and offset > size:
+        raise ValueError(f"File tải dở lớn hơn nguồn: {part}; cần kiểm tra/xóa thủ công.")
+    if size is None or offset != size:
+        headers = {"User-Agent": "multimodal-legal-qa/yoloe"}
+        if offset:
+            headers["Range"] = f"bytes={offset}-"
+        progress.set(f"download {path.name} (bytes)", offset, size or 0)
+        with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=60) as response:
+            if offset and response.status == 206:
+                if not response.headers.get("Content-Range", "").startswith(f"bytes {offset}-"):
+                    raise ValueError("Server trả Content-Range không khớp phần tải dở.")
+            elif response.status == 200:
+                offset = 0
+            else:
+                raise ValueError(f"HTTP status không hợp lệ: {response.status}")
+            content_length = response.headers.get("Content-Length")
+            total = size or (offset + int(content_length) if content_length else 0)
+            progress.set(f"download {path.name} (bytes)", offset, total)
+            with part.open("ab" if offset else "wb") as stream:
+                for block in iter(lambda: response.read(1024 * 1024), b""):
+                    stream.write(block)
+                    progress.done += len(block)
+            if total and part.stat().st_size != total:
+                raise ValueError(f"Tải chưa đủ: {part}. Chạy lại download để tiếp tục.")
+    actual = digest(part)
+    if sha256 is not None and actual != sha256:
+        raise ValueError(f"SHA256 không khớp: {part}; cần kiểm tra/xóa phần tải dở trước khi thử lại.")
+    part.replace(path)
+    return actual
 
 
 def download():
@@ -66,13 +164,13 @@ def preview(args):
                            "selection_sha256": digest(selection_file)})
     else:
         for index in range(1, 12):
-            previous = PREVIEWS / f"image_{index:03d}/predictions.json"
+            previous = OUTPUT / f"image_{index:03d}/predictions.json"
             metadata = json.loads(previous.read_text(encoding="utf-8"))
             path = Path(metadata["image"]).resolve()
             if not path.is_file() or not path.is_relative_to(train_root):
                 raise ValueError(f"Ảnh preview không phải ảnh train hợp lệ: {path}")
             images.append({"folder": f"image_{index:03d}", "path": str(path),
-                           "sha256": digest(path), "baseline_predictions_sha256": digest(previous)})
+                           "sha256": digest(path)})
     if len({item["path"] for item in images}) != len(images):
         raise ValueError("Danh sách preview có ảnh trùng.")
     assets = json.loads((OUTPUT / "download_manifest.json").read_text(encoding="utf-8"))
@@ -180,7 +278,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("download", help="Tải checkpoint YOLOE và MobileCLIP text encoder về models/yolo_e_train")
-    run = sub.add_parser("preview", help="Chạy đúng 11 ảnh từ temp/sign_preview/image_001..011")
+    run = sub.add_parser("preview", help="Chạy lại 11 ảnh từ kết quả YOLOE hiện có")
     run.add_argument("--real-photos", action="store_true",
                      help="Chạy bộ 12 ảnh chụp query train mới đã lấy mẫu/kiểm tra; lưu riêng trong real_photos")
     run.add_argument("--conf", type=float, default=0.25)

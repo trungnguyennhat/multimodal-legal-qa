@@ -28,66 +28,78 @@ Subtask 2 dùng `relevant_articles` được cung cấp trong input QA, độc l
 Lỗi nhãn Subtask 1 (tạm hoãn xử lý): train gốc có 25 lượt citation không khớp ID corpus (19 train + 6 dev), public có 3; gồm lỗi định dạng, mã mơ hồ và mục D.11 nằm trong D.10.
 Retrieval hiện loại nhãn example ngoài registry nhưng giữ nguyên gold khi chấm F2; khi quay lại cần xác minh ánh xạ và báo riêng điểm benchmark/điểm hiệu chỉnh, kể cả khi mở rộng multimodal.
 
-## Hybrid: chuẩn bị và fine-tune detector biển báo
+## Hybrid: baseline embedding toàn ảnh
 
-Code: `src/hybrid_rag/yolo_train/detector_training.py`. Trạng thái: `READY_TO_RUN`; mới kiểm tra cú pháp và CLI, chưa tải đầy đủ dữ liệu/model hoặc chạy training/evaluation. Thiết kế tổng thể: [hybrid_plan.md](hybrid_plan.md). Bước này chỉ làm detector, chưa làm crop VLSP, image embedding hoặc fusion.
+Code và thiết kế: `src/hybrid_rag/full_image_method/` (mỗi bước một file), [CHECKPOINTS.md](CHECKPOINTS.md). Trạng thái `COMPLETED`: đã tải DINOv2, embedding corpus/query và chấm dev. Baseline dùng toàn ảnh, chưa dùng YOLOE, caption, câu hỏi hoặc fusion.
 
-Dataset ngoài: [Traffic-sign-detection-VietNam](https://huggingface.co/datasets/star092304/Traffic-sign-detection-VietNam), revision `bd948a572cefbea92a1c523a2784c1ea9cf1dbe1`; ZIP khoảng 905 MB, danh sách file có 8.125 ảnh train, 1.016 val và 1.016 test. Chưa kiểm tra nội dung ảnh/box đầy đủ. Đây là thiết lập dùng external detection data, khác điều kiện chỉ dùng dữ liệu VLSP.
-
-Chạy từ thư mục gốc bằng PowerShell; dùng `.venv` có PyTorch/torchvision CUDA tương thích. Lệnh cài dưới đây thêm Ultralytics, không chủ động nâng cấp hoặc cài lại torch; nếu pip đề nghị thay torch/torchvision CUDA thì dừng và kiểm tra dependency trước.
+Chạy từ gốc project trong `.venv` hiện có, không cần cài thêm package:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install -r src/hybrid_rag/yolo_train/requirements.txt
+$env:PYTHONUTF8="1"
+$env:HF_HUB_OFFLINE="0"
+.\.venv\Scripts\python.exe -u src/hybrid_rag/full_image_method/image_model_download.py
 
-# Tải dataset và pretrained YOLO11n; có thể dùng --target dataset hoặc model riêng.
-.\.venv\Scripts\python.exe -u src/hybrid_rag/yolo_train/detector_training.py download --target all
-
-# Loại ảnh lỗi nhãn và bản trùng giữa các split (ưu tiên giữ test > val > train).
-.\.venv\Scripts\python.exe -u src/hybrid_rag/yolo_train/detector_training.py prepare --skip-invalid-images --deduplicate-splits
-
-# Fine-tune: workers=0 cho Windows, không flip trái/phải, seed=2025.
-.\.venv\Scripts\python.exe -u src/hybrid_rag/yolo_train/detector_training.py train --name yolo11n_signs --epochs 100 --patience 20 --imgsz 640 --batch 8 --device 0
-
-# Chọn ngưỡng trên val trước; tên mỗi lần evaluate phải khác nhau.
-.\.venv\Scripts\python.exe -u src/hybrid_rag/yolo_train/detector_training.py evaluate --weights models/yolo_train/yolo11n_signs/best.pt --split val --imgsz 640 --batch 8 --device 0
-
-# Chỉ đánh giá test sau khi chốt cấu hình trên val.
-.\.venv\Scripts\python.exe -u src/hybrid_rag/yolo_train/detector_training.py evaluate --weights models/yolo_train/yolo11n_signs/best.pt --split test --imgsz 640 --batch 8 --device 0
+$env:HF_HUB_OFFLINE="1"
+.\.venv\Scripts\python.exe -u src/hybrid_rag/full_image_method/corpus_image_embedding.py --batch-size 4
+.\.venv\Scripts\python.exe -u src/hybrid_rag/full_image_method/query_image_embedding.py --split dev --batch-size 4
+.\.venv\Scripts\python.exe -u src/hybrid_rag/full_image_method/query_image_retrieval.py --split dev
 ```
 
-`prepare` bỏ lớp 54/55 (đèn xanh/đỏ), gộp các lớp còn lại thành `traffic_sign`, giữ mọi box trong ảnh nhiều biển. Ảnh chỉ có đèn trở thành background cho bài toán biển. Biển cảnh báo có đèn giao thông phía trước vẫn được giữ. Thiếu nhãn/ảnh lỗi/box sai hoặc ảnh trùng byte giữa các split sẽ dừng; xem `artifacts/experiments/hybrid_rag/yolo_train/prepare/report.json` khi có báo cáo. Chưa dò ảnh gần trùng hoặc xác minh độ đầy đủ nhãn biển phụ. Không tự đổi split, sửa box hoặc tự coi file thiếu nhãn là background.
+DINOv2 ViT-B/14 đóng băng, CUDA FP32, CLS/L2 768 chiều; resize giữ tỉ lệ và padding 518 × 518, không center crop. Model được pin commit/hash ở lần download đầu. Corpus hiện có 787 ảnh; 112 query dev dùng 61 ảnh duy nhất. Query chung ảnh nhận cùng ranking.
 
-Lỗi dữ liệu đã xác minh bằng cách đọc toàn bộ 10.157 file nhãn trong ZIP: duy nhất `dataset/train/labels/8380.txt:4` có 6 trường (`12 0 0.63125 0.53984375 0.025 0.0455078125`) thay vì 5. Không tự đoán/xóa trường thừa. `prepare --skip-invalid-images` loại toàn bộ ảnh `8380` và mọi box của ảnh khỏi dữ liệu chuẩn bị, giữ nguyên ZIP nguồn; `report.json` và manifest lưu `invalid_images` (ảnh, nhãn, dòng gốc, lý do) cùng chính sách loại. Với lỗi hiện có, còn 8.124 ảnh train; val/test không đổi. Thống kê box chỉ tính các ảnh hợp lệ. Không có flag thì vẫn dừng sau khi ghi báo cáo, chưa tạo `prepared/`. Flag chỉ áp dụng lỗi định dạng/class/tọa độ nhãn; không bỏ qua ảnh hỏng, thiếu nhãn hoặc trùng giữa các split. Chưa chạy lại pipeline prepare sau bản sửa.
+Model và metadata tải xuống ở `models/huggingface/dinov2-base/`. Output thí nghiệm ở `artifacts/experiments/hybrid_rag/full_image_method/`: `corpus/`, `query_dev/`, `retrieval_dev/`. Xem manifest `COMPLETED`; `retrieval_dev/metrics.json` báo P/R/F1/F2 và hit rate tại 1/3/5/10, chỉ số chính `macro_f2_at_5`, coverage gold và ảnh query trùng corpus. Gộp citation bằng max cosine của mọi ảnh thuộc citation trước khi lấy top-k; gold ngoài registry vẫn tính khi chấm.
 
-Dataset cũng có 28 bản ảnh trùng byte giữa các split. Thêm `--deduplicate-splits` để giữ bản ở split ưu tiên cao nhất theo `test > val > train`, loại toàn bộ ảnh/nhãn của bản ở split thấp hơn; không chuyển ảnh, gộp nhãn hay sửa ZIP nguồn. Nếu không có flag này thì vẫn dừng. Đọc và hash ảnh nguồn xác nhận: sau cả hai chính sách còn 8.097 train, 1.015 val, 1.016 test (loại 27 bản trùng train và 1 bản trùng val, ngoài ảnh train lỗi nhãn). Báo cáo/manifest giữ danh sách bản được giữ và bản bị loại trong `exact_cross_split_duplicates`, cờ `deduplicate_splits` và `duplicate_policy`; thống kê chỉ tính ảnh được giữ. Đây là split đã làm sạch, cần ghi rõ khi báo metric; chưa dò ảnh gần trùng. Chưa chạy lại lệnh prepare để tạo dữ liệu sau thay đổi này.
+Kết quả dev 112 câu: macro F2@5 **0.05945680659531717**, hit rate@5 **0.160714**; gold image coverage **0.519685**. Đã chuyển model khỏi artifacts sang `models/huggingface/dinov2-base/`, giữ nguyên vector/prediction/metrics; manifest cập nhật đường dẫn/hash và lưu nguồn gốc trong `model_relocation`. Không cần tải hoặc embedding lại chỉ vì lần chuyển này.
 
-Đường dẫn:
+Embedding/retrieval không ghi đè mặc định; thêm `--overwrite` cho đúng bước cần chạy lại. Nếu bị ngắt hoặc đổi fingerprint, chạy lại bước liên quan và các bước phụ thuộc; chưa resume batch. Thiếu VRAM: batch 2/1. Có log 30 giây. Không commit model/index/output; `.gitignore` giữ nguyên.
 
-Evaluate mặc định dùng tên split: `evaluate/val/` hoặc `evaluate/test/`, không cần `--name`. Có thể đặt `--name` riêng khi so nhiều lần chạy; thư mục đã tồn tại vẫn được bảo vệ khỏi ghi đè. Kết quả validation đã hoàn thành được đổi tên từ `yolo11n_signs_val_stopped/` thành `val/`; manifest giữ nguyên arguments/hash của lần chạy gốc để bảo toàn nguồn gốc kết quả.
+## Hybrid: nhánh text thuần
 
-- Dataset gốc tải về: `data/yolo_train/traffic-sign-detection-vietnam.zip`, `classid.csv`; dữ liệu một lớp ở `data/yolo_train/prepared/`, kèm `dataset.yaml` và manifest/hash từng ảnh/nhãn.
-- Pretrained: `models/yolo_train/yolo11n.pt`. Sau train thành công, copy `best.pt` và `last.pt` sang `models/yolo_train/<name>/`. Ultralytics vẫn giữ checkpoint gốc trong output train.
-- Output: `artifacts/experiments/hybrid_rag/yolo_train/`: `download/manifest.json`, `prepare/report.json`, `train/<name>/` và `evaluate/<name>/`. Train có `args.yaml`, `results.csv`, `weights/`, manifest; evaluate có metric precision/recall/mAP50/mAP50-95, tốc độ, prediction JSON/TXT và manifest. Manifest ghi hash input/code/checkpoint, phiên bản package, thời gian và peak CUDA memory. Settings Ultralytics cũng nằm trong output này.
+Code ở `src/hybrid_rag/text_only/`, tách thành `corpus_preprocessing.py`, `corpus_chunking.py`, `corpus_embedding.py`, `query_embedding.py`, `query_retrieval.py`. Nhánh này dùng lại `text_based_rag/corpus/data_preprocessing/structured_corpus.jsonl` làm nguồn, bỏ toàn bộ figure/marker ảnh (kể cả trong bảng), giữ văn bản luật/bảng, tiêu đề và citation gốc. Không đọc caption hoặc ảnh; không dùng example retrieval. Query embedding chỉ dùng nguyên văn `question`, không choices/answer/caption; `image_id` chỉ là metadata để ghép với nhánh ảnh sau này.
 
-Download tiếp tục file `.part` khi chạy lại, xác minh SHA256 ZIP theo LFS upstream; model ghi SHA256 local vì release upstream không công bố checksum. `prepare` không ghi đè thư mục đã có; nếu bị ngắt giữa bước ghi, kiểm tra/dọn thư mục `prepared/` thủ công trước khi chạy lại. Train/evaluate mới từ chối dùng lại thư mục output; dùng `--name` mới để giữ kết quả cũ.
+Đã chạy preprocessing và chunking thực tế: **402 article**, bỏ **790 figure block**, giữ text **212 bảng**, tạo **458 chunk** với ngân sách **1.024 token / overlap 128**, không chunk nào vượt 1.024 token. Bảng được xem là text và có thể chia qua nhiều chunk. Model BGE-M3 dùng lại bản local trong `models/huggingface/hub/` (revision `5617a9f61b028005a4858fdac845db406aefb181`); không sao chép/tải model vào artifacts. Embedding và retrieval dev đã `COMPLETED`: macro F2@5 **0.1681801898478224**, hit rate@5 **0.375**.
 
-Để dừng training rồi chạy tiếp với patience mới: nhấn Ctrl+C, chờ tiến trình cũ thoát và trả về prompt; không chạy hai tiến trình cùng `--name`. Giữ nguyên dataset và thư mục train, dùng:
+Chạy từ thư mục gốc bằng `.venv` hiện có:
 
 ```powershell
-.\.venv\Scripts\python.exe -u src/hybrid_rag/yolo_train/detector_training.py train --resume --name yolo11n_signs --patience 8 --device 0
+$env:PYTHONUTF8="1"
+$env:HF_HUB_OFFLINE="1"
+
+# Hai bước này đã COMPLETED; chỉ chạy lại khi cần tái tạo corpus/chunk.
+.\.venv\Scripts\python.exe -u src/hybrid_rag/text_only/corpus_preprocessing.py --overwrite
+.\.venv\Scripts\python.exe -u src/hybrid_rag/text_only/corpus_chunking.py --max-tokens 1024 --overlap-tokens 128 --overwrite
+
+# Các bước này cũng đã COMPLETED; thêm --overwrite nếu cần chạy lại.
+# BGE-M3, CUDA BF16, CLS/L2 1.024 chiều, không truncate.
+.\.venv\Scripts\python.exe -u src/hybrid_rag/text_only/corpus_embedding.py --batch-size 4
+.\.venv\Scripts\python.exe -u src/hybrid_rag/text_only/query_embedding.py --split dev --batch-size 4
+.\.venv\Scripts\python.exe -u src/hybrid_rag/text_only/query_retrieval.py --split dev
 ```
 
-`--resume` đọc `artifacts/experiments/hybrid_rag/yolo_train/train/<name>/weights/last.pt`, khôi phục optimizer, EMA, lịch học và trạng thái early stopping theo Ultralytics 8.4.182. Chạy từ epoch tiếp theo sau epoch được lưu; batch của epoch đang dở không được khôi phục. Ví dụ checkpoint hết epoch 7 thì chạy lại epoch 8. Patience mới tính từ best epoch đã lưu, không đếm lại 8 epoch từ lúc resume; có thể dừng sớm ngay sau epoch tiếp theo nếu đã chờ quá lâu và không có cải thiện mới. Tổng epochs và cấu hình training khác giữ từ checkpoint; khi resume chỉ thay patience/device qua CLI này, không truyền `--weights` hoặc dùng `--epochs` để đổi tổng epoch.
+Output chỉ ở `artifacts/experiments/hybrid_rag/text_only/`: `data_preprocessing/`, `corpus_chunking/`, `corpus_embedding/`, `query_embedding_dev/`, `query_retrieval_dev/`. Xem `data_preprocessing/corpus_preview.txt` và `corpus_chunking/embedding_text_preview.txt` để kiểm tra text thực sự được giữ/embedding. Các bước có manifest/hash input/code/model/output, log khoảng 30 giây, thời gian và peak CUDA memory khi embedding. Không ghi đè mặc định; thêm `--overwrite` cho đúng bước cần chạy lại, chưa resume batch. CUDA cần hỗ trợ BF16; thiếu VRAM giảm batch xuống 2/1, không tự chuyển CPU.
 
-Phải có ít nhất một checkpoint hoàn chỉnh. CLI từ chối dataset đã thay đổi, run đã COMPLETED hoặc checkpoint không còn optimizer/epoch (thường đã strip khi kết thúc). Resume tiếp tục ghi results.csv/checkpoint trong run cũ; manifest giữ các phiên trước trong `resume_history` và ghi `effective_training`, `start_epoch`, best epoch lúc bắt đầu. Thời gian trong results.csv của Ultralytics tính lại cho phiên resume, không coi là tổng thời gian toàn run. Resume chưa được chạy thực tế trong phiên sửa code; đã đối chiếu logic resume/early stopping với package đang cài.
+Retrieval lấy max cosine child chunk về citation, lưu top-10 với `query_id`, `source_image_id`, score và `best_chunk_id`. Chấm macro/micro P/R/F1/F2, hit rate tại 1/3/5/10, chỉ số chính `macro_f2_at_5`; giữ nguyên gold kể cả ngoài registry. `predictions.jsonl`, `per_query_metrics.jsonl`, `metrics.json` nằm trong `query_retrieval_dev/`. Hiện chỉ làm dev 112 câu để khớp nhánh ảnh.
 
-Mỗi bước dài có heartbeat khoảng 30 giây: bước, số đã xử lý/tổng, phần trăm, elapsed và ETA của bước hiện tại; lúc khởi tạo chưa biết tổng thì ghi N/A. Training dùng FP32 (`amp=False`) để tránh bước AMP tự tải model kiểm tra; có thể tốn VRAM/thời gian hơn AMP. Thiếu VRAM: giảm `--batch 4` hoặc `2`; muốn thử biển nhỏ với `--imgsz 960` thì tạo lần chạy tên mới. Mặc định đánh giá `--conf 0.001 --iou 0.7` để tính AP; precision/recall Ultralytics báo ở điểm best-F1, không mặc định là chất lượng tại một ngưỡng deployment cụ thể. Không chọn ngưỡng bằng test.
+## Hybrid: fusion text thuần + ảnh toàn khung
 
-Không commit dataset, trọng số, cache hoặc output sinh ra. `.gitignore` không được sửa; `models/` đã có rule ignore; `artifacts/experiments/` không được bảo vệ bởi rule `runs/`, cần kiểm tra file được stage trước khi commit. Kết quả detection trên dataset ngoài chưa xác nhận khả năng chuyển sang ảnh VLSP hoặc hình vẽ luật.
+Code: `src/hybrid_rag/full_image_method/hybrid_retrieval.py`. Đọc hai `predictions.jsonl` đã lưu trong `text_only/query_retrieval_dev/` và `full_image_method/retrieval_dev/`; kiểm tra manifest/hash, tập query ID, image ID và citation registry. Dùng union top-10 mỗi nhánh; Weighted RRF tính `text_weight/(rrf_k+text_rank) + (1-text_weight)/(rrf_k+image_rank)`, nhánh vắng đóng góp 0. Không cộng cosine của hai encoder, không dùng gold để tạo ranking hoặc tự tìm trọng số. Tie-break theo citation; trọng số 0/1 cho phép kiểm tra từng nhánh độc lập.
+
+```powershell
+# Đã chạy cấu hình này; --overwrite chỉ thay kết quả fusion trong cùng thư mục.
+.\.venv\Scripts\python.exe -u src/hybrid_rag/full_image_method/hybrid_retrieval.py --split dev --text-weight 0.5 --rrf-k 60 --final-top-n 5 --overwrite
+```
+
+Output: `artifacts/experiments/hybrid_rag/full_image_method/hybrid_retrieval_dev/`. **`final_citations.json`** có 112 câu theo thứ tự dev, mỗi câu 5 `relevant_articles`; `predictions.jsonl` giữ top-10 và rank/score/đóng góp cùng bằng chứng của từng nhánh. Có thêm `per_query_metrics.jsonl`, `metrics.json`, `manifest.json`; không chạy lại embedding hoặc sửa kết quả hai nhánh.
+
+Kết quả cố định text/image 0.5/0.5, RRF k=60: macro F2@5 **0.14010798837660618**, thấp hơn text riêng **0.1681801898478224** (ảnh riêng **0.05945680659531717**). So với text: 7 câu tốt hơn, 15 câu kém hơn, 90 câu giữ nguyên. Union top-10 bổ sung 28 lượt gold từ ảnh ngoài danh sách text, micro candidate recall **0.421260**; điều này chưa bảo đảm fusion xếp hạng đúng. Đây là baseline fusion trên dev, chưa tối ưu trọng số hoặc kiểm chứng độc lập. Muốn đổi trọng số/final cutoff phải ghi rõ cấu hình và giữ kết quả cũ trước khi dùng `--overwrite`.
+
+## Hybrid: chuyển sang YOLOE
+
+Đã dọn code, dữ liệu, checkpoint fine-tune và kết quả thử nghiệm YOLO11n. Chỉ giữ model pretrained `models/yolo_train/yolo11n.pt`; không còn run YOLO11n để resume hoặc đánh giá. Hướng detector tiếp theo là YOLOE; baseline text + ảnh toàn khung đã có fusion riêng ở trên, chưa đưa crop YOLOE vào retrieval hoặc QA.
 
 ### Preview YOLOE trên cùng 11 ảnh VLSP train
 
-Code ở `src/hybrid_rag/yolo_e_train/yoloe_preview.py`. Đây là thử detector pretrained với text prompt, không fine-tune. Chưa tải model hoặc chạy inference trong phiên tạo code. Dùng `yoloe-v8l-seg.pt` và `mobileclip_blt.ts` từ Ultralytics assets release v8.3.0; dependency Ultralytics giữ 8.4.182 và CLIP pin commit trong requirements riêng, không cần nâng cấp torch.
+Code ở `src/hybrid_rag/yolo_e_train/yoloe_preview.py`. Đây là thử detector pretrained với text prompt, không fine-tune. Đã có model local và kết quả preview; chưa fine-tune hoặc đánh giá bằng box chuẩn. Dùng `yoloe-v8l-seg.pt` và `mobileclip_blt.ts` từ Ultralytics assets release v8.3.0; dependency Ultralytics giữ 8.4.182 và CLIP pin commit trong requirements riêng, không cần nâng cấp torch.
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r src/hybrid_rag/yolo_e_train/requirements.txt
@@ -97,11 +109,11 @@ Code ở `src/hybrid_rag/yolo_e_train/yoloe_preview.py`. Đây là thử detecto
 
 Download khoảng 707 MB thập phân (checkpoint ~107 MB, text encoder ~600 MB), lưu trong `models/yolo_e_train/`; hỗ trợ file `.part` và ghi SHA256 local. Không tự tải model khi preview. CLIP được cài bằng pip trong `.venv`, tokenizer đi kèm package; text encoder được nạp bằng đường dẫn local rõ ràng.
 
-Preview đọc đúng đường dẫn ảnh trong `temp/sign_preview/image_001/predictions.json` đến `image_011/predictions.json`; không lấy mẫu mới. Output: `temp/sign_preview/yolo_e_train/image_001/` ... `image_011/`, mỗi thư mục có `original.jpg`, `annotated.jpg`, `sign_*.jpg`, `predictions.json`. Root output có manifest cấu hình/kết quả, download manifest và cache settings/matplotlib. Tất cả output của thử nghiệm này ở `temp/sign_preview/yolo_e_train/`, không đưa vào output training detector cũ.
+Preview đọc đường dẫn 11 ảnh từ `temp/sign_preview/yolo_e_train/image_001/predictions.json` đến `image_011/predictions.json` hiện có; không lấy mẫu mới hoặc phụ thuộc output YOLO11n. Output: `temp/sign_preview/yolo_e_train/image_001/` ... `image_011/`, mỗi thư mục có `original.jpg`, `annotated.jpg`, `sign_*.jpg`, `predictions.json`. Root output có manifest cấu hình/kết quả, download manifest và cache settings/matplotlib. Tất cả output của thử nghiệm này ở `temp/sign_preview/yolo_e_train/`, tách biệt với pipeline text RAG.
 
-Mặc định cùng `conf=0.25`, `imgsz=640` với preview YOLO11n. Prompts gồm biển tròn/tam giác, chữ nhật xanh dương/xanh lá/trắng có chữ, biển phụ, thời gian và chỉ dẫn cao tốc. Dùng class-agnostic NMS IoU=0.7 để giảm box lặp giữa các prompt; chỉ dùng bounding box để crop, chưa dùng mask. JSON giữ prompt khớp từng box. Không coi các prompt là mã biển pháp lý hoặc kết quả OCR.
+Mặc định `conf=0.25`, `imgsz=640`. Prompts gồm biển tròn/tam giác, chữ nhật xanh dương/xanh lá/trắng có chữ, biển phụ, thời gian và chỉ dẫn cao tốc. Dùng class-agnostic NMS IoU=0.7 để giảm box lặp giữa các prompt; chỉ dùng bounding box để crop, chưa dùng mask. JSON giữ prompt khớp từng box. Không coi các prompt là mã biển pháp lý hoặc kết quả OCR.
 
-Có thể truyền `--conf`/`--imgsz`; output khác cấu hình hoặc code sẽ bị chặn để không trộn thí nghiệm. Chạy lại cùng cấu hình cho phép tái dùng ảnh đã hoàn thành; ảnh chưa có predictions JSON sẽ chạy lại. Không tự xóa output cũ: muốn đổi cấu hình cần giữ bản cũ sang tên khác trong temp trước. Có heartbeat 30 giây. Chưa có box chuẩn cho 11 ảnh nên đây là so sánh trực quan, không phải metric detection recall; vẫn cần kiểm tra bỏ sót biển phụ, biển lớn và nhận nhầm.
+Có thể truyền `--conf`/`--imgsz`; output khác cấu hình hoặc code sẽ bị chặn để không trộn thí nghiệm. Chạy lại cùng cấu hình cho phép tái dùng ảnh đã hoàn thành; ảnh chưa có predictions JSON sẽ chạy lại. Không tự xóa output cũ: muốn đổi cấu hình cần giữ bản cũ sang tên khác trong temp trước. Code đã tách khỏi YOLO11n nên fingerprint khác kết quả cũ; kết quả cũ được giữ nguyên, chưa chạy lại bằng code mới. Có heartbeat 30 giây. Chưa có box chuẩn cho 11 ảnh nên đây là so sánh trực quan, không phải metric detection recall; vẫn cần kiểm tra bỏ sót biển phụ, biển lớn và nhận nhầm.
 
 Thử thêm 12 ảnh chụp query train mới (không dùng lại 11 ảnh trước):
 
@@ -109,7 +121,7 @@ Thử thêm 12 ảnh chụp query train mới (không dùng lại 11 ảnh trư�
 .\.venv\Scripts\python.exe -u src/hybrid_rag/yolo_e_train/yoloe_preview.py preview --real-photos --device 0
 ```
 
-Danh sách ở `temp/sign_preview/yolo_e_train/real_photos/selection.json`: seed 2026, lấy từ 202 ảnh có caption summary chứa “ảnh chụp”, loại ảnh đã preview, kiểm tra trực quan và thay một ảnh ghép quảng cáo bằng lượt rút ngẫu nhiên tiếp theo. Bộ này có ảnh đường phố và biển cao tốc, không phải mẫu đại diện thống kê toàn bộ query. Output riêng `real_photos/image_001/` ... `image_012/`, cấu trúc JPG/crop/JSON như trước. Dùng lại hai model local trong `models/yolo_e_train/`, không cần download lại; không chạy inference trong phiên thêm code này.
+Danh sách ở `temp/sign_preview/yolo_e_train/real_photos/selection.json`: seed 2026, lấy từ 202 ảnh có caption summary chứa “ảnh chụp”, loại ảnh đã preview, kiểm tra trực quan và thay một ảnh ghép quảng cáo bằng lượt rút ngẫu nhiên tiếp theo. Bộ này có ảnh đường phố và biển cao tốc, không phải mẫu đại diện thống kê toàn bộ query. Output riêng `real_photos/image_001/` ... `image_012/`, cấu trúc JPG/crop/JSON như trước. Dùng lại hai model local trong `models/yolo_e_train/`, không cần download lại; đã có kết quả preview cho 12 ảnh.
 
 ## Chuẩn bị
 
