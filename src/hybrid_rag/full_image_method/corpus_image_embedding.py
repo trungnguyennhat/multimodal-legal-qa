@@ -271,7 +271,7 @@ def main():
     if args.batch_size < 1:
         parser.error("batch-size phải >= 1")
     args.command = "embed-corpus"
-    run_step(args, BASE / "corpus", embed_corpus, Path(__file__))
+    run_step(args, BASE / "corpus_embedding", embed_corpus, Path(__file__))
 
 
 if __name__ == "__main__":

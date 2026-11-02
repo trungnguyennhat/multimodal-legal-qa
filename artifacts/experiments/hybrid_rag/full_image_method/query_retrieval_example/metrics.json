@@ -1,0 +1,171 @@
+{
+  "method": "full_image_examples",
+  "split": "dev",
+  "queries": 112,
+  "primary_metric": "macro_f2_at_5",
+  "macro_f2_at_5": 0.325043884882745,
+  "at_k": {
+    "1": {
+      "macro": {
+        "precision": 0.44642857142857145,
+        "recall": 0.19502551020408163,
+        "f1": 0.2600552721088435,
+        "f2": 0.21566698297356077
+      },
+      "micro": {
+        "precision": 0.44642857142857145,
+        "recall": 0.1968503937007874,
+        "f1": 0.273224043715847,
+        "f2": 0.22163120567375885
+      },
+      "hit_rate": 0.44642857142857145
+    },
+    "3": {
+      "macro": {
+        "precision": 0.24702380952380953,
+        "recall": 0.30642006802721083,
+        "f1": 0.26096230158730155,
+        "f2": 0.2826224634406994
+      },
+      "micro": {
+        "precision": 0.24702380952380953,
+        "recall": 0.32677165354330706,
+        "f1": 0.28135593220338984,
+        "f2": 0.3069526627218935
+      },
+      "hit_rate": 0.5982142857142857
+    },
+    "5": {
+      "macro": {
+        "precision": 0.20535714285714285,
+        "recall": 0.4016581632653061,
+        "f1": 0.2612463924963925,
+        "f2": 0.325043884882745
+      },
+      "micro": {
+        "precision": 0.2033271719038817,
+        "recall": 0.4330708661417323,
+        "f1": 0.27672955974842767,
+        "f2": 0.35324341682723187
+      },
+      "hit_rate": 0.6517857142857143
+    },
+    "10": {
+      "macro": {
+        "precision": 0.1747094671201814,
+        "recall": 0.46022534013605443,
+        "f1": 0.23807675459461178,
+        "f2": 0.3232187284463674
+      },
+      "micro": {
+        "precision": 0.16266666666666665,
+        "recall": 0.48031496062992124,
+        "f1": 0.24302788844621515,
+        "f2": 0.34541336353340885
+      },
+      "hit_rate": 0.6964285714285714
+    }
+  },
+  "gold_citations_outside_registry": [
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "22.0"
+    },
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "9.0"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "22 B.15"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "G1.1"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "I.414"
+    }
+  ],
+  "evaluation_scope": "dev_development_not_independent_test; gold_unchanged",
+  "corpus_images": 787,
+  "citations_with_images": 228,
+  "unique_query_images": 61,
+  "example_bank_queries": 418,
+  "top_k_examples": 5,
+  "dev_queries_with_bank_image": [
+    "train_135",
+    "train_204",
+    "train_251",
+    "train_252",
+    "train_253"
+  ],
+  "excluded_train_citations": [
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "11.0"
+    },
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "16.0"
+    },
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "18.0"
+    },
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "26.0"
+    },
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "4.0"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "47.15"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "47.22"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "47.7"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "B"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "B.4_x0000_"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "B3"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "B6"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "D.11"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "D.1777"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "G1.2"
+    }
+  ],
+  "coverage": {
+    "gold_citation_occurrences": 254,
+    "covered_gold_occurrences": 132,
+    "gold_image_coverage": 0.5196850393700787
+  }
+}

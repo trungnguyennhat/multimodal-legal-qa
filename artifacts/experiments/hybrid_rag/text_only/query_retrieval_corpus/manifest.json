@@ -1,16 +1,17 @@
 {
   "status": "COMPLETED",
-  "step": "query_retrieval_dev",
-  "created_at": "2026-11-01T17:12:02.506260+00:00",
+  "step": "query_retrieval_corpus",
+  "created_at": "2026-11-02T16:43:21.525826+00:00",
   "arguments": {
     "split": "dev",
-    "overwrite": false
+    "method": "corpus",
+    "overwrite": true
   },
   "code_sha256": {
     "src\\hybrid_rag\\text_only\\corpus_embedding.py": "bd8896277938bf18c36abb655b7fb55cdc9968d8d10af156c3fbd8a6582141fa",
     "src\\hybrid_rag\\text_only\\corpus_preprocessing.py": "cbfc8cdd67c68b2514621a4ef2369675e22e2e2adf82b6932f6c1ce63ed9fa79",
-    "src\\hybrid_rag\\text_only\\query_embedding.py": "ffc66e3d15cdff9d3b491092403f6d386a96cad7c27b46944738c3ca7aa09e06",
-    "src\\hybrid_rag\\text_only\\query_retrieval.py": "26bdacd8ac44179559a2b46a0dfccd70e64e64459634e8f757f960603af7c09a",
+    "src\\hybrid_rag\\text_only\\query_embedding.py": "4c1e717bc63f0171b1d7c4e24da7c6e429bf3fb5bc90e5912df82c0619372368",
+    "src\\hybrid_rag\\text_only\\query_retrieval.py": "a41f131cd74aa99b0fc7cb63bf7c96ed9515c65c1f750dcc737382565e2e1ba4",
     "src\\text_based_rag\\corpus_embedding.py": "1d7a7e1c04d0880d93175a5548e9f82cd0c763bca306c8ec2c8044d58c8c5c6c",
     "src\\text_based_rag\\query_retrieval.py": "428f34f0d257e7fabe771fc1d45447d46f3ac626b8e5abf48499a86309acf791"
   },
@@ -32,10 +33,12 @@
     "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_embedding\\vectors.npy": "de410ebc6dad6330192fdab71dd015126b191a8316f9b1fb047870501b68fcdd",
     "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_embedding\\chunks.jsonl": "ded5daa7907828650e6bac3301b84ea6796cddc90c9f37652db65e3945348a06",
     "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_embedding\\manifest.json": "50f5042f9aad9508b89d2ecb4144f3cf7b080e610029818c00ed7093ad9b8330",
+    "data\\processed\\splits\\train.json": "74d2107e1198b542cf50a0efb0b76748701bf5d381c447e6abe1526bfec11635",
     "data\\processed\\splits\\dev.json": "982a852348a358ce2aca0c1bcf84ca6f2e8c130ddeed6be71b025b8eeeda405e",
-    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\vectors.npy": "9c9c227aa597f6f7b72cf5600d44f3831470cbee534ab4e0c82720a868df49c2",
-    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\queries.jsonl": "2fd5c003232b1e9ab348cd5d5bd76d177cbdfb7cc0121c62f2d45f1ad133fa9a",
-    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\manifest.json": "e2261effd3020c750bd4f22224dc51f61e613a8b1b9471e7878a8563967e9f85"
+    "data\\raw\\VLSP2025-MLQA-TSR\\dataset\\train data\\vlsp_2025_train.json": "4e95a05abedec38a49e761bbf8f769285c40187fb1806db008a66baba9a7001d",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\vectors.npy": "e4d955ce9c146851136961c6e0102ca455aa4eec85e388cfc13d401b236bc235",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\queries.jsonl": "98e58bbc1ae70680bd4f01f00cea5d77dbf59da061fe6e73542bd52fd72afafc",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\manifest.json": "a5e9f13398c16bba4325d99b83b7976c85045280454226d1804c34dd74224382"
   },
   "packages": {
     "torch": "2.7.1+cu128",
@@ -43,18 +46,20 @@
     "numpy": "2.5.2"
   },
   "split": "dev",
-  "representation": "question_and_original_legal_text_only",
-  "similarity": "cosine",
-  "aggregation": "max_child_chunk_score",
-  "tie_break": "citation_lexicographic; chunk_id_lexicographic",
+  "method": "corpus",
+  "representation": "original_question_only",
   "queries": 112,
-  "chunks": 458,
-  "citations": 398,
+  "example_bank_queries": 418,
+  "example_bank_split": "train",
+  "top_k_examples": 5,
+  "same_image_policy": "allow_shared_images",
+  "aggregation": "max_child_chunk_score",
+  "tie_break": "citation_lexicographic; source_id_lexicographic",
   "macro_f2_at_5": 0.1681801898478224,
   "output_sha256": {
-    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_dev\\predictions.jsonl": "a5b32e3c030b2310d13c88b3874c15626cad5d89522914fb98b56a9ed6dc063e",
-    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_dev\\per_query_metrics.jsonl": "1d7c3466e6082058d53d8b720014bf22a4144ade28a388a091015aa5f02cf4a3",
-    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_dev\\metrics.json": "fb992870d6289b4423c71bc22b33dca712bb86d27e25ab31d2a57ceeaf51daaa"
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_corpus\\predictions.jsonl": "59031e77d08a61c1123c1e2acd4f67ef252ceff777dc7fb62560ee20b9386c37",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_corpus\\per_query_metrics.jsonl": "1d7c3466e6082058d53d8b720014bf22a4144ade28a388a091015aa5f02cf4a3",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_corpus\\metrics.json": "b6a0e4636067ed8aca2d9bc5e8a9594c9fa553d4dea50462ac3f9b2050c29a77"
   },
-  "elapsed_seconds": 6.156999999999243
+  "elapsed_seconds": 6.3439999999973224
 }

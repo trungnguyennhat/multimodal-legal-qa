@@ -1,4 +1,4 @@
-"""Embed original dev questions only: no image, caption, choices or answers."""
+"""Embed original train/dev questions; reserve train labels for example retrieval only."""
 
 import argparse
 import json
@@ -10,24 +10,50 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from hybrid_rag.text_only.corpus_preprocessing import DEV, hashes_of, run_step
 from hybrid_rag.text_only.corpus_embedding import BGE_SOURCE, embed_records
+from multimodal_legal_rag.data import DEFAULT_SOURCE, DATA_FILES
+
+
+def read_splits():
+    source = DEFAULT_SOURCE / DATA_FILES['train']
+    paths = [DEV.with_name('train.json'), DEV, source]
+    hashes = hashes_of(paths)
+    raw = json.loads(source.read_text(encoding='utf-8'))
+    original = {row['id']: row for row in raw}
+    if not original or len(original) != len(raw):
+        raise ValueError("Train gốc rỗng hoặc trùng ID.")
+    records, ids = [], set()
+    for split, path in zip(('train', 'dev'), paths[:2]):
+        rows = json.loads(path.read_text(encoding='utf-8'))
+        if not rows:
+            raise ValueError(f"Split {split} rỗng.")
+        for row in rows:
+            if row['id'] in ids or row['id'] not in original:
+                raise ValueError(f"Train/dev giao nhau, trùng hoặc sai ID: {row['id']}")
+            if (any(row.get(k) != original[row['id']].get(k) for k in ('question', 'image_id', 'relevant_articles'))
+                    or not isinstance(row.get('question'), str) or not row['question'].strip()
+                    or not isinstance(row.get('image_id'), str) or not row['image_id']
+                    or not isinstance(row.get('relevant_articles'), list) or not row['relevant_articles']):
+                raise ValueError(f"Split khác train gốc hoặc thiếu question/image/citation: {row['id']}")
+            ids.add(row['id'])
+            records.append({**row, 'source_split': split})
+    if ids != set(original):
+        raise ValueError("Train + dev không phủ đúng toàn bộ train gốc.")
+    return sorted(records, key=lambda r: (r['source_split'], r['id'])), hashes
 
 
 def query_inputs():
-    hashes = hashes_of([DEV])
-    original = sorted(json.loads(DEV.read_text(encoding="utf-8")), key=lambda r: r['id'])
-    if not original or len({r['id'] for r in original}) != len(original):
-        raise ValueError("Dev rỗng hoặc trùng query ID.")
+    original, hashes = read_splits()
     queries = []
     for row in original:
-        if not isinstance(row.get('question'), str) or not row['question'].strip():
-            raise ValueError(f"Câu hỏi rỗng/không hợp lệ: {row['id']}")
-        queries.append({'query_id': row['id'], 'source_image_id': row['image_id'], 'text': row['question']})
+        queries.append({'query_id': row['id'], 'source_image_id': row['image_id'],
+                        'source_split': row['source_split'], 'text': row['question']})
     return queries, original, hashes
 
 
 def embed_query(args, folder, meta, progress):
     queries, _, hashes = query_inputs()
     meta.update(split=args.split, representation="original_question_only", image_id_usage="metadata_only")
+    meta['split_counts'] = {split: sum(q['source_split'] == split for q in queries) for split in ('train', 'dev')}
     embed_records(args, folder, meta, progress, queries, "queries.jsonl", hashes)
 
 

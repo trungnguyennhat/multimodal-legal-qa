@@ -1,20 +1,22 @@
 {
   "status": "COMPLETED",
   "step": "query_embedding_dev",
-  "created_at": "2026-11-01T17:11:47.451711+00:00",
+  "created_at": "2026-11-02T16:42:13.205456+00:00",
   "arguments": {
     "split": "dev",
     "batch_size": 4,
-    "overwrite": false
+    "overwrite": true
   },
   "code_sha256": {
     "src\\hybrid_rag\\text_only\\corpus_embedding.py": "bd8896277938bf18c36abb655b7fb55cdc9968d8d10af156c3fbd8a6582141fa",
     "src\\hybrid_rag\\text_only\\corpus_preprocessing.py": "cbfc8cdd67c68b2514621a4ef2369675e22e2e2adf82b6932f6c1ce63ed9fa79",
-    "src\\hybrid_rag\\text_only\\query_embedding.py": "ffc66e3d15cdff9d3b491092403f6d386a96cad7c27b46944738c3ca7aa09e06",
+    "src\\hybrid_rag\\text_only\\query_embedding.py": "4c1e717bc63f0171b1d7c4e24da7c6e429bf3fb5bc90e5912df82c0619372368",
     "src\\text_based_rag\\corpus_embedding.py": "1d7a7e1c04d0880d93175a5548e9f82cd0c763bca306c8ec2c8044d58c8c5c6c"
   },
   "input_sha256": {
+    "data\\processed\\splits\\train.json": "74d2107e1198b542cf50a0efb0b76748701bf5d381c447e6abe1526bfec11635",
     "data\\processed\\splits\\dev.json": "982a852348a358ce2aca0c1bcf84ca6f2e8c130ddeed6be71b025b8eeeda405e",
+    "data\\raw\\VLSP2025-MLQA-TSR\\dataset\\train data\\vlsp_2025_train.json": "4e95a05abedec38a49e761bbf8f769285c40187fb1806db008a66baba9a7001d",
     "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\pytorch_model.bin": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
     "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\config.json": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
     "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\tokenizer.json": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
@@ -30,6 +32,10 @@
   "split": "dev",
   "representation": "original_question_only",
   "image_id_usage": "metadata_only",
+  "split_counts": {
+    "train": 418,
+    "dev": 112
+  },
   "config": {
     "model": "BAAI/bge-m3",
     "revision": "5617a9f61b028005a4858fdac845db406aefb181",
@@ -41,21 +47,21 @@
     "input_prefix": "",
     "captions": false
   },
-  "rows": 112,
+  "rows": 530,
   "batch_size": 4,
   "resources": {
     "gpu": "NVIDIA GeForce RTX 5060 Ti",
     "total_vram_bytes": 17102864384,
     "free_vram_before_load": 15908995072,
     "pytorch_budget_bytes": 8589934592,
-    "peak_cuda_allocated_bytes": 1149280256,
-    "peak_cuda_reserved_bytes": 1168113664
+    "peak_cuda_allocated_bytes": 1153351680,
+    "peak_cuda_reserved_bytes": 1170210816
   },
-  "max_input_tokens": 49,
+  "max_input_tokens": 101,
   "model_max_tokens": 8192,
   "output_sha256": {
-    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\vectors.npy": "9c9c227aa597f6f7b72cf5600d44f3831470cbee534ab4e0c82720a868df49c2",
-    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\queries.jsonl": "2fd5c003232b1e9ab348cd5d5bd76d177cbdfb7cc0121c62f2d45f1ad133fa9a"
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\vectors.npy": "e4d955ce9c146851136961c6e0102ca455aa4eec85e388cfc13d401b236bc235",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\queries.jsonl": "98e58bbc1ae70680bd4f01f00cea5d77dbf59da061fe6e73542bd52fd72afafc"
   },
-  "elapsed_seconds": 14.109000000004016
+  "elapsed_seconds": 23.281000000002678
 }
