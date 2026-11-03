@@ -1,0 +1,412 @@
+{
+  "method": "text_corpus_examples",
+  "split": "dev",
+  "queries": 112,
+  "primary_metric": "macro_f2_at_5",
+  "macro_f2_at_5": 0.36555129205447956,
+  "at_k": {
+    "1": {
+      "macro": {
+        "precision": 0.4107142857142857,
+        "recall": 0.19026360544217685,
+        "f1": 0.24963860544217686,
+        "f2": 0.20934394093623301
+      },
+      "micro": {
+        "precision": 0.4107142857142857,
+        "recall": 0.18110236220472442,
+        "f1": 0.25136612021857924,
+        "f2": 0.20390070921985815
+      },
+      "hit_rate": 0.4107142857142857
+    },
+    "3": {
+      "macro": {
+        "precision": 0.2797619047619047,
+        "recall": 0.3952593537414966,
+        "f1": 0.31143707482993194,
+        "f2": 0.3509926073052858
+      },
+      "micro": {
+        "precision": 0.27976190476190477,
+        "recall": 0.3700787401574803,
+        "f1": 0.31864406779661014,
+        "f2": 0.34763313609467456
+      },
+      "hit_rate": 0.6339285714285714
+    },
+    "5": {
+      "macro": {
+        "precision": 0.20535714285714285,
+        "recall": 0.4912414965986395,
+        "f1": 0.2764146567717996,
+        "f2": 0.36555129205447956
+      },
+      "micro": {
+        "precision": 0.20535714285714285,
+        "recall": 0.452755905511811,
+        "f1": 0.28255528255528256,
+        "f2": 0.36484771573604063
+      },
+      "hit_rate": 0.7410714285714286
+    },
+    "10": {
+      "macro": {
+        "precision": 0.13214285714285717,
+        "recall": 0.6259991496598639,
+        "f1": 0.2110927238028078,
+        "f2": 0.3399175306240764
+      },
+      "micro": {
+        "precision": 0.13214285714285715,
+        "recall": 0.5826771653543307,
+        "f1": 0.21542940320232898,
+        "f2": 0.3464419475655431
+      },
+      "hit_rate": 0.8660714285714286
+    }
+  },
+  "gold_citations_outside_registry": [
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "22.0"
+    },
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "9.0"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "22 B.15"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "G1.1"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "I.414"
+    }
+  ],
+  "evaluation_scope": "dev_development_not_independent_test; gold_unchanged",
+  "rrf_k": 60,
+  "within_modality_weights": {
+    "corpus": 0.5,
+    "examples": 0.5
+  },
+  "example_fallback_queries": 0,
+  "branch_metrics": {
+    "text_corpus": {
+      "method": "pure_text_corpus",
+      "split": "dev",
+      "queries": 112,
+      "primary_metric": "macro_f2_at_5",
+      "macro_f2_at_5": 0.1681801898478224,
+      "at_k": {
+        "1": {
+          "macro": {
+            "precision": 0.10714285714285714,
+            "recall": 0.047619047619047616,
+            "f1": 0.06505102040816325,
+            "f2": 0.053296703296703295
+          },
+          "micro": {
+            "precision": 0.10714285714285714,
+            "recall": 0.047244094488188976,
+            "f1": 0.06557377049180328,
+            "f2": 0.05319148936170213
+          },
+          "hit_rate": 0.10714285714285714
+        },
+        "3": {
+          "macro": {
+            "precision": 0.10714285714285714,
+            "recall": 0.17113095238095238,
+            "f1": 0.12748015873015875,
+            "f2": 0.14856043427472
+          },
+          "micro": {
+            "precision": 0.10714285714285714,
+            "recall": 0.14173228346456693,
+            "f1": 0.12203389830508475,
+            "f2": 0.13313609467455623
+          },
+          "hit_rate": 0.26785714285714285
+        },
+        "5": {
+          "macro": {
+            "precision": 0.08928571428571429,
+            "recall": 0.2287202380952381,
+            "f1": 0.1243925221603793,
+            "f2": 0.1681801898478224
+          },
+          "micro": {
+            "precision": 0.08928571428571429,
+            "recall": 0.1968503937007874,
+            "f1": 0.12285012285012285,
+            "f2": 0.15862944162436549
+          },
+          "hit_rate": 0.375
+        },
+        "10": {
+          "macro": {
+            "precision": 0.07053571428571428,
+            "recall": 0.3356505102040816,
+            "f1": 0.11365032026796731,
+            "f2": 0.18407565301915144
+          },
+          "micro": {
+            "precision": 0.07053571428571428,
+            "recall": 0.3110236220472441,
+            "f1": 0.11499272197962154,
+            "f2": 0.1849250936329588
+          },
+          "hit_rate": 0.5357142857142857
+        }
+      },
+      "gold_citations_outside_registry": [
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "22.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "9.0"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "22 B.15"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "G1.1"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "I.414"
+        }
+      ],
+      "evaluation_scope": "dev_development_not_independent_test; gold_unchanged",
+      "example_bank_queries": 418,
+      "top_k_examples": 5,
+      "excluded_train_citations": [
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "11.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "16.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "18.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "26.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "4.0"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.15"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.22"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.7"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B.4_x0000_"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B3"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B6"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "D.11"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "D.1777"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "G1.2"
+        }
+      ]
+    },
+    "text_examples": {
+      "method": "pure_text_examples",
+      "split": "dev",
+      "queries": 112,
+      "primary_metric": "macro_f2_at_5",
+      "macro_f2_at_5": 0.37772694465817835,
+      "at_k": {
+        "1": {
+          "macro": {
+            "precision": 0.49107142857142855,
+            "recall": 0.24413265306122447,
+            "f1": 0.3107780612244898,
+            "f2": 0.26553141592622903
+          },
+          "micro": {
+            "precision": 0.49107142857142855,
+            "recall": 0.21653543307086615,
+            "f1": 0.3005464480874317,
+            "f2": 0.24379432624113476
+          },
+          "hit_rate": 0.49107142857142855
+        },
+        "3": {
+          "macro": {
+            "precision": 0.2708333333333333,
+            "recall": 0.3736819727891156,
+            "f1": 0.2983560090702948,
+            "f2": 0.3337767230781235
+          },
+          "micro": {
+            "precision": 0.2708333333333333,
+            "recall": 0.35826771653543305,
+            "f1": 0.30847457627118646,
+            "f2": 0.33653846153846156
+          },
+          "hit_rate": 0.6160714285714286
+        },
+        "5": {
+          "macro": {
+            "precision": 0.21830357142857143,
+            "recall": 0.4977253401360544,
+            "f1": 0.28980042774685627,
+            "f2": 0.37772694465817835
+          },
+          "micro": {
+            "precision": 0.21863799283154123,
+            "recall": 0.48031496062992124,
+            "f1": 0.30049261083743845,
+            "f2": 0.3875476493011436
+          },
+          "hit_rate": 0.75
+        },
+        "10": {
+          "macro": {
+            "precision": 0.17964143990929707,
+            "recall": 0.6026360544217687,
+            "f1": 0.2646575646575646,
+            "f2": 0.387411318307641
+          },
+          "micro": {
+            "precision": 0.17590361445783131,
+            "recall": 0.5748031496062992,
+            "f1": 0.2693726937269373,
+            "f2": 0.39544962080173346
+          },
+          "hit_rate": 0.8125
+        }
+      },
+      "gold_citations_outside_registry": [
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "22.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "9.0"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "22 B.15"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "G1.1"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "I.414"
+        }
+      ],
+      "evaluation_scope": "dev_development_not_independent_test; gold_unchanged",
+      "example_bank_queries": 418,
+      "top_k_examples": 5,
+      "excluded_train_citations": [
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "11.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "16.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "18.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "26.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "4.0"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.15"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.22"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.7"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B.4_x0000_"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B3"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B6"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "D.11"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "D.1777"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "G1.2"
+        }
+      ]
+    }
+  }
+}

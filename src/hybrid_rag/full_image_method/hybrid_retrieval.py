@@ -1,4 +1,4 @@
-"""Fuse text corpus/examples with the saved image hybrid ranking; optionally tune on dev."""
+"""Fuse saved text and image hybrid rankings; optionally tune weights on dev."""
 
 import argparse
 import json
@@ -34,41 +34,32 @@ def fuse(args, folder, meta, progress):
     labels = {r['id']:r for r in splits if r['source_split']=='train'}
     dev = json.loads(DEV.read_text(encoding='utf-8'))
     original = {r['id']:r for r in dev}
-    inputs,input_metrics = {},{}
-    for name,branch,method in (('text_corpus',TEXT,'corpus'),('text_examples',TEXT,'example'),
-                               ('image_hybrid',BASE,'hybrid')):
+    modalities,input_metrics = {},{}
+    for name,branch,script in (('text',TEXT,'query_text_hybrid.py'),('image',BASE,'query_image_hybrid.py')):
         progress.set('validate ' + name)
-        inputs[name],branch_hashes,input_metrics[name] = load_branch(branch/('query_retrieval_'+method),original,registry,labels)
+        modalities[name],branch_hashes,branch_metrics = load_branch(branch/'query_retrieval_hybrid',original,registry,labels)
         hashes.update(branch_hashes)
-    image_metrics = input_metrics.pop('image_hybrid')
-    if (image_metrics.get('rrf_k')!=args.rrf_k
-            or image_metrics.get('within_modality_weights')!={'corpus':0.5,'examples':0.5}):
-        raise ValueError('Ranking ảnh khác cấu hình RRF; chạy query_image_hybrid.py cùng --rrf-k trước.')
-    input_metrics.update(image_metrics['branch_metrics'])
+        if (branch_metrics.get('rrf_k')!=args.rrf_k
+                or branch_metrics.get('within_modality_weights')!={'corpus':0.5,'examples':0.5}):
+            raise ValueError(f'Ranking {name} khác cấu hình RRF; chạy {script} cùng --rrf-k trước.')
+        input_metrics.update(branch_metrics['branch_metrics'])
     meta.update(input_sha256=hashes,split='dev',queries=len(dev),method='hierarchical_weighted_rrf',
                 example_bank_queries=len(labels),within_modality_weights={'corpus':0.5,'examples':0.5},
                 rrf_k=args.rrf_k,final_top_n=args.final_top_n,candidate_depth=10,
                 tie_break='citation_lexicographic',weight_selection='tuned_on_dev' if args.tune_on_dev else 'fixed_by_cli')
     meta['code_sha256'].update(hashes_of([ROOT/'src/hybrid_rag/text_only'/n for n in (
         'query_embedding.py','query_retrieval.py','corpus_preprocessing.py')]
-        + [ROOT/'src/text_based_rag/query_retrieval.py',Path(__file__).with_name('query_image_hybrid.py')]))
+        + [ROOT/'src/text_based_rag/query_retrieval.py',Path(__file__).with_name('query_image_hybrid.py'),
+           ROOT/'src/hybrid_rag/text_only/query_text_hybrid.py']))
     save(folder/'manifest.json',meta)
-    modalities = {'text':{},'image':{}}
     fallback = {'text':0,'image':0}
-    progress.set('combine corpus and examples',len(dev))
+    progress.set('validate saved modality rankings',len(dev))
     for query in dev:
         qid = query['id']
-        corpus = inputs['text_corpus'][qid]['results']
-        examples = inputs['text_examples'][qid]['results']
-        text_fallback = not examples
-        fallback['text'] += text_fallback
-        hits = rrf({'corpus':corpus,'examples':examples},{'corpus':0.5,'examples':0.5},args.rrf_k) if examples else corpus
-        modalities['text'][qid] = {'query_id':qid,'source_image_id':query['image_id'],'results':hits}
-        image_row = inputs['image_hybrid'][qid]
-        if type(image_row.get('example_fallback')) is not bool:
-            raise ValueError(f'Ranking ảnh thiếu trạng thái fallback: {qid}')
-        fallback['image'] += image_row['example_fallback']
-        modalities['image'][qid] = image_row
+        for name,rows in modalities.items():
+            if type(rows[qid].get('example_fallback')) is not bool:
+                raise ValueError(f'Ranking {name} thiếu trạng thái fallback: {qid}')
+            fallback[name] += rows[qid]['example_fallback']
         progress.done += 1
     modality_metrics = {}
     modality_evaluations = {}
@@ -89,8 +80,7 @@ def fuse(args, folder, meta, progress):
                 raise ValueError(f'Fusion thiếu top-10: {qid}')
             predictions.append({'query_id':qid,'source_image_id':query['image_id'],'source_split':'dev','results':hits,
                                 'modality_rankings':{name:rows[qid]['results'] for name,rows in modalities.items()},
-                                'example_fallback':{'text':not inputs['text_examples'][qid]['results'],
-                                                    'image':inputs['image_hybrid'][qid]['example_fallback']}})
+                                'example_fallback':{name:rows[qid]['example_fallback'] for name,rows in modalities.items()}})
         metrics,evaluations = evaluate_predictions(predictions,dev,registry,'hierarchical_weighted_rrf',cutoffs)
         score = metrics['macro_f2_at_5']
         sweep.append({'text_weight':weight,'image_weight':1-weight,'macro_f2_at_5':score})

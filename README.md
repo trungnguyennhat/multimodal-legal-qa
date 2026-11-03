@@ -16,10 +16,10 @@ VLSP 2025 MLQA-TSR: 530 câu train gốc → **418 train + 112 dev**; **100 publ
 | Hybrid: text thuần BGE-M3 | COMPLETED: bỏ 790 figure block, giữ text 212 bảng; 458 chunk 1.024/128; dev F2@5 **0.168180** |
 | Hybrid: ảnh toàn khung DINOv2 ViT-B/14 | COMPLETED: 787 ảnh corpus → 228 citation; dev 112 câu / 61 ảnh; F2@5 **0.059457** |
 | Hybrid: fusion text thuần + ảnh | COMPLETED: Weighted RRF, text/ảnh 0.5/0.5, k=60; F2@5 **0.140108**; 112 câu, mỗi câu 5 citation cuối |
-| Hybrid example retrieval | COMPLETED: text example F2@5 **0.377727**; ảnh example **0.325044**; ranking ảnh corpus+example **0.275478** ở `query_retrieval_hybrid/` |
+| Hybrid example retrieval | COMPLETED: text example F2@5 **0.377727**; ảnh example **0.325044**; corpus+example sau gộp: text **0.365551**, ảnh **0.275478**, lưu tại `query_retrieval_hybrid/` của mỗi nhánh |
 | YOLOE | Đã preview 11 ảnh VLSP + 12 ảnh chụp; chưa đưa crop vào retrieval, chưa có metric detection chuẩn |
 
-QA caption-based dùng `relevant_articles` được cung cấp trong input, nên accuracy trên **không phải** accuracy của chuỗi retrieval → QA. Lỗi nhãn citation ngoài registry còn tạm hoãn xử lý; khi chấm vẫn giữ nguyên gold. Query embedding train+dev và bốn retrieval corpus/example đã COMPLETED. Ranking ảnh đã được tách thành bước riêng; bước text–ảnh cuối cần chạy lại để đọc ranking đã lưu. Các dòng text/ảnh/fusion chưa dùng example bank là baseline trước mở rộng; điểm example và ranking ảnh mới được ghi riêng.
+QA caption-based dùng `relevant_articles` được cung cấp trong input, nên accuracy trên **không phải** accuracy của chuỗi retrieval → QA. Lỗi nhãn citation ngoài registry còn tạm hoãn xử lý; khi chấm vẫn giữ nguyên gold. Query embedding train+dev và bốn retrieval corpus/example đã COMPLETED. Ranking text và ảnh đã được gộp, lưu thành hai bước riêng; bước text–ảnh cuối cần chạy lại để đọc hai ranking đã lưu. Các dòng text/ảnh/fusion chưa dùng example bank là baseline trước mở rộng; điểm có example bank được ghi riêng.
 
 ## Môi trường và dữ liệu
 
@@ -73,7 +73,7 @@ Output: dev/train ở `artifacts/experiments/text_based_rag/`; public ở `artif
 
 Text chỉ dùng câu hỏi gốc và văn bản luật/bảng, DINOv2 chỉ nhận ảnh. Code đã hỗ trợ **418 train làm example bank, 112 dev để chấm**; query index chứa 530 câu, ảnh deduplicate theo SHA256 (preflight hiện có 298 ảnh duy nhất). Không dùng nhãn dev làm ứng viên. Model và corpus index hiện có vẫn hợp lệ: text `(458,1024)`, ảnh `(787,768)`; **không cần chạy lại corpus embedding**.
 
-Luồng chạy đầy đủ từ gốc project; các bước embedding/retrieval và gộp ảnh đã có kết quả, hiện chỉ cần chạy lại lệnh cuối sau khi tách bước. Các lệnh ghi đè đúng output tương ứng:
+Luồng chạy đầy đủ từ gốc project; embedding/retrieval và hai bước gộp text/ảnh đã có kết quả, hiện chỉ cần chạy lại lệnh cuối sau khi tách bước. Các lệnh ghi đè đúng output tương ứng:
 
 ```powershell
 .\.venv\Scripts\python.exe -u src/hybrid_rag/text_only/query_embedding.py --split dev --batch-size 4 --overwrite
@@ -82,15 +82,16 @@ Luồng chạy đầy đủ từ gốc project; các bước embedding/retrieval
 .\.venv\Scripts\python.exe -u src/hybrid_rag/text_only/query_retrieval.py --split dev --method examples --overwrite
 .\.venv\Scripts\python.exe -u src/hybrid_rag/full_image_method/query_image_retrieval.py --split dev --method corpus --overwrite
 .\.venv\Scripts\python.exe -u src/hybrid_rag/full_image_method/query_image_retrieval.py --split dev --method examples --overwrite
+.\.venv\Scripts\python.exe -u src/hybrid_rag/text_only/query_text_hybrid.py --split dev --rrf-k 60 --overwrite
 .\.venv\Scripts\python.exe -u src/hybrid_rag/full_image_method/query_image_hybrid.py --split dev --rrf-k 60 --overwrite
 .\.venv\Scripts\python.exe -u src/hybrid_rag/full_image_method/hybrid_retrieval.py --split dev --tune-on-dev --rrf-k 60 --final-top-n 5 --overwrite
 ```
 
 Mỗi phương pháp ghi vào `query_retrieval_corpus/` hoặc `query_retrieval_example/` ở nhánh tương ứng. Example lấy top-5 train, gộp max similarity về citation; có thể trả 0–10 citation. Không trộn caption/choices/answer vào embedding, không fine-tune hoặc thêm model/file bank.
 
-Bước `query_image_hybrid.py` gộp **ảnh corpus + ảnh example** bằng RRF 0.5/0.5, k=60, top-10, lưu riêng tại `full_image_method/query_retrieval_hybrid/` với predictions/per_query_metrics/metrics/manifest. Bước `hybrid_retrieval.py` đọc ranking ảnh đã lưu, gộp text corpus/example như trước rồi fusion text–ảnh; không gộp lại ảnh bên trong bước cuối. Ranking ảnh đã kiểm tra giống hoàn toàn kết quả gộp bên trong phiên bản trước trên cả 112 query. `--tune-on-dev` khảo sát trọng số text 0/0.25/0.5/0.75/1, ghi bảng khảo sát và điểm cấu hình 0.5 vào metrics.json, chọn F2@5 cao nhất (hòa ưu tiên text lớn hơn). Đây là chọn cấu hình trên dev, không phải kiểm chứng độc lập. Bỏ flag này và dùng `--text-weight 0.5` để chạy cố định.
+Bước `query_text_hybrid.py` gộp **text corpus + text example**, `query_image_hybrid.py` gộp **ảnh corpus + ảnh example**, cùng dùng RRF 0.5/0.5, k=60, top-10. Mỗi bước lưu predictions/per_query_metrics/metrics/manifest tại `query_retrieval_hybrid/` của nhánh tương ứng. Bước `hybrid_retrieval.py` chỉ đọc hai ranking đã lưu rồi fusion text–ảnh; k phải khớp với cả hai bước trước. Đã kiểm tra hai ranking giống kết quả gộp bên trong phiên bản trước trên cả 112 query. `--tune-on-dev` khảo sát trọng số text 0/0.25/0.5/0.75/1, ghi bảng khảo sát và điểm cấu hình 0.5 vào metrics.json, chọn F2@5 cao nhất (hòa ưu tiên text lớn hơn). Đây là chọn cấu hình trên dev, không phải kiểm chứng độc lập. Bỏ flag này và dùng `--text-weight 0.5` để chạy cố định.
 
-Output dưới `artifacts/experiments/hybrid_rag/`: `text_only/`, `full_image_method/`; tên chung `corpus_embedding/`, `query_embedding_dev/`, `query_retrieval_corpus/`, `query_retrieval_example/`. Final ở `full_image_method/image_text_retrieval/`: **`final_citations.json`**, `predictions.jsonl`, `per_query_metrics.jsonl`, `metrics.json`, `manifest.json`. Giữ nguyên tên file; có trace train examples, ranking corpus+example từng nhánh và fallback khi example rỗng. Model, query index và bốn danh sách retrieval được giữ nguyên trong lần tách bước này; chưa ghi đè final sau khi đổi input. Không sửa hash để dùng lẫn output cũ/mới.
+Output dưới `artifacts/experiments/hybrid_rag/`: `text_only/`, `full_image_method/`; tên chung `corpus_embedding/`, `query_embedding_dev/`, `query_retrieval_corpus/`, `query_retrieval_example/`, `query_retrieval_hybrid/`. Final ở `full_image_method/image_text_retrieval/`: **`final_citations.json`**, `predictions.jsonl`, `per_query_metrics.jsonl`, `metrics.json`, `manifest.json`. Giữ nguyên tên file; có trace train examples, ranking corpus+example từng nhánh và fallback khi example rỗng. Model, query index và bốn danh sách retrieval được giữ nguyên trong lần tách bước này; chưa ghi đè final sau khi đổi input. Không sửa hash để dùng lẫn output cũ/mới.
 
 ## YOLOE — preview hiện có
 
@@ -101,4 +102,4 @@ Code `src/hybrid_rag/yolo_e_train/yoloe_preview.py`; model ở `models/yolo_e_tr
 .\.venv\Scripts\python.exe -u src/hybrid_rag/yolo_e_train/yoloe_preview.py preview --real-photos --device 0
 ```
 
-**Việc tiếp theo:** chạy lại lệnh `hybrid_retrieval.py` cuối cùng để đọc `query_retrieval_hybrid/`, kiểm tra metrics và cập nhật kết quả theo CHECKPOINTS. Không cần chạy lại embedding hoặc corpus/example retrieval chỉ vì lần tách bước này.
+**Việc tiếp theo:** chạy lại lệnh `hybrid_retrieval.py` cuối cùng để đọc `query_retrieval_hybrid/` của cả text và ảnh, kiểm tra metrics và cập nhật kết quả theo CHECKPOINTS. Không cần chạy lại embedding hoặc corpus/example retrieval chỉ vì lần tách bước này.

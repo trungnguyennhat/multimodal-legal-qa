@@ -1,0 +1,77 @@
+{
+  "status": "COMPLETED",
+  "step": "query_retrieval_hybrid",
+  "created_at": "2026-11-03T11:02:45.657396+00:00",
+  "arguments": {
+    "split": "dev",
+    "rrf_k": 60,
+    "overwrite": false
+  },
+  "code_sha256": {
+    "src\\hybrid_rag\\full_image_method\\corpus_image_embedding.py": "c4f56ed821f984c58a4cef894316627e9638e37d4b19d68b0000065ef508d7a4",
+    "src\\hybrid_rag\\full_image_method\\query_image_hybrid.py": "d1ce27bdf7ba2d582340070ea78b9d50bf14d011c35db48f1a74677fd03a5a1f",
+    "src\\hybrid_rag\\text_only\\corpus_preprocessing.py": "cbfc8cdd67c68b2514621a4ef2369675e22e2e2adf82b6932f6c1ce63ed9fa79",
+    "src\\hybrid_rag\\text_only\\query_embedding.py": "4c1e717bc63f0171b1d7c4e24da7c6e429bf3fb5bc90e5912df82c0619372368",
+    "src\\hybrid_rag\\text_only\\query_retrieval.py": "a41f131cd74aa99b0fc7cb63bf7c96ed9515c65c1f750dcc737382565e2e1ba4",
+    "src\\hybrid_rag\\text_only\\query_text_hybrid.py": "ddca53d711e928fe491fb568882969f2c9a41b06776025bc0350970b58604e17",
+    "src\\text_based_rag\\query_retrieval.py": "428f34f0d257e7fabe771fc1d45447d46f3ac626b8e5abf48499a86309acf791"
+  },
+  "input_sha256": {
+    "data\\processed\\splits\\dev.json": "982a852348a358ce2aca0c1bcf84ca6f2e8c130ddeed6be71b025b8eeeda405e",
+    "artifacts\\experiments\\text_based_rag\\corpus\\data_preprocessing\\manifest.json": "c076c6d8f58c4a4c376a7ed194f5bd860d9a4d5e82ea554e1a534bc125a16309",
+    "artifacts\\experiments\\text_based_rag\\corpus\\data_preprocessing\\structured_corpus.jsonl": "eca0f74b73d658d7429f8232fb842ef49442ab9754438b04e13500b11ac2640e",
+    "data\\processed\\splits\\train.json": "74d2107e1198b542cf50a0efb0b76748701bf5d381c447e6abe1526bfec11635",
+    "data\\raw\\VLSP2025-MLQA-TSR\\dataset\\train data\\vlsp_2025_train.json": "4e95a05abedec38a49e761bbf8f769285c40187fb1806db008a66baba9a7001d",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\data_preprocessing\\structured_corpus.jsonl": "82fc02649d11d54f33d98e9d7490f059731f8c427c38a22ccdb4d6e77eeda145",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\data_preprocessing\\corpus_preview.txt": "ca9d622316a7138a1a897bed66ceb2ca0ef9e3f6295f63df7a98c8b5e6359e23",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\data_preprocessing\\manifest.json": "95f3c486254131dde88f8fd1be83e7dc3e7ace9e2c9b85532e961589b1421b87",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\config.json": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\tokenizer.json": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\tokenizer_config.json": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\special_tokens_map.json": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_chunking\\chunks.jsonl": "ded5daa7907828650e6bac3301b84ea6796cddc90c9f37652db65e3945348a06",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_chunking\\embedding_text_preview.txt": "9d4fbdbcaabfcd86fd4c24ed23d822f8f1739cb5b58cf33c04c0522621458966",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_chunking\\manifest.json": "2de22f64ade03a792472d2f3a4080fd284156e633c142fd64ed34c87a55adf22",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\pytorch_model.bin": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
+    "models\\huggingface\\hub\\models--BAAI--bge-m3\\snapshots\\5617a9f61b028005a4858fdac845db406aefb181\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_embedding\\vectors.npy": "de410ebc6dad6330192fdab71dd015126b191a8316f9b1fb047870501b68fcdd",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_embedding\\chunks.jsonl": "ded5daa7907828650e6bac3301b84ea6796cddc90c9f37652db65e3945348a06",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\corpus_embedding\\manifest.json": "50f5042f9aad9508b89d2ecb4144f3cf7b080e610029818c00ed7093ad9b8330",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\vectors.npy": "e4d955ce9c146851136961c6e0102ca455aa4eec85e388cfc13d401b236bc235",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\queries.jsonl": "98e58bbc1ae70680bd4f01f00cea5d77dbf59da061fe6e73542bd52fd72afafc",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_embedding_dev\\manifest.json": "a5e9f13398c16bba4325d99b83b7976c85045280454226d1804c34dd74224382",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_corpus\\predictions.jsonl": "59031e77d08a61c1123c1e2acd4f67ef252ceff777dc7fb62560ee20b9386c37",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_corpus\\per_query_metrics.jsonl": "1d7c3466e6082058d53d8b720014bf22a4144ade28a388a091015aa5f02cf4a3",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_corpus\\metrics.json": "b6a0e4636067ed8aca2d9bc5e8a9594c9fa553d4dea50462ac3f9b2050c29a77",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_corpus\\manifest.json": "b821578b2df175e1ab9b808d1120defb8c2b1131ffbb668cdbeb445c5dc6f916",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_example\\predictions.jsonl": "8ae6062a3e497a9e5b69a4af1f45043a988d6d568b65cd4c8b1d9a7c2510d69a",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_example\\per_query_metrics.jsonl": "acaf96fae867ff35215ab3208811ceabb3906f5eb91bf1b5969755d2231b0272",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_example\\metrics.json": "a2dd3947de9fb60d48fd3056f81a443dfacb813beed7afbe9c968f9e016ef6b5",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_example\\manifest.json": "a122b2d29f9a6d2ade5633709821cc9028a8cc16040f4953f0aab4ccf4143093"
+  },
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.57.1",
+    "numpy": "2.5.2"
+  },
+  "split": "dev",
+  "method": "corpus_examples_rrf",
+  "queries": 112,
+  "representation": "original_question_only",
+  "example_bank_split": "train",
+  "example_bank_queries": 418,
+  "rrf_k": 60,
+  "within_modality_weights": {
+    "corpus": 0.5,
+    "examples": 0.5
+  },
+  "candidate_depth": 10,
+  "tie_break": "citation_lexicographic",
+  "macro_f2_at_5": 0.36555129205447956,
+  "output_sha256": {
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_hybrid\\predictions.jsonl": "e97a20a190bd5402d6ea312d32d5db81c67b158714886b9b9f68ef9756c936f5",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_hybrid\\per_query_metrics.jsonl": "3c379dcd0efb4d1ad0e739f6c74df16e3fd1a882f6fe9a9f2ff91425eb1d56e8",
+    "artifacts\\experiments\\hybrid_rag\\text_only\\query_retrieval_hybrid\\metrics.json": "dd8cbdad8b29e86d03aa8011a875f14868be322cd9d10a9d6e8b19f6a60d9552"
+  },
+  "elapsed_seconds": 9.405999999999949
+}
