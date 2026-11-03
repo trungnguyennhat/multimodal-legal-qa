@@ -1,0 +1,1012 @@
+{
+  "method": "crop_corpus_examples",
+  "split": "dev",
+  "queries": 112,
+  "primary_metric": "macro_f2_at_5",
+  "macro_f2_at_5": 0.3787779929912646,
+  "at_k": {
+    "1": {
+      "macro": {
+        "precision": 0.3482142857142857,
+        "recall": 0.18377976190476192,
+        "f1": 0.2296768707482993,
+        "f2": 0.19859854198089494
+      },
+      "micro": {
+        "precision": 0.3482142857142857,
+        "recall": 0.15354330708661418,
+        "f1": 0.21311475409836064,
+        "f2": 0.17287234042553193
+      },
+      "hit_rate": 0.3482142857142857
+    },
+    "3": {
+      "macro": {
+        "precision": 0.26785714285714285,
+        "recall": 0.39264455782312924,
+        "f1": 0.3039257369614513,
+        "f2": 0.345880513204064
+      },
+      "micro": {
+        "precision": 0.26785714285714285,
+        "recall": 0.3543307086614173,
+        "f1": 0.3050847457627119,
+        "f2": 0.3328402366863905
+      },
+      "hit_rate": 0.6696428571428571
+    },
+    "5": {
+      "macro": {
+        "precision": 0.21428571428571433,
+        "recall": 0.5021045918367347,
+        "f1": 0.2882343846629561,
+        "f2": 0.3787779929912646
+      },
+      "micro": {
+        "precision": 0.21428571428571427,
+        "recall": 0.47244094488188976,
+        "f1": 0.29484029484029484,
+        "f2": 0.38071065989847713
+      },
+      "hit_rate": 0.8125
+    },
+    "10": {
+      "macro": {
+        "precision": 0.14285714285714288,
+        "recall": 0.6360331632653061,
+        "f1": 0.2255824182819981,
+        "f2": 0.3574673704594093
+      },
+      "micro": {
+        "precision": 0.14285714285714285,
+        "recall": 0.6299212598425197,
+        "f1": 0.2328966521106259,
+        "f2": 0.37453183520599254
+      },
+      "hit_rate": 0.8660714285714286
+    }
+  },
+  "gold_citations_outside_registry": [
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "22.0"
+    },
+    {
+      "law_id": "36/2024/QH15",
+      "article_id": "9.0"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "22 B.15"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "G1.1"
+    },
+    {
+      "law_id": "QCVN 41:2024/BGTVT",
+      "article_id": "I.414"
+    }
+  ],
+  "evaluation_scope": "dev_development_not_independent_test; gold_unchanged",
+  "rrf_k": 60,
+  "within_modality_weights": {
+    "corpus": 0.5,
+    "examples": 0.5
+  },
+  "availability_queries": {
+    "both": 112
+  },
+  "branch_metrics": {
+    "image_corpus": {
+      "method": "crop_corpus",
+      "split": "dev",
+      "queries": 112,
+      "primary_metric": "macro_f2_at_5",
+      "macro_f2_at_5": 0.09144462382654213,
+      "at_k": {
+        "1": {
+          "macro": {
+            "precision": 0.08928571428571429,
+            "recall": 0.04241071428571429,
+            "f1": 0.05522959183673469,
+            "f2": 0.04653630683042448
+          },
+          "micro": {
+            "precision": 0.08928571428571429,
+            "recall": 0.03937007874015748,
+            "f1": 0.0546448087431694,
+            "f2": 0.044326241134751775
+          },
+          "hit_rate": 0.08928571428571429
+        },
+        "3": {
+          "macro": {
+            "precision": 0.07142857142857142,
+            "recall": 0.11086309523809525,
+            "f1": 0.0814200680272109,
+            "f2": 0.09466306458787663
+          },
+          "micro": {
+            "precision": 0.07142857142857142,
+            "recall": 0.09448818897637795,
+            "f1": 0.08135593220338982,
+            "f2": 0.08875739644970414
+          },
+          "hit_rate": 0.17857142857142858
+        },
+        "5": {
+          "macro": {
+            "precision": 0.05,
+            "recall": 0.12648809523809526,
+            "f1": 0.06804331581117296,
+            "f2": 0.09144462382654213
+          },
+          "micro": {
+            "precision": 0.05,
+            "recall": 0.11023622047244094,
+            "f1": 0.0687960687960688,
+            "f2": 0.08883248730964467
+          },
+          "hit_rate": 0.21428571428571427
+        },
+        "10": {
+          "macro": {
+            "precision": 0.033035714285714286,
+            "recall": 0.15848214285714285,
+            "f1": 0.05287012095047809,
+            "f2": 0.08528629983461918
+          },
+          "micro": {
+            "precision": 0.033035714285714286,
+            "recall": 0.14566929133858267,
+            "f1": 0.053857350800582245,
+            "f2": 0.08661048689138577
+          },
+          "hit_rate": 0.2857142857142857
+        }
+      },
+      "gold_citations_outside_registry": [
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "22.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "9.0"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "22 B.15"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "G1.1"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "I.414"
+        }
+      ],
+      "evaluation_scope": "dev_development_not_independent_test; gold_unchanged",
+      "coverage": {
+        "gold_citation_occurrences": 254,
+        "covered_gold_occurrences_before_detection": 132,
+        "covered_gold_occurrences_after_detection": 65,
+        "citations_before_detection": 228,
+        "citations_after_detection": 100,
+        "gold_image_coverage_before_detection": 0.5196850393700787,
+        "gold_image_coverage_after_detection": 0.2559055118110236
+      },
+      "query_crop_count_histogram": {
+        "1": 13,
+        "2": 17,
+        "3": 21,
+        "4": 23,
+        "5": 5,
+        "6": 4,
+        "7": 11,
+        "8": 1,
+        "9": 8,
+        "10": 2,
+        "12": 2,
+        "14": 2,
+        "17": 1,
+        "20": 2
+      },
+      "no_crop_query_ids": [],
+      "eligible_example_bank_queries": 409,
+      "excluded_train_no_crop_query_ids": [
+        "train_212",
+        "train_223",
+        "train_224",
+        "train_277",
+        "train_295",
+        "train_299",
+        "train_308",
+        "train_369",
+        "train_519"
+      ],
+      "excluded_train_citations": [
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "11.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "16.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "18.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "26.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "4.0"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.15"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.22"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.7"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B.4_x0000_"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B3"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B6"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "D.11"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "D.1777"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "G1.2"
+        }
+      ],
+      "dev_queries_with_bank_image": [
+        "train_135",
+        "train_204",
+        "train_251",
+        "train_252",
+        "train_253"
+      ],
+      "query_images_byte_equal_corpus": [],
+      "candidate_union_recall_macro": 0.18037840136054423,
+      "crops_represented_in_query_top5": {
+        "train_10": 3,
+        "train_104": 3,
+        "train_11": 3,
+        "train_112": 3,
+        "train_113": 3,
+        "train_116": 4,
+        "train_12": 20,
+        "train_120": 7,
+        "train_122": 2,
+        "train_129": 4,
+        "train_13": 20,
+        "train_134": 3,
+        "train_135": 2,
+        "train_136": 4,
+        "train_149": 2,
+        "train_174": 2,
+        "train_175": 2,
+        "train_18": 2,
+        "train_197": 5,
+        "train_198": 5,
+        "train_199": 5,
+        "train_204": 1,
+        "train_215": 4,
+        "train_217": 6,
+        "train_218": 6,
+        "train_221": 2,
+        "train_23": 2,
+        "train_240": 8,
+        "train_241": 8,
+        "train_242": 8,
+        "train_243": 8,
+        "train_246": 8,
+        "train_251": 1,
+        "train_252": 1,
+        "train_253": 1,
+        "train_255": 6,
+        "train_256": 6,
+        "train_257": 6,
+        "train_26": 5,
+        "train_262": 4,
+        "train_263": 4,
+        "train_264": 4,
+        "train_265": 4,
+        "train_266": 4,
+        "train_267": 6,
+        "train_273": 4,
+        "train_28": 5,
+        "train_282": 11,
+        "train_288": 2,
+        "train_297": 1,
+        "train_31": 2,
+        "train_312": 4,
+        "train_314": 4,
+        "train_318": 4,
+        "train_322": 4,
+        "train_327": 6,
+        "train_329": 6,
+        "train_334": 1,
+        "train_335": 1,
+        "train_339": 1,
+        "train_341": 2,
+        "train_349": 3,
+        "train_362": 1,
+        "train_37": 2,
+        "train_374": 1,
+        "train_386": 2,
+        "train_393": 3,
+        "train_394": 2,
+        "train_399": 7,
+        "train_405": 3,
+        "train_412": 4,
+        "train_413": 6,
+        "train_414": 5,
+        "train_415": 5,
+        "train_418": 2,
+        "train_419": 5,
+        "train_435": 16,
+        "train_441": 2,
+        "train_445": 3,
+        "train_454": 4,
+        "train_455": 7,
+        "train_456": 7,
+        "train_469": 7,
+        "train_474": 4,
+        "train_475": 2,
+        "train_476": 2,
+        "train_477": 4,
+        "train_488": 3,
+        "train_490": 3,
+        "train_491": 3,
+        "train_495": 1,
+        "train_497": 1,
+        "train_5": 2,
+        "train_505": 2,
+        "train_507": 2,
+        "train_508": 9,
+        "train_509": 7,
+        "train_511": 2,
+        "train_517": 1,
+        "train_529": 3,
+        "train_59": 5,
+        "train_60": 5,
+        "train_64": 9,
+        "train_70": 9,
+        "train_74": 2,
+        "train_76": 4,
+        "train_77": 3,
+        "train_85": 2,
+        "train_9": 3,
+        "train_93": 2,
+        "train_95": 3,
+        "train_97": 3
+      },
+      "by_query_crop_count": {
+        "0": {
+          "queries": 0
+        },
+        "1": {
+          "method": "1",
+          "split": "dev",
+          "queries": 13,
+          "primary_metric": "macro_f2_at_5",
+          "macro_f2_at_5": 0.0,
+          "at_k": {
+            "1": {
+              "macro": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "f2": 0.0
+              },
+              "micro": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "f2": 0.0
+              },
+              "hit_rate": 0.0
+            },
+            "3": {
+              "macro": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "f2": 0.0
+              },
+              "micro": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "f2": 0.0
+              },
+              "hit_rate": 0.0
+            },
+            "5": {
+              "macro": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "f2": 0.0
+              },
+              "micro": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "f2": 0.0
+              },
+              "hit_rate": 0.0
+            },
+            "10": {
+              "macro": {
+                "precision": 0.015384615384615385,
+                "recall": 0.07692307692307693,
+                "f1": 0.02564102564102564,
+                "f2": 0.042735042735042736
+              },
+              "micro": {
+                "precision": 0.015384615384615385,
+                "recall": 0.07692307692307693,
+                "f1": 0.02564102564102564,
+                "f2": 0.042735042735042736
+              },
+              "hit_rate": 0.15384615384615385
+            }
+          },
+          "gold_citations_outside_registry": [
+            {
+              "law_id": "36/2024/QH15",
+              "article_id": "22.0"
+            },
+            {
+              "law_id": "36/2024/QH15",
+              "article_id": "9.0"
+            },
+            {
+              "law_id": "QCVN 41:2024/BGTVT",
+              "article_id": "22 B.15"
+            }
+          ],
+          "evaluation_scope": "dev_development_not_independent_test; gold_unchanged"
+        },
+        "many": {
+          "method": "many",
+          "split": "dev",
+          "queries": 99,
+          "primary_metric": "macro_f2_at_5",
+          "macro_f2_at_5": 0.10345250372295675,
+          "at_k": {
+            "1": {
+              "macro": {
+                "precision": 0.10101010101010101,
+                "recall": 0.047979797979797977,
+                "f1": 0.062481962481962486,
+                "f2": 0.05264713500007618
+              },
+              "micro": {
+                "precision": 0.10101010101010101,
+                "recall": 0.043859649122807015,
+                "f1": 0.06116207951070336,
+                "f2": 0.04945598417408507
+              },
+              "hit_rate": 0.10101010101010101
+            },
+            "3": {
+              "macro": {
+                "precision": 0.0808080808080808,
+                "recall": 0.1254208754208754,
+                "f1": 0.0921115921115921,
+                "f2": 0.1070935680186079
+              },
+              "micro": {
+                "precision": 0.08080808080808081,
+                "recall": 0.10526315789473684,
+                "f1": 0.09142857142857143,
+                "f2": 0.09925558312655088
+              },
+              "hit_rate": 0.20202020202020202
+            },
+            "5": {
+              "macro": {
+                "precision": 0.05656565656565657,
+                "recall": 0.14309764309764308,
+                "f1": 0.07697829667526637,
+                "f2": 0.10345250372295675
+              },
+              "micro": {
+                "precision": 0.05656565656565657,
+                "recall": 0.12280701754385964,
+                "f1": 0.07745504840940526,
+                "f2": 0.09950248756218906
+              },
+              "hit_rate": 0.24242424242424243
+            },
+            "10": {
+              "macro": {
+                "precision": 0.03535353535353535,
+                "recall": 0.1691919191919192,
+                "f1": 0.05644565871838599,
+                "f2": 0.09087383864567465
+              },
+              "micro": {
+                "precision": 0.03535353535353535,
+                "recall": 0.15350877192982457,
+                "f1": 0.05747126436781609,
+                "f2": 0.09200841219768664
+              },
+              "hit_rate": 0.30303030303030304
+            }
+          },
+          "gold_citations_outside_registry": [
+            {
+              "law_id": "QCVN 41:2024/BGTVT",
+              "article_id": "G1.1"
+            },
+            {
+              "law_id": "QCVN 41:2024/BGTVT",
+              "article_id": "I.414"
+            }
+          ],
+          "evaluation_scope": "dev_development_not_independent_test; gold_unchanged"
+        }
+      },
+      "returned_citation_count_histogram": {
+        "10": 112
+      },
+      "queries_with_fewer_than_5_citations": [],
+      "baseline_current_code_matches_recorded_run": true,
+      "baseline_macro_f2_at_5": 0.05945680659531717,
+      "delta_macro_f2_at_5_vs_full_image": 0.03198781723122496,
+      "query_changes_vs_full_image": {
+        "unchanged": 88,
+        "improved": 17,
+        "worsened": 7
+      }
+    },
+    "image_examples": {
+      "method": "crop_examples",
+      "split": "dev",
+      "queries": 112,
+      "primary_metric": "macro_f2_at_5",
+      "macro_f2_at_5": 0.43014461411121807,
+      "at_k": {
+        "1": {
+          "macro": {
+            "precision": 0.5446428571428571,
+            "recall": 0.2674107142857142,
+            "f1": 0.34323979591836734,
+            "f2": 0.29176888704199627
+          },
+          "micro": {
+            "precision": 0.5446428571428571,
+            "recall": 0.24015748031496062,
+            "f1": 0.3333333333333333,
+            "f2": 0.2703900709219858
+          },
+          "hit_rate": 0.5446428571428571
+        },
+        "3": {
+          "macro": {
+            "precision": 0.3318452380952381,
+            "recall": 0.4403486394557823,
+            "f1": 0.36160005668934236,
+            "f2": 0.39927672083743804
+          },
+          "micro": {
+            "precision": 0.32934131736526945,
+            "recall": 0.4330708661417323,
+            "f1": 0.3741496598639456,
+            "f2": 0.4074074074074074
+          },
+          "hit_rate": 0.7767857142857143
+        },
+        "5": {
+          "macro": {
+            "precision": 0.26398809523809524,
+            "recall": 0.548235544217687,
+            "f1": 0.3399105854462997,
+            "f2": 0.43014461411121807
+          },
+          "micro": {
+            "precision": 0.2559852670349908,
+            "recall": 0.547244094488189,
+            "f1": 0.34880803011292344,
+            "f2": 0.44579858883899937
+          },
+          "hit_rate": 0.8125
+        },
+        "10": {
+          "macro": {
+            "precision": 0.2215702947845805,
+            "recall": 0.6387967687074829,
+            "f1": 0.31093202140996257,
+            "f2": 0.43209465803158026
+          },
+          "micro": {
+            "precision": 0.19786729857819904,
+            "recall": 0.65748031496063,
+            "f1": 0.30418943533697634,
+            "f2": 0.4489247311827957
+          },
+          "hit_rate": 0.8392857142857143
+        }
+      },
+      "gold_citations_outside_registry": [
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "22.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "9.0"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "22 B.15"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "G1.1"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "I.414"
+        }
+      ],
+      "evaluation_scope": "dev_development_not_independent_test; gold_unchanged",
+      "coverage": {
+        "gold_citation_occurrences": 254,
+        "covered_gold_occurrences_before_detection": 132,
+        "covered_gold_occurrences_after_detection": 65,
+        "citations_before_detection": 228,
+        "citations_after_detection": 100,
+        "gold_image_coverage_before_detection": 0.5196850393700787,
+        "gold_image_coverage_after_detection": 0.2559055118110236
+      },
+      "query_crop_count_histogram": {
+        "1": 13,
+        "2": 17,
+        "3": 21,
+        "4": 23,
+        "5": 5,
+        "6": 4,
+        "7": 11,
+        "8": 1,
+        "9": 8,
+        "10": 2,
+        "12": 2,
+        "14": 2,
+        "17": 1,
+        "20": 2
+      },
+      "no_crop_query_ids": [],
+      "eligible_example_bank_queries": 409,
+      "excluded_train_no_crop_query_ids": [
+        "train_212",
+        "train_223",
+        "train_224",
+        "train_277",
+        "train_295",
+        "train_299",
+        "train_308",
+        "train_369",
+        "train_519"
+      ],
+      "excluded_train_citations": [
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "11.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "16.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "18.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "26.0"
+        },
+        {
+          "law_id": "36/2024/QH15",
+          "article_id": "4.0"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.15"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.22"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "47.7"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B.4_x0000_"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B3"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "B6"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "D.11"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "D.1777"
+        },
+        {
+          "law_id": "QCVN 41:2024/BGTVT",
+          "article_id": "G1.2"
+        }
+      ],
+      "dev_queries_with_bank_image": [
+        "train_135",
+        "train_204",
+        "train_251",
+        "train_252",
+        "train_253"
+      ],
+      "query_images_byte_equal_corpus": [],
+      "by_query_crop_count": {
+        "0": {
+          "queries": 0
+        },
+        "1": {
+          "method": "1",
+          "split": "dev",
+          "queries": 13,
+          "primary_metric": "macro_f2_at_5",
+          "macro_f2_at_5": 0.4791159067177167,
+          "at_k": {
+            "1": {
+              "macro": {
+                "precision": 0.8461538461538461,
+                "recall": 0.3974358974358974,
+                "f1": 0.5384615384615385,
+                "f2": 0.44378698224852065
+              },
+              "micro": {
+                "precision": 0.8461538461538461,
+                "recall": 0.4230769230769231,
+                "f1": 0.5641025641025641,
+                "f2": 0.4700854700854701
+              },
+              "hit_rate": 0.8461538461538461
+            },
+            "3": {
+              "macro": {
+                "precision": 0.4487179487179488,
+                "recall": 0.5769230769230769,
+                "f1": 0.5,
+                "f2": 0.5419580419580419
+              },
+              "micro": {
+                "precision": 0.43243243243243246,
+                "recall": 0.6153846153846154,
+                "f1": 0.5079365079365079,
+                "f2": 0.5673758865248227
+              },
+              "hit_rate": 0.8461538461538461
+            },
+            "5": {
+              "macro": {
+                "precision": 0.3153846153846154,
+                "recall": 0.5769230769230769,
+                "f1": 0.39285714285714285,
+                "f2": 0.4791159067177167
+              },
+              "micro": {
+                "precision": 0.2711864406779661,
+                "recall": 0.6153846153846154,
+                "f1": 0.3764705882352941,
+                "f2": 0.49079754601226994
+              },
+              "hit_rate": 0.8461538461538461
+            },
+            "10": {
+              "macro": {
+                "precision": 0.258974358974359,
+                "recall": 0.5769230769230769,
+                "f1": 0.3307192807192807,
+                "f2": 0.42812598412145925
+              },
+              "micro": {
+                "precision": 0.18181818181818182,
+                "recall": 0.6153846153846154,
+                "f1": 0.2807017543859649,
+                "f2": 0.4166666666666667
+              },
+              "hit_rate": 0.8461538461538461
+            }
+          },
+          "gold_citations_outside_registry": [
+            {
+              "law_id": "36/2024/QH15",
+              "article_id": "22.0"
+            },
+            {
+              "law_id": "36/2024/QH15",
+              "article_id": "9.0"
+            },
+            {
+              "law_id": "QCVN 41:2024/BGTVT",
+              "article_id": "22 B.15"
+            }
+          ],
+          "evaluation_scope": "dev_development_not_independent_test; gold_unchanged"
+        },
+        "many": {
+          "method": "many",
+          "split": "dev",
+          "queries": 99,
+          "primary_metric": "macro_f2_at_5",
+          "macro_f2_at_5": 0.42371404033460713,
+          "at_k": {
+            "1": {
+              "macro": {
+                "precision": 0.5050505050505051,
+                "recall": 0.2503367003367003,
+                "f1": 0.3176046176046176,
+                "f2": 0.2718069149441698
+              },
+              "micro": {
+                "precision": 0.5050505050505051,
+                "recall": 0.21929824561403508,
+                "f1": 0.3058103975535168,
+                "f2": 0.24727992087042533
+              },
+              "hit_rate": 0.5050505050505051
+            },
+            "3": {
+              "macro": {
+                "precision": 0.3164983164983164,
+                "recall": 0.4224146224146224,
+                "f1": 0.34342632675966006,
+                "f2": 0.3805407897811971
+              },
+              "micro": {
+                "precision": 0.3164983164983165,
+                "recall": 0.41228070175438597,
+                "f1": 0.3580952380952381,
+                "f2": 0.38875103391232424
+              },
+              "hit_rate": 0.7676767676767676
+            },
+            "5": {
+              "macro": {
+                "precision": 0.2572390572390572,
+                "recall": 0.5444684944684944,
+                "f1": 0.3329580072004314,
+                "f2": 0.42371404033460713
+              },
+              "micro": {
+                "precision": 0.25413223140495866,
+                "recall": 0.5394736842105263,
+                "f1": 0.3455056179775281,
+                "f2": 0.44054441260744986
+              },
+              "hit_rate": 0.8080808080808081
+            },
+            "10": {
+              "macro": {
+                "precision": 0.21665864999198334,
+                "recall": 0.6469215969215969,
+                "f1": 0.30833369442995107,
+                "f2": 0.43261579702987907
+              },
+              "micro": {
+                "precision": 0.19973544973544974,
+                "recall": 0.6622807017543859,
+                "f1": 0.30691056910569103,
+                "f2": 0.4526378896882494
+              },
+              "hit_rate": 0.8383838383838383
+            }
+          },
+          "gold_citations_outside_registry": [
+            {
+              "law_id": "QCVN 41:2024/BGTVT",
+              "article_id": "G1.1"
+            },
+            {
+              "law_id": "QCVN 41:2024/BGTVT",
+              "article_id": "I.414"
+            }
+          ],
+          "evaluation_scope": "dev_development_not_independent_test; gold_unchanged"
+        }
+      },
+      "returned_citation_count_histogram": {
+        "2": 2,
+        "3": 1,
+        "4": 9,
+        "5": 13,
+        "6": 4,
+        "7": 16,
+        "8": 28,
+        "9": 14,
+        "10": 25
+      },
+      "queries_with_fewer_than_5_citations": [
+        "train_262",
+        "train_263",
+        "train_264",
+        "train_265",
+        "train_266",
+        "train_273",
+        "train_288",
+        "train_312",
+        "train_362",
+        "train_511",
+        "train_517",
+        "train_95"
+      ],
+      "baseline_current_code_matches_recorded_run": true,
+      "baseline_macro_f2_at_5": 0.325043884882745,
+      "delta_macro_f2_at_5_vs_full_image": 0.10510072922847308,
+      "query_changes_vs_full_image": {
+        "improved": 38,
+        "unchanged": 48,
+        "worsened": 26
+      }
+    }
+  },
+  "returned_citation_count_histogram": {
+    "10": 112
+  },
+  "queries_with_fewer_than_5_citations": [],
+  "baseline_current_code_matches_recorded_run": true,
+  "baseline_macro_f2_at_5": 0.2754776804218995,
+  "delta_macro_f2_at_5_vs_full_image": 0.10330031256936506,
+  "query_changes_vs_full_image": {
+    "improved": 37,
+    "unchanged": 65,
+    "worsened": 10
+  }
+}
